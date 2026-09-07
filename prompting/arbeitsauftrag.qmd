@@ -1,0 +1,195 @@
+# Vom Zuruf zum Arbeitsauftrag
+
+Ein Zuruf wie „Beantworte mal diese Kundenanfrage" reicht aus, damit ein Chatmodell etwas produziert. Er reicht nicht aus, damit wir das Ergebnis verantworten können. In diesem Kapitel bauen wir aus vier Bausteinen einen Arbeitsauftrag, der genau den Unterschied macht.
+
+## Der Lehrfall Nordwerk
+
+Die Nordwerk Elektrowerkzeuge GmbH ist ein erfundenes Unternehmen; alle Angaben in diesem Kapitel sind für den Kurs konstruiert und beziehen sich auf keinen realen Hersteller. Genau das ist beabsichtigt: Wir üben an einem Fall, bei dem wir jede Aussage nachschlagen können.
+
+Dienstagmorgen, Kundenservice. Im Postfach liegt diese Mail:
+
+> Betreff: Ersatzakku und Liefertermin
+>
+> Guten Tag,
+>
+> ich habe vor zwei Wochen den NW-18C gekauft und dazu einen Ersatzakku NW-AK20 bestellt. Drei Fragen: Passt der Akku auch in meinen älteren NW-14C? Wie lange habe ich Garantie auf den NW-18C? Und wann kommt die Lieferung an, ich brauche sie bis Freitag.
+>
+> Viele Grüße
+>
+> M. Berger
+
+Daneben liegt der Auszug aus den Fachinformationen, den der Kundenservice für Auskünfte verwendet:
+
+- Akku-Bohrschrauber NW-18C, Artikelnummer NW-18C-2. Lieferumfang: Gerät, zwei Akkus mit 2,0 Ah, Ladegerät, Koffer.
+- Garantie: 24 Monate. Wird das Gerät innerhalb von 30 Tagen nach Kauf im Kundenkonto registriert, sind es 36 Monate.
+- Ersatzakku NW-AK20, 39,00 EUR, passend für NW-18C und NW-14C.
+- Rückgabe: 30 Tage, unbenutzt und in der Originalverpackung. Der Retourenschein liegt im Kundenkonto.
+- Service erreichbar Montag bis Freitag, 8 bis 16 Uhr.
+
+Die Mail stellt drei Fragen. Zwei davon lassen sich aus diesem Auszug beantworten: die Akku-Kompatibilität und die Garantiedauer. Zur dritten, dem Liefertermin, steht dort nichts. Diese Lücke ist der eigentliche Gegenstand des Kapitels.
+
+Bevor wir etwas ausprobieren, lohnt eine Einschätzung: Was passiert vermutlich, wenn ein Chatmodell nur die Kundenmail und den Satz „Bitte beantworte diese Kundenanfrage" bekommt, ohne die Fachinformationen? Es besteht das Risiko, dass ein flüssiger und plausibel klingender Entwurf entsteht, in dem Angaben stehen, die durch nichts gedeckt sind. Ob das in einem einzelnen Durchlauf passiert, lässt sich nicht vorhersagen. Genau deshalb behandeln wir es als Risiko, das wir vor jeder Verwendung prüfen, und nicht als Ausnahme, die wir bemerken werden, wenn sie eintritt.
+
+## Zielbild
+
+Am Ende dieses Kapitels haben wir einen Prompt, der ohne weitere Vorbereitung läuft, und klare Kriterien, mit denen wir einen Entwurf prüfen:
+
+- Jede inhaltliche Aussage lässt sich auf eine Zeile im mitgegebenen Material zurückführen.
+- Die ungedeckte Frage steht sichtbar unter einer Überschrift „Offen" und nicht versteckt im Fließtext.
+- In dieser Kursübung wird nichts versendet. Wir prüfen den Entwurf und halten das Ergebnis in der Arbeitsmappe fest.
+
+Dorthin führen vier Bausteine, die zusammen in einen einzigen Prompt gehen:
+
+| Baustein | Beantwortet die Frage | Beispiel aus dem Lehrfall |
+|---|---|---|
+| **Aufgabe** | Was soll entstehen? | „Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage." |
+| **Material** | Woraus wird geantwortet? | Auszug aus den Fachinformationen plus der Wortlaut der Kundenmail |
+| **Format** | Wie sieht das Ergebnis aus? | Mail, höchstens 150 Wörter, sachlicher Ton, am Ende eine Liste „Offen" |
+| **Grenzen** | Was passiert bei einer Lücke? | Nicht ergänzen, sondern unter „Offen" auflisten |
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** ein Browser und ein kostenloses Chatkonto, etwa bei [ChatGPT](https://chatgpt.com/). Mehr ist nicht nötig. Wir arbeiten für jeden Vergleich in einem neuen Chat, damit die vorherigen Übungsnachrichten nicht mitwirken. Gespeicherte persönliche Einstellungen können weiterhin Einfluss haben.
+
+### Schritt 1 — Die Aufgabe in einem Satz
+
+Wir benennen das gewünschte Ergebnis konkret: „Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage." Das Stichwort „Kundenanfrage" allein lässt den Auftrag offen. Mehrere zusammengehörige Handlungen sind möglich; für den Einstieg erleichtert ein klar abgegrenztes Ergebnis die Prüfung.
+
+::: {.callout-tip title="Die Übergabe an die Urlaubsvertretung"}
+Der Maßstab für einen guten Arbeitsauftrag ist die Übergabe an eine Urlaubsvertretung, die fachlich fit ist, aber unser Haus nicht kennt. Sie kann formulieren, sie kann strukturieren, sie kennt aber unsere Garantiebedingungen nicht und hat keinen Zugriff auf das Bestellsystem. Wir würden ihr sagen, was zu tun ist, ihr die geltenden Unterlagen hinlegen, die gewünschte Form nennen und dazusagen, was sie tun soll, wenn eine Angabe fehlt. Diese vier Dinge sind Aufgabe, Material, Format und Grenzen.
+:::
+
+### Schritt 2 — Das Material hineinkopieren
+
+Wir kopieren die Angaben, aus denen geantwortet werden soll, vollständig in den Prompt: den Auszug aus den Fachinformationen **und** den Wortlaut der Kundenmail. Beides ist Material, denn beides liefert Fakten. Der Auszug liefert die Konditionen, die Mail liefert die Fragen und die genannten Artikelnummern.
+
+Das Modell bringt allgemeines Wissen mit. Dieses Wissen ist aber kein Beleg für die aktuellen Konditionen unseres Lehrfalls. Für diese Aufgabe gelten ausschließlich die bereitgestellten Fachinformationen. Trotzdem kann der Entwurf unbelegte Angaben enthalten; deshalb gleichen wir jede Aussage mit dem Material ab.
+
+::: {.callout-important title="Was nicht ins Chatfenster gehört"}
+Der Lehrfall Nordwerk ist erfunden, deshalb dürfen alle Angaben unverändert kopiert werden. Auch die eigene Variante bauen wir mit vollständig erfundenen Angaben; Zuständigkeiten beschreiben wir als Rollen. Echte interne Unterlagen dürfen nur verwendet werden, wenn die Nutzung im jeweiligen Konto ausdrücklich freigegeben ist. Allein Namen und Nummern zu ersetzen macht vertrauliche Informationen noch nicht geeignet für ein Chatkonto.
+:::
+
+### Schritt 3 — Das Format festlegen
+
+Das Format beschreibt die Form des Ergebnisses: Textsorte, Länge, Ton und Aufbau. Im Lehrfall lautet es: Antwort-Mail, höchstens 150 Wörter, Anrede „Guten Tag", sachlicher Ton, am Ende eine Liste mit der Überschrift „Offen". Die Längenangabe ist dabei kein Selbstzweck. Sie zwingt zur Auswahl und macht den Entwurf vergleichbar, wenn wir ihn später noch einmal in veränderter Form abschicken.
+
+Der Aufbau am Ende ist der wichtigere Teil: Indem wir eine eigene Liste „Offen" verlangen, geben wir den Lücken einen festen Platz. Ohne diesen Platz müssten sie im Fließtext untergebracht werden, und dort fallen sie am wenigsten auf.
+
+### Schritt 4 — Die Grenzen setzen
+
+Die Grenzen regeln, was bei einer fehlenden Angabe passieren soll. Ein Modell kann Aussagen mit Material abgleichen, macht dabei aber ebenfalls Fehler. Wir legen deshalb ausdrücklich fest, welche Informationen als Grundlage gelten und wie offene Fragen dargestellt werden sollen.
+
+Wir formulieren deshalb ausdrücklich und in der Handlungsform, die wir wollen — nicht nur, was unterbleiben soll, sondern was stattdessen zu tun ist:
+
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie stattdessen unter „Offen" ein.
+- Erfinde keine Termine, Preise oder Fristen.
+
+::: {.callout-note title="Woher diese vier Teile kommen"}
+Die Vierteilung in Aufgabe, Material, Format und Grenzen ist eine Designentscheidung dieses Kurses. Sie ist eine Merkhilfe, kein Standard und kein Ergebnis einer Untersuchung.
+
+Belegt ist der schmalere Kern. Die Hilfeseite von OpenAI zum Prompten von ChatGPT nennt vier Empfehlungen: klar formulieren, spezifisch werden, genug Kontext mitgeben und den Prompt iterativ verbessern ([help.openai.com, „How do I prompt ChatGPT effectively?"](https://help.openai.com/en/articles/10032626-how-do-i-prompt-chatgpt-effectively)). Die Prompt-Engineering-Übersicht von Anthropic setzt einen Schritt davor: erst die Erfolgskriterien festlegen, dann den Prompt optimieren ([platform.claude.com, Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)).
+
+Unsere vier Teile bündeln beides in eine Form, die sich am Schreibtisch abhaken lässt: **Material** ist die konkrete Antwort auf „genug Kontext", **Format** und **Grenzen** machen aus einem vagen Qualitätsanspruch zwei Kriterien, an denen wir das Ergebnis anschließend messen können.
+:::
+
+### Schritt 5 — Den Auftrag abschicken
+
+Die vier Bausteine gehen als eine Nachricht in den Chat. Der folgende Auftrag enthält den ganzen Lehrfall und ist ohne weitere Vorbereitung lauffähig. Er steht zusätzlich als [kopierbare Textdatei](../material/prompt-vorlage.txt) bereit.
+
+```text
+Du unterstützt den Kundenservice der Nordwerk Elektrowerkzeuge GmbH.
+
+AUFGABE
+Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
+
+MATERIAL (nur diese Angaben sind gültig)
+Fachinformationen:
+- Akku-Bohrschrauber NW-18C, Artikelnummer NW-18C-2. Lieferumfang: Gerät, zwei Akkus mit 2,0 Ah, Ladegerät, Koffer.
+- Garantie: 24 Monate. Wird das Gerät innerhalb von 30 Tagen nach Kauf im Kundenkonto registriert, sind es 36 Monate.
+- Ersatzakku NW-AK20, 39,00 EUR, passend für NW-18C und NW-14C.
+- Rückgabe: 30 Tage, unbenutzt und in der Originalverpackung. Der Retourenschein liegt im Kundenkonto.
+- Service erreichbar Montag bis Freitag, 8 bis 16 Uhr.
+
+Kundenanfrage:
+Betreff: Ersatzakku und Liefertermin
+Guten Tag,
+ich habe vor zwei Wochen den NW-18C gekauft und dazu einen Ersatzakku NW-AK20 bestellt. Drei Fragen: Passt der Akku auch in meinen älteren NW-14C? Wie lange habe ich Garantie auf den NW-18C? Und wann kommt die Lieferung an, ich brauche sie bis Freitag.
+Viele Grüße
+M. Berger
+
+FORMAT
+Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlicher Ton.
+Am Ende eine Liste mit der Überschrift "Offen".
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie stattdessen unter "Offen" ein.
+- Erfinde keine Termine, Preise oder Fristen.
+```
+
+::: {.callout-tip title="Worauf wir beim Lesen achten"}
+Die Überschriften AUFGABE, MATERIAL, FORMAT und GRENZEN sind Teil der Wirkung, nicht Dekoration: Sie trennen die Anweisung an das Modell sichtbar von den Fakten, aus denen geantwortet wird. Beim Lesen des Ergebnisses interessiert uns zuerst eine einzige Stelle: Steht der Liefertermin unter „Offen" oder steht im Fließtext doch ein Datum? Danach prüfen wir die Garantieaussage und die Akku-Kompatibilität gegen die Fachinformationen.
+:::
+
+### Schritt 6 — Das Ergebnis gegen das Material lesen
+
+Wir gehen den Entwurf Aussage für Aussage durch und suchen zu jeder Aussage die Zeile im Material, aus der sie stammt. Wir prüfen unter anderem diese vier Punkte:
+
+1. Steht die Garantieaussage so in den Fachinformationen, einschließlich der Registrierung innerhalb von 30 Tagen?
+2. Ist die Akku-Kompatibilität korrekt wiedergegeben, also NW-AK20 passend für NW-18C und NW-14C?
+3. Taucht die Lieferzeit unter „Offen" auf, oder steht im Text doch ein Termin?
+4. Sind auch zusätzliche Aussagen belegt? Das Material sagt beispielsweise nicht, wo sich der Lieferstatus abrufen lässt.
+
+Kommt trotz der Grenzen ein Liefertermin vor, haken wir das nicht als Panne ab. Wir notieren es als Befund. Genau dafür ist der Prüfschritt da: Er zeigt, dass eine Grenze im Auftrag eine Anweisung ist und keine Garantie.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput. Formulierungen und Reihenfolge können zwischen Durchläufen abweichen; identische Ergebnisse sind nicht zu erwarten und auch nicht das Ziel.
+
+> Guten Tag, vielen Dank für Ihre Nachricht. Der Ersatzakku NW-AK20 passt sowohl in den NW-18C als auch in den NW-14C. Auf den NW-18C gelten 24 Monate Garantie; wenn Sie das Gerät innerhalb von 30 Tagen nach Kauf in Ihrem Kundenkonto registrieren, verlängert sich die Garantie auf 36 Monate. Freundliche Grüße, Kundenservice Nordwerk
+>
+> **Offen:** Liefertermin der Bestellung. Zur Lieferzeit liegen hier keine Angaben vor.
+
+Drei Merkmale, an denen sich das prüfen lässt:
+
+- **Belegbar:** Jede inhaltliche Aussage lässt sich auf eine Zeile im Material zurückführen.
+- **Lücke benannt:** Die Lieferzeit steht unter „Offen" und nicht im Fließtext.
+- **Kein Versand:** Der Text ist ein Entwurf. Ergänzt wird er von der Person, die die Bestellung im System nachsieht.
+
+Für einen tatsächlichen Einsatz müsste der Lieferstatus zunächst in einer zugelassenen Quelle geklärt werden. Auch danach darf nur zugesagt werden, was diese Quelle trägt. Die Kursübung endet beim geprüften Entwurf.
+
+### Eine eigene Variante prüfen
+
+Wir wählen einen wiederkehrenden Schreibanlass und bauen dafür eine vollständig fiktive Beispielanfrage mit erfundenen Konditionen. So übertragen wir die Arbeitsweise, ohne interne Unterlagen in ein Chatkonto zu übernehmen.
+
+1. Wir formulieren Aufgabe, Material, Format und Grenzen und führen den Auftrag in einem neuen Chat aus.
+2. Wir prüfen jede Aussage gegen unser Übungsmaterial und notieren Abweichungen.
+3. Wir führen denselben unveränderten Auftrag in einem weiteren neuen Chat aus. Auch ohne Promptänderung können sich Ergebnisse unterscheiden.
+4. Wir verändern eine Sache, etwa das Format, und führen diese Fassung ebenfalls in einem neuen Chat aus.
+5. Wir vergleichen die drei Ergebnisse mit denselben Kriterien: Belege, Bedingungen, offene Angaben und Format.
+
+Diese wenigen Durchläufe liefern Beobachtungen für den nächsten Versuch. Sie beweisen weder, dass die Promptänderung einen Unterschied verursacht hat, noch dass eine Fassung grundsätzlich besser ist. Wir begründen unsere nächste Auswahl deshalb vorläufig anhand der festgehaltenen Ergebnisse.
+
+Auftragskarte, Übungsmaterial, vollständige Prompts und Ergebnisnotizen gehören in **Portfolio-Teil 2: Prompt-/Context-Pipeline**. Die [Portfolio-Vorlage](../material/portfolio-vorlage.md) führt durch die Dokumentation. In der interaktiven Auftragskarte wird zunächst nur die Materialherkunft ausgewählt; den eigentlichen Text ergänzen wir in der Arbeitsmappe. Freitexte werden dort nicht automatisch fachlich bewertet.
+
+## Fehler diagnostizieren
+
+Die Beobachtung zeigt zunächst einen Fehler, nicht sicher dessen Ursache. Die nächste Spalte nennt deshalb einen Prüfschritt.
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Ein konkreter Liefertermin erscheint | Als unbelegt markieren. Prüfen, ob das Material einen Termin enthält; andernfalls die Aussage entfernen und die Frage offenhalten. Eine präzisere Anweisung ersetzt diese Prüfung nicht. |
+| Der Entwurf überschreitet 150 Wörter | Die Grenze nachzählen und eine Kürzung verlangen, ohne Bedingungen oder offene Punkte zu verlieren. |
+| Es stehen 36 Monate Garantie ohne Bedingung im Text | Registrierung innerhalb von 30 Tagen nach Kauf ergänzen; ohne bestätigte Registrierung keine pauschale Verlängerung zusagen. |
+| Zusätzliche Aussagen tauchen auf | Jede zusätzliche Aussage mit dem Material abgleichen. Unbelegte Ergänzungen entfernen. |
+| Das Modell fragt nach dem Liefertermin | Prüfen, ob die Rückfrage sachlich berechtigt ist. Für diese Übung die offenen Angaben auflisten lassen und die belegbaren Fragen beantworten. |
+| Der Text enthält eine unpassende Signatur | Die gewünschte Absenderzeile ergänzen und das Ergebnis erneut prüfen. |
+
+## Kontrollpunkt für Modul 2
+
+- Einen Arbeitsauftrag aus Aufgabe, Material, Format und Grenzen zusammensetzen
+- Für die eigene Übung vollständig erfundene Angaben verwenden und betriebliche Freigaben von bloßer Namensersetzung unterscheiden
+- Eine Grenze so formulieren, dass eine fehlende Angabe ausgewiesen statt ergänzt wird
+- Einen Entwurf Aussage für Aussage gegen das mitgegebene Material prüfen
+- Unterschiede zwischen Durchläufen dokumentieren, ohne daraus vorschnell eine Ursache abzuleiten

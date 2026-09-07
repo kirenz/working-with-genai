@@ -1,0 +1,40 @@
+# Willkommen {.unnumbered}
+
+Willkommen zum Kursbuch **Working with GenAI**. Es richtet sich an Fachkräfte und Führungskräfte, die generative KI im eigenen Arbeitsalltag einsetzen wollen: in der Korrespondenz, in der Recherche, in der Vorbereitung von Entscheidungen. Programmierkenntnisse sind nicht nötig. Ein Browser und ein kostenloses Chatkonto genügen, um jeden Pflichtschritt mitzumachen.
+
+Das Buch verfolgt eine einzige Leitfrage: Wie kommen wir von einem Text, der gut klingt, zu einem Ergebnis, das wir gegenüber Kundinnen, Kollegen und Vorgesetzten vertreten können? Der Unterschied zwischen beiden entsteht nicht von allein. Er entsteht durch den Auftrag, den wir formulieren, durch das Material, das wir mitgeben, und durch die Prüfung, die wir danach durchführen.
+
+Ein durchgehender Lehrfall begleitet den Weg: die **Nordwerk Elektrowerkzeuge GmbH**, ein erfundenes Unternehmen mit einem sehr realen Problem. Im Kundenservice läuft eine Anfrage ein, die drei Fragen stellt. Zu zweien liegen Angaben vor, zur dritten nicht. Genau an dieser Lücke zeigt sich, was ein sauber gebauter Arbeitsauftrag leistet und wo die Verantwortung bei uns bleibt.
+
+Aufgaben dieser Art gibt es in jeder Organisation:
+
+1. Eine wiederkehrende Kundenanfrage auf Basis der geltenden Konditionen beantworten
+2. Ein Protokoll zu einer Zusammenfassung mit klarer Aufgabenliste verdichten
+3. Eine Ausschreibung gegen die eigenen Leistungsbeschreibungen abgleichen
+4. Einen Fachtext für eine andere Zielgruppe neu formulieren
+5. Eine Terminabsage sachlich und freundlich entwerfen
+
+## Wie wir in diesem Buch arbeiten
+
+Die Kapitel verbinden kurze Erklärungen, eigenes Ausprobieren und konkrete Ergebnisprüfungen.
+
+- **Risiko einschätzen** — bevor wir etwas ausprobieren, benennen wir, was schiefgehen kann.
+- **Erklärung** — die wenigen Bausteine, um die es geht, kurz und am Fall.
+- **Mitmachen** — ein vollständiger, kopierfertiger Auftrag, der ohne Vorbereitung läuft.
+- **Eigene Variante** — derselbe Aufbau, angewendet auf einen Fall aus dem eigenen Arbeitsalltag.
+- **Ergebnisprüfung** — der Abgleich gegen das mitgegebene Material.
+- **Portfolio** — der brauchbare Teil wandert in die Arbeitsmappe.
+
+Alle Materialien, die für das Mitmachen nötig sind, stehen vollständig im Buchtext und zusätzlich als Downloads bereit: [Fachinformationen](material/lehrfall-fachinformationen.txt), [Kundenanfrage](material/kundenanfrage.txt), [Prompt](material/prompt-vorlage.txt) und [Portfolio-Vorlage](material/portfolio-vorlage.md). Es gibt keinen Schritt, für den erst etwas anderswo nachgeschlagen werden muss.
+
+::: {.callout-note title="Branchenübergreifend einsetzbar"}
+Der Lehrfall stammt aus dem Kundenservice eines Handwerksbedarf-Herstellers. Dieselben Bausteine tragen in der Verwaltung (Auskünfte nach Aktenlage), im Personalwesen (Stellenausschreibungen und Absagen), in der Beratung (Angebotstexte) und in der Lehre (Feedback zu Einreichungen). Wer den Aufbau einmal an Nordwerk durchgespielt hat, überträgt ihn auf den eigenen Bereich.
+:::
+
+::: {.callout-tip title="Lernempfehlung"}
+Die Kapitel bauen aufeinander auf und sind auf 5 bis 15 Minuten Lesezeit plus einen eigenen Durchlauf im Chatfenster angelegt. Am meisten nehmen wir mit, wenn wir jeden Auftrag tatsächlich abschicken, statt ihn nur zu lesen. Die Ergebnisse können zwischen Durchläufen abweichen; genau diese Streuung ist Teil des Lernstoffs.
+:::
+
+::: {.callout-note title="Stand dieses Buches"}
+Dieses Buch entsteht kapitelweise parallel zum Kurs. Ausgearbeitet ist bislang das Kapitel **Vom Zuruf zum Arbeitsauftrag** aus Modul 2. Der Aufbau des Gesamtkurses mit sechs Modulen steht im [Kurskonzept](docs/kurskonzept-v2.md); die weiteren Kapitel werden nach demselben Muster ergänzt. Leere Platzhalterkapitel werden bewusst nicht aufgenommen.
+:::

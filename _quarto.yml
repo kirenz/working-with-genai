@@ -1,0 +1,53 @@
+project:
+  type: book
+  output-dir: _book
+  resources:
+    - "material/**"
+    - "docs/kurskonzept-v2.md"
+  # Startpaket: Es ist bewusst nur das ausgearbeitete Musterkapitel eingehängt.
+  # Weitere Modul-Verzeichnisse werden erst aufgenommen, wenn Kapitel darin
+  # existieren — keine leeren Skelette im Build.
+  render:
+    - "*.qmd"
+    - "prompting/*.qmd"
+
+lang: de
+
+execute:
+  freeze: auto
+
+book:
+  title: "Working with GenAI"
+  description: "Vom ersten Chat zum belegbaren Arbeitsergebnis"
+  author: "Jan Kirenz"
+
+  # Keine Vor/Zurück-Kapitelnavigation: im Plattform-Embed wird über die
+  # Lernplattform navigiert, nicht im eingebetteten Buch.
+  page-navigation: false
+
+  search:
+    type: overlay
+  page-footer:
+    left: |
+      © [Jan Kirenz](https://www.kirenz.com/), 2026
+
+  chapters:
+    - index.qmd
+
+    - part: "Modul 2 · Strukturierte Arbeitsaufträge"
+      chapters:
+        - prompting/arbeitsauftrag.qmd
+
+format:
+  html:
+    toc: true
+    # Theme-Stack aus dem Vorbild-Repo n8n-grundlagen übernommen:
+    # cosmo als Bootstrap-Basis, book-theme.scss trägt den Plattform-Look.
+    theme:
+      - cosmo
+      - book-theme.scss
+    code-copy: true
+    highlight-style: github
+    code-overflow: wrap
+    author-meta: "Jan Kirenz"
+    callout-appearance: simple
