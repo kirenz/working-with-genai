@@ -1,0 +1,77 @@
+---
+title: "ChatGPT, Claude und Gemini im Überblick"
+subtitle: "Modul 1 · Lektion 1.3"
+book-source: ../../start/werkzeuge-ueberblick.qmd
+---
+
+## Werkzeuge nach Aufgabe einordnen
+
+ChatGPT, Claude und Gemini unterstützen das Erklären, Zusammenfassen, Vergleichen und Entwickeln von Ideen.
+
+Für die Auswahl zählen:
+
+- betriebliche Freigabe
+- benötigte Unterlagen und erlaubte Zugriffe
+- gewünschte Ergebnisform
+
+::: {.notes}
+Den gemeinsamen Einstieg mit ChatGPT benennen. Keine allgemeine Rangfolge aufstellen. Ein konkretes Beispiel wie eine Sortenübersicht hilft, die drei Auswahlfragen zu verbinden. Zeit: 2 Minuten.
+:::
+
+## Unterschiedliche Angebote
+
+| Werkzeug | Beispiel |
+|---|---|
+| ChatGPT | Textarbeit, Recherche, Dateien und generative Bilder |
+| Claude | Dokumente, Diagramme und Anwendungen als Artifacts |
+| Gemini | Generative Bilder und Unterstützung in Google-Anwendungen |
+
+Funktionen und Zugriffe hängen vom Konto ab. Projekte und Gems unterstützen Wiederverwendung mit unterschiedlichem Aufbau.
+
+[ChatGPT](https://chatgpt.com/overview/) · [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) · [Gemini](https://gemini.google/about/)
+
+::: {.notes}
+Stand 8. September 2026 nach den verlinkten Anbieterinformationen. Bei Claude präzisieren: keine eingebaute generative Fotofunktion wie in ChatGPT oder Gemini; Bilder auswerten und illustrative Grafiken mit Code sind möglich. Quelle: https://support.claude.com/en/articles/9002504-can-claude-produce-images. Projekte und Gems nicht als identische Angebote darstellen. Zeit: 2 Minuten.
+:::
+
+## Mehrere Schritte mit Werkzeugen
+
+Auch eine Chatoberfläche kann Dateien und Werkzeuge nutzen.
+
+Ein **Arbeitsagent** bearbeitet eine Aufgabe stärker selbstgesteuert in mehreren Schritten mit zugelassenen Werkzeugen.
+
+Beispiel: Unterlagen lesen, Produkttexte prüfen und einen Prüfbericht als Datei ablegen.
+
+::: {.notes}
+Der Unterschied liegt nicht allein beim Ordnerzugriff. Vor Beginn festlegen, welche Dateien und Anwendungen genutzt und welche Änderungen vorgenommen werden dürfen. Anschließend Ergebnis und ausgeführte Änderungen prüfen. Zeit: 2 Minuten.
+:::
+
+## Einblick in Arbeitsagenten
+
+| Zugang | Beispiel |
+|---|---|
+| ChatGPT Work | Entscheidungsvorlage aus Unterlagen erstellen |
+| Claude Cowork | Aufgabenübersicht aus Besprechungsnotizen erstellen |
+| Codex und Claude Code | Dateien prüfen, bearbeiten und Anwendungen entwickeln |
+
+Zugang und Funktionsumfang hängen vom Angebot ab. Die eigene Nutzung ist freiwillig.
+
+[ChatGPT Work und Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) · [Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) · [Claude Code](https://code.claude.com/docs/en/overview)
+
+::: {.notes}
+Die vorbereitete Demo als Einblick ankündigen. Für die eigene Erprobung stehen Material und ein Chatweg für den Prüfbericht in der freiwilligen Vertiefung bereit. Es ist kein zusätzlicher Kauf für die Pflichtbearbeitung nötig. Zeit: 2 Minuten.
+:::
+
+## Der Einstieg im Kurs
+
+Chatübungen: Browser und kostenloses Chatkonto.
+
+Arbeitsagenten: vorgeführte Demo, eigene Erprobung freiwillig.
+
+n8n: geführte Aufgabe auf der Kursinstanz mit vorbereitetem Ersatzweg.
+
+Bei Nutzungslimit: Auftrag und Ergebnis sichern, am Kursbeispiel weiterarbeiten.
+
+::: {.notes}
+Bei fehlendem Konto das konstruierte Ergebnis der ersten Übung zeigen und dessen Prüfung durchführen. Ein persönliches Abonnement ersetzt keine betriebliche Freigabe für echte Unterlagen. Die Prüfung hängt von der Aufgabe ab, etwa Fakten, Berechnung oder Brauchbarkeit von Ideen. Zeit: 2 Minuten.
+:::

@@ -1,12 +1,12 @@
 ---
-title: "KI-Kompetenz und der eigene Risiko-Überblick"
-subtitle: "Modul 5 · Lektion 5.3"
+title: "Verantwortung und KI-Kompetenz im Betrieb"
+subtitle: "Modul 5 · Lektion 5.4"
 book-source: "../../verantwortung/ki-kompetenz.qmd"
 ---
 
 ## Drei Fragen an die Geschäftsführung {.stage}
 
-[Modul 5 · Verantwortung und Risiko-Orientierung]{.kicker}
+[Modul 5 · Daten, Rechte und Verantwortung]{.kicker}
 
 Müssen wir **alle** schulen? Müssen wir **jede** Mail kennzeichnen? Und wer trägt das Risiko, wenn ein Entwurf falsch hinausgeht?
 
@@ -23,7 +23,7 @@ Abschluss von Modul 5. Die drei Fragen kommen in jedem Betrieb, meist in dieser 
 **Aylin Yılmaz**, Geschäftsführung
 :::
 ::: {.card}
-Entwürfe laufen. Rechte-Check liegt vor. Datenregel aus 5.1 liegt vor.
+Entwürfe laufen. Rechte-Check liegt vor. Datenregel aus 5.1 liegt vor. Aus 5.3 ist bekannt, woran eine einseitige Formulierung auffällt.
 
 Was fehlt: **eine Seite**, auf der steht, wer was mit welchem Werkzeug tut, welche Maßnahme dazu passt, wo der Einsatz kenntlich gemacht wird und was offen ist.
 
@@ -39,15 +39,16 @@ Der Anlass ist eine Entscheidungslage, keine Formalie. Aylin braucht die Seite, 
 
 - **Pflicht:** Maßnahmen treffen, um die KI-Kompetenz des eigenen Personals und der Personen zu fördern, die im eigenen Auftrag mit KI-Systemen umgehen
 - **Maßgeblich:** Kenntnisse, Erfahrung, Ausbildung und der **Kontext des Einsatzes**
-- **Ausdrücklich nicht verlangt:** ein garantiertes Niveau einzelner Personen, ein Zertifikat
+- **Ausdrücklich nicht verlangt:** das KI-Wissen von Beschäftigten zu messen, ein garantiertes Niveau, ein Zertifikat
 - **Nachweis:** ein interner Vermerk über Schulungen und Hinweise genügt
+- **Stand:** AI-Omnibus in Kraft seit 27.07.2026, Anforderung vereinfacht; Aufsicht und Durchsetzung seit August 2026
 
 ::: {.sources}
-Europäische Kommission, „AI literacy: questions and answers“, Abruf 07.09.2026 (Fassung nach dem Digital Omnibus)
+Europäische Kommission, „AI literacy: questions and answers“ und „AI Omnibus enters into force“, Abruf 08.09.2026
 :::
 
 ::: {.notes}
-Nur wiedergeben, was die FAQ am Abrufdatum sagt. Wichtig für die Moderation: Die Seite trägt an einigen Stellen noch ältere Formulierungen im Kopfbereich, die Detailantworten sind neuer. Deshalb keine pauschale Aussage über vorgeschriebene Zertifikate, feste Schulungsumfänge oder eine Rechtschronologie übernehmen. Für Fristen und Einzelpflichten, die darüber hinausgehen, wird der geltende Rechtstext geöffnet; dieser Kurs übernimmt sie nicht aus dem Gedächtnis. Zeit: 3 Minuten.
+Nur wiedergeben, was die verlinkten Kommissionsseiten am Abrufdatum sagen. Wichtig für die Moderation: keine pauschale Aussage über vorgeschriebene Zertifikate, feste Schulungsumfänge oder eine Rechtschronologie übernehmen. Der AI-Omnibus hat aus der Pflicht, ein ausreichendes Niveau sicherzustellen, eine Pflicht zu fördernden Maßnahmen gemacht; die Pflicht selbst bleibt. Für Fristen und Einzelpflichten, die darüber hinausgehen, wird der geltende Rechtstext geöffnet; dieser Kurs übernimmt sie nicht aus dem Gedächtnis. Zeit: 3 Minuten.
 :::
 
 ## Die Maßnahme folgt der Nutzung
@@ -81,7 +82,7 @@ Wenn Kundinnen und Kunden direkt mit einem automatischen System sprechen, wenn I
 :::
 :::
 
-Artikel 50 enthält Transparenzpflichten für bestimmte Konstellationen. Ob und wie sie einen konkreten Fall betreffen, klärt die Rechtsberatung.
+Artikel 50 enthält Transparenzpflichten für bestimmte Konstellationen; sie gelten seit dem 02.08.2026. Ob und wie sie einen konkreten Fall betreffen, klärt die Rechtsberatung.
 
 ::: {.notes}
 Diese Regel ausdrücklich als Designentscheidung des Lehrfalls kennzeichnen, nicht als belegten Standard. Was im eigenen Betrieb gilt, kann strenger sein, etwa durch Betriebsvereinbarung oder Kundenzusage; dann gilt das Strengere. Die dritte Zeile bleibt offen und wandert als offener Punkt in die Notiz, statt im Raum entschieden zu werden. Zeit: 3 Minuten.
@@ -114,25 +115,28 @@ Kurz halten, keine Diskussion über Haftungsdetails eröffnen. Der Satz, der hä
 Drei Merkmale: konkrete Einschätzung statt „gering“ · eine Zuständigkeit je Zeile · und wo keine benannt ist, steht das da.
 
 ::: {.notes}
-Die Einschätzungsspalte ist auf der Folie weggelassen, weil sie ausformuliert im Buch und im Sollbeispiel steht; hier zählt die Struktur. Die letzte Zeile nie leer lassen: Mindestens drei Risiken bleiben immer, nämlich unbelegte Angaben trotz Grenzen, veraltetes Material und Umgehung der Regel. Zu jedem gehört ein Umgang, nicht die Behauptung, es bleibe nichts. Zeit: 3 Minuten.
+Die Einschätzungsspalte ist auf der Folie weggelassen, weil sie ausformuliert im Buch und im Sollbeispiel steht; hier zählt die Struktur. Die letzte Zeile nie leer lassen: Mindestens drei Risiken bleiben immer, nämlich unbelegte Angaben trotz Check, veralteter Context und Umgehung der Regel. Zu jedem gehört ein Umgang, nicht die Behauptung, es bleibe nichts. Zeit: 3 Minuten.
 :::
 
 ## Mitmachen: die Tabelle mit Fragen belasten
 
 ```text
-Du unterstützt die Geschäftsführung bei der Vorbereitung einer Klärung.
-Du gibst keine Rechtsauskunft.
-
-AUFGABE   Formuliere zu jeder Zeile der Risiko-Tabelle genau zwei Fragen
-          an die zuständige Stelle. Markiere Zeilen ohne benannte Stelle.
-GRENZEN   Nur Fragen, keine Antworten. Keine Aussage darüber, was
-          rechtlich zulässig ist. Keine erfundenen Artikel oder Fristen.
+TASK     Formuliere zu jeder Zeile der Risiko-Tabelle genau zwei Fragen
+         an die zuständige Stelle. Markiere Zeilen ohne benannte Stelle.
+CONTEXT  Rolle: Du unterstützt die Geschäftsführung bei der Vorbereitung
+         einer Klärung. Du gibst keine Rechtsauskunft.
+         Dazu die Risiko-Tabelle im Wortlaut.
+FORMAT   Tabelle: Zeile | Frage 1 | Frage 2. Darunter eine Liste
+         "Ohne benannte Stelle".
+CHECK    Nur Fragen, keine Antworten. Keine Aussage darüber, was
+         rechtlich zulässig ist. Keine erfundenen Artikel oder Fristen.
+         Unklares oder Widersprüchliches zu einer der zwei Fragen machen.
 ```
 
-Beim Lesen zuerst prüfen: Steht trotz der Grenzen eine Rechtsaussage darin? Dann streichen.
+Beim Lesen zuerst prüfen: Steht trotz des CHECK-Teils eine Rechtsaussage darin? Dann streichen.
 
 ::: {.sources}
-Vollständiger Auftrag: Buchkapitel 5.3, Schritt 5 · material/m05/prompt-klaerungsfragen.txt
+Vollständiger Auftrag: Buchkapitel 5.4, Schritt 5 · material/m05/prompt-klaerungsfragen.txt
 :::
 
 ::: {.notes}
@@ -141,9 +145,9 @@ Arbeitsphase, 8 Minuten: eigene oder die Morgenrot-Tabelle einsetzen, Auftrag au
 
 ## Portfolio-Teil 3 abschließen
 
-- Aktennotiz **KI-Kompetenz und Transparenz**: Tabelle „wer nutzt was wofür“, begründete Transparenzregel, offene Punkte mit Zuständigkeit
-- **Risiko-Tabelle** vollständig: alle fünf Zeilen mit konkreter Einschätzung und Zuständigkeit
+- **Risiko-Tabelle** vollständig: alle fünf Zeilen mit konkreter Einschätzung und Zuständigkeit. Das ist die eine eigene Arbeit dieses Moduls
 - Vorbereitete **Klärungsfragen** für den Termin mit der zuständigen Stelle
+- Freiwillig: die Aktennotiz **KI-Kompetenz und Transparenz** ausschreiben (Tabelle „wer nutzt was wofür“, begründete Transparenzregel, offene Punkte)
 
 Risiko-Orientierung, keine Konformitätsgarantie.
 
@@ -152,12 +156,14 @@ material/m05/ki-kompetenz-notiz.md · material/m05/risikotabelle-morgenrot.md
 :::
 
 ::: {.notes}
-Selbstlernaufgabe bis 08.10.: eigener Bereich, Rollen statt Namen, alle fünf Zeilen. Wo keine Zuständigkeit benannt ist, steht „nicht benannt“ und der nächste Schritt. Damit ist Portfolio-Teil 3 vollständig; die Freitexte werden nicht automatisch fachlich bewertet, sondern im Beratungstermin besprochen. Überleitung zu Modul 6: Aus der Orientierung wird jetzt Alltag. Zeit: 2 Minuten.
+Selbstlernaufgabe bis 08.10.: eigener Bereich, Rollen statt Namen, alle fünf Zeilen. Die Zulieferung steht bereits: zwei Datennotizen aus 5.1, die Quellenliste aus 5.2, die Beobachtung aus 5.3 für die letzte Zeile. Wo keine Zuständigkeit benannt ist, steht „nicht benannt“ und der nächste Schritt. Damit ist Portfolio-Teil 3 vollständig; die Freitexte werden nicht automatisch fachlich bewertet, sondern im Beratungstermin besprochen. Überleitung zu Modul 6: Aus der Orientierung wird jetzt Alltag. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 5.3, Working with GenAI: verantwortung/ki-kompetenz
+- Buchkapitel 5.4, Working with GenAI: verantwortung/ki-kompetenz
 - Material: material/m05/ki-kompetenz-notiz.md, risikotabelle-morgenrot.md, prompt-klaerungsfragen.txt
-- Europäische Kommission, AI literacy: questions and answers: digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers (Abruf 07.09.2026)
+- Europäische Kommission, AI literacy: questions and answers: digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers (Abruf 08.09.2026)
+- Europäische Kommission, AI Omnibus enters into force: digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force (Abruf 08.09.2026)
+- Europäische Kommission, Code of Practice on Transparency of AI-generated Content: digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content (Abruf 08.09.2026)
 - Kein Ersatz für Rechtsberatung, Datenschutzfolgenabschätzung oder interne Freigabe

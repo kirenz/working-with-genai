@@ -1,6 +1,6 @@
 ---
-title: "Aussagen gegen Quellen prüfen"
-subtitle: "Modul 4 · Lektion 4.1"
+title: "Aussagen, Zahlen und Quellen prüfen"
+subtitle: "Modul 4 · Lektion 4.2"
 book-source: "../../qualitaet/aussagen-pruefen.qmd"
 ---
 
@@ -13,7 +13,7 @@ Petra Lindqvist hat eine Notiz mit den Abo-Kennzahlen des zweiten Quartals gesch
 Zehn Sätze. Sie lesen sich, als hätte sie jemand geschrieben, der die Zahlen versteht.
 
 ::: {.notes}
-Einstieg mit der Situation, etwa zwei Minuten. Die Blickrichtung dieser Lektion benennen: Bisher wurden Ergebnisse geprüft, die selbst in Auftrag gegeben wurden, mit selbst ausgewähltem Material. Jetzt liegt ein Text schon vor. Frage an den Raum, noch ohne Auflösung: Was passiert, wenn diese Zusammenfassung ungeprüft in die Besprechung geht? Erwartete Antworten: falsche Zahlen. Ergänzen, dass die interessanteren Fehler keine falschen Zahlen sind. Notiz und Zusammenfassung sind synthetisch und liegen als Download bei.
+Einstieg mit der Situation, etwa zwei Minuten. Die Blickrichtung dieser Lektion benennen: Bisher wurden Ergebnisse geprüft, die selbst in Auftrag gegeben wurden, mit selbst ausgewähltem Context. Jetzt liegt ein Text schon vor. Frage an den Raum, noch ohne Auflösung: Was passiert, wenn diese Zusammenfassung ungeprüft in die Besprechung geht? Erwartete Antworten: falsche Zahlen. Ergänzen, dass die interessanteren Fehler keine falschen Zahlen sind. Notiz und Zusammenfassung sind synthetisch und liegen als Download bei.
 :::
 
 ## Die Quelle: Kennzahlen und Hinweise {.small}
@@ -126,31 +126,63 @@ Auflösung etwa fünf Minuten. Ergebnisse einsammeln, bevor die Folie aufgelegt 
 
 ## Der zweite Leser
 
-Nach der eigenen Prüfung dasselbe vom Chatmodell prüfen lassen. **Format:** Tabelle, keine Neuformulierung. **Grenzen:** nur gegen die Quelle, nichts nachrechnen, keine Empfehlung.
+Nach der eigenen Prüfung dasselbe vom Chatmodell prüfen lassen. **Format:** Tabelle, keine Neuformulierung. **Check:** nur gegen die Quelle, nichts nachrechnen, keine Empfehlung; bei Unsicherheit die strengere Markierung mit Begründung.
 
 Dann beide Protokolle nebeneinander. Bei jeder Abweichung entscheidet die Quelle.
 
-Vollständiger Auftrag: Buchkapitel 4.1, `material/m04/prompt-4-1-zweitleser.txt`
+Vollständiger Auftrag: Buchkapitel 4.2, `material/m04/prompt-4-1-zweitleser.txt`
 
 ::: {.notes}
 Live-Demo, etwa fünf Minuten: Auftrag aus der Datei in einen neuen Chat kopieren, Tabelle zeigen, eine Zeile mit dem eigenen Protokoll vergleichen. Ohne Konto: das konstruierte Protokoll aus dem Buch auflegen. Wichtig: Das Modellprotokoll ist selbst ein Ergebnis. Es kann einen ungedeckten Satz durchwinken oder einen belegten anzweifeln. Deshalb steht dieser Schritt nach der eigenen Prüfung, nicht statt ihrer. Wenn das Modell milder markiert als der Raum, ist das ein Befund, keine Entwarnung.
 :::
 
-## Eigene Variante und Portfolio
+## Zahlen bekommen einen eigenen Durchgang {.small}
+
+Vier weitere Sätze zur selben Notiz. Jede Zahl kommt in der Quelle vor.
+
+```text
+R1  Die Kündigungsquote lag im Quartal bei 14 %.
+R2  Netto sind 38 Abos hinzugekommen.
+R3  Der Kundenservice bearbeitete 137 Rückfragen pro Monat.
+R4  52 der 137 Rückfragen, also 38 %, betrafen den Sortenwechsel.
+```
+
+Drei Schritte in dieser Reihenfolge: **Rechenweg** · **Einheit** · **Bezugsgröße**.
+
+::: {.notes}
+Vier Minuten, gut als kurze Arbeitsphase mit Taschenrechner. Erst rechnen lassen: 58 von 412 sind 14,1 Prozent; 96 minus 58 sind 38; 52 von 137 sind 38,0 Prozent. Alle vier bestehen den Rechenweg. Das ist der Punkt: Ein Satzvergleich und eine Rechenprobe finden hier beide nichts. Zahlen sind erfunden, Bezugsquelle ist die Notiz aus dieser Lektion. Material: material/m04/rechenwege-konstruiert.txt.
+:::
+
+## Auflösung: Einheit und Bezugsgröße {.small}
+
+| Satz | Befund | Reparatur |
+|---|---|---|
+| R1 | **Bezugsgröße:** 412 ist der Bestand am Quartalsende, nach den Kündigungen; ein Anfangsbestand steht nicht in der Notiz | ungedeckt — „58 Kündigungen bei 412 aktiven Abos am 30.06.2026 (Z1, Z3); eine Quote lässt sich daraus nicht bilden“ |
+| R2 | Ableitung ohne Kennzeichnung | ungenau — „Aus Z2 und Z3 abgeleitet: 96 minus 58 ergibt 38“ |
+| R3 | **Einheit:** Z5 nennt 137 im **Quartal** | ungedeckt — Faktor drei |
+| R4 | Ableitung ohne Kennzeichnung, Bezugsgröße stimmt | ungenau — „…, eigene Berechnung“ |
+
+Eine Ableitung bekommt einen **Zusatz**, keine Fundstelle.
+
+::: {.notes}
+Fünf Minuten Auflösung. R1 und R3 sind die beiden Befunde, die ein reiner Satzvergleich nicht findet, weil beide Zahlen in der Quelle vorkommen. R1 ist der schwierigere: Die Rechnung ergibt eine Zahl, aber keine Kündigungsquote. Wenn jemand 412 minus 96 plus 58 vorschlägt, das ernst nehmen und einordnen: Das wäre ein rechnerisch möglicher Anfangsbestand und setzt voraus, dass es keine anderen Bestandsveränderungen gab; die Notiz sagt dazu nichts, also ist es eine Annahme und gehört hingeschrieben. R2 und R4 zeigen, dass Ableitungen erlaubt sind, wenn sie als eigene Rechnung erkennbar bleiben. Und der Grund, warum der Prüfauftrag „Rechne nichts nach“ enthält: Ein Protokoll, das gleichzeitig rechnet, vermischt zwei Prüfungen und macht die eine unsichtbar.
+:::
+
+## Freiwillige Vertiefung
 
 1. Kurze Übungsquelle erfinden: nummerierte Angaben plus Hinweise, darunter einer, der etwas ausdrücklich offenlässt.
 2. Daraus eine Zusammenfassung erzeugen lassen, Sätze nummerieren.
-3. Protokoll selbst füllen, dann vom Modell prüfen lassen, vergleichen.
-4. Auszählen, an welchen Stellen der Merkliste die Befunde standen.
+3. Protokoll selbst füllen; enthält der Text Zahlen: Rechenweg, Einheit, Bezugsgröße gesondert prüfen.
+4. Vom Modell prüfen lassen, vergleichen, Befunde auszählen.
 
-Protokoll, reparierte Fassung und eigene Merkliste gehören in **Portfolio-Teil 3**, Prüfkriterien.
+Pflicht ist es nicht: Die eigene Arbeit in Modul 4 ist die Testfallreihe.
 
 ::: {.notes}
-Selbstlernphase, nicht Präsenz. Datenregel wiederholen: erfundene Angaben, keine echten Kennzahlen und keine internen Unterlagen. Der Punkt, der am häufigsten fehlt: Die eigene Übungsquelle braucht mindestens eine Stelle, die etwas offenlässt. Ohne sie kann keine der interessanten Markierungen entstehen und die Übung prüft nur Zahlen. Die ausgezählte Merkliste ist das eigentliche Portfolio-Ergebnis: Sie legt die Reihenfolge fest, in der beim nächsten Ergebnis geprüft wird.
+Selbstlernphase, ausdrücklich freiwillig; das im Termin so ansagen. Datenregel wiederholen: erfundene Angaben, keine echten Kennzahlen und keine internen Unterlagen. Der Punkt, der am häufigsten fehlt: Die eigene Übungsquelle braucht mindestens eine Stelle, die etwas offenlässt. Ohne sie kann keine der interessanten Markierungen entstehen und die Übung prüft nur Zahlen. Wer das macht, ergänzt Protokoll und reparierte Fassung in Portfolio-Teil 3 unter Prüfkriterien.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 4.1, Working with GenAI: qualitaet/aussagen-pruefen
-- Material: material/m04/abo-kennzahlen-q2-2026.txt, zusammenfassung-konstruiert.txt, pruefprotokoll-vorlage.md, prompt-4-1-zweitleser.txt
+- Buchkapitel 4.2, Working with GenAI: qualitaet/aussagen-pruefen
+- Material: material/m04/abo-kennzahlen-q2-2026.txt, zusammenfassung-konstruiert.txt, rechenwege-konstruiert.txt, pruefprotokoll-vorlage.md, prompt-4-1-zweitleser.txt
 - Notiz, Zahlen und Zusammenfassung sind synthetische Erweiterungen des Lehrfalls Rösterei Morgenrot; die Zusammenfassung ist konstruiert und kein aufgezeichneter Modelloutput

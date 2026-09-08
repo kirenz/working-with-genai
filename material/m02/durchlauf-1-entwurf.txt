@@ -1,5 +1,5 @@
 DURCHLAUF 1: EIN ENTWURF MIT MÄNGELN (KONSTRUIERT)
-Kursmaterial "Working with GenAI", Modul 2, Lektion 2.3
+Kursmaterial "Working with GenAI", Modul 2, Lektion 2.4
 
 HINWEIS: Dieser Entwurf ist konstruiert, kein aufgezeichneter Modelloutput.
 Er zeigt, wie eine Antwort auf Kundenanfrage 2 aussehen kann, wenn der
@@ -35,9 +35,9 @@ WAS AN DIESEM ENTWURF ZU FINDEN IST (erst nach eigener Prüfung lesen)
 
 Belegbarkeit:
 - "kontrolliert biologischer Anbau, noch nicht zertifiziert, wir arbeiten
-  daran": vollständig erfunden. Das Material sagt, dass keine freigegebene
-  Angabe vorliegt.
-- "Wasserverfahren", "ideal für den Abend": nicht im Material.
+  daran": vollständig erfunden. Die Fachinformationen sagen, dass keine
+  freigegebene Angabe vorliegt.
+- "Wasserverfahren", "ideal für den Abend": stehen dort nicht.
 
 Bedingung und Handlung:
 - Das Aussetzen wird unbedingt zugesagt. Die Regel (fünf Werktage vor dem

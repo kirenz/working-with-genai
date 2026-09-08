@@ -1,0 +1,136 @@
+# Prompting: Task, Context, Format und Check
+
+Die Nachricht, die wir an ein Chatmodell schicken, heißt Prompt. Ein Zuruf wie „Fass das mal zusammen“ ist einer, ein sorgfältig aufgebauter Arbeitsauftrag auch. Der Unterschied liegt nicht in der Länge, sondern darin, ob wir dem Modell alles mitgeben, was es für ein brauchbares Ergebnis braucht, und ob wir hinterher wissen, woran wir das Ergebnis messen. In diesem Kurs bauen wir Arbeitsaufträge aus vier Teilen: Task, Context, Format und Check. Diese Lektion erklärt, was jeder Teil beiträgt, an kurzen Beispielen aus verschiedenen Arbeitsbereichen.
+
+## Woher die vier Teile kommen
+
+Die Vierteilung ist eine Designentscheidung dieses Kurses, eine Merkhilfe, kein Standard und kein Ergebnis einer Untersuchung. Sie bündelt, was die Anbieter selbst empfehlen. Die Hilfeseite von OpenAI zum Prompten von ChatGPT nennt vier Punkte: klar formulieren, spezifisch werden, genug Kontext mitgeben und den Prompt iterativ verbessern ([OpenAI, How do I prompt ChatGPT effectively?](https://help.openai.com/en/articles/10032626-how-do-i-prompt-chatgpt-effectively)). Anthropic setzt in seiner Übersicht zum Prompt Engineering einen Schritt davor, nämlich Erfolgskriterien festzulegen, bevor am Prompt gearbeitet wird, und beschreibt Beispiele als eines der verlässlichsten Mittel, Form und Ton eines Ergebnisses zu steuern ([Anthropic, Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview); [Anthropic, Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)). Google empfiehlt für Gemini in Workspace die vier Elemente Persona, Task, Context und Format ([Google, Gemini for Google Workspace Prompting Guide 101, PDF](https://services.google.com/fh/files/misc/workspace_with_gemini_prompting_guide.pdf)).
+
+Unsere vier Teile weichen an zwei Stellen ab. Die Rolle, die Google als Persona führt, gehört bei uns in den Context, weil sie die Perspektive und den Arbeitszusammenhang beschreibt. Und wir ergänzen den Check, weil dieser Kurs vom Unterschied zwischen plausibel und belegt handelt und deshalb im Auftrag stehen muss, was mit Lücken geschieht. Wer in einem anderen Rahmen mit drei oder fünf Teilen arbeitet, arbeitet nicht falsch.
+
+## Task: Was soll entstehen?
+
+Der Task benennt das gewünschte Ergebnis und seinen Zweck. Was im Auftrag offenbleibt, kann zu einer anderen Auslegung führen.
+
+Ein Beispiel aus einer Beratung. Nach einer Besprechung liegen zwei Seiten Notizen vor. Der Zuruf lautet: „Fasse die Notizen zusammen.“ Der Task lautet:
+
+```text
+TASK
+Erstelle aus den Besprechungsnotizen unten drei Listen: getroffene Entscheidungen, offene Punkte mit der Person, die sie klärt, und vereinbarte Termine.
+```
+
+Der Unterschied: Eine Zusammenfassung kann alles Mögliche sein, kurz oder lang, chronologisch oder thematisch. Drei Listen mit festen Inhalten sind ein Ergebnis, das wir gegen die Notizen prüfen können: Fehlt eine Entscheidung? Steht ein Termin in der Liste, der in den Notizen nicht vorkommt? Ein guter Task nennt die Textsorte oder Struktur des Ergebnisses und den Zweck, dem es dient. Mehrere zusammengehörige Handlungen sind möglich; für den Einstieg erleichtert ein einzelnes, klar abgegrenztes Ergebnis die Prüfung.
+
+## Context: Woraus wird gearbeitet, und in welcher Lage?
+
+Der Context enthält alles, was das Modell für die Aufgabe braucht und was ihm sonst fehlt: das Material, aus dem geantwortet werden soll, unsere Rolle und Lage, und die Bedeutung von Begriffen, die im Haus anders verwendet werden als allgemein. Aus der Lektion zur Arbeitsweise wissen wir, warum: Trainingswissen ist allgemein und kein Beleg; was im Chat steht, kann das Modell verwenden und wir können es nachschlagen.
+
+Ein erfundenes Beispiel aus dem Einkauf. Zwei Preislisten eines Lieferanten sollen verglichen werden, eine vom Mai, eine vom September. Für den tatsächlichen Vergleich müssen beide Listen bereitstehen, als Material oder über einen erlaubten Abruf. Der folgende Ausschnitt zeigt nur den Teil Context:
+
+```text
+CONTEXT
+Du unterstützt den Einkauf einer kleinen Rösterei. Unten stehen zwei Preislisten desselben Lieferanten für Rohkaffee, beide vollständig, Preise in EUR je Kilogramm netto. Die Liste vom September ersetzt die vom Mai.
+
+Preisliste Mai:
+Rohkaffee A: 8,00 EUR/kg
+Rohkaffee B: 9,50 EUR/kg
+
+Preisliste September:
+Rohkaffee A: 8,40 EUR/kg
+Rohkaffee B: 9,50 EUR/kg
+```
+
+Drei Dinge stehen hier, die dem Modell sonst fehlen: die Rolle (Einkauf), die Eigenschaften des Materials (vollständig, netto, je Kilogramm) und die Beziehung der beiden Listen zueinander (die neue ersetzt die alte). Diese Angaben begrenzen den Spielraum für unbegründete Annahmen. Der Context ist oft der längste Teil des Auftrags, und das ist in Ordnung.
+
+::: {.callout-tip title="Die Übergabe an die Urlaubsvertretung"}
+Der Maßstab für einen guten Arbeitsauftrag ist die Übergabe an eine Urlaubsvertretung, die fachlich fit ist, aber unser Haus nicht kennt. Sie kann formulieren, strukturieren und vergleichen. Sie kennt aber unsere Konditionen nicht, weiß nicht, welche Preisliste gilt, und hat keinen Zugriff auf die Versandliste. Wir würden ihr sagen, was zu tun ist, ihr die geltenden Unterlagen samt unserer Lage hinlegen, die gewünschte Form nennen und dazusagen, was sie kenntlich machen soll, wenn eine Angabe fehlt. Diese vier Dinge sind Task, Context, Format und Check.
+:::
+
+## Format: Wie sieht das Ergebnis aus?
+
+Das Format legt Textsorte, Länge, Ton, Aufbau und Ausgabeform fest. Es macht Ergebnisse vergleichbar und prüfbar, und es entscheidet darüber, wie viel Arbeit die Prüfung kostet: Eine Tabelle mit festen Spalten kann den Abgleich erleichtern, wenn dieselben Angaben sonst über einen Fließtext verstreut wären.
+
+Ein Beispiel aus dem Marketing. Jonas Halder will Ideen für Themen im Kundennewsletter sammeln. Der Zuruf „Gib mir Ideen“ liefert eine Liste, deren Länge und Form dem Zufall überlassen bleibt. Mit Format:
+
+```text
+FORMAT
+Eine Tabelle mit drei Spalten: Idee in einem Satz | Für wen sie gedacht ist | Welche Angaben aus der Rösterei dafür nötig wären. Genau acht Zeilen. Keine Einleitung, kein Schluss, keine Bewertung der Ideen.
+```
+
+Die dritte Spalte fordert dazu auf, den Informationsbedarf jeder Idee zu benennen. Damit wird aus einer Ideensammlung eine Vorbereitung, die eine Person beurteilen kann. Ideen werden nach Ziel, Rahmenbedingungen, Brauchbarkeit und Vielfalt beurteilt. Aber wenn eine Idee eine Sachbehauptung enthält, etwa „unser Bio-Kaffee“, wird diese geprüft wie jede andere.
+
+## Check: Was soll das Modell kennzeichnen?
+
+Der Check legt fest, was das Modell tun soll, wenn eine Angabe fehlt, wenn sich Angaben widersprechen oder wenn eine Aussage nur unter einer Bedingung gilt. Er ist eine Anweisung in der Handlungsform: nicht nur, was unterbleiben soll, sondern was stattdessen zu tun ist. Ein präziser Check nennt die Stelle, an der das Kenntlichmachen erscheinen soll, etwa eine Liste „Offen“ am Ende oder eine feste Spalte.
+
+Ein Beispiel aus der Projektleitung. Drei Angebote für eine neue Röstmaschine sollen entlang derselben Kriterien nebeneinandergestellt werden, damit Aylin entscheiden kann. Der Check:
+
+```text
+CHECK
+- Wenn ein Angebot zu einem Kriterium keine Angabe macht, trage "keine Angabe" ein. Schätze nichts und ergänze nichts aus allgemeinem Wissen.
+- Wenn ein einzelnes Angebot widersprüchliche Angaben zur selben Leistung enthält, kennzeichne die Zeile mit "prüfen". Unterschiedliche Lieferzeiten verschiedener Anbieter sind zunächst Unterschiede, keine Widersprüche.
+- Gib keine Empfehlung ab. Die Entscheidung trifft eine Person.
+```
+
+Der Check regelt drei Lagen: die Lücke, den Widerspruch und die Grenze der Aufgabe. Was er nicht leistet: Er garantiert nicht, dass das Modell sich daran hält. Ein Check fordert einen bestimmten Umgang mit Lücken an; das Ergebnis muss trotzdem geprüft werden. Anthropic beschreibt in seiner Anleitung zum Verringern von Halluzinationen ähnliche Anweisungen, etwa dem Modell ausdrücklich zu erlauben, Unsicherheit zu benennen, und hält fest, dass solche Techniken Halluzinationen verringern, aber nicht ausschließen ([Anthropic, Reduce hallucinations](https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations)).
+
+::: {.callout-important title="Check im Prompt und menschliche Prüfung sind zwei Schritte"}
+Der Check ist eine Anweisung an das Modell. Die Prüfung ist unsere Tätigkeit danach: Wir lesen das Ergebnis gegen das Material und entscheiden, ob es verwendbar ist. Beide brauchen wir, keiner ersetzt den anderen. Auch mit Check muss das Ergebnis die Kriterien der Aufgabe erfüllen. Wenn trotz Check eine ungedeckte Angabe im Ergebnis steht, ist das ein Befund über den Durchlauf, keine Panne, und der Grund, warum die Prüfung bleibt.
+:::
+
+## Ein vollständiger Auftrag
+
+Die vier Teile gehen als eine Nachricht in den Chat. Das folgende Beispiel gehört zu Petras Kandidaten aus Modul 1, der Vorbereitung der Teambesprechung. Die Notizen sind erfunden und stehen vollständig im Auftrag; er läuft ohne weitere Vorbereitung und liegt als [Textdatei](../material/m02/prompt-besprechungsnotizen.txt) bei.
+
+```text
+TASK
+Erstelle aus den Besprechungsnotizen unten drei Listen: getroffene Entscheidungen, offene Punkte mit der Person, die sie klärt, und vereinbarte Termine.
+
+CONTEXT
+Du unterstützt die Verwaltung der Rösterei Morgenrot. Die folgenden Notizen bilden das vollständige Übungsmaterial; sie sind kein vollständiges Protokoll der Besprechung. Personen werden mit ihrer Funktion genannt.
+
+Notizen:
+- Abo-Hinweistext für die Startseite: Variante 3 gewählt (Geschäftsführung). Geht nach Freigabe des endgültigen Wortlauts online.
+- Sortenwechsel im Abo: Anfragen häufen sich; Kundenservice prüft bis Freitag, ob die Fünf-Werktage-Regel im Shop sichtbar genug ist.
+- Röstplan Oktober: Produktion legt ihn bis 20. September vor.
+- Frage nach Bio-Zertifizierung: keine Entscheidung; Geschäftsführung holt Informationen ein, Termin offen.
+- Nächste Teambesprechung: Montag in zwei Wochen, 9 Uhr.
+
+FORMAT
+Drei Überschriften: Entscheidungen, Offene Punkte, Termine. Darunter je eine Liste mit kurzen Sätzen. Bei offenen Punkten in Klammern die zuständige Funktion. Keine Einleitung, kein Schluss.
+
+CHECK
+- Verwende nur Angaben aus den Notizen. Ergänze keine Personen, Termine oder Ergebnisse.
+- Ist bei einem offenen Punkt keine zuständige Funktion genannt, schreibe "(Zuständigkeit offen)".
+- Ist ein Termin nur relativ angegeben ("in zwei Wochen"), übernimm ihn so und rechne kein Datum aus.
+```
+
+Ein konstruiertes Ergebnis, kein aufgezeichneter Modelloutput:
+
+> **Entscheidungen**
+> - Für den Abo-Hinweistext auf der Startseite wurde Variante 3 gewählt; nach Freigabe des endgültigen Wortlauts geht er online.
+>
+> **Offene Punkte**
+> - Prüfen, ob die Fünf-Werktage-Regel für den Sortenwechsel im Shop sichtbar genug ist (Kundenservice).
+> - Informationen zur Bio-Zertifizierung einholen (Geschäftsführung).
+>
+> **Termine**
+> - Prüfung der Sichtbarkeit der Regel: bis Freitag.
+> - Röstplan Oktober: bis 20. September.
+> - Nächste Teambesprechung: Montag in zwei Wochen, 9 Uhr.
+> - Termin für das Einholen der Informationen zur Bio-Zertifizierung: offen.
+
+Woran wir das prüfen: Jede Zeile findet ihren Ursprung in den Notizen. Keine Person ist dazugekommen, kein Datum wurde ausgerechnet, die Bio-Frage steht als offen mit Zuständigkeit und ohne Termin. Ob ein eigener Durchlauf so aussieht, zeigt die Prüfung; zwei Durchläufe können sich unterscheiden.
+
+## Wann ein Zuruf genügt
+
+Nicht jede Nachricht braucht vier Teile. Für eine kurze Umformulierung oder einen Überschriftenvorschlag kann eine knappe Nachricht genügen. Auch dabei wird geprüft, ob Bedeutung und Zweck erhalten bleiben. Die vier Teile lohnen sich, sobald das Ergebnis Angaben enthält, die stimmen müssen, eine bestimmte Form braucht oder Lücken haben kann, die jemand bemerken muss. Im Zweifel hilft die Frage: Würde ich das Ergebnis weitergeben, ohne es gegen etwas zu prüfen? Wenn nein, gehören Context und Check in den Auftrag.
+
+## Kontrollpunkt
+
+- Die vier Teile Task, Context, Format und Check benennen und für jeden in einem Satz sagen, was er beiträgt
+- Einen vagen Zuruf in einen Task umformulieren, der ein prüfbares Ergebnis benennt
+- Angeben, was in den Context gehört: Material, Rolle und Lage, Eigenschaften des Materials, hausinterne Begriffe
+- Ein Format wählen, das die Prüfung erleichtert, und begründen, warum
+- Eine Check-Zeile in der Handlungsform schreiben und erklären, warum sie die eigene Prüfung nicht ersetzt
+- Einschätzen, wann ein Zuruf genügt und wann die vier Teile nötig sind

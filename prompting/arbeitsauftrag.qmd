@@ -1,12 +1,10 @@
-# Vom Zuruf zum Arbeitsauftrag
+# Einen Arbeitsauftrag für eine Kundenanfrage formulieren
 
-Ein Zuruf wie „Beantworte mal diese Kundenanfrage" reicht aus, damit ein Chatmodell etwas produziert. Er reicht nicht aus, damit wir das Ergebnis verantworten können. In diesem Kapitel bauen wir aus vier Bausteinen einen Arbeitsauftrag, der genau den Unterschied macht.
+Ein Zuruf wie „Beantworte mal diese Kundenanfrage" reicht aus, damit ein Chatmodell etwas produziert. Er reicht nicht aus, damit wir das Ergebnis verantworten können. In dieser Lektion wenden wir die vier Teile aus der Prompting-Grundlage auf eine Kundenanfrage der Rösterei an, schicken den Auftrag ab und prüfen den Entwurf gegen das Material. Der Fall ist so gebaut, dass drei Fragen unterschiedlich liegen: eine belegt, eine bedingt, eine offen.
 
-## Der Lehrfall Rösterei Morgenrot
+## Der Anlass: drei Fragen in einer Mail
 
-Die Rösterei Morgenrot ist ein erfundenes Unternehmen: eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden, über einen eigenen Onlineshop und ein Kaffee-Abo, drei Sorten im Sortiment. Alle Angaben in diesem Kapitel sind für den Kurs konstruiert und beziehen sich auf keine reale Rösterei. Genau das ist beabsichtigt: Wir üben an einem Fall, bei dem wir jede Aussage nachschlagen können. Die gesamte Fallbasis steht als [Download](../material/roesterei-morgenrot.md) bereit.
-
-Dienstagmorgen, Vertrieb und Kundenservice. Im Postfach von Sina Bergmann liegt diese Mail:
+Rösterei Morgenrot, Dienstagmorgen, Vertrieb und Kundenservice. Im Postfach von Sina Bergmann liegt diese Mail ([Download](../material/kundenanfrage.txt)):
 
 > Betreff: Sortenwechsel im Abo und nächste Lieferung
 >
@@ -18,7 +16,7 @@ Dienstagmorgen, Vertrieb und Kundenservice. Im Postfach von Sina Bergmann liegt 
 >
 > M. Berger
 
-Daneben liegt der Auszug aus den Fachinformationen, den der Kundenservice für Auskünfte verwendet:
+Daneben liegt der Auszug aus den Fachinformationen, den der Kundenservice für Auskünfte verwendet ([Download](../material/lehrfall-fachinformationen.txt)):
 
 - Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
 - Diese Listenpreise gelten im Onlineshop. Zu Preisen innerhalb des Kaffee-Abos liegen keine Angaben vor.
@@ -31,89 +29,55 @@ Die Mail stellt drei Fragen, und sie liegen unterschiedlich:
 2. **Der Sortenwechsel** ist nur bedingt gedeckt. Der Grundsatz steht im Auszug, ob der Wechsel aber schon für die nächste Lieferung greift, hängt am Versanddatum. Das steht dort nicht.
 3. **Die Ankunft der Lieferung** ist gar nicht gedeckt. Zum Versanddatum und zum Sendungsstatus enthält der Auszug nichts.
 
-Diese Staffelung ist der eigentliche Gegenstand des Kapitels: eine belegte Auskunft, eine Auskunft unter einer Bedingung und eine Lücke. Alle drei müssen im Entwurf sichtbar unterschiedlich behandelt werden.
+Diese Staffelung ist der eigentliche Gegenstand der Lektion: eine belegte Auskunft, eine Auskunft unter einer Bedingung und eine Lücke. Alle drei müssen im Entwurf sichtbar unterschiedlich behandelt werden.
 
 ::: {.callout-important title="Eine Regel, die es nur in diesem Kurs gibt"}
-Sortiment und Preise stammen aus dem Fallmaterial derselben Rösterei aus dem Kurs Business Analytics. Die Fünf-Werktage-Regel für den Sortenwechsel ist dagegen für diesen GenAI-Kurs erfunden. Sie ist keine Aussage über eine Branchenpraxis, sondern eine Übungsbedingung: eine Regel, die erst mit einem zweiten Datum konkret wird. Und die Preise sind reguläre Shop-Listenpreise, keine Abo-Preise. Wer diesen Unterschied im Entwurf verwischt, hat eine Aussage geschrieben, die das Material nicht trägt.
+Sortiment und Preise stammen aus dem Fallmaterial derselben Rösterei aus dem Kurs Business Analytics. Die Fünf-Werktage-Regel für den Sortenwechsel ist dagegen für diesen Kurs erfunden. Sie ist keine Aussage über eine Branchenpraxis, sondern eine Übungsbedingung: eine Regel, die erst mit einem zweiten Datum konkret wird. Und die Preise sind reguläre Shop-Listenpreise, keine Abo-Preise. Wer diesen Unterschied im Entwurf verwischt, hat eine Aussage geschrieben, die das Material nicht trägt.
 :::
 
-Bevor wir etwas ausprobieren, lohnt eine Einschätzung: Was passiert vermutlich, wenn ein Chatmodell nur die Kundenmail und den Satz „Bitte beantworte diese Kundenanfrage" bekommt, ohne die Fachinformationen? Es besteht das Risiko, dass ein flüssiger und plausibel klingender Entwurf entsteht, in dem Angaben stehen, die durch nichts gedeckt sind: ein Abo-Preis, ein Liefertag, ein Wechsel ohne Bedingung. Ob das in einem einzelnen Durchlauf passiert, lässt sich nicht vorhersagen. Genau deshalb behandeln wir es als Risiko, das wir vor jeder Verwendung prüfen, und nicht als Ausnahme, die wir bemerken werden, wenn sie eintritt.
+Bevor wir etwas ausprobieren, lohnt eine Einschätzung: Was passiert vermutlich, wenn ein Chatmodell nur die Kundenmail und den Satz „Bitte beantworte diese Kundenanfrage" bekommt, ohne die Fachinformationen? Es besteht das Risiko, dass ein flüssiger und plausibel klingender Entwurf entsteht, in dem Angaben stehen, die durch nichts gedeckt sind: ein Abo-Preis, ein Liefertag, ein Wechsel ohne Bedingung. Ob das in einem einzelnen Durchlauf passiert, lässt sich nicht vorhersagen. Genau deshalb behandeln wir es als Risiko, das wir vor jeder Verwendung prüfen.
 
 ## Zielbild
 
-Am Ende dieses Kapitels haben wir einen Prompt, der ohne weitere Vorbereitung läuft, und klare Kriterien, mit denen wir einen Entwurf prüfen:
+Am Ende dieser Lektion haben wir einen Prompt, der ohne weitere Vorbereitung läuft, und klare Kriterien, mit denen wir einen Entwurf prüfen:
 
-- Jede inhaltliche Aussage lässt sich auf eine Zeile im mitgegebenen Material zurückführen.
+- Jede inhaltliche Aussage lässt sich auf eine Zeile im mitgegebenen Context zurückführen.
 - Die Bedingung bleibt an der Aussage hängen: Der Sortenwechsel wird nicht unbedingt zugesagt.
 - Die ungedeckten Punkte stehen sichtbar unter einer Überschrift „Offen" und nicht versteckt im Fließtext.
 - In dieser Kursübung wird nichts versendet. Wir prüfen den Entwurf und halten das Ergebnis in der Arbeitsmappe fest.
 
-Dorthin führen vier Bausteine, die zusammen in einen einzigen Prompt gehen:
+## Schritt für Schritt
 
-| Baustein | Beantwortet die Frage | Beispiel aus dem Lehrfall |
-|---|---|---|
-| **Aufgabe** | Was soll entstehen? | „Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage." |
-| **Material** | Woraus wird geantwortet? | Auszug aus den Fachinformationen plus der Wortlaut der Kundenmail |
-| **Format** | Wie sieht das Ergebnis aus? | Mail, höchstens 150 Wörter, sachlicher Ton, feste Absenderzeile, am Ende eine Liste „Offen" |
-| **Grenzen** | Was passiert bei einer Lücke? | Nicht ergänzen, sondern unter „Offen" auflisten |
+**Vorbereitung:** ein Browser und ein kostenloses Chatkonto, etwa bei [ChatGPT](https://chatgpt.com/). Wir arbeiten für jeden Vergleich in einem neuen Chat, damit die vorherigen Übungsnachrichten nicht mitwirken. Gespeicherte persönliche Einstellungen können weiterhin Einfluss haben.
 
-## Schritt für Schritt selbst bauen
+### Schritt 1: Die vier Teile für diesen Fall füllen
 
-**Vorbereitung:** ein Browser und ein kostenloses Chatkonto, etwa bei [ChatGPT](https://chatgpt.com/). Mehr ist nicht nötig. Wir arbeiten für jeden Vergleich in einem neuen Chat, damit die vorherigen Übungsnachrichten nicht mitwirken. Gespeicherte persönliche Einstellungen können weiterhin Einfluss haben.
+Die vier Teile kennen wir aus der Grundlage. Hier ist, was sie für Sinas Anfrage enthalten:
 
-### Schritt 1 — Die Aufgabe in einem Satz
+| Teil | Für diesen Fall |
+|---|---|
+| **Task** | „Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage." Das Stichwort „Kundenanfrage" allein ließe den Auftrag offen. |
+| **Context** | Die Rolle (Kundenservice der Rösterei), der Auszug aus den Fachinformationen und der Wortlaut der Kundenmail. Beides liefert Fakten: Der Auszug die Preise und die Abo-Regel, die Mail die Fragen und die genannten Sorten. Das allgemeine Wissen des Modells über Kaffeepreise und Abo-Bedingungen ist kein Beleg für die Konditionen dieser Rösterei. |
+| **Format** | Antwort-Mail, höchstens 150 Wörter, Anrede „Guten Tag", sachlicher Ton, Absenderzeile mit Name und Funktion, am Ende eine Liste „Offen". Die Liste gibt den Lücken einen festen Platz; ohne ihn müssten sie im Fließtext untergebracht werden, wo sie am wenigsten auffallen. |
+| **Check** | Drei Zeilen in der Handlungsform: ungedeckte Fragen nicht beantworten, sondern unter „Offen" eintragen; eine bedingte Zusage nur mit ihrer Bedingung wiedergeben und die fehlende Angabe nennen; nichts ergänzen, keine Termine, Preise oder Fristen erfinden. |
 
-Wir benennen das gewünschte Ergebnis konkret: „Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage." Das Stichwort „Kundenanfrage" allein lässt den Auftrag offen. Mehrere zusammengehörige Handlungen sind möglich; für den Einstieg erleichtert ein klar abgegrenztes Ergebnis die Prüfung.
+Der Check ist eine Anweisung, keine Garantie. Er macht wahrscheinlicher, dass eine Lücke sichtbar wird, und er sagt uns, wo wir zuerst hinsehen. Die Entscheidung, ob der Entwurf verwendbar ist, bleibt bei uns; dafür ist Schritt 3 da.
 
-::: {.callout-tip title="Die Übergabe an die Urlaubsvertretung"}
-Der Maßstab für einen guten Arbeitsauftrag ist die Übergabe an eine Urlaubsvertretung, die fachlich fit ist, aber unser Haus nicht kennt. Sie kann formulieren, sie kann strukturieren, sie kennt aber unsere Abo-Konditionen nicht und hat keinen Zugriff auf die Versandliste. Wir würden ihr sagen, was zu tun ist, ihr die geltenden Unterlagen hinlegen, die gewünschte Form nennen und dazusagen, was sie tun soll, wenn eine Angabe fehlt. Diese vier Dinge sind Aufgabe, Material, Format und Grenzen.
+::: {.callout-note title="Was in den Chat darf"}
+Der Lehrfall ist erfunden, deshalb dürfen alle Angaben unverändert kopiert werden. Für die eigene Variante gelten die Datenregeln aus Modul 1: vollständig erfundene Angaben, Zuständigkeiten als Rollen. Echte interne Unterlagen nur, wenn die Nutzung im jeweiligen Konto ausdrücklich freigegeben ist; eine echte Kundenmail mit Name und Kundennummer gehört in kein Übungskonto, auch nicht mit ersetztem Namen.
 :::
 
-### Schritt 2 — Das Material hineinkopieren
+### Schritt 2: Den Auftrag abschicken
 
-Wir kopieren die Angaben, aus denen geantwortet werden soll, vollständig in den Prompt: den Auszug aus den Fachinformationen **und** den Wortlaut der Kundenmail. Beides ist Material, denn beides liefert Fakten. Der Auszug liefert Preise und Abo-Regel, die Mail liefert die Fragen und die genannten Sorten.
-
-Das Modell bringt allgemeines Wissen mit. Dieses Wissen ist aber kein Beleg für die aktuellen Konditionen unseres Lehrfalls: Kaffeepreise und Abo-Bedingungen sind branchenweit verschieden. Für diese Aufgabe gelten ausschließlich die bereitgestellten Fachinformationen. Trotzdem kann der Entwurf unbelegte Angaben enthalten; deshalb gleichen wir jede Aussage mit dem Material ab.
-
-::: {.callout-important title="Was nicht ins Chatfenster gehört"}
-Der Lehrfall Rösterei Morgenrot ist erfunden, deshalb dürfen alle Angaben unverändert kopiert werden. Auch die eigene Variante bauen wir mit vollständig erfundenen Angaben; Zuständigkeiten beschreiben wir als Rollen. Echte interne Unterlagen dürfen nur verwendet werden, wenn die Nutzung im jeweiligen Konto ausdrücklich freigegeben ist. Allein Namen und Nummern zu ersetzen macht vertrauliche Informationen noch nicht geeignet für ein Chatkonto.
-:::
-
-### Schritt 3 — Das Format festlegen
-
-Das Format beschreibt die Form des Ergebnisses: Textsorte, Länge, Ton und Aufbau. Im Lehrfall lautet es: Antwort-Mail, höchstens 150 Wörter, Anrede „Guten Tag", sachlicher Ton, Absenderzeile mit Name und Funktion, am Ende eine Liste mit der Überschrift „Offen". Die Längenangabe ist dabei kein Selbstzweck. Sie zwingt zur Auswahl und macht den Entwurf vergleichbar, wenn wir ihn später noch einmal in veränderter Form abschicken.
-
-Der Aufbau am Ende ist der wichtigere Teil: Indem wir eine eigene Liste „Offen" verlangen, geben wir den Lücken einen festen Platz. Ohne diesen Platz müssten sie im Fließtext untergebracht werden, und dort fallen sie am wenigsten auf.
-
-### Schritt 4 — Die Grenzen setzen
-
-Die Grenzen regeln, was bei einer fehlenden Angabe passieren soll. Ein Modell kann Aussagen mit Material abgleichen, macht dabei aber ebenfalls Fehler. Wir legen deshalb ausdrücklich fest, welche Informationen als Grundlage gelten und wie offene Fragen dargestellt werden sollen.
-
-Wir formulieren deshalb ausdrücklich und in der Handlungsform, die wir wollen — nicht nur, was unterbleiben soll, sondern was stattdessen zu tun ist:
-
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
-- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie stattdessen unter „Offen" ein.
-- Erfinde keine Termine, Preise oder Fristen.
-
-::: {.callout-note title="Woher diese vier Teile kommen"}
-Die Vierteilung in Aufgabe, Material, Format und Grenzen ist eine Designentscheidung dieses Kurses. Sie ist eine Merkhilfe, kein Standard und kein Ergebnis einer Untersuchung.
-
-Belegt ist der schmalere Kern. Die Hilfeseite von OpenAI zum Prompten von ChatGPT nennt vier Empfehlungen: klar formulieren, spezifisch werden, genug Kontext mitgeben und den Prompt iterativ verbessern ([help.openai.com, „How do I prompt ChatGPT effectively?"](https://help.openai.com/en/articles/10032626-how-do-i-prompt-chatgpt-effectively)). Die Prompt-Engineering-Übersicht von Anthropic setzt einen Schritt davor: erst die Erfolgskriterien festlegen, dann den Prompt optimieren ([platform.claude.com, Prompt engineering overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)).
-
-Unsere vier Teile bündeln beides in eine Form, die sich am Schreibtisch abhaken lässt: **Material** ist die konkrete Antwort auf „genug Kontext", **Format** und **Grenzen** machen aus einem vagen Qualitätsanspruch zwei Kriterien, an denen wir das Ergebnis anschließend messen können.
-:::
-
-### Schritt 5 — Den Auftrag abschicken
-
-Die vier Bausteine gehen als eine Nachricht in den Chat. Der folgende Auftrag enthält den ganzen Lehrfall und ist ohne weitere Vorbereitung lauffähig. Er steht zusätzlich als [kopierbare Textdatei](../material/prompt-vorlage.txt) bereit.
+Die vier Teile gehen als eine Nachricht in den Chat. Der folgende Auftrag enthält den ganzen Lehrfall und ist ohne weitere Vorbereitung lauffähig. Er steht zusätzlich als [kopierbare Textdatei](../material/prompt-vorlage.txt) bereit.
 
 ```text
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot. Gültig sind ausschließlich die folgenden Angaben.
+
 Fachinformationen:
 - Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
 - Diese Listenpreise gelten im Onlineshop. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
@@ -132,30 +96,30 @@ Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlicher Ton.
 Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
 Am Ende eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
-- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie stattdessen unter "Offen" ein.
-- Erfinde keine Termine, Preise oder Fristen.
+CHECK
+- Beantworte Fragen, die der Context nicht abdeckt, nicht. Trage sie stattdessen unter "Offen" ein.
+- Gib eine Zusage, die im Context an eine Bedingung hängt, nur mit dieser Bedingung wieder. Fehlt die Angabe, an der die Bedingung hängt, nenne diese Angabe.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts und erfinde keine Termine, Preise oder Fristen.
 ```
 
-::: {.callout-tip title="Worauf wir beim Lesen achten"}
-Die Überschriften AUFGABE, MATERIAL, FORMAT und GRENZEN sind Teil der Wirkung, nicht Dekoration: Sie trennen die Anweisung an das Modell sichtbar von den Fakten, aus denen geantwortet wird. Beim Lesen des Ergebnisses interessiert uns zuerst eine einzige Stelle: Steht der Liefertermin unter „Offen" oder steht im Fließtext doch ein Tag? Danach prüfen wir, ob die Fünf-Werktage-Bedingung an der Wechselzusage hängt und ob die 9,00 EUR als Shop-Preis und nicht als Abo-Preis dastehen.
+::: {.callout-tip title="Worauf wir beim Lesen zuerst achten"}
+Die Überschriften TASK, CONTEXT, FORMAT und CHECK trennen die Anweisung an das Modell sichtbar von den Fakten, aus denen geantwortet wird. Beim Lesen des Ergebnisses interessiert uns zuerst eine einzige Stelle: Steht der Liefertermin unter „Offen" oder steht im Fließtext doch ein Tag? Danach prüfen wir, ob die Fünf-Werktage-Bedingung an der Wechselzusage hängt und ob die 9,00 EUR als Shop-Preis und nicht als Abo-Preis dastehen.
 :::
 
-### Schritt 6 — Das Ergebnis gegen das Material lesen
+### Schritt 3: Das Ergebnis gegen den Context lesen
 
-Wir gehen den Entwurf Aussage für Aussage durch und suchen zu jeder Aussage die Zeile im Material, aus der sie stammt. Wir prüfen unter anderem diese vier Punkte:
+Wir gehen den Entwurf Aussage für Aussage durch und suchen zu jeder Aussage die Zeile im Context, aus der sie stammt. Vier Punkte prüfen wir in jedem Fall:
 
 1. Steht der Sortenwechsel mit seiner Bedingung da, also fünf Werktage vor dem Versand, oder klingt er wie eine unbedingte Zusage für die nächste Lieferung?
 2. Ist der Preis korrekt wiedergegeben, also 9,00 EUR als regulärer Listenpreis im Onlineshop, und wird daraus kein Abo-Preis gemacht?
 3. Taucht die Frage nach der Lieferung bis Freitag unter „Offen" auf, oder steht im Text doch ein Termin?
-4. Sind auch zusätzliche Aussagen belegt? Das Material sagt beispielsweise nichts über Packungsgrößen, Versandkosten oder Kündigungsfristen.
+4. Sind auch zusätzliche Aussagen belegt? Der Context sagt beispielsweise nichts über Packungsgrößen, Versandkosten oder Kündigungsfristen.
 
-Kommt trotz der Grenzen ein Liefertermin vor, haken wir das nicht als Panne ab. Wir notieren es als Befund. Genau dafür ist der Prüfschritt da: Er zeigt, dass eine Grenze im Auftrag eine Anweisung ist und keine Garantie.
+Kommt trotz des Checks ein Liefertermin vor, haken wir das nicht als Panne ab. Wir notieren es als Befund. Genau dafür ist der Prüfschritt da: Er zeigt, dass eine Zeile im Check eine Anweisung ist und keine Garantie.
 
 ### Ein konstruiertes Ergebnis zum Abgleich
 
-Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput. Formulierungen und Reihenfolge können zwischen Durchläufen abweichen; identische Ergebnisse sind nicht zu erwarten und auch nicht das Ziel.
+Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput. Formulierungen und Reihenfolge können zwischen Durchläufen abweichen; identische Ergebnisse sind ebenfalls möglich.
 
 > Guten Tag, vielen Dank für Ihre Nachricht. Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung, wenn Ihre Anfrage spätestens fünf Werktage vor deren Versand eingeht; ob das für die kommende Lieferung zutrifft, lässt sich hier nicht beurteilen, weil uns das Versanddatum nicht vorliegt. Filterkaffee Mild kostet im Onlineshop regulär 9,00 EUR. Freundliche Grüße, Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot
 >
@@ -163,23 +127,27 @@ Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput. Formul
 
 Drei Merkmale, an denen sich das prüfen lässt:
 
-- **Belegbar:** Jede inhaltliche Aussage lässt sich auf eine Zeile im Material zurückführen, auch der Preis als Shop-Listenpreis.
+- **Belegbar:** Jede inhaltliche Aussage lässt sich auf eine Zeile im Context zurückführen, auch der Preis als Shop-Listenpreis.
 - **Bedingung und Lücke benannt:** Die Wechselzusage steht unter ihrer Bedingung, Versandtermin und Abo-Preis stehen unter „Offen" und nicht im Fließtext.
 - **Kein Versand:** Der Text ist ein Entwurf. Ergänzt wird er von der Person, die den Versandtermin im Bereich Lager und Versand klärt.
 
 Für einen tatsächlichen Einsatz müsste dieser Termin zunächst in einer zugelassenen Quelle geklärt werden. Auch danach darf nur zugesagt werden, was diese Quelle trägt. Die Kursübung endet beim geprüften Entwurf; sie stellt keine Anfrage und löst keinen Versand aus.
 
-### Eine eigene Variante prüfen
+### Freiwillige Vertiefung am eigenen Fall
 
-Wir wählen einen wiederkehrenden Schreibanlass und bauen dafür eine vollständig fiktive Beispielanfrage mit erfundenen Konditionen. So übertragen wir die Arbeitsweise, ohne interne Unterlagen in ein Chatkonto zu übernehmen.
+Die zusätzliche Variante ist freiwillig. Für die Arbeitsmappe genügt zunächst der bearbeitete Morgenrot-Fall; die passende Fassung wird als zusammenhängender Beitrag zu Portfolio-Teil 2 weitergeführt.
 
-1. Wir formulieren Aufgabe, Material, Format und Grenzen und führen den Auftrag in einem neuen Chat aus.
+Wir nehmen den Pilotfall aus dem Canvas und bauen dafür einen ersten vollständigen Auftrag. Das Material dazu ist vollständig erfunden: eine Beispielanfrage oder Beispieleingabe mit erfundenen Angaben, dazu die Unterlage, aus der gearbeitet wird. Damit der Auftrag etwas zu prüfen hat, lassen wir eine Angabe bewusst weg und knüpfen eine zweite an eine Bedingung.
+
+1. Wir formulieren Task, Context, Format und Check und führen den Auftrag in einem neuen Chat aus.
 2. Wir prüfen jede Aussage gegen unser Übungsmaterial und notieren Abweichungen.
 3. Wir führen denselben unveränderten Auftrag in einem weiteren neuen Chat aus. Auch ohne Promptänderung können sich Ergebnisse unterscheiden.
 4. Wir verändern eine Sache, etwa das Format, und führen diese Fassung ebenfalls in einem neuen Chat aus.
 5. Wir vergleichen die drei Ergebnisse mit denselben Kriterien: Belege, Bedingungen, offene Angaben und Format.
 
 Diese wenigen Durchläufe liefern Beobachtungen für den nächsten Versuch. Sie beweisen weder, dass die Promptänderung einen Unterschied verursacht hat, noch dass eine Fassung grundsätzlich besser ist. Wir begründen unsere nächste Auswahl deshalb vorläufig anhand der festgehaltenen Ergebnisse.
+
+Ist der Pilotfall kein Schreibanlass, sondern etwa das Strukturieren von Notizen oder der Vergleich zweier Tabellen, ändert sich am Vorgehen nichts. Der Task nennt dann die Struktur oder den Vergleich, der Context enthält das Material, und der Check regelt, was mit fehlenden oder widersprüchlichen Angaben geschieht. Das Beispiel mit den Besprechungsnotizen aus der Grundlage zeigt die Form.
 
 Auftragskarte, Übungsmaterial, vollständige Prompts und Ergebnisnotizen gehören in **Portfolio-Teil 2: Prompt-/Context-Pipeline**. Die [Portfolio-Vorlage](../material/portfolio-vorlage.md) führt durch die Dokumentation. In der interaktiven Auftragskarte wird zunächst nur die Materialherkunft ausgewählt; den eigentlichen Text ergänzen wir in der Arbeitsmappe. Freitexte werden dort nicht automatisch fachlich bewertet.
 
@@ -189,20 +157,20 @@ Die Beobachtung zeigt zunächst einen Fehler, nicht sicher dessen Ursache. Die n
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Ein konkreter Liefertag erscheint | Als unbelegt markieren. Prüfen, ob das Material ein Versanddatum enthält; andernfalls die Aussage entfernen und die Frage offenhalten. Eine präzisere Anweisung ersetzt diese Prüfung nicht. |
+| Ein konkreter Liefertag erscheint | Als unbelegt markieren. Prüfen, ob der Context ein Versanddatum enthält; andernfalls die Aussage entfernen und die Frage offenhalten. Eine präzisere Anweisung ersetzt diese Prüfung nicht. |
 | Der Wechsel wird ohne Bedingung für die nächste Lieferung zugesagt | Die Fünf-Werktage-Bedingung ergänzen. Ohne bekanntes Versanddatum keine Lieferung nennen, ab der der Wechsel greift. |
 | Die 9,00 EUR stehen als Abo-Preis im Text | Auf den regulären Listenpreis im Onlineshop zurückführen. Zum Abo-Preis liegt keine Angabe vor; er gehört unter „Offen". |
-| Der Entwurf überschreitet 150 Wörter | Die Grenze nachzählen und eine Kürzung verlangen, ohne Bedingungen oder offene Punkte zu verlieren. |
-| Zusätzliche Aussagen tauchen auf, etwa zu Packungsgröße oder Versandkosten | Jede zusätzliche Aussage mit dem Material abgleichen. Unbelegte Ergänzungen entfernen. |
+| Der Entwurf überschreitet 150 Wörter | Nachzählen und eine Kürzung verlangen, ohne Bedingungen oder offene Punkte zu verlieren. |
+| Zusätzliche Aussagen tauchen auf, etwa zu Packungsgröße oder Versandkosten | Jede zusätzliche Aussage mit dem Context abgleichen. Unbelegte Ergänzungen entfernen. |
 | Der Entwurf behauptet, der Versand sei bereits angefragt oder angepasst | Entfernen. Im Fall ist bisher nichts veranlasst; der Entwurf darf keine erfolgte Handlung behaupten. |
 | Das Modell fragt nach dem Versanddatum | Prüfen, ob die Rückfrage sachlich berechtigt ist. Für diese Übung die offenen Angaben auflisten lassen und die belegbaren Fragen beantworten. |
 | Der Text enthält eine unpassende Signatur | Die vorgegebene Absenderzeile ergänzen und das Ergebnis erneut prüfen. |
 
-## Kontrollpunkt für Modul 2
+## Kontrollpunkt
 
-- Einen Arbeitsauftrag aus Aufgabe, Material, Format und Grenzen zusammensetzen
+- Die vier Teile für einen konkreten Fall füllen und begründen, was in den Context gehört
 - Für die eigene Übung vollständig erfundene Angaben verwenden und betriebliche Freigaben von bloßer Namensersetzung unterscheiden
-- Eine Grenze so formulieren, dass eine fehlende Angabe ausgewiesen statt ergänzt wird
+- Eine Check-Zeile so formulieren, dass eine fehlende Angabe ausgewiesen statt ergänzt wird
 - Eine bedingte Auskunft als solche wiedergeben, statt sie zur unbedingten Zusage zu machen
-- Einen Entwurf Aussage für Aussage gegen das mitgegebene Material prüfen
+- Einen Entwurf Aussage für Aussage gegen den mitgegebenen Context prüfen
 - Unterschiede zwischen Durchläufen dokumentieren, ohne daraus vorschnell eine Ursache abzuleiten

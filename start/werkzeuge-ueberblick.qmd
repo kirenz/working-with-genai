@@ -1,0 +1,44 @@
+# ChatGPT, Claude und Gemini im Überblick
+
+ChatGPT von OpenAI, Claude von Anthropic und Gemini von Google unterstützen etwa das Erklären, Zusammenfassen, Vergleichen und Entwickeln von Ideen. Im Kurs beginnt die praktische Arbeit mit ChatGPT. Der Überblick zeigt weitere Zugänge und die Fragen, die bei einer betrieblichen Auswahl zählen.
+
+## Gemeinsamkeiten und Unterschiede
+
+Alle drei bieten eine Chatoberfläche. Darüber hinaus gibt es Funktionen für Dateien, Bilder, Recherche und wiederverwendbare Anweisungen. Der verfügbare Umfang hängt vom gewählten Zugang und seinen Einstellungen ab. Projekte in ChatGPT und Claude sowie Gems in Gemini unterstützen die Wiederverwendung auf unterschiedliche Weise. Aufbau und Funktionen sind nicht identisch ([OpenAI, Projects](https://help.openai.com/en/articles/10169521), [Anthropic, Projects](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects), [Google, Gems](https://support.google.com/gemini/answer/15235603)).
+
+| Werkzeug | Beispiele für die Arbeit | Zu beachten |
+|---|---|---|
+| **ChatGPT** | Textarbeit, Websuche, Bildgenerierung und Arbeit mit Dateien in einer Oberfläche. Gemeinsamer Einstieg im Kurs. | Funktionen und Nutzungslimits hängen vom Zugang ab ([OpenAI, ChatGPT](https://chatgpt.com/overview/)). |
+| **Claude** | Dokumente, Diagramme und interaktive Anwendungen lassen sich als „Artifacts“ neben dem Chat darstellen und weiterbearbeiten ([Anthropic, Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)). | Claude hat keine eingebaute generative Bildfunktion für Fotos wie ChatGPT oder Gemini. Bilder lassen sich auswerten; mit Code sind auch illustrative Grafiken möglich ([Anthropic, Bilder](https://support.claude.com/en/articles/9002504-can-claude-produce-images)). |
+| **Gemini** | Bilderstellung und, mit entsprechendem Zugang, Unterstützung in Google-Anwendungen wie Gmail oder Docs ([Google, Gemini](https://gemini.google/about/)). | Verbindungen zu Anwendungen und freigegebene Datenzugriffe hängen vom Konto und der Organisation ab. |
+
+Die Übersicht folgt den verlinkten Anbieterinformationen, Stand 8. September 2026. Sie ist kein Ranking. Für eine konkrete Aufgabe zählen die betriebliche Freigabe, der Zugang zu benötigten Unterlagen und die gewünschte Ergebnisform. Auch ein organisationsseitig vorgegebener Zugang wie Microsoft Copilot kann für die eigene Erprobung verwendet werden.
+
+Ein Auftrag lässt sich auf ein anderes Werkzeug übertragen. Das Ergebnis muss dort erneut beurteilt werden. Je nach Aufgabe geht es um korrekte Fakten oder Berechnungen, eine vollständige Zusammenfassung oder brauchbare, unterschiedliche Ideen.
+
+## Chat und Arbeitsagenten
+
+Auch eine Chatoberfläche kann Dateien und Werkzeuge nutzen. **Arbeitsagent** bezeichnet hier eine Arbeitsweise, bei der das System eine Aufgabe stärker selbstgesteuert in mehrere Schritte zerlegt und dafür zugelassene Werkzeuge einsetzt. Es kann beispielsweise Unterlagen lesen, Zwischenergebnisse prüfen und einen Bericht als Datei erstellen. Die Grenze verläuft nicht allein beim Zugriff auf einen Ordner.
+
+| Zugang | Arbeitsweise | Beispiel aus der Rösterei |
+|---|---|---|
+| **ChatGPT Work** | Recherche, Analyse sowie Erstellung von Dokumenten, Tabellen und Präsentationen in ChatGPT ([OpenAI, ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)). | Aus Unterlagen eine Entscheidungsvorlage zum Kaffee-Abo erstellen. |
+| **Claude Cowork** | Mehrschrittige Aufgaben mit bereitgestellten Dateien und verbundenen Anwendungen bearbeiten ([Anthropic, Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)). | Aus Besprechungsnotizen und Unterlagen eine Aufgabenübersicht erstellen. |
+| **Codex und Claude Code** | Dateien und Programmcode bearbeiten, Befehle ausführen und kleine Anwendungen entwickeln ([OpenAI, Codex](https://help.openai.com/en/collections/14937394-codex); [Anthropic, Claude Code](https://code.claude.com/docs/en/overview)). | Produkttexte prüfen und einen Prüfbericht als Datei ablegen. |
+
+Zugang und Funktionsumfang sind vom jeweiligen Angebot abhängig. Vor der Bearbeitung muss feststehen, welche Dateien und Anwendungen genutzt werden dürfen und welche Änderungen beauftragt sind. Bei der Prüfung zählen das fachliche Ergebnis und die tatsächlich ausgeführten Änderungen.
+
+Die kurze Demo im Auftakt zeigt eine solche Aufgabe. Die eigene Nutzung bleibt freiwillig. Die [Vertiefung zu Codex und Claude Code](../praxis/codex-claude-code.qmd) enthält dafür Material und einen Weg, den Prüfbericht im Chat zu erarbeiten.
+
+## Der Einstieg im Kurs
+
+Die Chatübungen sind für einen Browser und ein kostenloses Chatkonto ausgelegt. Drei Konten, ein Abonnement, ein Programmierschlüssel oder eine Installation sind dafür nicht nötig. Die Arbeitsagentendemo wird vorgeführt; ihre eigene Erprobung ist freiwillig. Die geführte n8n-Aufgabe nutzt eine Kursinstanz und hat einen vorbereiteten Ersatzweg.
+
+Bei einem Nutzungslimit werden Auftrag und bisheriges Ergebnis gespeichert. Die Bearbeitung geht am bereitgestellten Kursbeispiel weiter. Ein persönliches Abonnement ersetzt keine betriebliche Freigabe für echte Unterlagen.
+
+## Kontrollpunkt
+
+- Gemeinsamkeiten und aufgabenbezogene Unterschiede der drei Werkzeuge benennen
+- Erklären, wie ein Arbeitsagent mehrere Schritte mit zugelassenen Werkzeugen bearbeiten kann
+- Betriebliche Freigabe, benötigte Unterlagen und Ergebnisform bei der Auswahl berücksichtigen
+- Den vorbereiteten Ersatzweg bei fehlendem Zugang oder Nutzungslimit kennen

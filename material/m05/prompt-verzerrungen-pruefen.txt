@@ -1,0 +1,47 @@
+AUFTRAG: EINEN ENTWURF AUF EINSEITIGKEIT UND WERTUNGEN PRÜFEN
+Kursmaterial "Working with GenAI", Modul 5, Lektion 5.3
+
+HINWEIS: Der Auftrag sucht Kandidaten, er fällt kein Urteil. Ob eine
+genannte Stelle geändert wird, entscheidet die Person, die den Entwurf
+verantwortet, gegen die tatsächlich vorliegenden Eckdaten. Eine leere
+Fundstellenliste heißt: dieser Durchlauf hat nichts gefunden. Sie ist kein
+Nachweis, dass nichts da ist.
+
+--------------------------------------------------------------------------
+
+TASK
+Lies den Text unten und benenne Stellen, an denen er einseitig, wertend oder ausschließend wirkt. Nenne zu jeder Stelle einen konkreten Vorschlag für eine neutrale Formulierung.
+
+CONTEXT
+Der Text ist ein Entwurf, der noch nicht veröffentlicht ist. Du gibst keine rechtliche Einordnung ab und entscheidest nicht, ob eine Formulierung zulässig ist.
+
+Entwurf:
+[Text einfügen]
+
+Eckdaten, die tatsächlich vorliegen:
+[nur die Angaben einfügen, die dem Entwurf zugrunde liegen]
+
+FORMAT
+Tabelle mit vier Spalten: Fundstelle im Wortlaut, Art der Auffälligkeit (Wertung, Verallgemeinerung, Personenmerkmal, Auslassung, ungedeckte Angabe), Vorschlag, ein Satz Begründung.
+Darunter eine Liste "Nicht erwähnt" mit Gruppen, Sichtweisen oder Fällen, die im Entwurf fehlen könnten.
+
+CHECK
+- Führe jede Stelle mit ihrem Wortlaut auf, nicht als Zusammenfassung.
+- Trenne ungedeckte Angaben von Formulierungsfragen; ungedeckt ist, was in den Eckdaten nicht vorkommt.
+- Schreibe den Entwurf nicht neu und gib keine Gesamtbewertung ab.
+- Nenne keine Rechtsnormen und triff keine Aussage darüber, was zulässig ist.
+
+--------------------------------------------------------------------------
+DIE MENSCHLICHE PRÜFUNG DANACH
+--------------------------------------------------------------------------
+
+Der CHECK oben ist eine Anweisung an das Modell. Die Prüfung ist ein
+eigener Schritt und besteht aus vier Handgriffen:
+
+1. Gegenprobe: denselben Auftrag mit umgedrehter Blickrichtung stellen.
+   Was jetzt auftaucht und vorher fehlte, war eine Lücke.
+2. Zählen: Wie viele Sätze bekommt welche Seite? Wie viele der genannten
+   Stimmen sind zustimmend?
+3. Merkmale streichen: alle Personenmerkmale entfernen und lesen, ob die
+   Aussage noch trägt. Wenn nicht, war das Merkmal die Begründung.
+4. Nach dem Fehlenden fragen: Wer oder was kommt nicht vor?

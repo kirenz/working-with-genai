@@ -1,6 +1,6 @@
 # Testfallkarten: Kundenservice-Auftrag Rösterei Morgenrot
 
-Kursmaterial „Working with GenAI“, Lektion 4.2. Fünf feste Testfallkarten für den Arbeitsauftrag aus Modul 2 (`prompt-vorlage.txt`). Die Kundenmail im Abschnitt „Kundenanfrage“ des Auftrags wird je Testfall durch die Eingabe der Karte ersetzt; Aufgabe, Material, Format und Grenzen bleiben unverändert.
+Kursmaterial „Working with GenAI“, Lektion 4.3. Fünf feste Testfallkarten für den Arbeitsauftrag aus Modul 2 (`prompt-vorlage.txt`). Die Kundenmail im Abschnitt „Kundenanfrage“ des Auftrags wird je Testfall durch die Eingabe der Karte ersetzt; Task, Context, Format und Check bleiben unverändert.
 
 **Kennzeichnung:** synthetisch. Die fünf Falltypen sind eine Designentscheidung dieses Kurses. Alle Kundenmails sind erfunden.
 
@@ -10,7 +10,7 @@ Kursmaterial „Working with GenAI“, Lektion 4.2. Fünf feste Testfallkarten f
 
 ## T1 · Normalfall
 
-**Falltyp:** Die Frage ist vollständig durch das Material gedeckt.
+**Falltyp:** Die Frage ist vollständig durch den Context gedeckt.
 
 **Eingabe (Kundenmail):**
 
@@ -29,8 +29,8 @@ R. Winter
 
 - [ ] K1 Der Entwurf nennt 13,00 EUR.
 - [ ] K2 Der Preis ist als regulärer Listenpreis im Onlineshop bezeichnet, nicht als Abo-Preis oder Aktionspreis.
-- [ ] K3 Der Entwurf enthält keine Aussage, die nicht im Material steht (keine Packungsgröße, keine Versandkosten, kein Lieferdatum).
-- [ ] K4 Die Liste „Offen“ ist leer oder nennt nur Punkte, die die Kundin tatsächlich gefragt hat und die das Material nicht deckt.
+- [ ] K3 Der Entwurf enthält keine Aussage, die nicht im Context steht (keine Packungsgröße, keine Versandkosten, kein Lieferdatum).
+- [ ] K4 Die Liste „Offen“ ist leer oder nennt nur Punkte, die die Kundin tatsächlich gefragt hat und die der Context nicht deckt.
 
 **Nicht erfüllt, wenn** ein anderer Preis, ein Abo-Preis oder eine Angabe zu Packungsgröße oder Versand erscheint.
 
@@ -38,7 +38,7 @@ R. Winter
 
 ## T2 · Bedingung
 
-**Falltyp:** Die Antwort gilt nur unter einer Bedingung, die das Material nennt.
+**Falltyp:** Die Antwort gilt nur unter einer Bedingung, die der Context nennt.
 
 **Eingabe (Kundenmail):**
 
@@ -66,7 +66,7 @@ T. Osei
 
 ## T3 · Fehlende Angabe
 
-**Falltyp:** Das Material enthält zur Frage nichts.
+**Falltyp:** Der Context enthält zur Frage nichts.
 
 **Eingabe (Kundenmail):**
 
@@ -94,7 +94,7 @@ L. Brandt
 
 ## T4 · Widerspruch
 
-**Falltyp:** Die Eingabe behauptet etwas, das dem Material widerspricht.
+**Falltyp:** Die Eingabe behauptet etwas, das dem Context widerspricht.
 
 **Eingabe (Kundenmail):**
 
@@ -107,11 +107,11 @@ Viele Grüße
 A. Kaya
 ```
 
-**Erwartung:** Der Entwurf nennt den Preis aus dem Material (9,00 EUR) als regulären Listenpreis, entscheidet aber nicht, ob die Kundin recht hat, und sagt keine Erstattung zu. Der behauptete Preis und die Erstattungsfrage stehen unter „Offen“.
+**Erwartung:** Der Entwurf nennt den Preis aus dem Context (9,00 EUR) als regulären Listenpreis, entscheidet aber nicht, ob die Kundin recht hat, und sagt keine Erstattung zu. Der behauptete Preis und die Erstattungsfrage stehen unter „Offen“.
 
 **Erfüllt, wenn:**
 
-- [ ] K1 Der Entwurf nennt 9,00 EUR als regulären Listenpreis laut Material.
+- [ ] K1 Der Entwurf nennt 9,00 EUR als regulären Listenpreis laut Context.
 - [ ] K2 Der Entwurf behauptet nicht, dass es nie 8,50 EUR gab, und bestätigt es auch nicht.
 - [ ] K3 Keine Erstattung wird zugesagt oder abgelehnt.
 - [ ] K4 „Angabe der Kundin 8,50 EUR“ und „Erstattung“ stehen unter „Offen“ zur Klärung.
@@ -136,7 +136,7 @@ Viele Grüße
 M. Feldmann, Einkauf
 ```
 
-**Erwartung:** Der Entwurf erkennt, dass das Material nur Endkundinnen und Endkunden im Onlineshop und Abo abdeckt. Er macht keine Konditionen und verweist die Anfrage zur Klärung weiter; alle Fragen stehen unter „Offen“.
+**Erwartung:** Der Entwurf erkennt, dass der Context nur Endkundinnen und Endkunden im Onlineshop und Abo abdeckt. Er macht keine Konditionen und verweist die Anfrage zur Klärung weiter; alle Fragen stehen unter „Offen“.
 
 **Erfüllt, wenn:**
 

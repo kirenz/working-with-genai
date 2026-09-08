@@ -1,0 +1,63 @@
+# Chat, Projekt, Agent oder Workflow?
+
+Bis hierher lief alles im Chatfenster: Auftrag hineinschreiben, Material dazu, Ergebnis herauskopieren. Das ist eine von mehreren Arbeitsweisen, und für viele Aufgaben ist es die passende. Dieses Kapitel stellt vier Arbeitsweisen nebeneinander, wie dieser Kurs sie verwendet, und nennt die Fragen, an denen sich die Wahl entscheidet.
+
+Zwei Vorbemerkungen. Erstens ist das keine Leiter: Wer im Chat arbeitet, ist nicht auf einer Anfängerstufe, und wer einen Workflow baut, ist nicht weiter. Welche Arbeitsweise passt, hängt an der Aufgabe, nicht am Können. Zweitens sind die vier keine voneinander abgegrenzten Produktkategorien. Ein Chatfenster kann heute Dateien, Werkzeuge und Verbindungen zu anderen Systemen nutzen, und ein Projekt ist ein Chat mit hinterlegten Anweisungen. Die vier stehen hier für vier Nutzungsweisen, die im Kurs vorkommen, und unterscheiden sich vor allem darin, wo die Anweisungen liegen, wer den Ablauf steuert und wer wann hinsieht.
+
+## Die vier Arbeitsweisen
+
+**Chat.** Eine Aufgabe, ein Fenster. Die Anweisungen stehen in der Nachricht, das Material auch. Jedes Ergebnis entsteht, weil jemand es angefordert hat, und diese Person sieht es sofort. Der Chat ist die Arbeitsweise der Wahl, solange die Aufgabe wechselt: einmal eine Besprechungsnotiz strukturieren, einmal drei Optionen gegeneinanderstellen, einmal Formulierungen für eine schwierige Absage suchen.
+
+**Projekt.** Die Anweisungen und das Material werden einmal hinterlegt, die Aufgabe wird jedes Mal eingefügt. ChatGPT und Claude nennen das Projekt, Gemini nennt es Gem; das sind eigenständige Umsetzungen desselben Gedankens, keine identischen Funktionen, und was sie im Einzelnen können, unterscheidet sich. Das lohnt sich, sobald dieselbe Art von Aufgabe wiederkehrt und die Regeln dafür feststehen. Der Preis dafür: Die Regeln stehen nicht mehr in jeder Nachricht. Nachlesen lassen sie sich weiterhin im Anweisungsfeld, aber wer nur die Aufgabe einfügt, hat sie nicht vor Augen.
+
+**Arbeitsagent.** Ein Werkzeug, das in einem Ordner liest und schreibt, Befehle ausführt und dabei selbst entscheidet, welchen Schritt es als Nächstes tut. Codex und Claude Code sind zwei solche Werkzeuge. Der Unterschied zum Chat, wie dieser Kurs ihn nutzt, liegt nicht in der Klugheit, sondern im Zugriff: Das Material wird nicht hineinkopiert, sondern gelesen, und das Ergebnis wird nicht herauskopiert, sondern abgelegt. Damit wird die Freigabeeinstellung des Werkzeugs zur zweiten Sicherung neben der eigenen Prüfung. Nötig ist sie überall dort, wo ein Werkzeug auf Dateien oder verbundene Systeme zugreifen kann, also auch in einem Chat mit solchen Verbindungen.
+
+**Workflow.** Ein Ablauf, dessen Pfade vorher festgelegt sind. Ein Auslöser startet ihn, ein Schritt holt Daten, ein Schritt fragt ein Sprachmodell, ein Schritt legt das Ergebnis ab. Verzweigungen, Wiederholungen und Bedingungen sind dabei üblich, und einzelne Schritte können selbst ein Modell oder einen Agenten enthalten; festgelegt ist, welche Wege es überhaupt gibt. Der Ablauf in diesem Modul ist bewusst der einfachste Fall: drei Schritte, ein Modellaufruf, keine Verzweigung. n8n ist ein Werkzeug dieser Art.
+
+Anthropic beschreibt Workflows als Systeme, in denen Sprachmodelle und Werkzeuge über vorgegebene Pfade verbunden sind, und Agenten als Systeme, in denen das Modell seinen eigenen Ablauf und Werkzeugeinsatz selbst steuert ([Anthropic, Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents)). Der praktische Unterschied: Bei einem Workflow lässt sich vorher ansehen, welche Wege möglich sind. Das erleichtert die Prüfung, ersetzt sie aber nicht, denn was an Daten hineinfließt und was ein Modellschritt darin ausgibt, bleibt zu prüfen. Ein Agent legt seinen Weg erst beim Arbeiten fest und braucht dafür Grenzen, die nicht im Auftrag stehen, sondern im Werkzeug.
+
+## Die vier Fragen, an denen sich die Wahl entscheidet
+
+Die Übersicht steht auch als [Orientierungskarte](../material/m06/arbeitsweise-waehlen.md) zum Ausdrucken bereit.
+
+| Frage | Chat | Projekt | Arbeitsagent | Workflow |
+|---|---|---|---|---|
+| **Wechselt die Aufgabe?** | ja, ständig | nein, gleiche Art | wechselt, aber im selben Arbeitsbereich | nein, fester Ablauf |
+| **Wer steuert die Schritte?** | die Person, Nachricht für Nachricht | die Person, mit hinterlegten Regeln | das Werkzeug, innerhalb der Freigaben | der vorher gebaute Ablauf |
+| **Wer sieht das Ergebnis, und wann?** | sofort, weil angefordert | sofort, weil angefordert | nach dem Lauf, in einer Datei | nur, wenn jemand hinsieht |
+| **Was bekommt das Werkzeug zu greifen?** | was in der Nachricht steht | was hinterlegt ist | Dateien im Arbeitsbereich | was der Ablauf ihm reicht |
+
+Die Tabelle beschreibt die vier Nutzungsweisen dieses Kurses, nicht den Funktionsumfang der Produkte; ein Chatfenster mit Dateizugriff verschiebt sich in der letzten Zeile nach rechts. Die dritte Zeile ist die folgenreichste. In den hier beschriebenen Chats und Projekten beginnt die Bearbeitung mit einer Nachricht der Person. Beim Agenten und beim Workflow kann etwas entstehen, ohne dass in diesem Moment jemand hinsieht. Damit verschiebt sich nicht die Technik, sondern die Verantwortungslage, und dafür braucht es eine ausdrückliche Regelung: Wer prüft, woran erkennt diese Person einen Fehler, und was passiert, wenn niemand Zeit hat?
+
+## Ein kurzes Beispiel aus der Rösterei
+
+Drei Aufgaben, drei Antworten.
+
+Sina Bergmann bereitet die Tagesordnung für die Teamsitzung vor. Das ist jedes Mal anders, kommt selten vor und braucht kein festes Format. **Chat.**
+
+Ellen Ruppert beantwortet mehrmals pro Woche Statusanfragen. Die Regeln sind jedes Mal dieselben, das Material auch, nur die Anfrage wechselt. **Projekt**, weil sich das Wiederholen der Anweisungen lohnt und die Prüfung ohnehin bei Ellen bleibt.
+
+Jonas Halder prüft vor jeder Veröffentlichung drei Produkttexte gegen ein freigegebenes Briefing und legt das Ergebnis als Datei ab. Material und Ergebnis liegen als Dateien nebeneinander, der Bericht soll neben den Texten bleiben. **Arbeitsagent** wäre hier passend, ist aber freiwillig; im Chat geht dieselbe Aufgabe mit zwei zusätzlichen Handgriffen.
+
+Und der Workflow? Für die Rösterei ist er heute keine Antwort, sondern eine Frage: Er würde einen geschäftlichen Modellzugang mit passender Vereinbarung voraussetzen, den es nicht gibt. Genau das ist ein zulässiges Ergebnis dieser Abwägung. Die Voraussetzungen werden in der Entscheidungsvorlage festgehalten.
+
+::: {.callout-tip title="Nicht jede Aufgabe braucht ein Sprachmodell"}
+Bevor eine der vier Arbeitsweisen gewählt wird, lohnt eine fünfte Möglichkeit: keine. Eine exakt regelgebundene Aufgabe ist mit einer Textvorlage, einer Tabellenformel oder einer gewöhnlichen Automatisierung oft besser bedient, weil dieselbe Eingabe dann dasselbe Ergebnis liefert und die Prüfung sich auf die Regel und die Eingabedaten richten kann statt auf jede einzelne Ausgabe. Geprüft wird trotzdem: Eine falsche Formel liefert zuverlässig falsche Ergebnisse. Ein Sprachmodell lohnt sich, wo Sprache, Vielfalt oder Einordnung gefragt sind, nicht dort, wo eine Regel genügt.
+:::
+
+## Was die Wahl nicht ändert
+
+Drei Anforderungen gelten für alle vier Arbeitsweisen.
+
+Erstens: Der Auftrag behält seine vier Teile. Ob Task, Context, Format und Check in einer Nachricht stehen, in einem Anweisungsfeld, in einer Datei im Ordner oder in einem Knoten eines Ablaufs, ändert nichts an dem, was darin stehen muss.
+
+Zweitens: Die Datenregel gilt weiter. Ein Projekt ist kein Freigabenachweis, ein Ordner auch nicht. Was nicht in eine Nachricht darf, darf auch nicht in ein hinterlegtes Wissensmaterial.
+
+Drittens: Die Verantwortung für das Ergebnis bleibt bei einem Menschen. Automatische Prüfschritte sind möglich, etwa ein zweiter Schritt, der ein Pflichtfeld oder ein verbotenes Wort sucht; sie verschieben die Grenze, wo eine Person hinsehen muss, und sie ersetzen die Freigabe nicht. Was sich mit der Arbeitsweise ändert, ist vor allem, wie leicht die Prüfung ausgelassen werden kann, und diese Frage wird umso wichtiger, je weiter das Ergebnis von der Person wegrückt, die es verantwortet.
+
+## Kontrollpunkt für Modul 6
+
+- Chat, Projekt, Arbeitsagent und Workflow an vier Merkmalen unterscheiden, ohne sie als Stufen oder als getrennte Produktkategorien zu lesen
+- Workflow und Agent daran auseinanderhalten, ob die möglichen Pfade vorher festliegen oder das Modell seinen Weg selbst festlegt
+- Für eine konkrete Aufgabe begründen, welche Arbeitsweise passt, und „keine" als zulässige Antwort mitdenken
+- Benennen, was sich mit der Arbeitsweise an der Verantwortungslage ändert und was gleich bleibt

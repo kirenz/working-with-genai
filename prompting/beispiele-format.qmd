@@ -1,6 +1,6 @@
 # Mit Beispielen und Format steuern
 
-Im vorigen Kapitel haben wir den Baustein Format mit drei Angaben gefüllt: Länge, Ton, eine Liste „Offen". Das reicht, damit ein Entwurf prüfbar wird. Es reicht nicht, damit er klingt wie aus unserem Haus. In diesem Kapitel steuern wir das Ergebnis über ein Musterbeispiel und über eine zweite Ausgabeform, die das Prüfen leichter macht als jede Mail.
+In der vorigen Lektion haben wir den Teil Format mit drei Angaben gefüllt: Länge, Ton, eine Liste „Offen". Das reicht, damit ein Entwurf prüfbar wird. Es reicht nicht, damit er klingt wie aus unserem Haus. In dieser Lektion steuern wir das Ergebnis über ein Musterbeispiel und über eine zweite Ausgabeform, die Aussagen und Belege nebeneinanderstellt. Beides gilt nicht nur für Mails: Wer eine Gliederung, ein Protokoll oder eine Vergleichstabelle immer in derselben Form braucht, gibt ein Exemplar mit und legt die Spalten fest.
 
 ## Der Anlass: die zweite Anfrage und der Hausstil
 
@@ -52,18 +52,18 @@ Am Ende liegen zwei Ergebnisse vor, die dieselben Fakten unterschiedlich zeigen:
 
 | Ergebnis | Zweck | Woran wir es prüfen |
 |---|---|---|
-| Antwort-Mail im Hausstil | Der Entwurf, den Sina weiterbearbeitet | Aufbau und Ton wie das Muster, Inhalt aus dem Material, drei Antwortlagen sichtbar unterschieden |
-| Belegtabelle | Unser Prüfwerkzeug | Je Frage eine Zeile mit wörtlichem Beleg aus dem Material und einem Status: gedeckt, bedingt, offen |
+| Antwort-Mail im Hausstil | Der Entwurf, den Sina weiterbearbeitet | Aufbau und Ton wie das Muster, Inhalt aus dem Context, drei Antwortlagen sichtbar unterschieden |
+| Belegtabelle | Unser Prüfwerkzeug | Je Frage eine Zeile mit wörtlichem Beleg aus dem Context und einem Status: gedeckt, bedingt, offen |
 
-Der Baustein Format bekommt damit fünf Stellschrauben: Textsorte, Länge, Ton, Aufbau und Ausgabeform. Ein Musterbeispiel bedient Ton und Aufbau auf einmal. Eine Tabelle als Ausgabeform macht die Prüfung schneller als jede Fließtext-Mail.
+Der Baustein Format bekommt damit fünf Stellschrauben: Textsorte, Länge, Ton, Aufbau und Ausgabeform. Ein Musterbeispiel bedient Ton und Aufbau auf einmal. Eine Tabelle als Ausgabeform kann Aussagen und Belege übersichtlich zuordnen.
 
-## Schritt für Schritt selbst bauen
+## Schritt für Schritt
 
 **Vorbereitung:** wie bisher ein kostenloses Chatkonto, jeder Durchlauf in einem neuen Chat.
 
 ### Schritt 1: Die drei Antwortlagen bestimmen
 
-Bevor wir etwas abschicken, legen wir für jede Frage der Anfrage fest, was das Material erlaubt. Aussetzen: bedingt, weil die Frist am unbekannten Versanddatum hängt. Entkoffeiniert im Abo: gedeckt. Bio: offen, und zwar ausdrücklich, weil der Auszug sagt, dass keine freigegebene Angabe vorliegt. Diese Vorarbeit ist unser Maßstab für alles, was gleich aus dem Chat kommt.
+Bevor wir etwas abschicken, legen wir für jede Frage der Anfrage fest, was der Context erlaubt. Aussetzen: bedingt, weil die Frist am unbekannten Versanddatum hängt. Entkoffeiniert im Abo: gedeckt. Bio: offen, und zwar ausdrücklich, weil der Auszug sagt, dass keine freigegebene Angabe vorliegt. Diese Vorarbeit ist unser Maßstab für alles, was gleich aus dem Chat kommt.
 
 ### Schritt 2: Durchlauf A, das Format nur beschreiben
 
@@ -74,19 +74,19 @@ FORMAT
 Antwort-Mail, freundlich und kurz, im Stil unseres Kundenservice. Am Ende eine Liste mit der Überschrift "Offen".
 ```
 
-Wir lesen das Ergebnis mit zwei Fragen: Stimmen die drei Antwortlagen? Und klingt es wie Sina? Die erste Frage lässt sich gegen das Material prüfen. Die zweite nicht, denn „im Stil unseres Kundenservice" hat dem Modell nichts mitgegeben, woran es sich halten könnte. Es kennt Sinas Mails nicht.
+Wir lesen das Ergebnis mit zwei Fragen: Stimmen die drei Antwortlagen? Und klingt es wie Sina? Die erste Frage lässt sich gegen den Context prüfen. Die zweite nicht, denn „im Stil unseres Kundenservice" hat dem Modell nichts mitgegeben, woran es sich halten könnte. Es kennt Sinas Mails nicht.
 
 ### Schritt 3: Durchlauf B, ein Musterbeispiel mitgeben
 
 Der zweite Durchlauf ersetzt die Beschreibung durch das Muster. Der vollständige Auftrag steht als [Textdatei](../material/m02/prompt-beispiel-format.txt) bereit:
 
 ```text
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot. Gültig sind ausschließlich die folgenden Angaben.
+
 Fachinformationen:
 - Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
 - Kaffee-Abo, Sorten: Alle drei Sorten sind im Abo wählbar.
@@ -120,9 +120,9 @@ ENDE BEISPIEL
 
 Zusätzlich: höchstens 120 Wörter, je Frage ein eigener Absatz, eine Bedingung steht im selben Satz wie die Zusage. Am Ende, nach der Signatur, eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
-- Fragen, die das Material nicht abdeckt, nicht beantworten, sondern im Text als nicht vorliegend benennen und unter "Offen" eintragen.
+CHECK
+- Fragen, die der Context nicht abdeckt, nicht beantworten, sondern im Text als nicht vorliegend benennen und unter "Offen" eintragen.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts.
 - Behaupte keine erledigte oder veranlasste Handlung. Erfinde keine Termine, Preise oder Fristen.
 ```
 
@@ -147,11 +147,14 @@ Das Ergebnis ist eine Beobachtung, kein Beweis. Zwei Durchläufe zeigen nicht, d
 
 ### Schritt 5: Eine andere Ausgabeform, die Belegtabelle
 
-Zum Prüfen ist eine Mail ein umständliches Format: Wir müssen Sätze auseinandernehmen, um zu sehen, welche Aussage woher stammt. Wir lassen deshalb dieselben Fakten in einer zweiten Form ausgeben. Der Auftrag steht als [Textdatei](../material/m02/prompt-belegtabelle.txt) bereit; er verwendet dasselbe Material und ersetzt Aufgabe und Format:
+Zum Prüfen ist eine Mail ein umständliches Format: Wir müssen Sätze auseinandernehmen, um zu sehen, welche Aussage woher stammt. Wir lassen deshalb dieselben Fakten in einer zweiten Form ausgeben. Für die folgende Anweisung bleiben wir im selben Chat. Die [Textdatei](../material/m02/prompt-belegtabelle.txt) enthält den vollständigen Auftrag einschließlich der Fachinformationen und Kundenanfrage für einen neuen Chat.
 
 ```text
-AUFGABE
-Erstelle KEINE Antwort-Mail. Erstelle eine Belegtabelle, die zeigt, welche Frage der Kundenanfrage sich mit dem Material beantworten lässt.
+TASK
+Erstelle KEINE Antwort-Mail. Erstelle eine Belegtabelle, die zeigt, welche Frage der Kundenanfrage sich mit dem Context beantworten lässt.
+
+CONTEXT
+Verwende dieselben Fachinformationen und dieselbe Kundenanfrage wie im vorherigen Auftrag dieses Chats.
 
 FORMAT
 Eine Tabelle mit genau vier Spalten:
@@ -159,15 +162,16 @@ Frage | Antwort in einem Satz | Beleg (Zeile aus den Fachinformationen, wörtlic
 Status ist genau einer von: gedeckt, bedingt, offen.
 Eine Zeile je Frage aus der Kundenanfrage. Nach der Tabelle nichts weiter.
 
-GRENZEN
-- Als Beleg nur wörtliche Zitate aus den Fachinformationen. Kein Beleg vorhanden: Spalte Beleg bleibt leer, Status "offen", Antwort lautet "Dazu liegt keine freigegebene Angabe vor."
+CHECK
+- Kein Beleg vorhanden: Spalte Beleg bleibt leer, Status "offen", Antwort lautet "Dazu liegt keine freigegebene Angabe vor."
 - Hängt eine Antwort an einer Angabe, die fehlt (etwa einem Versanddatum), Status "bedingt" und die fehlende Angabe in der Antwort nennen.
+- Als Beleg nur wörtliche Zitate aus den Fachinformationen.
 ```
 
-Die Tabelle prüft sich fast von selbst: Wir lesen die Spalte Beleg und suchen die Zeile im Material. Steht dort ein Zitat, das es im Material nicht gibt, ist die Zeile falsch. Steht ein Status „gedeckt" neben einer leeren Belegspalte, ist die Zeile falsch. Damit haben wir die Vorarbeit aus Schritt 1 als Werkzeug: Die drei Antwortlagen sind jetzt eine Spalte.
+Die Tabelle ordnet die Prüfung: Wir lesen die Spalte Beleg und suchen die Zeile im Context. Steht dort ein Zitat, das es im Context nicht gibt, ist die Zeile falsch. Steht ein Status „gedeckt" neben einer leeren Belegspalte, ist die Zeile falsch. Damit haben wir die Vorarbeit aus Schritt 1 als Werkzeug: Die drei Antwortlagen sind jetzt eine Spalte.
 
 ::: {.callout-note title="Die fünf Stellschrauben des Formats"}
-**Textsorte** (Mail, Notiz, Tabelle), **Länge** (Wörter, Sätze, Absätze), **Ton** (sachlich, freundlich, ohne Füllwörter), **Aufbau** (Reihenfolge, feste Elemente wie Anrede und Signatur) und **Ausgabeform** (Fließtext, Liste, Tabelle mit festen Spalten). Ein Musterbeispiel setzt Ton und Aufbau gleichzeitig. Eine Tabelle mit festen Spalten und einer festen Wertemenge für den Status ist die Ausgabeform, die sich am leichtesten prüfen lässt. Diese Einteilung ist eine Merkhilfe dieses Kurses.
+**Textsorte** (Mail, Notiz, Tabelle), **Länge** (Wörter, Sätze, Absätze), **Ton** (sachlich, freundlich, ohne Füllwörter), **Aufbau** (Reihenfolge, feste Elemente wie Anrede und Signatur) und **Ausgabeform** (Fließtext, Liste, Tabelle mit festen Spalten). Ein Musterbeispiel setzt Ton und Aufbau gleichzeitig. Eine Tabelle mit festen Spalten und vorgegebenen Statuswerten unterstützt hier den Abgleich. Diese Einteilung ist eine Merkhilfe dieses Kurses.
 :::
 
 ### Ein konstruiertes Ergebnis zum Abgleich
@@ -200,11 +204,13 @@ Dann die Belegtabelle:
 
 Woran wir prüfen: Der Entwurf trägt Aufbau und Ton des Musters, aber keinen Satz seines Inhalts. Die Bedingung steht im selben Satz wie die Zusage, das fehlende Versanddatum wird genannt, nichts wird als veranlasst behauptet. Die Bio-Frage wird weder bejaht noch verneint. In der Tabelle ist jeder Beleg ein wörtliches Zitat, und die Belegspalte der offenen Frage ist leer.
 
-### Eine eigene Variante
+### Freiwillige Vertiefung am eigenen Fall
 
-Wir nehmen den eigenen Fall aus dem Canvas und suchen ein Musterbeispiel: einen Text aus unserem Bereich, der so klingt, wie wir schreiben wollen. Für die Übung erfinden wir ihn vollständig oder bauen ihn aus einem Text nach, der ohnehin öffentlich ist; interne Vorlagen bleiben draußen, solange die Freigabe für dieses Konto nicht geklärt ist. Dann bauen wir zwei Aufträge: einen mit dem Beispiel als Format für den Entwurf und einen mit der Belegtabelle als Ausgabeform. Beide laufen in neuen Chats.
+Die zusätzliche Variante ist freiwillig. Für die Arbeitsmappe genügt zunächst der bearbeitete Morgenrot-Fall; die passende Fassung wird als zusammenhängender Beitrag zu Portfolio-Teil 2 weitergeführt.
 
-Wir prüfen zuerst die Tabelle gegen unser Material, dann den Entwurf gegen die Tabelle: Steht im Entwurf eine Aussage, die in der Tabelle „offen" ist? Ist ein Satz aus dem Beispiel in den Entwurf gerutscht?
+Wir nehmen den Pilotfall aus dem Canvas und suchen ein Musterbeispiel: einen Text aus unserem Bereich, der so klingt oder so aufgebaut ist, wie das Ergebnis aussehen soll. Bei einem Schreibanlass ist das eine Mail oder Notiz; bei einer Strukturaufgabe ein gutes Protokoll; bei einem Vergleich eine Tabelle mit den Spalten, die wir brauchen. Für die Übung erfinden wir es vollständig oder bauen es aus einem Text nach, der ohnehin öffentlich ist; interne Vorlagen bleiben draußen, solange die Freigabe für dieses Konto nicht geklärt ist. Dann bauen wir zwei Aufträge: einen mit dem Beispiel als Format für den Entwurf und einen mit der Belegtabelle als Ausgabeform. Beide laufen in neuen Chats.
+
+Wir prüfen zuerst die Tabelle gegen unseren Context, dann den Entwurf gegen die Tabelle: Steht im Entwurf eine Aussage, die in der Tabelle „offen" ist? Ist ein Satz aus dem Beispiel in den Entwurf gerutscht?
 
 In **Portfolio-Teil 2** ergänzen wir die Auftragskarte um die Format-Zeile mit den fünf Stellschrauben und legen das Musterbeispiel als Übungsmaterial im Wortlaut bei. Herkunft allein genügt nicht; das Beispiel selbst gehört in die Mappe.
 
@@ -213,16 +219,16 @@ In **Portfolio-Teil 2** ergänzen wir die Auftragskarte um die Format-Zeile mit 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
 | Der Entwurf enthält die Kündigungsregel aus dem Beispiel | Eingeschleppter Inhalt. Streichen lassen: „Entferne alle Aussagen, nach denen nicht gefragt wurde." Ein Beispiel wählen, das noch weiter von der Anfrage entfernt liegt. |
-| Die Bio-Frage wird mit „nein" beantwortet | Ebenso unbelegt wie ein „ja". Das Material sagt nur, dass keine Angabe vorliegt. Auf diese Formulierung zurückführen. |
+| Die Bio-Frage wird mit „nein" beantwortet | Ebenso unbelegt wie ein „ja". Der Context sagt nur, dass keine Angabe vorliegt. Auf diese Formulierung zurückführen. |
 | Das Aussetzen wird ohne Frist zugesagt | Die Bedingung fehlt. Prüfen, ob der Satz „eine Bedingung steht im selben Satz wie die Zusage" im Format steht; Folgeanweisung mit genau dieser Änderung. |
 | Der Entwurf sagt „wir haben Ihre Lieferung ausgesetzt" | Behauptete Handlung. Entfernen. Im Fall ist nichts veranlasst. |
-| In der Belegtabelle steht ein Zitat, das nicht im Material vorkommt | Zeile als falsch markieren. Der Beleg ist erfunden, auch wenn er plausibel klingt. Nur wörtliche Zitate zulassen und erneut ausführen. |
+| In der Belegtabelle steht ein Zitat, das nicht im Context vorkommt | Zeile als falsch markieren. Der Beleg ist erfunden, auch wenn er plausibel klingt. Nur wörtliche Zitate zulassen und erneut ausführen. |
 | Die Tabelle hat mehr Spalten oder eine zusätzliche Erklärung darunter | Format nicht eingehalten. Folgeanweisung: „Genau vier Spalten, nach der Tabelle nichts weiter." |
 | Beide Durchläufe sehen nahezu gleich aus | Auch das ist eine Beobachtung. Festhalten und nicht überinterpretieren; zwei Durchläufe erlauben keine Aussage über die Wirkung des Beispiels. |
 
-## Kontrollpunkt für Modul 2
+## Kontrollpunkt
 
-- Für jede Frage einer Anfrage vorab festlegen, ob das Material sie deckt, bedingt deckt oder offenlässt
+- Für jede Frage einer Anfrage vorab festlegen, ob der Context sie deckt, bedingt deckt oder offenlässt
 - Ein Musterbeispiel so in den Auftrag einbauen, dass Aufbau und Ton übernommen werden, der Inhalt aber nicht
 - Die fünf Stellschrauben des Formats benennen und für einen eigenen Fall belegen
 - Eine Belegtabelle mit wörtlichen Zitaten und fester Statusmenge als Prüfwerkzeug einsetzen

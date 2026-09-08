@@ -2,7 +2,7 @@
 
 Lokale Schreibregeln für dieses Kursprojekt. Nutzerauftrag und übergeordnete Anweisungen haben Vorrang. Abgeleitet aus dem Vorbild-Repo `kurse/n8n-grundlagen`, gekürzt und auf diesen Kurs angepasst.
 
-Kursaufbau, Zeitbudget und Modulzuschnitt stehen in `docs/kurskonzept-v2.md`. Diese Datei regelt nur, **wie** geschrieben wird.
+Der beschlossene neue Zuschnitt mit eigenen Grundlagen- und Use-Case-Lektionen steht in `docs/kurskonzept-v3.md`. Die konkrete Gliederung wird in der v3-Ausarbeitung umgesetzt; `docs/kursmanifest.json` ordnet die ausgearbeiteten Buchkapitel, Units und Folien einander zu. Der organisatorische Rahmen aus v2 bleibt bestehen. Diese Datei regelt, **wie** geschrieben wird.
 
 ---
 
@@ -70,27 +70,21 @@ Geeignet: Büro und Assistenz, Urlaubsvertretung, Werkstatt, Bibliothek und Doss
 
 Nicht geeignet: Märchen, Mythologie, Zauberei, Cartoon-Tiere, Superhelden, Videospiele, Kindergarten-Beispiele, „cute"-Stil.
 
-Eine Analogie pro Hauptbegriff. Mehrere für denselben Begriff verwirren.
+Analogien nur einsetzen, wenn sie beim Verständnis helfen. Höchstens eine pro Hauptbegriff, keine Pflichtanalogie.
 
 ### 4. Pro Lektion ein Kapitel
 
-Eine Lektion = ein `.qmd` = eine Plattform-Unit. Lernzeit 5–15 Minuten plus einen eigenen Durchlauf im Chatfenster. Genau ein H1, mehrere H2, H3 nur sparsam.
+Eine Lektion = ein `.qmd` = eine Plattform-Unit, ergänzt um passende Folien. Grundlagen, Praxis und Orientierung dürfen unterschiedlich umfangreich sein. Grundlagen müssen keinen eigenen Durchlauf im Chatfenster enthalten. Genau ein H1, aussagekräftige H2, H3 nur sparsam. Themen, die eigenständig gelernt und später nachgeschlagen werden, bekommen einen eigenen verständlichen Titel in der Seitenleiste. Es gibt keine feste Zahl von Lektionen je Modul.
 
-### 5. Kapitelstruktur bei Übungskapiteln
+### 5. Struktur nach Lernziel
 
-Kapitel, in denen etwas selbst gemacht wird, folgen dieser Reihenfolge:
+Grundlagen erhalten eigenständige, auffindbare Lektionen. Sie erklären den Zusammenhang in verständlichem Fließtext, nennen die gebräuchlichen Begriffe und erläutern sie an einem kurzen kommentierten Beispiel. Eine Beobachtung oder unbewertete Vermutung kann davorstehen. Notwendige Erklärungen stehen weder ausschließlich in Callouts noch in aufklappbaren Lösungen.
 
-1. Kurze Einleitung (1–2 Sätze)
-2. `## <Der Lehrfall oder das Ausgangsmaterial>` — vollständig, nichts nachschlagen müssen
-3. `## Zielbild` — was am Ende dasteht, plus die Bausteine als Tabelle oder Liste
-4. `## Schritt für Schritt selbst bauen` — durchnummerierte `### Schritt 1`, `### Schritt 2`, …
-5. Konstruiertes Beispiel und eigene Variante als Unterabschnitte des praktischen Teils
-6. `## Fehler diagnostizieren` — Beobachtung und nächster Prüfschritt; Ursachen nur als Hypothesen benennen
-7. `## Kontrollpunkt für Modul XX` — Lernziele in Verb-Infinitiv-Form
+Praxislektionen führen über einen konkreten Anlass und geeignetes Material zu einem begrenzten Auftrag. Auf die eigene Durchführung folgen Prüfung und erklärendes Feedback. Schritte werden nur dort nummeriert, wo die Reihenfolge wichtig ist. Pro Modul wird ein zusammenhängender Beitrag zum eigenen Vorhaben bearbeitet; nicht jede Lektion braucht eine eigene Variante oder einen Portfolio-Eintrag.
 
-**Theorie steht in Callouts neben dem passenden Schritt**, nicht in Vorab-Sektionen. Wer ein Konzept in einem eigenen H2-Block vor dem ersten `### Schritt` erklären will, baut stattdessen einen Callout.
+Orientierungslektionen schaffen Überblick und benötigen kein Quiz. Bewertete Wissensfragen folgen erst auf die erforderlichen Erklärungen. Ein Quiz, eine Analogie oder ein Callout ist kein Pflichtbestandteil jeder Lektion. Kurze Hilfen zu einem einzelnen Schritt können direkt beim Schritt stehen.
 
-**Vorbild im Repo:** `prompting/arbeitsauftrag.qmd`.
+Die Plattform-Unit muss die Kernerklärung selbst vermitteln. Der Buch-Tab bietet die vollständige Darstellung, ist aber keine Voraussetzung, um die Lernschritte zu verstehen. Die Erstellung erfolgt weiterhin zuerst im Buch.
 
 ### 6. Keine Verweise auf spätere Kapitel
 
@@ -102,7 +96,8 @@ Dieser Kurs handelt vom Unterschied zwischen *plausibel* und *belegt*. Das Mater
 
 - **Keine Häufigkeitsbehauptungen ohne Quelle.** Verboten sind Formulierungen wie „der häufigste Fehler", „meistens", „in der Regel", „das ist der Normalfall", wenn keine Quelle dahintersteht. Stattdessen den Mechanismus beschreiben: „Ein Chatmodell setzt Text fort, der zur Anfrage passt." Oder als Möglichkeit formulieren: „Damit besteht das Risiko, dass …".
 - **Keine Vorhersage von Modellverhalten als Gewissheit.** Weder „das Modell wird die Garantiedauer erfinden" noch „das Modell fragt zurück". Was wir behaupten dürfen: dass ein Risiko besteht und vor der Verwendung geprüft werden muss.
-- **Quellenrolle ausweisen.** Designentscheidungen dieses Kurses (etwa die Vierteilung Aufgabe/Material/Format/Grenzen) werden als solche gekennzeichnet und nicht als belegter Standard verkauft. Belegte Aussagen bekommen die Primärquelle als Link. Übersicht: `docs/kurskonzept-v2.md`, Abschnitt 11.
+- **Keine unbelegten Ursachenbehauptungen.** Konkrete Trainingsinhalte und der Grund für eine einzelne fehlerhafte Ausgabe werden nicht aus dem Ergebnis abgeleitet. Trainingswissen, mitgegebenen Kontext und Werkzeugabruf unterscheiden. Eine nicht durch das Material belegte Aussage ist nicht automatisch sachlich falsch; Halluzination und fehlende Quellenstütze nicht gleichsetzen.
+- **Quellenrolle ausweisen.** Designentscheidungen dieses Kurses (etwa die Vierteilung Task/Context/Format/Check) werden als solche gekennzeichnet und nicht als belegter Standard verkauft. Belegte Aussagen bekommen die Primärquelle als Link. Übersicht: `docs/kurskonzept-v2.md`, Abschnitt 11.
 - **Keine erfundene Forschung.** Keine Studien, Prozentwerte oder Benchmark-Zahlen ohne nachprüfbare Quelle.
 - **Beispielausgaben als konstruiert kennzeichnen.** Musterergebnisse im Buch sind konstruiert, keine aufgezeichneten Modelloutputs. Das steht dabei.
 
@@ -119,7 +114,7 @@ Dieser Kurs handelt vom Unterschied zwischen *plausibel* und *belegt*. Das Mater
 - Direkt-Anrede (du, Sie) im Buchtext
 - „man"-Konstruktionen
 - Emojis im Fließtext (Ausnahme: Status-Marker in Tabellen ✅ 🟡)
-- Lange Code- oder Prompt-Blöcke ohne erklärenden Folge-Callout
+- Lange Code- oder Prompt-Blöcke ohne verständliche Einordnung im umgebenden Text
 - Marketing-Sprache, Superlative, „revolutionär"
 - Unnötige Anglizismen im sichtbaren Text; Fachbegriffe nur, wenn sie im selben Satz erklärt werden
 

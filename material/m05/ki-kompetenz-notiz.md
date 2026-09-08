@@ -1,6 +1,6 @@
 # Aktennotiz: KI-Kompetenz und Transparenz in der Rösterei Morgenrot
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.3. Synthetische GenAI-Erweiterung des Lehrfalls. Übungsmuster, keine Rechtsberatung. Grundlage für die Einordnung von Artikel 4 ist die FAQ der Europäischen Kommission zu AI Literacy (Abruf 07.09.2026): <https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers>.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.4. Synthetische GenAI-Erweiterung des Lehrfalls. Übungsmuster, keine Rechtsberatung. Grundlage für die Einordnung von Artikel 4 ist die FAQ der Europäischen Kommission zu AI Literacy (Abruf 08.09.2026): <https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers>.
 
 ---
 

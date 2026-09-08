@@ -1,0 +1,107 @@
+ZAHLEN AUS DER QUARTALSNOTIZ, ZWEITE SEITE
+Kursmaterial "Working with GenAI", Lektion 4.2 · Aussagen, Zahlen und
+Quellen prüfen
+
+Konstruiert, kein aufgezeichneter Modelloutput. Alle Zahlen sind erfunden.
+Bezugsquelle ist die Notiz "Abo-Kennzahlen 2. Quartal 2026"
+(abo-kennzahlen-q2-2026.txt) mit den Kennzahlen Z1 bis Z5.
+
+Zur Erinnerung die relevanten Zeilen der Quelle:
+
+  Z1  Aktive Abos am 30.06.2026: 412
+  Z2  Neue Abos im Quartal: 96
+  Z3  Kündigungen im Quartal: 58
+  Z5  Rückfragen im Kundenservice zu Abo-Themen im Quartal: 137
+      davon Sortenwechsel 52, Liefertermin 44, Pause oder Kündigung 31,
+      Sonstiges 10
+
+Diese Seite enthält keine Behauptungen über Beschlüsse oder Empfehlungen.
+Alle vier Zahlen kommen in der Quelle vor. Genau deshalb findet ein reiner
+Satzvergleich hier wenig.
+
+--------------------------------------------------------------------------
+ZU PRÜFENDER TEXT
+--------------------------------------------------------------------------
+R1  Die Kündigungsquote lag im Quartal bei 14 %.
+R2  Netto sind 38 Abos hinzugekommen.
+R3  Der Kundenservice bearbeitete 137 Rückfragen zu Abo-Themen pro Monat.
+R4  52 der 137 Rückfragen, also 38 %, betrafen den Sortenwechsel.
+
+--------------------------------------------------------------------------
+SELBST PRÜFEN: DREI SCHRITTE IN DIESER REIHENFOLGE
+--------------------------------------------------------------------------
+1. Rechenweg. Jede Zahl mit den Werten aus der Quelle nachrechnen.
+   Dieser Schritt lässt sich vollständig entscheiden, deshalb kommt er
+   zuerst.
+2. Einheit. Zeitraum, Währung, Stückzahl, Menge. Eine richtige Zahl mit
+   der falschen Einheit ist eine falsche Aussage.
+3. Bezugsgröße. Der Nenner, die Grundgesamtheit, das Ganze, auf das sich
+   ein Anteil bezieht. Steht diese Bezugsgröße in der Quelle, und ist sie
+   die richtige für diese Aussage?
+
+Die Prüfung wird von Hand gemacht, mit Taschenrechner. Der Auftrag an ein
+Chatmodell als zweiter Leser enthält bewusst die Zeile "Rechne nichts nach
+und leite keine Anteile ab": Ein Protokoll, das gleichzeitig rechnet,
+vermischt zwei Prüfungen und macht die eine unsichtbar.
+
+--------------------------------------------------------------------------
+AUFLÖSUNG
+--------------------------------------------------------------------------
+
+R1 · Die Kündigungsquote lag im Quartal bei 14 %.
+   Rechenweg:    58 / 412 = 0,1408 = 14,1 %. Richtig gerechnet.
+   Einheit:      Quartal, passt zu Z3.
+   Bezugsgröße:  FEHLER. 412 ist der Bestand am 30.06.2026, also am Ende
+                 des Quartals und nach den Kündigungen. Eine
+                 Kündigungsquote braucht einen Bezugsbestand; ein Bestand
+                 zu Quartalsbeginn steht in der Notiz nicht.
+   Markierung:   ungedeckt.
+   Reparatur:    "58 Kündigungen bei 412 aktiven Abos am 30.06.2026
+                 (Z1, Z3). Ein Bestand zu Quartalsbeginn liegt nicht vor;
+                 eine Quote lässt sich daraus nicht bilden."
+   Hinweis:      412 - 96 + 58 = 374 wäre ein rechnerisch möglicher
+                 Anfangsbestand, setzt aber voraus, dass es im Quartal
+                 keine anderen Bestandsveränderungen gab. Die Notiz sagt
+                 dazu nichts. Wer so rechnet, rechnet mit einer Annahme
+                 und muss sie hinschreiben.
+
+R2 · Netto sind 38 Abos hinzugekommen.
+   Rechenweg:    96 - 58 = 38. Richtig.
+   Einheit:      Quartal, passt zu Z2 und Z3.
+   Bezugsgröße:  keine Anteilsbildung, unproblematisch.
+   Markierung:   ungenau. Die Aussage ist rechnerisch in Ordnung, steht
+                 aber so nicht in der Quelle und sieht wie eine Angabe
+                 aus.
+   Reparatur:    "Aus Z2 und Z3 abgeleitet: 96 minus 58 ergibt 38.
+                 Weitere Bestandsveränderungen weist die Notiz nicht aus."
+
+R3 · Der Kundenservice bearbeitete 137 Rückfragen pro Monat.
+   Rechenweg:    137 richtig abgeschrieben.
+   Einheit:      FEHLER. Z5 nennt 137 Rückfragen im Quartal. "Pro Monat"
+                 verdreifacht die Zahl stillschweigend.
+   Bezugsgröße:  passt.
+   Markierung:   ungedeckt.
+   Reparatur:    "137 Rückfragen zu Abo-Themen im Quartal (Z5)."
+
+R4 · 52 der 137 Rückfragen, also 38 %, betrafen den Sortenwechsel.
+   Rechenweg:    52 / 137 = 0,3796 = 38,0 %. Richtig.
+   Einheit:      Quartal, passt.
+   Bezugsgröße:  137 ist die richtige Grundgesamtheit laut Z5.
+   Markierung:   ungenau. Der Anteil ist eine eigene Rechnung und trägt
+                 keine Kennzeichnung.
+   Reparatur:    "52 der 137 Rückfragen betrafen den Sortenwechsel (Z5);
+                 das entspricht 38 Prozent, eigene Berechnung."
+
+--------------------------------------------------------------------------
+WAS SICH DARAUS ERGIBT
+--------------------------------------------------------------------------
+Ableitungen sind erlaubt. Eine Rechnung aus Werten der Quelle darf im
+eigenen Text stehen, wenn sie als eigene Rechnung erkennbar ist und der
+Rechenweg nachvollziehbar bleibt. Was nicht geht, ist eine Ableitung, die
+aussieht wie eine Angabe aus der Quelle. Deshalb bekommt sie einen Zusatz
+und keine Fundstelle.
+
+Zwei der vier Fehler wären bei einem reinen Satzvergleich nicht aufgefallen,
+weil beide Zahlen in der Quelle vorkommen: der Zeitraum bei R3 und die
+Bezugsgröße bei R1. Beide ändern die Aussage erheblich, R3 um den Faktor
+drei und R1 vom Sachverhalt zur Kennzahl.

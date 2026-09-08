@@ -1,6 +1,6 @@
 # Begründete Entscheidung: automatisieren, teilautomatisieren oder im Chat lassen?
 
-Kursmaterial „Working with GenAI", Modul 6, Lektion 6.2. Vorlage für Portfolio-Teil 4. n8n ist keine Prüfungspflicht; die Entscheidung ist es.
+Kursmaterial „Working with GenAI", Modul 6, Lektion 6.3. Vorlage für Portfolio-Teil 4. n8n ist keine Prüfungspflicht; die Entscheidung ist es.
 
 ## Ausgefülltes Beispiel: Statusanfragen bei Lager und Versand
 
@@ -13,7 +13,7 @@ Kursmaterial „Working with GenAI", Modul 6, Lektion 6.2. Vorlage für Portfoli
 | **Modellzugang im Betrieb** | Nicht vorhanden. Ein Workflow mit Modellschritt bräuchte einen bezahlten Zugang mit passender Vereinbarung |
 | **Was schiefgehen kann** | Ein Entwurf mit zugesagtem Ankunftstag geht ungeprüft hinaus; das Material veraltet |
 
-**Entscheidung.** Vorerst kein eigener Workflow. Die Statusanfragen laufen über das Projekt mit Startpaket im Chatkonto (Lektion 6.1), weil das ohne zusätzlichen Zugang funktioniert und die Prüfung ohnehin von Hand geschieht. Ein Workflow wird erneut geprüft, wenn (a) ein geschäftlicher Modellzugang mit Vereinbarung besteht und (b) der Rückblick nach 30 Tagen zeigt, dass Entwürfe im Regelfall ohne inhaltliche Korrektur bleiben. Auch dann endet der Workflow beim Entwurf; die Prüfung und der Versand bleiben bei Ellen Ruppert.
+**Entscheidung.** Vorerst kein eigener Workflow. Die Statusanfragen laufen über das Projekt mit Startpaket im Chatkonto (Lektion 6.2), weil das ohne zusätzlichen Zugang funktioniert und die Prüfung ohnehin von Hand geschieht. Ein Workflow wird erneut geprüft, wenn (a) ein geschäftlicher Modellzugang mit Vereinbarung besteht und (b) der Rückblick nach 30 Tagen zeigt, dass Entwürfe im Regelfall ohne inhaltliche Korrektur bleiben. Auch dann endet der Workflow beim Entwurf; die Prüfung und der Versand bleiben bei Ellen Ruppert.
 
 **Begründung in einem Satz.** Der Nutzen liegt in der gleichbleibenden Qualität des Entwurfs und im Wegfall des Wiederholens der Anweisungen, nicht im Wegfall der Prüfung; dafür reicht das Projekt.
 

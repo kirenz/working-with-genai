@@ -1,12 +1,12 @@
-Du unterstützt den Bereich Lager und Versand der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort-Mail auf die Kundenanfrage unten.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt den Bereich Lager und Versand der Rösterei Morgenrot.
+
 {{ $json.material }}
 
-KUNDENANFRAGE
+Kundenanfrage:
 {{ $json.anfrage }}
 
 FORMAT
@@ -14,8 +14,8 @@ Antwort-Mail, höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton.
 Absenderzeile "Ellen Ruppert, Lager und Versand, Rösterei Morgenrot".
 Am Ende eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+CHECK
 - Nenne keinen Ankunftstag und keinen Sendungsstatus. Trage beides unter "Offen" ein.
 - Behaupte nicht, dass etwas veranlasst wurde. Kündige an, dass Lager und Versand den Status mit der Sendungsnummer prüft.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts.
 - Verwende die Sendungsnummer nicht im Text.

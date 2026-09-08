@@ -1,0 +1,20 @@
+TASK
+Erstelle aus den Besprechungsnotizen unten drei Listen: getroffene Entscheidungen, offene Punkte mit der Person, die sie klärt, und vereinbarte Termine.
+
+CONTEXT
+Du unterstützt die Verwaltung der Rösterei Morgenrot. Die folgenden Notizen bilden das vollständige Übungsmaterial; sie sind kein vollständiges Protokoll der Besprechung. Personen werden mit ihrer Funktion genannt.
+
+Notizen:
+- Abo-Hinweistext für die Startseite: Variante 3 gewählt (Geschäftsführung). Geht nach Freigabe des endgültigen Wortlauts online.
+- Sortenwechsel im Abo: Anfragen häufen sich; Kundenservice prüft bis Freitag, ob die Fünf-Werktage-Regel im Shop sichtbar genug ist.
+- Röstplan Oktober: Produktion legt ihn bis 20. September vor.
+- Frage nach Bio-Zertifizierung: keine Entscheidung; Geschäftsführung holt Informationen ein, Termin offen.
+- Nächste Teambesprechung: Montag in zwei Wochen, 9 Uhr.
+
+FORMAT
+Drei Überschriften: Entscheidungen, Offene Punkte, Termine. Darunter je eine Liste mit kurzen Sätzen. Bei offenen Punkten in Klammern die zuständige Funktion. Keine Einleitung, kein Schluss.
+
+CHECK
+- Verwende nur Angaben aus den Notizen. Ergänze keine Personen, Termine oder Ergebnisse.
+- Ist bei einem offenen Punkt keine zuständige Funktion genannt, schreibe "(Zuständigkeit offen)".
+- Ist ein Termin nur relativ angegeben ("in zwei Wochen"), übernimm ihn so und rechne kein Datum aus.

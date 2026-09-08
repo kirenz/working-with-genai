@@ -1,5 +1,5 @@
 RÖSTEREI MORGENROT: FREIGEGEBENES BRIEFING FÜR EINEN HINWEISTEXT ZUM KAFFEE-ABO
-Kursmaterial "Working with GenAI", Modul 1 (Lektionen 1.1 und 1.2)
+Kursmaterial "Working with GenAI", Modul 1 (Lektionen 1.4 und 1.6)
 Synthetische GenAI-Erweiterung des Lehrfalls, siehe Kennzeichnung am Ende.
 
 --------------------------------------------------------------------------

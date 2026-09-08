@@ -1,6 +1,6 @@
 ---
-title: "Ein Miniworkflow, selbst gebaut"
-subtitle: "Modul 6 · Lektion 6.2"
+title: "Einen einfachen Workflow mit n8n aufbauen"
+subtitle: "Modul 6 · Lektion 6.3"
 book-source: "../../transfer/miniworkflow.qmd"
 ---
 
@@ -8,12 +8,12 @@ book-source: "../../transfer/miniworkflow.qmd"
 
 [Modul 6 · In den Alltag bringen]{.kicker}
 
-Dieselbe Statusanfrage, derselbe Auftrag — nur nicht im Chatfenster, sondern als Ablauf auf der bereitgestellten Kursinstanz.
+Dieselbe Statusanfrage, derselbe Auftrag, nur nicht im Chatfenster, sondern als Ablauf aus drei Knoten in n8n.
 
 Der Ablauf endet beim sichtbaren Entwurf. **Nichts wird versendet.**
 
 ::: {.notes}
-Einordnung vorweg: n8n ist keine Prüfungspflicht. Prüfungsrelevant ist die begründete Entscheidung über Automatisierung am Ende dieser Lektion. Wer den Workflow nicht bauen kann oder will, arbeitet mit dem Ersatzweg und kommt zum selben Ergebnis. Gebraucht werden ein Zugang zur Kursinstanz und ein dort hinterlegtes Chat-Model; beides kommt mit den Kursinformationen. Kein eigener Schlüssel, keine Installation, kein bezahltes Konto. Zeit: 2 Minuten.
+Einordnung vorweg: n8n ist keine Prüfungspflicht. Prüfungsrelevant ist die begründete Entscheidung über Automatisierung am Ende dieser Lektion. Vor dem Termin prüfen, welche der drei Lagen gilt: Kursinstanz mit hinterlegtem Chat-Model, Kursinstanz ohne Modellzugang, oder keine Instanz. Die Einrichtung ist ein organisatorischer Schritt und zum Zeitpunkt dieser Fassung offen; die Lektion trägt in allen drei Lagen. Kein eigener Schlüssel, keine Installation, kein bezahltes Konto. Die Lage zu Beginn ansagen, dann sucht niemand vergeblich nach einem Zugang. Zeit: 2 Minuten.
 :::
 
 ## Was im Workflow anders ist als im Chat
@@ -44,7 +44,7 @@ flowchart LR
   A["Start<br/>Trigger manually"] --> B["Anfrage und Material<br/>Edit Fields (Set)"]
   B --> C["Entwurf<br/>Basic LLM Chain"]
   C --> D["Output-Panel<br/>Feld text"]
-  M["Chat Model<br/>Kurs-Credential"] -.-> C
+  M["Chat Model<br/>bereitgestellt"] -.-> C
 ```
 
 Das Chat-Model hängt als eigener Anschluss **unter** dem Knoten `Entwurf`, nicht in der Reihe.
@@ -73,13 +73,14 @@ Der Knoten steht für zwei Zulieferungen, die im Alltag auseinanderfallen. Nach 
 ## Der Auftrag im Prompt-Feld
 
 ```text
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT (nur diese Angaben sind gültig)
+Rolle: Du unterstützt den Bereich Lager und Versand.
 {{ $json.material }}
 
 KUNDENANFRAGE
 {{ $json.anfrage }}
 
-GRENZEN
+CHECK
 - Nenne keinen Ankunftstag und keinen Sendungsstatus. Beides unter "Offen".
 - Behaupte nicht, dass etwas veranlasst wurde. Kündige die Prüfung an.
 - Verwende die Sendungsnummer nicht im Text.
@@ -88,11 +89,11 @@ GRENZEN
 **Modus Expression**, sonst liest das Modell die geschweiften Klammern als Text.
 
 ::: {.sources}
-Vollständiger Prompt: material/m06/prompt-llm-chain.txt · Buchkapitel 6.2, Schritt 3
+Vollständiger Prompt: material/m06/prompt-llm-chain.txt · Buchkapitel 6.3, Schritt 3
 :::
 
 ::: {.notes}
-Die beiden Ausdrücke sind die einzige Technik dieses Kapitels. Erklären: `$json` ist das Element, das gerade in den Knoten hineinkommt, nach dem Punkt folgt der Feldname aus dem vorherigen Knoten. Prompt auf „Define below“ stellen, Feld auf Expression umschalten, Require Specific Output Format bleibt aus. Auf der Folie steht nur der Ausschnitt; Rolle, Aufgabe und Format stehen im Buch und in der Materialdatei. Zeit: 3 Minuten.
+Die beiden Ausdrücke sind die einzige Technik dieses Kapitels. Erklären: `$json` ist das Element, das gerade in den Knoten hineinkommt, nach dem Punkt folgt der Feldname aus dem vorherigen Knoten. Prompt auf „Define below“ stellen, Feld auf Expression umschalten, Require Specific Output Format bleibt aus. Auf der Folie steht nur der Ausschnitt; TASK und FORMAT stehen vollständig im Buch und in der Materialdatei. Zeit: 3 Minuten.
 :::
 
 ## Mitmachen: bauen und ausführen
@@ -100,7 +101,7 @@ Die beiden Ausdrücke sind die einzige Technik dieses Kapitels. Erklären: `$jso
 1. Neuer Workflow, Name mit eigenem Kürzel; **Trigger manually** als `Start`
 2. **Edit Fields (Set)** als `Anfrage und Material`, zwei Felder, *Execute step*
 3. **Basic LLM Chain** als `Entwurf`, Prompt im Modus Expression einfügen
-4. Am Anschluss **Model** das bereitgestellte Chat-Model wählen, **Kurs-Credential** auswählen
+4. Am Anschluss **Model** das bereitgestellte Chat-Model wählen und die hinterlegte Credential auswählen
 5. *Execute step* — im Output-Panel erscheint das Feld `text`
 6. Speichern. **Kein Klick auf Activate.**
 
@@ -108,21 +109,25 @@ Die beiden Ausdrücke sind die einzige Technik dieses Kapitels. Erklären: `$jso
 Arbeitsphase, 15 Minuten. Vorher die drei häufigsten Beobachtungen ankündigen, dann suchen alle nicht lange: Steht im Entwurf wörtlich der Ausdruck mit den geschweiften Klammern, ist das Feld auf Fixed statt Expression. Erscheint „[undefined]“ oder ein leerer Wert, wurde der Feldknoten noch nicht ausgeführt oder ein Feldname ist anders geschrieben. Meldet der Knoten, dass kein Modell verbunden ist, fehlt das Chat-Model am unteren Anschluss. Bei Credential- oder Kontingentfehlern sofort auf die nächste Folie wechseln. Zeit: 15 Minuten Arbeitsphase.
 :::
 
-## Der Ersatzweg, wenn der Modellzugang fehlt
+## Zwei Ersatzwege
+
+**Mit Instanz, ohne Modellzugang:**
 
 1. Knoten `Entwurf` entfernen oder abklemmen
 2. Zweiten **Edit Fields (Set)** anhängen: `Entwurf (manuell)`
 3. Ein Feld `text`, Typ String, Wert Fixed: entweder der konstruierte Entwurf aus dem Buch oder ein selbst im Chatkonto erzeugter und geprüfter Entwurf
-4. *Execute step* — dasselbe Ausgabefeld, dieselbe Struktur
+4. *Execute step*, dasselbe Ausgabefeld, dieselbe Struktur
 
-Der Ersatzweg gehört zur Lektion. Nur der Modellschritt ist von Hand gefüllt.
+**Ohne Instanz:** Knotentabelle und Feldwerte nebeneinanderlegen, den Auftrag im Chatkonto ausführen und die beiden Ausdrücke von Hand ersetzen. Wer den Unterschied sehen will, führt ihn einmal ohne Ersetzung aus.
+
+Beide Wege gehören zur Lektion. Nur der Modellschritt ist von Hand gefüllt.
 
 ::: {.sources}
-material/m06/entwurf-konstruiert.txt · Buchkapitel 6.2, Schritt 5
+material/m06/entwurf-konstruiert.txt · n8n-felder.md · Buchkapitel 6.3, Schritt 5
 :::
 
 ::: {.notes}
-Diese Folie wird auch dann gezeigt, wenn alles läuft: Der zentrale Modellzugang ist eine organisatorische Voraussetzung, die zum Kurstermin bereitstehen muss und deren Fehlen niemanden aus der Lektion wirft. Wer den Entwurf selbst im Chatkonto erzeugt, ersetzt dabei die beiden Ausdrücke von Hand durch Material und Anfrage. Was der Ersatzweg offenlässt, ehrlich benennen: die Frage, wie zuverlässig ein Modell die Grenzen einhält, wenn Material und Anfrage über Ausdrücke hineinkommen. Zeit: 2 Minuten.
+Diese Folie wird auch dann gezeigt, wenn alles läuft: Kursinstanz und Modellzugang sind organisatorische Voraussetzungen, deren Fehlen niemanden aus der Lektion wirft. Wer den Entwurf selbst im Chatkonto erzeugt, ersetzt dabei die beiden Ausdrücke von Hand durch Context und Anfrage. Was beide Ersatzwege offenlassen, ehrlich benennen: die Frage, wie zuverlässig ein Modell den Check einhält, wenn Context und Anfrage über Ausdrücke hineinkommen. Für die Entscheidung im Portfolio ändert das nichts; sie hängt an Häufigkeit, Prüfbarkeit, Datenlage und Zugang. Zeit: 3 Minuten.
 :::
 
 ## Den Entwurf prüfen — wie im Chat
@@ -137,14 +142,14 @@ Diese Folie wird auch dann gezeigt, wenn alles läuft: Der zentrale Modellzugang
 Ein Ankunftstag ist kein technischer Fehler, sondern ein **Befund**.
 
 ::: {.notes}
-Der Punkt der ganzen Lektion: Der Ort ändert nichts am Prüfmaßstab. Wer im Raum einen Ankunftstag im Output hat, meldet sich; die Grenze ist eine Anweisung, keine Garantie, und im Alltag würde genau die Prüfung das abfangen. Und die Versuchung ansprechen, jetzt einen Send-Email-Knoten anzuhängen: nicht in diesem Kurs. Wer das im Betrieb erwägt, beginnt bei der Risiko-Tabelle aus Modul 5, nicht beim Knoten. Zeit: 3 Minuten.
+Der Punkt der ganzen Lektion: Der Ort ändert nichts am Prüfmaßstab. Wer im Raum einen Ankunftstag im Output hat, meldet sich; der Check ist eine Anweisung, keine Garantie, und im Alltag würde genau die Prüfung das abfangen. Und die Versuchung ansprechen, jetzt einen Send-Email-Knoten anzuhängen: nicht in diesem Kurs. Wer das im Betrieb erwägt, beginnt bei der Risiko-Tabelle aus Modul 5, nicht beim Knoten. Zeit: 3 Minuten.
 :::
 
 ## Portfolio-Teil 4: die begründete Entscheidung
 
 Sechs Fragen: Häufigkeit · Prüfbarkeit des Entwurfs · Datenlage · was der Mensch tun muss · Modellzugang im Betrieb · was schiefgehen kann.
 
-**Im Lehrfall:** vorerst kein eigener Workflow. Statusanfragen laufen über das Startpaket aus 6.1; erneute Prüfung nur bei geschäftlichem Modellzugang und nach dem Rückblick.
+**Im Lehrfall:** vorerst kein eigener Workflow. Statusanfragen laufen über das Startpaket aus 6.2; erneute Prüfung nur bei geschäftlichem Modellzugang und nach dem Rückblick.
 
 „Ja“, „nein“ und „später, unter Bedingung“ sind gleichwertig. Die **Begründung** zählt.
 
@@ -153,12 +158,12 @@ material/m06/automatisierungs-entscheidung.md · Portfolio-Teil 4
 :::
 
 ::: {.notes}
-Die Begründung im Lehrfall in einem Satz vorlesen: Der Nutzen liegt in der gleichbleibenden Qualität des Entwurfs und im Wegfall des Wiederholens der Anweisungen, nicht im Wegfall der Prüfung; dafür reicht das Projekt. Deutlich machen, dass eine begründete Absage in der Prüfungsleistung genauso viel wert ist wie ein gebauter Ablauf. Selbstlernaufgabe: eigene Variante mit erfundener Anfrage und eigenem Material bauen, Testfälle aus Modul 4 anwenden, Entscheidung ausfüllen. Zeit: 3 Minuten.
+Die Begründung im Lehrfall in einem Satz vorlesen: Der Nutzen liegt in der gleichbleibenden Qualität des Entwurfs und im Wegfall des Wiederholens der Anweisungen, nicht im Wegfall der Prüfung; dafür reicht das Projekt. Deutlich machen, dass eine begründete Absage in der Prüfungsleistung genauso viel wert ist wie ein gebauter Ablauf. Selbstlernaufgabe: eigene Variante mit erfundener Anfrage und eigenem Context bauen, Testfälle aus Modul 4 anwenden, Entscheidung ausfüllen. Zeit: 3 Minuten.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 6.2, Working with GenAI: transfer/miniworkflow
+- Buchkapitel 6.3, Working with GenAI: transfer/miniworkflow
 - Material: material/m06/n8n-felder.md, prompt-llm-chain.txt, entwurf-konstruiert.txt, automatisierungs-entscheidung.md
-- n8n-Dokumentation (Abruf 07.09.2026): docs.n8n.io → Edit Fields (Set), Basic LLM Chain. Bezeichnungen können je Version abweichen
-- Kursinstanz und zentral hinterlegte Modell-Credential sind organisatorische Voraussetzungen; ohne sie gilt der Ersatzweg
+- n8n-Dokumentation (Abruf 08.09.2026): docs.n8n.io → Edit Fields (Set), Basic LLM Chain. Bezeichnungen können je Version abweichen
+- Kursinstanz und zentral hinterlegte Modell-Credential sind organisatorische Voraussetzungen und zum Zeitpunkt dieser Fassung nicht eingerichtet; ohne sie gelten die beiden Ersatzwege

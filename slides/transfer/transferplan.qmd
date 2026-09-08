@@ -1,6 +1,6 @@
 ---
 title: "Transferplan und Kurzpräsentation"
-subtitle: "Modul 6 · Lektion 6.3"
+subtitle: "Modul 6 · Lektion 6.4"
 book-source: "../../transfer/transferplan.qmd"
 ---
 
@@ -10,8 +10,10 @@ book-source: "../../transfer/transferplan.qmd"
 
 Zwei Ergebnisse: eine **30-Tage-Transferkarte** und ein **Regieplan** für die fünf Minuten im Recap-Termin.
 
+Zusammen mit der Automatisierungsentscheidung aus 6.3 ist das die **eine eigene Arbeit**, die Modul 6 verlangt.
+
 ::: {.notes}
-Letzte Lektion des Kurses. Beide Ergebnisse gehören in Portfolio-Teil 4 und sind bis zur Abgabe am 08.10. fällig; die Kurzpräsentation wird im Recap-Termin gehalten. Zeit: 1 Minute.
+Letzte Lektion des Kurses. Beide Ergebnisse gehören in Portfolio-Teil 4 und sind bis zur Abgabe am 08.10. fällig; die Kurzpräsentation wird im Recap-Termin gehalten. Ausdrücklich sagen, was nicht hinzukommt: das eigene Startpaket aus 6.2, die Vertiefung des Workflows und die freiwillige Vertiefung mit Codex oder Claude Code. Wer sie gegangen ist, führt sie als Zeile in der Karte. Zeit: 1 Minute.
 :::
 
 ## Aylin will eine Entscheidung, keinen Eindruck
@@ -48,7 +50,7 @@ Gegenprobe im Raum: „spart 50 Prozent“ ließe sich nicht prüfen, weil keine
 | Woche | Schritt | Bis wann | Sichtbares Ergebnis |
 |---|---|---|---|
 | 1 | Datenregel und Konto klären | 16.10. | bestätigte Aktennotiz, Vermerk zu Einstellungen |
-| 1 | Startpaket einrichten, Material mit Datum | 16.10. | Projekt mit Anweisungen und zwei Dateien |
+| 1 | Startpaket einrichten, Context mit Datum | 16.10. | Projekt mit Anweisungen und zwei Dateien |
 | 2 | Zehn echte Anfragen parallel bearbeiten | 23.10. | Tabelle mit zehn Zeilen |
 | 3 | Testfälle wiederholen, Kollegin einweisen | 30.10. | Testfalltabelle, Einweisungsnotiz |
 | 4 | Rückblick vorbereiten und halten | 11.11. | Entscheidung mit Begründung |
@@ -86,6 +88,8 @@ Vertragslage nicht rechtzeitig geklärt → bereinigte Fragen ohne weitere Daten
 :::
 :::
 
+**Arbeitsweise:** Die Automatisierungsentscheidung aus 6.3 kommt als eine Zeile in die Karte: welche Arbeitsweise der Fall bekommt, ab wann, unter welcher Bedingung erneut geprüft wird.
+
 **Rückblick:** 11.11., 30 Minuten, mit Tabelle und Automatisierungsentscheidung. Drei Ausgänge: fortführen, anpassen, beenden — alle drei sind Erfolge, wenn sie begründet sind.
 
 ::: {.notes}
@@ -95,18 +99,21 @@ Das dritte Risiko ausdrücklich nennen, weil es das wahrscheinlichste ist: Entw�
 ## Mitmachen: die Karte mit Rückfragen belasten
 
 ```text
-Du bist eine kritische Zuhörerin. Du bewertest nicht und gibst keine
-Rechts- oder Fachauskunft. Du stellst Fragen.
-
-AUFGABE   Drei Rückfragen, wie eine erfahrene Kollegin sie nach einer
-          fünfminütigen Präsentation dieser Karte stellen würde. Dazu je
-          Erfolgsmaß: nach vier Wochen ablesbar (ja/nein), was fehlt?
-GRENZEN   Nur Fragen. Keine Empfehlungen, keine Bewertung, keine
-          Aussagen zur rechtlichen Zulässigkeit, keine erfundenen Zahlen.
+TASK     Drei Rückfragen, wie eine erfahrene Kollegin sie nach einer
+         fünfminütigen Präsentation dieser Karte stellen würde. Dazu je
+         Erfolgsmaß: nach vier Wochen ablesbar (ja/nein), was fehlt?
+CONTEXT  Rolle: Du bist eine kritische Zuhörerin. Du bewertest nicht und
+         gibst keine Rechts- oder Fachauskunft. Du stellst Fragen.
+         Dazu die eigene 30-Tage-Transferkarte in Kurzform.
+FORMAT   Drei nummerierte Fragen, je höchstens zwei Sätze. Danach eine
+         Tabelle: Erfolgsmaß | ablesbar (ja/nein) | was fehlt.
+CHECK    Nur Fragen. Keine Empfehlungen, keine Bewertung, keine
+         Aussagen zur rechtlichen Zulässigkeit, keine erfundenen Zahlen.
+         Unklares in der Karte zu einer der drei Fragen machen.
 ```
 
 ::: {.sources}
-Vollständiger Auftrag: material/m06/prompt-kritischer-zuhoerer.txt · Buchkapitel 6.3, Schritt 4
+Vollständiger Auftrag: material/m06/prompt-kritischer-zuhoerer.txt · Buchkapitel 6.4, Schritt 4
 :::
 
 ::: {.notes}
@@ -126,7 +133,7 @@ Konstruiert, kein aufgezeichneter Modelloutput.
 Frage 3 zwingt zu einer Festlegung, die in die Karte gehört: **beides zugleich.**
 
 ::: {.notes}
-Die drei Merkmale brauchbarer Fragen benennen: Sie fordern eine Entscheidung ein, statt selbst zu entscheiden; sie greifen dort an, wo der Plan wirklich dünn ist, meist bei Vertretung, Vergleichswerten und Definitionen; sie enthalten keine Zahlen, die nicht im Material standen. Wer im eigenen Ergebnis Empfehlungen findet: Befund notieren, streichen, weiterarbeiten. Auch eine ausdrückliche Grenze ist eine Anweisung, keine Garantie. Zeit: 3 Minuten.
+Die drei Merkmale brauchbarer Fragen benennen: Sie fordern eine Entscheidung ein, statt selbst zu entscheiden; sie greifen dort an, wo der Plan wirklich dünn ist, meist bei Vertretung, Vergleichswerten und Definitionen; sie enthalten keine Zahlen, die nicht im Context standen. Wer im eigenen Ergebnis Empfehlungen findet: Befund notieren, streichen, weiterarbeiten. Auch ein ausdrücklicher Check ist eine Anweisung, keine Garantie. Zeit: 3 Minuten.
 :::
 
 ## Fünf Minuten, vier Teile
@@ -134,7 +141,7 @@ Die drei Merkmale brauchbarer Fragen benennen: Sie fordern eine Entscheidung ein
 | Zeit | Teil | Was gezeigt wird |
 |---|---|---|
 | 0:00–0:50 | Use-Case-Canvas | Problem, Zielgruppe, Nutzenhypothese |
-| 0:50–2:00 | Prompt- und Context-Pipeline | Auftrag, Startpaket, Materialherkunft |
+| 0:50–2:00 | Prompt- und Context-Pipeline | Auftrag, Startpaket, Herkunft des Contexts |
 | 2:00–3:15 | Qualität und Compliance | ein Testfall mit Lücke; eine Risiko-Zeile mit Zuständigkeit |
 | 3:15–4:15 | Transferplan | erster Schritt, Erfolgsmaß, Rückblicktermin |
 | 4:15–4:45 | Schluss | eine Bitte an die Gruppe |
@@ -151,20 +158,21 @@ Probelauf mit Timer, laut gesprochen, mit der Mappe auf dem Bildschirm. Liegt ei
 
 ## Was danach freiwillig bleibt
 
-- Der Praxispfad mit Codex oder Claude Code
+- Die freiwillige Vertiefung mit Codex oder Claude Code
 - Eine Vertiefung des n8n-Workflows
+- Das eigene Startpaket aus 6.2
 
 Beides gehört in die eigene Erprobungszeit, addiert **keine Stunden** zum Kurs und ist **keine Voraussetzung** für die Prüfungsleistung.
 
 Wer es geht, kann es als Schritt in die Transferkarte schreiben. Wer nicht, verliert nichts.
 
 ::: {.notes}
-Zum Abschluss den Bogen schließen: Der Kurs hat vom ersten Chat-Erfolg über den Arbeitsauftrag, das Kontextmaterial, die Prüfung und die Risiko-Orientierung bis zum Transferplan geführt. Was bleibt, ist die Arbeitsweise: Material mitgeben, Grenzen setzen, Ergebnis gegen das Material lesen, Offenes offen lassen, selbst versenden. Letzter Hinweis auf die Abgabe am 08.10. und die Kurzpräsentation im Recap-Termin. Zeit: 2 Minuten.
+Zum Abschluss den Bogen schließen: Der Kurs hat vom ersten Chat-Erfolg über den Arbeitsauftrag, das Kontextmaterial, die Prüfung und die Risiko-Orientierung bis zum Transferplan geführt. Was bleibt, ist die Arbeitsweise: Context mitgeben, Check setzen, Ergebnis gegen den Context lesen, Offenes offen lassen, selbst versenden. Letzter Hinweis auf die Abgabe am 08.10. und die Kurzpräsentation im Recap-Termin. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 6.3, Working with GenAI: transfer/transferplan
+- Buchkapitel 6.4, Working with GenAI: transfer/transferplan
 - Material: material/m06/transferkarte-30-tage.md, praesentations-regie.md, prompt-kritischer-zuhoerer.txt, automatisierungs-entscheidung.md
 - Termine: Recap und Abgabe 08.10.2026; Beispieldaten der Transferkarte (12.10. bis 11.11.) sind konstruiert
 - Beispielausgaben sind konstruiert, keine aufgezeichneten Modelloutputs

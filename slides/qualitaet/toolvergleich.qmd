@@ -1,6 +1,6 @@
 ---
-title: "Übertragbarkeit: derselbe Auftrag in mehreren Werkzeugen"
-subtitle: "Modul 4 · Lektion 4.3"
+title: "Einen Auftrag auf andere KI-Werkzeuge übertragen"
+subtitle: "Modul 4 · Lektion 4.4"
 book-source: "../../qualitaet/toolvergleich.qmd"
 ---
 
@@ -26,7 +26,7 @@ Auftrag aus Modul 2, Eingabe von Testfall T2, ergänzt um die Preisfrage:
 
 **Erwartung aus T2:** 10,00 EUR als Shop-Preis · Wechsel unter der Fünf-Werktage-Bedingung · Versanddatum unter „Offen“.
 
-Vollständiger Auftrag: Buchkapitel 4.3, `material/m04/prompt-4-3-vergleichsauftrag.txt`
+Vollständiger Auftrag: Buchkapitel 4.4, `material/m04/prompt-4-3-vergleichsauftrag.txt`
 
 ::: {.notes}
 Zwei Minuten. Den wichtigsten Verfahrenspunkt betonen: Die Datei wird unverändert in jedes Fenster kopiert. Keine andere Anrede, keine Umformulierung, weil ein Fenster anders aussieht. Der Vergleich gilt nur bei identischer Eingabe. Wenn ein Werkzeug den Auftrag anders behandelt, ist das der Befund und kein Anlass, den Auftrag für dieses Werkzeug umzuschreiben. Die Erwartung stammt aus der vorigen Lektion und steht damit ebenfalls vor dem Durchlauf fest.
@@ -39,7 +39,7 @@ Zwei Minuten. Den wichtigsten Verfahrenspunkt betonen: Die Datei wird unverände
 | **Format** | Mail, Anrede, Absenderzeile, Wortgrenze eingehalten? |
 | **Offen-Liste** | Gibt es sie, und steht das Versanddatum darin? |
 | **Bedingung** | Hängt der Wechsel an „fünf Werktage vor dem Versand“, ohne unbedingte Zusage? |
-| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Material stehen? Jede einzeln. |
+| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Context stehen? Jede einzeln. |
 | **Rückfrage statt Entwurf** | Kam ein Entwurf oder zuerst eine Frage? |
 | **Ton und Länge** | Sachlich? Wortzahl? |
 
@@ -91,7 +91,7 @@ Vier Minuten. Die Buchstaben sind ausdrücklich keine verdeckten Anbieternamen; 
 | Ton und Länge | sachlich | verbindlicher als erlaubt | sachlich |
 
 ::: {.notes}
-Auflösung fünf Minuten, erst nach den Protokollen aus dem Raum. Zwei Unterscheidungen herausarbeiten. Erstens: Der erfundene Versandtermin ist der auffälligere Zusatz, der „vergünstigte Abo-Preis“ der gefährlichere, denn das Material sagt ausdrücklich, dass zu Abo-Preisen keine Angaben vorliegen; aus dieser Lücke wird eine Zusage. Zweitens: C ist nicht falsch, aber nicht das bestellte Ergebnis. Eine Rückfrage lässt sich mit einer Nachricht auflösen oder im Auftrag ausschließen.
+Auflösung fünf Minuten, erst nach den Protokollen aus dem Raum. Zwei Unterscheidungen herausarbeiten. Erstens: Der erfundene Versandtermin ist der auffälligere Zusatz, der „vergünstigte Abo-Preis“ der gefährlichere, denn der Context sagt ausdrücklich, dass zu Abo-Preisen keine Angaben vorliegen; aus dieser Lücke wird eine Zusage. Zweitens: C ist nicht falsch, aber nicht das bestellte Ergebnis. Eine Rückfrage lässt sich mit einer Nachricht auflösen oder im Auftrag ausschließen.
 :::
 
 ## Gleich, verschieden, robust
@@ -110,7 +110,7 @@ Drei Minuten. Warum Unterschiede nicht erklärt werden: Stellt ein Werkzeug eine
 
 | Beobachtung | Änderung am Auftrag |
 |---|---|
-| Ein Werkzeug hat zurückgefragt | GRENZEN: „Stelle keine Rückfragen. Erstelle den Entwurf und trage fehlende Angaben unter Offen ein.“ |
+| Ein Werkzeug hat zurückgefragt | CHECK: „Stelle keine Rückfragen. Erstelle den Entwurf und trage fehlende Angaben unter Offen ein.“ |
 | „Offen: keine“, obwohl das Datum fehlt | FORMAT: „Die Liste Offen nennt mindestens die Angaben, die für eine vollständige Antwort fehlen.“ |
 
 Die neue Fassung läuft in allen verfügbaren Werkzeugen erneut. Beide Fassungen aufheben.
@@ -119,22 +119,36 @@ Die neue Fassung läuft in allen verfügbaren Werkzeugen erneut. Beide Fassungen
 Drei Minuten. Der Punkt dieser Folie: Die Änderung setzt am Auftrag an, nicht am Werkzeug, und sie gilt danach überall. Eine eigene Fassung je Werkzeug zu pflegen zerstört die Vergleichbarkeit und verdoppelt die Arbeit bei jeder künftigen Änderung. Dass sich die Werkzeuge nach der Änderung an einer anderen Stelle unterscheiden, ist erwartbar; dann wird die nächste Beobachtung notiert. Auch hier gilt: genau eine Änderung, sonst ist die Zuordnung weg.
 :::
 
-## Eigene Variante und Portfolio
+## Auch ohne Werkzeugwechsel
 
-1. Eigenen Auftrag unverändert in jedes verfügbare Werkzeug. Nur ein Zugang? Zweimal in getrennten Chats — auch das ist Übertragbarkeit.
-2. Sechs Kriterien sofort nach jedem Durchlauf.
-3. Gleich, verschieden, robust beantworten; eine Änderung ableiten und wiederholen.
-4. Absatz „Übertragbarkeit“ schreiben: drei bis fünf Sätze, ohne Sieger.
+Ein Konto bekommt andere Voreinstellungen. Eine Kollegin übernimmt die Aufgabe. Ein Modell wird abgelöst.
 
-Protokoll, beide Auftragsfassungen und der Absatz gehören in **Portfolio-Teil 3**, Übertragbarkeit.
+**Erhalten bleibt, was im Auftrag ausdrücklich steht:** die verlangte Gliederung, die geforderte Liste offener Punkte, die Grenze dessen, was beantwortet wird.
+
+**Nicht erhalten bleibt, was stillschweigend vorausgesetzt wurde.**
+
+Der Vergleich ist deshalb weniger ein Test der Werkzeuge als eine Suche nach den stillschweigenden Voraussetzungen im eigenen Auftrag.
 
 ::: {.notes}
-Selbstlernphase. Im Portfolio angeben: Werkzeug, Kontostatus und Datum, und bei den konstruierten Ausgaben ausdrücklich „Kursbeispiel, kein eigener Modelllauf“ vermerken. Zwei häufige Fehler ansprechen. Erstens die Sammelzeile „einige Zusätze“: Sie verliert genau die Aussagen, die später zu streichen sind. Zweitens ein Absatz, der eine Aussage über ein Werkzeug enthält, die über den einzelnen Durchlauf hinausgeht; solche Sätze streichen und durch die Beobachtung ersetzen, aus der sie entstanden sind.
+Zwei Minuten. Diese Folie nimmt der Übung den Produktvergleichs-Charakter und rückt sie an die richtige Stelle. Wenn die Runde nach konkreten Werkzeugunterschieden fragt: darauf zurückkommen, dass ein Durchlauf je Werkzeug eine Beobachtung ist und keine Eigenschaft. Nützliche Anschlussfrage in die Runde: Welche Vorgabe im eigenen Auftrag steht nirgends geschrieben, weil sie selbstverständlich schien?
+:::
+
+## Einen eigenen Testfall ein zweites Mal
+
+1. Eine eigene Testfallkarte wählen, am besten die, die geschwankt hat oder gescheitert ist.
+2. Unverändert ein weiteres Mal ausführen: zweites Werkzeug, sonst zweiter Chat.
+3. Sechs Kriterien sofort ausfüllen; Zusätze einzeln notieren, auch wenn sie stimmen.
+4. Absatz „Übertragbarkeit“ schreiben: drei bis fünf Sätze, ohne Sieger.
+
+Protokolleintrag und Absatz gehören in **Portfolio-Teil 3**, Übertragbarkeit. Freiwillig: der volle Vergleich über alle verfügbaren Werkzeuge mit einer abgeleiteten Änderung.
+
+::: {.notes}
+Selbstlernphase, drei Minuten Ansage. Ausdrücklich sagen, dass das keine neue Aufgabe ist, sondern die Fortsetzung der eigenen Testfallreihe; der volle Werkzeugvergleich ist freiwillig. Im Portfolio angeben: Werkzeug, Kontostatus und Datum, und bei den konstruierten Ausgaben ausdrücklich „Kursbeispiel, kein eigener Modelllauf“ vermerken. Zwei häufige Fehler ansprechen. Erstens die Sammelzeile „einige Zusätze“: Sie verliert genau die Aussagen, die später zu streichen sind. Zweitens ein Absatz, der eine Aussage über ein Werkzeug enthält, die über den einzelnen Durchlauf hinausgeht; solche Sätze streichen und durch die Beobachtung ersetzen, aus der sie entstanden sind.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 4.3, Working with GenAI: qualitaet/toolvergleich
+- Buchkapitel 4.4, Working with GenAI: qualitaet/toolvergleich
 - Material: material/m04/prompt-4-3-vergleichsauftrag.txt, vergleichsprotokoll-vorlage.md, vergleichsausgaben-konstruiert.md
 - Werkzeugseiten: [chatgpt.com](https://chatgpt.com/), [claude.ai](https://claude.ai/), [gemini.google.com](https://gemini.google.com/) — Funktionsumfang ist kontoabhängig, der Kurs setzt kein kostenpflichtiges Konto voraus
 - Die Ausgaben A, B und C sind konstruiert und stehen für kein bestimmtes Produkt; der Vergleich enthält kein Ranking und keine Kaufempfehlung

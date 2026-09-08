@@ -6,12 +6,12 @@ book-source: "../../verantwortung/urheberrecht.qmd"
 
 ## Sechs Quellen für einen Blogbeitrag {.stage}
 
-[Modul 5 · Verantwortung und Risiko-Orientierung]{.kicker}
+[Modul 5 · Daten, Rechte und Verantwortung]{.kicker}
 
 Jonas Halder hat Material gesammelt. Die Frage kommt vor dem Prompt, nicht danach: Was davon darf überhaupt hinein?
 
 ::: {.notes}
-Anschluss an 5.1: Dort ging es um Angaben über Personen, hier um fremde Texte und Bilder im Material. Gleiche Abgrenzung wie im ganzen Modul: Risiko-Orientierung, keine Rechtsberatung. Was in diesem Deck an Rechtsdetail vorkommt, ist bewusst knapp gehalten; für den Einzelfall wird die Rechtsberatung beauftragt. Zeit: 1 Minute.
+Anschluss an 5.1: Dort ging es um Angaben über Personen, hier um fremde Texte und Bilder im Context. Gleiche Abgrenzung wie im ganzen Modul: Risiko-Orientierung, keine Rechtsberatung. Was in diesem Deck an Rechtsdetail vorkommt, ist bewusst knapp gehalten; für den Einzelfall wird die Rechtsberatung beauftragt. Zeit: 1 Minute.
 :::
 
 ## Das Quellenpuzzle
@@ -85,13 +85,17 @@ Diese Folie in Paaren erarbeiten lassen (fünf Minuten), dann auflösen. Analogi
 ## Der Prüfhebel: Quelle hinter jedem Absatz
 
 ```text
-MATERIAL  Röstnotizen (freigegeben) + Wiki-Absatz (freie Lizenz,
-          Namensnennung) + Sortimentsangabe. Sonst nichts.
-FORMAT    180–220 Wörter, Überschrift plus drei Absätze. Hinter jedem
-          Absatz die Quelle: [Röstnotizen], [Kaffeewiki], [Sortiment].
-          Absätze ohne Quelle im Material sind nicht erlaubt.
-GRENZEN   Keine Fakten zu Röstchemie, Herkunft, Anbau, Gesundheit.
-          Keine Vergleiche mit Anbietern. Keine erfundenen Kundenstimmen.
+TASK     Entwirf einen kurzen Blogbeitrag über Filterkaffee Mild.
+CONTEXT  Rolle im Marketing der Rösterei; Röstnotizen (freigegeben) +
+         Wiki-Absatz (freie Lizenz, Namensnennung) + Sortimentsangabe.
+         Sonst nichts.
+FORMAT   180–220 Wörter, Überschrift plus drei Absätze. Hinter jedem
+         Absatz die Quelle: [Röstnotizen], [Kaffeewiki], [Sortiment].
+         Absätze ohne Quelle im Context sind nicht erlaubt.
+CHECK    Keine Fakten zu Röstchemie, Herkunft, Anbau, Gesundheit.
+         Keine Vergleiche mit Anbietern. Keine erfundenen Kundenstimmen.
+         Absätze ohne eindeutige Quelle nicht schreiben, sondern die
+         fehlende Angabe unter "Offen" nennen.
 ```
 
 Die Kennzeichnung macht Herkunft sichtbar. Ob der Absatz seine Quelle **korrekt wiedergibt**, wird nachgelesen.
@@ -113,7 +117,7 @@ Live-Demo oder Arbeitsphase, je nach Zeit: Auftrag aus dem Buch in einen neuen C
 5. **Liste „Offen“:** Titelbild, Bildnachweis, fachliche Freigabe?
 
 ::: {.notes}
-Zu Schritt 1 ein konkretes Beispiel geben: Ein Satz über Maillard-Reaktion oder Säureabbau kann nur aus dem Fachbuch stammen, das nicht im Material war. Zu Schritt 2: Ein Chatmodell kann Formulierungen erzeugen, die bekannten Texten nahekommen, auch ohne dass sie mitgegeben wurden; das als Möglichkeit formulieren, nicht als Gewissheit. Auflösung mit dem konstruierten Beitrag aus dem Buch, ausdrücklich als konstruiert gekennzeichnet. Zeit: 3 Minuten.
+Zu Schritt 1 ein konkretes Beispiel geben: Ein Satz über Maillard-Reaktion oder Säureabbau kann nur aus dem Fachbuch stammen, das nicht im Context war. Zu Schritt 2: Ein Chatmodell kann Formulierungen erzeugen, die bekannten Texten nahekommen, auch ohne dass sie mitgegeben wurden; das als Möglichkeit formulieren, nicht als Gewissheit. Auflösung mit dem konstruierten Beitrag aus dem Buch, ausdrücklich als konstruiert gekennzeichnet. Zeit: 3 Minuten.
 :::
 
 ## Rechte am Ergebnis: was gesagt werden kann
@@ -142,7 +146,7 @@ Diese Folie beantwortet die Frage, die in jedem Kurs kommt: „Gehört mir das d
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
 | Ein Absatz erklärt Röstchemie | Ungedeckte Ergänzung entfernen; sonst eigene Quelle mit Lizenz |
-| Ein Satz klingt wie der Konkurrenztext | Gegen B lesen; aus eigenem Material umschreiben |
+| Ein Satz klingt wie der Konkurrenztext | Gegen B lesen; aus eigenem freigegebenem Material umschreiben |
 | Wiki-Absatz wörtlich, ohne Kennzeichnung | Als Zitat kennzeichnen, Quelle nennen, Lizenzhinweis vorsehen |
 | Ein Herkunftsland taucht auf | Nicht freigegeben: entfernen, unter „Offen“ führen |
 | Kundenstimmen im Entwurf | Entfernen; erst nach Klärung, ohne Namen |
@@ -151,20 +155,20 @@ Diese Folie beantwortet die Frage, die in jedem Kurs kommt: „Gehört mir das d
 Nur die Zeilen besprechen, die aufgetreten sind. Bei „nur ein bisschen ändern“ deutlich werden: Das ist keine Lösung, sondern der Versuch, Nähe unkenntlich zu machen. Umgeschrieben wird aus dem eigenen Material. Zeit: 2 Minuten.
 :::
 
-## Eigene Variante und Portfolio-Teil 3
+## Eine Zeile für Portfolio-Teil 3
 
-1. Alle Quellen des eigenen Falls auflisten: eigene Vorlagen, Lieferantenunterlagen, Normen, Fachartikel, Bilder, Beiträge Dritter
-2. Jede mit den drei Fragen bewerten
-3. Aus dem Auftrag streichen, was nur „gefunden“ ist
-4. Quellenkennzeichnung je Absatz verlangen und den Entwurf danach prüfen
-5. Zeile „Rechte an Eingaben und Ergebnissen“ füllen: was im Material steckt, wie damit umgegangen wurde, was offen ist, wer klärt
+1. Die Quellen des eigenen Falls auflisten: eigene Vorlagen, Lieferantenunterlagen, Normen, Fachartikel, Bilder, Beiträge Dritter
+2. In Stichworten dahinter: eigen oder lizenziert · nur gefunden, bleibt draußen · ungeklärt
+3. Daraus die Zeile „Rechte an Eingaben und Ergebnissen“ füllen, mit Zuständigkeit oder „nicht benannt“
+
+**Freiwillige Vertiefung:** den eigenen Auftrag auf zulässiges Material umstellen, Quellenkennzeichnung je Absatz verlangen und den Entwurf danach prüfen
 
 ::: {.sources}
 material/m05/rechte-check.md · Portfolio-Teil 3
 :::
 
 ::: {.notes}
-Selbstlernaufgabe bis 08.10. Besonders lohnend, wenn der eigene Fall Bilder enthält: dann den Lizenztext des Anbieters auf „Bearbeitung“, „automatisiert“ und „Training“ lesen, bevor ein Bild in ein Werkzeug geht. Hinweis auf den Rechte-Check als Arbeitshilfe; er ersetzt keine Prüfung, er strukturiert sie. Zeit: 2 Minuten.
+Selbstlernaufgabe: fünf Minuten für die Zeile. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.4. Die Vertiefung ist besonders lohnend, wenn der eigene Fall Bilder enthält: dann den Lizenztext des Anbieters auf „Bearbeitung“, „automatisiert“ und „Training“ lesen, bevor ein Bild in ein Werkzeug geht. Hinweis auf den Rechte-Check als Arbeitshilfe; er ersetzt keine Prüfung, er strukturiert sie. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}

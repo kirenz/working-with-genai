@@ -6,12 +6,12 @@ book-source: "../../verantwortung/datenschutz.qmd"
 
 ## Eine Mail, die mehr enthält als drei Fragen {.stage}
 
-[Modul 5 · Verantwortung und Risiko-Orientierung]{.kicker}
+[Modul 5 · Daten, Rechte und Verantwortung]{.kicker}
 
 Der Antwortentwurf funktioniert. Jetzt kommt die Frage, die bei jeder Ausweitung kommt: Darf die **echte** Kundenmail in das Chatkonto?
 
 ::: {.notes}
-Einstieg in Modul 5. Der Bogen aus Modul 2 bis 4 ist gespannt: Der Entwurf ist gebaut, geprüft und getestet. Was fehlt, ist die Erlaubnis. Ausdrücklich sagen: Dieses Modul liefert Risiko-Orientierung, keine Konformitätsgarantie und keine Rechtsberatung. Es ersetzt weder eine datenschutzrechtliche Prüfung noch eine Vereinbarung mit dem Anbieter. Zeit: 1 Minute.
+Einstieg in Modul 5. Der Bogen aus Modul 2 bis 4 ist gespannt: Der Entwurf ist gebaut, geprüft und getestet. Was fehlt, ist die Erlaubnis. Anknüpfen an die kurze Regel aus Modul 1, die seit der ersten Übung gilt: nur das bereitgestellte erfundene Material. Diese Lektion beantwortet die Frage, die im Betrieb darauf folgt. Und der Gegenstand ist nicht nur die Kundenmail: Dieselbe Sortierung fällt bei Besprechungsnotizen mit Namen, bei Angebotsvergleichen mit ausgehandelten Konditionen und bei Entscheidungsvorlagen aus internen Unterlagen an. Ausdrücklich sagen: Dieses Modul liefert Risiko-Orientierung, keine Konformitätsgarantie und keine Rechtsberatung. Es ersetzt weder eine datenschutzrechtliche Prüfung noch eine Vereinbarung mit dem Anbieter. Zeit: 1 Minute.
 :::
 
 ## Die Mail auf Sinas Tisch
@@ -45,7 +45,7 @@ Die Mail vorlesen und dabei markieren, was alles darin steht: Name, drei Nummern
 |---|---|---|
 | **Datenschutz** | Angaben über bestimmbare Personen | Name, Adresse, Kundennummer, Gesundheitsbezug |
 | **Vertraulichkeit** | was der Betrieb nicht nach außen gibt | Einkaufskonditionen, interne Vermerke; gilt auch ohne Namen |
-| **Urheberrecht** | fremde Texte und Bilder im Material | Fachbuch, Stockfoto — Thema der nächsten Lektion |
+| **Urheberrecht** | fremde Texte und Bilder im Context | Fachbuch, Stockfoto — Thema der nächsten Lektion |
 
 „Darf ich das kopieren?“ meint meistens genau eine dieser drei Fragen.
 
@@ -88,13 +88,16 @@ Der zentrale Handgriff der Lektion, und der unspektakulärste: abschreiben oder 
 ## Mitmachen: was eine maschinelle Bereinigung leistet
 
 ```text
-AUFGABE   Bereite die Kundenmail für die weitere Bearbeitung vor.
-          Ersetze personenbezogene Angaben durch Platzhalter, entferne
-          Angaben, die für die Antwort nicht gebraucht werden.
-FORMAT    Zuerst die bereinigte Mail, danach eine Tabelle: Angabe |
-          Platzhalter oder "entfernt" | Begründung in acht Wörtern.
-GRENZEN   Angaben zu Gesundheit, Familie und Dritten nicht als
-          Platzhalter behalten, sondern entfernen. Nichts erfinden.
+TASK     Bereite die Kundenmail für die weitere Bearbeitung vor.
+         Ersetze personenbezogene Angaben durch Platzhalter, entferne
+         Angaben, die für die Antwort nicht gebraucht werden.
+CONTEXT  Rolle im Kundenservice der Rösterei; die synthetische
+         Kundenmail im Wortlaut.
+FORMAT   Zuerst die bereinigte Mail, danach eine Tabelle: Angabe |
+         Platzhalter oder "entfernt" | Begründung in acht Wörtern.
+CHECK    Angaben zu Gesundheit, Familie und Dritten nicht als
+         Platzhalter behalten, sondern entfernen. Nichts erfinden.
+         Unsichere Stellen als "unklar" in der Tabelle führen.
 ```
 
 Zulässig **nur**, weil die Mail synthetisch ist.
@@ -124,7 +127,7 @@ Konstruiertes Beispiel aus dem Buch am Beamer zeigen, ausdrücklich als konstrui
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Gesundheitsbezug steht als „[Grund]“ da | Entfernen; Grenze prüfen: „entfernen“, nicht „ersetzen“ |
+| Gesundheitsbezug steht als „[Grund]“ da | Entfernen; Check prüfen: „entfernen“, nicht „ersetzen“ |
 | Eine Angabe übersehen, etwa der Nachbar | Als Befund notieren; Maßstab ist die eigene Tabelle |
 | Alles ersetzt, aber nichts weggelassen | Fragen, ob der Entwurf die Angabe überhaupt braucht |
 | Unklar, was für dieses Konto gilt | Einstellung prüfen; bis zur Klärung gilt die strengere Regel |
@@ -134,18 +137,20 @@ Konstruiertes Beispiel aus dem Buch am Beamer zeigen, ausdrücklich als konstrui
 Nur die Zeilen besprechen, die im Raum aufgetreten sind; vollständige Tabelle im Buchkapitel. Die letzte Zeile ist die praktisch wichtigste: Eine Regel, die im Alltag stört, wird umgangen. Deshalb die Vorlage „Kundenanfrage (bereinigt):“, in die nur die Fragen getippt werden. Zeit: 2 Minuten.
 :::
 
-## Die Aktennotiz und Portfolio-Teil 3
+## Zwei Notizen für Portfolio-Teil 3
 
-**Vier Punkte:** genutztes Konto und was über dessen Bedingungen bekannt ist · die Regel (was mitgeht, was Platzhalter wird, was entfällt) · wo bereinigt wird · was das Modell nicht bekommt.
+**Für den eigenen Fall genügen zwei Sätze:** Welche Angaben braucht das Vorhaben wirklich (mitgeben, Platzhalter, gar nicht)? In welchem Konto wird gearbeitet, und was ist über dessen Bedingungen bekannt?
 
-**Und der Punkt, der die Notiz erst vollständig macht:** Wer klärt das verbindlich? Fehlt eine Zuständigkeit, steht „nicht benannt“ mit dem nächsten Schritt darin.
+**Und der Punkt, der sie erst vollständig macht:** Wer klärt das verbindlich? Fehlt eine Zuständigkeit, steht „nicht benannt“ mit dem nächsten Schritt darin.
+
+Die vollständige Aktennotiz ist eine freiwillige Vertiefung.
 
 ::: {.sources}
 material/m05/aktennotiz-datenregel.md · Portfolio-Teil 3, Zeilen „Personenbezogene Daten im Prozess“ und „Genutztes Konto / Vertragslage“
 :::
 
 ::: {.notes}
-Selbstlernaufgabe bis zur Abgabe am 08.10.: eigener Fall, eigene erfundene Eingangsnachricht, Tabelle ausfüllen, Notiz schreiben, Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage ausführen. Betonen: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Im Lehrfall entscheidet Aylin über Konto und Freigabe, Petra prüft die Vertragslage, und für die datenschutzrechtliche Einordnung ist niemand benannt; genau das steht in der Notiz. Zeit: 2 Minuten.
+Selbstlernaufgabe: zwei Sätze für den eigenen Fall, fünf Minuten. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.4; diese Lektion liefert dafür die ersten beiden Zeilen. Wer die Regel im Betrieb tatsächlich einführen will, schreibt zusätzlich die vollständige Aktennotiz aus und führt den Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage aus; das ist freiwillig. Betonen: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Im Lehrfall entscheidet Aylin über Konto und Freigabe, Petra prüft die Vertragslage, und für die datenschutzrechtliche Einordnung ist niemand benannt; genau das steht in der Notiz. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}

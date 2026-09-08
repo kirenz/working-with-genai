@@ -1,6 +1,6 @@
 # 30-Tage-Transferkarte
 
-Kursmaterial „Working with GenAI", Modul 6, Lektion 6.3. Vorlage für Portfolio-Teil 4. Das ausgefüllte Beispiel ist eine synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot.
+Kursmaterial „Working with GenAI", Modul 6, Lektion 6.4. Vorlage für Portfolio-Teil 4. Das ausgefüllte Beispiel ist eine synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot.
 
 ## Ausgefülltes Beispiel: Kundenservice-Entwürfe, Rösterei Morgenrot
 

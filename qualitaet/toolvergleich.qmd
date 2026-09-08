@@ -1,20 +1,23 @@
-# Übertragbarkeit: derselbe Auftrag in ChatGPT, Claude und Gemini
+# Einen Auftrag auf andere KI-Werkzeuge übertragen
 
-Der Kundenservice-Auftrag hat seine Testfälle bestanden, in einem Werkzeug. Was passiert, wenn dieselbe Textdatei in ein anderes Chatwerkzeug kopiert wird? Bleibt die Liste „Offen“ stehen, hängt die Bedingung noch an der Zusage, kommen neue Zusätze dazu? In diesem Kapitel führen wir denselben Auftrag in zwei oder drei Werkzeugen aus und protokollieren, was gleich bleibt und was sich unterscheidet. Wir küren dabei niemanden.
+Der Kundenservice-Auftrag hat seine Testfälle bestanden, in einem Werkzeug. Was passiert, wenn dieselbe Textdatei in ein anderes Chatwerkzeug kopiert wird? Bleibt die Liste „Offen“ stehen, hängt die Bedingung noch an der Zusage, kommen neue Zusätze dazu? In diesem Kapitel führen wir denselben Auftrag in zwei oder drei Werkzeugen aus und protokollieren, was gleich bleibt und was sich unterscheidet.
 
-**Lernziel:** Einen unveränderten Auftrag in mehreren Chatwerkzeugen ausführen, die Ergebnisse mit festen Kriterien protokollieren, daraus ableiten, welche Formulierungen des Auftrags überall getragen haben, und eine Beobachtung zur Übertragbarkeit für das Portfolio schreiben, ohne ein Ranking. **Zeit:** etwa 35 Minuten einschließlich der Durchläufe.
+Der Vergleich richtet sich auf den Auftrag, nicht auf die Werkzeuge. Was überall getragen hat, ist robust formuliert; was nur an einer Stelle getragen hat, ist eine Stelle im Auftrag, die genauer werden muss. Ein Sieger wird hier nicht gekürt, und zwar nicht aus Höflichkeit, sondern weil wenige Durchläufe eine solche Aussage nicht tragen.
+
+**Lernziel:** Einen unveränderten Auftrag in mehreren Chatwerkzeugen ausführen, die Ergebnisse mit festen Kriterien protokollieren, daraus ableiten, welche Formulierungen des Auftrags überall getragen haben, und eine Beobachtung zur Übertragbarkeit für das Portfolio schreiben, ohne ein Ranking. **Zeit:** etwa 25 Minuten einschließlich der Durchläufe.
 
 ## Der Lehrfall: eine Datei, drei Fenster
 
 Petra Lindqvist will wissen, ob der Auftrag an einem Werkzeug hängt. In der Rösterei nutzen nicht alle dasselbe Konto, und ob das Konto von heute nächstes Jahr noch das Konto der Wahl ist, weiß niemand. Der Auftrag ([Download](../material/m04/prompt-4-3-vergleichsauftrag.txt)) ist der aus Modul 2 mit der Eingabe von Testfall T2, ergänzt um eine Preisfrage:
 
 ```text
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot. Gültig sind
+ausschließlich die folgenden Angaben.
+
 Fachinformationen:
 - Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR,
   Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
@@ -40,10 +43,10 @@ Antwort-Mail, höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton.
 Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
 Am Ende eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
-- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie
+CHECK
+- Beantworte Fragen, die der Context nicht abdeckt, nicht. Trage sie
   stattdessen unter "Offen" ein.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts.
 - Erfinde keine Termine, Preise oder Fristen.
 ```
 
@@ -62,7 +65,7 @@ Ein Vergleichsprotokoll mit sechs Kriterien je Werkzeug, eine Liste „Was gleic
 | **Format** | Mail, Anrede, Absenderzeile, Wortgrenze eingehalten? |
 | **Offen-Liste** | Gibt es sie, und steht das Versanddatum darin? |
 | **Bedingung** | Hängt der Wechsel an „fünf Werktage vor dem Versand“, ohne unbedingte Zusage? |
-| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Material stehen? Jede einzeln. |
+| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Context stehen? Jede einzeln. |
 | **Rückfrage statt Entwurf** | Kam ein Entwurf oder zuerst eine Frage zurück? |
 | **Ton und Länge** | Sachlich? Wortzahl? |
 
@@ -78,7 +81,7 @@ Wir kopieren die Datei unverändert in jedes Werkzeug. Keine andere Anrede, kein
 
 ### Schritt 2 — Je Werkzeug ein Durchlauf, sofort protokollieren
 
-Nach jedem Durchlauf füllen wir die sechs Kriterien aus, bevor wir das nächste Werkzeug öffnen. Sonst vergleichen wir aus der Erinnerung, und die Erinnerung bevorzugt den Text, der am flüssigsten klang. Zu „Zusätze“ notieren wir jede Aussage, die nicht im Material steht, einzeln, auch wenn sie stimmt.
+Nach jedem Durchlauf füllen wir die sechs Kriterien aus, bevor wir das nächste Werkzeug öffnen. Sonst vergleichen wir aus der Erinnerung, und die Erinnerung bevorzugt den Text, der am flüssigsten klang. Zu „Zusätze“ notieren wir jede Aussage, die nicht im Context steht, einzeln, auch wenn sie stimmt.
 
 ::: {.callout-tip title="Das Cockpit-Protokoll"}
 Wer in einem Cockpit eine Checkliste abarbeitet, liest jeden Punkt laut und bestätigt ihn, bevor der nächste kommt. Es gibt keinen Punkt „Gesamteindruck“. Genau so lesen wir die drei Ergebnisse: Kriterium für Kriterium, nicht als Ganzes.
@@ -94,7 +97,7 @@ Nach den Durchläufen beantworten wir drei Fragen im Protokoll:
 
 1. **Was blieb gleich?** Kandidaten sind die Teile, die der Auftrag ausdrücklich verlangt hat: der Preis, die Bedingung, die Struktur mit Liste „Offen“. Wenn eines davon irgendwo fehlt, ist das die interessanteste Zeile.
 2. **Was unterschied sich?** Anrede, Länge, Reihenfolge, Zusätze, ob zuerst eine Rückfrage kam.
-3. **Welche Formulierungen haben überall getragen?** Kandidaten: die Überschriften AUFGABE, MATERIAL, FORMAT, GRENZEN; die ausdrücklich verlangte Liste „Offen“; die Wortgrenze; „nur Angaben aus dem Material“. Was überall getragen hat, ist robust und bleibt. Was nur in einem Werkzeug getragen hat, wird im Auftrag ausdrücklicher formuliert.
+3. **Welche Formulierungen haben überall getragen?** Kandidaten: die Überschriften TASK, CONTEXT, FORMAT, CHECK; die ausdrücklich verlangte Liste „Offen“; die Wortgrenze; „nur Angaben aus dem Context“. Was überall getragen hat, ist robust und bleibt. Was nur in einem Werkzeug getragen hat, wird im Auftrag ausdrücklicher formuliert.
 
 ::: {.callout-note title="Warum wir Unterschiede nicht erklären"}
 Wenn ein Werkzeug eine Rückfrage stellt und ein anderes einen Entwurf liefert, wissen wir nach einem Durchlauf nicht, ob das am Werkzeug, an einer Voreinstellung im Konto oder am Zufall des Durchlaufs liegt. Wir notieren die Beobachtung und ziehen daraus eine Änderung am Auftrag, die in allen Werkzeugen gilt. Die Zuschreibung „Werkzeug X macht immer Y“ tragen wenige Durchläufe nicht; das gilt seit Modul 2.
@@ -102,7 +105,7 @@ Wenn ein Werkzeug eine Rückfrage stellt und ein anderes einen Entwurf liefert, 
 
 ### Schritt 5 — Eine Änderung am Auftrag, überall wiederholen
 
-Aus dem Protokoll folgt genau eine Änderung. Wenn ein Werkzeug zurückgefragt hat, ergänzen wir unter GRENZEN: „Stelle keine Rückfragen. Erstelle den Entwurf und trage fehlende Angaben unter Offen ein.“ Wenn ein Werkzeug „Offen: keine“ geschrieben hat, obwohl das Versanddatum fehlt, ergänzen wir unter FORMAT: „Die Liste Offen nennt mindestens die Angaben, die für eine vollständige Antwort fehlen; hier gehört das Versanddatum dazu.“ Dann führen wir die neue Fassung in allen verfügbaren Werkzeugen erneut aus.
+Aus dem Protokoll folgt genau eine Änderung. Wenn ein Werkzeug zurückgefragt hat, ergänzen wir unter CHECK: „Stelle keine Rückfragen. Erstelle den Entwurf und trage fehlende Angaben unter Offen ein.“ Wenn ein Werkzeug „Offen: keine“ geschrieben hat, obwohl das Versanddatum fehlt, ergänzen wir unter FORMAT: „Die Liste Offen nennt mindestens die Angaben, die für eine vollständige Antwort fehlen; hier gehört das Versanddatum dazu.“ Dann führen wir die neue Fassung in allen verfügbaren Werkzeugen erneut aus.
 
 ### Drei konstruierte Ausgaben zum Abgleich
 
@@ -126,22 +129,30 @@ Wer nur ein Werkzeug hat, vergleicht dessen Ergebnis mit diesen drei Ausgaben. S
 
 Wir füllen das Protokoll für A, B und C aus, bevor wir die Lesehilfe im Download öffnen. Zwei Beobachtungen, die im Protokoll stehen sollten: B liest sich am freundlichsten und enthält die meisten Zusätze ohne Grundlage, darunter einen erfundenen Versandtermin und eine Anrede, die aus „T. Osei“ nicht ableitbar ist. C ist nicht falsch, aber nicht das bestellte Ergebnis; eine Rückfrage lässt sich mit einer Nachricht auflösen oder im Auftrag ausschließen.
 
-### Eine eigene Variante bauen
+### Einen eigenen Testfall ein zweites Mal ausführen
 
-Wir führen den eigenen Auftrag aus dem Portfolio, unverändert, in jedem verfügbaren Werkzeug aus und protokollieren nach denselben sechs Kriterien. Wer nur ein Werkzeug hat, führt den Auftrag dort zweimal in getrennten Chats aus und vergleicht die beiden Durchläufe miteinander; auch das ist eine Beobachtung zur Übertragbarkeit, nämlich zur Übertragbarkeit von einem Tag auf den nächsten.
+Das ist keine neue Aufgabe, sondern eine Fortsetzung der Testfallreihe aus dem vorigen Kapitel. Wir nehmen eine der eigenen Karten, am besten die, die dort geschwankt hat oder gescheitert ist, und führen sie mit unverändertem Auftrag ein weiteres Mal aus: in einem zweiten Werkzeug, wenn ein Zugang besteht, sonst in einem zweiten Chat desselben Werkzeugs. Auch das ist eine Beobachtung zur Übertragbarkeit, nämlich zur Übertragbarkeit von einem Durchlauf auf den nächsten.
+
+Anschließend schreiben wir den Absatz „Übertragbarkeit“ für **Portfolio-Teil 3**: drei bis fünf Sätze dazu, was gleich blieb, was sich unterschied und was am Auftrag geändert wurde. Ohne Sieger und ohne Kaufempfehlung.
+
+### Freiwillige Vertiefung: das vollständige Protokoll
+
+Wer mehrere Zugänge hat, führt den eigenen Auftrag unverändert in jedem verfügbaren Werkzeug aus und protokolliert nach allen sechs Kriterien.
 
 1. Auftrag unverändert einfügen, Protokoll je Durchlauf sofort ausfüllen.
 2. Gleich, verschieden, robust beantworten.
 3. Eine Änderung ableiten, überall wiederholen.
-4. Den Absatz „Übertragbarkeit“ für das Portfolio schreiben: drei bis fünf Sätze, was gleich blieb, was sich unterschied, was am Auftrag geändert wurde. Ohne Sieger.
+4. Das Protokoll dem Portfolio beilegen.
 
-Das Protokoll und der Absatz gehören in **Portfolio-Teil 3** unter „Übertragbarkeit“.
+### Über den Lehrfall hinaus
+
+Die Frage der Übertragbarkeit stellt sich bei jedem Auftrag, der länger im Gebrauch bleibt, und nicht nur beim Werkzeugwechsel. Ein Konto bekommt andere Voreinstellungen, eine Kollegin übernimmt die Aufgabe, ein Modell wird abgelöst. Was in all diesen Fällen erhalten bleibt, sind die Vorgaben, die im Auftrag ausdrücklich stehen: die verlangte Gliederung, die geforderte Liste offener Punkte, die Grenze dessen, was beantwortet wird. Was nicht erhalten bleibt, ist alles, was wir stillschweigend vorausgesetzt haben. Der Vergleich ist deshalb weniger ein Test der Werkzeuge als eine Suche nach den stillschweigenden Voraussetzungen im eigenen Auftrag.
 
 ## Fehler diagnostizieren
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Ein Werkzeug stellt eine Rückfrage statt zu entwerfen | Mit einer Nachricht auflösen („Entwurf erstellen, fehlende Angabe unter Offen“). Für die nächste Fassung eine Grenze ergänzen, die Rückfragen ausschließt. |
+| Ein Werkzeug stellt eine Rückfrage statt zu entwerfen | Mit einer Nachricht auflösen („Entwurf erstellen, fehlende Angabe unter Offen“). Für die nächste Fassung eine Check-Zeile ergänzen, die Rückfragen ausschließt. |
 | „Offen: keine“, obwohl das Versanddatum fehlt | Im Protokoll unter Offen-Liste als „nein“ notieren. FORMAT präzisieren: Offen nennt die für eine vollständige Antwort fehlenden Angaben. |
 | Die Anrede nennt einen Nachnamen oder ein Geschlecht | Aus „T. Osei“ nicht ableitbar; als Zusatz notieren. FORMAT gibt die Anrede bereits vor; Befund festhalten. |
 | Der Protokolleintrag lautet „insgesamt besser“ | Kein Kriterium. Zeile löschen, die sechs Kriterien einzeln ausfüllen. |
@@ -149,7 +160,7 @@ Das Protokoll und der Absatz gehören in **Portfolio-Teil 3** unter „Übertrag
 | Nach der Änderung am Auftrag unterscheiden sich die Werkzeuge an einer anderen Stelle | Erwartbar. Neue Beobachtung notieren, nächste Änderung ableiten. Beide Fassungen des Auftrags aufheben. |
 | Nur ein Werkzeug steht zur Verfügung | Mit den drei konstruierten Ausgaben vergleichen und den eigenen Auftrag zweimal in getrennten Chats ausführen. Kein Nachteil für das Portfolio. |
 
-## Kontrollpunkt für Modul 4
+## Kontrollpunkt 4.4
 
 - Einen Auftrag unverändert in mehrere Werkzeuge übertragen und je einen Durchlauf mit festen Kriterien protokollieren
 - Zusätze ohne Grundlage einzeln benennen, auch wenn sie plausibel sind

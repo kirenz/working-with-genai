@@ -1,9 +1,13 @@
 Zweite Nachricht im selben Chat, nachdem die Kontextmappe als erste Nachricht
 eingefügt wurde:
 
-AUFGABE
+TASK
 Entwirf eine Antwort auf die folgende Kundenfrage nach den Regeln der
 Kontextmappe.
+
+CONTEXT
+Es gilt die Kontextmappe aus der ersten Nachricht: die Regeln R1 bis R7 und
+die Quellen [Q1], [Q2] und [Q3].
 
 Kundenfrage:
 "Ich überlege, den Entkoffeiniert Sanft zu bestellen. Ist der eher hell und
@@ -13,3 +17,9 @@ Ihre Kaffees eigentlich bio?"
 FORMAT
 Höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton. Hinter jeder
 inhaltlichen Aussage die Quellenkennung. Am Ende eine Liste "Offen".
+
+CHECK
+- Fehlt eine Angabe in allen Quellen, schreibe "nicht im Material" und trage
+  die Frage unter "Offen" ein (R3).
+- Widersprechen sich zwei Quellen, nenne beide Angaben mit Kennung und trage
+  den Widerspruch unter "Offen" ein. Entscheide den Widerspruch nicht (R4).

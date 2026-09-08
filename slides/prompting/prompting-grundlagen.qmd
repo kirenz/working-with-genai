@@ -1,0 +1,107 @@
+---
+title: "Prompting: Task, Context, Format und Check"
+subtitle: "Modul 2 · Lektion 2.1"
+book-source: ../../prompting/prompting-grundlagen.qmd
+---
+
+## Zuruf oder Arbeitsauftrag {.stage}
+
+[Modul 2 · Prompting und Zusammenarbeit im Dialog]{.kicker}
+
+„Fass das mal zusammen.“ Daraus wird etwas. Aber woran wäre zu messen, ob es brauchbar ist?
+
+::: {.notes}
+Etwa 15 Minuten im Auftakt, vor der Anwendung auf die Kundenanfrage. Einstieg: Die Nachricht an ein Chatmodell heißt Prompt; ein Zuruf ist einer, ein Arbeitsauftrag auch. Der Unterschied liegt nicht in der Länge, sondern darin, ob das Modell alles bekommt, was es braucht, und ob hinterher klar ist, woran das Ergebnis gemessen wird. Zeit: 1 Minute.
+:::
+
+## Vier Teile, eine Designentscheidung
+
+| Teil | Frage | Kurz |
+|---|---|---|
+| **Task** | Was soll entstehen? | Ergebnis, Struktur, Zweck |
+| **Context** | Woraus, und in welcher Lage? | Material, Rolle, Eigenschaften des Materials, Begriffe |
+| **Format** | Wie sieht das Ergebnis aus? | Textsorte, Länge, Ton, Aufbau, Ausgabeform |
+| **Check** | Was soll gekennzeichnet werden? | Lücke, Widerspruch, Grenze der Aufgabe |
+
+::: {.sources}
+Merkhilfe dieses Kurses. Belegter Kern: OpenAI, How do I prompt ChatGPT effectively (klar, spezifisch, Kontext, iterativ) · Anthropic, Prompt engineering overview (Erfolgskriterien zuerst) und Prompting best practices (Kontext, Beispiele) · Google, Gemini for Google Workspace Prompting Guide 101 (Persona, Task, Context, Format)
+:::
+
+::: {.notes}
+Die Vierteilung als Designentscheidung des Kurses kennzeichnen, kein Standard. Die Anbieterquellen nennen. Zwei Abweichungen erklären: Die Rolle, die Google als Persona führt, gehört hier in den Context, weil sie eine Beschreibung der Perspektive und des Arbeitszusammenhangs ist; der Check kommt hinzu, weil der Kurs vom Unterschied zwischen plausibel und belegt handelt. Analogie: Übergabe an eine Urlaubsvertretung, die fachlich fit ist, aber das Haus nicht kennt. Zeit: 3 Minuten.
+:::
+
+## Task und Context, kommentiert
+
+::: {.two-col}
+::: {.card}
+**Task, Beratung**
+
+Statt „Fasse die Notizen zusammen“:
+
+„Erstelle drei Listen: Entscheidungen, offene Punkte mit zuständiger Person, Termine.“
+
+Drei Listen lassen sich gegen die Notizen prüfen.
+:::
+::: {.card}
+**Context, Einkauf**
+
+„Du unterstützt den Einkauf. Unten zwei Preislisten desselben Lieferanten, beide vollständig, EUR je kg netto. September ersetzt Mai.“
+
+Rolle, Eigenschaften des Materials, Beziehung der Listen.
+:::
+:::
+
+::: {.notes}
+Beide Beispiele einmal vorlesen und den Kommentar geben: Beim Task macht die feste Struktur das Ergebnis prüfbar. Beim Context begrenzen die Angaben den Spielraum für unbegründete Annahmen. Der Context ist oft der längste Teil, und das ist in Ordnung. Zeit: 3 Minuten.
+:::
+
+## Format und Check, kommentiert
+
+::: {.two-col}
+::: {.card}
+**Format, Marketing**
+
+Ideen für Newsletter-Themen als Tabelle: Idee | Für wen | Welche Angaben aus der Rösterei nötig wären. Genau acht Zeilen, keine Bewertung.
+
+Die dritte Spalte fordert den Informationsbedarf jeder Idee an.
+:::
+::: {.card}
+**Check, Projektleitung**
+
+Drei Angebote nebeneinander: keine Angabe heißt „keine Angabe“, nicht schätzen; Widersprüche mit „prüfen“ kennzeichnen; keine Empfehlung, die Entscheidung trifft eine Person.
+:::
+:::
+
+::: {.notes}
+Format entscheidet, wie viel Arbeit die Prüfung kostet: Eine Tabelle mit festen Spalten liest sich schneller gegen das Material als Fließtext. Ideen haben keinen Prüfstand im Material; enthaltene Sachbehauptungen werden trotzdem geprüft. Beim Check die drei Lagen nennen: Lücke, Widerspruch, Grenze der Aufgabe, und dass ein präziser Check die Stelle nennt, an der das Kenntlichmachen erscheint. Zeit: 3 Minuten.
+:::
+
+## Check im Prompt und menschliche Prüfung
+
+::: {.two-col}
+::: {.card}
+**Check**
+
+Anweisung an das Modell, was es kennzeichnen soll.
+
+Macht wahrscheinlicher, dass eine Lücke sichtbar wird. Keine Garantie.
+:::
+::: {.card}
+**Prüfung**
+
+Eigene Tätigkeit danach: Ergebnis gegen das Material lesen, entscheiden, ob verwendbar.
+
+Bleibt in jedem Fall.
+:::
+:::
+
+Ein Zuruf genügt, wenn keine Fakten belegt sein müssen und ein Blick zur Beurteilung reicht.
+
+::: {.sources}
+Anthropic, Reduce hallucinations: Techniken verringern Halluzinationen, schließen sie nicht aus. Vollständiger Auftrag zu Petras Besprechungsnotizen: Buchkapitel 2.1 oder material/m02/prompt-besprechungsnotizen.txt
+:::
+
+::: {.notes}
+Zwei Schritte, keiner ersetzt den anderen. Eine ungedeckte Angabe trotz Check ist ein Befund, keine Panne. Prüffrage für den Alltag: Würde das Ergebnis weitergegeben, ohne es gegen etwas zu prüfen? Wenn nein, gehören Context und Check in den Auftrag. Wer Zeit hat, führt den vollständigen Auftrag zu Petras Besprechungsnotizen aus dem Buch aus und prüft auf Vollständigkeit; sonst als freiwillige Vertiefung. Übergang zur Anwendung auf Sinas Kundenanfrage. Zeit: 3 Minuten.
+:::

@@ -1,6 +1,6 @@
 ---
-title: "Regeln und Quellen dauerhaft hinterlegen"
-subtitle: "Modul 3 · Lektion 3.2"
+title: "Regeln und Quellen in einer Kontextmappe festhalten"
+subtitle: "Modul 3 · Lektion 3.4"
 book-source: "../../kontext/regeln-quellen.qmd"
 ---
 
@@ -24,7 +24,7 @@ Einstieg mit dem Widerspruch. Frage an den Raum: Welche Angabe stimmt? Erwartete
 ::: {.card}
 **Bisher**
 
-Regeln stehen im Abschnitt GRENZEN eines einzelnen Prompts. Bei der nächsten Frage werden sie neu getippt oder vergessen.
+Der CHECK steht in einem einzelnen Prompt und gilt nur für diesen. Bei der nächsten Frage wird er neu getippt oder vergessen.
 :::
 ::: {.card}
 **Jetzt**
@@ -40,6 +40,7 @@ Der Übergang vom Einzelprompt zur wiederverwendbaren Grundlage. Die Mappe ist r
 ## Sieben Regeln
 
 ```text
+REGELN · CHECK für jede Antwort in diesem Chat
 R1  Nur Angaben aus den Quellen dieser Mappe.
 R2  Hinter jede Aussage die Kennung [Q1], [Q2] oder [Q3].
     Eine Aussage ohne Kennung ist nicht zulässig.
@@ -87,7 +88,7 @@ v1 · 07.09.2026 · Mappe angelegt mit [Q1], [Q2], [Q3]. Bekannter
 Nach der Klärung entsteht Version 2. Version 1 bleibt liegen, als ersetzt gekennzeichnet.
 
 ::: {.notes}
-Verweis auf Lektion 3.1: Genau diese Kennzeichnung hat beim Steckbrief geholfen, die alte Fassung zu erkennen. Ohne Version und Datum lässt sich nicht sagen, ob eine Mappe aktuell ist.
+Verweis auf Lektion 3.2: Genau diese Kennzeichnung hat beim Steckbrief geholfen, die alte Fassung zu erkennen. Ohne Version und Datum lässt sich nicht sagen, ob eine Mappe aktuell ist.
 :::
 
 ## Mappe zuerst, Frage danach
@@ -97,15 +98,20 @@ Verweis auf Lektion 3.1: Genau diese Kennzeichnung hat beim Steckbrief geholfen,
 **Nachricht 2:**
 
 ```text
-AUFGABE
+TASK
 Entwirf eine Antwort auf die folgende Kundenfrage nach den Regeln
 der Kontextmappe.
-Kundenfrage: "Ich überlege, den Entkoffeiniert Sanft zu bestellen.
+CONTEXT
+Es gilt die Kontextmappe Röstung v1 aus der ersten Nachricht.
+KUNDENFRAGE: "Ich überlege, den Entkoffeiniert Sanft zu bestellen.
 Ist der eher hell und mild geröstet oder kräftiger? Wie bereite ich
 ihn am besten zu? Und sind Ihre Kaffees eigentlich bio?"
 FORMAT
 Höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton. Hinter
 jeder inhaltlichen Aussage die Quellenkennung. Am Ende "Offen".
+CHECK
+R1 bis R7 der Mappe gelten unverändert. Für jede Frage einzeln
+bestimmen: gedeckt, widersprüchlich oder nicht enthalten.
 ```
 
 ::: {.notes}
@@ -117,7 +123,7 @@ Live-Demo, fünf Minuten: Mappe aus material/m03/kontextmappe-roestung-v1.txt al
 1. Röstgrad als **Widerspruch**: „mittel [Q1]“ und „hell [Q3]“ nebeneinander, Eintrag unter Offen?
 2. Zubereitung mit [Q1] oder [Q3]: beide Quellen stimmen überein, beide Kennungen richtig.
 3. „Bio“: **nicht im Material**, unter Offen? Oder ein Ja oder Nein?
-4. Eine Aussage **ohne Kennung**? Dann R2 verletzt: im Material suchen.
+4. Eine Aussage **ohne Kennung**? Dann R2 verletzt: in den Quellen suchen.
 
 ::: {.notes}
 Auflösung nach der Arbeitsphase. Einsammeln: Hat ein Entwurf sich für „hell“ oder „mittel“ entschieden? Hat einer „bio“ beantwortet? Beides Befunde. Konstruiertes Sollergebnis steht im Buch: Widerspruch benannt, Lücke ausgewiesen, jede Aussage mit Kennung.
@@ -138,22 +144,34 @@ Auflösung nach der Arbeitsphase. Einsammeln: Hat ein Entwurf sich für „hell�
 Konstruierter Entwurf. In Paaren bearbeiten, drei Minuten, dann auflösen. Kernsatz: Niemand muss wissen, ob Bio stimmt. Es reicht zu sehen, dass niemand es belegt hat.
 :::
 
-## Eigene Variante und Portfolio
+## Wofür sich eine Mappe sonst lohnt
+
+- **Wiederkehrende Angebotsvergleiche:** Vergleichskriterien und Bezugsgrößen einmal hinterlegen.
+- **Besprechungsnotizen:** Gliederung, Zuständigkeitsliste und die Regel, offene Punkte auszuweisen statt sie zu ergänzen.
+- **Ideenrunden:** die Rahmenbedingungen, an denen ein Vorschlag scheitert.
+
+Bauweise bleibt: Kopf, Regeln, Quellen mit Stand, Änderungsprotokoll. **Die Mappe ist eine Textdatei und hängt an keinem Werkzeug.**
+
+::: {.notes}
+Zwei Minuten. Der letzte Satz ist der wichtige: Eine Textdatei überlebt einen Kontowechsel, lässt sich weitergeben und ist prüfbar, ohne dass jemand ein bestimmtes Produkt öffnen muss. Wenn nach Projekt- oder Gem-Funktionen gefragt wird: Die Mappe ist so gebaut, dass sie dort unverändert hinterlegt werden kann; was in einem Konto verfügbar ist, hängt vom Konto ab, dazu hier keine Angaben aus dem Gedächtnis machen. Quellen auf der letzten Folie.
+:::
+
+## Die eigene Kontextmappe
 
 1. R1 bis R7 übernehmen und anpassen; R2, R3, R4 bleiben.
 2. Zwei bis drei fiktive Quellen mit Stand und Herkunft, eine davon mit einem eingebauten Widerspruch.
 3. Version 1, Stand, erster Protokolleintrag.
 4. Mappe plus Frage in neuem Chat, jede Kennung prüfen.
-5. Die Mappe einer Kollegin in drei Sätzen erklären: wonach, woraus, was offen. Reichen drei Sätze nicht, fehlt etwas.
+5. Die Mappe in drei Sätzen erklären, so als ginge sie an eine Vertretung: wonach, woraus, was offen. Reichen drei Sätze nicht, fehlt etwas.
 
 Mappe, Quellenliste und Reparaturbefund: **Portfolio-Teil 2**, gespeicherte Anweisungen und Kontextquellen.
 
 ::: {.notes}
-Selbstlernphase. Die Drei-Sätze-Probe ist der Test, ob die Mappe vollständig ist. Datenregel: nur erfundene Quellentexte.
+Selbstlernphase, drei Minuten Ansage. Das ist die verpflichtende eigene Arbeit in Modul 3; sie setzt die Quellenliste aus der Materialauswahl fort. Ausdrücklich sagen, dass die übrigen eigenen Varianten dieses Moduls freiwillig sind, damit der Aufwand kalkulierbar bleibt. Die Drei-Sätze-Probe ist der Test, ob die Mappe vollständig ist: Gelingen die Sätze nur mit Blick in die Datei, ist die Mappe noch eine Sammlung und keine Aktennotiz. Datenregel: nur erfundene Quellentexte.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 3.2, Working with GenAI: kontext/regeln-quellen
+- Buchkapitel 3.4, Working with GenAI: kontext/regeln-quellen
 - Material: material/m03/kontextmappe-roestung-v1.txt, prompt-3-2-kundenfrage.txt, shop-produkttexte.txt
 - Dauerhafte Ablageorte (Funktionsumfang kontoabhängig): help.openai.com/en/articles/10169521 · support.claude.com/en/articles/9519177 · support.google.com/gemini/answer/15235603

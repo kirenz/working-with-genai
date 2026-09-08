@@ -1,6 +1,6 @@
 # Risiko-Tabelle: Kundenservice-Entwürfe der Rösterei Morgenrot
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.3. Ausgefülltes Sollbeispiel für Portfolio-Teil 3, Abschnitt „Risiko-Orientierung". Synthetische GenAI-Erweiterung des Lehrfalls. Keine Konformitätserklärung.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.4. Ausgefülltes Sollbeispiel für Portfolio-Teil 3, Abschnitt „Risiko-Orientierung". Synthetische GenAI-Erweiterung des Lehrfalls. Keine Konformitätserklärung.
 
 | Feld | Einschätzung | Wer klärt das verbindlich? |
 |---|---|---|
@@ -8,6 +8,6 @@ Kursmaterial „Working with GenAI", Modul 5, Lektion 5.3. Ausgefülltes Sollbei
 | **Genutztes Konto / Vertragslage** | Kostenloses Einzelkonto ohne Vereinbarung zur Verarbeitung von Kundendaten. Einstellungen zu Speicherung und Trainingsnutzung sind zu prüfen und zu dokumentieren. Für eine Nutzung mit echten Daten über die bereinigte Frage hinaus ist eine geschäftliche Lizenz mit passender Vereinbarung Voraussetzung. | Petra Lindqvist (Vertragslage), Aylin Yılmaz (Entscheidung). |
 | **Rechte an Eingaben und Ergebnissen** | Material: eigene Fachinformationen und freigegebene Röstnotizen; Wiki-Absatz unter freier Lizenz mit Namensnennung; Stockfotos nur im Rahmen der Lizenz und nicht in Bildgeneratoren. Fremde Fachtexte und Konkurrenztexte gehen nicht in den Auftrag. Ergebnisse werden auf fremde Anteile geprüft. Weiterverwendung nach Nutzungsbedingungen des Anbieters. | Lizenzen: Jonas Halder. Freigabe: Aylin Yılmaz. Rechtliche Einordnung: externe Rechtsberatung, offen. |
 | **Transparenz gegenüber Empfängern** | Jede Mail wird von einer Mitarbeiterin geprüft und selbst versendet. Keine pauschale Kennzeichnung jeder Mail. Kenntlichmachung dort, wo sie für die Empfängerseite relevant ist oder eine Vorschrift es verlangt (direkte Interaktion mit einem System, ungeprüfte Veröffentlichung, ausdrückliche Nachfrage). Ob ein allgemeiner Hinweis sinnvoll ist, wird nach dem Rückblick entschieden. | Aylin Yılmaz; Anwendbarkeit von Artikel 50 AI Act: externe Rechtsberatung, offen. |
-| **Verbleibende Risiken** | Ein unbelegter Termin oder Preis kann trotz Grenzen im Auftrag im Entwurf stehen und bei nachlässiger Prüfung hinausgehen. Material kann veralten (Preisänderung). Die Regel kann im Alltag umgangen werden, wenn sie lästig ist. Umgang: Prüfroutine aus Modul 4 mit Testfällen; Materialpflege bei jeder Preisänderung durch Sina; Rückblick nach 30 Tagen mit Zählung der Korrekturen. | Sina Bergmann (Prüfung, Materialpflege), Aylin Yılmaz (Rückblick, Fortführung). |
+| **Verbleibende Risiken** | Ein unbelegter Termin oder Preis kann trotz Check im Auftrag im Entwurf stehen und bei nachlässiger Prüfung hinausgehen. Material kann veralten (Preisänderung). Die Regel kann im Alltag umgangen werden, wenn sie lästig ist. Umgang: Prüfroutine aus Modul 4 mit Testfällen; Materialpflege bei jeder Preisänderung durch Sina; Rückblick nach 30 Tagen mit Zählung der Korrekturen. | Sina Bergmann (Prüfung, Materialpflege), Aylin Yılmaz (Rückblick, Fortführung). |
 
 Stand: 2026-09-07. Nächste Prüfung: Rückblick aus dem Transferplan.

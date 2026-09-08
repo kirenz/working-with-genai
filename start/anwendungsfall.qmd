@@ -1,77 +1,63 @@
-# Den eigenen Anwendungsfall wählen
+# Den Pilotfall im Use-Case-Canvas festhalten
 
-Zwei Lektionen lang haben wir am Fall der Rösterei gearbeitet. Ab jetzt läuft parallel ein zweiter Fall mit: der eigene. In dieser Lektion wählen wir ihn aus. Nicht den spannendsten, sondern den, der sich im Kurs tragen lässt: wiederkehrend, mit festen Fakten, mit einem prüfbaren Ergebnis. Die Rösterei zeigt, wie eine solche Entscheidung begründet wird.
+Der Vergleich aus der vorigen Lektion hat eine Reihenfolge ergeben. Jetzt nehmen wir den ersten Kandidaten, schneiden ihn auf einen kleinen Ausschnitt zu und halten ihn im Use-Case-Canvas fest: Ausgangslage, Erfolgskriterium, Datenbedarf, Zuständigkeit. Der Canvas ist Portfolio-Teil 1 und begleitet den ganzen Kurs. Die Rösterei zeigt vorher, wie Aylin Yılmaz ihre Entscheidung begründet und wie aus einem Kandidaten ein Pilot wird.
 
-## Der Anlass: sechs Vorschläge, eine Entscheidung
+## Der Anlass: Aylins Entscheidung
 
-Rösterei Morgenrot, Geschäftsführung. Nach der letzten Teamrunde liegen sechs Vorschläge auf dem Tisch, wo ein Chatmodell Arbeit abnehmen könnte. Aylin Yılmaz will einen davon erproben, nicht sechs. Sie hat eine Aktennotiz geschrieben und bittet das Team, die Kandidaten nach fünf Kriterien zu bewerten. Die Notiz steht vollständig als [Download](../material/m01/aktennotiz-aylin.md) bereit; hier die Kandidaten:
+Rösterei Morgenrot, Geschäftsführung. Aylin hat die Einschätzungen des Teams gelesen und entscheidet in der [Aktennotiz](../material/m01/aktennotiz-aylin.md): Erprobt wird zuerst K1, die Kundenanfragen zum Abo. K2 bis K4 folgen nach Auswertung des ersten Piloten. K5 wird nicht erprobt, solange Datenschutz und Zuständigkeit nicht geklärt sind; K6 wird nicht erprobt, weil im vorliegenden Fall Marktangaben, Ziele und Bewertungskriterien fehlen. Ihre Begründung für K1 nennt fünf Punkte: Die Anfragen kommen wiederkehrend, die Fachinformationen liegen als Text vor, jeder Satz eines Entwurfs lässt sich dagegen prüfen, Sina liest jeden Entwurf vor dem Versand, und für die Übung werden ausschließlich erfundene Anfragen verwendet.
 
-| Nr. | Kandidat | Wer | Kurzbeschreibung |
-|---|---|---|---|
-| K1 | Kundenanfragen zum Abo beantworten | Sina | Anfragen zu Sortenwechsel, Preisen und Lieferungen kommen mehrmals pro Woche. Fakten stehen in den Fachinformationen. Der Entwurf wird vor dem Versand gelesen. |
-| K2 | Hinweis- und Produkttexte aus Briefings entwerfen | Jonas | Kurze Texte für Shop und Newsletter, jeweils aus einem freigegebenen Briefing. Der Text geht erst nach Freigabe online. |
-| K3 | Zahlen und Notizen für die Teambesprechung aufbereiten | Petra | Monatliche Übersicht aus eigenen Notizen und Tabellen. Offene Angaben werden als offen markiert. |
-| K4 | Produktionsnotizen in eine Übergabe überführen | Marlene | Wöchentliche Übergabe aus handschriftlichen Röstnotizen. Mengen und Termine dürfen nicht ergänzt werden. |
-| K5 | Entscheiden, welche gekündigten Abos mit einem Rabatt zurückgewonnen werden | Aylin | Aus der Kundenliste soll das Modell vorschlagen, wem ein Angebot gemacht wird. Grundlage: Bestellhistorie und Kündigungsgrund. |
-| K6 | Preisstrategie 2027 entwickeln | Aylin | Preisempfehlungen für die drei Sorten auf Basis allgemeiner Markttrends. |
-
-Und die fünf Kriterien, jeweils mit **ja**, **teils** oder **nein** zu beantworten:
+Für den Zuschnitt des eigenen Piloten nutzen wir fünf Fragen:
 
 1. **Wiederkehrend:** Fällt die Aufgabe regelmäßig in ähnlicher Form an?
-2. **Feste Fakten:** Liegen die Angaben, aus denen geantwortet wird, in freigegebener Form vor?
-3. **Prüfbares Ergebnis:** Lässt sich das Ergebnis Aussage für Aussage gegen diese Fakten prüfen?
+2. **Passende Informationsgrundlage:** Sind die nötigen Fakten oder Ziele, Rahmenbedingungen und Kriterien verfügbar und für die Übung nutzbar?
+3. **Prüfbares Ergebnis:** Gibt es einen Maßstab, gegen den sich das Ergebnis prüfen lässt?
 4. **Entwurf bleibt Entwurf:** Liest und verantwortet eine Person das Ergebnis, bevor es wirkt?
-5. **Keine Klärung nötig:** Kommt die Aufgabe ohne personenbezogene Daten und ohne offene Rechtsfragen aus?
+5. **Übung durchführbar:** Sind Material und Werkzeug für den erfundenen Übungsfall nutzbar? Offene Fragen zur realen Anwendung werden gesondert notiert.
 
-::: {.callout-note title="Eine Designentscheidung dieses Kurses"}
-Die fünf Kriterien sind eine Merkhilfe für die Auswahl, kein belegter Standard. Sie bündeln, was die ersten beiden Lektionen gezeigt haben: Ohne feste Fakten gibt es nichts, wogegen wir prüfen können (Lektion 1.2), und ohne Prüfung bleibt ein plausibler Text ein Risiko. Die Aktennotiz, die Kandidaten und die Entscheidung sind für diesen Kurs konstruiert; Personen und Funktionen stammen aus dem Fallmaterial.
-:::
+Die Fragen dienen als Orientierung für den Kurs. Auch eine Ideenaufgabe kann ein Pilot sein, wenn Ziele, Rahmenbedingungen und ein Maßstab für Brauchbarkeit und Vielfalt feststehen.
 
 ## Zielbild
 
-Am Ende der Lektion liegen zwei Dinge vor. Erstens eine begründete Einschätzung der sechs Kandidaten aus der Rösterei, die wir mit Aylins Entscheidung vergleichen. Zweitens der erste Eintrag im eigenen **Use-Case-Canvas**: ein gewählter Fall, eine Begründung in einem Satz, sechs Felder in Stichworten und zwei Rückfragen, die vor dem ersten Arbeitsauftrag beantwortet sein müssen. Das Arbeitsblatt dafür steht als [Download](../material/m01/use-case-canvas.md) bereit; die Felder entsprechen Portfolio-Teil 1.
+Am Ende der Lektion liegt der erste Eintrag im eigenen **Use-Case-Canvas** vor: ein zugeschnittener Pilotfall mit einem Satz Begründung, die sechs Felder in Stichworten, ein beobachtbares Erfolgskriterium und zwei Rückfragen, die vor dem ersten Arbeitsauftrag im eigenen Haus beantwortet sein müssen. Das Arbeitsblatt steht als [Download](../material/m01/use-case-canvas.md) bereit; die Felder entsprechen Portfolio-Teil 1.
 
-## Schritt für Schritt selbst bauen
+## Schritt für Schritt
 
-### Schritt 1: Die sechs Kandidaten bewerten
+### Schritt 1: Die Entscheidung mit dem eigenen Vergleich abgleichen
 
-Wir gehen die Tabelle Zeile für Zeile durch und vergeben für jedes Kriterium ja, teils oder nein. Wir tun das, bevor wir Aylins Entscheidung in der Aktennotiz lesen. Zwei Fragen helfen, wenn wir zögern: Wogegen würden wir das Ergebnis prüfen? Und wer liest es, bevor es wirkt?
+Wir lesen Aylins Entscheidung und legen sie neben unsere Tabelle aus der vorigen Lektion. Wo weicht unsere Reihenfolge ab? Abweichungen sind erwünscht, wenn sie begründet sind. Wer K2 vor K1 setzt, weil ein interner Text weniger Außenwirkung hat als eine Kundenmail, hat ein Argument, das an den Kriterien hängt. Entscheidend ist die Begründung, nicht die Übereinstimmung mit Aylin.
 
-Bei K5 und K6 lohnt ein genauer Blick. K5 klingt nach einer Aufgabe mit hohem Nutzen. Aber es geht um Entscheidungen über einzelne Kundinnen und Kunden auf Basis ihrer Daten, und es gibt kein Material, gegen das sich ein Vorschlag prüfen ließe: Woran erkennen wir, dass die vorgeschlagene Auswahl richtig ist? K6 scheitert an Kriterium 2: Ein Chatmodell hat keine belegten Angaben über den Markt dieser Rösterei, und eine Preisempfehlung lässt sich nicht gegen Fakten prüfen, sondern nur gegen Meinungen.
+### Schritt 2: Den Pilot klein schneiden
 
-::: {.callout-tip title="Der Prüfstand entscheidet, nicht die Idee"}
-Ein guter erster Fall ist einer, für den wir einen Prüfstand haben: ein Dokument, gegen das wir jede Aussage halten können. In der Werkstatt würde niemand ein Werkzeug an einem Werkstück testen, dessen Sollmaß unbekannt ist. Kandidaten ohne Sollmaß, wie K5 und K6, sind nicht schlecht; sie sind für den Anfang ungeeignet, weil wir das Ergebnis nicht beurteilen könnten.
-:::
+K1 heißt in der Aktennotiz „Kundenanfragen zum Abo beantworten“. Als Pilot ist das noch zu groß: Anfragen zu Lieferstatus, Reklamationen und Rechnungen brauchen Angaben, die dem Kundenservice nicht als Text vorliegen. Der Pilot wird deshalb enger geschnitten: Anfragen zu Sortenwechsel, Aussetzen und Preisen, für die die Fachinformationen eine Antwort hergeben. Alles andere bleibt beim bisherigen Ablauf.
 
-### Schritt 2: Mit der Entscheidung vergleichen
+Für diesen Ausschnitt halten wir drei Dinge fest, die später den Vergleich ermöglichen:
 
-Jetzt lesen wir den Abschnitt „Entscheidung" in der Aktennotiz. Aylin beginnt mit K1: wiederkehrend, Fakten als Text vorhanden, jeder Satz prüfbar, Sina liest vor dem Versand, und für die Übung werden erfundene Anfragen verwendet. K2 bis K4 folgen nacheinander. K5 und K6 werden nicht erprobt, K5 erst nach Klärung von Datenschutz und Zuständigkeit.
+| Was wir festhalten | Für den Rösterei-Pilot |
+|---|---|
+| **Der heutige Ablauf** | Sina liest die Mail, schlägt in den Fachinformationen nach, formuliert, liest gegen, versendet. Etwa 10 bis 20 Minuten je Anfrage nach ihrer Beobachtung. |
+| **Ein beobachtbares Erfolgskriterium** | Bearbeitungszeit je Anfrage einschließlich Vorbereitung, Prüfung und Nacharbeit, nach vier Wochen erneut beobachtet. Dazu die Zahl der Anfragen, bei denen eine Angabe fehlte und der Entwurf sie trotzdem enthielt: Ziel null. |
+| **Was das Modell übernimmt und was bleibt** | Das Modell soll die Antwort aus den mitgegebenen Fachinformationen entwerfen und Lücken ausweisen. Sina prüft jede Aussage, ergänzt die Anrede und entscheidet über den Versand. Zusagen zu Versandterminen bleiben bei Lager und Versand. |
 
-Wo weicht unsere Bewertung ab? Abweichungen sind erwünscht, wenn sie begründet sind. Wer K2 vor K1 setzt, weil ein interner Text weniger Außenwirkung hat als eine Kundenmail, hat ein gutes Argument. Entscheidend ist, dass die Begründung an den Kriterien hängt und nicht am Bauchgefühl.
+Ein Erfolgskriterium benennt, was beobachtet wird und wann der Vergleich erfolgt: etwa Bearbeitungszeit einschließlich Vorbereitung, Prüfung und Nacharbeit oder die Vollständigkeit einer Übergabe anhand vereinbarter Punkte. Der heutige Wert stammt aus Beobachtung oder ist als Annahme gekennzeichnet. Eine Zeitersparnis wird erst aus vergleichbaren Durchläufen abgeleitet.
 
-### Schritt 3: Eigene Kandidaten sammeln
+Bei einer Ideenaufgabe lässt sich etwa prüfen, wie viele unterscheidbare Ansätze die vereinbarten Ziele und Rahmenbedingungen erfüllen. Die Einschätzung der Brauchbarkeit bleibt bei einer Person. Enthaltene Sachbehauptungen werden zusätzlich geprüft.
 
-Wir notieren zwei bis drei wiederkehrende Schreib- oder Prüfanlässe aus dem eigenen Arbeitsalltag, je ein Satz. Beispiele aus verschiedenen Bereichen, damit die Bandbreite sichtbar wird:
+### Schritt 3: Die fünf Kriterien am eigenen Kandidaten prüfen
 
-- Verwaltung: Auskünfte nach Aktenlage auf wiederkehrende Bürgeranfragen entwerfen.
-- Personal: Absagen auf Bewerbungen aus einem festen Textbaukasten formulieren.
-- Vertrieb: Angebotsbegleittexte aus der geltenden Leistungsbeschreibung erstellen.
-- Lehre: Rückmeldungen zu Einreichungen anhand eines Bewertungsrasters vorbereiten.
-- Beratung: Besprechungsnotizen in eine Ergebnisliste mit offenen Punkten überführen.
-
-Der Satz zum eigenen Fall im Feld „Problem" aus der ersten Lektion ist einer der Kandidaten. Wir prüfen alle mit denselben fünf Kriterien wie die Rösterei.
+Wir prüfen den ersten Kandidaten anhand der fünf Fragen. Fehlen nötige Fakten, Ziele oder Kriterien, werden diese ergänzt oder der Ausschnitt angepasst. Keine festen Fakten zu benötigen ist bei Ideen und Einschätzungen kein Ausschlussgrund. Für die Kursübung verwenden wir einen vollständig erfundenen Fall; offene Fragen zur realen Nutzung bleiben als Rückfragen stehen. Dann halten wir heutigen Ablauf, Erfolgskriterium und Aufgabenteilung fest.
 
 ### Schritt 4: Rückfragen stellen lassen
 
-Bevor wir den Canvas ausfüllen, lassen wir uns Rückfragen stellen. Das ist ein anderer Gebrauch des Chatfensters als bisher: Nicht das Modell schreibt das Ergebnis, sondern es hilft uns, unsere Lücken zu finden. Der folgende Auftrag ist für Petras Kandidaten K3 vorbereitet und läuft ohne Vorbereitung; als [Textdatei](../material/m01/prompt-rueckfragen-canvas.txt) liegt er bei.
+Bevor wir den Canvas ausfüllen, lassen wir uns Rückfragen stellen. Das ist ein anderer Gebrauch des Chatfensters als bisher: Nicht das Modell schreibt das Ergebnis, sondern es hilft uns, unsere Lücken zu finden. Der folgende Auftrag ist für Petras Kandidaten K3 mit kopierfertigen Stichworten vorbereitet; als [Textdatei](../material/m01/prompt-rueckfragen-canvas.txt) liegt er bei.
 
 ```text
-Ich bereite einen Anwendungsfall für ein Chatmodell vor und fülle dafür einen Use-Case-Canvas mit den Feldern Problem, Zielgruppe, Nutzenversprechen, Häufigkeit und Umfang, Datenbedarf, Abgrenzung.
-
-AUFGABE
+TASK
 Stelle mir genau fünf Rückfragen, die ich beantworten muss, bevor ich den Canvas ausfüllen kann. Beantworte die Fragen nicht selbst und schlage keine Inhalte für den Canvas vor.
 
-MATERIAL (meine bisherigen Stichworte)
+CONTEXT
+Ich bereite einen Anwendungsfall für ein Chatmodell vor und fülle dafür einen Use-Case-Canvas mit den Feldern Problem, Zielgruppe, Nutzenversprechen, Häufigkeit und Umfang, Datenbedarf, Abgrenzung.
+
+Meine bisherigen Stichworte:
 Aufgabe: Monatliche Übersicht für die Teambesprechung aus vorhandenen Notizen und Tabellen aufbereiten.
 Wer bekommt sie: das fünfköpfige Team einer kleinen Rösterei.
 Heute: dauert etwa zwei Stunden pro Monat, Zahlen werden von Hand aus drei Dateien zusammengetragen.
@@ -80,12 +66,12 @@ Grenze: Zahlen dürfen nicht ergänzt oder geschätzt werden; fehlende Angaben w
 FORMAT
 Nummerierte Liste mit fünf Fragen. Zu jeder Frage in Klammern das Canvas-Feld, das sie klärt. Keine Einleitung, kein Schluss.
 
-GRENZEN
-- Frage nur nach Dingen, die aus meinen Stichworten nicht hervorgehen.
+CHECK
+- Frage nur nach Angaben, die aus meinen Stichworten nicht hervorgehen. Was der Context bereits abdeckt, fragst du nicht.
 - Erfinde keine Angaben über die Rösterei.
 ```
 
-Für den eigenen Fall ersetzen wir den Block MATERIAL durch unsere eigenen Stichworte. Auch hier gilt: keine echten Namen, keine internen Zahlen, Rollen statt Personen. Die Stichworte beschreiben den Fall so, dass niemand daraus eine reale Person oder ein vertrauliches Detail erkennen kann.
+Für den eigenen Fall ersetzen wir die Stichworte im Block CONTEXT durch unsere eigenen. Auch hier gilt: keine echten Namen, keine internen Zahlen, Rollen statt Personen.
 
 ### Ein konstruiertes Ergebnis zum Abgleich
 
@@ -97,42 +83,43 @@ Das folgende Beispiel für Petras Fall ist konstruiert, kein aufgezeichneter Mod
 > 4. Welche Entscheidungen werden auf Basis der Übersicht getroffen, und bleibt die Übersicht selbst ein Entwurf, den Petra vor dem Versand liest? (Abgrenzung)
 > 5. Enthalten die Notizen Namen von Mitarbeitenden, Kundinnen oder Lieferanten, die vorher ersetzt werden müssten? (Datenbedarf)
 
-Woran wir das prüfen: Fünf Fragen, keine Antworten, keine Vorschläge für den Canvas, jede Frage mit Feldbezug. Fragen 2 und 5 zielen genau auf die Kategorien aus der zweiten Lektion. Kommt eine Frage, deren Antwort schon in den Stichworten steht (etwa „Wie oft fällt die Aufgabe an?"), streichen wir sie; die Grenze im Auftrag war eine Anweisung, keine Garantie.
+Woran wir das prüfen: Fünf Fragen, keine Antworten, keine Vorschläge für den Canvas, jede Frage mit Feldbezug. Fragen 2 und 5 zielen auf die Datenkategorien; Frage 3 auf das beobachtbare Erfolgskriterium. Kommt eine Frage, deren Antwort schon in den Stichworten steht (etwa „Wie oft fällt die Aufgabe an?“), streichen wir sie; der Check im Auftrag war eine Anweisung, keine Garantie.
 
-### Eine eigene Variante: der erste Canvas-Eintrag
+### Den ersten Canvas-Eintrag festhalten
 
-Mit den Rückfragen vor Augen füllen wir das Arbeitsblatt aus. Erst die Kriterienprüfung der eigenen Kandidaten, dann der gewählte Fall mit einem Satz Begründung, dann die sechs Felder in Stichworten:
+Mit den Rückfragen vor Augen füllen wir das Arbeitsblatt aus. Erst der gewählte Ausschnitt mit einem Satz Begründung, dann die sechs Felder in Stichworten:
 
 | Feld | Leitfrage |
 |---|---|
-| **Problem** | Welche Aufgabe kostet heute Zeit oder Qualität? Was passiert, wenn sie schlecht läuft? |
+| **Problem** | Welcher Vorgang und welcher Schritt darin kostet heute Zeit oder Qualität? Wie läuft es heute? |
 | **Zielgruppe** | Wer bekommt das Ergebnis? |
-| **Nutzenversprechen** | Was ist danach besser? Größenordnung, falls bekannt |
+| **Nutzenversprechen (Annahme)** | Woran wäre nach vier Wochen zu sehen, dass es besser läuft? Eine beobachtbare Größe, heutiger Wert als Beobachtung oder Annahme |
 | **Häufigkeit und Umfang** | Wie oft, wie lang ein Vorgang? |
-| **Datenbedarf** | Welche Angaben braucht eine korrekte Antwort? Wo liegen sie? Sind sie freigegeben? |
-| **Abgrenzung** | Was gehört ausdrücklich nicht dazu? Welche Entscheidung bleibt bei einem Menschen? |
+| **Datenbedarf** | Welche Angaben braucht das Ergebnis? Wo liegen sie? Welche Kategorie (A, B, C)? |
+| **Abgrenzung** | Was übernimmt das Modell, was bleibt bei einem Menschen? Welche Entscheidung geht nie ohne Prüfung hinaus? |
 
-Zum Schluss notieren wir zwei Rückfragen, die wir vor dem ersten Arbeitsauftrag im eigenen Haus klären müssen, etwa wo die Fakten liegen und wer sie freigibt. Der ausgefüllte Canvas wandert in **Portfolio-Teil 1**. Er ist ein Arbeitsstand, kein Endstand; wir werden ihn im Kurs mehrfach anfassen.
+Zum Schluss notieren wir zwei Rückfragen, die wir vor dem ersten Arbeitsauftrag im eigenen Haus klären müssen, etwa wo die Fakten liegen und wer sie freigibt. Der ausgefüllte Canvas wandert in **Portfolio-Teil 1**. Er ist ein Arbeitsstand, kein Endstand; wir werden ihn im Kurs mehrfach anfassen. Die Kandidatenliste und der Vergleich aus den beiden vorigen Lektionen bleiben als Arbeitsgrundlage in der Mappe.
 
 ::: {.callout-important title="Ein Fall, nicht drei"}
-Das Portfolio trägt einen einzigen Anwendungsfall durch alle vier Teile. Wer sich zwischen zwei Kandidaten nicht entscheiden kann, nimmt den mit den meisten „ja" bei den Kriterien 2 und 3. Ein Fall mit festen Fakten und prüfbarem Ergebnis lässt sich im Kurs bearbeiten; der andere Kandidat bleibt notiert und kommt später an die Reihe.
+Das Portfolio trägt einen einzigen Pilotfall durch alle vier Teile. Wer sich zwischen zwei Kandidaten nicht entscheiden kann, nimmt den, dessen passende Informationsgrundlage bereits vorliegt und dessen Ergebnis einen klaren Maßstab hat. Der andere Kandidat bleibt auf der Liste mit Potenzial und kommt später an die Reihe.
 :::
 
 ## Fehler diagnostizieren
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Alle eigenen Kandidaten bekommen bei „Feste Fakten" ein Nein | Kleiner schneiden: Statt „Kundenanfragen beantworten" nur „Anfragen zu einem Thema, für das eine Konditionsübersicht existiert". |
-| Der Wunschfall ist eine Entscheidung über Personen (wie K5) | Als späteren Kandidaten notieren. Für den Kurs einen Fall wählen, der einen Entwurf erzeugt, nicht eine Entscheidung. |
-| Die Rückfragen des Modells enthalten Antworten oder Vorschläge | Folgeanweisung: „Nur Fragen, keine Antworten und keine Vorschläge." Das Ergebnis erneut prüfen. |
+| Der Pilot ist noch der ganze Vorgang | Kleiner schneiden: Statt „Kundenanfragen beantworten“ nur „Anfragen zu einem Thema, für das eine Konditionsübersicht existiert“. |
+| Das Erfolgskriterium lautet „schneller“ oder „besser“ | Eine beobachtbare Größe suchen: Minuten pro Vorgang einschließlich Nacharbeit, Vorgänge pro Woche, Rückfragen pro Monat. Wenn der heutige Wert unbekannt ist, als Annahme kennzeichnen. |
+| Der Wunschfall ist eine Entscheidung über Personen (wie K5) | Auf der Potenzialliste lassen. Für den Kurs einen Fall wählen, der einen Entwurf, eine Struktur oder eine Vorbereitung erzeugt, nicht eine Entscheidung. |
+| Die Rückfragen des Modells enthalten Antworten oder Vorschläge | Folgeanweisung: „Nur Fragen, keine Antworten und keine Vorschläge.“ Das Ergebnis erneut prüfen. |
 | Die Rückfragen wiederholen, was in den Stichworten steht | Streichen. Die verbleibenden Fragen sind die nützlichen. |
-| Das Feld „Nutzenversprechen" bleibt vage („schneller") | Eine beobachtbare Größe suchen: Minuten pro Vorgang, Vorgänge pro Woche, Rückfragen pro Monat. Wenn unbekannt, als Rückfrage notieren. |
-| Das Feld „Abgrenzung" bleibt leer | Die Frage umdrehen: Welche Aussage im Ergebnis dürfte niemals ohne menschliche Prüfung hinausgehen? |
+| Das Feld „Abgrenzung“ bleibt leer | Die Frage umdrehen: Welche Aussage im Ergebnis dürfte niemals ohne menschliche Prüfung hinausgehen? |
 
-## Kontrollpunkt für Modul 1
+## Kontrollpunkt
 
-- Kandidaten für einen Anwendungsfall mit fünf Kriterien bewerten und die Bewertung begründen
-- Erklären, warum ein Fall ohne feste Fakten oder ohne prüfbares Ergebnis als erster Fall ungeeignet ist
-- Das Chatfenster für Rückfragen nutzen, statt es ein Ergebnis schreiben zu lassen
-- Einen eigenen Fall wählen und die sechs Canvas-Felder in Stichworten füllen, ohne echte Namen oder interne Zahlen
+- Aylins Entscheidung mit dem eigenen Vergleich abgleichen und Abweichungen an den Kriterien begründen
+- Einen Kandidaten auf einen Pilotausschnitt zuschneiden und den heutigen Ablauf festhalten
+- Ein beobachtbares Erfolgskriterium formulieren und den heutigen Wert als Beobachtung oder Annahme kennzeichnen
+- Benennen, was das Modell übernimmt und welche Entscheidung bei einer Person bleibt
+- Das Chatfenster für Rückfragen nutzen und die sechs Canvas-Felder ohne echte Namen oder interne Zahlen füllen
 - Zwei offene Rückfragen für die eigene Organisation notieren und den Canvas in Portfolio-Teil 1 übernehmen

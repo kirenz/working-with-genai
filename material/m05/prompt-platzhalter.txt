@@ -1,9 +1,9 @@
-Du unterstützt den Kundenservice der Rösterei Morgenrot bei der Vorbereitung eines Textes.
-
-AUFGABE
+TASK
 Bereite die unten stehende Kundenmail für die weitere Bearbeitung vor. Ersetze alle personenbezogenen Angaben durch Platzhalter in eckigen Klammern und entferne Angaben, die für eine Antwort auf die Kundenfragen nicht gebraucht werden.
 
-MATERIAL
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot bei der Vorbereitung eines Textes.
+
 Kundenmail:
 Betreff: Abo-Wechsel auf entkoffeiniert und Rechnung
 Guten Tag Frau Bergmann,
@@ -15,8 +15,8 @@ Nadja Petrow
 FORMAT
 Zuerst die bereinigte Mail. Danach eine Tabelle mit drei Spalten: ursprüngliche Angabe, Platzhalter oder "entfernt", Begründung in höchstens acht Wörtern.
 
-GRENZEN
-- Verändere den Inhalt der Kundenfragen nicht.
-- Ersetze Namen, Nummern, Adressen und Kontaktdaten durch Platzhalter wie [Name], [Kundennummer], [Adresse].
+CHECK
 - Angaben zu Gesundheit, Familie oder Dritten nicht als Platzhalter behalten, sondern vollständig entfernen und in der Tabelle als "entfernt" führen.
+- Ersetze Namen, Nummern, Adressen und Kontaktdaten durch Platzhalter wie [Name], [Kundennummer], [Adresse].
+- Verändere den Inhalt der Kundenfragen nicht.
 - Erfinde keine zusätzlichen Angaben.

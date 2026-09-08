@@ -1,9 +1,8 @@
-Du unterstützt das Marketing der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Schreibe drei Varianten eines Hinweistextes für die Startseite des Onlineshops. Der Text weist auf das Kaffee-Abo hin.
 
-MATERIAL (nur diese Angaben dürfen im Text vorkommen)
+CONTEXT
+Du unterstützt das Marketing der Rösterei Morgenrot. Nur die folgenden Angaben dürfen im Text vorkommen.
 - Die Rösterei Morgenrot ist eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden über den eigenen Onlineshop.
 - Drei Sorten im Sortiment: Espresso Intenso, Filterkaffee Mild, Entkoffeiniert Sanft.
 - Das Kaffee-Abo liefert regelmäßig nach Hause. Alle drei Sorten sind im Abo wählbar.
@@ -12,6 +11,6 @@ MATERIAL (nur diese Angaben dürfen im Text vorkommen)
 FORMAT
 Drei nummerierte Varianten. Je Variante genau zwei Sätze. Sachlich und freundlich, keine Superlative, keine Ausrufezeichen.
 
-GRENZEN
-- Verwende nur Angaben aus dem Material. Ergänze keine Herkunft, keine Zertifikate, keinen Röstgrad, keine Geschmacksbeschreibung, keine Preise, keine Lieferintervalle, keine Rabatte.
-- Wenn du für eine Variante eine Angabe bräuchtest, die im Material fehlt, lass die Variante ohne diese Angabe und nenne die fehlende Angabe unter der Überschrift "Offen".
+CHECK
+- Wenn du für eine Variante eine Angabe bräuchtest, die im Context fehlt, lass die Variante ohne diese Angabe und nenne die fehlende Angabe unter der Überschrift "Offen".
+- Verwende nur Angaben aus dem Context. Ergänze keine Herkunft, keine Zertifikate, keinen Röstgrad, keine Geschmacksbeschreibung, keine Preise, keine Lieferintervalle, keine Rabatte.

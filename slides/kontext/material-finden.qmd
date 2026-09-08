@@ -1,6 +1,6 @@
 ---
-title: "Wenn das Material zu groß wird"
-subtitle: "Modul 3 · Lektion 3.3"
+title: "Fundstellen in langen Dokumenten nutzen"
+subtitle: "Modul 3 · Lektion 3.5"
 book-source: "../../kontext/material-finden.qmd"
 ---
 
@@ -56,7 +56,8 @@ Schritt 1 ist die Übersetzung: Die Kundin sagt „wie lange hält“, das Handb
 ## Suchprotokoll im Prompt
 
 ```text
-MATERIAL (nur diese Fundstellen sind gültig)
+CONTEXT (nur diese Fundstellen sind gültig)
+Rolle: Du unterstützt den Kundenservice der Rösterei Morgenrot.
 Herkunft: Produktionshandbuch Rösterei Morgenrot, Auszug, Stand 15.07.2026.
 Herausgesucht am 07.09.2026 zu den Suchbegriffen "Lagerung",
 "aufbrauchen", "Röstdatum", "geöffnet". Abschnitt 3 (Lagerung von
@@ -66,9 +67,9 @@ Rohkaffee) wurde bewusst nicht aufgenommen.
 === FUNDSTELLE [H6] Abschnitt 6 ... ===
 ```
 
-**Format:** hinter jeder Aussage [H6] oder [H7]. **Grenzen:** nur diese Fundstellen, Fehlendes unter „Offen“.
+**Format:** hinter jeder Aussage [H6] oder [H7]. **Check:** nur diese Fundstellen, Fehlendes unter „Offen“, Einschränkungen der Fundstelle mitnehmen.
 
-Vollständiger Prompt: Buchkapitel 3.3, Datei `material/m03/prompt-3-3-fundstellen.txt`
+Vollständiger Prompt: Buchkapitel 3.5, Datei `material/m03/prompt-3-3-fundstellen.txt`
 
 ::: {.notes}
 Das Suchprotokoll macht die Auswahl anfechtbar: Wer später prüft, sieht, wonach gesucht und was ausgeschlossen wurde. Live-Demo fünf Minuten, dann Arbeitsphase zehn Minuten. Ohne Konto: konstruiertes Ergebnis aus dem Buch.
@@ -99,56 +100,46 @@ Retrieval-Augmented Generation, „Erzeugen mit vorherigem Heraussuchen“. Kein
 Auflösung nach der Arbeitsphase. Der wichtigste Befund dieses Kapitels: eine Fundstelle, hinter der etwas anderes steht als behauptet. Sie sieht aus wie ein Beleg und ist keiner. Ergebnisse einsammeln: Hat jemand „zwölf Monate“ gesehen? Eine Erklärung zur Entgasung?
 :::
 
-## Wenn die Antwort außerhalb liegt
+## Quellencheck vor dem Suchen
 
-Jonas Halder fragt: Ist „Röstkaffee“ irgendwo amtlich bestimmt? Handbuch und Steckbrief: nichts.
-
-| Frage | Weg | Prüfung |
+| Anfrage | Lage | Weg |
 |---|---|---|
-| Eine Angabe auf einer benennbaren Seite | **Websuche mit vorgegebener Quelle**, wörtliches Zitat, „nicht gefunden“ zulässig | Seite selbst öffnen, Wort für Wort vergleichen |
-| Ein Überblick über viele Quellen | **Mehrstufige Recherche** („Deep Research“), Bericht mit Quellen | Tragende Aussagen an den Quellen nachlesen |
+| „Wie lange hält der Kaffee, wie lagere ich ihn?“ | Der Betrieb legt das selbst fest | Fundstellen heraussuchen |
+| „Ist ‚Röstkaffee‘ irgendwo amtlich bestimmt?“ | Angabe von außen | keine Suche im eigenen Material |
+| „Dürfen wir so beschriften?“ | Entscheidung | kein Beleg, sondern eine zuständige Stelle |
 
-Der Unterschied liegt in der Frage, nicht im Werkzeug.
-
-::: {.notes}
-Kurz halten, drei Minuten. Die mehrstufige Recherche ist keine Pflichtübung: Verfügbarkeit und Umfang hängen vom Konto ab, keine Zahlen behaupten. Ohne sie bleiben normale Suche und selbst bereitgestellte Quellen der Weg. Die Übung im Kurs nimmt die Websuche mit vorgegebener Quelle, weil die Prüfung eindeutig ist.
-:::
-
-## Websuche mit Prüfwert
-
-```text
-Lies ausschließlich diese Seite:
-https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
-Zitiere wörtlich, wie dort "Röstkaffee, Kaffee" bestimmt wird. Nenne
-die Nummer des Eintrags. Ergänze nichts aus anderen Quellen oder aus
-deinem Wissen. Wenn nicht zu finden: "auf der angegebenen Seite nicht
-gefunden". Beurteile nicht, ob eine Kennzeichnung zulässig ist.
-```
-
-**Prüfwert, Stand 07.09.2026, Eintrag 1 b):** „Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen, mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm.“
-
-Maßgeblich ist, was beim Öffnen auf der Seite steht.
+Die drei Lagen stehen in eingehenden Nachrichten oft in einem Satz nebeneinander.
 
 ::: {.notes}
-Demo nur, wenn im Konto eine Suchfunktion verfügbar ist; sonst die Seite direkt im Browser öffnen und den Eintrag zeigen. Prompt nicht mehrfach wiederholen, wenn der Abruf scheitert. Was die Suche nicht leistet: ob das Etikett zulässig ist. Das bleibt die verbindliche Klärung, die das Handbuch der Geschäftsführung zuweist. Freiwillige Zusatzfrage zum Koffeingehalt steht in der Materialdatei; die Anlage-Seite enthält dazu nichts, eine Prozentzahl wäre ein Befund.
+Drei Minuten, gut als kurze Zuordnungsübung: Tabelle ohne die zweite und dritte Spalte zeigen, Runde zuordnen lassen. Der Schritt kostet eine Minute und entscheidet, ob das Heraussuchen überhaupt der richtige Weg ist. Für Zeile 2 und 3 gibt es im Handbuch nichts; Abschnitt 11 hält ausdrücklich fest, dass die Geschäftsführung mit externer Beratung klärt, welche Angaben rechtlich auf die Verpackung gehören. Nützliche Faustregel, wenn die Zuordnung schwerfällt: Wer hätte eine falsche Antwort zu verantworten? Bei einer Auskunft aus dem eigenen Material der Betrieb, und der Beleg liegt im Haus. Bei einer Angabe von außen ist der Beleg die fremde Quelle. Bei einer Entscheidung gibt es keinen Beleg.
 :::
 
-## Eigene Variante und Portfolio
+## Heraussuchen jenseits von Texten
+
+- **Lange Tabelle:** die betroffenen Zeilen mitgeben, samt Spaltenüberschriften und Einheit — sonst sind Bezugsgrößen im Ergebnis nicht mehr zuzuordnen.
+- **Protokoll:** den Beschlussteil mitgeben, nicht die Diskussion, in der dieselben Vorschläge als Möglichkeit vorkommen.
+- **Entscheidungsvorlage:** die Stellen mitgeben, die die Lage beschreiben, und protokollieren, was bewusst nicht mitkam.
+
+Der Ausschluss mit Begründung ist in allen drei Fällen der wertvollere Teil des Protokolls.
+
+::: {.notes}
+Zwei Minuten. Zeigt, dass der Handgriff nicht an Antwortschreiben hängt. Beim Protokollbeispiel nachschieben, warum es tückisch ist: Diskussionsbeiträge und Beschlüsse verwenden dieselben Formulierungen, und im Ergebnis sieht ein erwogener Vorschlag aus wie ein gefasster Beschluss. Wer hier eine eigene Anwendung im Kopf hat, kann sie nennen; das ist der Anschluss an die freiwillige Vertiefung.
+:::
+
+## Freiwillige Vertiefung
 
 1. Längeres Dokument aus dem eigenen Fall als gekürzte, erfundene Übungsfassung mit sechs bis acht Abschnitten; eine Falle einbauen.
 2. Frage in Suchbegriffe übersetzen, Treffer lesen, Fundstellen mit Suchprotokoll mitgeben.
 3. Auftrag ausführen, jede Fundstelle aufschlagen.
 4. Gegenprobe mit dem ganzen Dokument in neuem Chat: schnappt die Falle zu?
 
-Suchprotokoll, Fundstellen, Beobachtung: **Portfolio-Teil 2**, Kontextquellen.
+Wer das macht, ergänzt Suchprotokoll und Fundstellen in **Portfolio-Teil 2**, Kontextquellen. Pflicht ist es nicht: Die eigene Arbeit in Modul 3 ist die Kontextmappe.
 
 ::: {.notes}
-Selbstlernphase. Die Gegenprobe ist eine Beobachtung; auch wenn die Falle nicht zuschnappt, bleibt der Weg über Fundstellen der prüfbare. Damit ist Modul 3 abgeschlossen: auswählen, dauerhaft hinterlegen, heraussuchen.
+Selbstlernphase, ausdrücklich freiwillig. Das im Termin so ansagen, sonst entsteht der Eindruck einer zusätzlichen Pflichtaufgabe. Die Gegenprobe ist eine Beobachtung; auch wenn die Falle nicht zuschnappt, bleibt der Weg über Fundstellen der prüfbare, weil bei ihm dokumentiert ist, was ausgeschlossen wurde.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 3.3, Working with GenAI: kontext/material-finden
-- Material: material/m03/produktionshandbuch-auszug.txt, prompt-3-3-fundstellen.txt, websuche-auftrag.txt
-- Kaffeeverordnung, Anlage: gesetze-im-internet.de/kaffeev_2001/anlage.html (abgerufen 07.09.2026)
-- Deep Research in ChatGPT, Verfügbarkeit kontoabhängig: help.openai.com/en/articles/10500283
+- Buchkapitel 3.5, Working with GenAI: kontext/material-finden
+- Material: material/m03/produktionshandbuch-auszug.txt, prompt-3-3-fundstellen.txt

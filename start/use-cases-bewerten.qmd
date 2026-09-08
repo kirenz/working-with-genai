@@ -1,0 +1,102 @@
+# Use Cases bewerten und priorisieren
+
+Aus den Wochenübersichten des Teams sind in der Rösterei sechs Vorschläge geworden. Aus der eigenen Suche in der vorigen Lektion sind es zwei oder drei. Jetzt geht es darum, sie zu vergleichen, ohne die Entscheidung an eine Punktzahl abzugeben. Wir stellen zuerst zwei Vorfragen, die einen Kandidaten als ersten Pilotfall ausschließen können, und vergleichen dann entlang von fünf Fragen, jede mit einem kurzen begründenden Satz. Am Ende steht eine Reihenfolge mit Begründung, und die Unterscheidung zwischen dem, was sich jetzt erproben lässt, und dem, was langfristig Potenzial hat.
+
+## Der Anlass: sechs Vorschläge auf Aylins Tisch
+
+Rösterei Morgenrot, Geschäftsführung. Aylin Yılmaz hat die Wochenübersichten gesammelt und daraus sechs Kandidaten gemacht. Sie will einen davon erproben, nicht sechs, und bittet das Team um eine Einschätzung. Die Aktennotiz steht als [Download](../material/m01/aktennotiz-aylin.md) bereit; die Entscheidung am Ende der Notiz lesen wir erst in der nächsten Lektion.
+
+| Nr. | Kandidat | Wer | Kurzbeschreibung |
+|---|---|---|---|
+| K1 | Kundenanfragen zum Abo beantworten | Sina | Anfragen zu Sortenwechsel, Preisen und Lieferungen kommen mehrmals pro Woche. Fakten stehen in den Fachinformationen. Der Entwurf wird vor dem Versand gelesen. |
+| K2 | Hinweis- und Produkttexte aus Briefings entwerfen | Jonas | Kurze Texte für Shop und Newsletter, jeweils aus einem freigegebenen Briefing. Der Text geht erst nach Freigabe online. |
+| K3 | Zahlen und Notizen für die Teambesprechung aufbereiten | Petra | Monatliche Übersicht aus eigenen Notizen und Tabellen. Offene Angaben werden als offen markiert. |
+| K4 | Produktionsnotizen in eine Übergabe überführen | Marlene | Wöchentliche Übergabe aus handschriftlichen Röstnotizen. Mengen und Termine dürfen nicht ergänzt werden. |
+| K5 | Entscheiden, welche gekündigten Abos mit einem Rabatt zurückgewonnen werden | Aylin | Aus der Kundenliste soll das Modell vorschlagen, wem ein Angebot gemacht wird. Grundlage: Bestellhistorie und Kündigungsgrund. |
+| K6 | Preisstrategie 2027 entwickeln | Aylin | Preisempfehlungen für die drei Sorten auf Basis allgemeiner Markttrends. |
+
+Die Kandidaten decken die Grundformen aus der vorigen Lektion ab: K1 und K2 erstellen Entwürfe, K3 und K4 strukturieren Material, K5 und K6 sollen Entscheidungen vorbereiten oder treffen. Notiz, Kandidaten und Entscheidung sind für diesen Kurs konstruiert.
+
+## Zielbild
+
+Am Ende liegt eine Vergleichstabelle vor: je Kandidat eine Zeile, je Frage ein kurzer Satz. Darunter steht die Reihenfolge, in der die Kandidaten erprobt werden sollten, mit einer Begründung in zwei bis drei Sätzen. Unbekannte Größen stehen als Annahmen darin, nicht als Zahlen. Das Arbeitsblatt dafür ist der [Kandidatenvergleich](../material/m01/kandidatenvergleich.md); er enthält das ausgefüllte Beispiel der Rösterei zum Abgleich.
+
+## Schritt für Schritt
+
+### Schritt 1: Zwei Vorfragen vor dem Vergleich
+
+Bevor wir Nutzen und Aufwand abwägen, stellen wir zwei Fragen, die nicht verrechnet werden. Ein hoher Nutzen gleicht sie nicht aus.
+
+**Braucht der Kandidat personenbezogene Daten oder eine Freigabe, die noch nicht vorliegt?** Wenn ja, bleibt der Kandidat auf der Liste, aber mit dem Vermerk „Klärung nötig“. Als erster Pilotfall im Kurs eignet er sich nur, wenn sich der Schritt so zuschneiden lässt, dass die Übung ohne diese Daten auskommt, etwa mit erfundenen Anfragen. Die Klärung selbst ist eine Zuständigkeitsfrage, keine Bewertungsfrage.
+
+**Delegiert der Kandidat eine Entscheidung über Menschen an das Modell?** Wer einen Rabatt bekommt, wer eingestellt wird, wessen Antrag abgelehnt wird: Solche Entscheidungen bleiben bei einer Person. Ein Kandidat, dessen Ergebnis die Entscheidung selbst ist und nicht deren Vorbereitung, ist als Pilotfall ungeeignet. Er lässt sich manchmal umformulieren: „Die Angaben zu jedem Fall entlang fester Kriterien zusammenstellen, damit eine Person entscheidet.“
+
+Für die Rösterei betrifft die Datenfrage K1 (echte Kundenmails), K3 (mögliche Namen in Notizen) und K5 (Kundenliste). Alle drei lassen sich mit vollständig erfundenen Daten üben. K5 benötigt zusätzlich einen anderen Zuschnitt: Angaben anhand vorgegebener Kriterien zusammenstellen, damit eine Person entscheidet. Die vorgeschlagene automatische Auswahl wird zurückgestellt; für die reale Anwendung bleiben Datenschutz und Zuständigkeit zu klären.
+
+::: {.callout-important title="Datenklärung wird nicht mit Nutzen verrechnet"}
+Es ist verlockend, einen Kandidaten mit hohem Nutzen trotz offener Datenfrage vorzuziehen, weil „sich das schon klären lässt“. Im Kurs gilt: Eine ungeklärte Voraussetzung bleibt eine Voraussetzung. Der Kandidat wird nicht schlechter bewertet, er wird zurückgestellt, bis die zuständige Stelle entschieden hat. Wer die Klärung anstößt, hat für diesen Kandidaten schon den richtigen nächsten Schritt getan.
+:::
+
+### Schritt 2: Fünf Vergleichsfragen
+
+Für die verbleibenden Kandidaten beantworten wir fünf Fragen, jede mit einem Satz. Es gibt keine Punkte und keine Gewichtung. Kurze Sätze machen die Gründe der Einschätzung sichtbar.
+
+| Frage | Worauf sie zielt | Typische Antwort |
+|---|---|---|
+| **Erwarteter Nutzen** | Welcher Engpass wird kleiner, wie oft tritt er auf, woran wäre das zu sehen? | „Formulieren und Nachschlagen bei 8 bis 12 Anfragen pro Woche; sichtbar an der Bearbeitungszeit je Anfrage einschließlich Prüfung.“ |
+| **Datenverfügbarkeit** | Liegen die Angaben, aus denen gearbeitet wird, als Text vor, und dürfen sie in das Werkzeug? | „Fachinformationen liegen als Text vor und sind intern freigegeben; Anfragen werden für die Übung erfunden.“ |
+| **Aufwand einschließlich Vorbereitung, Prüfung und Nacharbeit** | Was kostet es, Material vorzubereiten, den Auftrag zu formulieren, Ergebnisse zu prüfen und nachzubearbeiten? | „Material ist vorhanden; Zeit für Vorbereitung, Gegenlesen und Nacharbeit wird im Pilot erfasst.“ |
+| **Erreichbare Qualität und Prüfmaßstab** | Wogegen wird das Ergebnis geprüft, und wie gut kann es damit werden? | „Jede Aussage lässt sich gegen die Fachinformationen halten; offene Fragen bleiben offen.“ |
+| **Risiken** | Was passiert, wenn ein Fehler durchrutscht, und wer bekommt ihn zu sehen? | „Eine falsche Zusage geht an Kundinnen; deshalb wird jeder Entwurf vor dem Versand gelesen.“ |
+
+Der Prüfmaßstab hängt von der Grundform ab. Ein Entwurf aus Fachinformationen wird Aussage für Aussage geprüft. Eine strukturierte Notizsammlung wird auf Vollständigkeit geprüft: Fehlt ein Punkt aus den Notizen, ist etwas dazugekommen? Ein Vergleich zweier Tabellen wird stichprobenartig gegen die Tabellen gelesen und auf Rechenwege geprüft. Eine Ideensammlung wird nach Brauchbarkeit und Vielfalt beurteilt; enthaltene Sachbehauptungen werden trotzdem geprüft. „Prüfbar“ bedeutet also nicht nur „satzweise belegbar“; es bedeutet, dass wir vorher wissen, woran wir ein gutes Ergebnis erkennen.
+
+### Schritt 3: Andere Lösungswege erwägen
+
+Für eine exakt regelgebundene Aufgabe kommen eine Vorlage, Textbausteine, Tabellenfunktionen oder gewöhnliche Automatisierung infrage. Beim Bestellstatus könnten ein direkter Link oder eine Statusmail den Wechsel zwischen Systemen verringern. Ob das genügt, wird am Ablauf geprüft. Bei variierenden Eingaben kann ein Chatmodell Texte, Strukturen oder Vergleiche vorbereiten. Für alle Wege zählen Vorbereitung, Prüfung, Nacharbeit und Pflege.
+
+Wir notieren zu jedem Kandidaten, ob ein solcher anderer Weg in Frage kommt. Das ist keine Absage an den Kandidaten; manchmal ergibt sich die Kombination, etwa eine Vorlage für den festen Teil und ein Modell für den variablen.
+
+### Schritt 4: Die Rösterei-Kandidaten im Vergleich
+
+So kann die Tabelle für die Rösterei aussehen. Sie ist konstruiert und zeigt die Form; eigene Einschätzungen dürfen abweichen, wenn sie begründet sind.
+
+| Kandidat | Nutzen | Daten | Aufwand mit Prüfung | Qualität und Maßstab | Risiken | Anderer Weg? |
+|---|---|---|---|---|---|---|
+| **K1** Kundenanfragen | Erwartung: weniger Aufwand bei wiederkehrenden Anfragen; Ersparnis noch zu prüfen | Fachinformationen als Text vorhanden; echte Anfragen erst nach Klärung, Übung mit erfundenen | Material liegt vor; Vorbereitung, Gegenlesen und Nacharbeit mit erfassen | Satzweise gegen die Fachinformationen prüfbar | Außenwirkung bei Kundinnen; Entwurf wird vor Versand gelesen | Textbausteine und Vorlage als Vergleich erproben |
+| **K2** Texte aus Briefings | Mittel: laufend, aber kürzere Vorgänge | Briefings liegen vor und sind freigegeben | Vorbereitung, Prüfung und Überarbeitung erfassen | Gegen das Briefing prüfbar; Ton ist Ermessen von Aylin | Entwurf vor Freigabe auf Fakten und Ton prüfen | Briefingvorlage und Textbausteine mit den Entwürfen vergleichen |
+| **K3** Übersicht Teambesprechung | Mittel: monatlich, etwa zwei Stunden Handarbeit (Petras Beobachtung) | Eigene Tabellen und Notizen; Namen müssten ersetzt werden | Zusammentragen der Zahlen bleibt Handarbeit; Prüfung auf Vollständigkeit | Zahlen prüfbar; Zusammenfassung teils Ermessen | Fehler können Besprechungen beeinflussen; Zahlen vorab mit den Tabellen abgleichen | Tabellenfunktionen für die Zahlen; Modell für den Text |
+| **K4** Produktionsübergabe | Mittel: wöchentlich | Handschriftliche Notizen müssen abgetippt oder fotografiert werden | Eingabe kostet; Prüfung jeder Menge und jedes Termins | Streng prüfbar; nichts darf ergänzt werden | Mittel: falsche Menge wirkt in der Produktion; Übergabe wird gelesen | Feste Übergabevorlage könnte den Aufwand allein senken |
+| **K5** Rückgewinnung | Vermutlich hoch, aber unbelegt | Kundenliste: Klärung nötig | Unklar | Kein Prüfmaßstab: Woran wäre eine richtige Auswahl erkennbar? | Entscheidung über Personen; Außenwirkung | Zurückgestellt: Vorfragen 1 und 2 |
+| **K6** Preisstrategie | Nutzen und konkreter Engpass noch nicht beschrieben | Keine belegten Angaben zum Markt | Materialbeschaffung und Prüfung einplanen | Im vorliegenden Fall fehlen Marktangaben, Ziele und Kriterien für die Beurteilung | Hohe Tragweite | Entscheidungsvorbereitung möglich, sobald Marktangaben, Ziele und Kriterien vorliegen |
+
+Aus der Tabelle folgt eine Reihenfolge, die sich in drei Sätzen begründen lässt: K1 zuerst, weil der Engpass mehrmals pro Woche auftritt, das Material als Text vorliegt und jede Aussage prüfbar ist. K2 danach, weil ein freigegebenes Briefing vorliegt; der tatsächliche Aufwand wird im Pilot verglichen. K3 und K4 sind tragfähig, brauchen aber Vorarbeit an den Eingaben. K5 und K6 werden nicht erprobt; K5 wegen der offenen Klärung und der Entscheidungsdelegation, K6 wegen der fehlenden Informationsgrundlage und Kriterien.
+
+::: {.callout-tip title="Piloteignung und Potenzial sind zwei Listen"}
+Ein Kandidat kann für den ersten Pilot ungeeignet und trotzdem das Vorhaben mit dem größten Potenzial sein. K5 gehört auf die zweite Liste: Wenn Datenschutz und Zuständigkeit geklärt sind und ein Maßstab gefunden ist, etwa eine Vorbereitung entlang fester Kriterien statt einer Auswahl, kann daraus ein späterer Fall werden. Wer beide Listen führt, verliert keine gute Idee und startet trotzdem mit einem Fall, der sich im Kurs tragen lässt.
+:::
+
+### Die eigenen Kandidaten bewerten
+
+Wir übertragen das Vorgehen auf die eigene Liste aus der vorigen Lektion: erst die zwei Vorfragen, dann die fünf Sätze je Kandidat, dann ein Blick auf andere Lösungswege. Größen, die wir nicht kennen, schreiben wir als Annahme hin („vermutlich zwei Stunden pro Monat, noch zu prüfen“). Am Ende steht die Reihenfolge mit einer Begründung in zwei bis drei Sätzen. Alle Angaben bleiben allgemein; Rollen statt Namen, keine vertraulichen Zahlen.
+
+Die Tabelle und die Begründung kommen als Grundlage für Portfolio-Teil 1 in die Arbeitsmappe. Der erste Kandidat ist der vorläufige Pilotfall für den Canvas.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Die Versuchung, Punkte zu vergeben und zu addieren | Bei Sätzen bleiben. Bei unklarer Reihenfolge die entscheidenden Unterschiede und offenen Angaben prüfen. |
+| Der Kandidat mit dem höchsten Nutzen hat eine offene Datenfrage | Zurückstellen, nicht abwerten. Die Klärung als nächsten Schritt notieren; für den Kurs den nächsten Kandidaten nehmen oder den Schritt so zuschneiden, dass die Übung ohne die Daten auskommt. |
+| Der Nutzen wird in Prozent oder Stunden Ersparnis angegeben, ohne Beobachtung | Als Annahme kennzeichnen oder auf den beobachtbaren Effekt zurückführen: Bearbeitungszeit je Vorgang, Zahl der Rückfragen, Vollständigkeit. |
+| Bei „Qualität und Maßstab“ steht nur „muss gut sein“ | Die Grundform ansehen: Entwurf, Struktur, Vergleich, Vorbereitung, Ideen. Jede hat einen anderen Maßstab; ihn benennen. |
+| Ein Kandidat wäre mit einer Vorlage ebenso gelöst | Dann ist die Vorlage die Lösung. Das ist ein Ergebnis, kein Scheitern der Suche. |
+| Zwei Kandidaten sind gleichauf | Den nehmen, dessen passende Informationsgrundlage bereits vorliegt. Der andere bleibt auf der Liste. |
+
+## Kontrollpunkt
+
+- Die zwei Vorfragen stellen und begründen, warum eine offene Datenklärung nicht mit dem Nutzen verrechnet wird
+- Kandidaten entlang der fünf Fragen mit je einem Satz vergleichen, ohne Punkte zu vergeben
+- Für jede Grundform den passenden Prüfmaßstab benennen
+- Erkennen, wann eine Vorlage, Tabellenfunktion oder gewöhnliche Automatisierung die bessere Lösung ist
+- Eine Reihenfolge in zwei bis drei Sätzen begründen und Piloteignung von langfristigem Potenzial unterscheiden

@@ -1,6 +1,6 @@
 # Drei konstruierte Vergleichsausgaben
 
-Kursmaterial „Working with GenAI“, Lektion 4.3.
+Kursmaterial „Working with GenAI“, Lektion 4.4.
 
 **Kennzeichnung:** Diese drei Ausgaben sind konstruiert. Sie sind keine aufgezeichneten Modelloutputs und stehen für kein bestimmtes Produkt. Sie dienen als Ersatz, wenn nur ein Werkzeug verfügbar ist: Dann wird das echte Ergebnis aus dem eigenen Werkzeug mit A, B und C verglichen, mit demselben Protokoll. Die Buchstaben sind keine verdeckten Anbieternamen.
 
@@ -45,11 +45,11 @@ Auftrag: `prompt-4-3-vergleichsauftrag.txt` (Kundenmail von T. Osei: Wechsel auf
 
 | Kriterium | A | B | C |
 |---|---|---|---|
-| Format | eingehalten | Anrede weicht ab („Herr Osei“ ist aus dem Material nicht ableitbar), Wortzahl eingehalten | kein Entwurf |
+| Format | eingehalten | Anrede weicht ab („Herr Osei“ ist aus dem Context nicht ableitbar), Wortzahl eingehalten | kein Entwurf |
 | Offen-Liste | vorhanden, richtiger Punkt | „keine“, obwohl das Versanddatum fehlt | entfällt |
 | Bedingung | an der Zusage, mit Hinweis auf fehlendes Datum | „in der Regel“ weicht die Regel auf; unbedingte Zusage („stellen wir um“) | erkannt, aber nicht in einen Entwurf umgesetzt |
 | Zusätze | keine | Versandtermin „Anfang der kommenden Woche“ erfunden; „vergünstigter Abo-Preis“ ohne Grundlage | keine |
 | Rückfrage statt Entwurf | nein | nein | ja |
-| Ton und Länge | sachlich, im Rahmen | verbindlicher als das Material erlaubt | sachlich |
+| Ton und Länge | sachlich, im Rahmen | verbindlicher als der Context erlaubt | sachlich |
 
 C ist nicht falsch, aber nicht das bestellte Ergebnis: Der Auftrag verlangt einen Entwurf, bei dem fehlende Angaben unter „Offen“ stehen. Eine Rückfrage lässt sich mit einer Nachricht auflösen („Bitte den Entwurf erstellen und das Versanddatum unter Offen eintragen“) oder im Auftrag von vornherein ausschließen. B liest sich am freundlichsten und enthält die meisten ungedeckten Aussagen. Das ist der Grund, warum wir nicht nach Eindruck vergleichen, sondern nach Protokoll.

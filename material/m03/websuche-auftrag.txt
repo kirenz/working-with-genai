@@ -1,5 +1,6 @@
 WEBSUCHE MIT VORGEGEBENER QUELLE
-Kursmaterial "Working with GenAI", Lektion 3.3
+Kursmaterial "Working with GenAI", Lektion 3.6 · Websuche und Quellen
+prüfen
 
 Anlass im Fall: Jonas Halder möchte auf dem Etikett "Röstkaffee" schreiben
 und fragt, ob dieser Begriff irgendwo amtlich bestimmt ist. Weder das
@@ -8,19 +9,43 @@ Antwort liegt außerhalb des eigenen Materials.
 
 Voraussetzung: ein Chatwerkzeug, das Webseiten abrufen kann (in ChatGPT die
 Suchfunktion, sofern im Konto verfügbar). Ohne Abruf: die Seite selbst im
-Browser öffnen und ab Schritt 3 weiterarbeiten.
+Browser öffnen und ab Schritt 1 unter SELBST PRÜFEN weiterarbeiten.
 
 --------------------------------------------------------------------------
 PROMPT
 --------------------------------------------------------------------------
-Lies ausschließlich diese Seite:
+TASK
+Zitiere wörtlich, wie auf der unten genannten Seite "Röstkaffee, Kaffee"
+bestimmt wird. Nenne die Nummer des Eintrags.
+
+CONTEXT
+Ich bereite die Beschriftung eines Etiketts vor und brauche dafür den
+amtlichen Wortlaut. Lies ausschließlich diese Seite:
 https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
 
-Zitiere wörtlich, wie dort "Röstkaffee, Kaffee" bestimmt wird. Nenne die
-Nummer des Eintrags. Ergänze keine Angaben aus anderen Quellen oder aus
-deinem Wissen. Wenn eine Angabe auf der Seite nicht zu finden ist, schreibe
-"auf der angegebenen Seite nicht gefunden". Beurteile nicht, ob eine
-Kennzeichnung zulässig ist.
+FORMAT
+Das wörtliche Zitat mit der Nummer des Eintrags, sonst nichts.
+
+CHECK
+- Ergänze keine Angaben aus anderen Quellen oder aus deinem Wissen.
+- Ist die Angabe auf der Seite nicht zu finden, schreibe "auf der
+  angegebenen Seite nicht gefunden".
+- Kannst du die Seite nicht abrufen, sage das ausdrücklich und zitiere
+  nichts.
+- Beurteile nicht, ob eine Kennzeichnung zulässig ist.
+
+--------------------------------------------------------------------------
+WAS DIE VIER CHECK-ZEILEN LEISTEN
+--------------------------------------------------------------------------
+1. Grenzt die Quelle ein.
+2. Gibt "nicht gefunden" als zulässiges Ergebnis vor, damit eine Lücke
+   nicht mit einer plausiblen Angabe geschlossen wird.
+3. Trennt "Seite nicht abrufbar" von "Angabe nicht vorhanden". Ohne diese
+   Zeile sehen beide Fälle im Ergebnis gleich aus.
+4. Hält die Rechtsfrage draußen, die hier nicht gestellt ist.
+
+Diese vier Zeilen sind Vorgaben an das Modell. Sie ersetzen die eigene
+Prüfung nicht.
 
 --------------------------------------------------------------------------
 SELBST PRÜFEN
@@ -28,16 +53,51 @@ SELBST PRÜFEN
 1. Die Seite im Browser öffnen:
    https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
 2. Den Eintrag zu "Röstkaffee, Kaffee" suchen und Wort für Wort mit dem
-   Zitat vergleichen.
+   Zitat vergleichen. Auch die Eintragsnummer vergleichen.
 3. Prüfwert, Stand 07.09.2026: Eintrag 1 b) lautet
    "Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen,
    mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm."
    Maßgeblich ist, was beim Öffnen tatsächlich auf der Seite steht.
    Webseiten und Rechtstexte können sich ändern.
+4. Auf Zusätze achten, die von dieser Seite nicht stammen können, etwa
+   Angaben zum Koffeingehalt, zu Kennzeichnungspflichten oder zur
+   Zulässigkeit einer Etikettierung. Solche Sätze einzeln notieren und
+   verwerfen. Nicht gedeckt heißt nicht automatisch falsch; es heißt, dass
+   die Angabe für diese Frage nicht verwendet wird.
+5. Kann das Werkzeug die Seite nicht abrufen, den Prompt nicht wiederholen.
+   Seite selbst lesen, Eintrag notieren, Prüfung von Hand abschließen.
 
 Was diese Übung nicht leistet: Ob das Etikett der Rösterei zulässig ist,
 entscheidet keine Websuche. Das bleibt eine verbindliche Klärung durch die
 Geschäftsführung mit externer Beratung (Handbuch, Abschnitt 11).
+
+--------------------------------------------------------------------------
+VIER FRAGEN AN EINE QUELLE
+--------------------------------------------------------------------------
+Für eigene Fragen, bei denen es keinen vorbereiteten Prüfwert gibt:
+
+1. Wer gibt die Seite heraus? Behörde, Verband, Unternehmen, Redaktion,
+   Privatperson. Das entscheidet nicht über richtig oder falsch, sondern
+   darüber, wofür die Seite die Primärquelle ist.
+2. Welchen Stand hat die Angabe? Datum der Seite, Datum der Fassung, Datum
+   des Abrufs. Ohne Datum ist die Angabe nicht datierbar; das gehört so
+   ins Protokoll.
+3. Steht die Angabe auf der Seite oder nur im Ergebnis? Ein Ergebnis mit
+   Fußnote sieht geprüft aus, bevor irgendjemand die Seite geöffnet hat.
+4. Beantwortet die Quelle die gestellte Frage? Eine Begriffsbestimmung
+   bestimmt einen Begriff. Über die Zulässigkeit einer Verwendung sagt sie
+   nichts.
+
+Notizvorlage für einen eigenen Fall:
+
+  Frage:            <die Frage im Wortlaut>
+  Vorgegebene Seite:<vollständige Adresse>
+  Herausgeber:      <wer verantwortet die Seite>
+  Stand der Seite:  <Datum laut Seite>
+  Abgerufen am:     <Datum des eigenen Abrufs>
+  Wörtliches Zitat: <Fundstelle und Wortlaut>
+  Nicht gedeckt:    <Zusätze aus dem Ergebnis, die dort nicht stehen>
+  Bleibt offen:     <was die Quelle nicht beantwortet, und wer klärt es>
 
 --------------------------------------------------------------------------
 FREIWILLIG: EINE FRAGE, DIE DIE SEITE NICHT BEANTWORTET
@@ -50,4 +110,5 @@ Wenn nicht, schreibe "auf der angegebenen Seite nicht gefunden".
 
 Erwartung: Auf der Anlage-Seite steht dazu nichts (Stand 07.09.2026).
 Eine Antwort mit einer Prozentzahl wäre ein Befund: Sie stammt dann nicht
-von der angegebenen Seite.
+von der angegebenen Seite. Ob die Zahl inhaltlich stimmt, ist eine andere
+Frage und ändert am Befund nichts.

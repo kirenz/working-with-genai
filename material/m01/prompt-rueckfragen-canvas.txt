@@ -1,9 +1,10 @@
-Ich bereite einen Anwendungsfall für ein Chatmodell vor und fülle dafür einen Use-Case-Canvas mit den Feldern Problem, Zielgruppe, Nutzenversprechen, Häufigkeit und Umfang, Datenbedarf, Abgrenzung.
-
-AUFGABE
+TASK
 Stelle mir genau fünf Rückfragen, die ich beantworten muss, bevor ich den Canvas ausfüllen kann. Beantworte die Fragen nicht selbst und schlage keine Inhalte für den Canvas vor.
 
-MATERIAL (meine bisherigen Stichworte)
+CONTEXT
+Ich bereite einen Anwendungsfall für ein Chatmodell vor und fülle dafür einen Use-Case-Canvas mit den Feldern Problem, Zielgruppe, Nutzenversprechen, Häufigkeit und Umfang, Datenbedarf, Abgrenzung.
+
+Meine bisherigen Stichworte:
 Aufgabe: Monatliche Übersicht für die Teambesprechung aus vorhandenen Notizen und Tabellen aufbereiten.
 Wer bekommt sie: das fünfköpfige Team einer kleinen Rösterei.
 Heute: dauert etwa zwei Stunden pro Monat, Zahlen werden von Hand aus drei Dateien zusammengetragen.
@@ -12,6 +13,6 @@ Grenze: Zahlen dürfen nicht ergänzt oder geschätzt werden; fehlende Angaben w
 FORMAT
 Nummerierte Liste mit fünf Fragen. Zu jeder Frage in Klammern das Canvas-Feld, das sie klärt. Keine Einleitung, kein Schluss.
 
-GRENZEN
-- Frage nur nach Dingen, die aus meinen Stichworten nicht hervorgehen.
+CHECK
+- Frage nur nach Angaben, die aus meinen Stichworten nicht hervorgehen. Was der Context bereits abdeckt, fragst du nicht.
 - Erfinde keine Angaben über die Rösterei.

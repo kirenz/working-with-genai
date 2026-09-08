@@ -1,0 +1,96 @@
+---
+title: "Use Cases bewerten und priorisieren"
+subtitle: "Modul 1 · Lektion 1.8"
+book-source: ../../start/use-cases-bewerten.qmd
+---
+
+## Kandidaten begründet vergleichen {.stage}
+
+[Modul 1 · Anwendungsfälle finden]{.kicker}
+
+Zwei Vorfragen, die einen Kandidaten ausschließen können. Fünf Fragen, jede mit einem Satz. Eine Reihenfolge mit Begründung.
+
+::: {.notes}
+Asynchron bearbeitete Lektion; Folien als Kurzfassung für den Beratungstermin. Einstieg: Aus den Wochenübersichten sind sechs Kandidaten geworden, aus der eigenen Suche zwei oder drei. Ankündigen, dass es keine Punkte und keine Gewichtung gibt: Kurze Sätze machen die Gründe der Einschätzung sichtbar. Zeit: 1 Minute.
+:::
+
+## Sechs Kandidaten der Rösterei
+
+::: {.small}
+| Nr. | Kandidat | Grundform |
+|---|---|---|
+| K1 | Kundenanfragen zum Abo beantworten (Sina) | Entwürfe erstellen |
+| K2 | Hinweis- und Produkttexte aus Briefings (Jonas) | Entwürfe erstellen |
+| K3 | Zahlen und Notizen für die Teambesprechung (Petra) | Material strukturieren |
+| K4 | Produktionsnotizen in eine Übergabe (Marlene) | Material strukturieren |
+| K5 | Entscheiden, welche gekündigten Abos mit Rabatt zurückgewonnen werden (Aylin) | Entscheidung |
+| K6 | Preisstrategie 2027 auf Basis allgemeiner Markttrends (Aylin) | Entscheidung vorbereiten |
+:::
+
+::: {.sources}
+Aktennotiz mit Kandidaten: material/m01/aktennotiz-aylin.md (konstruiert). Die Entscheidung am Ende der Notiz wird erst in der nächsten Lektion gelesen.
+:::
+
+::: {.notes}
+Kandidaten kurz durchgehen, nicht bewerten. Die Grundformen aus der vorigen Lektion zuordnen. Zeit: 1 Minute.
+:::
+
+## Zwei Vorfragen, die nicht verrechnet werden
+
+::: {.two-col}
+::: {.card}
+**Braucht der Kandidat personenbezogene Daten oder eine fehlende Freigabe?**
+
+Dann zurückstellen mit „Klärung nötig“ oder für die Übung so zuschneiden, dass sie ohne diese Daten auskommt.
+:::
+::: {.card}
+**Delegiert er eine Entscheidung über Menschen an das Modell?**
+
+Dann als Pilot ungeeignet. Oft umformulierbar: „entlang fester Kriterien vorbereiten, damit eine Person entscheidet“.
+:::
+:::
+
+Ein hoher Nutzen gleicht keine ungeklärte Voraussetzung aus.
+
+::: {.notes}
+Der wichtigste Punkt der Lektion. Für die Rösterei: Vorfrage 1 trifft K1, K3 und K5; K1, K3 und K5 lassen sich mit vollständig erfundenen Daten üben. K5 braucht zusätzlich einen Zuschnitt als Vorbereitung anhand vorgegebener Kriterien. Vorfrage 2 trifft K5 vollständig. K5 wird zurückgestellt, nicht abgewertet. Ausdrücklich sagen: Wer die Klärung anstößt, hat für diesen Kandidaten den richtigen nächsten Schritt getan. Zeit: 3 Minuten.
+:::
+
+## Fünf Fragen, je ein Satz
+
+| Frage | Worauf sie zielt |
+|---|---|
+| **Erwarteter Nutzen** | Welcher Engpass, wie oft, woran sichtbar? |
+| **Datenverfügbarkeit** | Als Text vorhanden? Darf es in das Werkzeug? |
+| **Aufwand einschließlich Vorbereitung, Prüfung und Nacharbeit** | Materialvorbereitung, Auftrag, Prüfung, Nacharbeit |
+| **Qualität und Prüfmaßstab** | Wogegen wird geprüft? Abhängig von der Grundform |
+| **Risiken** | Was passiert, wenn ein Fehler durchrutscht, und wer sieht ihn? |
+
+Dazu: Löst eine Vorlage, Tabellenfunktion oder gewöhnliche Automatisierung den Engpass ebenso?
+
+::: {.notes}
+Die Fragen erklären, jeweils mit dem Satz aus dem Buch für K1. Beim Prüfmaßstab die Grundformen durchgehen: Entwurf Aussage für Aussage, Struktur auf Vollständigkeit, Vergleich stichprobenartig und Rechenwege, Ideen nach Brauchbarkeit und Vielfalt. Beim Bestellstatus einen direkten Link oder eine Statusmail als Alternative prüfen. Auch solche Lösungen brauchen Prüfung und Pflege. Unbekannte Größen als Annahme festhalten, keine Prozentwerte erfinden. Zeit: 4 Minuten.
+:::
+
+## Der Vergleich der Rösterei
+
+::: {.small}
+| Kandidat | Nutzen | Daten | Qualität und Maßstab | Risiken |
+|---|---|---|---|---|
+| **K1** | Hoch: mehrmals pro Woche | Fachinformationen als Text; Übung mit erfundenen Anfragen | Satzweise prüfbar | Außenwirkung; Entwurf wird gelesen |
+| **K2** | Mittel: kurze Vorgänge | Briefings freigegeben | Gegen Briefing prüfbar; Ton ist Ermessen | Fehler vor Verwendung prüfen |
+| **K3** | Mittel: monatlich, etwa zwei Stunden (Petras Beobachtung) | Eigene Tabellen; Namen ersetzen | Zahlen prüfbar; Text teils Ermessen | Fehler vor Verwendung prüfen |
+| **K4** | Mittel: wöchentlich | Handschriftlich; Vorarbeit nötig | Streng prüfbar | Mittel: falsche Menge wirkt in der Produktion |
+| **K5** | Vermutlich hoch, unbelegt | Klärung nötig | Kein Maßstab | Entscheidung über Personen |
+| **K6** | Unklar | Keine belegten Marktangaben | Ziele und Bewertungskriterien fehlen | Hohe Tragweite |
+:::
+
+Reihenfolge: K1, dann K2, dann K3 und K4. K5 und K6 nicht. K5 bleibt auf der Liste mit Potenzial.
+
+::: {.sources}
+Ausgefülltes Arbeitsblatt: material/m01/kandidatenvergleich.md (konstruiert)
+:::
+
+::: {.notes}
+Die Tabelle als Form zeigen, nicht als richtige Lösung; begründete Abweichungen sind erwünscht. Die Begründung in drei Sätzen vorlesen: K1 zuerst, weil der Engpass mehrmals pro Woche auftritt, das Material als Text vorliegt und jede Aussage prüfbar ist; K2 danach, weil das Briefing vorliegt; der Aufwand wird im Pilot verglichen; K3 und K4 brauchen Vorarbeit an den Eingaben. Piloteignung und Potenzial als zwei Listen: K5 kann nach Klärung und mit einem Maßstab ein späterer Fall werden. Aufgabe für das Selbststudium: eigene Kandidaten mit demselben Vorgehen vergleichen, Reihenfolge in zwei bis drei Sätzen begründen; Tabelle und Begründung in die Arbeitsmappe. Zeit: 4 Minuten.
+:::

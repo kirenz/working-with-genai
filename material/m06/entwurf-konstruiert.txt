@@ -1,5 +1,5 @@
 KONSTRUIERTER ENTWURF FÜR DEN ERSATZWEG
-Kursmaterial "Working with GenAI", Modul 6, Lektion 6.2
+Kursmaterial "Working with GenAI", Modul 6, Lektion 6.3
 
 HINWEIS: Konstruiertes Beispiel, kein aufgezeichneter Modelloutput. Es
 dient als Wert für das Feld "text" im Ersatzweg ohne Modellzugang und als

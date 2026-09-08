@@ -1,13 +1,13 @@
 # Regieplan für die Kurzpräsentation (5 Minuten)
 
-Kursmaterial „Working with GenAI", Modul 6, Lektion 6.3. Planwert 5 Minuten, entlang der vier Portfolio-Teile. Die Arbeitsmappe darf gezeigt werden; ein gestaltetes Foliendeck ist nicht nötig.
+Kursmaterial „Working with GenAI", Modul 6, Lektion 6.4. Planwert 5 Minuten, entlang der vier Portfolio-Teile. Die Arbeitsmappe darf gezeigt werden; ein gestaltetes Foliendeck ist nicht nötig.
 
 ## Ablauf
 
 | Zeit | Teil | Was gezeigt wird | Ein Satz, der genügt |
 |---|---|---|---|
 | 0:00–0:50 | Teil 1: Use-Case-Canvas | Problem, Zielgruppe, Nutzenhypothese | „Bei uns kommen … pro Woche; heute dauert das … und geht schief, wenn …" |
-| 0:50–2:00 | Teil 2: Prompt- und Context-Pipeline | Der Arbeitsauftrag mit seinen vier Teilen; das Startpaket oder Projekt; woher das Material stammt | „Das Modell bekommt genau dieses Material und diese Grenzen; alles andere gilt nicht." |
+| 0:50–2:00 | Teil 2: Prompt- und Context-Pipeline | Der Arbeitsauftrag mit seinen vier Teilen; das Startpaket oder Projekt; woher das Material stammt | „Das Modell bekommt genau diesen Context und diesen Check; alles andere gilt nicht." |
 | 2:00–3:15 | Teil 3: Qualitäts- und Compliance-Check | Ein Testfall mit Lücke und sein Ergebnis; eine Zeile der Risiko-Tabelle mit Zuständigkeit | „Hier fehlt die Angabe absichtlich; der Entwurf hat sie unter Offen geführt. Die Datenschutzfrage klärt …" |
 | 3:15–4:15 | Teil 4: Transferplan | Die 30-Tage-Karte: erster Schritt, Erfolgsmaß, Rückblicktermin | „Am … entscheiden wir anhand von … ob wir weitermachen." |
 | 4:15–4:45 | Schluss | Eine Bitte an die Gruppe | „Wer hat für … eine Erfahrung, die mir hilft?" |

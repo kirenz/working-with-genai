@@ -1,0 +1,100 @@
+---
+title: "Websuche und Quellen prüfen"
+subtitle: "Modul 3 · Lektion 3.6"
+book-source: "../../kontext/websuche.qmd"
+---
+
+## Eine Frage außerhalb des Materials {.stage}
+
+[Rösterei Morgenrot · Jonas Halder, Etikettengestaltung]{.kicker}
+
+> Ist der Begriff „Röstkaffee“ irgendwo amtlich bestimmt?
+
+Handbuch, Steckbrief und Serviceregeln sagen dazu nichts. Abschnitt 11 hält fest: Was rechtlich auf die Verpackung gehört, klärt die Geschäftsführung mit externer Beratung.
+
+::: {.notes}
+Zwei Minuten. Rückgriff auf den Quellencheck aus der Fundstellen-Lektion: Die Frage handelt nicht von etwas, das dieser Betrieb festlegt, also führt keine Suche im eigenen Material zum Ziel. Solche Fragen gibt es in jedem Arbeitsbereich: eine Frist aus einer Verordnung, eine Definition aus einer Norm, eine Angabe aus einer Anbieterdokumentation, ein Wert aus einer amtlichen Statistik.
+:::
+
+## Zwei Wege, der Unterschied liegt in der Frage
+
+| Frage | Weg | Prüfung |
+|---|---|---|
+| Eine Angabe auf einer benennbaren Seite | **Websuche mit vorgegebener Quelle**: Seite nennen, wörtliches Zitat verlangen, „nicht gefunden“ zulassen | Seite selbst öffnen, Wort für Wort vergleichen |
+| Ein Überblick über viele Quellen | **Mehrstufige Recherche**: Bericht mit Quellenangaben | Tragende Aussagen an den genannten Quellen nachlesen |
+
+Die Übung nimmt den ersten Weg: Er läuft in jedem Konto mit Suchfunktion, und die Prüfung ist eindeutig.
+
+::: {.notes}
+Drei Minuten. Der Unterschied liegt in der Frage, nicht im Werkzeug; das ist die Aussage der Folie. Die mehrstufige Recherche ist keine Pflichtübung: Verfügbarkeit und Umfang hängen vom Konto ab, dazu keine Zahlen behaupten. Ohne sie bleiben normale Suche und selbst bereitgestellte Quellen der Weg. Wenn gefragt wird, welches Produkt das kann: auf die jeweilige Anbieterhilfe verweisen statt aus dem Gedächtnis zu antworten.
+:::
+
+## Was eine Suche am Kontext ändert
+
+**Die Quellenauswahl ist nicht mehr die eigene.** Bei einem Kontextpaket wird entschieden, welches Dokument mitkommt. Bei einer freien Suche entscheidet das Werkzeug, welche Seiten es abruft: Anfrage wird in Suchanfragen übersetzt, Ergebnisse abgerufen, Antwort daraus erzeugt.
+
+**Fremder Seitentext landet im selben Textstrom wie der Auftrag.** Damit gilt hier, was für jedes eingefügte Dokument gilt.
+
+Wer eine Seite vorgibt, holt sich die erste Entscheidung zurück.
+
+::: {.notes}
+Drei Minuten. Beide Punkte verbinden diese Lektion mit dem Rest des Moduls. Zum zweiten Punkt zurückverweisen auf die Prompt-Injection-Lektion: Sätze auf einer abgerufenen Seite können wie Anweisungen formuliert sein, und niemand hat die Seite vorher gelesen. Praktische Folge: Das Ergebnis einer Websuche wird nicht anders behandelt als ein fremdes Dokument.
+:::
+
+## Der Auftrag
+
+```text
+TASK
+Zitiere wörtlich, wie auf der unten genannten Seite "Röstkaffee, Kaffee"
+bestimmt wird. Nenne die Nummer des Eintrags.
+
+CONTEXT
+Lies ausschließlich diese Seite:
+https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
+
+FORMAT
+Das wörtliche Zitat mit der Nummer des Eintrags, sonst nichts.
+
+CHECK
+- Ergänze keine Angaben aus anderen Quellen oder aus deinem Wissen.
+- Ist die Angabe nicht zu finden: "auf der angegebenen Seite nicht gefunden".
+- Kannst du die Seite nicht abrufen, sage das ausdrücklich und zitiere nichts.
+- Beurteile nicht, ob eine Kennzeichnung zulässig ist.
+```
+
+::: {.notes}
+Fünf Minuten Demo, dann zehn Minuten Arbeitsphase. Die vier Check-Zeilen einzeln durchgehen: (1) grenzt die Quelle ein; (2) gibt der Lücke eine zulässige Form; (3) trennt „Seite nicht abrufbar“ von „Angabe nicht vorhanden“ — ohne diese Zeile sehen beide Fälle gleich aus; (4) hält die Rechtsfrage draußen. Demo nur, wenn im Konto eine Suchfunktion verfügbar ist. Ist sie es nicht: die Seite direkt im Browser öffnen und den Eintrag zeigen; das ist der vorgesehene Ausweichweg, kein Fehlschlag. Prompt bei fehlgeschlagenem Abruf nicht wiederholen. Datei: material/m03/websuche-auftrag.txt.
+:::
+
+## Prüfwert und Zusätze
+
+**Stand 07.09.2026, Eintrag 1 b):** „Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen, mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm.“
+
+Maßgeblich ist, was beim Öffnen dort steht. Auch die Eintragsnummer vergleichen.
+
+Auf Zusätze achten, die von dieser Seite nicht stammen können: Koffeingehalt, Kennzeichnungspflichten, Zulässigkeit einer Etikettierung. **Nicht gedeckt heißt nicht falsch** — es heißt: hier nicht verwenden.
+
+::: {.notes}
+Auflösung nach der Arbeitsphase, fünf Minuten. Ergebnisse einsammeln: Hat jemand ein Zitat bekommen, das auf der Seite nicht steht? Hat jemand Zusätze bekommen? Ein Link im Ergebnis ist kein Beleg, solange die Seite nicht geöffnet wurde; er zeigt, wo gesucht wurde, nicht, was dort steht. Freiwillige Gegenprobe im selben Chat: die Koffeinfrage. Auf der Anlage-Seite steht dazu nichts; eine Prozentzahl wäre ein Befund, weil sie dann nicht von der angegebenen Seite stammt. Ob sie inhaltlich stimmt, ändert am Befund nichts.
+:::
+
+## Vier Fragen an eine Quelle
+
+1. **Wer gibt die Seite heraus?** Entscheidet, wofür sie die Primärquelle ist.
+2. **Welchen Stand hat die Angabe?** Datum der Seite, der Fassung, des Abrufs.
+3. **Steht die Angabe auf der Seite oder nur im Ergebnis?**
+4. **Beantwortet die Quelle die gestellte Frage?**
+
+Frage 4 im Fall: Der Eintrag bestimmt einen Begriff. Ob das Etikett zulässig ist, beantwortet er nicht, und keine weitere Suche ändert daran etwas.
+
+::: {.notes}
+Drei Minuten zum Abschluss. Frage 3 ist die, die am häufigsten ausgelassen wird, weil ein Ergebnis mit Fußnote bereits geprüft aussieht. Frage 4 ist die, die Arbeit spart: Sie beendet Recherchen, die von vornherein nichts liefern können. Für eigene Fälle liegt eine Notizvorlage in der Materialdatei. Diese Lektion hat keine Portfolio-Pflicht; wer mag, ergänzt eine externe Quelle mit Stand und Abrufdatum in Portfolio-Teil 2 unter Kontextquellen.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 3.6, Working with GenAI: kontext/websuche
+- Material: material/m03/websuche-auftrag.txt
+- Kaffeeverordnung, Anlage: gesetze-im-internet.de/kaffeev_2001/anlage.html (abgerufen 07.09.2026)
+- Ablauf der Websuche in ChatGPT: help.openai.com/en/articles/9237897-chatgpt-search
+- Deep Research, Verfügbarkeit kontoabhängig: help.openai.com/en/articles/10500283

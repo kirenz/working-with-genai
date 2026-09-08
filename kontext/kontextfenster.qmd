@@ -1,0 +1,68 @@
+# Chatverlauf und Kontextfenster
+
+Im konstruierten Lehrbeispiel arbeitet Marlene Bosch seit einer Stunde im selben Chatfenster. Angefangen hat sie mit der Sortenübersicht, dann kam eine Kundenmail dazu, dann ein Textentwurf für den Shop, zwischendurch hat sie einen Steckbrief eingefügt und wieder verworfen. Jetzt bittet sie um eine kurze Zusammenfassung der Aufbrauchempfehlungen und bekommt „6 Wochen“, obwohl im gültigen Steckbrief acht Wochen stehen. Der alte Wert stand ganz oben im Verlauf, aus einer Fassung, die längst ersetzt ist.
+
+Diese Lektion erklärt, welche Informationen bei einem Auftrag überhaupt berücksichtigt werden können und wie sich das Material für eine Aufgabe gezielt begrenzen lässt. **Zeit:** etwa 15 Minuten, ohne eigenen Durchlauf.
+
+## Woher ein Chatmodell seine Angaben nimmt
+
+Antworten können sich auf Trainingswissen, mitgegebenen Kontext und Werkzeugergebnisse stützen. Ein Werkzeugabruf kommt nur hinzu, wenn ein entsprechendes Werkzeug genutzt wird. Dieses Modul behandelt die Auswahl des eigenen Materials; welche Inhalte die Anwendung dem Modell tatsächlich übergibt, ist damit noch nicht vollständig festgelegt.
+
+Zum aktuellen Kontext kann mehr als die letzte Nachricht gehören: frühere Nachrichten, Antworten und eingefügtes Material. Die Anwendung stellt dieses Paket für den nächsten Aufruf zusammen. Sie kann Verlaufsteile auswählen, kürzen, zusammenfassen (Compaction) oder benötigte Inhalte später abrufen. Der sichtbare Chatverlauf ist deshalb nicht automatisch der vollständig übergebene Kontext ([Anthropic, Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows); [Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)).
+
+## Das Kontextfenster als Arbeitsspeicher
+
+Dieses Textpaket hat eine Obergrenze, und die heißt Kontextfenster. Die Anbieterdokumentation beschreibt es als den gesamten Text, auf den ein Modell beim Erzeugen einer Antwort zugreifen kann, einschließlich der Antwort selbst, und grenzt es ausdrücklich von den Daten ab, mit denen das Modell trainiert wurde: ein Arbeitsspeicher, kein Gedächtnis ([Anthropic, Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)).
+
+Gemessen wird die Grenze nicht in Zeichen oder Wörtern, sondern in Token. Ein Token ist ein Textstück, meist kürzer als ein Wort; die Zerlegung übernimmt das Werkzeug, und wir sehen sie normalerweise nicht. Für die Arbeit genügt: Die Zahl wächst mit der Textmenge, und alles zählt mit. Anweisungen, tatsächlich übergebene Verlaufsteile, Dokumentinhalte, Werkzeugergebnisse und die neue Antwort beanspruchen Platz im Kontextfenster. Eine hochgeladene Datei muss dabei nicht vollständig in jeden Aufruf eingehen.
+
+Wie groß dieses Fenster ist, hängt vom Modell und der Anwendung ab. Die jeweils geltenden Grenzen stehen in der Anbieterdokumentation. Für die Arbeit sind zwei andere Punkte wichtiger.
+
+**Erstens: Was an der Grenze passiert, ist nicht einheitlich geregelt.** Ein zu großer Aufruf kann abgewiesen werden. Anwendungen und Schnittstellen können aber auch Verfahren zum Kürzen oder Zusammenfassen vorsehen. Welche Regeln gelten, hängt vom Produkt und seiner Konfiguration ab ([Anthropic, Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)). Die Oberfläche kann weiterhin ältere Nachrichten anzeigen, obwohl sie nicht mehr vollständig in den nächsten Aufruf eingehen. Eine Antwort, die eine frühere Vorgabe ignoriert, kann daran liegen; sie kann aber auch andere Gründe haben. Aus einem einzelnen Ergebnis lässt sich das nicht ableiten.
+
+**Zweitens: Mehr Text im Fenster ist nicht automatisch besser.** Relevante Zusatzinformationen können helfen. Lange oder gemischte Kontexte können es dem Modell aber erschweren, die benötigten Angaben zu nutzen. Dieses mögliche Nachlassen wird als *context rot* bezeichnet; die Länge allein bestimmt die Ergebnisqualität nicht ([Anthropic, Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows); ausführlicher in [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)).
+
+::: {.callout-note title="Was wir daraus ableiten dürfen und was nicht"}
+„Der Chat war zu lang“ ist eine Vermutung, keine Diagnose einer einzelnen falschen Antwort. Ein neuer, kurzer Chat mit dem gültigen Material kann beim Vergleich Hinweise liefern. Ein einzelner Vergleich beweist oder widerlegt die vermutete Ursache jedoch nicht.
+:::
+
+## Ein kurzes Beispiel
+
+Zwei Verläufe, beide konstruiert, mit derselben Schlussfrage. Links das gewachsene Fenster, rechts der frische Chat.
+
+| Gewachsener Chat | Neuer Chat mit Übergabenotiz |
+|---|---|
+| 1. Sortenübersicht aus Steckbrief v2 (inzwischen ersetzt) | 1. Übergabenotiz: Aufgabe, gültige Quelle, Regeln |
+| 2. Kundenmail zum Sortenwechsel | 2. Steckbrief v3 im Wortlaut |
+| 3. Shop-Text-Entwurf, zwei Überarbeitungen | 3. Frage: Aufbrauchempfehlungen je Sorte, mit Quellenkennung |
+| 4. Steckbrief v3 eingefügt | |
+| 5. Frage: Aufbrauchempfehlungen je Sorte | |
+
+Im linken Verlauf stehen zwei Fassungen desselben Dokuments, und beide sind formal Material. Falls beide Fassungen in den aktuellen Kontext eingehen, ist dort auch der alte Wert verfügbar. Die falsche Antwort allein zeigt nicht, ob er daraus übernommen wurde. Im neuen Chat wird gezielt nur die gültige Fassung mitgegeben; auch dessen Ergebnis bleibt zu prüfen.
+
+Die Übergabenotiz ist dabei kein Formular, sondern ein kurzer Kopf über der eigentlichen Frage: worum es geht, welche Quelle gilt, mit welchem Stand, und was ausdrücklich nicht gilt. Eine [Vorlage](../material/m03/uebergabenotiz-vorlage.md) mit dem Beispiel aus der Rösterei steht als Datei bereit.
+
+## Drei Handgriffe, die sich daraus ergeben
+
+**Ein Chat je Aufgabe.** Sobald das Thema wechselt, beginnen wir neu. So lässt sich das für die nächste Aufgabe mitgegebene Material gezielter auswählen.
+
+**Verworfenes Material nicht liegenlassen.** Eine Rücknahme entfernt ein Dokument nicht aus dem sichtbaren Verlauf. Es kann weiterhin zum Kontext gehören. Ein neuer Chat mit dem richtigen Dokument begrenzt das erneut mitgegebene Material.
+
+**Bei langen Aufgaben eine Übergabenotiz schreiben.** Wenn eine Arbeit tatsächlich mehrere Schritte braucht, halten wir den Zwischenstand außerhalb des Chats fest, in einer Datei, und starten mit dieser Notiz neu. Vor dem Neustart wird geprüft, ob die Notiz den gültigen Stand und die benötigten Quellen enthält.
+
+::: {.callout-tip title="Der Besprechungstisch"}
+Vor einer Besprechung räumt niemand den gesamten Aktenschrank auf den Tisch. Auf den Tisch kommt die Mappe zum Vorgang, und Unterlagen, die sich als überholt herausgestellt haben, kommen wieder herunter. Ähnlich lässt sich das Material für den nächsten Modellaufruf auswählen. Der sichtbare Chatverlauf zeigt allerdings nicht zuverlässig, was tatsächlich auf diesem „Tisch“ liegt.
+:::
+
+## Über Texte hinaus
+
+Dieselbe Überlegung trägt bei Aufgaben, die mit Formulieren wenig zu tun haben. Wer Besprechungsnotizen strukturieren lässt, gibt die Notizen zu einer Besprechung mit, nicht die der letzten fünf. Wer zwei Angebote vergleicht, stellt beide vollständig und in derselben Gliederung nebeneinander, statt sie über einen langen Verlauf verteilt einzufügen; so lässt sich die Zuordnung der Zahlen im Ergebnis leichter prüfen. Und wer eine Entscheidung vorbereiten lässt, gibt die Entscheidungslage mit, nicht die Zwischenstände der Diskussion, die dahin geführt hat.
+
+## Kontrollpunkt 3.1
+
+- Die drei Bezugsquellen einer Antwort unterscheiden: Trainingswissen, mitgegebener Text, Werkzeugabruf
+- Erklären, dass die Anwendung den aktuellen Kontext zusammenstellt und Verlaufsteile auswählen, kürzen oder zusammenfassen kann
+- Das Kontextfenster als gemeinsame Obergrenze für Anweisung, Verlauf, Material und Antwort beschreiben und Token als Maßeinheit einordnen
+- Erklären, warum zusätzliche relevante Angaben helfen können, lange Kontexte aber keine bessere Antwort garantieren und ein Einzelvergleich keine Ursache beweist
+- Aus einem gewachsenen Verlauf das Risiko ableiten, dass verworfenes oder veraltetes Material weiterhin als Grundlage zur Verfügung steht
+- Eine Übergabenotiz schreiben, die eine lange Aufgabe in einem neuen Chat fortsetzbar macht

@@ -1,0 +1,88 @@
+# Was ein gutes KI-Ergebnis ausmacht
+
+Petra Lindqvist hat an einem Vormittag drei Ergebnisse auf dem Tisch. Eine Antwort an eine Kundin, die nach dem Sortenwechsel fragt. Eine Liste mit Ideen, wie sich die Abo-Kommunikation verbessern ließe. Und einen Vergleich zweier Angebote für neue Beutel, als Tabelle. Alle drei lesen sich gut, und alle drei sind mit demselben Werkzeug entstanden.
+
+Trotzdem taugt derselbe Maßstab nicht für alle drei. Bei der Kundenantwort zählt, dass jede Angabe gedeckt ist. Bei der Ideenliste wäre „jeder Satz belegt“ ein sinnloses Kriterium, weil eine Idee noch gar keine Aussage über die Welt sein muss. Bei der Tabelle entscheidet, ob die verglichenen Zahlen überhaupt vergleichbar sind. Diese Lektion ordnet die Maßstäbe.
+
+**Zeit:** etwa 15 Minuten, ohne eigenen Durchlauf.
+
+## Zwei Fragen gelten immer
+
+Bevor wir nach Ergebnisarten unterscheiden, gelten zwei Fragen für jedes Ergebnis.
+
+**Was behauptet dieser Text über die Welt, und woran ließe sich das prüfen?** Nicht jeder Satz behauptet etwas. „Ein Hinweis auf die Aufbrauchempfehlung könnte in die Willkommensmail“ behauptet nichts, das prüfbar wäre; es schlägt etwas vor. „Kundinnen und Kunden lesen die Willkommensmail häufiger als spätere Mails“ behauptet etwas, und zwar etwas, das jemand belegen müsste. Der Unterschied verläuft nicht zwischen Textsorten, sondern innerhalb eines Textes, Satz für Satz.
+
+**Wozu wird dieses Ergebnis gebraucht?** Ein Entwurf, der an eine Kundin geht, muss anderes leisten als eine Vorlage für eine interne Diskussion. Wer diese Frage vorher beantwortet, hat den Maßstab. Wer sie hinterher beantwortet, findet meistens einen Maßstab, den das vorliegende Ergebnis erfüllt.
+
+## Vier Ergebnisarten und ihre Maßstäbe
+
+Die folgende Einteilung ist eine Arbeitshilfe dieses Kurses, keine Norm. Sie deckt die Fälle ab, die im Kurs vorkommen; für andere Aufgaben kommen andere Kriterien dazu. Die Karten stehen auch als [Material](../material/m04/ergebnisarten-kriterien.md) bereit.
+
+### Auskunft nach Aktenlage
+
+Eine Antwort, die sich auf ein festgelegtes Material stützt: Kundenauskunft, Auszug aus einer Regelung, Sachstand.
+
+Maßstab: Jede inhaltliche Aussage ist im mitgegebenen Material gedeckt. Lücken sind ausgewiesen und nicht gefüllt. Widersprüche sind benannt und nicht entschieden. Es wird nichts zugesagt, was das Material nicht trägt. Die vorgegebene Form ist eingehalten.
+
+### Zusammenfassung und Strukturierung
+
+Ein Text oder eine Materialsammlung wird gekürzt, geordnet oder in eine andere Form gebracht: Besprechungsnotizen, ein Protokoll, ein Stapel Rückmeldungen.
+
+Maßstab: Was in der Vorlage steht, steht auch im Ergebnis, soweit es für den Zweck zählt. Nichts kommt hinzu. Gewichtungen und Ursachen sind nur dann im Ergebnis, wenn sie in der Vorlage stehen; „Hauptgrund“ und „vor allem“ sind Behauptungen, keine Zusammenfassung. Die Ordnung ist nachvollziehbar, und Einordnungen sind als solche erkennbar.
+
+### Ideen und Vorschläge
+
+Eine Sammlung von Möglichkeiten: Themen für einen Newsletter, Wege, eine Rückfrage zu vermeiden, Ansätze für ein Abo-Modell.
+
+Maßstab: Spannweite statt Variationen desselben Gedankens. Passung zur beschriebenen Lage, also zu Größe, Mitteln und Zuständigkeiten des Betriebs. Erkennbar, was jeder Vorschlag voraussetzt. Und: **Sachbehauptungen in einer Idee werden geprüft wie eine Auskunft.** Eine Idee darf neu sein; die Begründung, mit der sie sich empfiehlt, darf nicht erfunden sein.
+
+### Vergleich mit Zahlen
+
+Zwei oder mehr Dinge werden nebeneinandergestellt: Angebote, Sorten, Monate, Varianten.
+
+Maßstab: Gleiche Bezugsgröße in jeder Spalte, also derselbe Zeitraum, dieselbe Einheit, dieselbe Menge. Jede Zelle stammt aus einer benennbaren Quelle. Fehlende Werte stehen als Lücke, nicht als Schätzung. Rechnungen sind nachvollziehbar, das heißt der Rechenweg steht dabei oder lässt sich in einem Schritt nachvollziehen. Und die Zeilen sind vollständig: Eine weggelassene Position verändert einen Vergleich stärker als eine falsche Zahl.
+
+## Warum Ideen keine Freistellung sind
+
+Der häufigste Denkfehler in diesem Bereich ist die Annahme, bei kreativen Aufgaben entfalle die Prüfung, weil es ja nichts Richtiges gebe. Ein konstruiertes Beispiel zeigt, warum das nicht trägt. Petra hat um Ideen gebeten, wie sich Rückfragen zum Sortenwechsel verringern lassen. Vier Vorschläge kommen zurück:
+
+> 1. Die Fünf-Werktage-Regel in die Bestätigungsmail des Abos aufnehmen.
+> 2. Ein Feld im Kundenkonto, in dem der Sortenwechsel selbst ausgelöst werden kann.
+> 3. Eine Erinnerungsmail sieben Tage vor dem Versand, da erfahrungsgemäß rund 60 Prozent der Wechselwünsche zu spät eingehen.
+> 4. Den Wechsel jederzeit zulassen und die Fünf-Werktage-Regel abschaffen, wie es im Abo-Handel üblich ist.
+
+Vorschlag 1 und 2 sind Vorschläge: Sie behaupten nichts, sie schlagen etwas vor, und über ihren Nutzen entscheidet die Rösterei. Vorschlag 3 enthält eine Zahl mit dem Wort „erfahrungsgemäß“. Diese Zahl steht in keiner Notiz der Rösterei; sie ist eine Sachbehauptung ohne Quelle und wird gestrichen oder als zu prüfende Annahme gekennzeichnet. Der Vorschlag selbst kann bleiben, seine Begründung nicht. Vorschlag 4 enthält eine Behauptung über die Branche („wie es im Abo-Handel üblich ist“) und übersieht zugleich eine Voraussetzung: Die Fünf-Werktage-Regel hängt an der Produktionsplanung, nicht am Wunsch der Kundschaft. Hier ist beides zu prüfen, die Behauptung und die Voraussetzung.
+
+Übrig bleiben vier brauchbare Vorschläge und zwei gestrichene Sätze. Das ist das übliche Ergebnis dieser Prüfung: Sie entfernt selten Ideen, sie entfernt ihre erfundenen Begründungen.
+
+::: {.callout-important title="Ungestützt ist nicht dasselbe wie falsch"}
+Dass eine Angabe im Material nicht gedeckt ist, sagt nichts darüber, ob sie zutrifft. Die 60 Prozent können richtig sein. Sie sind nur nicht belegt, und deshalb tragen sie keine Entscheidung. Genauso wenig lässt sich aus einer ungedeckten Angabe ableiten, dass das Modell sie „erfunden“ hat oder woher sie stammt. Was wir festhalten, ist die Beobachtung: unbelegt. Was wir tun, ist die Folge daraus: nicht verwenden, bis jemand sie belegt.
+:::
+
+## Kriterien vor dem Ergebnis festlegen
+
+Alle vier Maßstäbe haben eine Gemeinsamkeit: Sie sind vor dem Ergebnis formulierbar. Genau das ist die Empfehlung. Zu einem Auftrag gehören zwei bis vier Kriterien, die sich an einer Stelle im Ergebnis mit Ja oder Nein beantworten lassen. „Der Entwurf ist gut“ ist keines. „Jede Zelle nennt ihre Quelle“ ist eines. „Beide Angebote sind auf denselben Zeitraum bezogen“ ist eines.
+
+Die Kriterien gehören in **Portfolio-Teil 3** unter „Prüfkriterien“, und zwar zu dem Auftrag, an dem im Kurs gearbeitet wird. Zwei bis vier Zeilen genügen; eine lange Liste wird nicht abgehakt.
+
+## Der Check im Prompt und die eigene Prüfung
+
+Beides trägt denselben Namen und ist nicht dasselbe.
+
+Der **Check im Prompt** ist eine Anweisung an das Modell: was zu tun ist, wenn eine Angabe fehlt, was nicht ergänzt werden darf, wie eine Lücke gekennzeichnet wird. Er verändert die Bedingungen, unter denen ein Ergebnis entsteht. Ob er eingehalten wird, ist damit nicht entschieden.
+
+Die **eigene Prüfung** ist der Schritt danach: das Ergebnis gegen das Material und gegen die Kriterien lesen. Sie ist der einzige Schritt, der feststellt, ob etwas trägt. Ein Auftrag mit vorbildlichem Check und ohne anschließende Prüfung ist ein ungeprüftes Ergebnis mit besserer Ausgangslage.
+
+::: {.callout-tip title="Die Prüfliste kommt vor dem Werkstück"}
+In einer Werkstatt steht die Abnahmeliste fest, bevor der Wagen auf der Bühne steht. Wer sie danach schreibt, schreibt sie unwillkürlich so, dass sie passt. Für Kriterien an ein KI-Ergebnis gilt dasselbe, und aus demselben Grund.
+:::
+
+## Kontrollpunkt 4.1
+
+- Für jedes Ergebnis zwei Fragen beantworten: Was behauptet es, und wozu wird es gebraucht?
+- Innerhalb eines Textes zwischen Vorschlägen und Sachbehauptungen unterscheiden
+- Die Maßstäbe für Auskunft, Zusammenfassung, Ideensammlung und Zahlenvergleich benennen und auseinanderhalten
+- In einer Ideensammlung die enthaltenen Sachbehauptungen prüfen und die Idee von ihrer Begründung trennen
+- Bei einem Zahlenvergleich Bezugsgröße, Quelle je Zelle, Vollständigkeit der Zeilen und Nachvollziehbarkeit der Rechnung prüfen
+- Zwei bis vier Kriterien formulieren, die sich an einer Stelle im Ergebnis mit Ja oder Nein beantworten lassen
+- Den Check im Prompt von der eigenen Prüfung unterscheiden und begründen, warum der eine den anderen nicht ersetzt

@@ -1,6 +1,6 @@
-# Willkommen {.unnumbered}
+# Willkommen und Orientierung {.unnumbered}
 
-Willkommen zum Kursbuch **Working with GenAI**. Es richtet sich an Fachkräfte und Führungskräfte, die generative KI im eigenen Arbeitsalltag einsetzen wollen: in der Korrespondenz, in der Recherche, in der Vorbereitung von Entscheidungen. Programmierkenntnisse sind nicht nötig. Ein Browser und ein kostenloses Chatkonto genügen, um jeden Pflichtschritt mitzumachen.
+Generative KI kann beim Zusammenstellen von Informationen, beim Entwickeln von Ideen und beim Vorbereiten von Entscheidungen unterstützen. **Working with GenAI** vermittelt die Grundlagen und die praktische Arbeit damit. Der Kurs richtet sich an Fach- und Führungskräfte ohne KI-Vorwissen; Programmierkenntnisse sind nicht erforderlich.
 
 Wie lässt sich KI für konkrete Aufgaben im Arbeitsalltag sinnvoll einsetzen? Dieses Buch zeigt, wie ChatGPT, Claude und Gemini beim Recherchieren, Auswerten, Strukturieren und Erstellen von Inhalten helfen können. Dazu gehört, geeignete Aufgaben auszuwählen, benötigte Informationen bereitzustellen und Ergebnisse zu prüfen. Darauf bauen wiederverwendbare Arbeitsabläufe auf, bis hin zu ersten Automatisierungen mit n8n.
 
@@ -12,7 +12,7 @@ Ein erfundenes Unternehmen begleitet den ganzen Kurs: die **Rösterei Morgenrot*
 
 Im Mittelpunkt stehen Aufgaben aus Marketing, Kundenservice, Verwaltung und Produktion: Informationen aus mehreren Dokumenten zusammenführen, Aussagen zu Kennzahlen prüfen, Inhalte erstellen und wiederkehrende Arbeitsschritte mit KI unterstützen.
 
-Fünf Personen tragen den Fall. Funktion und Zuständigkeit sind aus dem Fallmaterial übernommen; die Frage unter jedem Namen ist die Aufgabe, die diese Funktion in **diesem** Kurs an ein KI-Ergebnis stellt, und in dieser Form neu.
+Fünf Personen begleiten die Übungen. Ihre Aufgaben zeigen, welche Anforderungen unterschiedliche Bereiche an ein KI-Ergebnis stellen.
 
 <style>
 .morgenrot-team { margin: 1.75rem 0 2rem; }
@@ -59,7 +59,7 @@ Fünf Personen tragen den Fall. Funktion und Zuständigkeit sind aus dem Fallmat
 <img src="images/morgenrot-team/marlene-bosch.png" alt="Porträtfoto von Marlene Bosch">
 <p class="team-name">Marlene Bosch</p>
 <p class="team-role">Röstung und Produktion</p>
-<p class="team-question">Welche Angaben gehören ins Material?</p>
+<p class="team-question">Welche Angaben gehören in den Context?</p>
 </li>
 </ul>
 <figcaption>Die fünf Personen der Rösterei Morgenrot mit ihrer Frage an ein KI-Ergebnis.</figcaption>
@@ -80,46 +80,27 @@ Unternehmen, Personen und Zahlen der Rösterei Morgenrot sind erfunden. Die bere
 
 Die Aufgaben aus der Rösterei lassen sich auf andere Arbeitsbereiche übertragen: Unterlagen für einen Verwaltungsvorgang zusammenstellen, Anforderungen einer Ausschreibung mit dem eigenen Leistungsangebot abgleichen oder aus einem Besprechungsprotokoll Aufgaben und offene Entscheidungen herausarbeiten. Welche Informationen nötig sind und wer das Ergebnis prüft, hängt vom jeweiligen Einsatz ab.
 
-## Die Werkzeuge im Überblick
+## Grundlagen verstehen und selbst anwenden
 
-ChatGPT, Claude und Gemini können Fragen beantworten, Inhalte entwerfen und bereitgestelltes Material auswerten. Unterschiede zeigen sich unter anderem bei der Bildgenerierung, beim Bearbeiten von Ergebnissen und bei der Einbindung in andere Anwendungen.
+Eigene Kapitel erklären, wie generative KI arbeitet, wie ein Prompt aufgebaut ist und weshalb Antworten trotz überzeugender Formulierungen fehlerhaft sein können. Auch Kontextfenster, Websuche und der Umgang mit Dokumenten sind direkt über das Inhaltsverzeichnis erreichbar.
 
-| Werkzeug | Vorteile im Arbeitsalltag | Grenzen und Voraussetzungen |
-|---|---|---|
-| **ChatGPT** | Verbindet Textarbeit, Websuche, Bildgenerierung und die Arbeit mit Dateien in einer Oberfläche. | Verfügbare Funktionen und Nutzungslimits hängen vom Tarif und verwendeten Zugang ab. |
-| **Claude** | Dokumente, Diagramme und kleine interaktive Anwendungen lassen sich als „Artifacts“ neben dem Chat anzeigen und überarbeiten. | Keine eingebaute Erzeugung von Fotos und Illustrationen. Hochgeladene Bilder kann Claude analysieren; Diagramme und Grafiken kann es mithilfe von Code erstellen. |
-| **Gemini** | Bietet Bildgenerierung und kann in Google-Anwendungen wie Gmail und Docs eingebunden sein. Das erleichtert die Arbeit, wenn Unterlagen bereits dort liegen. | Die Einbindung in Google-Anwendungen ist nicht in jedem Konto und Tarif gleichermaßen verfügbar. |
+Die praktischen Lektionen wenden diese Grundlagen auf die Rösterei an. Ein Textentwurf ist eine der Aufgaben. Dazu kommen der Vergleich von Informationen, die Prüfung von Kennzahlen und die Vorbereitung wiederholbarer Arbeitsabläufe. Kurze Beispiele aus anderen Arbeitsbereichen helfen bei der Übertragung.
 
-Auch ein überzeugend formuliertes Ergebnis kann falsche Angaben enthalten. Die Prüfung gehört deshalb bei allen drei Werkzeugen zur Aufgabe. Für die ersten Übungen dient ChatGPT als gemeinsamer Einstieg; drei Konten sind dafür nicht nötig.
+## Einen eigenen Anwendungsfall entwickeln
 
-Funktionsstand: 8. September 2026. Anbieterinformationen: [ChatGPT](https://chatgpt.com/overview/), [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them), [Claudes Bildfunktionen](https://support.claude.com/en/articles/9002504-can-claude-produce-images) und [Gemini](https://gemini.google/about/).
+Wir untersuchen Tätigkeiten und Engpässe im eigenen Arbeitsalltag, leiten mehrere mögliche Use Cases ab und vergleichen Nutzen, Aufwand und Risiken. Für die Erprobung wählen wir einen begrenzten Pilotfall mit einem überprüfbaren Ziel. Die [Arbeitsmappe](material/portfolio-vorlage.md) sammelt die Auswahlbegründung, Arbeitsaufträge, Ergebnisse, Prüfungen und den Transferplan.
 
-### Work, Cowork, Codex und Claude Code
+## Die Werkzeuge kennenlernen
 
-Ein Arbeitsagent kann eine Aufgabe in mehreren Schritten bearbeiten, Werkzeuge verwenden und Ergebnisse als Dateien ablegen. Dazu braucht er einen klaren Auftrag und Zugriff auf die benötigten Unterlagen. Die folgenden Beispiele zeigen mögliche Anwendungen in der Rösterei.
+ChatGPT ist der gemeinsame Einstieg für die ersten Übungen. Claude und Gemini ergänzen den Vergleich. Eine frühe Demo zeigt die Arbeit mit Dateien in Codex und Claude Code; die eigene Nutzung ist freiwillig. Mit n8n wird ein einfacher Arbeitsablauf erprobt.
 
-| Zugang | Wofür er gedacht ist | Mögliches Beispiel aus der Rösterei |
-|---|---|---|
-| **ChatGPT Work** | Recherche und Analyse sowie die Erstellung von Dokumenten, Tabellen und Präsentationen. | Aus Unterlagen eine Entscheidungsvorlage für das Kaffee-Abo erstellen. |
-| **Claude Cowork** | Aufgaben über bereitgestellte Dateien und verbundene Anwendungen hinweg bearbeiten. | Aus Besprechungsnotizen und Unterlagen eine Aufgabenübersicht erstellen und als Datei ablegen. |
-| **Codex und Claude Code** | Dateien und Programmcode bearbeiten, Werkzeuge ausführen und kleine Anwendungen entwickeln. | Einen interaktiven Rechner erstellen, mit dem sich verschiedene Abo-Szenarien vergleichen lassen. |
+Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) erklärt Unterschiede und mögliche Einsatzgebiete. Ausführliche Bedienung gehört in die ergänzenden Werkzeugkurse. Die für eine Übung unmittelbar benötigten Schritte stehen bei der Aufgabe.
 
-Vor dem Start wird festgelegt, welche Dateien verwendet und verändert werden dürfen. Das Ergebnis wird vor der weiteren Verwendung geprüft. Die kurze Demo im Auftakt zeigt diese Arbeitsweise; die eigene Nutzung ist freiwillig. Zugang und enthaltene Leistungen richten sich nach dem jeweiligen Konto und Tarif.
+## Buch, Lernschritte und Folien
 
-Die Abgrenzung erläutern [OpenAI zu Work und Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) und [Anthropic zu Chat, Cowork und Claude Code](https://academy.claude.com/tutorials/navigating-the-claude-desktop-app). Weitere Hinweise stehen im [Werkzeugkompass](werkzeugkompass.qmd) und in der [freiwilligen Vertiefung zu Codex und Claude Code](praxis/codex-claude-code.qmd).
+Die Lernschritte enthalten die erforderlichen Erklärungen und führen durch Aufgaben und Rückmeldungen. Das Buch bietet die zusammenhängende Darstellung mit Beispielen und Materialien. Die Folien unterstützen die gemeinsamen Termine und das Nachschlagen. Es sind verschiedene Ansichten desselben Lernstoffs.
 
-## Wie wir in diesem Buch arbeiten
-
-Die Kapitel verbinden kurze Erklärungen, eigenes Ausprobieren und konkrete Ergebnisprüfungen.
-
-- **Risiko einschätzen** — bevor wir etwas ausprobieren, benennen wir, was schiefgehen kann.
-- **Erklärung** — die wenigen Bausteine, um die es geht, kurz und am Fall.
-- **Mitmachen** — ein vollständiger, kopierfertiger Auftrag, der ohne Vorbereitung läuft.
-- **Eigene Variante** — derselbe Aufbau, angewendet auf einen Fall aus dem eigenen Arbeitsalltag.
-- **Ergebnisprüfung** — der Abgleich gegen das mitgegebene Material.
-- **Portfolio** — der brauchbare Teil wandert in die Arbeitsmappe.
-
-Alle Materialien, die für das Mitmachen nötig sind, stehen vollständig im Buchtext und zusätzlich als Downloads bereit: [Fallbasis Rösterei Morgenrot](material/roesterei-morgenrot.md), [Fachinformationen](material/lehrfall-fachinformationen.txt), [Kundenanfrage](material/kundenanfrage.txt), [Prompt](material/prompt-vorlage.txt) und [Portfolio-Vorlage](material/portfolio-vorlage.md). Es gibt keinen Schritt, für den erst etwas anderswo nachgeschlagen werden muss.
+Die Materialien stehen als [gesammelter Download](material/morgenrot-arbeitsmaterialien.zip) bereit. Für die Übungen verwenden wir die erfundenen Angaben der Rösterei. Die eigene Erprobung erfolgt ebenfalls mit geeigneten Beispieldaten; betriebliche Unterlagen benötigen die Freigabe für den jeweiligen Einsatz.
 
 ## Orientierung im Kurs
 

@@ -1,0 +1,77 @@
+---
+title: "Wie generative KI arbeitet"
+subtitle: "Modul 1 · Lektion 1.2"
+book-source: ../../start/wie-generative-ki-arbeitet.qmd
+---
+
+## Wie eine Antwort entsteht
+
+Training passt Modellparameter an. Das Modell lernt statistische Zusammenhänge.
+
+Bei der Texterzeugung werden nächste Textbausteine, **Token**, anhand dieser Zusammenhänge und des aktuellen Kontexts ausgewählt.
+
+Eine passende Formulierung ist noch keine Quellenprüfung.
+
+[OpenAI: Entwicklung von ChatGPT](https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed)
+
+::: {.notes}
+Die Begriffe Modellparameter und Token in den Worten der Folie erklären. Token können Wörter oder Wortteile sein. Keine konkreten Trainingstexte unterstellen. Einstieg mit der Beobachtung, dass dieselbe sichtbare Frage unterschiedlich, aber auch identisch beantwortet werden kann. Zeit: 3 Minuten.
+:::
+
+## Training, Kontext und Abruf
+
+| Beschriebener Vorgang | Einordnung |
+|---|---|
+| Modellparameter werden anhand von Trainingsdaten angepasst | Training |
+| Sina fügt ein freigegebenes Briefing in die Anfrage ein | Mitgegebener Kontext |
+| Eine ausgeführte Websuche liefert eine Fundstelle | Werkzeugabruf |
+
+Abgerufene Inhalte können den Kontext ergänzen.
+
+[Anthropic: Kontextfenster](https://platform.claude.com/docs/en/build-with-claude/context-windows)
+
+::: {.notes}
+Die drei Vorgänge durchgehen. Die Tabelle ordnet ausdrücklich beschriebene Informationswege zu; sie erschließt keine Ursache aus einem Antwortsatz. Eine eingeschaltete Suche allein ist noch kein Nachweis für einen Abruf. Ein Modellaufruf und der Abruf durch ein Werkzeug sind verschiedene Vorgänge innerhalb einer Anwendung. Zeit: 3 Minuten.
+:::
+
+## Ein Liefertermin ohne Beleg
+
+Im Briefing steht kein Versanddatum.
+
+> „Die Lieferung kommt in zwei bis vier Werktagen.“
+
+Konstruiertes Beispiel, kein aufgezeichneter Modelloutput.
+
+Die Frist ist durch das Briefing nicht gedeckt. Herkunft und Richtigkeit lassen sich aus dem Satz nicht bestimmen. Für eine Auskunft muss der Termin geklärt werden.
+
+::: {.notes}
+Erst prüfen lassen, ob das Briefing die Frist trägt. Dann zwischen unbekannter Richtigkeit und fehlender Quellenstütze unterscheiden. Eine bessere konstruierte Auskunft benennt das fehlende Versanddatum und die Klärung bei Lager und Versand. Auch sie muss den Unterlagen entsprechen. Zeit: 3 Minuten.
+:::
+
+## Warum Antworten variieren können
+
+- Tokenauswahl kann ein Zufallsverfahren nutzen: **Sampling**
+- Kontext, Kontoeinstellungen und Modellversion können sich unterscheiden
+- Unterschiedliche und identische Antworten sind möglich
+
+Eine Verbesserung nach einer Promptänderung ist eine Beobachtung, noch kein Ursachenbeweis.
+
+[OpenAI: Texterzeugung](https://platform.openai.com/docs/guides/text)
+
+::: {.notes}
+Keine bestimmte Produktabsicht für die Variation behaupten. Zwei Ergebnisse sind keine Messung der gesamten Schwankungsbreite. Die praktische Konsequenz ist, konkrete Beobachtungen zu dokumentieren und wichtige Ergebnisse erneut zu prüfen. Zeit: 2 Minuten.
+:::
+
+## Passend zur Aufgabe prüfen
+
+**Halluzination:** sachlich falsche oder erfundene Ausgabe, als zutreffend dargestellt. Fehlende Quellenstütze allein bedeutet noch keine Falschheit.
+
+**Multimodal:** mehrere Inhaltsarten wie Text, Bild und Audio. Weitere Nachrichten und Werkzeugergebnisse können hinzukommen.
+
+Zahl gegen Bild prüfen, Zusammenfassung auf Vollständigkeit, Ideen auf Brauchbarkeit und Vielfalt.
+
+[OpenAI: Halluzinationen](https://openai.com/index/why-language-models-hallucinate/)
+
+::: {.notes}
+Eine erfundene Quelle als Beispiel nennen. Nicht behaupten, was außerhalb eines Bildes steht, könne nur aus dem Training stammen. Bei Ideen sind neue Vorschläge erwünscht; enthaltene Sachbehauptungen werden trotzdem geprüft. Ein Screenshot kann echte Kundendaten enthalten, daher gelten dieselben Datenregeln wie für Texte. Zeit: 4 Minuten.
+:::

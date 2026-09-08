@@ -1,8 +1,8 @@
-# Wenn das Material zu groß wird
+# Fundstellen in langen Dokumenten nutzen
 
-Steckbrief und Serviceregeln passen in einen Prompt. Ein Handbuch passt nicht, und selbst wenn es passen würde, wäre es keine gute Idee: Je mehr Text im Fenster steht, desto mehr Stellen gibt es, aus denen eine plausible, aber unpassende Aussage stammen kann. In diesem Kapitel suchen wir aus einem zwölfteiligen Handbuch die zwei Abschnitte heraus, die eine Kundenfrage beantworten, und geben nur diese mit. Danach schauen wir kurz auf den Fall, dass die Antwort gar nicht im eigenen Material liegt.
+Steckbrief und Serviceregeln passen in einen Prompt. Ein Handbuch passt nicht, und selbst wenn es passen würde, wäre es keine gute Idee: Je mehr Text im Fenster steht, desto mehr Stellen gibt es, aus denen eine plausible, aber unpassende Aussage stammen kann. In diesem Kapitel suchen wir aus einem zwölfteiligen Handbuch die zwei Abschnitte heraus, die eine Kundenfrage beantworten, und geben nur diese mit.
 
-**Lernziel:** Relevante Textstellen aus einem größeren Dokument heraussuchen, mit Fundstelle mitgeben und die Belege im Ergebnis tatsächlich öffnen; für eine Frage außerhalb des eigenen Materials zwischen Websuche und einer mehrstufigen Recherche unterscheiden. **Zeit:** etwa 40 Minuten einschließlich eines eigenen Durchlaufs.
+**Lernziel:** Relevante Textstellen aus einem größeren Dokument heraussuchen, sie mit Fundstelle und Suchprotokoll mitgeben, die Belege im Ergebnis tatsächlich öffnen und das Prinzip „Heraussuchen, dann Erzeugen“ von der Antwort unterscheiden. **Zeit:** etwa 20 Minuten einschließlich eines eigenen Durchlaufs.
 
 ## Der Lehrfall: eine Frage, ein Handbuch
 
@@ -73,6 +73,16 @@ Ein Auftrag, der statt des Handbuchs zwei markierte Fundstellen enthält, mit ei
 | **Suchprotokoll** | Kopfzeile: Suchbegriffe, Datum, bewusst ausgeschlossene Treffer |
 | **Beleg öffnen** | Jede Fundstelle im Ergebnis wird im Handbuch nachgelesen |
 
+## Zuerst prüfen: liegt die Antwort überhaupt im Material?
+
+Bevor wir suchen, klären wir in einem Schritt, ob die Suche der richtige Weg ist. Drei Fragen genügen, und sie beziehen sich auf die Frage, nicht auf das Dokument.
+
+1. **Handelt die Frage von etwas, das dieser Betrieb selbst festlegt?** Aufbrauchempfehlung, Verpackung, Zuständigkeit: ja. Dann liegt die Antwort im eigenen Material, und wir suchen dort.
+2. **Verlangt die Frage eine Angabe von außen?** Eine Norm, eine Verordnung, ein Wert aus einer fremden Veröffentlichung. Dann führt keine Suche im eigenen Material zum Ziel, so gründlich sie auch ist. Jonas Halder fragt beispielsweise, ob der Begriff „Röstkaffee“ irgendwo amtlich bestimmt ist; Handbuch und Steckbrief sagen dazu nichts, und Abschnitt 11 hält fest, dass die Geschäftsführung mit externer Beratung klärt, welche Angaben rechtlich auf die Verpackung gehören.
+3. **Verlangt die Frage eine Entscheidung?** Ob das Etikett so beschriftet werden darf, ob die Aufbrauchempfehlung geändert wird, ob eine Ausnahme gemacht wird. Solche Fragen beantwortet kein Beleg, weder aus dem eigenen Material noch von außen. Sie gehen an die Stelle, die zuständig ist.
+
+Die drei Fälle sehen in einer eingehenden Mail oft gleich aus, weil sie in einem Satz stehen. Wer sie vor dem Suchen trennt, sucht weniger und findet mehr.
+
 ## Schritt für Schritt selbst bauen
 
 **Vorbereitung:** das Handbuch als Textdatei geöffnet, ein kostenloses Chatkonto, ein neuer Chat. Die Suche im Handbuch machen wir mit der Suchfunktion des Editors oder Browsers.
@@ -91,7 +101,7 @@ So arbeitet eine gute Registratur: Zu einer Anfrage werden nicht alle Akten geho
 
 ### Schritt 3 — Die Fundstellen mit Suchprotokoll mitgeben
 
-Der Materialteil des Prompts enthält jetzt nicht das Handbuch, sondern die zwei Abschnitte als [H6] und [H7], jeweils zwischen Markierungen, und darüber eine Kopfzeile:
+Der Context des Prompts enthält jetzt nicht das Handbuch, sondern die zwei Abschnitte als [H6] und [H7], jeweils zwischen Markierungen, und darüber eine Kopfzeile:
 
 ```text
 Herkunft: Produktionshandbuch Rösterei Morgenrot, Auszug, Stand 15.07.2026.
@@ -111,13 +121,13 @@ Was wir hier von Hand tun, machen Werkzeuge automatisch, wenn Dateien in einem P
 Der vollständige Auftrag mit beiden Fundstellen steht als [Textdatei](../material/m03/prompt-3-3-fundstellen.txt) bereit.
 
 ```text
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort auf die unten stehende Kundenfrage. Verwende nur die
 herausgesuchten Fundstellen aus dem Produktionshandbuch.
 
-MATERIAL (nur diese Fundstellen sind gültig)
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot. Gültig sind
+ausschließlich die folgenden Fundstellen.
 (Kopfzeile mit Suchprotokoll, dann [H7] und [H6] zwischen Markierungen)
 
 Kundenfrage:
@@ -131,9 +141,10 @@ Hinter jeder inhaltlichen Aussage die Fundstelle [H6] oder [H7].
 Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
 Am Ende eine Liste "Offen".
 
-GRENZEN
+CHECK
+- Was in [H6] und [H7] nicht steht, beantworte nicht, sondern trage es unter
+  "Offen" ein.
 - Verwende ausschließlich die Fundstellen [H6] und [H7]. Ergänze nichts.
-- Was dort nicht steht, beantworte nicht, sondern trage es unter "Offen" ein.
 - Erfinde keine Fristen, Mengen oder Termine.
 ```
 
@@ -157,60 +168,37 @@ Konstruiert, kein aufgezeichneter Modelloutput.
 
 Jede Aussage trägt eine Fundstelle, und beim Aufschlagen steht hinter jeder das Behauptete. Ob „viel Freude“ in die Firmenmail gehört, ist keine Belegfrage.
 
-### Wenn die Antwort nicht im eigenen Material liegt
+### Über den Lehrfall hinaus
 
-Jonas Halder möchte auf dem Etikett „Röstkaffee“ schreiben und fragt, ob der Begriff irgendwo amtlich bestimmt ist. Handbuch und Steckbrief sagen dazu nichts; Abschnitt 11 verweist die Frage der Kennzeichnung ausdrücklich an die Geschäftsführung. Die Sache liegt außerhalb des Betriebs, also auch außerhalb der Kontextmappe. Für solche Fälle gibt es zwei Wege, und der Unterschied liegt in der Frage, nicht im Werkzeug:
+Das Heraussuchen trägt auch dort, wo kein Text entsteht. Wer aus einer langen Tabelle einen Vergleich ziehen lässt, gibt die drei Zeilen mit, um die es geht, samt Spaltenüberschriften und Einheit, statt der ganzen Datei; sonst sind Bezugsgrößen im Ergebnis nicht mehr zuzuordnen. Wer aus einem Protokoll die Beschlüsse ziehen lässt, gibt den Beschlussteil mit und nicht die Diskussion, in der dieselben Vorschläge als Möglichkeit vorkommen. Und wer eine Entscheidung vorbereiten lässt, gibt die Stellen mit, die die Lage beschreiben, und protokolliert, welche Stellen bewusst nicht mitgekommen sind. Der Ausschluss mit Begründung ist in allen drei Fällen der wertvollere Teil des Protokolls.
 
-| Frage | Passender Weg | Woran wir das Ergebnis prüfen |
-|---|---|---|
-| Eine einzelne Angabe, die auf einer benennbaren Seite steht („Wie lautet die amtliche Begriffsbestimmung?“) | **Websuche mit vorgegebener Quelle:** die Seite nennen, wörtliches Zitat verlangen, „nicht gefunden“ als zulässige Antwort vorgeben | Die Seite selbst öffnen und das Zitat Wort für Wort vergleichen |
-| Ein Überblick, der über viele Quellen verteilt ist („Wie gestalten andere kleine Röstereien ihr Abo-Modell?“) | **Mehrstufige Recherche** („Deep Research“ in ChatGPT und Gemini): das Werkzeug plant, liest mehrere Seiten und liefert einen Bericht mit Quellen | Die tragenden Aussagen an den genannten Quellen nachlesen; nicht den Bericht als Ganzes glauben |
+### Freiwillige Vertiefung: das eigene lange Dokument
 
-Die Übung im Kurs nimmt den ersten Weg, weil er in jedem Konto mit Suchfunktion läuft und die Prüfung eindeutig ist. Der Auftrag, mit Prüfwert, steht als [Textdatei](../material/m03/websuche-auftrag.txt) bereit:
-
-```text
-Lies ausschließlich diese Seite:
-https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
-
-Zitiere wörtlich, wie dort "Röstkaffee, Kaffee" bestimmt wird. Nenne die
-Nummer des Eintrags. Ergänze keine Angaben aus anderen Quellen oder aus
-deinem Wissen. Wenn eine Angabe auf der Seite nicht zu finden ist, schreibe
-"auf der angegebenen Seite nicht gefunden". Beurteile nicht, ob eine
-Kennzeichnung zulässig ist.
-```
-
-Prüfwert, Stand 07.09.2026: Eintrag 1 b) der Anlage lautet „Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen, mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm.“ Maßgeblich ist, was beim Öffnen der Seite tatsächlich dort steht. Kann das Werkzeug die Seite nicht abrufen, öffnen wir sie selbst und lesen den Eintrag; der Prompt wird dann nicht wiederholt.
-
-Was diese Suche nicht leistet: Ob das Etikett zulässig ist, beantwortet kein Zitat. Das bleibt die verbindliche Klärung, die das Handbuch der Geschäftsführung zuweist. Die mehrstufige Recherche behandeln wir hier nicht als Pflichtübung: Ob und in welchem Umfang sie in einem Konto verfügbar ist, hängt vom Konto ab ([OpenAI-Hilfe zu Deep Research](https://help.openai.com/en/articles/10500283)); ohne sie bleiben normale Suche und selbst bereitgestellte Quellen der Weg.
-
-### Eine eigene Variante bauen
-
-Wir nehmen ein längeres Dokument aus dem eigenen Fall, erfinden dafür eine gekürzte Übungsfassung mit sechs bis acht Abschnitten, und bauen eine Falle ein: einen Abschnitt, der die Suchbegriffe enthält, aber etwas anderes meint.
+Wer den Handgriff am eigenen Material üben möchte, nimmt ein längeres Dokument aus dem eigenen Fall, erfindet dafür eine gekürzte Übungsfassung mit sechs bis acht Abschnitten und baut eine Falle ein: einen Abschnitt, der die Suchbegriffe enthält, aber etwas anderes meint.
 
 1. Eine Frage formulieren und in Suchbegriffe übersetzen.
 2. Treffer lesen, Falle erkennen, Fundstellen mit Suchprotokoll mitgeben.
 3. Auftrag in neuem Chat ausführen, jede Fundstelle aufschlagen.
 4. Gegenprobe in einem weiteren neuen Chat: dasselbe mit dem ganzen Dokument statt der Fundstellen. Beobachten, ob die Falle zuschnappt. Auch wenn nicht: Der Weg über Fundstellen bleibt der prüfbare.
 
-Suchprotokoll, Fundstellen und die Beobachtung aus der Gegenprobe gehören in **Portfolio-Teil 2** unter „Kontextquellen“ als Beleg dafür, wie relevante Textstellen ausgewählt werden.
+Wer das macht, kann Suchprotokoll und Fundstellen in **Portfolio-Teil 2** unter „Kontextquellen“ ergänzen. Verpflichtend ist das nicht; die eigene Arbeit dieses Moduls ist die Kontextmappe.
 
 ## Fehler diagnostizieren
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Der Entwurf nennt „zwölf Monate“ | Abschnitt 3 ist ins Material geraten oder die Zahl stammt nicht aus dem Material. Fundstelle prüfen, Aussage entfernen. |
+| Der Entwurf nennt „zwölf Monate“ | Abschnitt 3 ist in den Context geraten oder die Zahl stammt nicht aus den Fundstellen. Fundstelle prüfen, Aussage entfernen. |
 | Eine Fundstelle stimmt, aber der Abschnitt sagt etwas anderes | Der wichtigste Befund. Aussage als unbelegt markieren, Wortlaut aus dem Abschnitt übernehmen oder streichen. |
 | Der Entwurf erklärt, warum Kaffee Gas abgibt | Steht nur in Abschnitt 5, der nicht mitgegeben wurde. Entfernen oder Abschnitt 5 bewusst als [H5] ergänzen und den Auftrag wiederholen. |
 | Die Aufbrauchfrist steht ohne „ganze Bohne“ | Die Aussage ist breiter als der Beleg. Zusatz ergänzen. |
-| Die Websuche liefert ein Zitat, das auf der Seite nicht steht | Zitat verwerfen, Seite selbst lesen. Ein Link im Ergebnis ist kein Beleg, solange die Seite nicht geöffnet wurde. |
-| Die Websuche antwortet mit einer Koffein-Prozentzahl auf die freiwillige Zusatzfrage | Auf der Anlage-Seite steht dazu nichts (Stand 07.09.2026). Die Zahl stammt nicht von der angegebenen Seite; als Befund notieren. |
-| Das Werkzeug kann die Seite nicht abrufen | Prompt nicht wiederholen. Seite im Browser öffnen, Eintrag lesen, Prüfung von Hand abschließen. |
+| Der Entwurf beantwortet eine Frage, die im Handbuch gar nicht behandelt wird | Vor dem Suchen den Quellencheck nachholen: Handelt die Frage von etwas, das dieser Betrieb festlegt? Wenn nein, ist keine Fundstelle zu erwarten. |
+| Die Suche liefert viele Treffer und keine Entscheidung | Trefferzahl ist kein Kriterium. Jeden Treffer lesen und am Gegenstand der Frage messen. |
 
-## Kontrollpunkt für Modul 3
+## Kontrollpunkt 3.5
 
+- Vor dem Suchen klären, ob die Frage von etwas handelt, das der Betrieb selbst festlegt, eine Angabe von außen verlangt oder eine Entscheidung verlangt
 - Eine Frage in die Wörter übersetzen, mit denen ein Dokument über die Sache spricht
 - Treffer lesen und einen Abschnitt erkennen, der die Suchbegriffe enthält, aber etwas anderes meint
 - Fundstellen mit Nummer, Titel und Suchprotokoll mitgeben statt des ganzen Dokuments
 - Das Prinzip „Heraussuchen, dann Erzeugen“ erklären und daraus ableiten, warum Belege geöffnet werden müssen
 - Jede Fundstelle im Ergebnis am Dokument nachlesen und eine Aussage erkennen, die breiter ist als ihr Beleg
-- Für eine Frage außerhalb des eigenen Materials zwischen Websuche mit vorgegebener Quelle und mehrstufiger Recherche unterscheiden und das Ergebnis an der Quelle prüfen

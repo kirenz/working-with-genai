@@ -1,19 +1,19 @@
 ---
-title: "Grenzen und erste Datenregeln"
-subtitle: "Modul 1 · Lektion 1.2"
+title: "Halluzinationen und Unsicherheit"
+subtitle: "Modul 1 · Lektion 1.6"
 book-source: ../../start/grenzen-daten.qmd
 ---
 
 ## Derselbe Wunsch, kein Briefing {.stage}
 
-[Modul 1 · Ankommen]{.kicker}
+[Modul 1 · Generative KI verstehen]{.kicker}
 
 „Schreibe einen Produkttext für unseren Espresso Intenso, etwa 80 Wörter."
 
-Was kommt heraus, wenn das Material fehlt?
+Was kommt heraus, wenn der Context fehlt?
 
 ::: {.notes}
-Anknüpfen an die erste Lektion: Der Hinweistext war brauchbar, weil ein Briefing mitgegeben wurde. Jetzt derselbe Wunsch ohne Briefing. Nicht vorwegnehmen, was passiert; die nächste Folie zeigt ein konstruiertes Ergebnis. Zeit: 1 Minute.
+Etwa 20 Minuten im Auftakt. Anknüpfen an den ersten Durchlauf: Der Hinweistext wurde gegen sein Briefing geprüft. Jetzt derselbe Wunsch ohne Briefing. Nicht vorwegnehmen, was passiert; die nächste Folie zeigt ein konstruiertes Ergebnis. Ankündigen, dass drei Fragen auseinandergehalten werden: plausibel, belegt, richtig. Zeit: 1 Minute.
 :::
 
 ## Ein Produkttext, der zu gut klingt
@@ -29,7 +29,7 @@ Prüfbogen mit Auflösung: material/m01/produkttext-pruefung.md
 :::
 
 ::: {.notes}
-Den Text einmal vorlesen. Dann die Aufgabe: Jede der neun nummerierten Aussagen gegen das Briefing aus Lektion 1.1 prüfen. Gedeckt, teilweise, nicht gedeckt. Drei Minuten Einzelarbeit mit dem Prüfbogen, dann Auflösung. Erwartete Ergebnisse: Zwei gedeckt (7, 8), eine teilweise (1), sechs nicht gedeckt. Zeit: 4 Minuten einschließlich Arbeitsphase.
+Den Text einmal vorlesen. Dann die Aufgabe: Jede der neun nummerierten Aussagen gegen das Briefing aus der ersten Übung prüfen. Gedeckt, teilweise, nicht gedeckt. Drei Minuten Einzelarbeit mit dem Prüfbogen, dann Auflösung. Erwartete Ergebnisse: Zwei gedeckt (7, 8), eine teilweise (1), sechs nicht gedeckt. Zeit: 4 Minuten einschließlich Arbeitsphase.
 :::
 
 ## Auflösung: zwei von neun
@@ -46,21 +46,23 @@ Den Text einmal vorlesen. Dann die Aufgabe: Jede der neun nummerierten Aussagen 
 Lesbarkeit und Belegbarkeit sind zwei verschiedene Eigenschaften.
 
 ::: {.notes}
-Auflösung besprechen. Bei Nr. 1 den Unterschied zeigen: „kleine Rösterei" steht im Briefing, „in kleinen Mengen geröstet" ist eine Aussage über das Verfahren. Bei Nr. 6 die Außenwirkung betonen: Eine falsche Zertifikatsaussage ist ein Produktversprechen. Schlusssatz der Folie wiederholen. Zeit: 2 Minuten.
+Auflösung besprechen. Bei Nr. 1 den Unterschied zeigen: „kleine Rösterei" steht im Briefing, „in kleinen Mengen geröstet" ist eine Aussage über das Verfahren. Bei Nr. 6 die Außenwirkung betonen: Eine ungeprüfte Zertifikatsaussage wäre ein Produktversprechen ohne Freigabe. Zeit: 2 Minuten.
 :::
 
-## Woher kam „Bio-zertifiziert"?
+## Plausibel, belegt, richtig
 
-Ein Chatmodell setzt Text fort, der zur Anfrage passt.
+| Frage | „Bio-zertifiziert" | Folge |
+|---|---|---|
+| **Ist es plausibel?** | Klingt wie eine mögliche Produktangabe | Dieser Eindruck belegt nichts |
+| **Trägt es unser Material?** | Nein, das Briefing gibt keine Angabe frei | Unbelegt: darf so nicht hinausgehen |
+| **Ist es richtig?** | Unbekannt | Klären, wer es weiß, oder streichen. Nicht als falsch behaupten |
 
-- Trainiert mit sehr vielen Texten, darunter unzähligen Produktbeschreibungen
-- Ein Produkttext für Espresso enthält dort typischerweise Herkunft, Röstung, Zertifikat
-- Keine Datenbank unserer Produkte, kein Zugriff auf Lager oder Freigaben
-
-Ergebnis: plausibel, weil es dem Muster folgt. Nicht belegt, weil niemand die Fakten mitgegeben hat.
+::: {.sources}
+OpenAI, Why language models hallucinate (September 2025): openai.com/index/why-language-models-hallucinate
+:::
 
 ::: {.notes}
-Den Mechanismus in einem Satz erklären, ohne Fachbegriffe wie Token oder Wahrscheinlichkeit. Analogie aus dem Buch: die sprachgewandte Vertretung, die noch nie im Haus war. Keine Vorhersage formulieren („das Modell erfindet immer"); es ist ein Risiko, das vor jeder Verwendung geprüft wird. Zeit: 2 Minuten.
+Die Erzeugung eines passenden Satzes ist keine automatische Quellenprüfung. Konkrete Trainingsinhalte oder die tatsächliche Ursache einer einzelnen Formulierung lassen sich aus dem konstruierten Text nicht ableiten. Halluzination bezeichnet hier sachlich falsche oder erfundene Ausgaben, die als zutreffend dargestellt werden. Fehlende Quellenstütze allein bedeutet dagegen noch keine Falschheit. Zeit: 4 Minuten.
 :::
 
 ## Drei Grenzen für den ganzen Kurs
@@ -72,56 +74,27 @@ Den Mechanismus in einem Satz erklären, ohne Fachbegriffe wie Token oder Wahrsc
 Was ein Modell über Kaffee weiß, sagt nichts über unsere drei Sorten.
 :::
 ::: {.card}
-**2. Aktuelles und Internes fehlt**
+**2. Aktuelle Angaben beschaffen**
 
-Preise von heute, Versandtermin von morgen, Freigabe von gestern.
+Aktuelle Preise und Versandtermine bereitstellen oder über einen erlaubten Zugriff beschaffen.
 :::
 :::
 
 ::: {.card}
-**3. Flüssigkeit ist kein Qualitätsmerkmal**
+**3. Flüssigkeit belegt keine Fakten**
 
-Ein Text ohne Brüche kann sechs von neun Aussagen erfunden haben.
+Im konstruierten Text sind sechs von neun Aussagen nicht durch das Briefing gedeckt.
 :::
 
 ::: {.notes}
-Die drei Grenzen einmal vorlesen. Sie kehren in jeder Lektion wieder. Übergang: Bis hierher ging es um das, was herauskommt. Jetzt um das, was hineingeht. Zeit: 1 Minute.
+Die drei Grenzen einmal vorlesen. Sie kehren in jeder Lektion wieder. Freiwillig, je nach Zeit: das Vorher-Nachher selbst erzeugen, zwei neue Chats, einmal der Zuruf, einmal mit Briefing als CONTEXT und einem CHECK, der fehlende Angaben und unsichere Formulierungen unter „Offen" nennt. Beobachten, ob Länge, Ton und Umgang mit offenen Angaben sich unterscheiden. Ob er frei von ungedeckten Aussagen ist, zeigt erst die Prüfung; das ausdrücklich sagen. Zeit: 1 bis 5 Minuten.
 :::
 
-## Freiwillig: das Vorher-Nachher selbst erzeugen
-
-Zwei neue Chats:
-
-1. Nur der Zuruf: „Schreibe einen Produkttext für unseren Espresso Intenso, etwa 80 Wörter."
-2. Derselbe Wunsch mit Briefing als Material und Grenzen (Vollprompt im Buch, Schritt 3)
-
-Beide Ergebnisse mit derselben Frage lesen: Wie viele Aussagen trägt das Briefing?
-
-::: {.sources}
-Buchkapitel 1.2, Schritt 3
-:::
-
-::: {.notes}
-Optional im Kickoff, je nach Zeit; sonst als Selbstlernaufgabe. Wenn Zeit ist: 4 Minuten Arbeitsphase, dann zwei Teilnehmende berichten lassen. Erwartung: Der zweite Text ist kürzer, nüchterner, hat eine Liste „Offen". Ob er frei von ungedeckten Aussagen ist, zeigt erst die Prüfung; das ausdrücklich sagen. Zeit: 0 bis 5 Minuten.
-:::
-
-## Was gehört ins Chatfenster? Drei Kategorien
-
-| | Bedeutung |
-|---|---|
-| **A: Für die Übung geeignet** | Erfunden, öffentlich oder rein allgemein; kein Personenbezug, nichts Vertrauliches |
-| **B: Nur mit Freigabe im passenden Konto** | Intern, nicht personenbezogen; nur, wenn die Organisation dieses Konto freigegeben hat |
-| **C: Nicht ohne verbindliche Klärung** | Personenbezogen, besonders schutzwürdig oder fremde vertrauliche Inhalte |
-
-::: {.notes}
-Die drei Kategorien einführen. Betonen: Orientierungshilfe des Kurses, kein Rechtsgutachten, keine Freigabe. Die Einteilung stützt sich auf Punkte der DSK-Orientierungshilfe zu KI und Datenschutz (Zweck, Datenminimierung, Konto und Vertragslage, pseudonymisiert ist nicht anonym). Zeit: 1 Minute.
-:::
-
-## Sortieren: zehn Karten, drei Minuten
+## Die Datenregeln anwenden: zehn Karten
 
 ::: {.small}
 1. Das freigegebene Briefing der Rösterei
-2. Ein Text, der öffentlich auf der eigenen Website steht
+2. Öffentlicher eigener Webtext ohne Personenbezug, mit passenden Nutzungsrechten
 3. Kundenmail mit Name, Anschrift, Kundennummer
 4. Interne Preiskalkulation mit Einkaufspreisen
 5. Mail über „Kollegin A" mit Angaben zu ihrer Krankheit
@@ -133,11 +106,11 @@ Die drei Kategorien einführen. Betonen: Orientierungshilfe des Kurses, kein Rec
 :::
 
 ::: {.sources}
-Karten mit Auflösung: material/m01/datenregeln-sortierkarten.md
+Karten mit Auflösung: material/m01/datenregeln-sortierkarten.md · Kategorien A, B, C aus der Lektion „Welche Daten dürfen ins KI-Werkzeug?"
 :::
 
 ::: {.notes}
-Arbeitsphase zu zweit, 3 Minuten: jede Karte einer Kategorie zuordnen. Dann Auflösung: A für 1, 2, 6, 9; B für 4; C für 3, 5, 7, 8, 10. Drei Karten gesondert besprechen: Karte 5 (ersetzter Name macht nicht anonym, Gesundheitsdaten besonders geschützt), Karte 8 (ein Bild ist kein geringeres Risiko als Text), Karte 4 (vertraulich, aber nicht personenbezogen; Klärung über IT und Einkauf). Zeit: 5 Minuten einschließlich Auflösung.
+Arbeitsphase zu zweit, 3 Minuten: jede Karte einer Kategorie zuordnen, anhand von Personenbezug, besonderer Schutzbedürftigkeit, fremder Vertraulichkeit und internen Angaben. Dann Auflösung: A für 1, 2, 6, 9; B für 4; C für 3, 5, 7, 8, 10. Drei Karten gesondert besprechen: Karte 5 (ersetzter Name macht nicht anonym, Gesundheitsdaten besonders geschützt), Karte 8 (ein Bild ist kein geringeres Risiko als Text), Karte 4 (vertraulich, aber nicht personenbezogen; Klärung über IT und Einkauf). Zeit: 5 Minuten einschließlich Auflösung.
 :::
 
 ## Portfolio: Datenbedarf und Abgrenzung
@@ -149,10 +122,6 @@ Arbeitsphase zu zweit, 3 Minuten: jede Karte einer Kategorie zuordnen. Dann Aufl
 
 Alle Kursübungen laufen mit Kategorie A. Was im Alltag gilt, entscheidet die eigene Organisation.
 
-::: {.sources}
-DSK, Orientierungshilfe KI und Datenschutz (Mai 2024): datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf
-:::
-
 ::: {.notes}
-Abschluss: zwei Felder in der Arbeitsmappe füllen, Stichworte genügen. Wer nicht weiß, welche Stelle im eigenen Haus zuständig ist, notiert das als offenen Punkt; die Frage zu notieren ist an dieser Stelle das Ergebnis. Übergang zu Lektion 1.3: Welcher Fall soll es sein? Zeit: 2 Minuten.
+Abschluss: zwei Felder in der Arbeitsmappe füllen, Stichworte genügen. Wer nicht weiß, welche Stelle im eigenen Haus zuständig ist, notiert das als offenen Punkt; die Frage zu notieren ist an dieser Stelle das Ergebnis. Nach der Pause: Use Cases systematisch finden. Zeit: 2 Minuten.
 :::

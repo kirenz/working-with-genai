@@ -1,5 +1,7 @@
 # Kurskonzept v2 — Working with GenAI
 
+**Planungsstand vom 08.09.2026:** Die neue Gliederung mit eigenständig auffindbaren Grundlagen und strukturierter Use-Case-Ermittlung steht in [Kurskonzept v3](kurskonzept-v3.md). Sie ersetzt für die weitere Ausarbeitung die Festlegung auf drei Lektionen je Modul und das einheitliche Übungsmuster dieser Fassung. Der organisatorische Rahmen bleibt erhalten. Die neue Gliederung ist noch nicht in den Kursquellen oder auf der Plattform umgesetzt.
+
 HdM-Microcredential „Generative KI in der Praxis: Produktivität steigern und Prozesse sicher optimieren"
 
 | | |
@@ -154,7 +156,7 @@ Ausarbeitung und Dokumentation des Portfolios sowie Vorbereitung der Kurzpräsen
 
 ## 6. Module und Lektionen
 
-Sechs Module zu je drei Lektionen, 18 Lektionen insgesamt. Eine Lektion entspricht einem Buchkapitel und einer Unit auf der Lernplattform.
+Sechs Module mit je drei Fachlektionen. Jede Fachlektion entspricht einem Buchkapitel und einer Unit auf der Lernplattform. Eine kurze Lektion „Willkommen und Orientierung“ führt vor der ersten Übung in Kursziel, Werkzeuge, Lehrfall und Arbeitsweise ein. Sie verweist auf die Willkommen-Seite des Buchs und ist Teil des Auftakts innerhalb der 30 Stunden. Damit umfasst der Kurs 19 Plattform-Units.
 
 ### Jedes Modul hat eine Ansprechperson im Fall
 
@@ -177,7 +179,8 @@ Der Einstieg produziert innerhalb weniger Minuten ein brauchbares Ergebnis und z
 
 **Outcome:** Ein erstes eigenes Ergebnis erzeugt, die Grenzen eines Chatmodells benannt und einen eigenen Anwendungsfall ausgewählt.
 
-- **1.1 Der erste Chat-Erfolg** — Eine echte kleine Aufgabe im Chatfenster, ohne Vorwissen, mit sichtbarem Ergebnis.
+- **Einstieg: Willkommen und Orientierung.** Kursziel, Werkzeuge, Rösterei Morgenrot und Arbeitsweise in vier kurzen Schritten, ohne Quiz.
+- **1.1 Vom Briefing zum Entwurf.** Einen Hinweistext anhand freigegebener Angaben entwerfen, überarbeiten und prüfen.
 - **1.2 Grenzen und erste Datenregeln** — Woher die Antworten kommen und warum sie falsch sein können; anschließend die Frage, was ins Chatfenster gehört und was nicht.
 - **1.3 Den eigenen Anwendungsfall wählen** — Kriterien für einen guten Kandidaten (wiederkehrend, feste Fakten, prüfbares Ergebnis); erster Eintrag im Use-Case-Canvas.
 
@@ -185,9 +188,9 @@ Der Einstieg produziert innerhalb weniger Minuten ein brauchbares Ergebnis und z
 
 Vom Zuruf zum Auftrag. Das Modul liefert die Bauweise, die den Rest des Kurses trägt.
 
-**Outcome:** Einen Arbeitsauftrag aus vier Bausteinen bauen, das Ergebnis gegen das Material prüfen und gezielt in Durchläufen verbessern.
+**Outcome:** Einen Arbeitsauftrag aus vier Bausteinen bauen, das Ergebnis gegen den Context prüfen und gezielt in Durchläufen verbessern.
 
-- **2.1 Vom Zuruf zum Arbeitsauftrag** — Aufgabe, Material, Format, Grenzen an der Kundenanfrage aus der Rösterei Morgenrot. *(Kapitel ausgearbeitet, Plattform-Unit vorhanden.)*
+- **2.1 Vom Zuruf zum Arbeitsauftrag** — Task, Context, Format, Check an der Kundenanfrage aus der Rösterei Morgenrot. *(Kapitel ausgearbeitet, Plattform-Unit vorhanden.)*
 - **2.2 Mit Beispielen und Format steuern** — Ein Musterbeispiel im Prompt, Vorgaben zu Länge, Ton und Aufbau; wann ein Beispiel mehr hilft als eine Beschreibung.
 - **2.3 Iterieren: eine Änderung pro Durchlauf** — Systematisch verbessern statt neu formulieren; die eigene Prompt-Fassung dokumentieren.
 
@@ -308,7 +311,7 @@ Die Trennung ist bewusst: Was ist eine **Designentscheidung** dieses Kurses, und
 
 Nicht belegt, sondern gewählt — und als solche im Buch gekennzeichnet:
 
-- Die Vierteilung **Aufgabe, Material, Format, Grenzen** als Merkhilfe für den Aufbau eines Arbeitsauftrags.
+- Die Vierteilung **Task, Context, Format, Check** (didaktisch eingeführt als Task · Aufgabe, Context · Kontext, Format · Format, Check · Prüfung) als Merkhilfe für den Aufbau eines Arbeitsauftrags. Der Check ist eine Anweisung an das Modell und ersetzt die menschliche Ergebnisprüfung nicht.
 - Die Weiterverwendung des synthetischen Falls **Rösterei Morgenrot** aus dem Business-Analytics-Kurs als durchgehender Lehrfall, ohne dessen Statistikteil.
 - Die Abo-Regel zum Sortenwechsel (fünf Werktage vor dem Versand) und die Zuspitzung der Kundenanfrage auf drei unterschiedlich belegte Fragen: eigens für diesen Kurs erfunden und im Material gekennzeichnet.
 - Die Zuordnung je einer Funktion aus dem Fall zu jedem Modul.
@@ -318,8 +321,8 @@ Nicht belegt, sondern gewählt — und als solche im Buch gekennzeichnet:
 
 ### Belegte Aussagen
 
-- **OpenAI, „How do I prompt ChatGPT effectively?"** — <https://help.openai.com/en/articles/10032626-how-do-i-prompt-chatgpt-effectively>. Empfiehlt: klar formulieren, spezifisch werden, genug Kontext mitgeben, den Prompt iterativ verbessern. Trägt im Kurs die Bausteine *Aufgabe* und *Material* sowie das Iterationsprinzip in Lektion 2.3.
-- **Anthropic, Prompt engineering overview** — <https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview>. Setzt vor die Prompt-Optimierung das Festlegen der Erfolgskriterien. Trägt im Kurs die Bausteine *Format* und *Grenzen* sowie den Testfall-Ansatz in Modul 4.
+- **OpenAI, „How do I prompt ChatGPT effectively?"** — <https://help.openai.com/en/articles/10032626-how-do-i-prompt-chatgpt-effectively>. Empfiehlt: klar formulieren, spezifisch werden, genug Kontext mitgeben, den Prompt iterativ verbessern. Trägt im Kurs die Bausteine *Task* und *Context* sowie das Iterationsprinzip in Lektion 2.3.
+- **Anthropic, Prompt engineering overview** — <https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview>. Setzt vor die Prompt-Optimierung das Festlegen der Erfolgskriterien. Trägt im Kurs die Bausteine *Format* und *Check* sowie den Testfall-Ansatz in Modul 4.
 
 ### Kursorganisatorische Grundlagen
 

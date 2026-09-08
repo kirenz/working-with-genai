@@ -1,6 +1,6 @@
 # n8n-Miniworkflow: alle Feldwerte zum Kopieren
 
-Kursmaterial „Working with GenAI", Modul 6, Lektion 6.2. Drei Knoten auf der bereitgestellten Kursinstanz: Auslöser, Felder, Sprachmodell. Der Workflow endet beim sichtbaren Entwurf. Kein Versandknoten, keine Aktivierung.
+Kursmaterial „Working with GenAI", Modul 6, Lektion 6.3. Drei Knoten auf der bereitgestellten Kursinstanz: Auslöser, Felder, Sprachmodell. Der Workflow endet beim sichtbaren Entwurf. Kein Versandknoten, keine Aktivierung.
 
 Knotennamen und Feldbezeichnungen entsprechen der n8n-Dokumentation zu **Edit Fields (Set)** und **Basic LLM Chain** (Abruf 07.09.2026). Einzelne Bezeichnungen können sich mit der Version der Kursinstanz unterscheiden; die Lehrenden-Einrichtungsanleitung sieht einen Abgleich vor dem Kurs vor.
 
@@ -70,15 +70,15 @@ Nach **Execute step** zeigt das Output-Panel ein Element mit den beiden Feldern 
 Inhalt des Prompt-Felds (im Expression-Modus, vollständig einfügen):
 
 ```text
-Du unterstützt den Bereich Lager und Versand der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort-Mail auf die Kundenanfrage unten.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt den Bereich Lager und Versand der Rösterei Morgenrot.
+
 {{ $json.material }}
 
-KUNDENANFRAGE
+Kundenanfrage:
 {{ $json.anfrage }}
 
 FORMAT
@@ -86,10 +86,10 @@ Antwort-Mail, höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton.
 Absenderzeile "Ellen Ruppert, Lager und Versand, Rösterei Morgenrot".
 Am Ende eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+CHECK
 - Nenne keinen Ankunftstag und keinen Sendungsstatus. Trage beides unter "Offen" ein.
 - Behaupte nicht, dass etwas veranlasst wurde. Kündige an, dass Lager und Versand den Status mit der Sendungsnummer prüft.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts.
 - Verwende die Sendungsnummer nicht im Text.
 ```
 

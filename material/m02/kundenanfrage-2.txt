@@ -1,5 +1,5 @@
 EINGEGANGENE KUNDENMAIL 2 — LEHRFALL RÖSTEREI MORGENROT
-Kursmaterial "Working with GenAI", Modul 2 (Lektionen 2.2 und 2.3)
+Kursmaterial "Working with GenAI", Modul 2 (Lektionen 2.3 und 2.4)
 
 HINWEIS: Konstruierter Fall. Die Mail geht an Sina Bergmann, Vertrieb und
 Kundenservice. Die Absenderangabe "R. Novak" ist erfunden und enthält keine

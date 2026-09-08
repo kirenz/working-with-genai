@@ -1,10 +1,11 @@
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort auf die unten stehende Kundenfrage. Verwende nur die
 herausgesuchten Fundstellen aus dem Produktionshandbuch.
 
-MATERIAL (nur diese Fundstellen sind gültig)
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot. Gültig sind
+ausschließlich die folgenden Fundstellen.
+
 Herkunft: Produktionshandbuch Rösterei Morgenrot, Auszug, Stand 15.07.2026.
 Herausgesucht am 07.09.2026 zu den Suchbegriffen "Lagerung", "aufbrauchen",
 "Röstdatum", "geöffnet". Der Abschnitt 3 (Lagerung von Rohkaffee) wurde
@@ -39,7 +40,8 @@ Hinter jeder inhaltlichen Aussage die Fundstelle [H6] oder [H7].
 Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
 Am Ende eine Liste "Offen".
 
-GRENZEN
+CHECK
+- Was in [H6] und [H7] nicht steht, beantworte nicht, sondern trage es unter
+  "Offen" ein.
 - Verwende ausschließlich die Fundstellen [H6] und [H7]. Ergänze nichts.
-- Was dort nicht steht, beantworte nicht, sondern trage es unter "Offen" ein.
 - Erfinde keine Fristen, Mengen oder Termine.

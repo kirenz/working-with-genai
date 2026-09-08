@@ -2,11 +2,11 @@
 
 Die Rösterei Morgenrot ist ein erfundenes junges Kaffeeunternehmen. Sie verkauft drei Sorten über einen eigenen Onlineshop und ein Kaffee-Abo direkt an Endkundinnen und Endkunden. Unternehmen und Personen sind fiktiv, die Falldaten synthetisch.
 
-Die Rösterei wächst, erzielt 2025 aber keinen Gewinn. Diese Ausgangslage stammt aus dem gemeinsamen Lehrfall von Business Analytics und Data Storytelling. Im GenAI-Kurs unterstützen wir das Team bei konkreten Arbeitsaufgaben. Ob ein KI-gestützter Ablauf tatsächlich Zeit spart oder die Qualität verbessert, müssen wir am jeweiligen Ergebnis beurteilen.
+Die Rösterei wächst, erzielt 2025 aber keinen Gewinn. Im GenAI-Kurs unterstützen wir das Team bei konkreten Arbeitsaufgaben. Ob ein KI-gestützter Ablauf tatsächlich Zeit spart oder die Qualität verbessert, müssen wir am jeweiligen Ergebnis beurteilen.
 
-## Das bestehende Team
+## Das Team
 
-| Person | Funktion im gemeinsamen Lehrfall |
+| Person | Funktion |
 |---|---|
 | Aylin Yılmaz | Geschäftsführung |
 | Sina Bergmann | Vertrieb und Kundenservice |
@@ -26,11 +26,11 @@ Zum weiteren Kreis gehören Tarek Amiri im Einkauf Rohkaffee und Ellen Ruppert i
 | Filterkaffee Mild | Filter | 9,00 Euro |
 | Entkoffeiniert Sanft | Entkoffeiniert | 13,00 Euro |
 
-Diese Angaben sind aus dem bestehenden Fall übernommen. Sie nennen keine Packungsgröße und keinen Abo-Preis. Aus einem Shop-Listenpreis lässt sich deshalb der Rechnungsbetrag einer konkreten Abo-Lieferung nicht ableiten.
+Die Angaben nennen keine Packungsgröße und keinen Abo-Preis. Aus einem Shop-Listenpreis lässt sich deshalb der Rechnungsbetrag einer konkreten Abo-Lieferung nicht ableiten.
 
 ## Woran wir im GenAI-Kurs arbeiten
 
-Die folgenden Arbeitsaufträge ergänzen den bestehenden Fall für diesen Kurs:
+Das Team bearbeitet folgende Aufgaben:
 
 - Sina entwirft eine Antwort auf eine Kundenanfrage anhand bereitgestellter Produkt- und Serviceinformationen.
 - Jonas entwickelt Textentwürfe aus einem freigegebenen Briefing. Produktversprechen müssen darin belegt sein.
@@ -38,9 +38,9 @@ Die folgenden Arbeitsaufträge ergänzen den bestehenden Fall für diesen Kurs:
 - Marlene überführt vorgegebene Produktionsnotizen in eine nachvollziehbare Übergabe. Mengen und Termine werden nicht ergänzt.
 - Aylin vergleicht geeignete Anwendungsfälle und entscheidet, welcher Ablauf als Nächstes erprobt wird.
 
-## Ergänzung für die Musterlektion
+## Die Kundenanfrage
 
-Für die GenAI-Übung gilt eine zusätzlich konstruierte Service-Regel: Ein Sortenwechsel im Abo gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor Versand eingeht. Diese Regel ist eine neue didaktische Ergänzung und keine aus den Business-Analytics-Daten abgeleitete Vertragsbedingung.
+Für die Übung gilt folgende Service-Regel: Ein Sortenwechsel im Abo gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor Versand eingeht.
 
 Die dazu erfundene Kundenanfrage fragt nach einem Wechsel von Espresso Intenso zu Filterkaffee Mild, dem regulären Shoppreis von Filterkaffee Mild und einer Lieferung bis Freitag. Versanddatum und Sendungsstatus liegen nicht vor. Daher bleiben sowohl die rechtzeitige Umstellung der konkreten Lieferung als auch deren Ankunft offen. Die Übung endet beim Entwurf, es wird nichts versendet.
 

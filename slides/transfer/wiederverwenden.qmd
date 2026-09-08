@@ -1,6 +1,6 @@
 ---
-title: "Projects und gespeicherte Anweisungen"
-subtitle: "Modul 6 · Lektion 6.1"
+title: "Aufträge und Kontext wiederverwenden"
+subtitle: "Modul 6 · Lektion 6.2"
 book-source: "../../transfer/wiederverwenden.qmd"
 ---
 
@@ -8,7 +8,7 @@ book-source: "../../transfer/wiederverwenden.qmd"
 
 [Modul 6 · In den Alltag bringen]{.kicker}
 
-Der Arbeitsauftrag funktioniert. Wer ihn dreimal am Tag braucht, fügt dreimal am Tag Rolle, Material, Format und Grenzen ein.
+Der Arbeitsauftrag funktioniert. Wer ihn dreimal am Tag braucht, fügt dreimal am Tag Rolle, Context, Format und Check ein.
 
 ::: {.notes}
 Einstieg in Modul 6. Der Bogen: Module 2 bis 4 haben die Arbeitsgrundlage gebaut und geprüft, Modul 5 hat geklärt, was hinein darf. Jetzt geht es darum, das Ergebnis wiederverwendbar zu machen. Ausdrücklich sagen: Es kommt nichts fachlich Neues dazu, es wird abgelegt, was schon geprüft ist. Zeit: 1 Minute.
@@ -45,20 +45,20 @@ Die Versandinformationen kurz vorstellen: Versandtage dienstags und donnerstags,
 
 | Teil | Inhalt | Wohin |
 |---|---|---|
-| **Anweisungen** | Rolle und Zweck, Materialregel, Standardformat, Grenzen | einmal hinterlegt |
+| **Anweisungen** | Rolle und Zweck, Regel zum Wissensmaterial, Standardformat, Check | einmal hinterlegt |
 | **Wissensmaterial** | die Fakten, mit Datum | einmal hinterlegt |
 | **Anfrage** | die einzelne Kundenmail | je Chat eingefügt |
 
 Nicht hinein gehört, was nicht ins Chatkonto darf. **Ein Projekt ist kein Freigabenachweis.**
 
 ::: {.notes}
-Die Dreiteilung ist die ganze Lektion. Frage an den Raum: Was ändert sich am Risiko, wenn die Anweisungen nicht mehr in jeder Nachricht stehen? Erwartete Antwort und Kernaussage: Sie werden unsichtbar. Wer nur die Anfrage einfügt, sieht beim Prüfen nicht mehr, welche Grenzen gelten. Bequemer wird es, die Prüfung des Entwurfs bleibt. Die Datenregel aus Modul 5 gilt für hinterlegtes Wissensmaterial genauso wie für jede Nachricht. Zeit: 3 Minuten.
+Die Dreiteilung ist die ganze Lektion. Frage an den Raum: Was ändert sich am Risiko, wenn die Anweisungen nicht mehr in jeder Nachricht stehen? Erwartete Antwort und Kernaussage: Sie werden unsichtbar. Wer nur die Anfrage einfügt, sieht beim Prüfen nicht mehr, welcher Check gilt. Bequemer wird es, die Prüfung des Entwurfs bleibt. Die Datenregel aus Modul 5 gilt für hinterlegtes Wissensmaterial genauso wie für jede Nachricht. Zeit: 3 Minuten.
 :::
 
 ## Drei neue Zeilen gegenüber Modul 2
 
 ```text
-GRENZEN
+CHECK
 - Ankunftstage sagst du nie zu. Für Sendungsstatus verweist du auf die
   Prüfung durch Lager und Versand.
 - Absenderzeile nach Thema: Sortiment, Preis, Abo -> Kundenservice;
@@ -74,7 +74,7 @@ Vollständige Anweisungen: material/m06/startpaket-anweisungen.txt
 :::
 
 ::: {.notes}
-Die drei Zeilen einzeln begründen. Die Absenderzeile nach Thema ist nötig, weil das Startpaket jetzt zwei Bereiche bedient. Das Verbot von Ankunftstagen kommt direkt aus dem Material: Die Rösterei gibt keine Ankunftsgarantie. Und beim zweiten Netz deutlich werden: Bereinigt wird weiterhin vor dem Chatfenster; eine Anweisung im Prompt ist kein Ersatz für den Handgriff davor. Zeit: 2 Minuten.
+Die drei Zeilen einzeln begründen. Die Absenderzeile nach Thema ist nötig, weil das Startpaket jetzt zwei Bereiche bedient. Das Verbot von Ankunftstagen kommt direkt aus dem Context: Die Rösterei gibt keine Ankunftsgarantie. Und beim zweiten Netz deutlich werden: Bereinigt wird weiterhin vor dem Chatfenster; eine Anweisung im Prompt ist kein Ersatz für den Handgriff davor. Zeit: 2 Minuten.
 :::
 
 ## Drei Wege, ein Inhalt
@@ -102,11 +102,11 @@ Zum Funktionsumfang nichts behaupten, was nicht am Termin geprüft wurde: Ob Pro
 4. Dazu: Absenderzeile Lager und Versand? Sendungsnummer draußen?
 
 ::: {.sources}
-Vollständiger Text zum Kopieren: material/m06/startnachricht.txt · Buchkapitel 6.1, Schritte 2 bis 5
+Vollständiger Text zum Kopieren: material/m06/startnachricht.txt · Buchkapitel 6.2, Schritte 2 bis 5
 :::
 
 ::: {.notes}
-Arbeitsphase, 10 Minuten. Wer eine Projektfunktion hat, richtet ein Projekt ein; alle anderen nehmen die Startnachricht und sind damit vollständig dabei. Beim Herumgehen darauf achten, dass wirklich geprüft wird: Die häufigste Beobachtung ist, dass der Entwurf im Projekt genauso gelesen wird wie im Chat, nur schneller weggeklickt. Wer mag, führt denselben Ablauf in einem zweiten Werkzeug aus und notiert Unterschiede am Fall, ohne ein Werkzeug zum Sieger zu erklären. Zeit: 10 Minuten Arbeitsphase.
+Arbeitsphase, 10 Minuten, mit dem Lehrfall. Wer eine Projektfunktion hat, richtet ein Projekt ein; alle anderen nehmen die Startnachricht und sind damit vollständig dabei. Zum Umfang nichts behaupten: Ob Projekte, Gems und Dateiuploads verfügbar sind, hängt vom Konto ab. Das eigene Startpaket ist eine freiwillige Vertiefung; die eine eigene Arbeit dieses Moduls ist die Transferentscheidung in 6.4. Beim Herumgehen darauf achten, dass wirklich geprüft wird: Die häufigste Beobachtung ist, dass der Entwurf im Projekt genauso gelesen wird wie im Chat, nur schneller weggeklickt. Wer mag, führt denselben Ablauf in einem zweiten Werkzeug aus und notiert Unterschiede am Fall, ohne ein Werkzeug zum Sieger zu erklären. Zeit: 10 Minuten Arbeitsphase.
 :::
 
 ## Ein konstruiertes Ergebnis zum Abgleich
@@ -120,7 +120,7 @@ Konstruiert, kein aufgezeichneter Modelloutput.
 :::
 
 ::: {.notes}
-Drei Merkmale zeigen: erklären statt zusagen (Versandtage und Laufzeit als Angaben, nicht als Zusage für diese Sendung), ankündigen statt behaupten (dass geprüft wird, nicht was die Prüfung ergibt), offen bleibt offen. Ellen ergänzt nach der Prüfung im System des Paketdienstes den tatsächlichen Stand und versendet selbst. Wer im Raum einen Ankunftstag im Entwurf hat, meldet sich: Das ist ein Befund und der Beleg dafür, dass hinterlegte Grenzen Anweisungen sind, keine Garantien. Zeit: 3 Minuten.
+Drei Merkmale zeigen: erklären statt zusagen (Versandtage und Laufzeit als Angaben, nicht als Zusage für diese Sendung), ankündigen statt behaupten (dass geprüft wird, nicht was die Prüfung ergibt), offen bleibt offen. Ellen ergänzt nach der Prüfung im System des Paketdienstes den tatsächlichen Stand und versendet selbst. Wer im Raum einen Ankunftstag im Entwurf hat, meldet sich: Das ist ein Befund und der Beleg dafür, dass ein hinterlegter Check eine Anweisung ist und keine Garantie. Zeit: 3 Minuten.
 :::
 
 ## Skills: die Anleitung als Datei
@@ -136,7 +136,7 @@ Beispiel: material/m06/skill-statusanfrage.md · Claude Code, Skills: code.claud
 :::
 
 ::: {.notes}
-Nur Einordnung, keine Aufgabe: Für den Kurs ist keine Installation nötig. Der Begriff wird erklärt, weil er beim freiwilligen Praxispfad aus der Kickoff-Demo auftaucht. Die Beispieldatei zeigen: Geltungsbereich, fünf Schritte, Kontrollpunkt mit vier Prüfpunkten, ein Testfall. Wer den Pfad nicht geht, verliert nichts. Zeit: 2 Minuten.
+Nur Einordnung, keine Aufgabe: Für den Kurs ist keine Installation nötig. Der Begriff wird erklärt, weil er in der freiwilligen Vertiefung zu Codex und Claude Code auftaucht. Die Beispieldatei zeigen: Geltungsbereich, fünf Schritte, Kontrollpunkt mit vier Prüfpunkten, ein Testfall. Wer die Vertiefung nicht geht, verliert nichts. Zeit: 2 Minuten.
 :::
 
 ## Eigene Variante und Portfolio-Teil 2
@@ -145,7 +145,7 @@ Nur Einordnung, keine Aufgabe: Für den Kurs ist keine Installation nötig. Der 
 2. Wissensmaterial gegen die Datenregel aus Modul 5 prüfen
 3. Startpaket auf dem Weg anlegen, der im eigenen Konto funktioniert
 4. Testfälle aus Modul 4 im Startpaket wiederholen: gehen sie genauso aus?
-5. Eintragen unter „Gespeicherte Anweisungen“: was hinterlegt ist, auf welchem Weg, **mit welchem Stand**, wer das Material pflegt
+5. Eintragen unter „Gespeicherte Anweisungen“: was hinterlegt ist, auf welchem Weg, **mit welchem Stand**, wer das Wissensmaterial pflegt
 
 ::: {.notes}
 Selbstlernaufgabe. Der Stand mit Datum ist der Punkt, der am häufigsten fehlt: Ein Projekt merkt sich nichts von allein, und nach einer Preisänderung liegt dort ein veralteter Text, der weiter verwendet wird. Zweiter Hinweis für die Praxis: Wer ein Projekt teilt, teilt das gesamte Wissensmaterial mit allen, die Zugriff haben. Zeit: 2 Minuten.
@@ -153,7 +153,7 @@ Selbstlernaufgabe. Der Stand mit Datum ist der Punkt, der am häufigsten fehlt: 
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 6.1, Working with GenAI: transfer/wiederverwenden
+- Buchkapitel 6.2, Working with GenAI: transfer/wiederverwenden
 - Material: material/m06/startpaket-anweisungen.txt, startnachricht.txt, versandinformationen.txt, statusanfrage.txt, skill-statusanfrage.md
 - Dauerhafte Ablageorte, Funktionsumfang kontobedingt: help.openai.com/en/articles/10169521 · support.claude.com/en/articles/9519177 · support.google.com/gemini/answer/15235603
 - Skills: code.claude.com/docs/en/skills · Beispielergebnisse sind konstruiert

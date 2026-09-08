@@ -1,9 +1,9 @@
-Du unterstützt das Marketing der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf einen kurzen Blogbeitrag mit dem Arbeitstitel "Warum Filterkaffee Mild so schmeckt, wie er schmeckt".
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt das Marketing der Rösterei Morgenrot. Gültig sind ausschließlich die folgenden Angaben.
+
 Röstnotizen aus Röstung und Produktion, freigegeben:
 - Filterkaffee Mild: mittelhelle Röstung, Röstende bei erstem Crack plus kurze Nachröstphase.
 - Zielprofil: wenig Bitterkeit, weiche Säure, Noten von Milchschokolade und getrockneter Aprikose.
@@ -17,11 +17,11 @@ Sortiment: Filterkaffee Mild kostet im Onlineshop regulär 9,00 EUR.
 
 FORMAT
 Blogbeitrag, 180 bis 220 Wörter, Überschrift plus drei kurze Absätze, sachlich und freundlich, keine Superlative.
-Hinter jedem Absatz in eckigen Klammern die Quelle des Absatzes: [Röstnotizen], [Kaffeewiki] oder [Sortiment]. Absätze ohne Quelle im Material sind nicht erlaubt.
+Hinter jedem Absatz in eckigen Klammern die Quelle des Absatzes: [Röstnotizen], [Kaffeewiki] oder [Sortiment]. Absätze ohne Quelle im Context sind nicht erlaubt.
 Am Ende eine Liste "Offen" mit Angaben, die für den Beitrag noch fehlen.
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze keine Fakten zu Röstchemie, Herkunft, Anbau oder Gesundheit.
-- Übernimm keine Formulierungen, die nicht im Material stehen, als Zitat. Der Wiki-Absatz darf sinngemäß verwendet werden; wenn er wörtlich übernommen wird, kennzeichne ihn als Zitat mit Quellenangabe.
+CHECK
+- Verwende ausschließlich Angaben aus dem Context. Ergänze keine Fakten zu Röstchemie, Herkunft, Anbau oder Gesundheit; was für den Beitrag fehlt, gehört unter "Offen".
+- Übernimm keine Formulierungen, die nicht im Context stehen, als Zitat. Der Wiki-Absatz darf sinngemäß verwendet werden; wenn er wörtlich übernommen wird, kennzeichne ihn als Zitat mit Quellenangabe.
 - Keine Vergleiche mit anderen Anbietern.
 - Erfinde keine Kundenstimmen.

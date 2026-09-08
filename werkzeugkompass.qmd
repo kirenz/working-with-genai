@@ -6,7 +6,7 @@ Wir wählen eine Arbeitsweise passend zur Aufgabe. Ein kurzer Textentwurf brauch
 
 | Aufgabe | Geeigneter Ausgangspunkt | Was wir selbst beitragen |
 |---|---|---|
-| Einen Text aus bekannten Angaben entwerfen | Neuer Chat mit vollständigem Arbeitsauftrag | Material, gewünschtes Format und Grenzen |
+| Einen Text aus bekannten Angaben entwerfen | Neuer Chat mit vollständigem Arbeitsauftrag | Context, gewünschtes Format und Check |
 | Eine aktuelle externe Angabe finden | Websuche und die tatsächlich geöffnete Originalquelle | Konkrete Frage, Stichtag und geeignete Quellen |
 | Mehrere Quellen systematisch untersuchen | Rechercheauftrag, gegebenenfalls Deep Research | Umfang, Auswahlkriterien und Beurteilung der Belege |
 | Wiederholt am selben Thema arbeiten | Projekt, Gem oder gespeicherte Kontextmappe | Gültige Anweisungen und gepflegte Quellen |
@@ -17,11 +17,9 @@ Die Tabelle ist eine Lernhilfe, kein Anbietervergleich. Manche Werkzeuge decken 
 
 ## ChatGPT, Claude und Gemini
 
-Im Pflichtpfad verwenden wir ChatGPT mit kleinen Texteingaben. Die Kopiervorlagen funktionieren ohne Datei-Upload oder API-Schlüssel. Ein eigener Prompt kann auch in einem anderen betrieblich freigegebenen Chat ausprobiert werden. Dabei dokumentieren wir den verwendeten Zugang, weil gespeicherte Einstellungen und verfügbare Werkzeuge das Ergebnis mitprägen können.
+Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) vergleicht die drei Angebote und ordnet Work, Cowork, Codex und Claude Code ein. Für die Pflichtübungen genügt ein kostenloses Chatkonto; die Kopiervorlagen benötigen weder Datei-Upload noch API-Schlüssel. Eigene Varianten können im betrieblich freigegebenen Werkzeug bearbeitet werden.
 
-ChatGPT bietet Projekte für zusammengehörige Chats und Materialien. Auch Claude kennt Projekte; Gemini bietet Gems mit wiederverwendbaren Anweisungen. Diese Funktionen helfen beim Wiederverwenden einer Arbeitsgrundlage. Sie machen aus einer falschen Quelle keine richtige und geben vertrauliche Informationen nicht automatisch für die Nutzung frei. Die jeweiligen Anleitungen stehen bei [OpenAI](https://help.openai.com/en/articles/10169521), [Anthropic](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects) und [Google](https://support.google.com/gemini/answer/15235603).
-
-Die [Lektion zum Wiederverwenden](transfer/wiederverwenden.qmd) führt durch die Einrichtung. Eine lokale Kontextmappe mit Textdateien bleibt der vollständige Ausweichweg. So hängt der Lernerfolg nicht an einer bestimmten Schaltfläche oder einem zusätzlichen Konto.
+Für wiederkehrende Aufgaben zeigt die [Lektion zum Wiederverwenden](transfer/wiederverwenden.qmd), wie Aufträge und Material als Startpaket vorbereitet werden. Eine lokale Kontextmappe mit Textdateien ist auch ohne eine spezielle Projektfunktion nutzbar.
 
 ## Suche ist nicht dasselbe wie Beleg
 
@@ -31,20 +29,14 @@ Eine mehrstufige Recherche kann helfen, wenn mehrere Quellen oder Perspektiven z
 
 ## Codex und Claude Code früh kennenlernen
 
-Im Auftakt sehen wir nach dem ersten Chat-Erfolg, wie ein Arbeitsagent aus einem begrenzten Ordner mit synthetischem Material ein eigenes Dateiartefakt erstellen kann. Das Ergebnis steht dann beispielsweise als kurze Notiz im Arbeitsordner. Vorher werden Ziel, verwendbare Dateien und erlaubte Aktionen festgelegt.
+Im Auftakt sehen wir nach der ersten praktischen Aufgabe, wie ein Arbeitsagent aus einem begrenzten Ordner mit synthetischem Material ein eigenes Dateiartefakt erstellen kann. Das Ergebnis steht dann beispielsweise als kurze Notiz im Arbeitsordner. Vorher werden Ziel, verwendbare Dateien und erlaubte Aktionen festgelegt.
 
 Die [Demo und freiwillige Vertiefung](praxis/codex-claude-code.qmd) liefert das Material. Eine Installation ist keine Voraussetzung für die Teilnahme. Wer den freiwilligen Pfad selbst nutzt, arbeitet in einem eigenen Übungsordner und verwendet die mitgelieferten erfundenen Angaben. Die Einordnung und den Einstieg beschreiben die offiziellen Dokumentationen zu [OpenAI-Arbeitsagenten](https://developers.openai.com/codex/app/) und [Claude Code](https://code.claude.com/docs/en/overview). Produktbezeichnungen und verfügbare Oberflächen können sich verändern; die Lernaufgabe bleibt dieselbe.
 
-## Ein Abo ist eine persönliche Entscheidung
+## Zusätzliche Funktionen auswählen
 
-Zum Kursstart ist kein Kauf nötig. Erst nach der Demo lässt sich eine konkrete Frage stellen: Welche zusätzlich verfügbare Funktion würde ich für meinen eigenen Fall tatsächlich nutzen? Vor einem Abschluss gehören Kontotyp, Verfügbarkeit der gewünschten Funktion, Nutzungslimits, Preis und Kündigungsbedingungen zusammen betrachtet. Ein persönliches Abonnement ersetzt keine betriebliche Freigabe.
-
-Wir verwenden hier keine statische Preistabelle, die während des Kurses veralten kann. Die jeweils angebotenen Varianten stehen auf den offiziellen Seiten von [ChatGPT](https://chatgpt.com/pricing/), [Claude](https://claude.com/pricing) und [Google AI](https://one.google.com/about/google-ai-plans/). Preise, Zugang und Bedingungen werden im konkreten Angebot gelesen. Ein separater API-Zugang ist für die Pflichtübungen nicht erforderlich.
-
-Microsoft Copilot wird zur Orientierung erwähnt: In manchen Organisationen ist dieser Zugang vorgegeben. Dann wird der eigene Auftrag in der erlaubten Umgebung erprobt. Eine zusätzliche Copilot-Übungsschiene gehört nicht zum Kurs.
+Ein Abonnement ist für den Pflichtpfad nicht erforderlich. Für die freiwillige Vertiefung zählt, ob eine zusätzliche Funktion für den eigenen Fall gebraucht wird und im gewählten Zugang verfügbar ist. Funktionen, Nutzungslimits, Preise und Bedingungen stehen in den aktuellen Angeboten der Anbieter. Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) verlinkt die zugehörigen Informationen.
 
 ## Mit Nutzungslimits umgehen
 
-Bei einem Limit speichern wir den Auftrag und das bisherige Ergebnis. Für die verbleibende Lernaufgabe verwenden wir das bereitgestellte Kursbeispiel und dokumentieren diesen Wechsel. Wir erzeugen keine weiteren Konten und wechseln nicht ungeprüft mit internen Informationen in einen anderen Dienst.
-
-Stand der Quellenrecherche: 07.09.2026. Die Links erklären Funktionen und Zugänge; eine praktische Erprobung der individuellen Konten ist damit nicht verbunden.
+Bei einem Limit speichern wir den Auftrag und das bisherige Ergebnis. Für die verbleibende Lernaufgabe verwenden wir das bereitgestellte Kursbeispiel und dokumentieren diesen Wechsel.

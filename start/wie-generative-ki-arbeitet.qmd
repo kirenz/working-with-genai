@@ -1,0 +1,54 @@
+# Wie generative KI arbeitet
+
+Dieselbe Frage kann in zwei Chats unterschiedlich beantwortet werden. Auch eine flüssige Antwort über einen Betrieb kann Angaben enthalten, die für diesen Betrieb nicht stimmen. Die Arbeitsweise eines Sprachmodells erklärt, warum beides möglich ist und weshalb eine Antwort noch keine geprüfte Auskunft ist.
+
+## Wie eine Antwort entsteht
+
+Beim Training eines Sprachmodells werden seine Modellparameter, also innere Zahlenwerte, angepasst. So lernt es statistische Zusammenhänge in den Trainingsdaten. Bei der Texterzeugung nutzt es diese Zusammenhänge und den aktuellen Kontext, um die nächsten Textbausteine auszuwählen. Diese Bausteine heißen **Token** und können etwa Wörter oder Wortteile sein. Daraus entstehen Sätze, Gliederungen, Zusammenfassungen oder Vorschläge ([OpenAI, How ChatGPT and our foundation models are developed](https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed)).
+
+Die Erzeugung eines passenden Satzes ist keine automatische Quellenprüfung. Ein Satz kann verständlich und überzeugend klingen, obwohl eine Zahl falsch ist oder eine Produktangabe nicht belegt wurde. Welche konkreten Trainingsinhalte eine einzelne Antwort geprägt haben, lässt sich aus ihrem Wortlaut nicht ableiten.
+
+Ein Chatwerkzeug umfasst mehr als das Modell: Die Anwendung stellt Nachrichten und Material bereit und kann Werkzeuge einbinden, etwa eine Websuche. Ein Modellaufruf erzeugt eine Antwort anhand des verfügbaren Kontexts. Ein Werkzeugaufruf kann zusätzliche Informationen beschaffen, die anschließend in diesen Kontext gelangen. Ob ein bestimmter Zugang das ermöglicht und welche Daten er abrufen darf, hängt von seinen Funktionen und Berechtigungen ab.
+
+## Training, Kontext und Abruf unterscheiden
+
+**Trainingswissen** bezeichnet die beim Training erlernten Zusammenhänge. Es kann beim Erklären, Formulieren und Entwickeln von Ideen helfen. Es ist keine aktuelle Akte des eigenen Betriebs und kein nachgeschlagener Beleg für eine einzelne Aussage.
+
+**Mitgegebener Kontext** umfasst die Informationen, die bei der aktuellen Bearbeitung bereitstehen: die Anfrage, berücksichtigte Nachrichten, ein eingefügtes Briefing oder bereitgestellte Dateiinhalte. Dieser Bereich ist begrenzt und wird als Kontextfenster bezeichnet. Kontext wird bei der Antwort berücksichtigt; das ist etwas anderes als eine Änderung der Modellparameter im Training ([Anthropic, Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows)).
+
+**Werkzeugabruf** bedeutet, dass eine Suche oder Abfrage tatsächlich ausgeführt wird. Beispielsweise liefert eine Websuche eine Fundstelle oder ein erlaubter Dateizugriff einen Dokumentauszug. Solche Ergebnisse können den Kontext ergänzen. Eine lediglich eingeschaltete Suchfunktion belegt noch keinen Abruf. Auch eine abgerufene Quelle muss zur Frage passen und die verwendete Aussage tatsächlich stützen.
+
+Die folgende Tabelle ordnet beschriebene Informationswege zu. Sie analysiert keine verborgene Ursache eines Antwortsatzes.
+
+| Beschriebener Vorgang | Einordnung | Bedeutung für die Arbeit |
+|---|---|---|
+| Beim Training werden Modellparameter anhand von Trainingsdaten angepasst. | Training | Erlernte Zusammenhänge stehen zur Texterzeugung bereit; eine aktuelle Produktangabe ist damit nicht belegt. |
+| Sina fügt das freigegebene Abo-Briefing in ihre Anfrage ein. | Mitgegebener Kontext | Der Text steht für die Bearbeitung bereit und kann zum Abgleich verwendet werden. |
+| Eine tatsächlich ausgeführte Websuche liefert eine Seite mit Datum und Fundstelle. | Werkzeugabruf | Die Seite kann geprüft werden: Passt sie zum Anbieter, ist sie aktuell und trägt die Fundstelle die Aussage? |
+
+## Ein Beispiel aus der Rösterei
+
+Sina möchte einen Liefertermin nennen. In ihrem bereitgestellten Briefing steht kein Versanddatum. Eine mögliche Antwort lautet: „Die Lieferung kommt in zwei bis vier Werktagen.“ Dieses Beispiel ist konstruiert, kein aufgezeichneter Modelloutput. Die Frist ist durch das Briefing nicht gedeckt. Aus dem Satz lässt sich weder ihre tatsächliche Herkunft noch ihre Richtigkeit bestimmen.
+
+Für diese Auskunft wäre es sinnvoll, die fehlende Angabe zu benennen: „Im Briefing steht kein Versanddatum; der Termin muss bei Lager und Versand geklärt werden.“ Auch diese konstruierte Formulierung ist gegen die Unterlagen zu prüfen. Bei einem Ideenauftrag ist der Maßstab anders: Neue Vorschläge sind erwünscht, müssen aber zu Ziel und Rahmenbedingungen passen. Enthalten sie Tatsachenbehauptungen, benötigen diese ebenfalls eine Prüfung.
+
+## Warum Antworten variieren können
+
+Für die Fortsetzung eines Textes kommen mehrere Token infrage. Bei ihrer Auswahl kann ein Zufallsverfahren eingesetzt werden, das **Sampling** heißt. Auch ein anderer Gesprächskontext, Kontoeinstellungen oder eine andere Modellversion können die Antwort verändern. Deshalb sind bei gleicher sichtbarer Eingabe unterschiedliche Antworten möglich; identische Antworten sind ebenfalls möglich ([OpenAI, Text generation](https://platform.openai.com/docs/guides/text)).
+
+Ein Durchlauf zeigt ein einzelnes Ergebnis. Wenn nach einer Promptänderung die Frist im Text steht, ist das eine Beobachtung. Wenige Durchläufe beweisen noch nicht, dass die Änderung diesen Unterschied verursacht hat oder dass die Frist künftig immer beachtet wird.
+
+## Halluzinationen, Bilder und Sprache
+
+Als **Halluzinationen** werden hier sachlich falsche oder erfundene Ausgaben bezeichnet, die als zutreffend dargestellt werden, etwa eine erfundene Quelle. Eine Aussage ohne Quellenangabe ist dagegen nicht allein deshalb falsch. Trägt das vorliegende Material eine Aussage nicht, bleibt sie zunächst unbelegt. Vor ihrer Verwendung muss sie geklärt, weggelassen oder ausdrücklich als offene Annahme ausgewiesen werden ([OpenAI, Why language models hallucinate](https://openai.com/index/why-language-models-hallucinate/)).
+
+**Multimodal** bedeutet, dass ein System mehrere Arten von Inhalten verarbeiten kann, etwa Text, Bilder oder Audio. Ein Foto einer Röstnotiz oder eine gesprochene Frage können so zur Eingabe werden. Welche Ein- und Ausgaben verfügbar sind, hängt vom Werkzeug ab. Ein Bildinhalt kann zusammen mit weiteren Nachrichten oder abgerufenen Informationen verarbeitet werden. Was nicht im Bild zu sehen ist, ist daher nicht automatisch Trainingswissen.
+
+Eine abgelesene Zahl wird gegen das Bild geprüft, eine Zusammenfassung auf Vollständigkeit und eine Idee auf Brauchbarkeit und Vielfalt. Für hochgeladene Bilder gelten dieselben Datenregeln wie für Text: Ein Screenshot kann echte Kundendaten enthalten.
+
+## Kontrollpunkt
+
+- Training, mitgegebenen Kontext und tatsächlich ausgeführten Werkzeugabruf an beschriebenen Vorgängen unterscheiden
+- Erklären, warum Texte variieren können und was ein einzelner Durchlauf nicht beweist
+- Fehlende Quellenstütze von sachlicher Falschheit unterscheiden
+- Die Prüfung an die Aufgabe anpassen: Fakten, Vollständigkeit, Berechnung oder Brauchbarkeit von Ideen

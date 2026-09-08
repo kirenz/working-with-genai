@@ -1,0 +1,83 @@
+---
+title: "Welche Daten dürfen ins KI-Werkzeug?"
+subtitle: "Modul 1 · Lektion 1.5"
+book-source: ../../start/datenregeln.qmd
+---
+
+## Was hineingeht {.stage}
+
+[Modul 1 · Generative KI verstehen]{.kicker}
+
+Das Briefing der Rösterei durfte kopiert werden, weil es erfunden ist. Und die echte Kundenmail, die Kalkulation, der Screenshot?
+
+::: {.notes}
+Etwa 15 Minuten im Auftakt. Anknüpfen: Bis hierher ging es um das, was herauskommt; jetzt um das, was hineingeht. Erwartung setzen: Diese Lektion gibt nichts frei und ist kein Rechtsgutachten. Sie liefert eine Einteilung, mit der jeder Inhalt vor der Eingabe eingeordnet und die Frage an die richtige Stelle gerichtet wird. Zeit: 1 Minute.
+:::
+
+## Wovon die Antwort abhängt
+
+- Eingaben verlassen den Rechner und werden beim Anbieter verarbeitet
+- Was damit geschieht, hängt ab von Anbieter, Kontotyp und Vereinbarung der Organisation
+- Ein Chatfenster nimmt leicht mehr auf, als die Aufgabe braucht
+
+Hintergrund: festgelegter Zweck, Datenminimierung, Konto und Vertragslage, pseudonymisiert ist nicht anonym.
+
+::: {.sources}
+DSK, Orientierungshilfe KI und Datenschutz (Mai 2024): datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf
+:::
+
+::: {.notes}
+Die Punkte erklären. Beispiel für Datenminimierung: Für eine Abo-Antwort braucht das Modell die Frage und die Konditionen, nicht Name, Anschrift und Kundennummer. Die DSK-Orientierungshilfe als Quelle der Punkte nennen, ohne daraus Rechtsaussagen abzuleiten. Einstellungen zum Umgang mit Eingaben werden vor dem ersten Einsatz mit echten Daten geprüft, nicht vermutet. Zeit: 3 Minuten.
+:::
+
+## Drei Kategorien für Eingaben
+
+| | Bedeutung | Was zu tun ist |
+|---|---|---|
+| **A: Für die Übung geeignet** | Erfunden, öffentlich, rein allgemein | Nutzungsrechte und organisatorische Vorgaben beachten |
+| **B: Nur mit Freigabe im passenden Konto** | Intern, nicht personenbezogen | Klärung über Vertragslage: IT, Einkauf, Leitung |
+| **C: Nicht ohne verbindliche Klärung** | Personenbezogen, besonders schutzwürdig, fremd vertraulich | Zuständige Stelle fragen; für Übungen vollständig erfinden |
+
+Personenbezug, besondere Schutzbedürftigkeit oder fremde Vertraulichkeit: C. Sonstige interne Angaben ohne Personenbezug: B. Öffentliche oder allgemeine Inhalte ohne diese Merkmale: A.
+
+::: {.notes}
+Die Kategorien einführen und als Orientierungshilfe des Kurses kennzeichnen. Die Merkmale einmal an einer Situation durchgehen. Öffentliche Inhalte sind nicht allein wegen ihrer Veröffentlichung frei verwendbar. Im Zweifel die strengere Kategorie wählen und die Frage notieren. Zeit: 3 Minuten.
+:::
+
+## Drei Beispiele
+
+::: {.two-col}
+::: {.card}
+**Preiskalkulation mit Margen, keine Personen**
+
+Vertraulich, nicht personenbezogen: **B**. Klärung über IT und Einkauf.
+:::
+::: {.card}
+**Mail über „Kollegin A“ mit Angaben zur Krankheit**
+
+Person über den Zusammenhang erkennbar, Gesundheitsdaten: **C**. Ein ersetzter Name macht nicht anonym.
+:::
+:::
+
+::: {.card}
+**Screenshot aus dem Kundenverwaltungssystem**
+
+Ein Bild ist kein geringeres Risiko als Text: **C**. Nachgebauter Ausschnitt mit erfundenen Werten genügt.
+:::
+
+::: {.notes}
+Die drei Beispiele besprechen, je eine Minute. Bei der Kalkulation den Unterschied zwischen vertraulich und personenbezogen herausarbeiten: Das bestimmt, wer verbindlich entscheidet. Bei Kollegin A: Abteilung, Zeitraum und Anlass reichen zur Erkennbarkeit; das ist der Grund, warum im Kurs nicht mit echten Mails und getauschten Namen gearbeitet wird. Beim Screenshot: Form ändert nichts an der Einordnung. Zeit: 3 Minuten.
+:::
+
+## Zuschneiden statt kopieren
+
+- Sachfrage und Person trennen: Die Sachfrage geht in den Chat, Anrede und Kundennummer ergänzt die Person, die versendet
+- Die Unterlagen gesondert einordnen: öffentlich, intern oder vertraulich?
+- Datenbedarf festhalten: Welche Angabe, wo liegt sie, welche Kategorie?
+- Zuständige Stelle benennen oder als offenen Punkt notieren
+
+Die praktische Sortierung von zehn Karten folgt in der nächsten Lektion.
+
+::: {.notes}
+Abschluss: Kategorie C heißt nicht ungeeignet, sondern vorher zuschneiden. Alle notieren für den eigenen Kandidaten aus dem Feld Problem, welche Angaben das Ergebnis braucht und welche Person-Angaben weggelassen werden können; zwei Minuten. Wer nicht weiß, wer im eigenen Haus entscheidet, notiert genau diese Frage; sie ist das Ergebnis, kein Versäumnis. Zeit: 4 Minuten.
+:::

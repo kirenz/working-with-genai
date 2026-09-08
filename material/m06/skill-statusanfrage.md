@@ -5,7 +5,7 @@ description: Entwirft eine Antwort auf eine Kundenanfrage zum Sendungsstatus der
 
 # Statusanfrage beantworten (Entwurf)
 
-Kursmaterial „Working with GenAI", Modul 6, Lektion 6.1. Beispiel für eine wiederverwendbare Arbeitsanleitung im Format einer Skill-Datei. Der Kopf mit `name` und `description` folgt dem Aufbau, den Claude Code für Skills beschreibt (<https://code.claude.com/docs/en/skills>, Abruf 07.09.2026). Der Text darunter ist eine normale Arbeitsanleitung und funktioniert unverändert auch als Projekt-Anweisung oder als erste Chatnachricht. Für den Kurs ist keine Installation nötig.
+Kursmaterial „Working with GenAI", Modul 6, Lektion 6.2. Beispiel für eine wiederverwendbare Arbeitsanleitung im Format einer Skill-Datei. Der Kopf mit `name` und `description` folgt dem Aufbau, den Claude Code für Skills beschreibt (<https://code.claude.com/docs/en/skills>, Abruf 08.09.2026). Der Text darunter ist eine normale Arbeitsanleitung und funktioniert unverändert auch als Projekt-Anweisung oder als erste Chatnachricht. Für den Kurs ist keine Installation nötig.
 
 ## Wann diese Anleitung gilt
 
@@ -21,7 +21,7 @@ Eine Kundenanfrage fragt nach dem Verbleib, dem Status oder dem Ankunftstag eine
 
 ## Kontrollpunkt vor der Weitergabe
 
-Der Entwurf ist nur dann fertig, wenn alle vier Punkte zutreffen:
+Dieser Abschnitt leistet für die Anleitung dasselbe wie der Block CHECK in einem einzelnen Prompt. Der Entwurf ist nur dann fertig, wenn alle vier Punkte zutreffen:
 
 - Kein konkreter Ankunftstag im Text, auch nicht „voraussichtlich Freitag".
 - Kein behaupteter Status („ist unterwegs", „wurde zugestellt").

@@ -1,0 +1,112 @@
+---
+title: "Chat, Projekt, Agent oder Workflow?"
+subtitle: "Modul 6 · Lektion 6.1"
+book-source: "../../transfer/arbeitsweise-waehlen.qmd"
+---
+
+## Vier Arbeitsweisen, keine Leiter {.stage}
+
+[Modul 6 · Wiederverwenden und Arbeitsabläufe gestalten]{.kicker}
+
+Bis hierher: Auftrag hineinschreiben, Material dazu, Ergebnis herauskopieren.
+
+Daneben stehen drei weitere. Welche passt, hängt an der **Aufgabe**, nicht am Können.
+
+Und es sind keine getrennten Produktkategorien: Ein Chatfenster kann Dateien und Verbindungen nutzen, ein Projekt ist ein Chat mit hinterlegten Anweisungen.
+
+::: {.notes}
+Kurze Grundlagenlektion zum Auftakt von Modul 6, bevor gebaut wird. Zwei Vorbemerkungen ernst nehmen. Erstens: keine aufsteigende Stufenleiter; wer im Chat arbeitet, ist nicht Anfängerin, und wer einen Workflow baut, ist nicht weiter. Die Formulierung „Agentic" als Reifegrad bewusst vermeiden. Zweitens: Die vier sind Nutzungsweisen dieses Kurses, keine trennscharfen Produktkategorien. Wer im Raum ein Chatfenster mit Dateizugriff nutzt, hat recht mit dem Einwand, dass die Grenzen verschwimmen; das gehört auf die Folie und nicht weggeredet. Zeit: 2 Minuten.
+:::
+
+## Die vier nebeneinander
+
+| | Chat | Projekt | Arbeitsagent | Workflow |
+|---|---|---|---|---|
+| Aufgabe wechselt | ständig | nein | im selben Bereich | nein |
+| Steuert die Schritte | Person | Person | Werkzeug | fester Ablauf |
+| Ergebnis sieht wer, wann | sofort | sofort | nach dem Lauf, als Datei | nur wer hinsieht |
+| Werkzeug greift auf | Nachricht | Hinterlegtes | Dateien im Ordner | was der Ablauf reicht |
+
+::: {.small}
+Vier Nutzungsweisen dieses Kurses, nicht der Funktionsumfang der Produkte.
+:::
+
+::: {.sources}
+material/m06/arbeitsweise-waehlen.md
+:::
+
+::: {.notes}
+Die Tabelle als Kursnutzung einführen, nicht als Produktvergleich: Ein Chatfenster mit Dateizugriff rückt in der letzten Zeile nach rechts. Dann Zeile für Zeile durchgehen und die dritte betonen: Chat und Projekt sind Bringschuld, ohne Anforderung passiert nichts. Beim Agenten und beim Workflow kann etwas entstehen, ohne dass in diesem Moment jemand hinsieht. Damit verschiebt sich nicht die Technik, sondern die Verantwortungslage. Frage an den Raum: Wer hat schon einmal etwas eingerichtet, das läuft, ohne dass jemand die Ergebnisse liest? Erwartbar sind Beispiele aus Mailregeln oder Berichten. Zeit: 5 Minuten.
+:::
+
+## Workflow und Agent auseinanderhalten
+
+::: {.two-col}
+::: {.card}
+**Workflow**
+
+Die möglichen Pfade stehen vorher fest. Verzweigungen und Wiederholungen sind üblich; ein Schritt kann selbst ein Modell oder einen Agenten enthalten.
+
+Vorher ansehbar. Das erleichtert die Prüfung, ersetzt sie nicht: Daten und Modellausgaben bleiben zu prüfen.
+:::
+::: {.card}
+**Arbeitsagent**
+
+Das Modell steuert seinen eigenen Ablauf und Werkzeugeinsatz.
+
+Beweglicher, braucht Grenzen im Werkzeug statt nur im Auftrag.
+:::
+:::
+
+::: {.sources}
+Anthropic, „Building effective AI agents": anthropic.com/engineering/building-effective-agents
+:::
+
+::: {.notes}
+Die Unterscheidung stammt nicht aus diesem Kurs; das ausdrücklich sagen und die Quelle nennen. Anthropic beschreibt Workflows als Systeme, in denen Sprachmodelle und Werkzeuge über vorgegebene Pfade verbunden sind, und Agenten als Systeme, in denen das Modell seinen eigenen Ablauf und Werkzeugeinsatz selbst steuert. Praktische Folge für den Kurs: Der n8n-Ablauf in 6.3 ist ein Workflow, und zwar der einfachste Fall mit drei Schritten, einem Modellaufruf und ohne Verzweigung. Codex und Claude Code aus der freiwilligen Vertiefung sind Agenten. Keine Aussage darüber treffen, welches der beiden „besser" ist, und den häufigen Kurzschluss vermeiden, ein fester Ablauf sei automatisch geprüft. Zeit: 3 Minuten.
+:::
+
+## Drei Aufgaben, drei Antworten
+
+| Aufgabe | Antwort | Warum |
+|---|---|---|
+| Tagesordnung für die Teamsitzung | Chat | wechselt, selten, kein festes Format |
+| Statusanfragen, mehrmals pro Woche | Projekt | gleiche Regeln, gleiches Material |
+| Prüfbericht als Datei neben dem Material | Arbeitsagent | Ergebnis soll im Ordner bleiben (freiwillig; im Chat mit zwei Handgriffen mehr) |
+
+**Und der Workflow?** Im Lehrfall heute keine Antwort, sondern eine Frage: Er bräuchte einen geschäftlichen Modellzugang, den es nicht gibt.
+
+::: {.notes}
+Die letzte Zeile ist die wichtigste didaktisch: Eine begründete Absage ist ein vollwertiges Ergebnis der Abwägung. Das nimmt Druck aus der Frage, ob man in Modul 6 „etwas Automatisiertes vorzeigen" muss. Die dritte Zeile mit der freiwilligen Vertiefung verknüpfen, ohne sie zur Pflicht zu machen. Zeit: 3 Minuten.
+:::
+
+## Die fünfte Möglichkeit: keine
+
+Eine exakt **regelgebundene** Aufgabe ist mit Textvorlage, Tabellenformel oder gewöhnlicher Automatisierung oft besser bedient.
+
+Dieselbe Eingabe liefert dann dasselbe Ergebnis; die Prüfung richtet sich auf Regel und Eingabedaten statt auf jede Ausgabe. Ganz ohne Prüfung geht es nicht: Eine falsche Formel rechnet zuverlässig falsch.
+
+Ein Sprachmodell lohnt sich, wo **Sprache, Vielfalt oder Einordnung** gefragt sind.
+
+::: {.notes}
+Diese Folie ist bewusst gegen den Erwartungsdruck gebaut. Beispiel nennen, das im Raum funktioniert: Eine Rechnungsnummer aus einer Vorlage zu erzeugen braucht kein Sprachmodell, eine Absage freundlich zu formulieren schon. Wer in der Reflexion zu dem Ergebnis kommt, dass gar kein Modell nötig ist, hat die Aufgabe richtig gelöst und dokumentiert das mit derselben Begründungstiefe. Zeit: 2 Minuten.
+:::
+
+## Was die Wahl nicht ändert
+
+1. Der Auftrag behält **Task, Context, Format, Check**, gleich wo er steht
+2. Die **Datenregel** aus Modul 5 gilt weiter; ein Projekt ist kein Freigabenachweis, ein Ordner auch nicht
+3. Die **Verantwortung** bleibt bei einem Menschen; automatische Prüfschritte sind möglich und verschieben nur, wo eine Person hinsehen muss
+
+Es ändert sich vor allem, wie leicht die Prüfung ausgelassen werden kann.
+
+::: {.notes}
+Der Abschluss der Lektion und die Klammer zu Modul 5. Punkt 3 ist der Satz, der hängen bleiben soll: Je weiter das Ergebnis von der Person wegrückt, die es verantwortet, desto ausdrücklicher muss geregelt sein, wer es liest. Selbstlernaufgabe ankündigen: für das eigene Vorhaben in drei Sätzen festhalten, welche Arbeitsweise passt, woran die Antwort hängt und was sich ändern müsste, damit eine andere passt. Diese Einschätzung wird am Ende des Moduls für die Transferkarte gebraucht. Zeit: 2 Minuten.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 6.1, Working with GenAI: transfer/arbeitsweise-waehlen
+- Material: material/m06/arbeitsweise-waehlen.md
+- Anthropic, Building effective AI agents: anthropic.com/engineering/building-effective-agents (Abruf 08.09.2026)
+- Keine Aussage über Preise, Tarife oder Funktionsumfang einzelner Produkte; Verfügbarkeit ist kontoabhängig

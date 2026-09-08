@@ -1,9 +1,9 @@
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot. Gültig sind ausschließlich die folgenden Angaben.
+
 Fachinformationen:
 - Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
 - Kaffee-Abo, Sorten: Alle drei Sorten sind im Abo wählbar.
@@ -37,7 +37,7 @@ ENDE BEISPIEL
 
 Zusätzlich: höchstens 120 Wörter, je Frage ein eigener Absatz, eine Bedingung steht im selben Satz wie die Zusage. Am Ende, nach der Signatur, eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
-- Fragen, die das Material nicht abdeckt, nicht beantworten, sondern im Text als nicht vorliegend benennen und unter "Offen" eintragen.
+CHECK
+- Fragen, die der Context nicht abdeckt, nicht beantworten, sondern im Text als nicht vorliegend benennen und unter "Offen" eintragen.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts.
 - Behaupte keine erledigte oder veranlasste Handlung. Erfinde keine Termine, Preise oder Fristen.

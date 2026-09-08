@@ -1,0 +1,87 @@
+# Verzerrungen und unfaire Ergebnisse
+
+Ein Ergebnis kann sachlich stimmen und trotzdem schief sein. Es kann eine Seite ausführlich und die andere knapp darstellen, eine Reihenfolge als Rangfolge lesen lassen, aus einem Merkmal eine Eigenschaft machen oder eine Gruppe gar nicht erwähnen. Solche Schieflagen können bei der Prüfung „Steht das im Material?" durchrutschen, weil jeder einzelne Satz gedeckt sein kann. Dieses Kapitel erklärt, wo sie herkommen, wie sie sichtbar werden und wo besondere Sorgfalt gilt: bei Aussagen über Personen.
+
+## Vier Stellen, an denen eine Schieflage entsteht
+
+Es hilft, die möglichen Ursachen auseinanderzuhalten, weil jede eine andere Gegenmaßnahme hat.
+
+**Das Material.** Wer sechs Kundenstimmen mitgibt, von denen fünf begeistert sind, kann ein begeistertes Bild zurückbekommen, und zwar völlig regelkonform: Die Schieflage steckt dann nicht im Ergebnis, sondern in der Auswahl davor. Zwingend ist das nicht, ein Ergebnis kann die eine kritische Stimme auch hervorheben. Ähnlich bei einer Angebotsübersicht, in der ein Anbieter ein zehnseitiges Datenblatt beisteuert und ein anderer eine halbe Seite: Der Umfang im Ergebnis folgt oft dem Umfang im Material, und ob das gerechtfertigt ist, hängt daran, wie viel davon zur Frage gehört.
+
+**Der Auftrag.** Formulierungen tragen Wertungen mit. „Warum ist das Abo für Vielbesteller die bessere Wahl?" ist keine Frage, sondern eine These mit Fragezeichen; sie legt das Ergebnis nahe, statt es zu erfragen. „Wodurch unterscheiden sich Abo und Einzelbestellung für Vielbesteller?" ist dieselbe Aufgabe ohne vorweggenommenes Ergebnis. Auch eine Rolle im Context wirkt: „Du bist eine erfahrene Vertriebsleiterin" rückt die Vertriebssicht nach vorn. Eine ausgewogene Antwort schließt das nicht aus, aber die Aufgabe verlangt sie dann nicht mehr.
+
+**Das Format.** Eine Vorgabe wie „drei Vorteile und ein Nachteil" gibt ein Verhältnis vor, das mit der Sachlage nichts zu tun haben muss; umgekehrt macht ein ausgeglichenes Verhältnis eine Darstellung nicht ausgewogen. Eine nummerierte Liste kann als Rangfolge verstanden werden, auch wenn keine gemeint ist; wenn die Reihenfolge nichts bedeutet, gehört das dazugeschrieben. Und knapper Platz zwingt zum Weglassen, wobei das Modell entscheidet, was wegfällt.
+
+**Das Modell selbst.** Ein Sprachmodell setzt Text fort, der zur Anfrage passt, auf Grundlage dessen, woran es trainiert wurde. Welche Muster darin liegen, können wir von außen nicht einsehen. Deshalb behaupten wir hier nichts über konkrete Trainingsinhalte und leiten aus einer einzelnen schiefen Ausgabe auch keine Ursache ab. Was wir sagen können: Ein Ergebnis, das wir nicht selbst geprüft haben, ist keine neutrale Zusammenfassung der Welt, sondern eine Fortsetzung unseres Auftrags mit unserem Material.
+
+## Ein kurzes kommentiertes Beispiel
+
+Ellen Ruppert braucht eine Ausschreibung für eine Aushilfe im Lager. Sie gibt die Eckdaten mit: 15 Stunden pro Woche, Arbeitszeit nach Absprache, Kommissionieren und Verpacken, Hebehilfen vorhanden, Einarbeitung durch das Team, kein Abschluss und keine Vorerfahrung vorausgesetzt. Eckdaten, Entwurf und die vollständige Fundstellentabelle stehen als [Lehrbeispiel](../material/m05/ausschreibung-verzerrt.md) bereit. Der folgende Entwurf ist konstruiert, kein aufgezeichneter Modelloutput:
+
+> **Aushilfe (m/w/d) für unser Lager gesucht**
+>
+> Du bist jung, dynamisch und packst gerne mit an? Für unser eingespieltes Team suchen wir einen belastbaren Kollegen, der auch mal 25 Kilo hebt und Deutsch als Muttersprache mitbringt. Berufserfahrung im Lager ist Pflicht.
+
+Der Entwurf ist ein Lehrbeispiel und deutlich zugespitzt; „jung, dynamisch" und „Deutsch als Muttersprache" sind keine feinen Nuancen, sondern Anknüpfungen an Alter und Herkunft, die im Alltag auffallen sollten. Interessant ist er trotzdem, weil er zeigt, wie weit die Prüfung auf Belegbarkeit trägt.
+
+Sie trägt weiter, als es zunächst scheint: Alter, Sprachanforderung, Gewichtsangabe und Berufserfahrung kommen in den Eckdaten allesamt nicht vor. Wer konsequent fragt „Steht das in den Eckdaten?", streicht sie schon deshalb. Was diese Frage nicht fängt, sind zwei andere Dinge. Erstens die durchgehend männliche Ansprache: „einen belastbaren Kollegen" kann den angesprochenen Personenkreis verengen, auch wenn in der Überschrift „(m/w/d)" steht; wie das rechtlich zu bewerten ist, entscheidet die zuständige Stelle. Zweitens die Auslassungen: Arbeitszeit nach Absprache, Einarbeitung und Hebehilfen stehen in den Eckdaten und fehlen im Text, und gerade sie hätten den Kreis derer erweitert, die sich angesprochen fühlen.
+
+Für Stellenausschreibungen ist das kein Geschmacksurteil. Das Allgemeine Gleichbehandlungsgesetz nennt in [§ 1 AGG](https://www.gesetze-im-internet.de/agg/__1.html) als Gründe, aus denen Benachteiligungen verhindert werden sollen, Rasse oder ethnische Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter und sexuelle Identität; [§ 7 AGG](https://www.gesetze-im-internet.de/agg/__7.html) verbietet die Benachteiligung Beschäftigter aus diesen Gründen. Ob eine konkrete Formulierung darunterfällt, entscheidet nicht dieser Kurs; die Zuständigkeit dafür gehört benannt.
+
+## Wie eine Schieflage sichtbar wird
+
+Vier Handgriffe helfen dabei. Sie kosten wenig Zeit und finden nicht alles; sie machen Stellen sichtbar, die anschließend beurteilt werden.
+
+**Gegenprobe mit vertauschten Rollen.** Denselben Auftrag einmal mit umgedrehter Blickrichtung stellen: die Nachteile des Abos statt der Vorteile, die Sicht der Lieferantin statt der eigenen, die Bewerberin statt des Betriebs. Was im zweiten Durchlauf auftaucht und im ersten fehlte, ist ein Kandidat zum Nachsehen. Ein Beleg ist es nicht: Zwei Durchläufe unterscheiden sich schon deshalb, weil die Frage eine andere war. Ob der Punkt in den ersten Text gehört, entscheidet die Sache, nicht der Vergleich.
+
+**Zählen statt schätzen.** Wie viele Sätze bekommt Seite A, wie viele Seite B? Wie viele der genannten Stimmen sind zustimmend? Eine Zahl macht ein Ungleichgewicht sichtbar, wo ein Eindruck vage bleibt. Sie beweist nichts: Eine Seite kann zu Recht mehr Raum bekommen, weil mehr belegtes Material zur Frage gehört. Die Zahl ist der Anlass, nach dem Grund zu fragen.
+
+**Merkmale streichen.** Alle Personenmerkmale aus dem Ergebnis entfernen und lesen, ob die Aussage noch trägt. Wenn nicht, war das Merkmal die Begründung, und das ist genau der Punkt, an dem aus einer Beschreibung eine Zuschreibung wird.
+
+**Nach dem Fehlenden fragen.** Wer oder was kommt nicht vor? Die Nachtschicht, die Teilzeitkräfte, der kleine Lieferant ohne Datenblatt, die unzufriedene Kundin. Dieser Handgriff ist der schwerste, weil Fehlendes nicht ins Auge springt; eine feste Liste möglicher Betroffener aus dem eigenen Bereich hilft mehr als das bloße Nachdenken.
+
+Diese vier Handgriffe lassen sich auch als Auftrag formulieren, und genau das ist der Punkt, an dem Vorsicht angebracht ist: Ein Modell, das seine eigene Ausgabe auf Verzerrungen prüfen soll, ist keine unabhängige Instanz. Es kann Kandidaten benennen, die wir übersehen hätten. Ob sie zutreffen, entscheiden wir. Der vollständige Auftrag dafür steht als [Textdatei](../material/m05/prompt-verzerrungen-pruefen.txt) bereit:
+
+```text
+TASK
+Lies den Text unten und benenne Stellen, an denen er einseitig, wertend oder ausschließend wirkt. Nenne zu jeder Stelle einen konkreten Vorschlag für eine neutrale Formulierung.
+
+CONTEXT
+Der Text ist ein Entwurf, der noch nicht veröffentlicht ist. Du gibst keine rechtliche Einordnung ab und entscheidest nicht, ob eine Formulierung zulässig ist.
+
+Entwurf:
+[Text einfügen]
+
+Eckdaten, die tatsächlich vorliegen:
+[nur die Angaben einfügen, die dem Entwurf zugrunde liegen]
+
+FORMAT
+Tabelle mit vier Spalten: Fundstelle im Wortlaut, Art der Auffälligkeit (Wertung, Verallgemeinerung, Personenmerkmal, Auslassung, ungedeckte Angabe), Vorschlag, ein Satz Begründung.
+Darunter eine Liste "Nicht erwähnt" mit Gruppen, Sichtweisen oder Fällen, die im Entwurf fehlen könnten.
+
+CHECK
+- Führe jede Stelle mit ihrem Wortlaut auf, nicht als Zusammenfassung.
+- Trenne ungedeckte Angaben von Formulierungsfragen; ungedeckt ist, was in den Eckdaten nicht vorkommt.
+- Schreibe den Entwurf nicht neu und gib keine Gesamtbewertung ab.
+- Nenne keine Rechtsnormen und triff keine Aussage darüber, was zulässig ist.
+```
+
+Der CHECK-Teil sagt, was das Modell tun soll. Die Entscheidung darüber, welche der genannten Stellen wirklich geändert werden, bleibt bei uns, und sie fällt gegen die vorliegenden Eckdaten. Eine Fundstelle, die das Modell nicht nennt, ist damit nicht ausgeräumt: Eine Liste ohne Treffer heißt, dass dieser Durchlauf nichts gefunden hat, nicht, dass nichts da ist.
+
+::: {.callout-important title="Aussagen über Personen sind ein eigener Fall"}
+Beschreiben, vergleichen und formulieren ist eine Sache. Über eine Person entscheiden ist eine andere. Wer eine Bewerbung bewerten, eine Leistung einschätzen, eine Kündigung begründen oder eine Kreditwürdigkeit einordnen lässt, verlässt den Bereich, den dieser Kurs übt. Für ausschließlich automatisierte Entscheidungen mit rechtlicher Wirkung oder ähnlich erheblicher Beeinträchtigung gibt es einen eigenen Rahmen in Artikel 22 der Datenschutz-Grundverordnung ([Verordnung (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj)), und beschäftigungsbezogene KI-Systeme führt der AI Act in Anhang III als Hochrisiko-Systeme; die zugehörigen Pflichten gelten nach der Änderung durch den AI-Omnibus ab dem 2. Dezember 2027 ([Europäische Kommission, AI Omnibus enters into force](https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force), Abruf 08.09.2026). Was davon einen konkreten Fall betrifft, klärt die zuständige Stelle. Für den Kurs gilt die einfache Grenze: Entwürfe ja, Entscheidungen über Menschen nein.
+:::
+
+## Was sich daraus für den eigenen Fall ergibt
+
+Wie viel Prüfung eine Aufgabe braucht, hängt von ihr ab. Am wichtigsten ist sie dort, wo ein Ergebnis eine Wahl nahelegt, eine Gruppe beschreibt oder nach außen geht: Ausschreibungen, Kundenkommunikation, Anbietervergleiche, Auswertungen von Rückmeldungen, alles, was in eine Entscheidungsvorlage einfließt. Bei einer Übersicht, die nur intern feststehende Termine zusammenstellt, genügt in der Regel weniger. Auch dort lohnt aber ein zweiter Blick, sobald Menschen darin vorkommen: Eine Terminplanung, die Schicht- oder Teilzeitmodelle stillschweigend übergeht, trifft eine Annahme über Personen.
+
+Als Notiz für die Risiko-Tabelle am Ende dieses Moduls genügt ein Satz: An welcher Stelle des eigenen Vorhabens könnte ein Ergebnis einseitig werden, wer würde das merken, und woran? Wer keine Stelle findet, hält das ebenfalls fest, mit Begründung.
+
+## Kontrollpunkt für Modul 5
+
+- Material, Auftrag, Format und Modell als vier verschiedene Ursachen einer Schieflage unterscheiden
+- Erkennen, dass ein Ergebnis vollständig durch das Material gedeckt und trotzdem einseitig sein kann
+- Gegenprobe, Zählen, Merkmale streichen und die Frage nach dem Fehlenden als Prüfhandgriffe anwenden
+- Ein Modell zur Suche nach Kandidaten einsetzen, ohne seine Liste für vollständig oder für ein Urteil zu halten
+- Beschreiben und Formulieren von Entscheidungen über Personen abgrenzen und die Klärung benennen, statt sie zu treffen

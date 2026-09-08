@@ -2,6 +2,8 @@
 
 Der Kurs endet am 8. Oktober; der Fall nicht. In diesem Kapitel schreiben wir die ersten 30 Tage danach als Transferkarte auf, mit Schritten, Beteiligten, einem Erfolgsmaß, das nach vier Wochen ablesbar ist, und einem Rückblicktermin. Und wir bereiten die fünfminütige Präsentation vor, in der die vier Teile des Portfolios gezeigt werden.
 
+Zusammen mit der Automatisierungsentscheidung aus dem vorigen Kapitel ist das die eigene Arbeit, die Modul 6 verlangt. Die Startpaket-Vertiefung und der freiwillige Praxispfad kommen nicht hinzu; wer sie gegangen ist, führt sie als Zeile in der Karte.
+
 ## Der Anlass: Aylin will eine Entscheidung, keinen Eindruck
 
 Aylin Yılmaz hat in fünf Modulen Aktennotizen, Testfälle und eine Automatisierungsentscheidung bekommen. Jetzt will sie von Sina Bergmann und Ellen Ruppert eine Antwort auf eine einzige Frage: Was passiert in den nächsten 30 Tagen mit den Kundenservice-Entwürfen, und woran erkennen wir am Ende, ob es sich gelohnt hat? Sie will keinen Eindruck („läuft gut"), sondern eine Tabelle, die am 11. November auf dem Tisch liegt.
@@ -63,25 +65,26 @@ Zwei Merkmale machen diese Tabelle brauchbar. Jede Zeile hat ein sichtbares Erge
 Bevor die Karte ins Portfolio geht, lassen wir uns Fragen stellen. Der Auftrag verlangt drei Rückfragen, wie eine erfahrene Kollegin sie nach der Präsentation stellen würde, und prüft je Erfolgsmaß, ob es nach vier Wochen ablesbar ist. Er steht als [Textdatei](../material/m06/prompt-kritischer-zuhoerer.txt) bereit; unten die Kurzfassung.
 
 ```text
-Du bist eine kritische Zuhörerin in einer Präsentationsrunde. Du bewertest nicht und gibst keine Rechts- oder Fachauskunft. Du stellst Fragen.
-
-AUFGABE
+TASK
 Lies die unten stehende 30-Tage-Transferkarte. Formuliere drei Rückfragen, die eine erfahrene Kollegin nach einer fünfminütigen Präsentation dieser Karte stellen würde. Prüfe außerdem für jedes Erfolgsmaß, ob es nach vier Wochen aus einer geführten Tabelle ablesbar wäre, und benenne, was dafür noch fehlt.
 
-MATERIAL
+CONTEXT
+Du bist eine kritische Zuhörerin in einer Präsentationsrunde. Du bewertest nicht und gibst keine Rechts- oder Fachauskunft. Du stellst Fragen.
+
 30-Tage-Transferkarte:
 [die Karte aus Schritt 2 und 3 in Kurzform]
 
 FORMAT
 Zuerst die drei Rückfragen als nummerierte Liste, jede höchstens zwei Sätze. Danach eine Tabelle mit den Spalten Erfolgsmaß, ablesbar nach vier Wochen (ja/nein), was fehlt.
 
-GRENZEN
+CHECK
+- Benenne bei jedem Erfolgsmaß ausdrücklich, was für die Ablesbarkeit noch fehlt, statt eine Lücke zu überspielen.
 - Stelle Fragen, gib keine Empfehlungen und keine Bewertung.
 - Triff keine Aussagen darüber, was rechtlich zulässig ist.
 - Erfinde keine Zahlen oder Vergleichswerte.
 ```
 
-Beim Lesen achten wir darauf, ob das Ergebnis Empfehlungen oder Zahlen enthält, die wir nicht geliefert haben. Beides streichen wir. Die Fragen behalten wir; die besten davon beantworten wir in der Karte, die übrigen nehmen wir als vorbereitete Rückfragen in die Präsentation.
+Die vier CHECK-Zeilen sagen dem Modell, was es tun soll; ob es sich daran hält, entscheidet unsere Prüfung danach. Beim Lesen achten wir deshalb darauf, ob das Ergebnis Empfehlungen oder Zahlen enthält, die wir nicht geliefert haben. Beides streichen wir. Die Fragen behalten wir; die besten davon beantworten wir in der Karte, die übrigen nehmen wir als vorbereitete Rückfragen in die Präsentation.
 
 ### Ein konstruiertes Ergebnis zum Abgleich
 
@@ -118,16 +121,17 @@ Fünf Regeln: ein Fall, nicht drei; zeigen statt beschreiben, also Prompt, Testf
 Ein Probelauf mit Timer, laut, mit der Mappe auf dem Bildschirm. Liegt ein Teil über Plan, wird gekürzt, nicht schneller gesprochen. Im Recap-Termin stellt jede Person ihren Fall vor; nach jeder Präsentation gibt eine andere Person eine Rückfrage oder einen Hinweis. Wer möchte, verabredet sich zu zweit für den Rückblicktermin: eine kurze Nachricht am Tag des Rückblicks mit dem Stand des eigenen Plans. Die Kohorte ist klein; das ist der Vorteil.
 :::
 
-### Eine eigene Variante bauen
+### Die Transferaufgabe für Modul 6
 
 1. Wir schreiben die Nutzenhypothese für den eigenen Fall: was besser wird, als Annahme, und was noch offen ist.
 2. Wir zerlegen die 30 Tage in Wochenschritte mit Rolle, Datum und sichtbarem Ergebnis. Die Klärungen aus Modul 5 kommen in Woche 1.
 3. Wir wählen zwei bis drei Erfolgsmaße, die nach vier Wochen aus einer geführten Tabelle ablesbar sind, davon mindestens eines zu Qualität oder gefundenen Fehlern.
-4. Wir nennen Risiken mit Ausweichweg und legen den Rückblicktermin fest.
-5. Wir lassen uns drei Rückfragen stellen, streichen Empfehlungen und Zahlen, beantworten die besten Fragen in der Karte.
-6. Wir übernehmen die Karte in **Portfolio-Teil 4** und machen einen Probelauf der Präsentation mit Timer.
+4. Wir tragen die Automatisierungsentscheidung als eine Zeile ein: welche Arbeitsweise der Fall bekommt, ab wann, und unter welcher Bedingung das erneut geprüft wird.
+5. Wir nennen Risiken mit Ausweichweg und legen den Rückblicktermin fest.
+6. Wir lassen uns drei Rückfragen stellen, streichen Empfehlungen und Zahlen, beantworten die besten Fragen in der Karte.
+7. Wir übernehmen die Karte in **Portfolio-Teil 4** und machen einen Probelauf der Präsentation mit Timer.
 
-Der freiwillige Praxispfad mit Codex oder Claude Code und eine Vertiefung des n8n-Workflows gehören in die eigene Erprobungszeit. Sie addieren keine Stunden zum Kurs und sind keine Voraussetzung für die Prüfungsleistung. Wer sie geht, kann sie als Schritt in der Transferkarte führen; wer nicht, verliert nichts.
+Der freiwillige Praxispfad mit Codex oder Claude Code, die Vertiefung des n8n-Workflows und das eigene Startpaket gehören in die eigene Erprobungszeit. Sie addieren keine Stunden zum Kurs und sind keine Voraussetzung für die Prüfungsleistung. Wer sie geht, kann sie als Schritt in der Transferkarte führen; wer nicht, verliert nichts.
 
 ## Fehler diagnostizieren
 

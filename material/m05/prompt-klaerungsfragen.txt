@@ -1,21 +1,21 @@
-Du unterstützt die Geschäftsführung der Rösterei Morgenrot bei der Vorbereitung einer Klärung. Du gibst keine Rechtsauskunft.
-
-AUFGABE
+TASK
 Lies die unten stehende Risiko-Tabelle. Formuliere zu jeder Zeile genau zwei Fragen, die die Rösterei der jeweils zuständigen Stelle stellen sollte, damit die Zeile verbindlich geklärt werden kann. Markiere außerdem jede Zeile, in der die zuständige Stelle als "nicht benannt" oder "offen" geführt wird.
 
-MATERIAL
+CONTEXT
+Du unterstützt die Geschäftsführung der Rösterei Morgenrot bei der Vorbereitung einer Klärung. Du gibst keine Rechtsauskunft.
+
 Risiko-Tabelle:
 1. Personenbezogene Daten im Prozess. Einschätzung: In das Chatkonto geht nur die Kundenfrage im Wortlaut, bereinigt vor dem Chatfenster; besonders geschützte Angaben werden entfernt. Zuständig: Konto und Freigabe Geschäftsführung; datenschutzrechtliche Einordnung nicht benannt, externe Beratung zu beauftragen.
 2. Genutztes Konto / Vertragslage. Einschätzung: Kostenloses Einzelkonto ohne Vereinbarung; Einstellungen zu Speicherung und Training zu prüfen. Zuständig: Verwaltung (Vertragslage), Geschäftsführung (Entscheidung).
 3. Rechte an Eingaben und Ergebnissen. Einschätzung: Nur eigenes und lizenziertes Material; Stockfotos nicht in Bildgeneratoren; Ergebnisse auf fremde Anteile geprüft. Zuständig: Lizenzen Marketing; rechtliche Einordnung externe Rechtsberatung, offen.
 4. Transparenz gegenüber Empfängern. Einschätzung: Jede Mail wird geprüft und selbst versendet; keine pauschale Kennzeichnung; Kenntlichmachung, wo relevant oder vorgeschrieben. Zuständig: Geschäftsführung; Anwendbarkeit von Artikel 50 AI Act externe Rechtsberatung, offen.
-5. Verbleibende Risiken. Einschätzung: Unbelegte Angaben trotz Grenzen; veraltetes Material; Umgehung der Regel. Umgang: Prüfroutine, Materialpflege, Rückblick nach 30 Tagen. Zuständig: Kundenservice (Prüfung), Geschäftsführung (Rückblick).
+5. Verbleibende Risiken. Einschätzung: Unbelegte Angaben trotz Check; veraltetes Material; Umgehung der Regel. Umgang: Prüfroutine, Materialpflege, Rückblick nach 30 Tagen. Zuständig: Kundenservice (Prüfung), Geschäftsführung (Rückblick).
 
 FORMAT
 Tabelle mit drei Spalten: Zeile, Frage 1, Frage 2. Darunter eine Liste "Ohne benannte Stelle" mit den Zeilennummern.
 
-GRENZEN
+CHECK
+- Wenn eine Zeile bereits vollständig geklärt wirkt, stelle trotzdem zwei Fragen, die die Klärung belegen würden.
 - Formuliere ausschließlich Fragen. Beantworte sie nicht.
 - Triff keine Aussage darüber, was rechtlich zulässig oder vorgeschrieben ist.
 - Erfinde keine Gesetzesartikel, Fristen oder Behördennamen.
-- Wenn eine Zeile bereits vollständig geklärt wirkt, stelle trotzdem zwei Fragen, die die Klärung belegen würden.

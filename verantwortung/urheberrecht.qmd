@@ -2,6 +2,8 @@
 
 Jonas Halder will einen Blogbeitrag über Filterkaffee Mild schreiben und hat dafür Material gesammelt: ein Fachbuch, eine Produktseite der Konkurrenz, ein Stockfoto, Röstnotizen, einen Wiki-Absatz und Kundenbewertungen. In diesem Kapitel sortieren wir dieses Material, bevor irgendetwas in einen Prompt geht, und prüfen danach das Ergebnis auf fremde Anteile.
 
+Der Fall ist ein Textfall, weil sich daran am besten zeigen lässt, wie Formulierungen wandern. Dieselbe Sortierung fällt aber überall dort an, wo fremdes Material in einen Auftrag kommt: bei einer Folienreihe mit Grafiken aus einem Fachartikel, bei einer Zusammenfassung technischer Normen, bei einer Übersicht aus Lieferantendatenblättern. Auch eine Tabelle oder ein Diagramm kann fremdes geistiges Eigentum enthalten.
+
 ## Das Quellenpuzzle
 
 Alle sechs Quellen sind für diesen Kurs erfunden; das Fachbuch, der Mitbewerber, der Bildanbieter und die Bewertungen existieren nicht. Die vollständigen Texte stehen im [Quellenpuzzle](../material/m05/quellenpuzzle-jonas.md). Hier die Kurzfassung:
@@ -54,12 +56,12 @@ Eine Bibliothek darf jedes Buch im Regal haben, und wir dürfen jedes lesen. Ein
 Der Auftrag enthält D, E und die Sortimentsangabe. Er verlangt hinter jedem Absatz die Quelle und verbietet Absätze ohne Quelle. Er steht als [Textdatei](../material/m05/prompt-quellen-kennzeichnen.txt) bereit.
 
 ```text
-Du unterstützt das Marketing der Rösterei Morgenrot.
-
-AUFGABE
+TASK
 Entwirf einen kurzen Blogbeitrag mit dem Arbeitstitel "Warum Filterkaffee Mild so schmeckt, wie er schmeckt".
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt das Marketing der Rösterei Morgenrot. Gültig sind ausschließlich die folgenden Angaben.
+
 Röstnotizen aus Röstung und Produktion, freigegeben:
 - Filterkaffee Mild: mittelhelle Röstung, Röstende bei erstem Crack plus kurze Nachröstphase.
 - Zielprofil: wenig Bitterkeit, weiche Säure, Noten von Milchschokolade und getrockneter Aprikose.
@@ -73,23 +75,23 @@ Sortiment: Filterkaffee Mild kostet im Onlineshop regulär 9,00 EUR.
 
 FORMAT
 Blogbeitrag, 180 bis 220 Wörter, Überschrift plus drei kurze Absätze, sachlich und freundlich, keine Superlative.
-Hinter jedem Absatz in eckigen Klammern die Quelle des Absatzes: [Röstnotizen], [Kaffeewiki] oder [Sortiment]. Absätze ohne Quelle im Material sind nicht erlaubt.
+Hinter jedem Absatz in eckigen Klammern die Quelle des Absatzes: [Röstnotizen], [Kaffeewiki] oder [Sortiment]. Absätze ohne Quelle im Context sind nicht erlaubt.
 Am Ende eine Liste "Offen" mit Angaben, die für den Beitrag noch fehlen.
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze keine Fakten zu Röstchemie, Herkunft, Anbau oder Gesundheit.
-- Übernimm keine Formulierungen, die nicht im Material stehen, als Zitat. Der Wiki-Absatz darf sinngemäß verwendet werden; wenn er wörtlich übernommen wird, kennzeichne ihn als Zitat mit Quellenangabe.
+CHECK
+- Verwende ausschließlich Angaben aus dem Context. Ergänze keine Fakten zu Röstchemie, Herkunft, Anbau oder Gesundheit; was für den Beitrag fehlt, gehört unter "Offen".
+- Übernimm keine Formulierungen, die nicht im Context stehen, als Zitat. Der Wiki-Absatz darf sinngemäß verwendet werden; wenn er wörtlich übernommen wird, kennzeichne ihn als Zitat mit Quellenangabe.
 - Keine Vergleiche mit anderen Anbietern.
 - Erfinde keine Kundenstimmen.
 ```
 
-Die Quellenkennzeichnung hinter jedem Absatz ist der Prüfhebel dieses Kapitels. Sie macht sichtbar, aus welchem Material ein Absatz stammt, und ein Absatz ohne Quelle fällt sofort auf. Was sie nicht leistet: Sie garantiert nicht, dass der Absatz seine Quelle korrekt wiedergibt. Das lesen wir nach.
+Die Quellenkennzeichnung hinter jedem Absatz ist der Prüfhebel dieses Kapitels. Sie macht sichtbar, aus welcher Quelle im Context ein Absatz stammen soll, und ein Absatz ohne Quelle fällt sofort auf. Was sie nicht leistet: Sie garantiert nicht, dass der Absatz seine Quelle korrekt wiedergibt, und der CHECK-Teil garantiert nicht, dass keine fremde Formulierung im Text landet. Beides sind Anweisungen an das Modell. Ob sie eingehalten sind, entscheidet der Schritt danach, und den machen wir selbst.
 
 ### Schritt 3 — Das Ergebnis auf fremde Anteile lesen
 
 Wir prüfen den Entwurf in dieser Reihenfolge:
 
-1. **Absätze ohne Quelle oder mit falscher Quelle.** Trägt die Quelle den Absatz? Ein Satz über Maillard-Reaktion oder Säureabbau kann nur aus dem Fachbuch stammen, das nicht im Material war.
+1. **Absätze ohne Quelle oder mit falscher Quelle.** Trägt die Quelle den Absatz? Ein Satz über Maillard-Reaktion oder Säureabbau kann nur aus dem Fachbuch stammen, das nicht im Context war.
 2. **Fremd klingende Sätze.** Auffällig fertige Formulierungen wie „nicht laut sein muss, um gehört zu werden" gegen Quelle B lesen. Ein Chatmodell kann Formulierungen erzeugen, die bekannten Texten nahekommen, auch ohne dass wir sie mitgegeben haben.
 3. **Wiki-Absatz.** Sinngemäß oder wörtlich? Wenn wörtlich: Zitat gekennzeichnet, Quelle genannt, Lizenzhinweis im Beitrag vorgesehen?
 4. **Nicht freigegebene Angaben.** Steht ein Herkunftsland oder ein Erntejahr im Text? Dann hat das Modell ergänzt.
@@ -115,24 +117,24 @@ Drei Merkmale: Jeder Absatz hat eine Quelle, die ihn trägt. Der erste Absatz gi
 Ob ein rein maschinell erzeugter Text selbst ein geschütztes Werk ist, ist eine offene Rechtsfrage; der Werkbegriff des § 2 UrhG setzt eine persönliche Schöpfung voraus. Für die Rösterei ist etwas anderes wichtiger: Fremde geschützte Anteile im Ergebnis bleiben fremd, ganz gleich, wer den Text zusammengesetzt hat. Was der Anbieter zur Weiterverwendung von Ergebnissen sagt, steht in seinen Nutzungsbedingungen und ist vor einer Veröffentlichung zu lesen. Beides gehört als offene Frage mit Zuständigkeit ins Portfolio, nicht als Annahme in den Beitrag.
 :::
 
-### Eine eigene Variante bauen
+### Für den eigenen Fall: eine Zeile, fünf Minuten
 
-Wir nehmen den eigenen Fall und listen alle Quellen auf, die im Material stecken oder stecken könnten: eigene Vorlagen, Lieferantenunterlagen, Normen, Fachartikel, Bilder, Beiträge Dritter.
+Auch dieses Kapitel liefert eine Zeile für die Risiko-Tabelle am Ende des Moduls, nicht eine zweite eigene Übung. Dafür genügt eine Liste der Quellen, die im eigenen Material stecken oder stecken könnten: eigene Vorlagen, Lieferantenunterlagen, Normen, Fachartikel, Bilder, Beiträge Dritter. Daneben in Stichworten, welche davon eigen oder lizenziert sind, welche nur „gefunden" sind und deshalb draußen bleiben, und was ungeklärt ist.
 
-1. Wir bewerten jede Quelle mit den drei Fragen: geschützt, lizenziert oder erlaubt, gesetzliche Ausnahme.
-2. Wir streichen aus dem Auftrag alles, was nur „gefunden" ist, und behalten, was eigen oder lizenziert ist.
-3. Wir verlangen im Format eine Quellenkennzeichnung je Absatz oder je Aussage.
-4. Wir führen den Auftrag aus und prüfen den Entwurf nach Schritt 3.
-5. Wir tragen die Ergebnisse in **Portfolio-Teil 3** ein, Zeile „Rechte an Eingaben und Ergebnissen": Welche fremden Inhalte sind im Material, wie wurde damit umgegangen, was ist offen, wer klärt es.
+Das ergibt die Zeile „Rechte an Eingaben und Ergebnissen" in **Portfolio-Teil 3**, zusammen mit der Frage, wer die offenen Punkte klärt.
 
-Eine eigene Variante lohnt sich besonders, wenn der eigene Fall Bilder enthält. Dann lesen wir den Lizenztext des Bildanbieters auf die Wörter „Bearbeitung", „automatisiert" und „Training", bevor ein Bild in ein Werkzeug geht.
+### Freiwillige Vertiefung: den eigenen Auftrag auf Quellen umstellen
+
+Wer im eigenen Fall regelmäßig Texte oder Bilder aus fremdem Material erzeugt, geht den Weg dieses Kapitels einmal vollständig: jede Quelle mit den drei Fragen bewerten, aus dem Auftrag alles streichen, was nur gefunden ist, im Format eine Quellenkennzeichnung je Absatz oder je Aussage verlangen und den Entwurf nach Schritt 3 prüfen. Die Arbeitshilfe dafür ist der [Rechte-Check](../material/m05/rechte-check.md).
+
+Diese Vertiefung lohnt sich besonders bei Bildern. Dann lesen wir den Lizenztext des Bildanbieters auf die Wörter „Bearbeitung", „automatisiert" und „Training", bevor ein Bild in ein Werkzeug geht.
 
 ## Fehler diagnostizieren
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Ein Absatz erklärt Röstchemie, obwohl das Fachbuch nicht im Material war | Als ungedeckte Ergänzung entfernen. Wenn die Aussage in den Beitrag soll, braucht sie eine eigene Quelle mit Lizenz oder ein echtes Zitat mit Belegfunktion. |
-| Ein Satz klingt wie der Konkurrenztext | Gegen Quelle B lesen. Bei Nähe umschreiben aus dem eigenen Material; nicht „nur ein bisschen" ändern. |
+| Ein Absatz erklärt Röstchemie, obwohl das Fachbuch nicht im Context war | Als ungedeckte Ergänzung entfernen. Wenn die Aussage in den Beitrag soll, braucht sie eine eigene Quelle mit Lizenz oder ein echtes Zitat mit Belegfunktion. |
+| Ein Satz klingt wie der Konkurrenztext | Gegen Quelle B lesen. Bei Nähe umschreiben aus dem eigenen Context; nicht „nur ein bisschen" ändern. |
 | Der Wiki-Absatz steht wörtlich, aber ohne Kennzeichnung | Als Zitat kennzeichnen, Quelle nennen, Lizenzhinweis vorsehen. Oder sinngemäß formulieren; auch dann Namensnennung, wenn die Lizenz es verlangt. |
 | Im Text steht ein Herkunftsland | Nicht freigegeben. Entfernen und unter „Offen" führen. Nachfragen bei Marlene, ob eine Angabe freigegeben werden kann. |
 | Der Entwurf enthält Kundenstimmen | Erfunden oder aus Quelle F. Beides entfernen. Bewertungen erst nach Klärung der Shop-Bedingungen und ohne Namen. |

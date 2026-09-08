@@ -1,0 +1,58 @@
+---
+title: "Willkommen und Orientierung"
+subtitle: "Modul 1 · Lektion 1.1"
+book-source: ../../index.qmd
+---
+
+## KI für Aufgaben im Arbeitsalltag
+
+- Informationen aus Unterlagen zusammenführen
+- Inhalte erstellen und überarbeiten
+- Entscheidungen vorbereiten
+- Wiederkehrende Arbeitsschritte unterstützen
+
+::: {.notes}
+Den Kurs anhand dieser vier Tätigkeiten einordnen. Als Beispiele eine Zusammenfassung für eine Besprechung, eine Sortenübersicht und eine wiederkehrende Kundenanfrage nennen. Das Kursziel ist der begründete Einsatz von KI für konkrete Aufgaben. Programmierkenntnisse sind nicht erforderlich. Zeit: 1 Minute.
+:::
+
+## Die Werkzeuge im Kurs
+
+| Zugang | Verwendung im Kurs |
+|---|---|
+| ChatGPT | Gemeinsamer Einstieg mit einem kostenlosen Chatkonto |
+| Claude und Gemini | Aufträge übertragen und Ergebnisse vergleichen |
+| Work, Cowork, Codex und Claude Code | Einblick in Arbeitsagenten; eigene Nutzung freiwillig |
+| n8n | Einen einfachen Arbeitsablauf aufbauen |
+
+::: {.notes}
+Die Namen mit den jeweiligen Aufgaben verbinden; die ausführliche Einordnung folgt in der Lektion „ChatGPT, Claude und Gemini im Überblick“, davor erklärt „Wie generative KI arbeitet“ die gemeinsame Arbeitsweise. Die ersten Übungen beginnen mit ChatGPT; es sind keine drei Konten und kein Abonnement zum Kursstart erforderlich. Work und Cowork an einer Aufgabe mit mehreren Dateien erläutern, Codex und Claude Code an einer kleinen Anwendung. n8n verbindet festgelegte Schritte; für die geführte Aufgabe steht ein vorbereitetes Beispiel als Ersatzweg bereit. Zeit: 1 Minute.
+:::
+
+## Die Rösterei Morgenrot
+
+Erfundene Kaffeerösterei mit Onlineshop und Kaffee-Abo. Das Geschäft wächst, ein Gewinn bleibt 2025 trotzdem aus.
+
+| Person | Bereich |
+|---|---|
+| Aylin Yılmaz | Geschäftsführung |
+| Jonas Halder | Marketing |
+| Sina Bergmann | Vertrieb und Kundenservice |
+| Petra Lindqvist | Verwaltung und Controlling |
+| Marlene Bosch | Röstung und Produktion |
+
+::: {.notes}
+Die Rösterei kurz vorstellen und die Zuständigkeiten zuordnen. Die erste Übung beginnt bei Jonas: Er benötigt drei Varianten eines Hinweistextes für das Kaffee-Abo, aus denen Aylin eine auswählen will. Weitere Aufgaben stammen aus Kundenservice, Verwaltung und Produktion. Alle Fallangaben sind erfunden. Zeit: 1 Minute.
+:::
+
+## Von der Übung zum eigenen Vorhaben
+
+- **Lernschritte:** Erklärungen, Aufgaben und Selbsttests
+- **Buch und Folien:** ergänzende Ansichten in den Tabs der Lektion
+- **Arbeitsmappe:** Anwendungsfall, Prompts, Ergebnisse und Prüfschritte
+- **Portfolio:** dokumentiertes Vorhaben mit Transferplan
+
+Der eigene Anwendungsfall wird in Modul 1 systematisch gefunden, bewertet und als kleiner Pilot festgehalten.
+
+::: {.notes}
+Die drei Ansichten in einer Lektion kurz zeigen und den Zweck der Arbeitsmappe erklären. Die Ergebnisse wachsen über den Kurs zum Portfolio. Eigene Aufgaben werden mit erfundenen Angaben bearbeitet; bis zur eigenen Datenlektion gilt die kurze Regel, ausschließlich das bereitgestellte erfundene Material zu verwenden. Anschließend zur Grundlage „Wie generative KI arbeitet“ übergehen. Kein Quiz für diese Orientierung. Zeit: 1 Minute.
+:::

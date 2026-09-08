@@ -1,0 +1,82 @@
+---
+title: "Use Cases im Arbeitsalltag finden"
+subtitle: "Modul 1 · Lektion 1.7"
+book-source: ../../start/use-cases-finden.qmd
+---
+
+## Tätigkeiten und Engpässe erfassen {.stage}
+
+[Modul 1 · Anwendungsfälle finden]{.kicker}
+
+Tätigkeiten erfassen, einen Vorgang zerlegen, Engpässe benennen und daraus Kandidaten ableiten.
+
+::: {.notes}
+Etwa 25 Minuten im Auftakt einschließlich Arbeitsphase. Einstieg: Bisher waren die Aufgaben vorgegeben; jetzt wird die Frage umgedreht. Ankündigen, dass es einen Arbeitsgang mit vier Schritten gibt und dass die Bewertung erst in der nächsten Lektion kommt: hier breit suchen, dort eng entscheiden. Zeit: 1 Minute.
+:::
+
+## Der Anlass: Sinas Woche
+
+::: {.small}
+| Tätigkeit | Wie oft | Dauer | Was daran stört |
+|---|---|---|---|
+| Kundenanfragen zum Abo beantworten | 8 bis 12 pro Woche | 10 bis 20 Min. | Nachschlagen in Fachinformationen und Versandliste; Formulieren; Rückfragen |
+| Bestellstatus prüfen | 5 bis 8 pro Woche | 5 Min. | Wechsel zwischen Postfach, Shop-System, Versandliste |
+| Rückgaben und Reklamationen | 1 bis 2 pro Woche | 30 Min. | Jeder Fall anders; Absprache mit Lager |
+| Newsletter-Absatz abstimmen | 1 pro Woche | 20 Min. | Mehrere Abstimmungsrunden |
+| Wochenübersicht Abo-Kündigungen | 1 pro Woche | 45 Min. | Kündigungsgründe als Freitext in Mails |
+| Telefonische Anfragen | täglich | 3 bis 10 Min. | Unplanbar |
+:::
+
+::: {.sources}
+Konstruiert; Zeitangaben sind Sinas Beobachtungen aus einer Woche. Arbeitsblatt: material/m01/taetigkeitsinventar.md
+:::
+
+::: {.notes}
+Aylin hat jede Person um eine typische Woche gebeten, bevor sie entscheidet. Die Tabelle einmal durchgehen und betonen: Sie sagt noch nichts über KI, sie sagt, wo Zeit hingeht und wo es hakt. Die fünf Stichworte für die Spalte „Was daran stört“ nennen: Zeitaufwand, Rückfragen, Medienwechsel, Wartezeiten, Qualitätsprobleme. Zeit: 3 Minuten.
+:::
+
+## Einen Vorgang zerlegen
+
+| Teil | Kundenanfrage zum Abo beantworten |
+|---|---|
+| **Eingaben** | Kundenmail, Fachinformationen, bei Versandfragen die Versandliste |
+| **Arbeitsschritte** | 1. Lesen und Fragen herausziehen · 2. Nachschlagen · 3. Formulieren · 4. Gegenlesen · 5. Versenden |
+| **Ergebnis** | Antwortmail; offene Fragen an die zuständige Stelle verwiesen |
+| **Empfänger** | Anfragende Person; bei Versandfragen Lager und Versand |
+
+Für den Pilot wird ein geeigneter Teilschritt mit seinen Voraussetzungen ausgewählt.
+
+::: {.notes}
+Die Zerlegung ist der eigentliche Fund. Fragen: Welcher Schritt käme in Frage? Erwartete Antwort: Schritt 3, das Formulieren aus vorliegenden Angaben; Schritt 2 mit mitgegebenen Angaben oder einem zugelassenen Abruf; im Kurs liegen die Angaben als Text vor. Schritte 4 und 5 bleiben bei Sina. Beispiel aus dem Buch: Bei Reklamationen kann das Strukturieren der Sachverhalte ein Teilschritt sein. Auch Statusabfragen bleiben Kandidaten; Datenzugang und Alternativen sind zu klären. Engpässe konkret formulieren: nicht „dauert lange“, sondern „das Nachschlagen in drei Quellen dauert länger als das Schreiben“. Zeit: 4 Minuten.
+:::
+
+## Vier Grundformen der Unterstützung
+
+::: {.small}
+| Grundform | Was entsteht | Beispiel aus einem anderen Bereich |
+|---|---|---|
+| **Entwürfe erstellen** | Ein Textentwurf, der geprüft wird | Personal: Absagen aus einem festen Textbaukasten |
+| **Material strukturieren** | Gliederung, Tabelle, Liste mit festen Kategorien | Beratung: Besprechungsnotizen in eine Ergebnisliste überführen |
+| **Informationen vergleichen** | Gegenüberstellung mit Unterschieden und Lücken | Controlling: zwei Fassungen einer Planungstabelle abgleichen |
+| **Entscheidungen vorbereiten** | Übersicht, die eine Person entscheiden lässt | Projektleitung: drei Angebote entlang derselben Kriterien |
+:::
+
+Dazu: Ideen entwickeln. Ziele, Rahmenbedingungen, Brauchbarkeit und Vielfalt bilden den Maßstab; Sachbehauptungen werden geprüft.
+
+::: {.notes}
+Die Einteilung als Lernhilfe des Kurses kennzeichnen. Sinas drei Kandidaten nennen: Antwortentwürfe (Entwürfe erstellen), Kündigungsgründe kategorisieren (strukturieren; Kundendaten, Klärung nötig), Newsletter-Varianten (Entwürfe erstellen). Bei jedem steht, was ein Mensch behält. Was das Modell nicht liefert: Häufigkeit, Dauer, Wert einer Verbesserung. Eine Ersparnis ohne Beobachtung oder Berechnungsgrundlage ist unbelegt. Zeit: 3 Minuten.
+:::
+
+## Arbeitsphase: die eigene Woche
+
+1. Sechs bis zehn Zeilen: Tätigkeit, wie oft, Dauer, was stört, Ergebnis geht an
+2. Einen Vorgang zerlegen und den geeigneten Schritt markieren
+3. Zwei bis drei Kandidaten, je vier Sätze: Vorgang und Schritt, Engpass, Grundform, was beim Menschen bleibt
+
+Rollen statt Namen, keine vertraulichen Zahlen. Schätzungen als Annahme kennzeichnen.
+
+Freiwillig für Schritt 1: Interview mit dem Chatmodell (material/m01/prompt-use-case-interview.txt). Gleichwertig, kein besserer Weg.
+
+::: {.notes}
+Arbeitsphase allein, 10 Minuten. Herumgehen und bei zu großen Kandidaten zum Zerlegen anregen. Der Interviewauftrag fordert Fragen und eine geordnete Wochenübersicht. Das Ergebnis gegen die eigenen Angaben prüfen; anschließend den Vorgang zerlegen, Engpässe benennen und Kandidaten ableiten. Abschluss: Die Kandidatenliste ist die Vorstufe zu Portfolio-Teil 1 und noch keine Entscheidung; der vorläufige Kandidat aus dem Auftakt ist keine endgültige Wahl. Die Bewertung folgt im Selbststudium. Zeit: 12 Minuten einschließlich Abschluss.
+:::

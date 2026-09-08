@@ -1,17 +1,17 @@
 ---
 title: "Mit Beispielen und Format steuern"
-subtitle: "Modul 2 · Lektion 2.2"
+subtitle: "Modul 2 · Lektion 2.3"
 book-source: ../../prompting/beispiele-format.qmd
 ---
 
-## Prüfbar war der Entwurf schon. Klingt er wie aus unserem Haus? {.stage}
+## Prüfbar war der Entwurf schon. Klingt er wie aus dem Haus? {.stage}
 
-[Modul 2 · Strukturierte Arbeitsaufträge]{.kicker}
+[Modul 2 · Prompting und Zusammenarbeit im Dialog]{.kicker}
 
-Zwei neue Stellschrauben am Baustein Format: ein Musterbeispiel und eine Ausgabeform, die das Prüfen leichter macht.
+Zwei neue Stellschrauben am Teil Format: ein Musterbeispiel und eine Ausgabeform, die das Prüfen leichter macht. Gilt für Mails ebenso wie für Protokolle und Tabellen.
 
 ::: {.notes}
-Diese Lektion wird asynchron bearbeitet; die Folien dienen als Kurzfassung für den Beratungstermin oder ein Video. Anknüpfen an 2.1: Länge, Ton, Liste „Offen" reichen für Prüfbarkeit, nicht für den Hausstil. Zeit: 1 Minute.
+Gemeinsame Einführung am Ende des Auftakts (etwa 25 Minuten), Vertiefung asynchron; die Folien dienen auch als Kurzfassung für den Beratungstermin. Anknüpfen an 2.2: Länge, Ton, Liste „Offen" reichen für Prüfbarkeit, nicht für den Hausstil. Zeit: 1 Minute.
 :::
 
 ## Die zweite Anfrage
@@ -31,7 +31,7 @@ material/m02/kundenanfrage-2.txt · material/m02/fachinformationen-abo-erweitert
 :::
 
 ::: {.notes}
-Anfrage vorlesen, drei Lagen bestimmen, bevor etwas abgeschickt wird. Bei Bio betonen: weder ja noch nein darf im Entwurf stehen; das Material sagt, dass keine Angabe vorliegt. Zeit: 2 Minuten.
+Anfrage vorlesen, drei Lagen bestimmen, bevor etwas abgeschickt wird. Bei Bio betonen: weder ja noch nein darf im Entwurf stehen; die Fachinformationen sagen, dass keine Angabe vorliegt. Zeit: 2 Minuten.
 :::
 
 ## Neu: zwei Musterantworten zeigen den Hausstil
@@ -102,11 +102,11 @@ Am Ende, nach der Signatur, eine Liste "Offen".
 ```
 
 ::: {.sources}
-Vollständiger Auftrag: Buchkapitel 2.2, Schritt 3, oder material/m02/prompt-beispiel-format.txt
+Vollständiger Auftrag: Buchkapitel 2.3, Schritt 3, oder material/m02/prompt-beispiel-format.txt
 :::
 
 ::: {.notes}
-Nur der FORMAT-Block ist neu; Aufgabe, Material und Grenzen wie in 2.1, ergänzt um „Behaupte keine erledigte oder veranlasste Handlung". Auftrag: Durchlauf A und B in zwei neuen Chats ausführen und mit der Vergleichsliste auf der nächsten Folie lesen. Zeit: 1 Minute.
+Nur der FORMAT-Block ist neu; TASK, CONTEXT und CHECK wie in 2.2, ergänzt um „Behaupte keine erledigte oder veranlasste Handlung". Auftrag: Durchlauf A und B in zwei neuen Chats ausführen und mit der Vergleichsliste auf der nächsten Folie lesen. Zeit: 1 Minute.
 :::
 
 ## Vorher und Nachher vergleichen
@@ -129,25 +129,29 @@ Arbeitsphase: beide Ergebnisse nebeneinander, Liste abhaken. Ausdrücklich sagen
 ## Eine andere Ausgabeform: die Belegtabelle
 
 ```text
-AUFGABE
+TASK
 Erstelle KEINE Antwort-Mail. Erstelle eine Belegtabelle.
+
+CONTEXT
+Rolle im Kundenservice, Fachinformationen und Kundenanfrage wie in Durchlauf B.
 
 FORMAT
 Frage | Antwort in einem Satz | Beleg (wörtlich aus den Fachinformationen) | Status
 Status: gedeckt, bedingt, offen. Eine Zeile je Frage. Danach nichts weiter.
 
-GRENZEN
+CHECK
 Nur wörtliche Zitate als Beleg. Kein Beleg: Spalte leer, Status "offen".
+Widersprüchliches oder Unsicheres nicht als "gedeckt" führen.
 ```
 
-Die Tabelle prüft sich fast selbst: Zitat suchen, Status gegen Belegspalte lesen.
+Die Tabelle ordnet die Prüfung: Zitat suchen, Status gegen Belegspalte lesen.
 
 ::: {.sources}
 material/m02/prompt-belegtabelle.txt
 :::
 
 ::: {.notes}
-Dieselben Fakten, andere Form. Zum Prüfen ist eine Mail umständlich; eine Tabelle mit festen Spalten und fester Statusmenge nicht. Zwei Fehlerbilder nennen: ein Zitat, das es im Material nicht gibt; Status „gedeckt" neben leerer Belegspalte. Zeit: 2 Minuten.
+Dieselben Fakten, andere Form. Zum Prüfen ist eine Mail umständlich; eine Tabelle mit festen Spalten und fester Statusmenge nicht. Zwei Fehlerbilder nennen: ein Zitat, das es im Context nicht gibt; Status „gedeckt" neben leerer Belegspalte. Zeit: 2 Minuten.
 :::
 
 ## Konstruiertes Ergebnis: die Tabelle
@@ -164,9 +168,9 @@ Konstruiert, kein aufgezeichneter Modelloutput.
 Zum Abgleich mit der eigenen Tabelle. Der konstruierte Mail-Entwurf aus Durchlauf B steht im Buch. Die fünf Stellschrauben des Formats nennen: Textsorte, Länge, Ton, Aufbau, Ausgabeform; Merkhilfe des Kurses. Zeit: 1 Minute.
 :::
 
-## Eigene Variante und Portfolio
+## Freiwillige Vertiefung und Portfolio
 
-- Ein Musterbeispiel für den eigenen Fall: vollständig erfunden oder aus einem öffentlichen Text nachgebaut; interne Vorlagen bleiben draußen
+- Ein Musterbeispiel für den eigenen Pilotfall: vollständig erfunden oder aus einem öffentlichen Text nachgebaut; interne Vorlagen bleiben draußen. Bei Struktur- oder Vergleichsaufgaben ein gutes Protokoll oder eine Tabelle mit den nötigen Spalten
 - Zwei Aufträge: Beispiel als Format, Belegtabelle als Ausgabeform
 - Prüfen: Steht im Entwurf eine Aussage, die in der Tabelle „offen" ist? Ist ein Satz aus dem Beispiel hineingerutscht?
 

@@ -1,6 +1,6 @@
 # Vergleichsprotokoll: derselbe Auftrag in mehreren Werkzeugen
 
-Kursmaterial „Working with GenAI“, Lektion 4.3. Vorlage für Portfolio-Teil 3, Abschnitt „Übertragbarkeit“. Beobachtung am eigenen Fall, kein Ranking.
+Kursmaterial „Working with GenAI“, Lektion 4.4. Vorlage für Portfolio-Teil 3, Abschnitt „Übertragbarkeit“. Beobachtung am eigenen Fall, kein Ranking.
 
 **Auftrag (unverändert in allen Werkzeugen):** <Dateiname oder Wortlaut; im Kurs `prompt-4-3-vergleichsauftrag.txt`>
 
@@ -15,7 +15,7 @@ Je Kriterium ein kurzer Befund, kein Urteil. „Ja“ und „Nein“ genügen, w
 | **Format** | Mail, Anrede, Absenderzeile, Wortgrenze eingehalten? | | | |
 | **Offen-Liste** | Gibt es die Liste, und stehen die richtigen Punkte darin (hier: Versanddatum)? | | | |
 | **Bedingung** | Hängt der Wechsel an „fünf Werktage vor dem Versand“, ohne unbedingte Zusage für die nächste Lieferung? | | | |
-| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Material stehen? Jede einzeln notieren. | | | |
+| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Context stehen? Jede einzeln notieren. | | | |
 | **Rückfrage statt Entwurf** | Hat das Werkzeug den Entwurf geliefert oder erst zurückgefragt? | | | |
 | **Ton und Länge** | Sachlich? Wortzahl? | | | |
 
@@ -29,7 +29,7 @@ Je Kriterium ein kurzer Befund, kein Urteil. „Ja“ und „Nein“ genügen, w
 
 ## Welche Formulierungen im Auftrag haben getragen
 
-<Welche Vorgaben wurden überall eingehalten? Kandidaten: die Überschriften AUFGABE/MATERIAL/FORMAT/GRENZEN, die ausdrückliche Liste „Offen“, die Wortgrenze, „nur Angaben aus dem Material“.>
+<Welche Vorgaben wurden überall eingehalten? Kandidaten: die Überschriften TASK/CONTEXT/FORMAT/CHECK, die ausdrückliche Liste „Offen“, die Wortgrenze, „nur Angaben aus dem Context“.>
 
 ## Was am Auftrag geändert wird
 

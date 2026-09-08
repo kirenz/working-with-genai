@@ -1,6 +1,8 @@
 # Datenschutz im Arbeitsalltag
 
-Der Antwortentwurf aus Modul 2 hat sich bewährt. Jetzt kommt die Frage, die bei jeder Ausweitung kommt: Darf die echte Kundenmail in das Chatkonto? In diesem Kapitel bauen wir die Antwort darauf als Aktennotiz, die das Team bis zur verbindlichen Klärung trägt.
+Seit der ersten Übung gilt die kurze Regel aus Modul 1: In das Chatkonto geht nur das bereitgestellte erfundene Material. Diese Regel hat den Kurs getragen, aber sie beantwortet nicht die Frage, die im Betrieb als Nächstes kommt: Darf die echte Kundenmail hinein? In diesem Kapitel entscheiden wir das nicht nach Gefühl, sondern Angabe für Angabe, und halten das Ergebnis als Aktennotiz fest, die das Team bis zur verbindlichen Klärung trägt.
+
+Der Gegenstand ist dabei nicht nur die Kundenmail. Dieselbe Sortierung braucht, wer Besprechungsnotizen mit Namen und Einschätzungen strukturieren, Angebote mit ausgehandelten Konditionen vergleichen oder eine Entscheidungsvorlage aus internen Unterlagen vorbereiten möchte. Der Lehrfall ist der Übungsgegenstand, das Verfahren ist übertragbar.
 
 ## Der Anlass: eine Mail, die mehr enthält als drei Fragen
 
@@ -28,13 +30,15 @@ Bevor wir etwas ausprobieren, eine Einschätzung: Was wäre passiert, wenn Sina 
 
 ## Zielbild
 
-Am Ende dieses Kapitels liegt eine Aktennotiz mit einer Datenregel vor, die drei Dinge leistet:
+Am Ende dieses Kapitels steht eine Datenregel, die drei Dinge leistet:
 
-- Sie sagt für jede Angabe in einer typischen Anfrage, ob der Entwurf sie braucht und wie damit umgegangen wird: mitgeben, Platzhalter, weglassen.
+- Sie sagt für jede Angabe in einer typischen Anfrage, ob das Ergebnis sie braucht und wie damit umgegangen wird: mitgeben, Platzhalter, weglassen.
 - Sie legt fest, wo Platzhalter gesetzt werden: vor dem Chatfenster, nicht darin.
 - Sie benennt, wer die offenen Fragen verbindlich klärt, und hält fest, was noch nicht geklärt ist.
 
-Die Notiz ist eine Arbeitsregel, keine Konformitätserklärung. Sie ersetzt weder eine datenschutzrechtliche Prüfung noch eine Vereinbarung mit dem Anbieter. Sie regelt, wie das Team bis dahin arbeitet. Das ausgefüllte Beispiel und die leere Vorlage liegen unter [Aktennotiz Datenregel](../material/m05/aktennotiz-datenregel.md).
+Für die Rösterei schreiben wir diese Regel als Aktennotiz aus; das ausgefüllte Beispiel und die leere Vorlage liegen unter [Aktennotiz Datenregel](../material/m05/aktennotiz-datenregel.md). Für den eigenen Fall genügen zunächst zwei Notizen, die am Ende des Moduls in die Risiko-Tabelle wandern.
+
+Die Notiz ist eine Arbeitsregel, keine Konformitätserklärung. Sie ersetzt weder eine datenschutzrechtliche Prüfung noch eine Vereinbarung mit dem Anbieter. Sie regelt, wie das Team bis dahin arbeitet.
 
 ## Schritt für Schritt selbst bauen
 
@@ -54,6 +58,8 @@ Wir gehen die Mail Zeile für Zeile durch und stellen zu jeder Angabe eine einzi
 | Schwangerschaft als Grund | nein | vollständig entfernen, nicht ersetzen |
 
 Die letzte Zeile ist die wichtigste. Der Grund des Wechsels ist eine Gesundheitsangabe. Solche Angaben gehören zu den besonders geschützten Datenkategorien. Sie werden nicht durch „[Grund]" ersetzt, sie werden weggelassen. Für die Antwort spielt der Grund ohnehin keine Rolle: Ein Sortenwechsel wird nicht begründet, er wird beantragt.
+
+Dieselbe Spalte „Nötig für das Ergebnis?" trägt auch dort, wo gar kein Text entsteht. Wer Besprechungsnotizen strukturieren lässt, braucht die Themen und Beschlüsse, nicht die Namen der Anwesenden und erst recht keine Einschätzung über eine Person. Wer drei Angebote vergleichen lässt, braucht Leistungsumfang, Fristen und Konditionen, nicht die Ansprechpartnerinnen und Ansprechpartner mit Durchwahl; ob die Konditionen überhaupt hinausdürfen, ist dann allerdings eine Frage der Vertraulichkeit und nicht des Datenschutzes. Wer eine Entscheidung vorbereiten lässt, gibt die Kriterien und die Zahlen mit, nicht die Personalakte.
 
 ::: {.callout-tip title="Die Urlaubsvertretung braucht die Frage, nicht die Akte"}
 Eine fachlich fitte Vertretung, die unser Haus nicht kennt, kann eine Preisfrage beantworten, ohne die Kundennummer zu wissen. Sie braucht die Frage und die geltenden Angaben. Die Akte bleibt im Haus. Nach diesem Maßstab wählen wir aus, was in einen Prompt geht: das Nötige, nicht das Verfügbare. Datenminimierung ist genau dieses Handwerk, kein Zusatzaufwand.
@@ -79,12 +85,12 @@ Ein Text, in dem „Nadja Petrow" durch „[Name]" ersetzt wurde, kann trotzdem 
 Damit wir wissen, wie eine maschinelle Bereinigung aussieht und wo sie Lücken lässt, führen wir sie einmal an der **synthetischen** Mail durch. Das ist nur zulässig, weil die Mail erfunden ist. Der Auftrag steht als [Textdatei](../material/m05/prompt-platzhalter.txt) bereit.
 
 ```text
-Du unterstützt den Kundenservice der Rösterei Morgenrot bei der Vorbereitung eines Textes.
-
-AUFGABE
+TASK
 Bereite die unten stehende Kundenmail für die weitere Bearbeitung vor. Ersetze alle personenbezogenen Angaben durch Platzhalter in eckigen Klammern und entferne Angaben, die für eine Antwort auf die Kundenfragen nicht gebraucht werden.
 
-MATERIAL
+CONTEXT
+Du unterstützt den Kundenservice der Rösterei Morgenrot bei der Vorbereitung eines Textes.
+
 Kundenmail:
 Betreff: Abo-Wechsel auf entkoffeiniert und Rechnung
 Guten Tag Frau Bergmann,
@@ -96,14 +102,14 @@ Nadja Petrow
 FORMAT
 Zuerst die bereinigte Mail. Danach eine Tabelle mit drei Spalten: ursprüngliche Angabe, Platzhalter oder "entfernt", Begründung in höchstens acht Wörtern.
 
-GRENZEN
-- Verändere den Inhalt der Kundenfragen nicht.
-- Ersetze Namen, Nummern, Adressen und Kontaktdaten durch Platzhalter wie [Name], [Kundennummer], [Adresse].
+CHECK
 - Angaben zu Gesundheit, Familie oder Dritten nicht als Platzhalter behalten, sondern vollständig entfernen und in der Tabelle als "entfernt" führen.
+- Ersetze Namen, Nummern, Adressen und Kontaktdaten durch Platzhalter wie [Name], [Kundennummer], [Adresse].
+- Verändere den Inhalt der Kundenfragen nicht.
 - Erfinde keine zusätzlichen Angaben.
 ```
 
-Beim Lesen des Ergebnisses zählen wir gegen unsere Tabelle aus Schritt 1: Sind alle acht Stellen erfasst? Steht der Gesundheitsbezug als „entfernt" in der Tabelle, oder ist er als Platzhalter oder gar im Wortlaut stehen geblieben? Ist der Nachbar verschwunden? Jede Stelle, die das Modell übersehen hat, ist ein Befund. Er zeigt, warum die Prüfung bei uns bleibt, auch wenn ein Werkzeug hilft.
+Der CHECK-Teil dieses Auftrags und die anschließende Prüfung sind zwei verschiedene Dinge. Der CHECK ist eine Anweisung an das Modell: Er sagt, welche Angaben entfernt statt ersetzt werden sollen und dass nichts hinzuerfunden werden soll. Ob das Ergebnis diese Anweisung einhält, sagt er nicht; das lesen wir selbst nach. Deshalb zählen wir das Ergebnis gegen unsere Tabelle aus Schritt 1: Sind alle acht Stellen erfasst? Steht der Gesundheitsbezug als „entfernt" in der Tabelle, oder ist er als Platzhalter oder gar im Wortlaut stehen geblieben? Ist der Nachbar verschwunden? Jede Stelle, die das Modell übersehen hat, ist ein Befund. Er zeigt, warum die Prüfung bei uns bleibt, auch wenn ein Werkzeug hilft.
 
 ### Ein konstruiertes Ergebnis zum Abgleich
 
@@ -137,23 +143,24 @@ Aus Tabelle, Regel und offenen Punkten wird die Notiz. Für die Rösterei Morgen
 Die Notiz ist erst vollständig, wenn zu jeder offenen Frage eine Zuständigkeit steht. In der Rösterei entscheidet Aylin Yılmaz als Geschäftsführung über Konto und Freigabe. Die Vertragslage zum Anbieter prüft Petra Lindqvist in Verwaltung und Controlling. Für die datenschutzrechtliche Einordnung ist im Fall keine datenschutzbeauftragte Person benannt; die Notiz hält deshalb fest, dass externe Beratung zu beauftragen ist, und lässt den Punkt sichtbar offen. Genau so gehen wir im eigenen Fall vor: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Die DSK-Orientierungshilfe nennt klare Verantwortlichkeiten, Zweckbindung und Datenminimierung als Grundanforderungen; sie liefert die Prüffragen, nicht die Antworten für unseren Einzelfall.
 :::
 
-### Eine eigene Variante bauen
+### Für den eigenen Fall: zwei Notizen, fünf Minuten
 
-Wir nehmen den eigenen Fall aus dem Portfolio und eine typische, vollständig erfundene Eingangsnachricht dazu.
+Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und die ist die Risiko-Tabelle am Ende des Moduls. Dieses Kapitel liefert dafür die ersten beiden Zeilen. Mehr ist hier nicht nötig:
 
-1. Wir gehen die Nachricht Zeile für Zeile durch und füllen die Tabelle: nötig oder nicht, mitgeben, Platzhalter, weglassen.
-2. Wir markieren, welche Angaben in keiner Form hineingehören: Gesundheit, Religion, Herkunft, Angaben zu Dritten, interne Bewertungen von Personen.
-3. Wir schreiben auf, in welchem Konto wir arbeiten und was wir über dessen Bedingungen wissen und nicht wissen.
-4. Wir tragen die Zuständigkeiten ein. Wo im eigenen Betrieb keine Rolle benannt ist, steht „nicht benannt" mit dem nächsten Schritt.
-5. Wir führen den Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage aus und prüfen, ob der Entwurf ohne die weggelassenen Angaben auskommt.
+- **Welche Angaben braucht das eigene Vorhaben wirklich?** Eine typische Eingabe im Kopf durchgehen und in einem Satz festhalten, was mitgegeben wird, was als Platzhalter geht und was in keiner Form hineingehört. Zu den Angaben, die nicht ersetzt, sondern weggelassen werden, zählen Gesundheit, Religion, Herkunft, Angaben zu Dritten und interne Bewertungen von Personen.
+- **In welchem Konto wird gearbeitet, und was ist über dessen Bedingungen bekannt?** Privat oder geschäftlich, mit oder ohne Vereinbarung, was zu Speicherung und Trainingsnutzung geprüft wurde und was noch offen ist.
 
-Die Aktennotiz gehört in **Portfolio-Teil 3: Qualitäts- und Compliance-Check**, Zeilen „Personenbezogene Daten im Prozess" und „Genutztes Konto / Vertragslage" der Risiko-Tabelle. Beide Zeilen bekommen eine Einschätzung und eine Zuständigkeit. Freitexte werden dort nicht automatisch fachlich bewertet.
+Beide Notizen wandern später in die Zeilen „Personenbezogene Daten im Prozess" und „Genutztes Konto / Vertragslage" von **Portfolio-Teil 3**.
+
+### Freiwillige Vertiefung: die vollständige Aktennotiz
+
+Wer die Regel im eigenen Betrieb tatsächlich einführen will, schreibt die Notiz aus. Die Vorlage in [Aktennotiz Datenregel](../material/m05/aktennotiz-datenregel.md) fragt der Reihe nach ab: Anlass, genutztes Konto, die Tabelle Angabe für Angabe, wo bereinigt wird, was das Modell nicht bekommt, was die Regel nicht leistet, und die Zuständigkeiten. Wo im eigenen Betrieb keine Rolle benannt ist, steht „nicht benannt" mit dem nächsten Schritt. Als Probe eignet sich der Arbeitsauftrag aus Modul 2, einmal mit der bereinigten Anfrage ausgeführt: Kommt der Entwurf ohne die weggelassenen Angaben aus? Diese Vertiefung ist keine Voraussetzung für das Portfolio.
 
 ## Fehler diagnostizieren
 
 | Beobachtung | Nächster Prüfschritt |
 |---|---|
-| Der Gesundheitsbezug steht im Ergebnis als „[Grund]" | Die Angabe gehört nicht als Platzhalter in den Text. Entfernen und die Grenze im Auftrag prüfen: Steht dort „entfernen", nicht „ersetzen"? |
+| Der Gesundheitsbezug steht im Ergebnis als „[Grund]" | Die Angabe gehört nicht als Platzhalter in den Text. Entfernen und die Check-Zeile im Auftrag prüfen: Steht dort „entfernen", nicht „ersetzen"? |
 | Das Modell hat eine Angabe übersehen, etwa den Nachbarn | Als Befund notieren. Die eigene Tabelle aus Schritt 1 ist der Maßstab, nicht das Ergebnis. Im Alltag folgt daraus: Bereinigung vor dem Chatfenster. |
 | Adresse und Telefonnummer wurden brav ersetzt, stehen aber noch im Text | Fragen, ob der Entwurf sie braucht. Wenn nicht, weglassen. Ein Platzhalter ist die zweitbeste Lösung nach dem Weglassen. |
 | Die Notiz hat zu jeder Frage eine Zuständigkeit, aber keine ist im Betrieb wirklich benannt | Die Zuständigkeiten als „vorläufig" kennzeichnen und die tatsächliche Benennung als offenen Punkt eintragen. |

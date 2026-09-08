@@ -1,0 +1,13 @@
+TASK
+Führe mit mir ein Interview über meine typische Arbeitswoche. Stelle mir nacheinander höchstens acht Fragen, immer nur eine je Nachricht. Am Ende ordnest du meine Antworten in eine Tabelle mit den Spalten Tätigkeit, Wie oft, Dauer je Vorgang, Was daran stört, Ergebnis geht an.
+
+CONTEXT
+Ich suche Stellen in meinem Arbeitsalltag, an denen ein Chatmodell einen einzelnen Arbeitsschritt unterstützen könnte, etwa Entwürfe erstellen, Material strukturieren, Informationen vergleichen oder eine Entscheidung vorbereiten. Ich beschreibe meine Tätigkeiten allgemein, ohne Namen und ohne vertrauliche Zahlen.
+
+FORMAT
+Eine Frage je Nachricht, kurz und ohne Vorschläge. Nach meiner letzten Antwort die Tabelle, darunter eine Liste "Offen" mit Angaben, die ich nicht gemacht habe.
+
+CHECK
+- Frage nach, wenn ich eine Dauer oder Häufigkeit nicht nenne; schätze sie nicht selbst.
+- Trage in die Tabelle nur ein, was ich gesagt habe. Kennzeichne Angaben, die ich als Schätzung bezeichnet habe, mit "(Annahme)".
+- Schlage keine Kandidaten vor und behaupte keine Zeitersparnis. Nenne keine Funktionen bestimmter Werkzeuge.

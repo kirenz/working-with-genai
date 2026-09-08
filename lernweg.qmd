@@ -1,6 +1,6 @@
 # Der persönliche Lernweg {.unnumbered}
 
-Wir begleiten die Rösterei Morgenrot vom ersten brauchbaren Chat-Ergebnis bis zu einem wiederholbaren Arbeitsablauf. Parallel entsteht eine Lösung für einen eigenen beruflichen Anlass. Das Buch erklärt und liefert Material; die interaktiven Lektionen führen durch Entscheidungen und Übungen. Die Folien unterstützen die gemeinsamen Termine. Wir müssen denselben Inhalt nicht dreimal durcharbeiten.
+Wir lernen die Grundlagen generativer KI kennen und wenden sie auf Aufgaben der Rösterei Morgenrot an. Parallel entsteht eine Lösung für einen eigenen beruflichen Anlass. Das Buch erklärt und liefert Material; die interaktiven Lektionen führen durch Entscheidungen und Übungen. Die Folien unterstützen die gemeinsamen Termine. Wir müssen denselben Inhalt nicht dreimal durcharbeiten.
 
 ## Vor dem Auftakt: ein ruhiger Start
 
@@ -14,7 +14,7 @@ Wenn ein Zugang fehlt oder ein Nutzungslimit erreicht ist, verwenden wir zunäch
 
 | Abschnitt | Gemeinsamer Termin | Arbeitsergebnis |
 |---|---|---|
-| Anfangen und einen Auftrag bauen | Auftakt am 18.09., Beratung am 24.09.2026 | Ein abgegrenzter Anwendungsfall und eine erste dokumentierte Prompt-Fassung |
+| Anfangen und einen Auftrag bauen | Auftakt am 18.09., Beratung am 24.09.2026 | Ein begründeter Kandidatenvergleich, ein abgegrenzter Pilotfall und eine erste dokumentierte Prompt-Fassung |
 | Material bereitstellen und Ergebnisse beurteilen | Beratung am 30.09.2026 | Eine Kontextmappe mit Quellen und fünf Fallkarten mit nachvollziehbaren Erwartungen |
 | Wiederverwenden und den Transfer vorbereiten | Recap am 08.10.2026 | Vollständiges Portfolio und eine kurze Vorstellung des eigenen Vorhabens |
 
@@ -22,7 +22,7 @@ Der erste Zwischenstand wird bis zum 23.09., der zweite bis zum 29.09. eingereic
 
 ## Ein Arbeitsrhythmus für die Selbstlernphase
 
-Wir bearbeiten möglichst eine Lektion am Stück. Zuerst lesen wir den Anlass und das gewünschte Ergebnis. Dann führen wir den vorgegebenen Auftrag aus oder arbeiten bei fehlendem Zugang am Kursbeispiel. Erst nach einer eigenen Entscheidung öffnen wir die Auflösung. Zum Abschluss übernehmen wir genau den geforderten Baustein in die Arbeitsmappe.
+Grundlagenlektionen verbinden eine Erklärung mit einem kommentierten Beispiel. Praxislektionen enthalten eine Aufgabe und eine anschließende Auswertung. Bei fehlendem Zugang kann zunächst das gekennzeichnete Kursbeispiel untersucht werden. Pro Modul bearbeiten wir einen zusammenhängenden Beitrag zum eigenen Vorhaben. Weitere eigene Varianten sind freiwillige Vertiefungen.
 
 Hilfreich sind drei kurze Notizen pro Sitzung:
 
@@ -30,14 +30,14 @@ Hilfreich sind drei kurze Notizen pro Sitzung:
 2. **Offen:** Welche Angabe, Entscheidung oder Freigabe fehlt noch?
 3. **Nächster Schritt:** Was wird beim nächsten Termin tatsächlich getan?
 
-Eine offene Frage ist kein Grund, die gesamte Lektion neu zu beginnen. Wir markieren sie und arbeiten dort weiter, wo das Material ausreicht. Eine nicht belegbare Zusage wird dagegen aus dem Entwurf entfernt oder vor einer Verwendung geklärt.
+Eine offene Frage ist kein Grund, die gesamte Lektion neu zu beginnen. Wir markieren sie und arbeiten dort weiter, wo der Context ausreicht. Eine nicht belegbare Zusage wird dagegen aus dem Entwurf entfernt oder vor einer Verwendung geklärt.
 
 ## Die sechs Etappen
 
 | Etappe | Einstieg ins Buch | Ergebnis für die Arbeitsmappe |
 |---|---|---|
-| 1. Ankommen | [Der erste Chat-Erfolg](start/erster-chat.qmd) | Teil 1: Use-Case-Canvas |
-| 2. Aufträge formulieren | [Vom Zuruf zum Arbeitsauftrag](prompting/arbeitsauftrag.qmd) | Teil 2: Auftragskarte, Prompt und Varianten |
+| 1. Grundlagen und Use Cases | [Kursübersicht](kursuebersicht.qmd) | Teil 1: Kandidatenvergleich und Use-Case-Canvas |
+| 2. Prompting | [Arbeitsauftrag formulieren](prompting/arbeitsauftrag.qmd) | Teil 2: Auftragskarte, Prompt und Varianten |
 | 3. Kontext bereitstellen | [Material auswählen](kontext/material-auswaehlen.qmd) | Teil 2: Quellen und Kontextmappe |
 | 4. Qualität beurteilen | [Aussagen gegen Quellen prüfen](qualitaet/aussagen-pruefen.qmd) | Teil 3: Kriterien und Fallkarten |
 | 5. Verantwortung klären | [Datenschutz im Arbeitsalltag](verantwortung/datenschutz.qmd) | Teil 3: Daten-, Rechte- und Risiko-Überblick |
@@ -53,7 +53,7 @@ Wer eine freiwillige Vertiefung mit Codex oder Claude Code wählt, nutzt dafür 
 
 ## Eine hilfreiche Rückmeldung vorbereiten
 
-Für die Beratung genügt keine allgemeine Frage wie „Ist mein Prompt gut?“. Wir zeigen eine konkrete Stelle: den Auftrag, das zugehörige Material und die Aussage im Ergebnis, die uns unsicher macht. Dazu notieren wir die eigene Einschätzung. So lässt sich in einer kleinen Gruppe gezielt helfen.
+Für die Beratung genügt keine allgemeine Frage wie „Ist mein Prompt gut?“. Wir zeigen eine konkrete Stelle: den Auftrag, den zugehörigen Context und die Aussage im Ergebnis, die uns unsicher macht. Dazu notieren wir die eigene Einschätzung. So lässt sich in einer kleinen Gruppe gezielt helfen.
 
 Eine kurze Vorbereitung kann lauten: „Meine Quelle erlaubt den Wechsel nur unter einer Bedingung. Im Entwurf klingt er bereits bestätigt. Ich würde den Satz einschränken; unklar ist mir noch, welche offene Frage für den nächsten Schritt gebraucht wird.“ Auch ein begründetes Verwerfen eines Anwendungsfalls kann ein gutes Ergebnis sein.
 

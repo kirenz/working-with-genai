@@ -1,12 +1,14 @@
 # Demo-Ordner: Ein Arbeitsagent prüft Produkttexte
 
-Kursmaterial „Working with GenAI", freiwilliger Praxispfad (Kapitel „Codex und Claude Code: Wenn das Werkzeug Dateien anfasst"). Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Alle Dateien sind erfunden und dürfen ohne Bedenken einem Werkzeug übergeben werden.
+Kursmaterial „Working with GenAI", freiwillige Vertiefung („Codex und Claude Code: eine Aufgabe mit Dateien"). Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Alle Dateien sind erfunden und dürfen ohne Bedenken einem Werkzeug übergeben werden.
+
+Für diesen Ordner ist keine Installation und kein Kauf nötig. Wer keinen Arbeitsagenten hat, geht den Kopierweg unten; er führt dieselbe Aufgabe im kostenlosen Chatkonto durch.
 
 ## Was in diesem Ordner liegt
 
 | Datei | Rolle | Wird vom Agenten … |
 |---|---|---|
-| `auftrag.md` | Die Anweisung an den Agenten (Aufgabe, Material, Format, Grenzen) | gelesen |
+| `auftrag.md` | Die Anweisung an den Agenten (Task, Context, Format, Check) | gelesen |
 | `briefing.txt` | Das freigegebene Briefing: die einzige gültige Faktenquelle | gelesen |
 | `produkttexte-entwurf.md` | Drei Produkttexte mit gedeckten und ungedeckten Aussagen | gelesen, nicht verändert |
 | `ergebnis-soll.md` | Beschreibung des gewünschten Ergebnisses, zum Vergleich nach dem Lauf | nicht benötigt |

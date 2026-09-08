@@ -1,10 +1,20 @@
-# Iterieren: eine Änderung pro Durchlauf
+# Im Dialog weiterarbeiten
 
-Ein erster Entwurf ist selten der letzte. Die Frage ist, wie wir vom ersten zum brauchbaren kommen: alles neu formulieren oder gezielt eine Sache ändern und schauen, was passiert. Dieses Kapitel ist ein Reparaturauftrag. Wir bekommen einen Entwurf mit Mängeln, ordnen die Mängel nach Gewicht, ändern je Durchlauf genau eine Sache und halten fest, was wir beobachten.
+Ein erster Entwurf lässt sich gezielt weiterbearbeiten. Ein Chat ist dafür gebaut: Wir können Rückfragen stellen lassen, bevor etwas entsteht, einen vorliegenden Entwurf gezielt überarbeiten und Varianten vergleichen. Diese Lektion stellt die drei Bewegungen vor und führt dann durch einen Reparaturauftrag: Wir bekommen einen Entwurf mit Mängeln, ordnen die Mängel nach Gewicht, ändern je Durchlauf einen Schwerpunkt und halten fest, was wir beobachten.
+
+## Drei Bewegungen im Dialog
+
+**Rückfragen stellen lassen.** Bevor das Modell etwas schreibt, kann es fragen, was ihm fehlt. Das kennen wir aus Modul 1, wo wir uns Rückfragen zum Canvas stellen ließen. Im Alltag lohnt sich das, wenn wir selbst nicht sicher sind, ob unser Context vollständig ist: „Stelle mir vor dem Entwurf drei Fragen zu Angaben, die dir für eine belegbare Antwort fehlen. Schreibe noch keinen Entwurf.“ Die Fragen prüfen wir wie jedes Ergebnis; eine Frage, deren Antwort schon im Context steht, wird gestrichen.
+
+**Gezielt überarbeiten.** Eine Folgeanweisung im selben Chat verändert den vorliegenden Entwurf, ohne dass wir ihn umschreiben. Die vorherige Antwort bleibt Bezugspunkt, das Material muss nicht wiederholt werden. Die Regel dazu kennen wir seit der ersten Übung: eine Änderung je Nachricht, damit die Beobachtung zuordenbar bleibt. Beispiele aus anderen Bereichen: „Fasse die Liste der offenen Punkte auf die drei mit Termin zusammen.“ „Ordne die Tabelle nach der Spalte Differenz, absteigend.“ „Streiche alle Ideen, die eine Angabe über Kundenzahlen voraussetzen.“
+
+**Varianten vergleichen.** Zwei Durchläufe desselben Auftrags in zwei neuen Chats zeigen, ob sich diese beiden Ergebnisse ohne Promptänderung unterscheiden. Zwei Fassungen des Auftrags mit einem Unterschied zeigen, was mit dem Unterschied einhergeht. Für den Vergleich brauchen wir dieselben Kriterien für alle Varianten und ein Protokoll, in dem Beobachtungen stehen, keine Bewertungen.
+
+Alle drei Bewegungen laufen im selben Chatfenster; der Unterschied liegt darin, ob wir vor dem Entwurf, am Entwurf oder zwischen Entwürfen arbeiten. Der Reparaturauftrag dieser Lektion verwendet vor allem die zweite und dritte.
 
 ## Der Anlass: ein Entwurf mit Mängeln
 
-Rösterei Morgenrot, Vertrieb und Kundenservice. Für die zweite Kundenanfrage (Abo im Oktober aussetzen, Entkoffeiniert im Abo, Bio) hat eine Kollegin in Eile einen ersten Durchlauf gemacht. Ihr Auftrag bestand aus einem Satz und der Kundenmail: „Beantworte diese Kundenanfrage freundlich im Stil unseres Kundenservice." Keine Fachinformationen, kein Format, keine Grenzen. Das Ergebnis liegt Sina zur Weiterbearbeitung vor. Es ist konstruiert, kein aufgezeichneter Modelloutput, und steht als [Download](../material/m02/durchlauf-1-entwurf.txt) bereit:
+Rösterei Morgenrot, Vertrieb und Kundenservice. Für die zweite Kundenanfrage (Abo im Oktober aussetzen, Entkoffeiniert im Abo, Bio) hat eine Kollegin in Eile einen ersten Durchlauf gemacht. Ihr Auftrag bestand aus einem Satz und der Kundenmail: „Beantworte diese Kundenanfrage freundlich im Stil unseres Kundenservice." Keine Fachinformationen, kein festgelegtes Format, kein Check. Das Ergebnis liegt Sina zur Weiterbearbeitung vor. Es ist konstruiert, kein aufgezeichneter Modelloutput, und steht als [Download](../material/m02/durchlauf-1-entwurf.txt) bereit:
 
 > Sehr geehrte Frau Novak,
 >
@@ -21,7 +31,7 @@ Rösterei Morgenrot, Vertrieb und Kundenservice. Für die zweite Kundenanfrage (
 > Herzliche Grüße
 > Ihr Morgenrot-Team
 
-Maßstab bleiben die erweiterten [Fachinformationen](../material/m02/fachinformationen-abo-erweitert.txt) und der Hausstil aus den [Musterantworten](../material/m02/musterantworten-kundenservice.txt) des vorigen Kapitels. Die Anfrage selbst steht im vorigen Kapitel im Wortlaut.
+Maßstab bleiben die erweiterten [Fachinformationen](../material/m02/fachinformationen-abo-erweitert.txt) und der Hausstil aus den [Musterantworten](../material/m02/musterantworten-kundenservice.txt) der vorigen Lektion. Die Anfrage selbst steht in der vorigen Lektion im Wortlaut.
 
 ## Zielbild
 
@@ -31,11 +41,11 @@ Am Ende liegen drei Dinge vor:
 |---|---|
 | Befundliste | Alle Mängel des Entwurfs, sortiert in drei Gruppen: Belegbarkeit, Bedingung und Handlung, Form |
 | Iterationsprotokoll | Eine Zeile je Durchlauf: was geändert, wo, was beobachtet, was entschieden; darunter eine unveränderte Wiederholung |
-| Prompt-Fassungen v1 bis v4 | Der Auftrag in vier Ständen, mit genau einer Änderung je Stand |
+| Prompt-Fassungen v1 bis v4 | Der Auftrag in vier Ständen, mit einem Änderungsschwerpunkt je Stand |
 
 Die Vorlage für das Protokoll und die vier Fassungen stehen als Downloads bereit: [Iterationsprotokoll](../material/m02/iterationsprotokoll.md) und [Prompt-Fassungen](../material/m02/prompt-fassungen.md). Beide gehören in Portfolio-Teil 2 unter „Entwicklungsschritte".
 
-## Schritt für Schritt selbst bauen
+## Schritt für Schritt
 
 ### Schritt 1: Befunde sammeln, noch nichts reparieren
 
@@ -43,7 +53,7 @@ Wir lesen den Entwurf Satz für Satz gegen die Fachinformationen und notieren je
 
 | Gruppe | Befunde im Entwurf |
 |---|---|
-| **Belegbarkeit** | „kontrolliert biologischer Anbau, noch nicht zertifiziert, wir arbeiten daran": erfunden; das Material sagt, dass keine Angabe vorliegt. „Wasserverfahren" und „ideal für den Abend": nicht im Material. |
+| **Belegbarkeit** | „kontrolliert biologischer Anbau, noch nicht zertifiziert, wir arbeiten daran": erfunden; die Fachinformationen sagen, dass keine Angabe vorliegt. „Wasserverfahren" und „ideal für den Abend": stehen dort nicht. |
 | **Bedingung und Handlung** | Das Aussetzen wird unbedingt zugesagt; die Fünf-Werktage-Frist fehlt, das Versanddatum ist unbekannt. „Wir kümmern uns darum" behauptet eine veranlasste Handlung; im Fall ist nichts veranlasst. |
 | **Form** | Anrede mit Namen und Geschlechtsannahme statt „Guten Tag,". Ausrufezeichen, Füllwörter, falsche Signatur, keine Liste „Offen". |
 
@@ -51,19 +61,19 @@ Zwei Dinge sind in Ordnung und bleiben: Entkoffeiniert Sanft ist im Abo wählbar
 
 ### Schritt 2: Die Reihenfolge festlegen
 
-Wir reparieren nicht alles auf einmal, und wir reparieren nicht das Auffälligste zuerst. Wir fragen: Welcher Fehler wäre am teuersten, wenn er durchrutscht? Eine erfundene Bio-Aussage in einer verschickten Mail ist ein Produktversprechen mit Außenwirkung. Eine unbedingte Zusage, die nicht gehalten werden kann, ist eine Beschwerde von morgen. Eine falsche Anrede ist unangenehm, aber ohne Folgen für die Sache. Daraus ergibt sich die Reihenfolge: erst Belegbarkeit, dann Bedingung und Handlung, zuletzt Form.
+Wir reparieren nicht alles auf einmal, und wir reparieren nicht das Auffälligste zuerst. Wir fragen: Welcher Fehler wäre am teuersten, wenn er durchrutscht? Eine erfundene Bio-Aussage in einer verschickten Mail ist ein Produktversprechen mit Außenwirkung. Eine unbedingte Zusage, die nicht gehalten werden kann, ist eine Beschwerde von morgen. Eine falsche Anrede kann unpassend oder respektlos wirken; in diesem Beispiel werden zuerst die Produktangaben und Zusagen geklärt. Daraus ergibt sich die Reihenfolge: erst Belegbarkeit, dann Bedingung und Handlung, zuletzt Form.
 
 ::: {.callout-tip title="Der teuerste Fehler zuerst"}
-In der Qualitätskontrolle wird nicht zuerst der Kratzer im Lack geprüft, sondern ob das Teil die Last trägt. Übertragen: Ein sperriger Text ohne erfundene Aussagen ist verwendbar, ein eleganter Text mit einer erfundenen Zertifizierung nicht. Die Reihenfolge Belegbarkeit, Bedingung, Form ist eine Empfehlung dieses Kurses; sie folgt aus der Frage nach den Folgen, nicht aus einer Untersuchung.
+In der Qualitätskontrolle wird nicht zuerst der Kratzer im Lack geprüft, sondern ob das Teil die Last trägt. Übertragen: Ein sperriger Text ohne unbelegte Produktangaben kann weiter überarbeitet werden, ein eleganter Text mit einer erfundenen Zertifizierung nicht. Die Reihenfolge Belegbarkeit, Bedingung, Form ist eine Empfehlung dieses Kurses; sie folgt aus der Frage nach den Folgen, nicht aus einer Untersuchung.
 :::
 
 ### Schritt 3: Die Ausgangslage sichern, unveränderte Wiederholung
 
-Bevor wir etwas ändern, führen wir den ursprünglichen Ein-Satz-Auftrag (Fassung v1) ein zweites Mal in einem neuen Chat aus. Das kostet eine Minute und liefert etwas Wichtiges: Wir sehen, wie stark sich zwei Ergebnisse bei identischer Eingabe unterscheiden. Wenn die Wiederholung andere ungedeckte Angaben enthält als der erste Durchlauf, wissen wir, dass wir Unterschiede zwischen späteren Durchläufen nicht ohne Weiteres unserer Änderung zuschreiben dürfen. Wir tragen beides als Zeilen 1 und 1b ins Protokoll ein.
+Für einen eigenen Vergleich führen wir Fassung v1 zunächst in einem neuen Chat aus und sichern dieses tatsächliche Ergebnis als Zeile 1. Danach folgt derselbe Auftrag unverändert in einem weiteren neuen Chat als Zeile 1b. Das konstruierte Ausgangsbeispiel dient nur der Einführung und ersetzt keinen dieser Durchläufe. Wenn die Wiederholung andere ungedeckte Angaben enthält als der erste Durchlauf, wissen wir, dass wir Unterschiede zwischen späteren Durchläufen nicht ohne Weiteres unserer Änderung zuschreiben dürfen. Wir tragen beides als Zeilen 1 und 1b ins Protokoll ein.
 
-### Schritt 4: Durchlauf 2, eine Änderung: Material und Grenzen
+### Schritt 4: Durchlauf 2 mit dem Schwerpunkt Belegbarkeit
 
-Die erste Änderung folgt der Reihenfolge: Belegbarkeit. Wir geben die Fachinformationen als Material mit und setzen die Grenze „nur Material, Lücken unter Offen". Das ist Fassung v2 aus dem Download. Sie läuft in einem neuen Chat, weil die Änderung am Aufbau des Auftrags ansetzt und wir das Ergebnis ohne Einfluss des ersten Gesprächs sehen wollen.
+Die erste Änderung folgt der Reihenfolge: Belegbarkeit. Wir geben die Fachinformationen als Context mit und setzen die Check-Zeile „nur Context, Lücken unter Offen". Das ist Fassung v2 aus dem Download. Sie läuft in einem neuen Chat, weil die Änderung am Aufbau des Auftrags ansetzt und wir das Ergebnis ohne Einfluss des ersten Gesprächs sehen wollen.
 
 Wir prüfen das Ergebnis nur gegen die Befunde der Gruppe Belegbarkeit: Ist die Bio-Aussage verschwunden? Steht statt ihrer, dass keine Angabe vorliegt? Sind Wasserverfahren und Abendempfehlung weg? Alles andere notieren wir, reparieren es aber noch nicht. Dann tragen wir die Beobachtung ins Protokoll ein und entscheiden über die nächste Änderung.
 
@@ -73,11 +83,11 @@ Es gibt zwei Wege, eine Änderung anzubringen. Eine **Folgeanweisung** im selben
 
 ### Schritt 5: Durchlauf 3 und 4, Bedingung und Form
 
-Durchlauf 3 ergänzt zwei Zeilen unter GRENZEN: „Eine Bedingung steht im selben Satz wie die Zusage; hängt sie an einer fehlenden Angabe, nenne diese Angabe." und „Behaupte keine erledigte oder veranlasste Handlung." Das ist Fassung v3. Wer schnell sehen will, ob das trägt, schickt die beiden Zeilen als Folgeanweisung in den Chat von Durchlauf 2 und trägt sie danach in die Fassung ein.
+Durchlauf 3 ergänzt zwei Zeilen unter CHECK: „Eine Bedingung steht im selben Satz wie die Zusage; hängt sie an einer fehlenden Angabe, nenne diese Angabe." und „Behaupte keine erledigte oder veranlasste Handlung." Das ist Fassung v3. Wer schnell sehen will, ob das trägt, schickt die beiden Zeilen als Folgeanweisung in den Chat von Durchlauf 2 und trägt sie danach in die Fassung ein.
 
-Durchlauf 4 setzt das Format: das Musterbeispiel aus dem vorigen Kapitel mit der Längengrenze und der Liste „Offen" nach der Signatur. Das ist Fassung v4. Sie läuft als vollständiger Auftrag in einem neuen Chat, damit wir den Stand haben, den wir in die Arbeitsmappe legen.
+Durchlauf 4 setzt das Format: das Musterbeispiel aus der vorigen Lektion mit der Längengrenze und der Liste „Offen" nach der Signatur. Das ist Fassung v4. Sie läuft als vollständiger Auftrag in einem neuen Chat, damit wir den Stand haben, den wir in die Arbeitsmappe legen.
 
-Bei jedem Durchlauf prüfen wir mit denselben Kriterien und tragen eine Zeile ins Protokoll ein. Zwei Änderungen in einem Durchlauf vermeiden wir, auch wenn es verlockend ist: Danach wüssten wir nicht, welche der beiden das Ergebnis geprägt hat.
+Bei jedem Durchlauf prüfen wir mit denselben Kriterien und tragen eine Zeile ins Protokoll ein. Unabhängige Änderungen werden getrennt bearbeitet, damit die Beobachtungen nachvollziehbar bleiben. Auch so beweist der Vergleich keine Ursache.
 
 ### Schritt 6: Das Protokoll lesen
 
@@ -105,11 +115,13 @@ So kann der Entwurf nach Durchlauf 4 aussehen. Das Beispiel ist konstruiert, kei
 
 Gegen die Befundliste aus Schritt 1: Alle drei Gruppen sind bereinigt. Die zwei Aussagen, die von Anfang an in Ordnung waren, stehen noch. Nichts ist veranlasst, nichts ist zugesagt, was am fehlenden Versanddatum hängt. Für einen echten Einsatz müsste das Versanddatum im Bereich Lager und Versand geklärt werden; die Kursübung endet beim geprüften Entwurf.
 
-### Eine eigene Variante
+### Freiwillige Vertiefung am eigenen Fall
 
-Wir nehmen den eigenen Fall und den Auftrag aus dem vorigen Kapitel. Dann:
+Die zusätzliche Variante ist freiwillig. Für die Arbeitsmappe genügt zunächst der bearbeitete Morgenrot-Fall; die passende Fassung wird als zusammenhängender Beitrag zu Portfolio-Teil 2 weitergeführt.
 
-1. Den Auftrag in einem neuen Chat ausführen und alle Befunde sammeln, in drei Gruppen.
+Wir nehmen den eigenen Fall und den Auftrag aus der Lektion zur Kundenanfrage. Dann:
+
+1. Den Auftrag in einem neuen Chat ausführen und alle Befunde sammeln, in drei Gruppen. Bei einer Struktur- oder Vergleichsaufgabe heißen die Gruppen Vollständigkeit, Bedingung und Handlung, Form; die Prüffrage der ersten Gruppe lautet dann: Fehlt etwas aus dem Material, oder ist etwas dazugekommen?
 2. Denselben Auftrag unverändert in einem zweiten neuen Chat ausführen. Unterschiede notieren.
 3. Die Reihenfolge festlegen: Welcher Befund wäre am teuersten?
 4. Drei Durchläufe mit je einer Änderung, jede Änderung anschließend in die Fassung übernehmen.
@@ -127,16 +139,17 @@ Vier Durchläufe und eine Wiederholung sind eine Arbeitsweise, kein Experiment. 
 |---|---|
 | Die Versuchung, alle Mängel in einer Folgeanweisung zu beheben | Befundliste ansehen und den teuersten Fehler wählen. Eine Änderung, eine Beobachtung, eine Protokollzeile. |
 | Nach der Änderung ist der alte Mangel weg, ein neuer da | Beides notieren. Der neue Mangel bekommt seinen Platz in der Reihenfolge; er ist kein Grund, die Änderung rückgängig zu machen. |
-| Die Folgeanweisung wirkt, die neue Fassung im neuen Chat nicht | Prüfen, ob die Änderung wirklich in die Fassung übertragen wurde, und zwar in denselben Block (Format oder Grenzen). |
-| Die Wiederholung (1b) unterscheidet sich stark vom ersten Durchlauf | Erwartbar. Als Maß dafür festhalten, wie viel Streuung ohne Änderung entsteht. Spätere Unterschiede vorsichtig deuten. |
+| Die Folgeanweisung wirkt, die neue Fassung im neuen Chat nicht | Prüfen, ob die Änderung wirklich in die Fassung übertragen wurde, und zwar in denselben Block (Format oder Check). |
+| Die Wiederholung (1b) unterscheidet sich stark vom ersten Durchlauf | Als Beobachtung festhalten, dass sich Ergebnisse auch ohne Änderung unterscheiden können. Spätere Unterschiede vorsichtig deuten. |
 | Das Protokoll füllt sich mit Bewertungen („besser", „schlechter") | Durch Beobachtungen ersetzen: „Frist steht im Satz", „140 Wörter", „Bio-Aussage fehlt". Bewertungen kommen erst in der Spalte Entscheidung. |
-| Nach vier Durchläufen ist der Entwurf immer noch nicht brauchbar | Kein Grund zur Sorge. Fassung mit den wenigsten Befunden der Gruppe Belegbarkeit wählen, den Rest als offene Punkte in die Mappe schreiben. Der nächste Durchlauf hat ein klares Ziel. |
+| Die Rückfragen des Modells enthalten schon einen Entwurf | Folgeanweisung: „Nur Fragen, noch kein Entwurf." Fragen streichen, deren Antwort im Context steht. |
+| Nach vier Durchläufen ist der Entwurf immer noch nicht brauchbar | Den Entwurf mit seinen offenen Befunden dokumentieren und vor Verwendung korrigieren. Der nächste Durchlauf hat ein klares Ziel. |
 
-## Kontrollpunkt für Modul 2
+## Kontrollpunkt
 
+- Die drei Bewegungen im Dialog unterscheiden: Rückfragen vor dem Entwurf, Folgeanweisung am Entwurf, Vergleich zwischen Entwürfen
 - Befunde eines Entwurfs sammeln und in Belegbarkeit, Bedingung und Handlung sowie Form sortieren
 - Die Reihenfolge der Reparatur nach den Folgen eines durchgerutschten Fehlers begründen
-- Eine unveränderte Wiederholung als Maß für die Streuung ohne Änderung einsetzen
+- Eine unveränderte Wiederholung auf Unterschiede ohne Promptänderung untersuchen
 - Je Durchlauf genau eine Änderung vornehmen und Folgeanweisung von neuer Fassung unterscheiden
-- Ein Iterationsprotokoll mit Beobachtungen statt Bewertungen führen
-- Vier Prompt-Fassungen mit je einer Änderung dokumentieren und eine als Arbeitsstand wählen
+- Ein Iterationsprotokoll mit Beobachtungen statt Bewertungen führen und eine Fassung als Arbeitsstand wählen

@@ -4,7 +4,6 @@ project:
   resources:
     - "material/**"
     - "images/**"
-    - "docs/kurskonzept-v2.md"
   render:
     - "*.qmd"
     - "start/*.qmd"
@@ -21,7 +20,7 @@ execute:
 
 book:
   title: "Working with GenAI"
-  description: "Vom ersten Chat zum belegbaren Arbeitsergebnis"
+  description: "Generative KI verstehen, Anwendungsfälle finden und im Arbeitsalltag einsetzen"
   author: "Jan Kirenz"
   page-navigation: true
   search:
@@ -29,42 +28,56 @@ book:
   page-footer:
     left: "© [Jan Kirenz](https://www.kirenz.com/), 2026"
   chapters:
-    - index.qmd
-    - lernweg.qmd
-    - werkzeugkompass.qmd
-    - part: "Modul 1 · Ankommen: erster Erfolg und erste Grenzen"
+    - part: "Generative KI verstehen und Anwendungsfälle finden"
       chapters:
+        - index.qmd
+        - start/wie-generative-ki-arbeitet.qmd
+        - start/werkzeuge-ueberblick.qmd
         - start/erster-chat.qmd
+        - start/datenregeln.qmd
         - start/grenzen-daten.qmd
+        - start/use-cases-finden.qmd
+        - start/use-cases-bewerten.qmd
         - start/anwendungsfall.qmd
-    - part: "Modul 2 · Strukturierte Arbeitsaufträge"
+    - part: "Prompting und Zusammenarbeit im Dialog"
       chapters:
+        - prompting/prompting-grundlagen.qmd
         - prompting/arbeitsauftrag.qmd
         - prompting/beispiele-format.qmd
         - prompting/iterieren.qmd
-    - part: "Modul 3 · Kontext bereitstellen"
+    - part: "Kontext, Dokumente und Recherche"
       chapters:
+        - kontext/kontextfenster.qmd
         - kontext/material-auswaehlen.qmd
+        - kontext/prompt-injection.qmd
         - kontext/regeln-quellen.qmd
         - kontext/material-finden.qmd
-    - part: "Modul 4 · Qualität prüfen"
+        - kontext/websuche.qmd
+    - part: "Ergebnisse beurteilen und verbessern"
       chapters:
+        - qualitaet/ergebnisqualitaet.qmd
         - qualitaet/aussagen-pruefen.qmd
         - qualitaet/testfaelle.qmd
         - qualitaet/toolvergleich.qmd
-    - part: "Modul 5 · Verantwortung und Risiko-Orientierung"
+    - part: "Daten, Rechte und Verantwortung"
       chapters:
         - verantwortung/datenschutz.qmd
         - verantwortung/urheberrecht.qmd
+        - verantwortung/verzerrungen.qmd
         - verantwortung/ki-kompetenz.qmd
-    - part: "Modul 6 · In den Alltag bringen"
+    - part: "Wiederverwenden und Arbeitsabläufe gestalten"
       chapters:
+        - transfer/arbeitsweise-waehlen.qmd
         - transfer/wiederverwenden.qmd
         - transfer/miniworkflow.qmd
         - transfer/transferplan.qmd
-    - part: "Praxis und Nachschlagen"
+    - part: "Freiwillige Vertiefung"
       chapters:
         - praxis/codex-claude-code.qmd
+    - part: "Nachschlagen"
+      chapters:
+        - lernweg.qmd
+        - werkzeugkompass.qmd
         - kursuebersicht.qmd
 
 format:

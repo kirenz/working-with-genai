@@ -1,6 +1,6 @@
 # Working with GenAI
 
-Vollständig ausgearbeitete Kursquellen für das Microcredential: sechs Module, 18 Lektionen, 30 Stunden. Durchgehender Fall ist die Rösterei Morgenrot mit den aus Business Analytics übernommenen Personen und Bildern.
+Vollständig ausgearbeitete Kursquellen für das Microcredential: sechs Module mit 31 Pflichtlektionen sowie eine freiwillige Vertiefung, 30 Stunden. Durchgehender Lehrfall ist die Rösterei Morgenrot. Grundlagen und Anwendungen sind einzeln über die Navigation erreichbar.
 
 ## Zum Durchgehen
 
@@ -13,11 +13,11 @@ Vollständig ausgearbeitete Kursquellen für das Microcredential: sechs Module, 
 - `slides/`: ein Reveal.js-Deck pro Lektion plus Arbeitsagenten-Demo, mit Sprecherhinweisen.
 - `docs/lehrleitfaden.md`: Auftakt, Beratungen, Recap und Vorbereitung.
 
-Die 18 Plattform-Units liegen in `hdm/lernplattform/apps/api/app/db/units/working-with-genai`. Ihre Zuordnung zu Buch, Folien und geplanten Lektionen steht in `docs/kursmanifest.json`. Die bestehende veröffentlichte Lektion behält ihren Slug `arbeitsauftrag`.
+Die 32 Plattform-Units liegen in `hdm/lernplattform/apps/api/app/db/units/working-with-genai`. Ihre Zuordnung zu Buch, Folien und Lektionen steht in `docs/kursmanifest.json`. Die 18 bereits veröffentlichten Lektionen behalten ihre Slugs und Datenbankkennungen.
 
 ## Arbeitsweise
 
-Buch zuerst, daraus Folien und interaktive Lernschritte. Buch in Wir-Form, deutsche Folien und Plattformtexte indirekt oder mit Sie. Materialien und eigene Fälle bleiben synthetisch. Die Musterantworten sind als konstruiert gekennzeichnet; es werden keine Live-Modellläufe behauptet.
+Buch zuerst, daraus Folien und interaktive Lernschritte. Buch in Wir-Form oder neutral, deutsche Folien und Plattformtexte ohne direkte Leseransprache. Materialien und eigene Fälle bleiben synthetisch. Die Musterantworten sind als konstruiert gekennzeichnet; es werden keine Live-Modellläufe behauptet.
 
 Der Pflichtpfad erfordert keinen Zusatzkauf, keine eigene API und keine Installation. Funktionsabhängige Übungen haben einen Text- oder Kursbeispiel-Fallback. Für n8n werden Kursinstanz und zentrales Modell-Credential organisatorisch vorbereitet; diese Einrichtung ist noch nicht erfolgt.
 
@@ -32,7 +32,9 @@ Die HTML-Dateien liegen unter `_book/`. Die Kursübersicht verbindet Kapitel und
 
 ## Gemeinsame Durchsicht steht aus
 
-Die Buchausarbeitung erfolgte in drei getrennten Fable-5.1-Arbeitspaketen über die lokale Claude-Code-CLI. Nach einer Sitzungspause übernahm Opus 5 die verbleibende Übertragung in Units und Folien; Codex integrierte die Ergebnisse. Nutzerwunsch: keine umfangreichen Prüfungen. Daher keine Unitvalidatoren, umfassenden Testläufe oder Browserprüfung des Vollausbaus. Begrenzte Feld- und Referenzprüfungen durch die Arbeitsagenten sind im Übergabebericht festgehalten. Ein Erzeugungslauf für die Ansichtsdateien ist keine didaktische oder technische Abnahme.
+Die v3-Entwürfe wurden mit Fable 5.1 und Opus 5 über das vorhandene Claude-Max-Login ausgearbeitet. Nach Erreichen des Sitzungslimits beauftragte der Nutzer Codex ausdrücklich mit der Fertigstellung und erlaubte OpenAI-Subagenten. Codex führt die Materialien zusammen, korrigiert konkrete fachliche Befunde und veröffentlicht den abgestimmten Umfang.
+
+Der Nutzer hat die ausführliche gemeinsame Durchsicht auf später verschoben. Zur Veröffentlichung gehören deshalb gezielte Inhalts-, Zuordnungs- und Unitprüfungen, der Buch-/Folien-Build und die notwendigen Sicherungen des Produktionsimports. Diese Prüfungen ersetzen keine vollständige didaktische Abnahme.
 
 Quellen und Wiederverwendung: `docs/quellen-und-wiederverwendung.md` sowie die Modulnotizen unter `docs/authoring/`. Die Inhalte nutzen didaktische Bausteine aus Frech, VWA und SiMa.ai; deren betriebliche Daten und Zugänge werden nicht mitgenommen.
 

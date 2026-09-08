@@ -1,6 +1,6 @@
 ---
-title: "Testfälle für den eigenen Fall"
-subtitle: "Modul 4 · Lektion 4.2"
+title: "Mit Testfällen die Qualität prüfen"
+subtitle: "Modul 4 · Lektion 4.3"
 book-source: "../../qualitaet/testfaelle.qmd"
 ---
 
@@ -13,7 +13,7 @@ Der Kundenservice-Auftrag aus Modul 2 hat einmal ein gutes Ergebnis geliefert. D
 Petra Lindqvist bereitet vor, dass der Auftrag regelmäßig benutzt wird, auch von der Vertretung. Vorher will sie wissen, wo er hält und wo nicht.
 
 ::: {.notes}
-Einstieg zwei Minuten. Frage an den Raum: Woran würde man merken, dass ein Auftrag im Alltag nicht mehr trägt? Erwartete Antworten: wenn eine Antwort falsch rausgeht. Darauf hinweisen, dass genau das der teure Weg ist, es zu merken. Der günstige Weg sind fünf erfundene Anfragen, bevor die Vertretung anfängt. Material dieser Lektion ist unverändert das aus Modul 2: drei Shop-Listenpreise, keine Abo-Preise, Fünf-Werktage-Regel, Zuständigkeit von Lager und Versand.
+Einstieg zwei Minuten. Frage an den Raum: Woran würde man merken, dass ein Auftrag im Alltag nicht mehr trägt? Erwartete Antworten: wenn eine Antwort falsch rausgeht. Darauf hinweisen, dass genau das der teure Weg ist, es zu merken. Der günstige Weg sind fünf erfundene Anfragen, bevor die Vertretung anfängt. Der Context dieser Lektion ist unverändert der aus Modul 2: drei Shop-Listenpreise, keine Abo-Preise, Fünf-Werktage-Regel, Zuständigkeit von Lager und Versand.
 :::
 
 ## Fünf Falltypen {.small}
@@ -27,7 +27,7 @@ Einstieg zwei Minuten. Frage an den Raum: Woran würde man merken, dass ein Auft
 | T5 | **Außerhalb des Bereichs** | „Monatlich 40 kg, welche Geschäftskundenkonditionen?“ |
 
 ::: {.notes}
-Etwa vier Minuten. Die Typen als Designentscheidung dieses Kurses kennzeichnen, nicht als Norm. Drei Lagen sind seit Modul 2 bekannt: gedeckt, bedingt, ungedeckt. Zwei kommen hier dazu: eine Eingabe, die dem Material widerspricht, und eine, die den Auftrag verlässt. Auf die Verwechslungsgefahr hinweisen: T2 ist kein Fall fehlender Angaben, obwohl eine Angabe fehlt; das Material nennt die Bedingung, nur das Versanddatum fehlt. T5 ist gefährlich, weil an der Anfrage nichts falsch ist und der Shop-Preis ja im Material steht. Alle Mails sind erfunden, Download `material/m04/testfaelle-eingaben.txt`.
+Etwa vier Minuten. Die Typen als Designentscheidung dieses Kurses kennzeichnen, nicht als Norm. Drei Lagen sind seit Modul 2 bekannt: gedeckt, bedingt, ungedeckt. Zwei kommen hier dazu: eine Eingabe, die dem Context widerspricht, und eine, die den Auftrag verlässt. Auf die Verwechslungsgefahr hinweisen: T2 ist kein Fall fehlender Angaben, obwohl eine Angabe fehlt; der Context nennt die Bedingung, nur das Versanddatum fehlt. T5 ist gefährlich, weil an der Anfrage nichts falsch ist und der Shop-Preis ja im Context steht. Alle Mails sind erfunden, Download `material/m04/testfaelle-eingaben.txt`.
 :::
 
 ## Was auf einer Karte steht
@@ -65,14 +65,14 @@ Erfüllt, wenn:
 
 T4 · WIDERSPRUCH
 Erfüllt, wenn:
-[ ] K1 9,00 EUR als regulärer Listenpreis laut Material.
+[ ] K1 9,00 EUR als regulärer Listenpreis laut Context.
 [ ] K2 Weder Bestreiten noch Bestätigen der 8,50 EUR.
 [ ] K3 Keine Erstattung zugesagt oder abgelehnt.
 [ ] K4 "Angabe der Kundin" und "Erstattung" stehen unter "Offen".
 ```
 
 ::: {.notes}
-Zwei Minuten. An K2 von T4 zeigen, dass beide Richtungen ein Fehler sind: der Kundin widersprechen und ihr recht geben. Das Material sagt nur, was heute gilt, nicht, was letzte Woche auf der Website stand. An K2 von T2 zeigen, wie ein Kriterium auf eine Stelle zeigt statt auf einen Eindruck. Alle fünf Karten vollständig in `material/m04/testfallkarten.md`, dort auch die leere Karte für den eigenen Fall.
+Zwei Minuten. An K2 von T4 zeigen, dass beide Richtungen ein Fehler sind: der Kundin widersprechen und ihr recht geben. Der Context sagt nur, was heute gilt, nicht, was letzte Woche auf der Website stand. An K2 von T2 zeigen, wie ein Kriterium auf eine Stelle zeigt statt auf einen Eindruck. Alle fünf Karten vollständig in `material/m04/testfallkarten.md`, dort auch die leere Karte für den eigenen Fall.
 :::
 
 ## Arbeitsphase: durchlaufen und protokollieren
@@ -89,7 +89,7 @@ Arbeitsphase fünfzehn Minuten. Realistisch schafft nicht jede Person zehn Durch
 
 | Karte | Durchlauf 1 | Durchlauf 2 | Befund |
 |---|---|---|---|
-| T1 | bestanden | bestanden | einmal „inkl. MwSt.“ ergänzt, steht nicht im Material |
+| T1 | bestanden | bestanden | einmal „inkl. MwSt.“ ergänzt, steht nicht im Context |
 | T2 | bestanden | bestanden | Bedingung genannt, Versanddatum unter „Offen“ |
 | T3 | bestanden | nicht bestanden | „in der Regel innerhalb weniger Tage“ |
 | T4 | nicht bestanden | bestanden | „auf unserer Website stand nie 8,50 EUR“ |
@@ -98,14 +98,14 @@ Arbeitsphase fünfzehn Minuten. Realistisch schafft nicht jede Person zehn Durch
 Konstruiert, kein aufgezeichnetes Ergebnis.
 
 ::: {.notes}
-Auflösung nach der Arbeitsphase, etwa fünf Minuten. Ergebnisse aus dem Raum zuerst einsammeln. Zwei Punkte betonen. Erstens: „inkl. MwSt.“ ist im Alltag wahrscheinlich zutreffend und trotzdem ungedeckt; die Folgerung ist, das Material zu ergänzen, nicht das Kriterium zu lockern. Zweitens: Eine Karte, die einmal besteht und einmal nicht, ist der wertvollste Befund der Übung, weil sie eine Stelle markiert, an der der Auftrag zu wenig sagt. Ein Schwanken ist ein Befund über den Auftrag, nicht über die Zuverlässigkeit des Werkzeugs.
+Auflösung nach der Arbeitsphase, etwa fünf Minuten. Ergebnisse aus dem Raum zuerst einsammeln. Zwei Punkte betonen. Erstens: „inkl. MwSt.“ ist im Alltag wahrscheinlich zutreffend und trotzdem ungedeckt; die Folgerung ist, den Context zu ergänzen, nicht das Kriterium zu lockern. Zweitens: Eine Karte, die einmal besteht und einmal nicht, ist der wertvollste Befund der Übung, weil sie eine Stelle markiert, an der der Auftrag zu wenig sagt. Ein Schwanken ist ein Befund über den Auftrag, nicht über die Zuverlässigkeit des Werkzeugs.
 :::
 
 ## Auswertung und genau eine Änderung
 
 Drei Sätze: Welche Karten bestehen zweimal? Welche keinmal? Welche schwanken?
 
-Dann **eine** Änderung. Für T5 unter GRENZEN:
+Dann **eine** Änderung. Für T5 unter CHECK:
 
 ```text
 Anfragen von Geschäftskunden oder zu Mengen außerhalb des Onlineshops
@@ -115,7 +115,7 @@ nicht beantworten, sondern unter "Offen" zur internen Klärung eintragen.
 Danach T5 zweimal wiederholen. Beide Fassungen aufheben.
 
 ::: {.notes}
-Drei Minuten. Warum genau eine Änderung: Bei drei Änderungen auf einmal ist danach nicht mehr zuzuordnen, welche gewirkt hat. Warum beide Fassungen aufheben: Der alte Befund bleibt mit Datum im Protokoll stehen und ist die Begründung der neuen Fassung. Hinweis für die Selbstlernphase: Nach einer Änderung an GRENZEN oder FORMAT alle fünf Karten erneut durchlaufen, weil eine Änderung eine andere Stelle verschieben kann.
+Drei Minuten. Warum genau eine Änderung: Bei drei Änderungen auf einmal ist danach nicht mehr zuzuordnen, welche gewirkt hat. Warum beide Fassungen aufheben: Der alte Befund bleibt mit Datum im Protokoll stehen und ist die Begründung der neuen Fassung. Hinweis für die Selbstlernphase: Nach einer Änderung an CHECK oder FORMAT alle fünf Karten erneut durchlaufen, weil eine Änderung eine andere Stelle verschieben kann.
 :::
 
 ## Was zwei Durchläufe nicht zeigen
@@ -130,7 +130,23 @@ Das Protokoll begründet die nächste Fassung des Auftrags. Mehr nicht.
 Eine Minute, aber nicht überspringen. Diese Folie ist die Belegdisziplin des Kurses in einem Satz. Für eine Häufigkeitsaussage wären viele Durchläufe unter gleichen Bedingungen nötig, und das ist nicht Gegenstand dieses Kurses. Wenn im Raum die Frage kommt, wie viele Durchläufe denn nötig wären: ehrlich antworten, dass der Kurs das nicht beziffert, und auf den Zweck zurückführen: Es geht um die nächste Fassung des eigenen Auftrags, nicht um eine Messung.
 :::
 
-## Eigene Variante und Portfolio
+## Dieselben fünf Typen jenseits von Texten {.small}
+
+| Typ | Tabellen vergleichen | Besprechungsnotizen strukturieren |
+|---|---|---|
+| Normalfall | zwei vollständige Angebote | eine vollständige Notiz |
+| Bedingung | ein Preis gilt erst ab einer Menge | ein Beschluss unter Vorbehalt |
+| Fehlende Angabe | ein Feld ist leer | eine Zuständigkeit fehlt |
+| Widerspruch | zwei Stände desselben Angebots | zwei Notizen zur selben Sache |
+| Außerhalb | ein Angebot in fremder Währung | eine Notiz aus einer anderen Besprechung |
+
+**Die Karten ändern sich, die Typen nicht.**
+
+::: {.notes}
+Zwei Minuten. Zeigt, dass die Typen Lagen sind und keine Textsorten. Nützlich für alle, deren eigener Fall kein Antwortschreiben ist; erfahrungsgemäß ist das etwa die Hälfte der Runde. Wenn Zeit ist, eine Runde: Welcher der fünf Typen fällt beim eigenen Vorhaben am schwersten zu konstruieren? Meist ist es der Widerspruchsfall, weil er eine Behauptung braucht, die dem eigenen Context zuwiderläuft.
+:::
+
+## Die eigene Testfallreihe
 
 1. Fünf Karten für den eigenen Auftrag, eine je Typ, mit erfundenen Eingaben.
 2. Erwartung und Kriterien schreiben, **bevor** der erste Durchlauf startet.
@@ -140,11 +156,11 @@ Eine Minute, aber nicht überspringen. Diese Folie ist die Belegdisziplin des Ku
 Karten, Protokoll und Auswertung gehören in **Portfolio-Teil 3**, Testfälle.
 
 ::: {.notes}
-Selbstlernphase. Die Portfolio-Vorlage erwartet mindestens fünf Fälle, darunter je einen mit Lücke, mit Bedingung und außerhalb des Bereichs; die fünf Typen erfüllen das. Zwei Hinweise mitgeben. Erstens: Bestehen alle fünf Karten auf Anhieb, sind die Karten zu prüfen, nicht zu feiern; enthält der Widerspruchsfall wirklich einen Widerspruch, verlässt der letzte Fall wirklich den Bereich? Zweitens: Nicht ausgeführte Fälle im Portfolio als offen markieren, nicht als bestanden. Datenregel gilt wie immer, alle Eingaben erfunden.
+Selbstlernphase, drei Minuten Ansage. Das ist die verpflichtende eigene Arbeit in Modul 4; die übrigen eigenen Varianten dieses Moduls sind freiwillig. Die Portfolio-Vorlage erwartet mindestens fünf Fälle, darunter je einen mit Lücke, mit Bedingung und außerhalb des Bereichs; die fünf Typen erfüllen das. Zwei Hinweise mitgeben. Erstens: Bestehen alle fünf Karten auf Anhieb, sind die Karten zu prüfen, nicht zu feiern; enthält der Widerspruchsfall wirklich einen Widerspruch, verlässt der letzte Fall wirklich den Bereich? Zweitens: Nicht ausgeführte Fälle im Portfolio als offen markieren, nicht als bestanden. Datenregel gilt wie immer, alle Eingaben erfunden.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 4.2, Working with GenAI: qualitaet/testfaelle
+- Buchkapitel 4.3, Working with GenAI: qualitaet/testfaelle
 - Material: material/m04/testfallkarten.md, testfaelle-eingaben.txt; Auftrag aus Modul 2: material/prompt-vorlage.txt
 - Fünf Falltypen und der Planwert von zwei Durchläufen je Karte sind Designentscheidungen dieses Kurses; alle Kundenmails und das Beispielprotokoll sind konstruiert

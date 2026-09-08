@@ -1,17 +1,17 @@
 ---
-title: "Der erste Chat-Erfolg"
-subtitle: "Modul 1 · Lektion 1.1"
+title: "Vom Briefing zum Entwurf"
+subtitle: "Modul 1 · Lektion 1.4"
 book-source: ../../start/erster-chat.qmd
 ---
 
-## Heute in zehn Minuten: ein brauchbarer Text {.stage}
+## Der erste eigene Durchlauf: ein brauchbarer Text {.stage}
 
-[Modul 1 · Ankommen]{.kicker}
+[Modul 1 · Generative KI verstehen]{.kicker}
 
-Eine kleine echte Aufgabe aus der Rösterei Morgenrot. Kein Vorwissen, ein sichtbares Ergebnis. Die Grenzen kommen danach.
+Eine kleine Aufgabe aus der Rösterei Morgenrot. Ein Briefing, drei Varianten, eine Prüfung. Die Arbeitsweise aus der Grundlage wird sichtbar.
 
 ::: {.notes}
-Einstieg im Kickoff, direkt nach der Begrüßung. Ziel der nächsten zehn Minuten: Alle haben einmal selbst einen Auftrag abgeschickt und drei Textvarianten gesehen. Ankündigen, dass es bewusst zuerst um den Erfolg geht; Grenzen und Datenregeln folgen in der nächsten Lektion. Wer noch kein Konto hat, legt es jetzt an oder schaut zunächst bei der Nachbarin zu. Zeit: 1 Minute.
+Erste praktische Aufgabe im Auftakt, nach Grundlage und Werkzeugübersicht, etwa 25 Minuten. Ziel: Alle haben einmal selbst einen Auftrag abgeschickt, drei Textvarianten gesehen und eine gegen das Briefing gelesen. Anknüpfen an die Grundlage: Was im Briefing steht, kann im Text vorkommen; zusätzliche Angaben sind dadurch nicht belegt. Ihre tatsächliche Herkunft lässt sich aus dem Satz nicht ableiten. Bei fehlendem Zugang die Prüfung am konstruierten Beispiel durchführen. Zeit: 1 Minute.
 :::
 
 ## Der Anlass: Jonas braucht drei Varianten
@@ -51,7 +51,7 @@ Material: material/m01/briefing-abo-hinweistext.txt. Sortiment und Preise aus de
 :::
 
 ::: {.notes}
-Das Briefing kurz vorlesen und die untere Liste betonen: Was dort steht, darf im Text nicht vorkommen. Hinweis, dass alles erfunden ist und deshalb unverändert ins Chatfenster darf. Für echte Briefings aus dem eigenen Haus gilt das nicht automatisch; kommt in Lektion 1.2. Zeit: 1 Minute.
+Das Briefing kurz vorlesen und die untere Liste betonen: Was dort steht, darf im Text nicht vorkommen. Hinweis, dass alles erfunden ist und deshalb unverändert ins Chatfenster darf. Für echte Briefings aus dem eigenen Haus gilt das nicht automatisch; bis zur Datenlektion gilt die kurze Regel, ausschließlich das bereitgestellte erfundene Material zu verwenden. Zeit: 1 Minute.
 :::
 
 ## Vormachen: neuer Chat, Auftrag einfügen, abschicken
@@ -61,10 +61,10 @@ Das Briefing kurz vorlesen und die untere Liste betonen: Was dort steht, darf im
 3. Abschicken, Ergebnis einmal ganz lesen
 
 ```text
-AUFGABE   Drei Varianten eines Hinweistextes auf das Kaffee-Abo
-MATERIAL  Das Briefing (nur diese Angaben)
-FORMAT    Drei nummerierte Varianten, je genau zwei Sätze, sachlich
-GRENZEN   Nichts ergänzen; fehlende Angaben unter "Offen" nennen
+TASK     Drei Varianten eines Hinweistextes auf das Kaffee-Abo
+CONTEXT  Rolle im Marketing der Rösterei; das Briefing (nur diese Angaben)
+FORMAT   Drei nummerierte Varianten, je genau zwei Sätze, sachlich
+CHECK    Nichts ergänzen; fehlende und widersprüchliche Angaben unter "Offen" nennen
 ```
 
 ::: {.sources}
@@ -72,7 +72,7 @@ Vollständiger, kopierfertiger Auftrag: Buchkapitel 1.1, Schritt 2, oder materia
 :::
 
 ::: {.notes}
-Live-Demo am Beamer: Browser mit ChatGPT, neuer Chat, Auftrag aus dem Buchkapitel kopieren, einfügen, abschicken. Auf drei Handgriffe beschränken, nichts erklären, was nicht gefragt ist. Die vier Überschriften nur als Merkhilfe nennen: was zu tun ist, woraus, in welcher Form, was bei Lücken. Nicht in Prompt-Theorie abgleiten; das ist Modul 2. Falls die Demo-Umgebung kein Konto hat: konstruiertes Beispiel von Folie 7 zeigen und die Teilnehmenden direkt selbst starten lassen. Zeit: 2 Minuten.
+Live-Demo am Beamer: Browser mit ChatGPT, neuer Chat, Auftrag aus dem Buchkapitel kopieren, einfügen, abschicken. Auf drei Handgriffe beschränken, nichts erklären, was nicht gefragt ist. Die vier Überschriften nur als Merkhilfe nennen und einmal übersetzen: Task · Aufgabe, Context · Kontext, Format · Format, Check · Prüfung. Also: was zu tun ist, woraus und in welcher Lage, in welcher Form, was bei Lücken gekennzeichnet wird. Nicht in Prompt-Theorie abgleiten; die Grundlage dazu folgt in Modul 2. Falls die Demo-Umgebung kein Konto hat: konstruiertes Beispiel von Folie 7 zeigen und die Teilnehmenden direkt selbst starten lassen. Zeit: 2 Minuten.
 :::
 
 ## Mitmachen: fünf Minuten
@@ -86,7 +86,7 @@ Jetzt alle selbst:
 Wer fertig ist: Folgeanweisung im selben Chat schicken.
 
 ```text
-Kürze Variante 2 auf einen einzigen Satz. Behalte die Aussage, dass alle drei Sorten im Abo wählbar sind. Ergänze weiterhin nichts, was nicht im Material steht.
+Kürze Variante 2 auf einen einzigen Satz. Behalte die Aussage, dass alle drei Sorten im Abo wählbar sind. Ergänze weiterhin nichts, was nicht im Context steht.
 ```
 
 ::: {.notes}
@@ -147,14 +147,14 @@ Nur die Zeilen ansprechen, die im Raum tatsächlich aufgetreten sind. Die vollst
 
 **Portfolio-Teil 1, Feld „Problem":**
 
-Welche Schreib- oder Prüfaufgabe im eigenen Alltag kostet regelmäßig Zeit?
+Welche wiederkehrende Aufgabe im eigenen Alltag kostet regelmäßig Zeit oder Nerven? Auch Notizen ordnen, Tabellen vergleichen, eine Entscheidung vorbereiten.
 
-Ein Satz in die Arbeitsmappe. Das Feld wird in den nächsten beiden Lektionen weiter gefüllt.
+Ein Satz in die Arbeitsmappe. Das Feld wird in den weiteren Lektionen von Modul 1 systematisch ausgebaut.
 
 ::: {.sources}
 Portfolio-Vorlage: material/portfolio-vorlage.md
 :::
 
 ::: {.notes}
-Abschluss der Lektion. Alle schreiben einen Satz in ihre Arbeitsmappe; wer noch keine angelegt hat, tut es jetzt mit der Vorlage. Keine echten Namen oder internen Details. Übergang zur nächsten Lektion: Dieselbe Aufgabe, aber ohne Briefing. Was passiert dann? Zeit: 1 Minute.
+Abschluss der Lektion. Alle schreiben einen Satz in ihre Arbeitsmappe; wer noch keine angelegt hat, tut es jetzt mit der Vorlage. Keine echten Namen oder internen Details. Betonen, dass es keine Schreibaufgabe sein muss. Danach folgt die Demo zu Codex und Claude Code, anschließend die Datenregeln. Zeit: 1 Minute.
 :::

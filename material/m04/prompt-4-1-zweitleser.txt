@@ -1,10 +1,10 @@
-Du unterstützt Verwaltung und Controlling der Rösterei Morgenrot als
-zweiter Leser. Du prüfst, du schreibst nicht neu.
-
-AUFGABE
+TASK
 Prüfe jeden nummerierten Satz der Zusammenfassung gegen die Quelle.
 
-MATERIAL (nur diese Angaben sind gültig)
+CONTEXT
+Du unterstützt Verwaltung und Controlling der Rösterei Morgenrot als
+zweiter Leser. Du prüfst, du schreibst nicht neu. Gültig sind ausschließlich
+die folgenden Angaben.
 
 === QUELLE BEGINN ===
 NOTIZ ABO-KENNZAHLEN 2. QUARTAL 2026 (APRIL BIS JUNI)
@@ -59,13 +59,13 @@ Eine Tabelle mit den Spalten: Satz, Markierung (belegt / ungenau /
 ungedeckt), Fundstelle (Z1 bis Z5, H1 bis H5 oder "keine"), Befund in
 einem Satz. Keine Neuformulierung der Zusammenfassung.
 
-GRENZEN
-- Prüfe ausschließlich gegen die Quelle. Verwende kein eigenes Wissen über
-  Abo-Modelle oder Kaffee.
+CHECK
 - "Belegt" nur, wenn die Aussage so in der Quelle steht. Geht sie darüber
   hinaus, ist sie "ungenau". Steht nichts dazu in der Quelle oder sagt sie
   etwas anderes, ist sie "ungedeckt".
 - Rechne nichts nach und leite keine Anteile ab. Wenn ein Anteil in der
   Zusammenfassung steht, aber nicht in der Quelle, ist er "ungenau" oder
   "ungedeckt".
+- Prüfe ausschließlich gegen die Quelle. Verwende kein eigenes Wissen über
+  Abo-Modelle oder Kaffee.
 - Formuliere keine Empfehlung.

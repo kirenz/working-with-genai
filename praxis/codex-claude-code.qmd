@@ -1,10 +1,10 @@
-# Codex und Claude Code: Wenn das Werkzeug Dateien anfasst
+# Codex und Claude Code: eine Aufgabe mit Dateien
 
-Bis hierher hat das Chatmodell Text in ein Fenster geschrieben, und wir haben ihn herauskopiert. Es gibt eine zweite Art von Werkzeug: einen Arbeitsagenten, der in einem Ordner liest und schreibt. Dieses Kapitel gehört zum freiwilligen Praxispfad. Im Kickoff steht dazu eine Demo von zehn bis fünfzehn Minuten; wer will, macht sie später nach. Nichts davon ist Pflicht, nichts kostet Geld, und wer den Pfad nicht geht, verliert nichts an der Prüfungsleistung.
-
-::: {.callout-note title="Freiwillig, ohne Installation, ohne Kauf"}
-Der Pflichtpfad dieses Kurses läuft vollständig im kostenlosen Chatkonto. Dieses Kapitel setzt nichts voraus, was dort nicht auch geht: Der Kopierweg in Schritt 4 liefert dasselbe Ergebnis im Chatfenster. Wer den Arbeitsagenten ausprobiert, ersetzt damit einen Teil der eigenen Erprobungszeit im Zeitbudget; es kommen keine Stunden dazu.
+::: {.callout-note title="Freiwillige Vertiefung, ab Kursbeginn sichtbar"}
+Diese Lektion ist von Anfang an zugänglich und gehört nicht zu den sechs Pflichtmodulen. Sie setzt keine Installation, keinen Kauf und kein Abonnement voraus: Der Kopierweg in Schritt 4 führt dieselbe Aufgabe im kostenlosen Chatkonto durch und liefert dasselbe Ergebnis. Wer den Arbeitsagenten selbst ausprobiert, ersetzt damit einen Teil der eigenen Erprobungszeit im Zeitbudget; es kommen keine Stunden dazu. Wer die Lektion auslässt, verliert nichts an der Prüfungsleistung.
 :::
+
+Bis hierher hat das Chatmodell Text in ein Fenster geschrieben, und wir haben ihn herauskopiert. Es gibt eine zweite Art von Werkzeug: einen Arbeitsagenten, der in einem Ordner liest und schreibt. Diese Lektion zeigt den Unterschied an einer konkreten Aufgabe der Rösterei, mit sechs Dateien, die zum Download bereitstehen. Im Kickoff steht dazu eine Demo von zehn bis fünfzehn Minuten; wer will, macht sie später nach.
 
 ## Was anders ist
 
@@ -17,7 +17,7 @@ Ein Chat antwortet. Ein Arbeitsagent arbeitet in einem Ordner: Er liest Dateien,
 | Was kann schiefgehen? | Eine ungedeckte Aussage im Text | Zusätzlich: eine geänderte oder gelöschte Datei |
 | Was schützt davor? | Unsere Prüfung | Unsere Prüfung plus die Freigabeeinstellung des Werkzeugs |
 
-Zwei Werkzeuge dieser Art kommen im Kurs vor: **Claude Code** von Anthropic und **Codex** von OpenAI. Beide bearbeiten Dateien und benutzen Werkzeuge; beide bekommen von uns Aufgabe, Bereich und Grenzen vorgegeben. Wir zeigen sie an einer Aufgabe der Rösterei, nicht an Programmcode: Ein Prüfbericht zu drei Produkttexten soll als Datei entstehen.
+Zwei Werkzeuge dieser Art kommen im Kurs vor: **Claude Code** von Anthropic und **Codex** von OpenAI. Beide bearbeiten Dateien und benutzen Werkzeuge; beide bekommen von uns die Aufgabe, den Arbeitsbereich und die erlaubten Aktionen vorgegeben. Wir zeigen sie an einer Aufgabe der Rösterei, nicht an Programmcode: Ein Prüfbericht zu drei Produkttexten soll als Datei entstehen.
 
 ## Der Demo-Ordner
 
@@ -25,27 +25,27 @@ Alles, was der Agent braucht, liegt in einem Ordner mit sechs Dateien. Sie sind 
 
 | Datei | Rolle |
 |---|---|
-| [auftrag.md](../material/m01/arbeitsagent/auftrag.md) | Die Anweisung an den Agenten: Aufgabe, Material, Format, Grenzen |
+| [auftrag.md](../material/m01/arbeitsagent/auftrag.md) | Die Anweisung an den Agenten: Task, Context, Format, Check |
 | [briefing.txt](../material/m01/arbeitsagent/briefing.txt) | Das freigegebene Briefing, die einzige gültige Faktenquelle |
 | [produkttexte-entwurf.md](../material/m01/arbeitsagent/produkttexte-entwurf.md) | Drei Produkttexte mit gedeckten und ungedeckten Aussagen; werden gelesen, nicht verändert |
 | [ergebnis-soll.md](../material/m01/arbeitsagent/ergebnis-soll.md) | Beschreibung des gewünschten Ergebnisses, zum Vergleich danach |
 | [pruefbericht-beispiel.md](../material/m01/arbeitsagent/pruefbericht-beispiel.md) | Konstruiertes Beispiel eines fertigen Prüfberichts, als Fallback |
 | [README.md](../material/m01/arbeitsagent/README.md) | Ablauf in Kurzform |
 
-Der Auftrag ist nach demselben Muster gebaut wie jeder Chat-Auftrag im Kurs, nur dass Material und Ergebnis Dateinamen haben:
+Der Auftrag ist nach demselben Muster gebaut wie jeder Chat-Auftrag im Kurs, nur dass Context und Ergebnis Dateinamen haben:
 
 ```text
-AUFGABE
+TASK
 Prüfe die drei Produkttexte in produkttexte-entwurf.md Aussage für Aussage gegen das Briefing in briefing.txt. Erstelle daraus eine neue Datei pruefbericht.md in diesem Ordner.
 
-MATERIAL
-briefing.txt ist die einzige gültige Faktenquelle. produkttexte-entwurf.md enthält die zu prüfenden Texte. Allgemeines Wissen über Kaffee ist kein Beleg.
+CONTEXT
+Du arbeitest in diesem Ordner für das Marketing der Rösterei Morgenrot. briefing.txt ist die einzige gültige Faktenquelle. produkttexte-entwurf.md enthält die zu prüfenden Texte. Allgemeines Wissen über Kaffee ist kein Beleg.
 
 FORMAT
 Je Sorte eine Tabelle: Nr. | Aussage | Status (belegt / teilweise belegt / nicht belegt) | Fundstelle oder Begründung. Am Ende eine Zusammenfassung mit Anzahl je Status und einer Liste "Offen".
 
-GRENZEN
-Verändere produkttexte-entwurf.md und briefing.txt nicht. Erstelle außer pruefbericht.md keine weiteren Dateien und lösche nichts. Schreibe keine korrigierten Produkttexte.
+CHECK
+Aussagen, die sich keiner Liste im Briefing eindeutig zuordnen lassen, bekommen den Status "nicht belegt" mit kurzer Begründung. Verändere produkttexte-entwurf.md und briefing.txt nicht. Erstelle außer pruefbericht.md keine weiteren Dateien und lösche nichts. Schreibe keine korrigierten Produkttexte.
 ```
 
 ## Zielbild
@@ -68,15 +68,15 @@ Wer einen Zugang hat, startet Claude Code oder Codex so, dass der Demo-Ordner de
 Lies auftrag.md und führe den Auftrag aus.
 ```
 
-Mehr muss nicht in das Fenster. Aufgabe, Material, Format und Grenzen stehen in der Datei; der Agent liest sie selbst. Das ist der erste sichtbare Unterschied zum Chat: Wir haben kein Material kopiert.
+Mehr muss nicht in das Fenster. Task, Context, Format und Check stehen in der Datei; der Agent liest sie selbst. Das ist der erste sichtbare Unterschied zum Chat: Wir haben kein Material kopiert.
 
 ::: {.callout-important title="Die Freigabefrage lesen, bevor wir sie bestätigen"}
-Wenn der Agent eine Datei schreiben will, fragt er in der Standardeinstellung nach. In diesem Moment lesen wir, was er vorhat: Heißt die Datei `pruefbericht.md`? Liegt sie im Demo-Ordner? Will er sonst etwas ändern? Erst dann bestätigen wir. Die Frage ist kein lästiger Zwischenschritt, sie ist die Stelle, an der unsere Verantwortung sichtbar wird. Für Claude Code gilt laut Dokumentation: Freigaberegeln setzt das Werkzeug durch, nicht das Modell; Anweisungen im Auftrag beeinflussen, was der Agent versucht, nicht, was er darf ([Claude Code, Configure permissions](https://code.claude.com/docs/en/permissions)). Codex führt Freigaben und Sandbox in seiner Dokumentation unter „Agent approvals & security" ([learn.chatgpt.com/docs](https://learn.chatgpt.com/docs)).
+Wenn der Agent eine Datei schreiben will, fragt er in der Standardeinstellung nach. In diesem Moment lesen wir, was er vorhat: Heißt die Datei `pruefbericht.md`? Liegt sie im Demo-Ordner? Will er sonst etwas ändern? Erst dann bestätigen wir. Die Frage ist kein lästiger Zwischenschritt, sie ist die Stelle, an der unsere Verantwortung sichtbar wird. Für Claude Code gilt laut Dokumentation: Freigaberegeln setzt das Werkzeug durch, nicht das Modell; Anweisungen im Auftrag beeinflussen, was der Agent versucht, nicht, was er darf ([Claude Code, Configure permissions](https://code.claude.com/docs/en/permissions)). Codex behandelt Freigaben und Sandbox in eigenen Abschnitten seiner Dokumentation ([Agent approvals & security](https://learn.chatgpt.com/docs/codex/agent-approvals-security), [Sandboxing](https://learn.chatgpt.com/docs/codex/sandboxing)).
 :::
 
 ### Schritt 3: Das Artefakt prüfen
 
-Wir öffnen den Ordner erneut. Liegt `pruefbericht.md` dort? Ist sonst nichts hinzugekommen, nichts verändert? Wir öffnen den Bericht und prüfen ihn wie jedes andere Ergebnis im Kurs, Aussage für Aussage, jetzt in umgekehrter Richtung: Hat der Agent eine Aussage als belegt geführt, die im Briefing nicht steht? Die Tabelle in `ergebnis-soll.md` nennt die markanten Stellen mit Soll-Status. Dann prüfen wir `produkttexte-entwurf.md`: unverändert? Wenn ja, hat der Agent die Grenze eingehalten. Wenn nein, ist das ein Befund, den wir notieren, und der Grund, warum wir die Freigabefrage gelesen haben.
+Wir öffnen den Ordner erneut. Liegt `pruefbericht.md` dort? Ist sonst nichts hinzugekommen, nichts verändert? Wir öffnen den Bericht und prüfen ihn wie jedes andere Ergebnis im Kurs, Aussage für Aussage, jetzt in umgekehrter Richtung: Hat der Agent eine Aussage als belegt geführt, die im Briefing nicht steht? Die Tabelle in `ergebnis-soll.md` nennt die markanten Stellen mit Soll-Status. Dann prüfen wir `produkttexte-entwurf.md`: unverändert? Wenn ja, hat der Agent den Check eingehalten. Wenn nein, ist das ein Befund, den wir notieren, und der Grund, warum wir die Freigabefrage gelesen haben.
 
 ### Schritt 4: Der Kopierweg ohne Agenten
 
@@ -117,14 +117,14 @@ Nach der Demo oder dem eigenen Lauf halten wir drei Beobachtungen fest, in einem
 Der Chat ist die Vertretung, der wir Unterlagen auf den Tisch legen und deren Entwurf wir abholen. Der Arbeitsagent ist dieselbe Vertretung mit einem Schlüssel zum Aktenschrank. Sie kann selbst nachschlagen und selbst ablegen. Deshalb sagen wir ihr nicht nur, was sie tun soll, sondern legen fest, welche Schubladen sie öffnen darf, und lassen uns fragen, bevor sie etwas hineinlegt.
 :::
 
-## Zugänge, Stand 7. September 2026
+## Zugänge, Stand 8. September 2026
 
 Wir nennen hier nur, was die offiziellen Seiten an diesem Tag sagen, und keine Preise, weil sich diese ändern.
 
 - **Claude Code** läuft laut Übersicht im Terminal, in Entwicklungsumgebungen, als Desktop-App und im Browser. Die Übersicht sagt: Die meisten Oberflächen setzen ein Claude-Abonnement oder ein Konto in der Anthropic Console voraus; für die Desktop-App ist ein bezahltes Abonnement erforderlich ([code.claude.com, Overview](https://code.claude.com/docs/en/overview)). Wiederkehrende Anweisungen lassen sich dort in einer Datei namens CLAUDE.md und in sogenannten Skills hinterlegen ([Skills](https://code.claude.com/docs/en/skills)).
-- **Codex** wird in der Dokumentation von OpenAI als CLI, Erweiterung für Entwicklungsumgebungen, Cloud-Variante und Desktop-App geführt. Die Preisseite sagt, dass Codex in den ChatGPT-Plänen Free, Go, Plus, Pro, Business, Edu und Enterprise enthalten ist, mit nach Plan unterschiedlichen Nutzungsgrenzen ([learn.chatgpt.com, Pricing](https://learn.chatgpt.com/docs/pricing)). Die Produktbezeichnungen sind im Wandel; die frühere Entwickleradresse leitet auf die neue Dokumentation um. Wir unterscheiden im Kurs nach Handlung, nicht nach Namen: Der Chat antwortet, der Arbeitsagent bearbeitet Dateien.
+- **Codex** wird in der Dokumentation von OpenAI als CLI, Erweiterung für Entwicklungsumgebungen, Cloud-Variante und Desktop-App geführt. Die Preisseite führt Codex in den ChatGPT-Plänen Free, Go, Plus, Pro, Business sowie Enterprise und Edu, mit nach Plan unterschiedlichen Nutzungsgrenzen ([learn.chatgpt.com, Pricing](https://learn.chatgpt.com/docs/pricing)). Die Produktbezeichnungen sind im Wandel; die frühere Entwickleradresse leitet auf die neue Dokumentation um. Wir unterscheiden im Kurs nach Handlung, nicht nach Namen: Der Chat antwortet, der Arbeitsagent bearbeitet Dateien.
 
-Was wir nicht behaupten: konkrete Nutzungsgrenzen, Preise oder Schaltflächen. Vor dem eigenen Einrichten öffnen wir die verlinkten Seiten und lesen den aktuellen Stand.
+Was wir nicht behaupten: konkrete Nutzungsgrenzen, Preise oder Schaltflächen. Vor dem eigenen Einrichten öffnen wir die verlinkten Seiten und lesen den aktuellen Stand. Für diese Lektion ist das nicht nötig; der Kopierweg genügt.
 
 ## Fehler diagnostizieren
 
@@ -132,16 +132,16 @@ Was wir nicht behaupten: konkrete Nutzungsgrenzen, Preise oder Schaltflächen. V
 |---|---|
 | Der Agent fragt, ob er `pruefbericht.md` schreiben darf | Erwartet. Dateiname und Ordner lesen, dann bestätigen. |
 | Der Agent will eine zweite Datei anlegen oder eine bestehende ändern | Ablehnen. Notieren, was er wollte; das ist der Befund, für den die Freigabefrage da ist. Den Lauf mit dem Hinweis „nur pruefbericht.md" wiederholen. |
-| `pruefbericht.md` enthält korrigierte Produkttexte | Grenze verletzt. Im Bericht streichen oder den Lauf wiederholen. Die Korrektur bleibt bei Jonas Halder. |
+| `pruefbericht.md` enthält korrigierte Produkttexte | Check verletzt. Im Bericht streichen oder den Lauf wiederholen. Die Korrektur bleibt bei Jonas Halder. |
 | Eine Aussage steht als belegt, die im Briefing fehlt | Wie im Chat: als unbelegt markieren. Der Agent ist keine bessere Faktenquelle als das Modell dahinter. |
 | Kein Zugang, keine Installation möglich | Kopierweg in Schritt 4. Das Ergebnis ist vergleichbar; der Unterschied im Handgriff ist der Lernstoff. |
 | Der Agent fragt nach zusätzlichen Inhalten oder Rückfragen | Der Auftrag sagt, dass er mit dem Ordner arbeiten soll. Antworten: „Arbeite mit den Dateien im Ordner." |
 | Unsicherheit, ob das eigene Konto den Agenten einschließt | Die verlinkten Anbieterseiten öffnen. Nichts kaufen, um diese Übung zu machen; der Kopierweg genügt. |
 
-## Kontrollpunkt für den Praxispfad
+## Kontrollpunkt für die Vertiefung
 
 - Den Unterschied zwischen Chat und Arbeitsagent an den Handgriffen Material hineinkopieren und Ergebnis heraustragen erklären
-- Einen Auftrag für einen Arbeitsagenten mit Dateinamen für Material und Ergebnis lesen und seine Grenzen benennen
+- Einen Auftrag für einen Arbeitsagenten mit Dateinamen für Context und Ergebnis lesen und seinen Check benennen
 - Eine Freigabefrage lesen und begründen, warum sie vor dem Bestätigen gelesen wird
 - Ein Dateiartefakt gegen eine Soll-Beschreibung und das Ausgangsmaterial prüfen
 - Anweisung an das Modell und Freigabeeinstellung des Werkzeugs auseinanderhalten

@@ -1,0 +1,117 @@
+# Use Cases im Arbeitsalltag finden
+
+Wo kann generative KI im Arbeitsalltag unterstützen? Wir erfassen Tätigkeiten, zerlegen einen Vorgang in Arbeitsschritte und benennen Engpässe. Daraus entstehen zwei bis drei Kandidaten für die eigene Arbeitsmappe.
+
+## Der Anlass: Aylin bittet um eine Wochenübersicht
+
+Rösterei Morgenrot, Geschäftsführung. Bevor Aylin Yılmaz entscheidet, welcher Ablauf mit einem Chatmodell erprobt wird, will sie wissen, woran das Team seine Zeit verbringt. Sie bittet jede Person, eine typische Arbeitswoche in Stichworten aufzuschreiben: welche Tätigkeiten, wie oft, wie lange, und was daran stört. Sina Bergmann aus Vertrieb und Kundenservice liefert die folgende Übersicht. Sie ist für den Kurs konstruiert; Zeitangaben sind Sinas eigene Beobachtungen aus einer Woche, keine Messung ([Download des Arbeitsblatts mit diesem Beispiel](../material/m01/taetigkeitsinventar.md)).
+
+| Tätigkeit | Wie oft | Dauer je Vorgang | Was daran stört | Ergebnis geht an |
+|---|---|---|---|---|
+| Kundenanfragen zum Abo beantworten | 8 bis 12 pro Woche | 10 bis 20 Minuten | Nachschlagen in Fachinformationen und Versandliste; Formulieren dauert; Rückfragen, wenn eine Angabe fehlt | Kundinnen und Kunden |
+| Bestellstatus für einzelne Kundinnen prüfen | 5 bis 8 pro Woche | 5 Minuten | Wechsel zwischen Postfach, Shop-System und Versandliste | Kundinnen und Kunden |
+| Rückgaben und Reklamationen bearbeiten | 1 bis 2 pro Woche | 30 Minuten | Jeder Fall anders; Absprache mit Lager nötig | Kundinnen, Lager |
+| Newsletter-Absatz mit Jonas abstimmen | 1 pro Woche | 20 Minuten | Mehrere Abstimmungsrunden über Formulierungen | Jonas Halder |
+| Wochenübersicht Abo-Kündigungen für Aylin | 1 pro Woche | 45 Minuten | Kündigungsgründe stehen als Freitext in Mails; Zusammenfassen von Hand | Aylin Yılmaz |
+| Telefonische Anfragen | täglich | 3 bis 10 Minuten | Unplanbar; Antwort muss sofort kommen | Kundinnen und Kunden |
+
+Eine solche Übersicht sagt noch nichts über KI. Sie sagt, wo Zeit hingeht und wo es hakt. Daran lassen sich eigene Ideen mit konkreten Beobachtungen verbinden.
+
+## Zielbild
+
+Am Ende der Lektion liegt eine Liste mit zwei bis drei eigenen Kandidaten vor. Zu jedem Kandidaten steht in einem Satz, welcher Vorgang gemeint ist, welcher Schritt darin heute nicht gut läuft, welche Art von Unterstützung ein Chatmodell leisten könnte und was bei einem Menschen bleibt. Zeitangaben sind als Beobachtung oder als Annahme gekennzeichnet. Diese Liste ist die Arbeitsgrundlage für die Bewertung in der nächsten Lektion und für Portfolio-Teil 1; sie ist noch keine Entscheidung.
+
+## Schritt für Schritt
+
+### Schritt 1: Die eigene Woche erfassen
+
+Wir füllen das Arbeitsblatt für eine typische eigene Woche aus, mit denselben fünf Spalten wie Sina. Vollständigkeit ist nicht das Ziel; sechs bis zehn Zeilen genügen. Wir notieren, was wir beobachtet haben, und kennzeichnen Schätzungen als solche. In der Spalte „Was daran stört“ helfen fünf Stichworte: Zeitaufwand, wiederkehrende Rückfragen, Medienwechsel zwischen Anwendungen, Wartezeiten auf andere, Qualitätsprobleme wie Fehler oder Nacharbeit.
+
+Alle Angaben bleiben allgemein: Rollen statt Namen, keine Kundennamen, keine internen Zahlen, die vertraulich sind. Die Wochenübersicht beschreibt Tätigkeiten, nicht Personen.
+
+### Schritt 2: Einen Vorgang zerlegen
+
+Aus der Übersicht wählen wir einen Vorgang, der oft vorkommt oder besonders stört, und zerlegen ihn in vier Teile: Eingaben, Arbeitsschritte, Ergebnis, Empfänger. Für Sinas ersten Eintrag sieht das so aus:
+
+| Teil | Kundenanfrage zum Abo beantworten |
+|---|---|
+| **Eingaben** | Die Kundenmail; der Auszug aus den Fachinformationen; bei Versandfragen die Versandliste von Lager und Versand |
+| **Arbeitsschritte** | 1. Mail lesen und die Fragen herausziehen. 2. Zu jeder Frage die geltende Angabe nachschlagen. 3. Antwort formulieren. 4. Gegenlesen. 5. Versenden |
+| **Ergebnis** | Eine Antwortmail, die belegbare Fragen beantwortet und offene an die zuständige Stelle verweist |
+| **Empfänger** | Die anfragende Person; bei Versandfragen zusätzlich Lager und Versand |
+
+Die Zerlegung macht sichtbar, dass ein Vorgang aus verschiedenen Schritten besteht, die unterschiedlich gut für ein Chatmodell geeignet sind. Schritt 3, das Formulieren aus vorliegenden Angaben, ist ein typischer Kandidat. Für Schritt 2 werden aktuelle Angaben benötigt, die mitgegeben oder über einen zugelassenen Werkzeugzugriff abgerufen werden können. Im vorbereiteten Kursfall werden sie als Text mitgegeben. Schritt 4 bleibt bei Sina; Schritt 5 ebenfalls. Für diesen Pilot betrachten wir einzelne Schritte und ihre Voraussetzungen.
+
+::: {.callout-tip title="Die Zerlegung ist der eigentliche Fund"}
+Auch ein umfangreicher Vorgang wie die Reklamationsbearbeitung kann geeignete Teilschritte enthalten. Beispielsweise lassen sich Sachverhalte aus einer Mail in eine feste Gliederung bringen. Entscheidungen über die Reklamation und Absprachen mit dem Lager bleiben bei den zuständigen Personen.
+:::
+
+### Schritt 3: Engpässe benennen
+
+Zu jedem Vorgang halten wir fest, was heute daran nicht gut funktioniert. Wir bleiben konkret: nicht „dauert lange“, sondern „das Nachschlagen in drei Quellen dauert länger als das Schreiben“. Nicht „fehleranfällig“, sondern „wenn das Versanddatum fehlt, wird trotzdem ein Liefertag genannt“. Ein Engpass, der sich so beschreiben lässt, ist später auch prüfbar: Wir können nach vier Wochen nachsehen, ob er kleiner geworden ist.
+
+Für Sinas Woche fallen drei Engpässe auf: das Formulieren wiederkehrender Antworten, das Zusammenfassen von Kündigungsgründen und die Abstimmung von Newsletter-Texten. Auch der Bestellstatus bleibt ein Kandidat. Dafür muss geklärt werden, wie die aktuellen Angaben aus dem Shop-System zugänglich werden. Ein direkter Systemzugriff oder eine gewöhnliche Automatisierung könnte hier ausreichen.
+
+### Schritt 4: Kandidaten ableiten
+
+Für jeden Engpass fragen wir, welche Art von Unterstützung passen könnte. Vier mögliche Formen der Unterstützung dienen hier als Orientierung:
+
+| Grundform | Was das Modell bekommt | Was entsteht | Beispiel aus einem anderen Bereich |
+|---|---|---|---|
+| **Entwürfe erstellen** | Angaben und Vorgaben | Ein Textentwurf, der geprüft wird | Personal: Absagen aus einem festen Textbaukasten |
+| **Material strukturieren** | Ungeordnete Notizen, Mails, Freitext | Eine Gliederung, Tabelle oder Liste mit festen Kategorien | Beratung: Besprechungsnotizen in eine Ergebnisliste mit offenen Punkten überführen |
+| **Informationen vergleichen** | Zwei oder mehr Dokumente oder Tabellenstände | Eine Gegenüberstellung mit Unterschieden und Lücken | Controlling: zwei Fassungen einer Planungstabelle abgleichen |
+| **Entscheidungen vorbereiten** | Kriterien und die vorliegenden Angaben | Eine Übersicht, die eine Person entscheiden lässt | Projektleitung: drei Angebote entlang derselben Kriterien nebeneinanderstellen |
+
+Dazu kommt das Entwickeln von Ideen, etwa Varianten für einen Betreff oder Ansätze für ein Onboarding. Ideen werden an Zielen, Rahmenbedingungen, Brauchbarkeit und Vielfalt beurteilt und enthaltene Sachbehauptungen werden trotzdem geprüft.
+
+Sinas drei Kandidaten lauten damit: Antwortentwürfe für Abo-Anfragen aus den Fachinformationen erstellen (Entwürfe erstellen; Sina liest und versendet). Kündigungsgründe aus den Mails einer Woche in feste Kategorien einordnen (Material strukturieren; Aylin entscheidet, was daraus folgt; die Mails enthalten Kundendaten, das ist zu klären). Drei Varianten eines Newsletter-Absatzes aus Jonas' Stichworten entwerfen (Entwürfe erstellen; Jonas wählt). Drei Kandidaten mit zwei Grundformen, und bei jedem steht, was ein Mensch behält.
+
+::: {.callout-note title="Was das Modell hier nicht liefert"}
+Ein Chatmodell kann helfen, die Woche zu ordnen. Es kann nicht wissen, wie lange ein Vorgang bei uns dauert, wie oft er anfällt oder was eine Verbesserung wert wäre. Zeitwerte stammen aus eigener Beobachtung oder werden als Annahme gekennzeichnet, die noch zu prüfen ist. Eine Angabe wie „spart etwa 40 Prozent Zeit“ ist ohne Beobachtung oder nachvollziehbare Berechnungsgrundlage unbelegt. Sie gehört gestrichen, nicht in die Arbeitsmappe.
+:::
+
+### Schritt 5, freiwillig: Ein Interview mit dem Chatmodell
+
+Das freiwillige Interview unterstützt die Wochenübersicht aus Schritt 1. Der Auftrag fordert das Modell auf, Fragen zu stellen und die Antworten zu ordnen. Danach folgen Zerlegung, Engpässe und Kandidaten wie beim manuellen Arbeitsblatt. Beide Wege liefern die gleiche Arbeitsgrundlage. Der Auftrag steht als [Textdatei](../material/m01/prompt-use-case-interview.txt) bereit:
+
+```text
+TASK
+Führe mit mir ein Interview über meine typische Arbeitswoche. Stelle mir nacheinander höchstens acht Fragen, immer nur eine je Nachricht. Am Ende ordnest du meine Antworten in eine Tabelle mit den Spalten Tätigkeit, Wie oft, Dauer je Vorgang, Was daran stört, Ergebnis geht an.
+
+CONTEXT
+Ich suche Stellen in meinem Arbeitsalltag, an denen ein Chatmodell einen einzelnen Arbeitsschritt unterstützen könnte, etwa Entwürfe erstellen, Material strukturieren, Informationen vergleichen oder eine Entscheidung vorbereiten. Ich beschreibe meine Tätigkeiten allgemein, ohne Namen und ohne vertrauliche Zahlen.
+
+FORMAT
+Eine Frage je Nachricht, kurz und ohne Vorschläge. Nach meiner letzten Antwort die Tabelle, darunter eine Liste "Offen" mit Angaben, die ich nicht gemacht habe.
+
+CHECK
+- Frage nach, wenn ich eine Dauer oder Häufigkeit nicht nenne; schätze sie nicht selbst.
+- Trage in die Tabelle nur ein, was ich gesagt habe. Kennzeichne Angaben, die ich als Schätzung bezeichnet habe, mit "(Annahme)".
+- Schlage keine Kandidaten vor und behaupte keine Zeitersparnis. Nenne keine Funktionen bestimmter Werkzeuge.
+```
+
+Wir prüfen die Tabelle wie jedes Ergebnis: Steht dort nur, was wir gesagt haben? Sind Schätzungen gekennzeichnet? Taucht eine Zahl auf, die wir nicht genannt haben, wird sie gestrichen.
+
+### Die eigene Kandidatenliste
+
+Aus der Woche, der Zerlegung und den Engpässen entstehen zwei bis drei eigene Kandidaten. Für jeden notieren wir vier Dinge in je einem Satz: der Vorgang und der Schritt darin; der Engpass, konkret beschrieben; die Grundform der Unterstützung; was bei einem Menschen bleibt. Der Satz aus dem Feld „Problem“ in Portfolio-Teil 1 ist einer dieser Kandidaten oder wird durch einen besseren ersetzt. Die Liste wandert in die Arbeitsmappe als Vorstufe zu Teil 1.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Die Wochenübersicht enthält nur Schreibaufgaben | Die vier Grundformen durchgehen: Wo wird verglichen, sortiert, vorbereitet? Diese Schritte sind oft unauffälliger als das Schreiben. |
+| Ein Kandidat beschreibt einen ganzen Vorgang („Reklamationen bearbeiten“) | Zerlegen. Welcher einzelne Schritt darin ist gemeint? Den Schritt als Kandidaten notieren. |
+| Der Engpass lautet „dauert zu lange“ | Konkretisieren: Welcher Schritt dauert, und warum? Erst dann ist später prüfbar, ob es besser wurde. |
+| Das Interview liefert Vorschläge oder eine Zeitersparnis | Streichen. Folgeanweisung: „Nur Fragen und meine Angaben, keine Vorschläge und keine Schätzungen.“ |
+| Ein Kandidat setzt Angaben voraus, die in einem System liegen, das nur Menschen sehen | Als Kandidat behalten und den benötigten Datenzugang als Voraussetzung notieren. Auch direkten Systemzugriff oder gewöhnliche Automatisierung erwägen. |
+| Alle Kandidaten enthalten Kundendaten | Kein Ausschlussgrund für die Liste; die Klärung gehört in die Bewertung. Für Übungen wird der Fall ohnehin erfunden. |
+
+## Kontrollpunkt
+
+- Eine typische Arbeitswoche mit Tätigkeit, Häufigkeit, Dauer, Störfaktor und Empfänger erfassen, ohne Namen und vertrauliche Zahlen
+- Einen Vorgang in Eingaben, Arbeitsschritte, Ergebnis und Empfänger zerlegen und den geeigneten Schritt benennen
+- Einen Engpass so beschreiben, dass später prüfbar ist, ob er kleiner geworden ist
+- Kandidaten den vier Grundformen zuordnen und für jeden angeben, was bei einem Menschen bleibt
+- Zeitangaben als Beobachtung oder Annahme kennzeichnen und erfundene Ersparnisse erkennen und streichen

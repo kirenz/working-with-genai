@@ -1,10 +1,10 @@
-# Projects und gespeicherte Anweisungen
+# Aufträge und Kontext wiederverwenden
 
-Der Arbeitsauftrag aus Modul 2 funktioniert. Aber wer ihn dreimal am Tag braucht, fügt dreimal am Tag denselben Block aus Rolle, Material, Format und Grenzen ein. In diesem Kapitel legen wir diesen Block einmal als Startpaket ab, in einem Projekt, einem Gem oder als Startnachricht zum Einfügen, und prüfen, ob die Entwürfe damit genauso belegbar bleiben.
+Der Arbeitsauftrag aus Modul 2 funktioniert. Aber wer ihn dreimal am Tag braucht, fügt dreimal am Tag denselben Block aus Rolle, Context, Format und Check ein. Das ist die Lage, für die im vorigen Kapitel das Projekt stand. In diesem Kapitel legen wir den Block einmal als Startpaket ab, in einem Projekt, einem Gem oder als Startnachricht zum Einfügen, und prüfen, ob die Entwürfe damit genauso belegbar bleiben.
 
 ## Der Anlass: dieselben Anweisungen, jeden Tag
 
-Ellen Ruppert aus Lager und Versand bekommt seit dem Wachstum der Rösterei mehrere Anfragen pro Woche mit derselben Frage: Wo bleibt meine Lieferung? Sina Bergmann hat ihr den Arbeitsauftrag aus dem Kundenservice gezeigt. Ellen findet ihn gut und lästig zugleich: Die Grenzen sind jedes Mal dieselben, das Material auch, nur die Anfrage wechselt. Aylin will wissen, ob sich das einmal einrichten lässt, sodass Ellen und Sina nur noch die Anfrage einfügen.
+Ellen Ruppert aus Lager und Versand bekommt seit dem Wachstum der Rösterei mehrere Anfragen pro Woche mit derselben Frage: Wo bleibt meine Lieferung? Sina Bergmann hat ihr den Arbeitsauftrag aus dem Kundenservice gezeigt. Ellen findet ihn gut und lästig zugleich: Der Check ist jedes Mal derselbe, der Context auch, nur die Anfrage wechselt. Aylin will wissen, ob sich das einmal einrichten lässt, sodass Ellen und Sina nur noch die Anfrage einfügen.
 
 Dazu kommt neues Material, eine synthetische Erweiterung des Lehrfalls: die [Versandinformationen](../material/m06/versandinformationen.txt) von Lager und Versand. Sie erklären Versandtage, Versandbestätigung und die Laufzeit, die der Paketdienst nennt, und sie stellen klar, dass der Sendungsstatus nur mit Sendungsnummer und nur durch Lager und Versand geprüft wird. Die Beispielanfrage dazu steht in [statusanfrage.txt](../material/m06/statusanfrage.txt):
 
@@ -14,7 +14,7 @@ Dazu kommt neues Material, eine synthetische Erweiterung des Lehrfalls: die [Ver
 >
 > Viele Grüße, K. Weber
 
-Eine Einschätzung vorweg: Was ändert sich am Risiko, wenn die Anweisungen nicht mehr in jeder Nachricht stehen, sondern einmal hinterlegt sind? Die Anweisungen sind dann weniger sichtbar. Wer im Projekt arbeitet, sieht beim Einfügen der Anfrage nicht mehr, welche Grenzen gelten, und kann vergessen, dass sie gelten. Das Startpaket macht die Arbeit bequemer, die Prüfung des Entwurfs macht es nicht überflüssig.
+Eine Einschätzung vorweg: Was ändert sich am Risiko, wenn die Anweisungen nicht mehr in jeder Nachricht stehen, sondern einmal hinterlegt sind? Die Anweisungen sind dann weniger sichtbar. Wer im Projekt arbeitet, sieht beim Einfügen der Anfrage nicht mehr, welche Regeln gelten, und kann vergessen, dass sie gelten. Das Startpaket macht die Arbeit bequemer, die Prüfung des Entwurfs macht es nicht überflüssig.
 
 ## Zielbild
 
@@ -22,13 +22,13 @@ Am Ende dieses Kapitels gibt es ein Startpaket aus zwei Teilen und drei Wege, es
 
 | Teil | Inhalt | Datei |
 |---|---|---|
-| **Anweisungen** | Rolle und Zweck, Materialregel, Standardformat, Grenzen | [startpaket-anweisungen.txt](../material/m06/startpaket-anweisungen.txt) |
+| **Anweisungen** | Task, Rolle und Quellenregel im Context, Standardformat, Check | [startpaket-anweisungen.txt](../material/m06/startpaket-anweisungen.txt) |
 | **Wissensmaterial** | Fachinformationen Kundenservice aus Modul 2 und Versandinformationen | [lehrfall-fachinformationen.txt](../material/lehrfall-fachinformationen.txt), [versandinformationen.txt](../material/m06/versandinformationen.txt) |
 
 Die drei Wege: ein Projekt in ChatGPT, ein Projekt in Claude oder ein Gem in Gemini; und für jedes Konto, in dem das nicht geht, die [Startnachricht](../material/m06/startnachricht.txt) als erste Nachricht jedes neuen Chats. Alle drei Wege liefern denselben Inhalt an das Modell. Das Ergebnis prüfen wir mit derselben Statusanfrage.
 
 ::: {.callout-note title="Was in die Anweisungen gehört und was nicht"}
-In die dauerhaften Anweisungen gehört, was bei jeder Anfrage gleich bleibt: Rolle und Zweck, die Regel, dass nur das Wissensmaterial gilt, das Standardformat, die Grenzen. In das Wissensmaterial gehören die Fakten, aus denen geantwortet wird, mit Datum. Nicht hinein gehört die einzelne Anfrage; sie wechselt und wird je Chat eingefügt. Und nicht hinein gehört, was nicht ins Chatkonto darf: Die Datenregel aus Modul 5 gilt für das Wissensmaterial genauso wie für jede Nachricht. Ein Projekt ist kein Freigabenachweis für vertrauliche Daten.
+In die dauerhaften Anweisungen gehört, was bei jeder Anfrage gleich bleibt: Rolle und Zweck, die Regel, dass nur das Wissensmaterial gilt, das Standardformat, der Check. In das Wissensmaterial gehören die Fakten, aus denen geantwortet wird, mit Datum. Nicht hinein gehört die einzelne Anfrage; sie wechselt und wird je Chat eingefügt. Und nicht hinein gehört, was nicht ins Chatkonto darf: Die Datenregel aus Modul 5 gilt für das Wissensmaterial genauso wie für jede Nachricht. Ein Projekt ist kein Freigabenachweis für vertrauliche Daten.
 :::
 
 ## Schritt für Schritt selbst bauen
@@ -38,12 +38,11 @@ In die dauerhaften Anweisungen gehört, was bei jeder Anfrage gleich bleibt: Rol
 Wir nehmen den Auftrag aus Modul 2 und trennen, was gleich bleibt, von dem, was wechselt. Das Ergebnis sind die Anweisungen des Startpakets. Der Kern:
 
 ```text
-Du unterstützt den Kundenservice und den Bereich Lager und Versand der Rösterei Morgenrot beim Entwerfen von Antworten auf Kundenanfragen.
+TASK
+Entwirf zu jeder eingefügten Kundenanfrage eine Antwort-Mail.
 
-ROLLE UND ZWECK
-Du schreibst Entwürfe. Du versendest nichts und du behauptest nicht, etwas veranlasst zu haben. Jeder Entwurf wird von einer Mitarbeiterin geprüft und selbst versendet.
-
-MATERIAL
+CONTEXT
+Du unterstützt den Kundenservice und den Bereich Lager und Versand der Rösterei Morgenrot beim Entwerfen von Antworten auf Kundenanfragen. Du schreibst Entwürfe; jeder Entwurf wird von einer Mitarbeiterin geprüft und selbst versendet.
 Gültig sind ausschließlich die Angaben im Wissensmaterial dieses Projekts (Fachinformationen Kundenservice, Versandinformationen) sowie die jeweils eingefügte Kundenanfrage. Allgemeines Wissen über Kaffee, Abos oder Paketdienste gilt nicht als Beleg.
 
 FORMAT (Standard, sofern die Anfrage nichts anderes sagt)
@@ -51,12 +50,12 @@ Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlicher Ton.
 Absenderzeile: bei Fragen zu Sortiment, Preis und Abo "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot"; bei Fragen zu Versand und Sendungsstatus "Ellen Ruppert, Lager und Versand, Rösterei Morgenrot".
 Am Ende eine Liste mit der Überschrift "Offen".
 
-GRENZEN
-- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
-- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie unter "Offen" ein.
-- Erfinde keine Termine, Preise, Fristen oder Sendungsstatus.
-- Eine Zusage, die im Material an eine Bedingung geknüpft ist, gibst du nur mit dieser Bedingung wieder.
+CHECK
+- Beantworte Fragen, die der Context nicht abdeckt, nicht. Trage sie unter "Offen" ein.
+- Eine Zusage, die im Context an eine Bedingung geknüpft ist, gibst du nur mit dieser Bedingung wieder.
 - Ankunftstage sagst du nie zu. Für Sendungsstatus verweist du auf die Prüfung durch Lager und Versand.
+- Verwende ausschließlich Angaben aus dem Context. Ergänze nichts und erfinde keine Termine, Preise, Fristen oder Sendungsstatus.
+- Du versendest nichts und du behauptest nicht, etwas veranlasst zu haben.
 - Wenn die Anfrage personenbezogene Angaben enthält, verwende sie im Entwurf nicht; du brauchst sie für die Antwort nicht.
 ```
 
@@ -64,7 +63,7 @@ Neu gegenüber Modul 2 sind drei Zeilen: die Absenderzeile nach Thema, das Verbo
 
 ### Schritt 2 — Das Startpaket in ChatGPT als Projekt anlegen
 
-Projekte in ChatGPT bündeln Anweisungen, Dateien und Chats zu einem Thema. Nach Angaben von OpenAI sind Projekte auch in kostenlosen Konten verfügbar, mit einer kleineren Zahl an Dateien je Projekt als in bezahlten Stufen ([OpenAI, Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt); der genaue Umfang ist kontobedingt und kann sich ändern).
+Projekte in ChatGPT bündeln Anweisungen, Dateien und Chats zu einem Thema. Ob die Funktion im eigenen Konto verfügbar ist und wie viele Dateien ein Projekt aufnimmt, hängt vom Tarif ab und ändert sich; den aktuellen Stand nennt der Hilfeartikel des Anbieters ([OpenAI, Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt)). Für diese Übung ist das nicht entscheidend: Wenn Projekte oder Datei-Uploads fehlen, liefert die Startnachricht in Schritt 4 denselben Inhalt.
 
 1. In der Seitenleiste den Bereich für Projekte öffnen und ein neues Projekt anlegen. Name: „Morgenrot Kundenservice".
 2. Die Projektanweisungen öffnen und den Text aus Schritt 1 vollständig einfügen. Speichern.
@@ -119,17 +118,21 @@ Der Entwurf erklärt, was belegt ist, kündigt die Prüfung an und lässt offen,
 
 ### Skills: die Anleitung als Datei
 
-Wer den Weg zum Arbeitsagenten aus der Kickoff-Demo weitergehen möchte, begegnet dem Begriff Skill. Ein Skill ist zunächst nichts anderes als eine wiederverwendbare Arbeitsanleitung in einer Textdatei mit einem kurzen Kopf, der sagt, wofür sie gilt. Claude Code lädt solche Dateien, wenn eine Aufgabe zur Beschreibung passt, oder auf Zuruf ([Claude Code, Skills](https://code.claude.com/docs/en/skills)). Ein Skill ist kein Agent und kein Zugriffsrecht: Er beschreibt, wie eine Aufgabe erledigt und geprüft wird, er führt sie nicht aus und er öffnet nichts.
+Wer den Weg zum Arbeitsagenten weitergehen möchte, den die [freiwillige Vertiefung](../praxis/codex-claude-code.qmd) beschreibt, begegnet dem Begriff Skill. Ein Skill ist zunächst nichts anderes als eine wiederverwendbare Arbeitsanleitung in einer Textdatei mit einem kurzen Kopf, der sagt, wofür sie gilt. Claude Code lädt solche Dateien, wenn eine Aufgabe zur Beschreibung passt, oder auf Zuruf ([Claude Code, Skills](https://code.claude.com/docs/en/skills)). Ein Skill ist kein Agent und kein Zugriffsrecht: Er beschreibt, wie eine Aufgabe erledigt und geprüft wird, er führt sie nicht aus und er öffnet nichts.
 
 Für den Kurs ist keine Installation nötig. Die Datei [skill-statusanfrage.md](../material/m06/skill-statusanfrage.md) zeigt das Format an Ellens Statusanfrage: Wann die Anleitung gilt, fünf Schritte, ein Kontrollpunkt mit vier Prüfpunkten, ein Testfall. Derselbe Text funktioniert unverändert als Projektanweisung oder als Startnachricht. Der Unterschied zwischen einem Skill und den Anweisungen aus Schritt 1 liegt nicht im Inhalt, sondern darin, dass der Kontrollpunkt Teil der Anleitung ist: Die Anleitung sagt selbst, wann das Ergebnis fertig ist.
 
-### Eine eigene Variante bauen
+### Freiwillige Vertiefung: das eigene Startpaket
+
+Die eigene Arbeit für Modul 6 ist die Transferentscheidung am Ende des Moduls. Wer das Startpaket auch für den eigenen Fall anlegen möchte, weil sich die Aufgabe im Alltag tatsächlich wiederholt, geht diesen Weg:
 
 1. Wir nehmen den Arbeitsauftrag aus dem eigenen Portfolio und trennen: Was bleibt bei jeder Anfrage gleich? Das sind die Anweisungen. Was sind die Fakten? Das ist das Wissensmaterial, mit Datum. Was wechselt? Das bleibt je Chat.
 2. Wir prüfen das Wissensmaterial gegen die Datenregel aus Modul 5. Ein Projekt ist kein Freigabenachweis.
 3. Wir legen das Startpaket auf dem Weg an, der im eigenen Konto funktioniert: Projekt, Gem oder Startnachricht.
 4. Wir führen die fünf Testfälle aus Modul 4 im Startpaket erneut aus und notieren, ob sie genauso ausgehen wie mit dem vollständigen Prompt.
 5. Wir tragen in **Portfolio-Teil 2** unter „Gespeicherte Anweisungen" ein, was dauerhaft hinterlegt ist, auf welchem Weg, und wann das Wissensmaterial zuletzt aktualisiert wurde.
+
+Wer die Vertiefung auslässt, hält für die Transferentscheidung einen Satz fest: Würde sich ein Startpaket für den eigenen Fall lohnen, und woran hängt die Antwort?
 
 ## Fehler diagnostizieren
 

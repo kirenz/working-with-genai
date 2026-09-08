@@ -1,6 +1,6 @@
 # Prüfprotokoll: Aussagen gegen die Quelle
 
-Kursmaterial „Working with GenAI“, Lektion 4.1. Vorlage zum Kopieren in die Arbeitsmappe (Portfolio-Teil 3, Prüfkriterien).
+Kursmaterial „Working with GenAI“, Lektion 4.2. Vorlage zum Kopieren in die Arbeitsmappe (Portfolio-Teil 3, Prüfkriterien).
 
 **Drei Markierungen:**
 

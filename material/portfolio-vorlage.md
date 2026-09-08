@@ -1,36 +1,44 @@
-# Arbeitsmappe — Vorlage für das Praxisportfolio
+# Arbeitsmappe: Vorlage für das Praxisportfolio
 
 Kursmaterial „Working with GenAI" (HdM-Microcredential, Kickoff 18.09.2026, Recap 08.10.2026)
 
-Diese Datei ist die Arbeitsmappe. Sie wird nicht am Ende geschrieben, sondern wächst vom ersten Kurstag an mit. Jede Lektion liefert einen Baustein; am Recap-Termin ist die Mappe das Prüfungsdokument.
+Diese Datei ist die Arbeitsmappe. Sie wird nicht am Ende geschrieben, sondern wächst vom ersten Kurstag an mit. Die Arbeit am eigenen Vorhaben liefert pro Modul einen Beitrag; am Recap-Termin ist die Mappe das Prüfungsdokument.
 
-**So wird sie benutzt:** Datei kopieren, umbenennen (`portfolio-<name>.md` oder als Textdokument), und die Platzhalter in spitzen Klammern durch eigene Inhalte ersetzen. Format ist freigestellt — Markdown, Word, Folien. Entscheidend ist, dass die vier Teile erkennbar sind.
+**So wird sie benutzt:** Datei kopieren, umbenennen (`portfolio-<name>.md` oder als Textdokument), und die Platzhalter in spitzen Klammern durch eigene Inhalte ersetzen. Format ist freigestellt: Markdown, Word, Folien. Entscheidend ist, dass die vier Teile erkennbar sind.
 
 > **Datenregel:** Keine echten Namen, Adressen, Kunden- oder Vertragsnummern in der Mappe. Für die Übungen vollständig erfundene Angaben verwenden. Allein Namen und Nummern zu ersetzen genügt bei vertraulichen Inhalten nicht. Was im Alltag zulässig ist, entscheidet die Regelung der eigenen Organisation.
 
 ---
 
-## Teil 1 — Use-Case-Canvas
+## Teil 1: Use-Case-Canvas
 
-Der Anwendungsfall, an dem im ganzen Kurs gearbeitet wird. Ein Fall, nicht drei.
+Vor dem Canvas stehen zwei bis drei Kandidaten aus dem Tätigkeitsinventar. Offene Voraussetzungen werden kenntlich gemacht. Vor der Erprobung muss geklärt sein, dass die benötigten Daten und Werkzeuge verwendet werden dürfen. Die Auswahlbegründung gehört zu diesem ersten Portfolio-Teil.
+
+| Kandidat und heutiges Problem | Erwarteter Nutzen | Aufwand einschließlich Prüfung | Daten und offene Voraussetzungen | Entscheidung mit Begründung |
+|---|---|---|---|---|
+| <Aufgabe 1> | <Beobachtung oder Annahme> | <Beobachtung oder Annahme> | <Was ist vorhanden, was fehlt?> | <Pilot / zuerst klären / anderer Lösungsweg> |
+| <Aufgabe 2> | <…> | <…> | <…> | <…> |
+| <Aufgabe 3, falls vorhanden> | <…> | <…> | <…> | <…> |
+
+Für den gewählten Pilotfall werden die folgenden sechs Felder ausgefüllt.
 
 **Problem.** <Welche Aufgabe kostet heute Zeit oder Qualität? Was passiert konkret, wenn sie schlecht läuft?>
 
 **Zielgruppe.** <Wer bekommt das Ergebnis: Kundschaft, Fachabteilung, Leitung, Öffentlichkeit?>
 
-**Nutzenhypothese.** <Was ist nach der Umsetzung besser? Die erwartete Veränderung zunächst als Annahme kennzeichnen: Zeit pro Vorgang einschließlich Nacharbeit, Qualität, Häufigkeit pro Woche, Zahl der Beteiligten.>
+**Nutzenversprechen (zunächst eine Annahme).** <Was ist nach der Umsetzung besser? Die erwartete Veränderung zunächst als Annahme kennzeichnen: Zeit pro Vorgang einschließlich Nacharbeit, Qualität, Häufigkeit pro Woche, Zahl der Beteiligten.>
 
 **Häufigkeit und Umfang.** <Wie oft fällt der Fall an? Wie lang ist ein typischer Vorgang?>
 
-**Datenbedarf.** <Welche Angaben braucht eine korrekte Antwort, und wo liegen sie heute?>
+**Datenbedarf.** <Welche Informationen benötigt die Aufgabe, wo liegen sie und dürfen sie im vorgesehenen Werkzeug verwendet werden?>
 
-**Abgrenzung.** <Was gehört ausdrücklich nicht dazu? Welche Entscheidung bleibt in jedem Fall bei einem Menschen?>
+**Abgrenzung.** <Was gehört ausdrücklich nicht dazu? Welche Entscheidung bleibt bei einem Menschen, und welche Rolle verantwortet Prüfung und nächsten Schritt?>
 
 ---
 
-## Teil 2 — Prompt- und Context-Pipeline
+## Teil 2: Prompt- und Context-Pipeline
 
-Die dokumentierte Bauweise: Was geht in welcher Form an das Modell, und woher stammen die Fakten?
+Dokumentiert wird, welchen Auftrag das Modell erhält, welche Informationen bereitgestellt werden und wie das Ergebnis beurteilt wird.
 
 ### Auftragskarte aus Modul 2
 
@@ -38,18 +46,18 @@ Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenro
 
 | Feld | Eintrag |
 |---|---|
-| **Der Fall** — welcher wiederkehrende Schreibanlass? | <z. B. Anfragen zu Abo-Änderungen und Lieferterminen, mehrmals pro Woche> |
-| **Aufgabe** — gewünschtes Ergebnis | <z. B. Entwirf eine Antwort-Mail auf die folgende Anfrage.> |
-| **Materialherkunft** — woher kommen die Fakten? | <z. B. Auszug aus der Konditionsübersicht, als Text in den Prompt eingefügt> |
-| **Format** — Textsorte, Länge, Aufbau | <z. B. E-Mail, höchstens 150 Wörter, am Ende eine Liste „Offen"> |
-| **Grenzen** — was passiert bei einer fehlenden Angabe? | <z. B. nicht beantworten, sondern unter „Offen" auflisten> |
-| **Prüfung vor dem Versand** — wie geht der Entwurf hinaus? | <z. B. gegen das Material lesen, korrigieren, selbst versenden> |
+| **Der Fall**: welche berufliche Aufgabe? | <z. B. Anfragen zu Abo-Änderungen und Lieferterminen, mehrmals pro Woche> |
+| **Task**: gewünschtes Ergebnis | <z. B. Entwirf eine Antwort-Mail auf die folgende Anfrage.> |
+| **Context**: welche Informationen und Rahmenbedingungen sind erforderlich? | <z. B. Rolle im Kundenservice; Auszug aus der Konditionsübersicht, als Text in den Prompt eingefügt> |
+| **Format**: Ergebnisform, Umfang, Aufbau | <z. B. E-Mail, höchstens 150 Wörter, am Ende eine Liste „Offen"> |
+| **Check**: was soll das Modell kennzeichnen, wenn eine Angabe fehlt? | <z. B. nicht beantworten, sondern unter „Offen" auflisten> |
+| **Prüfung vor der Verwendung**: wie wird das Ergebnis beurteilt und freigegeben? Diese Prüfung machen wir selbst; der Check im Prompt ersetzt sie nicht. | <z. B. gegen den Context lesen, korrigieren, selbst versenden> |
 
 ---
 
 
 
-**Der Arbeitsauftrag im Wortlaut.** <Den fertigen Prompt vollständig einfügen, mit den vier Teilen Aufgabe, Material, Format, Grenzen.>
+**Der Arbeitsauftrag im Wortlaut.** <Den fertigen Prompt vollständig einfügen, mit den vier Teilen TASK, CONTEXT, FORMAT, CHECK.>
 
 **Gespeicherte Anweisungen, soweit verwendet.** <Was ist dauerhaft hinterlegt, etwa als Projekt-Anweisung oder System-Prompt, statt bei jedem Durchlauf neu eingetippt zu werden?>
 
@@ -65,9 +73,9 @@ Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenro
 
 ---
 
-## Teil 3 — Qualitäts- und Compliance-Check
+## Teil 3: Qualitäts- und Compliance-Check
 
-**Testfälle.** Mindestens fünf, darunter ein Fall mit einer Lücke im Material, ein Fall, dessen Antwort nur unter einer Bedingung gilt, ein Widerspruch zwischen Quellen und ein Fall, der außerhalb des vorgesehenen Bereichs liegt.
+**Testfälle.** Mindestens fünf: ein typischer Fall, fehlende Angaben, eine Bedingung, widersprüchliche Vorgaben und eine Aufgabe außerhalb des vorgesehenen Bereichs. Die konkreten Fälle und Erwartungen richten sich nach dem Vorhaben. Bei einer Ideenaufgabe können beispielsweise widersprüchliche Ziele, eine fehlende Zielgruppe oder eine feste Budgetgrenze geprüft werden. Die Tabelle zeigt Beispiele für Auskunftsaufgaben.
 
 | # | Eingabe (kurz) | Erwartetes Ergebnis | Tatsächliches Ergebnis | Bestanden? |
 |---|---|---|---|---|
@@ -79,7 +87,7 @@ Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenro
 
 **Durchlauf dokumentieren.** <Datum, Werkzeug und sichtbare Modellbezeichnung, sofern angezeigt; neue oder fortgesetzte Unterhaltung; verwendete Materialversion. Bei einer konstruierten Kursantwort ausdrücklich „Kursbeispiel, kein eigener Modelllauf“ notieren. Nicht ausgeführte Fälle als offen markieren.>
 
-**Prüfkriterien.** <Woran wird „gut" festgemacht? Belegbarkeit jeder Aussage, Vollständigkeit, Form, Ton.>
+**Prüfkriterien.** <Woran wird „gut" festgemacht? Je nach Aufgabe etwa sachliche Richtigkeit, Quellenstütze, Vollständigkeit, nachvollziehbare Berechnung, Vielfalt der Ideen, Form und Ton. Den Maßstab und den Prüfschritt konkret nennen.>
 
 **Übertragbarkeit.** <Derselbe Auftrag in einem zweiten Werkzeug: Was war anders, was blieb gleich? Kein Ranking, sondern eine Beobachtung am eigenen Fall.>
 
@@ -95,7 +103,7 @@ Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenro
 
 ---
 
-## Teil 4 — Transferplan
+## Teil 4: Transferplan
 
 **Erste 30 Tage.** <Welche zwei bis drei Schritte werden konkret umgesetzt? Mit Datum und verantwortlicher Rolle.>
 
@@ -113,7 +121,7 @@ Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenro
 
 | Wann | Was |
 |---|---|
-| 18.09.2026, 13:00–17:00 (Präsenz) | Kickoff. Teil 1 und die Auftragskarte in Teil 2 entstehen im Termin. |
+| 18.09.2026, 13:00–17:00 (Präsenz) | Kickoff. Kandidaten und ein vorläufiger Pilot werden erarbeitet. Auswahl, Canvas und erster eigener Auftrag werden bis zum 23.09. festgehalten. |
 | 23.09.2026, Vorabend | Zwischenstand einreichen: Teil 1 und der Prompt aus Teil 2. |
 | 24.09.2026, 17:30–18:30 (online) | Beratungstermin. Besprechung der kurzen individuellen Rückmeldung zum eingereichten Stand. |
 | 29.09.2026, Vorabend | Zwischenstand einreichen: Teil 2 vollständig, Testfälle aus Teil 3 begonnen. |

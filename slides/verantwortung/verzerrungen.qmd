@@ -1,0 +1,148 @@
+---
+title: "Verzerrungen und unfaire Ergebnisse"
+subtitle: "Modul 5 · Lektion 5.3"
+book-source: "../../verantwortung/verzerrungen.qmd"
+---
+
+## Alles gedeckt, trotzdem schief {.stage}
+
+[Modul 5 · Daten, Rechte und Verantwortung]{.kicker}
+
+Ein Ergebnis kann **sachlich stimmen** und trotzdem einseitig sein.
+
+Dann kann die Frage „Steht das im Material?" zu kurz greifen. Es lohnt eine zweite: **Wen spricht es an, wen schließt es aus, was lässt es weg?**
+
+::: {.notes}
+Kurze Grundlagenlektion zwischen den beiden Rechtsthemen und dem Risiko-Überblick. Der Einstieg lohnt als Beobachtung, nicht als Warnung: Bisher wurde in Modul 4 auf Belegbarkeit geprüft. Diese Lektion ergänzt einen zweiten Maßstab, der bei satzweiser Prüfung durchrutschen kann. Ausdrücklich sagen, was die Lektion nicht ist: keine Behauptung über konkrete Trainingsinhalte eines Modells und keine Rechtsauskunft. Zeit: 2 Minuten.
+:::
+
+## Vier Stellen, an denen eine Schieflage entsteht
+
+| Stelle | Beispiel |
+|---|---|
+| **Material** | Sechs Kundenstimmen, fünf davon begeistert: der Umfang im Ergebnis folgt oft dem Umfang im Material |
+| **Auftrag** | „Warum ist das Abo die bessere Wahl?" ist eine These mit Fragezeichen |
+| **Format** | „Drei Vorteile, ein Nachteil" gibt ein Verhältnis vor, das mit der Sachlage nichts zu tun haben muss |
+| **Modell** | Setzt Text fort, der zur Anfrage passt; die Muster darin sind von außen nicht einsehbar |
+
+Jede Stelle hat eine andere Gegenmaßnahme.
+
+::: {.notes}
+Durchgehend im Möglichkeitsmodus bleiben: Fünf begeisterte Stimmen im Material müssen kein begeistertes Ergebnis erzeugen, eine Vertriebsrolle schließt eine ausgewogene Antwort nicht aus, und ein ausgeglichenes Verhältnis von Vor- und Nachteilen macht eine Darstellung nicht ausgewogen. Die Reihenfolge ist didaktisch gewählt: Die ersten drei Stellen sind selbst gemacht und selbst behebbar, die vierte nicht. Genau deshalb dort nichts behaupten: Über konkrete Trainingsinhalte lässt sich von außen nichts sagen, und aus einer einzelnen schiefen Ausgabe wird keine Ursache abgeleitet. Was gesagt werden kann: Ein ungeprüftes Ergebnis ist keine neutrale Zusammenfassung der Welt, sondern eine Fortsetzung des eigenen Auftrags mit dem eigenen Material. Frage an den Raum: Welche der ersten drei Stellen kommt im eigenen Alltag am häufigsten vor? Zeit: 4 Minuten.
+:::
+
+## Ein Beispiel: die Ausschreibung fürs Lager
+
+**Eckdaten:** Aushilfe, 15 Stunden, Arbeitszeit nach Absprache, Kommissionieren und Verpacken, Hebehilfen vorhanden, Einarbeitung durch das Team, keine Vorerfahrung nötig.
+
+::: {.small}
+> **Aushilfe (m/w/d) für unser Lager gesucht.** Du bist jung, dynamisch und packst gerne mit an? Für unser eingespieltes Team suchen wir einen belastbaren Kollegen, der auch mal 25 Kilo hebt und Deutsch als Muttersprache mitbringt. Berufserfahrung im Lager ist Pflicht.
+:::
+
+::: {.sources}
+Konstruierter Entwurf, kein aufgezeichneter Modelloutput · material/m05/ausschreibung-verzerrt.md
+:::
+
+::: {.notes}
+Vorweg einordnen: ein zugespitztes Lehrbeispiel. Alter und Herkunft stehen so deutlich im Text, dass sie im Alltag auffallen sollten; das ist gewollt, damit die eigentliche Beobachtung sichtbar wird. Den Entwurf vorlesen lassen und fragen, was auffällt. Dann auflösen: Vier der Auffälligkeiten („jung, dynamisch", „Deutsch als Muttersprache", „25 Kilo", „Berufserfahrung ist Pflicht") kommen in den Eckdaten gar nicht vor und fallen schon der Belegbarkeitsprüfung zum Opfer. Zwei fängt sie nicht: die durchgehend männliche Ansprache, die den angesprochenen Personenkreis verengen kann, obwohl in der Überschrift „(m/w/d)" steht, und die Auslassungen (Arbeitszeit nach Absprache, Einarbeitung, Hebehilfen), die gerade den Kreis erweitert hätten. Rechtliche Bewertung konsequent der zuständigen Stelle überlassen. Zeit: 5 Minuten.
+:::
+
+## Nicht Geschmackssache
+
+- [§ 1 AGG](https://www.gesetze-im-internet.de/agg/__1.html) nennt Rasse oder ethnische Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter, sexuelle Identität
+- [§ 7 AGG](https://www.gesetze-im-internet.de/agg/__7.html) verbietet die Benachteiligung Beschäftigter aus diesen Gründen
+
+Ob eine konkrete Formulierung darunterfällt, entscheidet **nicht dieser Kurs**. Die Zuständigkeit dafür gehört benannt.
+
+::: {.sources}
+gesetze-im-internet.de/agg (Abruf 08.09.2026) · keine Rechtsberatung
+:::
+
+::: {.notes}
+Diese Folie kurz halten und nicht in eine Rechtsdiskussion abbiegen. Der Zweck ist die Einordnung: Bei Texten über oder an Personen ist die Prüfung auf Einseitigkeit kein Stilthema. Wer im eigenen Betrieb Ausschreibungen oder Kundenkommunikation verantwortet, trägt die Zuständigkeit in die Risiko-Tabelle in 5.4 ein, Zeile „Verbleibende Risiken". Bei Nachfragen konsequent auf die zuständige Stelle verweisen. Zeit: 2 Minuten.
+:::
+
+## Vier Handgriffe
+
+1. **Gegenprobe** mit vertauschten Rollen: Nachteile statt Vorteile, andere Seite, andere Sicht
+2. **Zählen** statt schätzen: Wie viele Sätze bekommt welche Seite?
+3. **Merkmale streichen** und lesen, ob die Aussage noch trägt
+4. **Nach dem Fehlenden fragen**: Wer oder was kommt nicht vor?
+
+Sie finden **nicht alles**. Sie liefern Stellen, die anschließend beurteilt werden.
+
+::: {.notes}
+Alle vier brauchen kein zusätzliches Werkzeug und wenig Zeit; sie sind keine vollständige Erkennung. Handgriff 1 am Beamer einmal vorführen: denselben Auftrag umgedreht stellen und die neue Ausgabe danebenlegen. Wichtig dabei zu sagen, was der Vergleich nicht leistet: Zwei Durchläufe unterscheiden sich schon deshalb, weil die Frage eine andere war. Was neu auftaucht, ist ein Kandidat zum Nachsehen, kein Beleg. Dasselbe bei Handgriff 2: Eine Zahl zeigt ein Ungleichgewicht, sie beweist keine Unfairness; mehr belegtes Material zu einer Seite kann mehr Raum rechtfertigen. Handgriff 4 ist der schwerste, weil Fehlendes nicht ins Auge springt; hier hilft eine feste Liste möglicher Betroffener aus dem eigenen Bereich. Zeit: 4 Minuten.
+:::
+
+## Mitmachen: einen Entwurf befragen
+
+```text
+TASK     Benenne Stellen, an denen der Text einseitig, wertend oder
+         ausschließend wirkt. Nenne je Stelle einen neutralen Vorschlag.
+CONTEXT  Entwurf, noch nicht veröffentlicht. Keine rechtliche Einordnung.
+         Dazu die Eckdaten, die dem Entwurf zugrunde liegen.
+FORMAT   Tabelle: Fundstelle im Wortlaut | Art | Vorschlag | Begründung.
+         Darunter eine Liste "Nicht erwähnt".
+CHECK    Wortlaut statt Zusammenfassung. Ungedeckte Angaben von
+         Formulierungsfragen trennen. Nicht neu schreiben, nicht
+         bewerten. Keine Rechtsnormen.
+```
+
+Leere Fundstellenliste heißt: **dieser Durchlauf** hat nichts gefunden.
+
+::: {.sources}
+Vollständiger Auftrag: material/m05/prompt-verzerrungen-pruefen.txt · Buchkapitel 5.3
+:::
+
+::: {.notes}
+Arbeitsphase, 8 Minuten, mit einem eigenen Entwurf oder dem konstruierten Ausschreibungstext. Vorher zwei Dinge ansagen. Erstens: Das Modell ist hier keine unabhängige Instanz; es liefert Kandidaten, die Entscheidung bleibt bei der Person, die den Entwurf verantwortet, und sie fällt gegen die Eckdaten. Zweitens: Der CHECK-Teil sagt, was das Modell tun soll, und ersetzt nicht die eigene Prüfung. Beim Auswerten gezielt fragen, wer eine Rechtsaussage oder eine Gesamtbewertung in der Ausgabe hatte, obwohl der Check beides ausschließt. Zeit: 8 Minuten Arbeitsphase.
+:::
+
+## Die Grenze: formulieren, nicht entscheiden
+
+::: {.two-col}
+::: {.card}
+**Im Kurs geübt**
+
+Entwürfe, Zusammenfassungen, Vergleiche, Ideen. Dazu die Prüfung auf Einseitigkeit.
+:::
+::: {.card}
+**Nicht geübt**
+
+Über Menschen entscheiden: Bewerbung bewerten, Leistung einschätzen, Kündigung begründen, Kreditwürdigkeit einordnen.
+:::
+:::
+
+Eigener Rahmen für ausschließlich automatisierte Entscheidungen: Artikel 22 DSGVO. Beschäftigungsbezogene Systeme führt der AI Act in Anhang III als Hochrisiko; Pflichten ab 02.12.2027.
+
+::: {.sources}
+Verordnung (EU) 2016/679 · Europäische Kommission, „AI Omnibus enters into force" (Abruf 08.09.2026)
+:::
+
+::: {.notes}
+Die Grenze scharf ziehen und nicht relativieren. Erwartbare Rückfrage aus dem Raum: „Und wenn ein Mensch die Entscheidung am Ende bestätigt?" Darauf ehrlich antworten: Das ist genau die Frage, die die zuständige Stelle klärt, nicht dieser Kurs. Für die eigene Arbeit gilt die einfache Fassung: Entwürfe ja, Entscheidungen über Menschen nein. Die Termine zum Anhang III nur nennen, nicht erläutern; wer mehr braucht, öffnet die verlinkte Kommissionsseite. Zeit: 3 Minuten.
+:::
+
+## Eine Zeile für Portfolio-Teil 3
+
+Wie viel Prüfung eine Aufgabe braucht, hängt von ihr ab.
+
+An welcher Stelle des eigenen Vorhabens könnte ein Ergebnis **einseitig** werden, **wer** würde das merken, und **woran**?
+
+Wer keine Stelle findet, hält auch das fest, mit Begründung.
+
+Die Zeile gehört in „Verbleibende Risiken" der Risiko-Tabelle in 5.4.
+
+::: {.notes}
+Selbstlernaufgabe, ein Satz. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.4; diese Lektion liefert eine Zeile dafür. Am wichtigsten ist die Prüfung dort, wo ein Ergebnis eine Wahl nahelegt, eine Gruppe beschreibt oder nach außen geht. Bei einer Übersicht mit intern feststehenden Terminen genügt meist weniger; das ausdrücklich sagen, damit die Prüfung nicht als Pflicht für jede Aufgabe missverstanden wird. Zugleich nicht verabsolutieren: Sobald Menschen vorkommen, kann auch eine Planung eine Annahme treffen, etwa wenn sie Schicht- oder Teilzeitmodelle stillschweigend übergeht. Überleitung zu 5.4: Aus den drei Lektionen wird jetzt eine Seite mit Zuständigkeiten. Zeit: 2 Minuten.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 5.3, Working with GenAI: verantwortung/verzerrungen
+- Material: material/m05/ausschreibung-verzerrt.md, prompt-verzerrungen-pruefen.txt
+- § 1 und § 7 AGG: gesetze-im-internet.de/agg (Abruf 08.09.2026)
+- Artikel 22 DSGVO, Verordnung (EU) 2016/679: eur-lex.europa.eu/eli/reg/2016/679/oj
+- Europäische Kommission, AI Omnibus enters into force: digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force (Abruf 08.09.2026)
+- Entwurf und Fundstellen sind konstruiert; Orientierung, keine Rechtsberatung

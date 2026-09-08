@@ -1,0 +1,114 @@
+---
+title: "Chatverlauf und Kontextfenster"
+subtitle: "Modul 3 · Lektion 3.1"
+book-source: "../../kontext/kontextfenster.qmd"
+---
+
+## Eine Stunde im selben Fenster {.stage}
+
+[Rösterei Morgenrot · Röstung und Produktion]{.kicker}
+
+Sortenübersicht, dann eine Kundenmail, dann ein Shop-Text. Zwischendurch ein Steckbrief eingefügt und wieder verworfen.
+
+Frage nach einer Stunde: Aufbrauchempfehlungen je Sorte. Antwort: **6 Wochen**. Im gültigen Steckbrief stehen acht.
+
+::: {.notes}
+Einstieg, drei Minuten. Frage in die Runde: Woher könnte die 6 kommen? Erwartete Antworten: aus der alten Fassung, die noch im Verlauf steht. Wichtig: Das ist eine plausible Erklärung, keine Diagnose eines einzelnen Durchlaufs. Der Fall ist konstruiert. Überleitung: Was wird bei einem Auftrag eigentlich mitgeschickt?
+:::
+
+## Drei mögliche Bezugsquellen
+
+| Quelle | Einsehbar? | Steuerbar? |
+|---|---|---|
+| Trainingswissen | nein | nein |
+| Mitgegebener Kontext: Anweisung, Verlaufsteile, Dokumentinhalte | teilweise | eigenes Material auswählbar |
+| Werkzeugabruf, etwa Websuche | teilweise | über den Auftrag |
+
+**Der sichtbare Verlauf ist nicht automatisch der aktuelle Kontext.** Die Anwendung kann Verlaufsteile auswählen, kürzen, zusammenfassen oder benötigte Inhalte abrufen.
+
+::: {.notes}
+Zwei Minuten. Den sichtbaren Chatverlauf vom Kontext des nächsten Aufrufs unterscheiden. Frühere Nachrichten können vollständig, gekürzt oder als Zusammenfassung eingehen. Das Zusammenfassen wird auch Compaction genannt. Ein zurückgenommenes Dokument bleibt im Verlauf und kann weiterhin berücksichtigt werden; daraus folgt keine Gewissheit über den konkreten Aufruf.
+:::
+
+## Das Kontextfenster
+
+Der gesamte Text, auf den ein Modell beim Erzeugen einer Antwort zugreifen kann, einschließlich der Antwort selbst. **Arbeitsspeicher, kein Gedächtnis.**
+
+Platz benötigen Anweisungen, tatsächlich übergebene Verlaufsteile, Dokumentinhalte, Werkzeugergebnisse und die neue Antwort. Gemessen in Token, also in Textstücken.
+
+Zwei Punkte, die im Alltag zählen:
+
+- An der Grenze kann ein Aufruf abgewiesen werden. Ob Inhalte vorher gekürzt oder zusammengefasst werden, hängt vom Produkt und seiner Konfiguration ab.
+- Relevante Zusatzinformationen können helfen. Lange oder gemischte Kontexte können die Nutzung der benötigten Angaben erschweren („context rot“).
+
+::: {.notes}
+Vier Minuten. Konkrete Fenstergrößen bewusst nicht nennen: Sie hängen vom Modell ab und veralten zwischen zwei Kursdurchgängen. Wer danach fragt, wird auf die Anbieterdokumentation verwiesen. Quellen auf der letzten Folie. Die Länge allein bestimmt die Qualität nicht. Ein neuer, kurzer Chat mit gültigem Material kann beim Vergleich Hinweise liefern; ein einzelner Vergleich beweist oder widerlegt keine Fehlerursache.
+:::
+
+## Zwei Verläufe, dieselbe Schlussfrage
+
+::: {.columns}
+::: {.column width="50%"}
+**Gewachsener Chat**
+
+1. Übersicht aus Steckbrief v2 (ersetzt)
+2. Kundenmail Sortenwechsel
+3. Shop-Text, zwei Überarbeitungen
+4. Steckbrief v3 eingefügt
+5. Frage: Aufbrauchempfehlungen
+:::
+::: {.column width="50%"}
+**Neuer Chat**
+
+1. Übergabenotiz: Aufgabe, gültige Quelle, Regeln
+2. Steckbrief v3 im Wortlaut
+3. Frage: Aufbrauchempfehlungen, mit Quellenkennung
+:::
+:::
+
+Links stehen zwei Fassungen im Verlauf. Rechts wird nur die gültige Fassung mitgegeben.
+
+::: {.notes}
+Drei Minuten. Falls links beide Fassungen in den aktuellen Kontext eingehen, steht auch der alte Wert zur Verfügung. Die falsche Antwort zeigt nicht, ob er daraus übernommen wurde. Rechts wurde gezielt nur die gültige Quelle mitgegeben. Auch dort bleibt das Ergebnis zu prüfen. „Nutze nur v3“ ist eine Anweisung und entfernt das alte Dokument nicht aus dem Verlauf.
+:::
+
+## Die Übergabenotiz
+
+```text
+ÜBERGABENOTIZ
+Aufgabe:        Aufbrauchempfehlungen je Sorte für den Kundenservice.
+Stand:          Übrige Spalten liegen vor und sind geprüft.
+Gültige Quelle: [Q1] Sortensteckbrief Version 3, Stand 21.08.2026.
+Nicht gültig:   Version 2 vom 12.03.2026, ersetzt; Aufbrauchempfehlung
+                wurde geändert.
+Regeln:         Nur [Q1], Kennung hinter jeder Angabe, Fehlendes als
+                "nicht im Material". Ergebnis ist ein Entwurf.
+Offen:          Verwendung im Shop, entscheidet Jonas Halder.
+
+Nächster Schritt: <die konkrete Frage>
+```
+
+Prüfung: Lässt sich der nächste Schritt allein mit dieser Notiz bearbeiten, ohne den alten Chat zu kennen?
+
+::: {.notes}
+Vier Minuten, dann kurze Arbeitsphase möglich. Die wichtigste Zeile ist „Nicht gültig“: Sie hält fest, was aus dem alten Verlauf gerade nicht mitkommen soll, und nennt den Grund. Ohne sie ist die Notiz eine Zusammenfassung und keine Übergabe. Vorlage und ausgefülltes Beispiel liegen unter material/m03/uebergabenotiz-vorlage.md. Hinweis für die Durchführung: Die Notiz wird außerhalb des Chats gepflegt, in einer Textdatei, sonst hängt sie wieder am Verlauf.
+:::
+
+## Drei Handgriffe
+
+1. **Ein Chat je Aufgabe.** Themenwechsel bedeutet neues Fenster.
+2. **Verworfenes Material nicht erneut mitgeben.** Eine Rücknahme löscht es nicht aus dem Verlauf.
+3. **Bei langen Aufgaben Übergabenotiz.** Gültigen Stand und benötigte Quellen vor dem Neustart prüfen.
+
+Auch jenseits von Textarbeit: Notizen zu **einer** Besprechung, zwei Angebote **vollständig und in derselben Gliederung**, die Entscheidungslage statt der Diskussion, die dahin geführt hat.
+
+::: {.notes}
+Zwei Minuten zum Abschluss. Die Übergabenotiz wird außerhalb des Chats gepflegt. Beim Transferbeispiel „zwei Angebote“ nachschieben, warum die gemeinsame Gliederung zählt: Eine gemeinsame Gliederung erleichtert die Prüfung, welche Zahl zu welchem Angebot gehört. Diese Lektion braucht keine eigene Portfolio-Abgabe; die eigene Arbeit in Modul 3 ist die Kontextmappe.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 3.1, Working with GenAI: kontext/kontextfenster
+- Material: material/m03/uebergabenotiz-vorlage.md
+- Kontextfenster, Token, Überlauf und „context rot“: platform.claude.com/docs/en/build-with-claude/context-windows (abgerufen 08.09.2026)
+- Vertiefung zum Kuratieren von Kontext: anthropic.com/engineering/effective-context-engineering-for-ai-agents

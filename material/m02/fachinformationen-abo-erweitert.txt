@@ -1,9 +1,9 @@
 RÖSTEREI MORGENROT: AUSZUG FACHINFORMATIONEN KUNDENSERVICE (ERWEITERT)
-Kursmaterial "Working with GenAI", Modul 2 (Lektionen 2.2 und 2.3)
+Kursmaterial "Working with GenAI", Modul 2 (Lektionen 2.3 und 2.4)
 
 HINWEIS: Die Rösterei Morgenrot ist ein erfundenes Unternehmen. Alle Angaben
 sind konstruiert und dürfen unverändert in ein Chatfenster kopiert werden.
-Dieser Auszug erweitert den Auszug aus Lektion 2.1 um drei Abo-Regeln und
+Dieser Auszug erweitert den Auszug aus Lektion 2.2 um drei Abo-Regeln und
 einen Hinweis zu Herkunftsangaben. Kennzeichnung am Ende.
 
 --------------------------------------------------------------------------

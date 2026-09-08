@@ -1,0 +1,108 @@
+# Websuche und Quellen prüfen
+
+Jonas Halder möchte auf dem neuen Etikett „Röstkaffee“ schreiben und fragt, ob dieser Begriff irgendwo amtlich bestimmt ist. Weder das Produktionshandbuch noch der Sortensteckbrief noch die Serviceregeln sagen dazu etwas; Abschnitt 11 des Handbuchs hält ausdrücklich fest, dass die Geschäftsführung mit externer Beratung klärt, welche Angaben rechtlich auf die Verpackung gehören. Die Antwort liegt außerhalb des Betriebs und damit außerhalb der eigenen Kontextmappe.
+
+In diesem Kapitel holen wir eine solche Angabe mit einer Websuche und prüfen sie an der Quelle. **Lernziel:** Eine Frage außerhalb des eigenen Materials einem passenden Weg zuordnen, eine Websuche mit vorgegebener Quelle so beauftragen, dass ihr Ergebnis prüfbar ist, und das Ergebnis an der Seite selbst nachlesen. **Zeit:** etwa 20 Minuten einschließlich eines eigenen Durchlaufs.
+
+## Zwei Wege, und der Unterschied liegt in der Frage
+
+Nicht jede Frage außerhalb des eigenen Materials braucht dieselbe Behandlung.
+
+| Frage | Passender Weg | Woran wir das Ergebnis prüfen |
+|---|---|---|
+| Eine einzelne Angabe, die auf einer benennbaren Seite steht („Wie lautet die amtliche Begriffsbestimmung?“) | **Websuche mit vorgegebener Quelle:** die Seite nennen, wörtliches Zitat verlangen, „nicht gefunden“ als zulässige Antwort vorgeben | Die Seite selbst öffnen und das Zitat Wort für Wort vergleichen |
+| Ein Überblick, der über viele Quellen verteilt ist („Wie gestalten andere kleine Röstereien ihr Abo-Modell?“) | **Mehrstufige Recherche:** das Werkzeug plant, liest mehrere Seiten und liefert einen Bericht mit Quellenangaben | Die tragenden Aussagen an den genannten Quellen nachlesen; nicht den Bericht als Ganzes übernehmen |
+
+Die Übung nimmt den ersten Weg. Er läuft in jedem Konto mit Suchfunktion, und die Prüfung ist eindeutig: Entweder steht das Zitat auf der Seite oder nicht. Die mehrstufige Recherche behandeln wir nicht als Pflichtübung, weil ihre Verfügbarkeit und ihr Umfang vom jeweiligen Konto abhängen ([OpenAI-Hilfe zu Deep Research](https://help.openai.com/en/articles/10500283)). Ohne sie bleiben die normale Suche und selbst bereitgestellte Quellen der Weg.
+
+## Was eine Websuche am Kontext ändert
+
+Eine eingeschaltete Suche verändert die Lage in zwei Punkten, und beide sind uns aus diesem Modul bekannt.
+
+Erstens ist die Auswahl der Quellen nicht mehr unsere. Bei einem Kontextpaket haben wir entschieden, welches Dokument mitkommt; bei einer freien Suche entscheidet das Werkzeug, welche Seiten es abruft. Die Anbieterbeschreibung stellt den Ablauf so dar: Die Anfrage wird in Suchanfragen übersetzt, Ergebnisse werden abgerufen und die Antwort daraus erzeugt, mit Verweisen auf die Quellen ([OpenAI-Hilfe zur Websuche in ChatGPT](https://help.openai.com/en/articles/9237897-chatgpt-search)). Wer eine Seite vorgibt, holt sich diese Entscheidung zurück.
+
+Zweitens gelangt fremder Seitentext in denselben Textstrom wie unser Auftrag. Damit gilt hier, was für jedes eingefügte Dokument gilt: Sätze auf einer abgerufenen Seite können wie Anweisungen formuliert sein, und wir behandeln das Ergebnis entsprechend.
+
+## Der Auftrag
+
+Der vollständige Auftrag mit Prüfwert steht als [Textdatei](../material/m03/websuche-auftrag.txt) bereit. Voraussetzung ist ein Chatwerkzeug, das Webseiten abrufen kann; in ChatGPT ist das die Suchfunktion, sofern sie im Konto verfügbar ist.
+
+```text
+TASK
+Zitiere wörtlich, wie auf der unten genannten Seite "Röstkaffee, Kaffee"
+bestimmt wird. Nenne die Nummer des Eintrags.
+
+CONTEXT
+Ich bereite die Beschriftung eines Etiketts vor und brauche dafür den
+amtlichen Wortlaut. Lies ausschließlich diese Seite:
+https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
+
+FORMAT
+Das wörtliche Zitat mit der Nummer des Eintrags, sonst nichts.
+
+CHECK
+- Ergänze keine Angaben aus anderen Quellen oder aus deinem Wissen.
+- Ist die Angabe auf der Seite nicht zu finden, schreibe "auf der
+  angegebenen Seite nicht gefunden".
+- Kannst du die Seite nicht abrufen, sage das ausdrücklich und zitiere
+  nichts.
+- Beurteile nicht, ob eine Kennzeichnung zulässig ist.
+```
+
+Die vier Check-Zeilen tun jeweils etwas anderes. Die erste grenzt die Quelle ein. Die zweite gibt „nicht gefunden“ als zulässiges Ergebnis vor, damit eine Lücke nicht mit einer plausiblen Angabe geschlossen wird. Die dritte trennt den Fall „Seite nicht abrufbar“ vom Fall „Angabe nicht vorhanden“; ohne diese Zeile sehen beide im Ergebnis gleich aus. Die vierte hält die Rechtsfrage draußen, die hier gar nicht gestellt ist.
+
+## Das Ergebnis prüfen
+
+Der Check im Prompt ist eine Vorgabe an das Modell. Die Prüfung machen wir selbst, und sie besteht aus drei Handgriffen.
+
+**Die Seite öffnen.** [gesetze-im-internet.de, Anlage zur Kaffeeverordnung](https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html). Ein Link im Ergebnis ist kein Beleg, solange die Seite nicht geöffnet wurde. Das gilt auch dann, wenn der Link stimmt: Er zeigt, wo gesucht wurde, nicht, was dort steht.
+
+**Das Zitat Wort für Wort vergleichen.** Prüfwert, Stand 07.09.2026: Eintrag 1 b) der Anlage lautet „Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen, mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm.“ Maßgeblich ist, was beim Öffnen tatsächlich dort steht; Rechtstexte und Webseiten ändern sich. Auch die Eintragsnummer wird verglichen, nicht nur der Wortlaut.
+
+**Auf Zusätze achten, die nicht von dieser Seite stammen können.** Angaben zum Koffeingehalt, zu Kennzeichnungspflichten oder zur Zulässigkeit einer Etikettierung stehen dort nicht. Erscheinen sie trotzdem, sind sie einzeln zu notieren und zu verwerfen. Sie sind damit nicht automatisch sachlich falsch; sie sind von der angegebenen Quelle nicht gedeckt, und das genügt für die Entscheidung, sie nicht zu verwenden.
+
+Wenn das Werkzeug die Seite nicht abrufen kann, wiederholen wir den Prompt nicht. Wir öffnen die Seite selbst, lesen den Eintrag und schließen die Prüfung von Hand ab. Das ist kein Fehlschlag der Übung, sondern ihr Ausweichweg.
+
+::: {.callout-tip title="Freiwillige Gegenprobe"}
+Im selben Chat lässt sich eine zweite Frage stellen, die die Seite nicht beantwortet: Wie viel Koffein darf entkoffeinierter Kaffee höchstens enthalten? Erwartung nach der Check-Regel: „auf der angegebenen Seite nicht gefunden“. Kommt stattdessen eine Prozentzahl, ist das ein Befund und nicht bloß eine Ungenauigkeit, denn die Zahl stammt dann aus einer anderen Quelle als der vorgegebenen. Ob sie inhaltlich stimmt, ist eine andere Frage und ändert am Befund nichts.
+:::
+
+## Vier Fragen an eine Quelle
+
+Der Prüfwert oben gilt für diesen einen Fall. Für andere Fragen brauchen wir die Fragen selbst. Sie stehen als kurze Liste auch in der [Materialdatei](../material/m03/websuche-auftrag.txt).
+
+1. **Wer gibt die Seite heraus?** Eine Behörde, ein Verband, ein Unternehmen, eine Redaktion, eine Privatperson. Das entscheidet nicht über richtig oder falsch, aber darüber, wofür die Seite die Primärquelle ist. Für den Wortlaut einer Verordnung ist die amtliche Veröffentlichung die Primärquelle; ein Fachbeitrag, der sie zitiert, ist es nicht.
+2. **Welchen Stand hat die Angabe?** Datum der Seite, Datum der Fassung, Datum des Abrufs. Fehlt jedes Datum, ist die Angabe nicht datierbar und geht als solche ins Protokoll.
+3. **Steht die Angabe auf der Seite oder nur im Ergebnis?** Das ist die Prüfung, die am häufigsten ausgelassen wird, weil ein Ergebnis mit Fußnote bereits geprüft aussieht.
+4. **Beantwortet die Quelle überhaupt die gestellte Frage?** Der Eintrag in der Anlage bestimmt einen Begriff. Ob das Etikett der Rösterei zulässig ist, beantwortet er nicht, und keine weitere Suche ändert daran etwas. Diese Klärung weist das Handbuch der Geschäftsführung zu.
+
+## Über den Lehrfall hinaus
+
+Der Weg trägt überall dort, wo eine einzelne belastbare Angabe von außen gebraucht wird: eine Frist aus einer Verordnung, eine Definition aus einer Norm, eine Angabe aus der Dokumentation eines Anbieters, ein Wert aus einer amtlichen Statistik. Die Bauweise bleibt dieselbe: eine Seite vorgeben, wörtliches Zitat verlangen, „nicht gefunden“ zulassen, danach selbst öffnen.
+
+Der Unterschied zur Arbeit mit dem eigenen Material ist gering und trotzdem wichtig. Bei einem Kontextpaket kennen wir die Quelle, weil wir sie ausgewählt haben. Bei einer Websuche kennen wir sie erst, wenn wir sie geöffnet haben.
+
+## Eigene Variante, freiwillig
+
+Wer eine Angabe im eigenen Arbeitsbereich hat, die regelmäßig von außen geholt wird, kann denselben Auftrag darauf anwenden: eine Seite vorgeben, wörtliches Zitat verlangen, Ergebnis an der Seite prüfen und den Prüfwert mit Abrufdatum notieren. Der Eintrag passt in **Portfolio-Teil 2** unter „Kontextquellen“ als externe Quelle mit Stand und Aktualisierungsweg. Verpflichtend ist das nicht; die eigene Arbeit dieses Moduls ist die Kontextmappe.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Das Ergebnis liefert ein Zitat, das auf der Seite nicht steht | Zitat verwerfen, Seite selbst lesen, Befund notieren. Ein Link ist kein Beleg. |
+| Die Eintragsnummer weicht ab, der Wortlaut stimmt | Beides gehört zum Beleg. Nummer aus der Seite übernehmen. |
+| Das Ergebnis nennt zusätzlich eine Kennzeichnungspflicht | Steht nicht auf dieser Seite. Einzeln notieren und verwerfen; die Aussage ist damit nicht widerlegt, nur nicht gedeckt. |
+| Das Ergebnis stützt sich auf eine andere Seite als die vorgegebene | Gegen die erste Check-Zeile. Zitat verwerfen und den Auftrag mit der vorgegebenen Seite erneut stellen. |
+| Auf die freiwillige Koffeinfrage kommt eine Prozentzahl | Befund. Die Zahl stammt nicht von der angegebenen Seite. |
+| Das Werkzeug meldet, es könne die Seite nicht abrufen | Richtiges Verhalten nach der dritten Check-Zeile. Prompt nicht wiederholen, Seite selbst öffnen. |
+| Das Ergebnis beurteilt, ob das Etikett zulässig ist | Gegen die vierte Check-Zeile. Passage streichen; die Frage geht an die Geschäftsführung. |
+
+## Kontrollpunkt 3.6
+
+- Eine Frage außerhalb des eigenen Materials einem der beiden Wege zuordnen und die Zuordnung an der Frage begründen, nicht am Werkzeug
+- Benennen, was eine eingeschaltete Websuche am Kontext ändert: fremde Quellenauswahl und fremder Seitentext im selben Textstrom
+- Einen Suchauftrag so formulieren, dass „nicht gefunden“ und „nicht abrufbar“ unterscheidbare Ergebnisse sind
+- Ein Zitat an der Quelle Wort für Wort prüfen und einen Zusatz erkennen, der von der angegebenen Seite nicht stammen kann
+- Eine Quelle nach Herausgeber, Stand, Fundstelle und Passung zur Frage einordnen
+- Eine Frage benennen, die auch eine vollständige Recherche nicht beantwortet, weil sie eine Entscheidung verlangt

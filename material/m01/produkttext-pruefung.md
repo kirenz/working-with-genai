@@ -1,6 +1,6 @@
 # Produkttext prüfen: Espresso Intenso
 
-Kursmaterial „Working with GenAI", Modul 1, Lektion 1.2. Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Der Text unten ist **konstruiert**, kein aufgezeichneter Modelloutput. Er zeigt, wie ein flüssiger Produkttext aussehen kann, wenn ein Chatmodell nur den Satz „Schreibe einen Produkttext für unseren Espresso Intenso" bekommt und kein Material.
+Kursmaterial „Working with GenAI", Modul 1, Lektion 1.6 „Halluzinationen und Unsicherheit". Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Der Text unten ist **konstruiert**, kein aufgezeichneter Modelloutput. Er zeigt, wie ein flüssiger Produkttext aussehen kann, wenn ein Chatmodell nur den Satz „Schreibe einen Produkttext für unseren Espresso Intenso" bekommt und kein Material.
 
 Grundlage für die Prüfung ist ausschließlich das [freigegebene Briefing](briefing-abo-hinweistext.txt).
 
@@ -41,6 +41,8 @@ Zu jeder nummerierten Aussage: Steht sie so im Briefing? Wenn ja, in welcher Zei
 | 9 | nein | Abo-Preise und Rabatte sind nicht freigegeben. Streichen. |
 
 Ergebnis der Prüfung: Von neun Aussagen sind zwei gedeckt, eine teilweise, sechs nicht. Der Text klingt trotzdem stimmig. Genau das ist der Punkt der Lektion: Die Lesbarkeit eines Textes sagt nichts über seine Belegbarkeit.
+
+Drei Fragen auseinanderhalten: Ist eine Aussage plausibel (klingt sie wie üblich)? Trägt sie das Material (steht sie im Briefing)? Ist sie richtig (stimmt sie für diese Rösterei)? Eine Aussage, die das Material nicht trägt, ist unbelegt und wird geklärt oder gestrichen. Ob sie richtig ist, weiß nur, wer die Fakten kennt; „unbelegt" bedeutet nicht „falsch".
 
 ## Was nach der Prüfung übrig bleibt
 

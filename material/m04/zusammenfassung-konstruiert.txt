@@ -1,5 +1,5 @@
 KONSTRUIERTE ZUSAMMENFASSUNG FÜR DIE BESPRECHUNG
-Kursmaterial "Working with GenAI", Lektion 4.1
+Kursmaterial "Working with GenAI", Lektion 4.2
 
 Dieser Text ist konstruiert. Er ist kein aufgezeichneter Modelloutput und
 steht für kein bestimmtes Produkt. Er enthält absichtlich belegte, ungenaue

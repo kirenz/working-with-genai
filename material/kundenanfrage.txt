@@ -28,7 +28,8 @@ DREI FRAGEN, DREI VERSCHIEDENE ANTWORTLAGEN
 2. Preis Filterkaffee Mild ......... belegbar: 9,00 EUR regulärer
                                      Listenpreis im Onlineshop. Ein
                                      Abo-Preis ist nicht abgedeckt.
-3. Ankunft der nächsten Lieferung .. NICHT im Material enthalten.
+3. Ankunft der nächsten Lieferung .. NICHT in den Fachinformationen
+                                     enthalten.
 
 Diese drei Lagen sind der eigentliche Übungsgegenstand: eine gedeckte
 Auskunft, eine Auskunft unter Bedingung und eine Lücke. Alle drei müssen im

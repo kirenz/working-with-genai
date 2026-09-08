@@ -1,9 +1,9 @@
 TESTFALL-EINGABEN FÜR DEN KUNDENSERVICE-AUFTRAG
-Kursmaterial "Working with GenAI", Lektion 4.2
+Kursmaterial "Working with GenAI", Lektion 4.3
 
 Anwendung: Den Auftrag aus Modul 2 (prompt-vorlage.txt) öffnen. Im Abschnitt
 "Kundenanfrage:" die Mail von M. Berger durch eine der fünf Mails unten
-ersetzen. Aufgabe, Material, Format und Grenzen bleiben unverändert. Jeden
+ersetzen. Task, Context, Format und Check bleiben unverändert. Jeden
 Testfall in einem neuen Chat ausführen.
 
 Synthetisches Kursmaterial. Alle Absender sind erfunden.

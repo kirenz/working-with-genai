@@ -1,17 +1,17 @@
 ---
-title: "Vom Zuruf zum Arbeitsauftrag"
-subtitle: "Modul 2 · Lektion 2.1"
+title: "Einen Arbeitsauftrag für eine Kundenanfrage formulieren"
+subtitle: "Modul 2 · Lektion 2.2"
 book-source: ../../prompting/arbeitsauftrag.qmd
 ---
 
-## Ein Zuruf reicht für einen Text, nicht für ein Ergebnis {.stage}
+## Die vier Teile am Fall {.stage}
 
-[Modul 2 · Strukturierte Arbeitsaufträge]{.kicker}
+[Modul 2 · Prompting und Zusammenarbeit im Dialog]{.kicker}
 
-„Beantworte mal diese Kundenanfrage." Daraus wird etwas. Aber lässt es sich vertreten?
+„Beantworte mal diese Kundenanfrage." Daraus wird etwas. Aber lässt es sich vertreten? Jetzt werden Task, Context, Format und Check für Sinas Anfrage gefüllt.
 
 ::: {.notes}
-Erste Praxiseinheit aus Modul 2, im Kickoff nach Modul 1. Leitfrage des Kurses in Erinnerung rufen: Wie lässt sich KI für konkrete Aufgaben im Arbeitsalltag sinnvoll einsetzen? Diese Lektion behandelt die Formulierung eines Arbeitsauftrags anhand einer Kundenanfrage. Zeit: 1 Minute.
+Praxiseinheit im Auftakt, direkt nach der Prompting-Grundlage, etwa 35 Minuten. Die vier Teile sind bekannt; hier werden sie angewendet und das Ergebnis geprüft. Der Fall ist so gebaut, dass drei Fragen unterschiedlich liegen: belegt, bedingt, offen. Zeit: 1 Minute.
 :::
 
 ## Die Anfrage im Postfach
@@ -51,34 +51,34 @@ Alle drei müssen im Entwurf sichtbar unterschiedlich behandelt werden.
 Die Staffelung ist der eigentliche Gegenstand der Lektion. Frage ins Plenum vor dem Werkzeugeinsatz: Was passiert vermutlich, wenn das Modell nur die Mail und den Satz „Bitte beantworte diese Kundenanfrage" bekommt? Erwartete Antworten: erfundener Liefertag, Abo-Preis, unbedingter Wechsel. Als Risiko formulieren, nicht als Gewissheit. Zeit: 2 Minuten.
 :::
 
-## Vier Bausteine, ein Prompt
+## Die vier Teile für diesen Fall
 
-| Baustein | Frage | Im Lehrfall |
-|---|---|---|
-| **Aufgabe** | Was soll entstehen? | Antwort-Mail auf die Anfrage entwerfen |
-| **Material** | Woraus wird geantwortet? | Fachinformationen und Wortlaut der Mail |
-| **Format** | Wie sieht das Ergebnis aus? | Mail, höchstens 150 Wörter, Absenderzeile, Liste „Offen" |
-| **Grenzen** | Was passiert bei einer Lücke? | Nicht ergänzen, unter „Offen" auflisten |
+| Teil | Im Lehrfall |
+|---|---|
+| **Task** | „Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage." |
+| **Context** | Rolle im Kundenservice, Auszug der Fachinformationen, Wortlaut der Mail |
+| **Format** | Mail, höchstens 150 Wörter, „Guten Tag", Absenderzeile, am Ende Liste „Offen" |
+| **Check** | Ungedecktes unter „Offen"; bedingte Zusage nur mit Bedingung; nichts erfinden |
 
 ::: {.notes}
-Die Vierteilung als Designentscheidung des Kurses kennzeichnen: eine Merkhilfe, kein Standard. Belegt ist der schmalere Kern: OpenAI empfiehlt klar, spezifisch, mit Kontext, iterativ; Anthropic setzt Erfolgskriterien vor die Optimierung. Analogie: die Übergabe an eine Urlaubsvertretung, die fachlich fit ist, das Haus aber nicht kennt. Zeit: 2 Minuten.
+Die Teile sind aus der Grundlage bekannt; hier nur die Füllung für den Fall. Zwei Punkte betonen: Die Kundenmail gehört in den Context, weil sie Fakten liefert (Fragen, genannte Sorten). Und die Liste „Offen" gibt den Lücken einen festen Platz; ohne ihn landen sie im Fließtext, wo sie am wenigsten auffallen. Der Check ist eine Anweisung, keine Garantie; die Prüfung folgt in Schritt 3. Zeit: 2 Minuten.
 :::
 
 ## Vormachen: der Auftrag geht als eine Nachricht
 
 ```text
-Du unterstützt den Kundenservice der Rösterei Morgenrot.
-
-AUFGABE   Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
-MATERIAL  Fachinformationen (nur diese Angaben sind gültig) + Kundenanfrage im Wortlaut
-FORMAT    Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlich,
-          Absenderzeile Sina Bergmann, am Ende eine Liste "Offen"
-GRENZEN   Nur Angaben aus dem Material. Ungedecktes unter "Offen".
-          Keine Termine, Preise oder Fristen erfinden.
+TASK     Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
+CONTEXT  Rolle: Du unterstützt den Kundenservice der Rösterei Morgenrot.
+         Fachinformationen (nur diese Angaben sind gültig) + Kundenanfrage im Wortlaut
+FORMAT   Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlich,
+         Absenderzeile Sina Bergmann, am Ende eine Liste "Offen"
+CHECK    Nur Angaben aus dem CONTEXT. Keine Termine, Preise oder Fristen erfinden.
+         Eine Zusage nur mit ihrer Bedingung wiedergeben.
+         Fehlendes, Widersprüchliches und Unsicheres unter "Offen".
 ```
 
 ::: {.sources}
-Vollständiger Auftrag: Buchkapitel 2.1, Schritt 5, oder material/prompt-vorlage.txt
+Vollständiger Auftrag: Buchkapitel 2.2, Schritt 2, oder material/prompt-vorlage.txt
 :::
 
 ::: {.notes}
@@ -94,10 +94,10 @@ Live-Demo: neuen Chat, vollständigen Auftrag aus dem Buch einfügen, abschicken
    - Lieferung bis Freitag unter „Offen"?
    - Zusätzliche Aussagen (Packungsgröße, Versandkosten) belegt?
 
-Ein Liefertermin trotz Grenzen ist ein **Befund**, keine Panne.
+Ein Liefertermin trotz CHECK ist ein **Befund**, keine Panne.
 
 ::: {.notes}
-Arbeitsphase, 6 Minuten. Alle führen den Auftrag aus und prüfen mit den vier Punkten. Herumgehen, nach Befunden fragen. Wer einen Liefertermin im Text hat, meldet sich: Das ist der wichtigste Lernmoment, weil er zeigt, dass eine Grenze eine Anweisung ist und keine Garantie. Zeit: 6 Minuten.
+Arbeitsphase, 6 Minuten. Alle führen den Auftrag aus und prüfen mit den vier Punkten. Herumgehen, nach Befunden fragen. Wer einen Liefertermin im Text hat, meldet sich: Das ist der wichtigste Lernmoment, weil er zeigt, dass der Check eine Anweisung ist und keine Garantie. Zeit: 6 Minuten.
 :::
 
 ## Ein konstruiertes Ergebnis zum Abgleich
@@ -128,16 +128,16 @@ Drei Merkmale zeigen: belegbar (jede Aussage hat eine Zeile im Material), Beding
 Nur die Zeilen besprechen, die im Raum aufgetreten sind. Vollständige Tabelle im Buchkapitel. Zeit: 1 Minute.
 :::
 
-## Eigene Variante und Portfolio
+## Freiwillige Vertiefung und Portfolio
 
-**Eigene Variante:** ein wiederkehrender Anlass, eine vollständig erfundene Anfrage, eine Angabe bewusst weggelassen, eine an eine Bedingung geknüpft. Drei Durchläufe: Auftrag, unveränderte Wiederholung, eine Änderung.
+**Eigene Variante:** der Pilotfall aus dem Canvas, vollständig erfundenes Übungsmaterial, eine Angabe bewusst weggelassen, eine an eine Bedingung geknüpft. Drei Durchläufe: Auftrag, unveränderte Wiederholung, eine Änderung. Bei Struktur- oder Vergleichsaufgaben dasselbe Vorgehen.
 
-**Portfolio-Teil 2:** Auftragskarte (Fall, Aufgabe, Materialherkunft, Format, Grenzen, Prüfung vor dem Versand), Prompts im Wortlaut, Ergebnisnotizen.
+**Portfolio-Teil 2:** Auftragskarte (Fall, Task, Herkunft des Contexts, Format, Check, menschliche Ergebnisprüfung), Prompts im Wortlaut, Ergebnisnotizen.
 
 ::: {.sources}
-material/portfolio-vorlage.md · Interaktive Auftragskarte in der Plattform-Unit 2.1
+material/portfolio-vorlage.md · Interaktive Auftragskarte in der Plattform-Unit 2.2
 :::
 
 ::: {.notes}
-Eigene Variante als Selbstlernaufgabe bis zum Zwischenstand am 23.09. Betonen: erfundene Angaben, Namen und Nummern tauschen genügt nicht. Unterschiede zwischen Durchläufen sind Beobachtungen, keine Ursachennachweise. Die Auftragskarte ist Teil des einzureichenden Zwischenstands. Zeit: 2 Minuten.
+Eigene Variante als Selbstlernaufgabe bis zum Zwischenstand am 23.09; im Auftakt gegebenenfalls mit dem vorläufigen Kandidaten, dessen Auswahl noch keine endgültige Entscheidung ist. Betonen: erfundene Angaben, Namen und Nummern tauschen genügt nicht. Unterschiede zwischen Durchläufen sind Beobachtungen, keine Ursachennachweise. Die Auftragskarte ist Teil des einzureichenden Zwischenstands. Zeit: 2 Minuten.
 :::

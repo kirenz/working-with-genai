@@ -1,26 +1,26 @@
 ---
-title: "Codex und Claude Code: Wenn das Werkzeug Dateien anfasst"
-subtitle: "Freiwilliger Praxispfad · Demo im Kickoff"
+title: "Codex und Claude Code: eine Aufgabe mit Dateien"
+subtitle: "Freiwillige Vertiefung · Demo im Kickoff"
 book-source: ../../praxis/codex-claude-code.qmd
 ---
 
 ## Zehn Minuten Einordnung, keine Schulung {.stage}
 
-[Freiwilliger Praxispfad]{.kicker}
+[Freiwillige Vertiefung]{.kicker}
 
 Bisher: Text im Fenster, herauskopiert. Jetzt: ein Werkzeug, das in einem Ordner liest und schreibt.
 
 Nichts davon ist Pflicht. Nichts kostet Geld. Der Kopierweg liefert dasselbe Ergebnis im Chat.
 
 ::: {.notes}
-Demo im Kickoff nach dem ersten Chat-Erfolg, 10 bis 15 Minuten. Zweck ist Einordnung: sichtbar machen, was jenseits des Chatfensters möglich ist, wenn ein Werkzeug Dateien lesen und schreiben darf. Zu Beginn ausdrücklich sagen: freiwillig, keine Installation, kein Kauf; wer den Pfad geht, ersetzt einen Teil der eigenen Erprobungszeit, es kommen keine Stunden dazu. Zeit: 1 Minute.
+Demo im Kickoff nach dem ersten Chat-Erfolg, 10 bis 15 Minuten. Zweck ist Einordnung: sichtbar machen, was jenseits des Chatfensters möglich ist, wenn ein Werkzeug Dateien lesen und schreiben darf. Zu Beginn ausdrücklich sagen: freiwillig, von Kursbeginn an sichtbar, keine Installation, kein Kauf, kein Abonnement; wer die Vertiefung geht, ersetzt einen Teil der eigenen Erprobungszeit, es kommen keine Stunden dazu. Zeit: 1 Minute.
 :::
 
 ## Chat und Arbeitsagent
 
 | | Chat | Arbeitsagent |
 |---|---|---|
-| Material | wird ins Fenster kopiert | liegt als Dateien im Ordner, der Agent liest sie |
+| Context | wird ins Fenster kopiert | liegt als Dateien im Ordner, der Agent liest sie |
 | Ergebnis | Text im Fenster, herauskopieren | Datei im Ordner, neben dem Material |
 | Was schiefgehen kann | ungedeckte Aussage | zusätzlich: geänderte oder gelöschte Datei |
 | Schutz | unsere Prüfung | unsere Prüfung plus Freigabeeinstellung des Werkzeugs |
@@ -35,7 +35,7 @@ Die Tabelle ist der ganze Unterschied. Claude Code (Anthropic) und Codex (OpenAI
 
 | Datei | Rolle |
 |---|---|
-| `auftrag.md` | Anweisung: Aufgabe, Material, Format, Grenzen |
+| `auftrag.md` | Anweisung: Task, Context, Format, Check |
 | `briefing.txt` | einzige gültige Faktenquelle |
 | `produkttexte-entwurf.md` | drei Produkttexte, werden gelesen, nicht verändert |
 | `ergebnis-soll.md` | gewünschtes Ergebnis, zum Vergleich |
@@ -54,14 +54,16 @@ Ordner am Beamer zeigen, bevor etwas läuft. auftrag.md öffnen und den Aufbau z
 ## Der Auftrag in der Datei
 
 ```text
-AUFGABE   Prüfe die drei Produkttexte in produkttexte-entwurf.md Aussage für
-          Aussage gegen briefing.txt. Erstelle pruefbericht.md in diesem Ordner.
-MATERIAL  briefing.txt ist die einzige Faktenquelle. Allgemeines Wissen
-          über Kaffee ist kein Beleg.
-FORMAT    Je Sorte eine Tabelle: Nr. | Aussage | Status | Fundstelle.
-          Zusammenfassung mit Anzahl je Status und Liste "Offen".
-GRENZEN   Entwürfe und Briefing nicht verändern. Keine weiteren Dateien,
-          nichts löschen. Keine korrigierten Produkttexte schreiben.
+TASK     Prüfe die drei Produkttexte in produkttexte-entwurf.md Aussage für
+         Aussage gegen briefing.txt. Erstelle pruefbericht.md in diesem Ordner.
+CONTEXT  briefing.txt ist die einzige Faktenquelle. Allgemeines Wissen
+         über Kaffee ist kein Beleg.
+FORMAT   Je Sorte eine Tabelle: Nr. | Aussage | Status | Fundstelle.
+         Zusammenfassung mit Anzahl je Status und Liste "Offen".
+CHECK    Entwürfe und Briefing nicht verändern. Keine weiteren Dateien,
+         nichts löschen. Keine korrigierten Produkttexte schreiben.
+         Unbelegte und unsichere Aussagen als solche ausweisen, nicht
+         stillschweigend übernehmen.
 ```
 
 ::: {.sources}
@@ -69,7 +71,7 @@ Vollständig: material/m01/arbeitsagent/auftrag.md
 :::
 
 ::: {.notes}
-Auf die Grenzen zeigen: Sie sind Anweisungen an das Modell. Was das Werkzeug darf, regelt gleich die Freigabefrage. Diesen Unterschied vormerken, er kommt auf der Vergleichsfolie zurück. Zeit: 1 Minute.
+Auf den CHECK-Teil zeigen: Er ist eine Anweisung an das Modell. Was das Werkzeug darf, regelt gleich die Freigabefrage. Diesen Unterschied vormerken, er kommt auf der Vergleichsfolie zurück. Zeit: 1 Minute.
 :::
 
 ## Live: eine Nachricht, eine Freigabefrage
@@ -136,7 +138,7 @@ Pflichtpfad-kompatibel: kostenloses Chatkonto genügt. Wer den Agenten nicht ein
 Keine Preise, keine Nutzungsgrenzen, keine Schaltflächen auf dieser Folie. Vor dem Einrichten die Seiten öffnen.
 
 ::: {.sources}
-code.claude.com/docs/en/overview · code.claude.com/docs/en/skills · learn.chatgpt.com/docs/pricing (abgerufen 07.09.2026)
+code.claude.com/docs/en/overview · code.claude.com/docs/en/skills · learn.chatgpt.com/docs/pricing · learn.chatgpt.com/docs/codex/agent-approvals-security (abgerufen 08.09.2026)
 :::
 
 ::: {.notes}
@@ -150,5 +152,5 @@ Nur wiedergeben, was die offiziellen Seiten am Abrufdatum sagen. Keine Empfehlun
 - **Nicht weitermachen:** ebenso in Ordnung. Nichts an der Prüfungsleistung hängt daran.
 
 ::: {.notes}
-Abschluss der Demo. Keine Hausaufgabe daraus machen. Wer Interesse hat, findet Schrittfolge, Fehlertabelle und Kontrollpunkt im Buchkapitel. Zurück zum Pflichtpfad: Modul 2, der Arbeitsauftrag. Zeit: 1 Minute.
+Abschluss der Demo. Keine Hausaufgabe daraus machen. Wer Interesse hat, findet Schrittfolge, Fehlertabelle und Kontrollpunkt im Buchkapitel. Zurück zu den Pflichtmodulen: Modul 2, der Arbeitsauftrag. Zeit: 1 Minute.
 :::

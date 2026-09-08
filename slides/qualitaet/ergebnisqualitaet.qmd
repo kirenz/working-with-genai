@@ -1,0 +1,101 @@
+---
+title: "Was ein gutes KI-Ergebnis ausmacht"
+subtitle: "Modul 4 · Lektion 4.1"
+book-source: "../../qualitaet/ergebnisqualitaet.qmd"
+---
+
+## Drei Ergebnisse an einem Vormittag {.stage}
+
+[Rösterei Morgenrot · Verwaltung und Controlling]{.kicker}
+
+Eine Antwort an eine Kundin. Eine Liste mit Ideen für die Abo-Kommunikation. Ein Vergleich zweier Angebote für neue Beutel, als Tabelle.
+
+Alle drei lesen sich gut. Alle drei stammen aus demselben Werkzeug. **Derselbe Maßstab passt nicht.**
+
+::: {.notes}
+Zwei Minuten. Frage in die Runde: Woran würden Sie das erste Ergebnis messen, woran das zweite? Erwartete Antworten: beim ersten Belegbarkeit, beim zweiten fällt es schwer. Genau das ist der Einstieg. Bei der Ideenliste wäre „jeder Satz belegt“ ein sinnloses Kriterium, weil eine Idee noch gar keine Aussage über die Welt sein muss. Bei der Tabelle entscheidet, ob die Zahlen überhaupt vergleichbar sind.
+:::
+
+## Zwei Fragen gelten immer
+
+**Was behauptet dieser Text über die Welt, und woran ließe sich das prüfen?**
+
+> „Ein Hinweis auf die Aufbrauchempfehlung könnte in die Willkommensmail.“ → Vorschlag, behauptet nichts.
+>
+> „Kundinnen und Kunden lesen die Willkommensmail häufiger als spätere Mails.“ → Sachbehauptung, jemand müsste sie belegen.
+
+**Wozu wird dieses Ergebnis gebraucht?**
+
+::: {.notes}
+Drei Minuten. Der entscheidende Punkt: Der Unterschied verläuft nicht zwischen Textsorten, sondern innerhalb eines Textes, Satz für Satz. Auch eine Ideenliste enthält prüfbare Behauptungen, und eine Kundenauskunft enthält Sätze, die nichts behaupten. Zur zweiten Frage: Wer sie vorher beantwortet, hat den Maßstab. Wer sie hinterher beantwortet, findet meistens einen Maßstab, den das vorliegende Ergebnis erfüllt.
+:::
+
+## Vier Ergebnisarten {.small}
+
+| Art | Maßstab in einem Satz |
+|---|---|
+| **Auskunft nach Aktenlage** | Jede Aussage gedeckt, Lücken ausgewiesen, Widersprüche benannt, nichts zugesagt |
+| **Zusammenfassung, Strukturierung** | Nichts kommt hinzu; Gewichtungen und Ursachen nur, wenn sie in der Vorlage stehen |
+| **Ideen, Vorschläge** | Spannweite, Passung, erkennbare Voraussetzungen — und enthaltene Sachbehauptungen werden geprüft |
+| **Vergleich mit Zahlen** | Gleiche Bezugsgröße, Quelle je Zelle, Lücken statt Schätzungen, nachvollziehbare Rechnung, vollständige Zeilen |
+
+Arbeitshilfe dieses Kurses, keine Norm.
+
+::: {.notes}
+Vier Minuten. Ausdrücklich sagen, dass diese Einteilung eine Entscheidung des Kurses ist und keine belegte Norm; sie deckt die Fälle ab, die hier vorkommen. Bei der zweiten Zeile betonen: „Hauptgrund“ und „vor allem“ sind Behauptungen, keine Zusammenfassung. Bei der vierten Zeile den letzten Punkt hervorheben: Eine weggelassene Position verändert einen Vergleich stärker als eine falsche Zahl, und sie fällt beim Lesen nicht auf. Die vier Karten liegen unter material/m04/ergebnisarten-kriterien.md.
+:::
+
+## Ideen sind keine Freistellung
+
+```text
+1. Fünf-Werktage-Regel in die Bestätigungsmail des Abos aufnehmen.
+2. Feld im Kundenkonto zum selbst ausgelösten Sortenwechsel.
+3. Erinnerungsmail sieben Tage vor Versand, da erfahrungsgemäß rund
+   60 Prozent der Wechselwünsche zu spät eingehen.
+4. Wechsel jederzeit zulassen und die Regel abschaffen, wie es im
+   Abo-Handel üblich ist.
+```
+
+1 und 2: Vorschläge, keine Behauptungen. 3: die 60 Prozent stehen in keiner Notiz. 4: „im Abo-Handel üblich“ ist eine Behauptung, und die Regel hängt an der Produktionsplanung.
+
+**Gestrichen werden zwei Sätze, keine Idee.**
+
+::: {.notes}
+Fünf Minuten, gut als kurze Arbeitsphase: Liste zeigen, Runde markieren lassen, was Vorschlag und was Behauptung ist. Konstruiertes Beispiel, kein aufgezeichneter Modelloutput. Die Auflösung führt auf den Kernsatz: Die Prüfung entfernt selten Ideen, sie entfernt ihre erfundenen Begründungen. Bei Vorschlag 4 zusätzlich auf die übersehene Voraussetzung hinweisen — das ist der zweite Prüfblick bei Ideen. Und ausdrücklich: Die 60 Prozent können zutreffen. Sie sind nur nicht belegt und tragen deshalb keine Entscheidung. Ungestützt ist nicht dasselbe wie falsch.
+:::
+
+## Zahlenvergleich mit falscher Bezugsgröße {.small}
+
+| Merkmal | Nordhang | Seitz & Töchter |
+|---|---|---|
+| Preis | 189,00 EUR | 0,21 EUR |
+| Versand | 24,00 EUR | kostenfrei |
+
+Kartonpreis gegen Stückpreis. Beide Zahlen stehen so in den Angeboten. „Kostenfrei“ gilt erst ab 2.000 Stück. Und eine Zeile fehlt: die Mindestabnahme.
+
+**Repariert, bezogen auf 1.000 Stück:** 189,00 + 24,00 = **213,00 EUR** gegen 1.000 × 0,21 + 29,00 = **239,00 EUR**.
+
+::: {.notes}
+Vier Minuten. Erfundene Angebote. Die Folie zeigt den häufigsten Fehler bei Tabellenvergleichen: Die Zahlen sind einzeln korrekt und trotzdem nicht vergleichbar. Drei Befunde nacheinander auflösen: unterschiedliche Bezugsgröße in derselben Zeile, weggelassene Bedingung beim Versand, fehlende Zeile. Beim Reparieren zeigen, dass die Bezugsmenge in den Zeilenkopf gehört und der Rechenweg danebensteht. Abschließend die Grenze nennen: Bei 500 Stück sieht der Vergleich anders aus, und ob 1.000 Beutel gebraucht werden, beantwortet keine Tabelle. Vollständiges Beispiel im Material.
+:::
+
+## Kriterien vorher, Prüfung nachher
+
+**Zwei bis vier Kriterien je Auftrag, abhakbar an einer Stelle im Ergebnis.**
+
+| Statt | Besser |
+|---|---|
+| „Die Antwort ist vollständig.“ | „Alle drei Fragen sind beantwortet oder stehen unter ‚Offen‘.“ |
+| „Der Vergleich stimmt.“ | „Jede Zeile nennt die Bezugsmenge.“ |
+
+**Check im Prompt** = Anweisung an das Modell, verändert die Bedingungen. **Eigene Prüfung** = der Schritt, der feststellt, ob etwas trägt. Der eine ersetzt den anderen nicht.
+
+::: {.notes}
+Drei Minuten zum Abschluss. Die Analogie: In einer Werkstatt steht die Abnahmeliste fest, bevor der Wagen auf der Bühne steht; wer sie danach schreibt, schreibt sie unwillkürlich so, dass sie passt. Eine lange Liste wird nicht abgehakt, deshalb zwei bis vier. Ablage: Portfolio-Teil 3, Abschnitt Prüfkriterien, bezogen auf den Auftrag, an dem im Kurs gearbeitet wird. Wer zwei abhakbare Kriterien hat, hat zugleich den Anfang einer Testfallkarte.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 4.1, Working with GenAI: qualitaet/ergebnisqualitaet
+- Material: material/m04/ergebnisarten-kriterien.md
+- Beispiele konstruiert; Angebote, Zahlen und Ideenliste sind für den Kurs erfunden

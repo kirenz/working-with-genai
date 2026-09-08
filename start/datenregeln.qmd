@@ -1,0 +1,51 @@
+# Welche Daten dürfen ins KI-Werkzeug?
+
+Bis hierher ging es um das, was aus einem Chatmodell herauskommt. Diese Lektion handelt von dem, was hineingeht. Das Briefing der Rösterei Morgenrot durften wir unverändert in das Chatfenster kopieren, weil es erfunden ist. Im Alltag liegt vor uns eine echte Kundenmail, eine interne Kalkulation, ein Screenshot aus einem Fachsystem. Ob solche Inhalte in ein Chatkonto dürfen, entscheidet nicht das Werkzeug und nicht diese Lektion, sondern die Regelung der eigenen Organisation. Was diese Lektion leistet: eine Einteilung, mit der wir jeden Inhalt vor der Eingabe schnell einordnen und die richtige Frage an die richtige Stelle richten.
+
+## Warum die Frage vor jeder Eingabe steht
+
+Bei den webbasierten Diensten dieses Kurses werden eingegebene Inhalte beim Anbieter verarbeitet. Was mit den Eingaben dort geschieht, hängt vom Anbieter, vom Kontotyp und von der Vereinbarung ab, die zwischen der Organisation und dem Anbieter besteht oder nicht besteht. Ein kostenloses Privatkonto ist eine andere Lage als ein betrieblich beschaffter Zugang mit Vertrag. Die Einstellungen zum Umgang mit Eingaben unterscheiden sich je nach Anbieter und Kontotyp; wir prüfen sie vor dem ersten Einsatz mit echten Daten und verlassen uns nicht auf eine Vermutung.
+
+Dazu kommt, dass ein Chatfenster leicht mehr aufnimmt, als für die Aufgabe nötig wäre. Für eine Antwort auf eine Abo-Frage braucht das Modell die Frage und die geltenden Konditionen, nicht den Namen, die Anschrift und die Kundennummer der Person. Die Orientierungshilfe der Datenschutzkonferenz zu KI und Datenschutz nennt unter anderem einen festgelegten Zweck, Datenminimierung, die Frage, in welchem Konto und unter welcher Vertragslage verarbeitet wird, und den Hinweis, dass pseudonymisierte Daten nicht automatisch anonym sind ([DSK, Orientierungshilfe KI und Datenschutz, Mai 2024, PDF](https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf)). Diese Punkte sind der Hintergrund der Einteilung, die wir im Kurs verwenden.
+
+## Drei Kategorien
+
+Wir sortieren Inhalte vor der Eingabe in drei Kategorien. Die Einteilung ist eine Orientierungshilfe dieses Kurses, kein Rechtsgutachten und keine Freigabe.
+
+| Kategorie | Bedeutung | Was zu tun ist |
+|---|---|---|
+| **A: Für die Übung geeignet** | Erfundene, öffentliche oder rein allgemeine Inhalte ohne Personenbezug und ohne Vertraulichkeit | Für die Übung geeignet; Nutzungsrechte und Vorgaben der Organisation gelten weiter. Alle Pflichtübungen dieses Kurses laufen mit Inhalten dieser Kategorie. |
+| **B: Nur mit Freigabe im passenden Konto** | Interne, aber nicht personenbezogene Inhalte: Kalkulationen, interne Vorlagen, unveröffentlichte Planungen | Nur verwenden, wenn die Organisation die Nutzung in genau diesem Konto freigegeben hat. Die Klärung läuft über die Vertragslage, je nach Organisation IT, Einkauf oder Leitung. |
+| **C: Nicht ohne verbindliche Klärung** | Personenbezogene, besonders schutzwürdige oder fremde vertrauliche Inhalte: Kundendaten, Gesundheitsangaben, Bewerbungen, als vertraulich gekennzeichnete Dokumente Dritter | Erst die zuständige Stelle fragen, je nach Frage Datenschutz, Leitung oder die zuständige Fachstelle. Für Übungen vollständig erfinden, nicht nur Namen tauschen. |
+
+Zunächst zählen Personenbezug, besondere Schutzbedürftigkeit und Vertraulichkeitszusagen gegenüber Dritten: Solche Inhalte gehören in Kategorie C. Sonstige interne Inhalte ohne Personenbezug gehören in Kategorie B. Öffentliche oder allgemeine Inhalte ohne diese Merkmale gehören in Kategorie A; auch hier gelten Nutzungsrechte und organisatorische Vorgaben. Bei Unsicherheit bleibt die Eingabe bis zur Klärung offen.
+
+::: {.callout-important title="Ein ersetzter Name macht keinen Text anonym"}
+Eine Mail über eine Kollegin, in der der Name durch „Kollegin A“ ersetzt wurde, bleibt personenbezogen, wenn Abteilung, Zeitraum und Anlass die Person erkennbar machen. Enthält sie Angaben zur Gesundheit, sind diese zusätzlich besonders geschützt. Pseudonymisieren ist nicht Anonymisieren. Für Übungen gilt deshalb: vollständig erfinden. Ein erfundener Fall darf so aussehen wie ein echter; er darf nur keiner sein.
+:::
+
+## Drei Beispiele, kommentiert
+
+**Die interne Preiskalkulation.** Eine Tabelle mit Einkaufspreisen und Margen soll zu einer Argumentationshilfe zusammengefasst werden. Personen kommen darin nicht vor. Die Kalkulation ist vertraulich, aber nicht personenbezogen: Kategorie B. Ob sie in ein bestimmtes Konto darf, hängt an der Vereinbarung mit dem Anbieter, nicht am Datenschutz allein. Die Frage geht an IT und Einkauf, nicht zuerst an die Datenschutzbeauftragte.
+
+**Der Screenshot aus dem Kundenverwaltungssystem.** Zur Erklärung eines Vorgangs soll ein Bildschirmfoto hochgeladen werden, auf dem mehrere Datensätze echter Kundinnen und Kunden lesbar sind. Ein Bild ist kein geringeres Risiko als Text; die Daten sind dieselben. Kategorie C. Für den Zweck genügt ein nachgebauter Ausschnitt mit erfundenen Werten.
+
+**Die eigenen Stichworte für eine Terminabsage.** Drei Stichworte ohne Namen und ohne Kundenbezug sollen zu einem freundlichen Zweizeiler werden. Keine Person erkennbar, nichts vertraulich: Kategorie A. Sobald ein Grund genannt wird, der auf eine Person zeigt, ändert sich die Einordnung. Viele Alltagsanlässe lassen sich so zuschneiden, dass sie in Kategorie A fallen: allgemein formulieren, Rollen statt Namen, Grund weglassen.
+
+## Zuschneiden statt kopieren
+
+Kategorie C bedeutet, dass die Verwendung vorab verbindlich geklärt werden muss. Für eine Übung kann eine vollständig erfundene Fassung den Sachverhalt abbilden. Eine Kundenanfrage lässt sich in zwei Teile trennen: die Sachfrage, die für die Antwort gebraucht wird, und die Angaben zur Person, die dafür nicht gebraucht werden. Nur wenn auch die Sachfrage keinen Personenbezug oder schutzwürdigen Inhalt mehr enthält und für den Zugang freigegeben ist, geht sie in das Chatfenster; die Anrede und die Kundennummer ergänzt die Person, die die Antwort versendet. Die Fachinformationen, aus denen geantwortet wird, sind eine eigene Frage: Sind sie öffentlich, intern oder vertraulich?
+
+Im Lehrfall ist das einfach: Alles ist erfunden. Für den eigenen Fall halten wir für jede Angabe, die eine korrekte Antwort braucht, drei Dinge fest: Was ist es, wo liegt es heute, in welche Kategorie fällt es? Diese Liste ist der Datenbedarf des eigenen Vorhabens. Sie wächst im Kurs mit und gehört in Portfolio-Teil 1.
+
+::: {.callout-note title="Wer verbindlich entscheidet"}
+Diese Lektion ordnet ein, sie gibt nichts frei. Wer in der eigenen Organisation über Konto, Vertragslage und personenbezogene Daten entscheidet, ist von Haus zu Haus verschieden: Datenschutzbeauftragte, IT, Einkauf, Leitung. Ist die zuständige Stelle unbekannt, ist genau diese Frage der erste offene Punkt in der Arbeitsmappe. Sie zu notieren ist an dieser Stelle das Ergebnis, nicht ein Versäumnis.
+:::
+
+## Kontrollpunkt
+
+- Erklären, warum die Frage nach den Daten vor jeder Eingabe steht und wovon die Antwort abhängt: Anbieter, Kontotyp, Vereinbarung
+- Alltagsinhalte anhand der beschriebenen Merkmale in die Kategorien A, B und C einordnen und die Einordnung begründen
+- Begründen, warum ein ersetzter Name einen Text nicht anonym macht und ein Screenshot kein geringeres Risiko ist als Text
+- Eine Aufgabe so zuschneiden, dass die Eingabe ohne personenbezogene Angaben auskommt
+- Für den eigenen Fall die Angaben, ihren Ablageort und ihre Kategorie festhalten und die zuständige Stelle benennen oder als offen notieren
