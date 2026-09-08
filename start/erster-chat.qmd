@@ -1,6 +1,6 @@
 # Der erste Chat-Erfolg
 
-Ein Chatmodell liefert innerhalb von Sekunden einen Text, der brauchbar aussieht. Genau damit beginnen wir: mit einer kleinen, echten Aufgabe aus der Rösterei Morgenrot, die ohne Vorwissen gelingt und ein sichtbares Ergebnis hat. Die Grenzen dieses Ergebnisses schauen wir uns danach an; erst kommt der Erfolg.
+Ein Chatmodell liefert innerhalb von Sekunden einen Text, der brauchbar aussieht. Genau damit beginnen wir: mit einer kleinen, echten Aufgabe aus der Rösterei Morgenrot, die ohne Vorwissen gelingt und ein sichtbares Ergebnis hat.
 
 ## Der Anlass: ein Hinweistext für den Onlineshop
 

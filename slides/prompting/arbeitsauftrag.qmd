@@ -11,7 +11,7 @@ book-source: ../../prompting/arbeitsauftrag.qmd
 „Beantworte mal diese Kundenanfrage." Daraus wird etwas. Aber lässt es sich vertreten?
 
 ::: {.notes}
-Erste Praxiseinheit aus Modul 2, im Kickoff nach Modul 1. Leitfrage des Kurses in Erinnerung rufen: vom Text, der gut klingt, zum Ergebnis, das sich vertreten lässt. Diese Lektion liefert die Bauweise dafür. Zeit: 1 Minute.
+Erste Praxiseinheit aus Modul 2, im Kickoff nach Modul 1. Leitfrage des Kurses in Erinnerung rufen: Wie lässt sich KI für konkrete Aufgaben im Arbeitsalltag sinnvoll einsetzen? Diese Lektion behandelt die Formulierung eines Arbeitsauftrags anhand einer Kundenanfrage. Zeit: 1 Minute.
 :::
 
 ## Die Anfrage im Postfach
