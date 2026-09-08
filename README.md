@@ -38,7 +38,7 @@ Quellen und Wiederverwendung: `docs/quellen-und-wiederverwendung.md` sowie die M
 
 ## Veröffentlichung zur gemeinsamen Durchsicht
 
-Die Veröffentlichung dieser Arbeitsfassung wurde am 08.09.2026 beauftragt. Buch und Folien erscheinen auf GitHub Pages; die interaktiven Lektionen auf der kommerziellen Instanz. Der Kurs bleibt über seinen direkten Link zugänglich und wird nicht neu im Katalog gelistet. Die gemeinsame didaktische Durchsicht steht weiterhin aus. Kursimporte erhalten bestehende IDs, Quizversuche und Lernfortschritte; der einmalige Startpaket-Importer ist für diese Aktualisierung nicht geeignet.
+Die Veröffentlichung dieser Arbeitsfassung wurde am 08.09.2026 beauftragt. Buch und Folien erscheinen auf GitHub Pages; die interaktiven Lektionen auf der kommerziellen Instanz. Der Kurs ist seit dem 08.09.2026 auch im öffentlichen Kurskatalog sichtbar. Die gemeinsame didaktische Durchsicht steht weiterhin aus. Kursimporte erhalten bestehende IDs, Quizversuche und Lernfortschritte; der einmalige Startpaket-Importer ist für diese Aktualisierung nicht geeignet.
 
 - [Interaktiver Kurs](https://kurse.kirenz.de/courses/working-with-genai)
 - [Buch und Folien](https://kirenz.github.io/working-with-genai/kursuebersicht.html)
