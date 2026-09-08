@@ -1,0 +1,156 @@
+---
+title: "Aussagen gegen Quellen prüfen"
+subtitle: "Modul 4 · Lektion 4.1"
+book-source: "../../qualitaet/aussagen-pruefen.qmd"
+---
+
+## Zehn Sätze zur Freigabe {.stage}
+
+[Rösterei Morgenrot · Verwaltung und Controlling]{.kicker}
+
+Petra Lindqvist hat eine Notiz mit den Abo-Kennzahlen des zweiten Quartals geschrieben. Jemand hat daraus mit einem Chatmodell eine Zusammenfassung erzeugt und sie ihr zur Freigabe geschickt.
+
+Zehn Sätze. Sie lesen sich, als hätte sie jemand geschrieben, der die Zahlen versteht.
+
+::: {.notes}
+Einstieg mit der Situation, etwa zwei Minuten. Die Blickrichtung dieser Lektion benennen: Bisher wurden Ergebnisse geprüft, die selbst in Auftrag gegeben wurden, mit selbst ausgewähltem Material. Jetzt liegt ein Text schon vor. Frage an den Raum, noch ohne Auflösung: Was passiert, wenn diese Zusammenfassung ungeprüft in die Besprechung geht? Erwartete Antworten: falsche Zahlen. Ergänzen, dass die interessanteren Fehler keine falschen Zahlen sind. Notiz und Zusammenfassung sind synthetisch und liegen als Download bei.
+:::
+
+## Die Quelle: Kennzahlen und Hinweise {.small}
+
+| Kennzahlen | | Hinweise | |
+|---|---|---|---|
+| Z1 | aktive Abos 30.06.: 412 | H1 | Vorquartal nicht ausgewertet |
+| Z2 | neue Abos: 96 | H2 | vorläufig, Abgleich steht aus |
+| Z3 | Kündigungen: 58 | H3 | Pausenfunktion angesprochen, keine Entscheidung |
+| Z4 | 41 von 58 mit Grund: „zu viel Kaffee“ 19, „Preis“ 9, „Sorte“ 7, Sonstiges 6 | H4 | anonymisiertes Zitat |
+| Z5 | 137 Rückfragen: Sortenwechsel 52, Liefertermin 44, Pause/Kündigung 31, Sonstiges 10 | H5 | keine Empfehlungen in der Notiz |
+
+::: {.notes}
+Die Tabelle eine halbe Minute stehen lassen. Auf zwei Dinge hinweisen, die später gebraucht werden: Z4 unterscheidet zwischen 58 Kündigungen und 41 Kündigungen mit Angabe. Und die Hinweise H1 bis H5 sagen mehrfach ausdrücklich, was die Notiz nicht leistet. Genau diese Zeilen werden in der Zusammenfassung überschrieben. Vollständige Notiz im Buchkapitel und als Datei `material/m04/abo-kennzahlen-q2-2026.txt`.
+:::
+
+## Die Zusammenfassung {.small}
+
+```text
+S1  Ende Juni hatte die Rösterei Morgenrot 412 aktive Abos.
+S2  Im zweiten Quartal kamen 96 neue Abos hinzu, 58 wurden gekündigt.
+S3  Die Zahl der Abos wächst damit stabil weiter.
+S4  Hauptgrund für Kündigungen ist der Preis.
+S5  Fast die Hälfte der Kündigenden gab an, zu viel Kaffee zu Hause zu haben.
+S6  Der Kundenservice bearbeitete 137 Rückfragen, die meisten zum Sortenwechsel (52).
+S7  Die Rückfragen zum Liefertermin sind gegenüber dem Vorquartal deutlich gestiegen.
+S8  Eine Pausenfunktion wurde bereits beschlossen und wird im August eingeführt.
+S9  Die Zahlen sind mit dem Shop-System abgeglichen.
+S10 Petra Lindqvist empfiehlt, den Abo-Preis zu senken.
+```
+
+Konstruiert, kein aufgezeichneter Modelloutput.
+
+::: {.notes}
+Vorlesen lassen oder still lesen, eine Minute. Dann die Frage: Welcher Satz fällt beim Lesen auf? Erwartete Antwort: keiner besonders. Das ist der didaktische Kern. Die zehn Sätze klingen gleich sicher, obwohl sie in drei verschiedene Gruppen fallen. Noch nicht auflösen; die Auflösung kommt nach der Arbeitsphase. Der Hinweis, dass die Zusammenfassung absichtlich gemischt ist, gehört hierher, damit niemand sie für einen echten Modelllauf hält.
+:::
+
+## Drei Markierungen
+
+::: {.two-col}
+::: {.card}
+**Belegt**
+
+Steht so in der Quelle, mit Fundstelle.
+
+→ übernehmen
+:::
+::: {.card}
+**Ungenau**
+
+Es gibt eine Grundlage, aber die Aussage geht darüber hinaus.
+
+→ auf den Wortlaut zurückführen
+:::
+:::
+
+::: {.card}
+**Ungedeckt**
+
+Die Quelle sagt nichts dazu oder etwas anderes.
+
+→ streichen; wenn die Frage zählt, unter „Offen“
+:::
+
+::: {.notes}
+Etwa drei Minuten. Die Dreiteilung als Designentscheidung dieses Kurses kennzeichnen, nicht als Norm. Die mittlere Stufe betonen: Sätze, die nicht erfunden sind und trotzdem mehr sagen als die Quelle, überleben jede Prüfung, die nur nach richtig oder falsch fragt. Reihenfolge einschärfen: erst die Fundstelle suchen, dann markieren. Ein Satz ohne auffindbare Fundstelle ist nicht widerlegt, aber ungedeckt, und das genügt.
+:::
+
+## Wo Ungedecktes typischerweise sitzt {.small}
+
+| Stelle | Signalwörter | Prüffrage |
+|---|---|---|
+| Zahlen | Beträge, Anzahl, Anteile | Dieselbe Zahl mit derselben Bezugsgröße? |
+| Zeitangaben | „ab“, „bis“, „bereits“ | Steht der Termin in der Quelle? |
+| Vergleiche | „gestiegen“, „gegenüber“ | Enthält die Quelle beide Werte? |
+| Ursachen | „Hauptgrund“, „weil“ | Nennt die Quelle eine Ursache? |
+| Verallgemeinerungen | „alle“, „die meisten“ | Auf welche Menge bezogen? |
+| Zuschreibungen | „empfiehlt“, „laut“ | Sagt die Person das so? |
+| Erledigte Handlungen | „beschlossen“, „abgeglichen“ | Passiert oder offen? |
+
+::: {.notes}
+Die Merkliste ist das Werkzeug für die Arbeitsphase. Analogie: Qualitätskontrolle am Band. Geprüft wird jedes Merkmal gegen die Spezifikation, nicht der Gesamteindruck; „liest sich gut“ ist kein Prüfmerkmal. Hinweis für später: Im eigenen Arbeitsbereich sind meist zwei oder drei dieser sieben Stellen die relevanten. Diese kurze Liste ist im Alltag wirksamer als die vollständige.
+:::
+
+## Arbeitsphase: Protokoll füllen
+
+**Vier Spalten:** Satz · Markierung · Fundstelle (Z1–Z5, H1–H5 oder „keine“) · Befund in einem Satz
+
+Erst die Fundstelle suchen, dann markieren.
+
+Vorlage: `material/m04/pruefprotokoll-vorlage.md`
+
+::: {.notes}
+Arbeitsphase zwölf Minuten, einzeln oder zu zweit. Auftrag: alle zehn Sätze eintragen. Wer schnell ist, ergänzt die Spalte Reparatur. Herumgehen und bei S5 gezielt nachfragen: Auf welche Zahl bezieht sich „fast die Hälfte“? Diese Zeile ist die lehrreichste. Kein Chatmodell in dieser Phase; das kommt erst danach. Wer kein Konto hat, ist hier ohnehin nicht betroffen, die Phase läuft ohne Werkzeug.
+:::
+
+## Auflösung: drei Gruppen {.small}
+
+| | Sätze | Warum |
+|---|---|---|
+| **belegt** | S1, S2, S6 | Zahlen stehen so in Z1, Z2, Z3, Z5 |
+| **ungenau** | S5 | 19 von **41** mit Angabe, nicht von 58; die 17 ohne Angabe fehlen |
+| **ungedeckt** | S3, S4, S7, S8, S9, S10 | H1 schließt Vergleiche aus · Z4 sagt anderes · H3 „angesprochen“ ≠ „beschlossen“ · H2 „steht aus“ ≠ „erledigt“ · H5 keine Empfehlung |
+
+Reparierte Fassung: vier Sätze statt zehn, jeder mit Fundstelle, offene Punkte als Tagesordnung.
+
+::: {.notes}
+Auflösung etwa fünf Minuten. Ergebnisse einsammeln, bevor die Folie aufgelegt wird. Zwei Wortpaare hervorheben, an denen Protokolle auseinandergehen: „angesprochen“ gegen „beschlossen“, „steht aus“ gegen „abgeglichen“. Wer diese Wörter überliest, markiert einen ungedeckten Satz als belegt, obwohl die Fundstelle stimmt. Betonen, dass die reparierte Fassung deutlich kürzer ist und das kein Mangel ist: Was die Quelle nicht trägt, fehlt jetzt, und was für die Besprechung zählt, steht unter „Offen“. Die vollständige Tabelle mit allen zehn Zeilen steht im Buchkapitel.
+:::
+
+## Der zweite Leser
+
+Nach der eigenen Prüfung dasselbe vom Chatmodell prüfen lassen. **Format:** Tabelle, keine Neuformulierung. **Grenzen:** nur gegen die Quelle, nichts nachrechnen, keine Empfehlung.
+
+Dann beide Protokolle nebeneinander. Bei jeder Abweichung entscheidet die Quelle.
+
+Vollständiger Auftrag: Buchkapitel 4.1, `material/m04/prompt-4-1-zweitleser.txt`
+
+::: {.notes}
+Live-Demo, etwa fünf Minuten: Auftrag aus der Datei in einen neuen Chat kopieren, Tabelle zeigen, eine Zeile mit dem eigenen Protokoll vergleichen. Ohne Konto: das konstruierte Protokoll aus dem Buch auflegen. Wichtig: Das Modellprotokoll ist selbst ein Ergebnis. Es kann einen ungedeckten Satz durchwinken oder einen belegten anzweifeln. Deshalb steht dieser Schritt nach der eigenen Prüfung, nicht statt ihrer. Wenn das Modell milder markiert als der Raum, ist das ein Befund, keine Entwarnung.
+:::
+
+## Eigene Variante und Portfolio
+
+1. Kurze Übungsquelle erfinden: nummerierte Angaben plus Hinweise, darunter einer, der etwas ausdrücklich offenlässt.
+2. Daraus eine Zusammenfassung erzeugen lassen, Sätze nummerieren.
+3. Protokoll selbst füllen, dann vom Modell prüfen lassen, vergleichen.
+4. Auszählen, an welchen Stellen der Merkliste die Befunde standen.
+
+Protokoll, reparierte Fassung und eigene Merkliste gehören in **Portfolio-Teil 3**, Prüfkriterien.
+
+::: {.notes}
+Selbstlernphase, nicht Präsenz. Datenregel wiederholen: erfundene Angaben, keine echten Kennzahlen und keine internen Unterlagen. Der Punkt, der am häufigsten fehlt: Die eigene Übungsquelle braucht mindestens eine Stelle, die etwas offenlässt. Ohne sie kann keine der interessanten Markierungen entstehen und die Übung prüft nur Zahlen. Die ausgezählte Merkliste ist das eigentliche Portfolio-Ergebnis: Sie legt die Reihenfolge fest, in der beim nächsten Ergebnis geprüft wird.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 4.1, Working with GenAI: qualitaet/aussagen-pruefen
+- Material: material/m04/abo-kennzahlen-q2-2026.txt, zusammenfassung-konstruiert.txt, pruefprotokoll-vorlage.md, prompt-4-1-zweitleser.txt
+- Notiz, Zahlen und Zusammenfassung sind synthetische Erweiterungen des Lehrfalls Rösterei Morgenrot; die Zusammenfassung ist konstruiert und kein aufgezeichneter Modelloutput

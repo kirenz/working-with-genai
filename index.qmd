@@ -4,7 +4,68 @@ Willkommen zum Kursbuch **Working with GenAI**. Es richtet sich an Fachkräfte u
 
 Das Buch verfolgt eine einzige Leitfrage: Wie kommen wir von einem Text, der gut klingt, zu einem Ergebnis, das wir gegenüber Kundinnen, Kollegen und Vorgesetzten vertreten können? Der Unterschied zwischen beiden entsteht nicht von allein. Er entsteht durch den Auftrag, den wir formulieren, durch das Material, das wir mitgeben, und durch die Prüfung, die wir danach durchführen.
 
-Ein durchgehender Lehrfall begleitet den Weg: die **Nordwerk Elektrowerkzeuge GmbH**, ein erfundenes Unternehmen mit einem sehr realen Problem. Im Kundenservice läuft eine Anfrage ein, die drei Fragen stellt. Zu zweien liegen Angaben vor, zur dritten nicht. Genau an dieser Lücke zeigt sich, was ein sauber gebauter Arbeitsauftrag leistet und wo die Verantwortung bei uns bleibt.
+## Der durchgehende Lehrfall: die Rösterei Morgenrot
+
+Ein erfundenes Unternehmen begleitet den ganzen Kurs: die **Rösterei Morgenrot**, eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden. Verkauft wird über einen eigenen Onlineshop, ergänzt um ein Kaffee-Abo; drei Sorten sind im Sortiment. Das Geschäft wächst, ein Gewinn bleibt 2025 trotzdem aus. Diese Lage ist der Hintergrund, vor dem im Betrieb geschrieben, geprüft und entschieden wird.
+
+![Die Rösterei Morgenrot: Röstung, Verpackung und Versand unter einem Dach.](images/roesterei-morgenrot.png){width="90%" fig-alt="Illustration einer hellen Kaffeerösterei mit Röstmaschine, hölzernem Packtisch und Kaffeeverpackungen."}
+
+Der Fall stammt aus einem anderen Kurs und wird hier weitergeführt, damit alle Beispiele in einem Betrieb spielen, den wir nach wenigen Seiten kennen. Um Statistik geht es hier allerdings nicht. Wir arbeiten an dem, was in diesem Betrieb geschrieben und beantwortet werden muss.
+
+Fünf Personen tragen den Fall. Funktion und Zuständigkeit sind aus dem Fallmaterial übernommen; die Frage unter jedem Namen ist die Aufgabe, die diese Funktion in **diesem** Kurs an ein KI-Ergebnis stellt, und in dieser Form neu.
+
+<style>
+.morgenrot-team { margin: 1.75rem 0 2rem; }
+.morgenrot-team .team-lead,
+.morgenrot-team .team-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.9rem; margin: 0; padding: 0; list-style: none; }
+.morgenrot-team .team-row { margin-top: 0.9rem; }
+.morgenrot-team .team-card { flex: 0 1 148px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--paper-deep); padding: 0.9rem 0.6rem; text-align: center; }
+.morgenrot-team .team-card img { width: 104px; height: 104px; object-fit: cover; border-radius: 50%; margin: 0 auto 0.6rem; display: block; }
+.morgenrot-team .team-name { margin: 0; font-weight: 600; font-size: 0.95rem; line-height: 1.3; }
+.morgenrot-team .team-role { margin: 0.15rem 0 0.5rem; font-size: 0.85rem; color: var(--ink-soft); }
+.morgenrot-team .team-question { margin: 0; font-size: 0.85rem; font-style: italic; }
+.morgenrot-team figcaption { margin-top: 0.9rem; font-size: 0.85rem; color: var(--ink-soft); }
+</style>
+
+<figure class="morgenrot-team" id="morgenrot-team">
+<div class="team-lead">
+<div class="team-card">
+<img src="images/morgenrot-team/aylin-yilmaz.png" alt="Porträtfoto von Aylin Yılmaz">
+<p class="team-name">Aylin Yılmaz</p>
+<p class="team-role">Geschäftsführung</p>
+<p class="team-question">Was geben wir frei?</p>
+</div>
+</div>
+<ul class="team-row" aria-label="Vier Funktionen unter der Geschäftsführung">
+<li class="team-card">
+<img src="images/morgenrot-team/sina-bergmann.png" alt="Porträtfoto von Sina Bergmann">
+<p class="team-name">Sina Bergmann</p>
+<p class="team-role">Vertrieb und Kundenservice</p>
+<p class="team-question">Wie antworten wir belegbar?</p>
+</li>
+<li class="team-card">
+<img src="images/morgenrot-team/jonas-halder.png" alt="Porträtfoto von Jonas Halder">
+<p class="team-name">Jonas Halder</p>
+<p class="team-role">Marketing</p>
+<p class="team-question">Welcher Text ist schnell brauchbar?</p>
+</li>
+<li class="team-card">
+<img src="images/morgenrot-team/petra-lindqvist.png" alt="Porträtfoto von Petra Lindqvist">
+<p class="team-name">Petra Lindqvist</p>
+<p class="team-role">Verwaltung und Controlling</p>
+<p class="team-question">Stimmt jede Zahl im Entwurf?</p>
+</li>
+<li class="team-card">
+<img src="images/morgenrot-team/marlene-bosch.png" alt="Porträtfoto von Marlene Bosch">
+<p class="team-name">Marlene Bosch</p>
+<p class="team-role">Röstung und Produktion</p>
+<p class="team-question">Welche Angaben gehören ins Material?</p>
+</li>
+</ul>
+<figcaption>Die fünf Personen der Rösterei Morgenrot mit ihrer Frage an ein KI-Ergebnis.</figcaption>
+</figure>
+
+Der Kurs beginnt bei Sina Bergmann. Im Kundenservice läuft eine Mail ein, die drei Fragen stellt: Eine ist aus den Fachinformationen belegbar, eine nur unter einer Bedingung, und zur dritten steht dort nichts. Genau an dieser Staffelung zeigt sich, was ein sauber gebauter Arbeitsauftrag leistet und wo die Verantwortung bei uns bleibt. Die vollständige Fallbasis steht als [Download](material/roesterei-morgenrot.md) bereit.
 
 Aufgaben dieser Art gibt es in jeder Organisation:
 
@@ -25,16 +86,20 @@ Die Kapitel verbinden kurze Erklärungen, eigenes Ausprobieren und konkrete Erge
 - **Ergebnisprüfung** — der Abgleich gegen das mitgegebene Material.
 - **Portfolio** — der brauchbare Teil wandert in die Arbeitsmappe.
 
-Alle Materialien, die für das Mitmachen nötig sind, stehen vollständig im Buchtext und zusätzlich als Downloads bereit: [Fachinformationen](material/lehrfall-fachinformationen.txt), [Kundenanfrage](material/kundenanfrage.txt), [Prompt](material/prompt-vorlage.txt) und [Portfolio-Vorlage](material/portfolio-vorlage.md). Es gibt keinen Schritt, für den erst etwas anderswo nachgeschlagen werden muss.
+Alle Materialien, die für das Mitmachen nötig sind, stehen vollständig im Buchtext und zusätzlich als Downloads bereit: [Fallbasis Rösterei Morgenrot](material/roesterei-morgenrot.md), [Fachinformationen](material/lehrfall-fachinformationen.txt), [Kundenanfrage](material/kundenanfrage.txt), [Prompt](material/prompt-vorlage.txt) und [Portfolio-Vorlage](material/portfolio-vorlage.md). Es gibt keinen Schritt, für den erst etwas anderswo nachgeschlagen werden muss.
+
+::: {.callout-important title="Erfundener Fall, teils eigens für diesen Kurs gebaut"}
+Unternehmen, Personen und Zahlen der Rösterei Morgenrot sind erfunden; die Angaben dürfen deshalb unverändert in ein Chatfenster kopiert werden. Sortiment und Preise stammen aus dem Fallmaterial, die Abo-Regel im Musterkapitel ist eigens für diesen Kurs ergänzt und als solche gekennzeichnet. Wo eine Angabe fehlt, ist das Absicht und nicht nachzutragen.
+:::
 
 ::: {.callout-note title="Branchenübergreifend einsetzbar"}
-Der Lehrfall stammt aus dem Kundenservice eines Handwerksbedarf-Herstellers. Dieselben Bausteine tragen in der Verwaltung (Auskünfte nach Aktenlage), im Personalwesen (Stellenausschreibungen und Absagen), in der Beratung (Angebotstexte) und in der Lehre (Feedback zu Einreichungen). Wer den Aufbau einmal an Nordwerk durchgespielt hat, überträgt ihn auf den eigenen Bereich.
+Der Lehrfall spielt im Kundenservice eines kleinen Direktvertriebs. Dieselben Bausteine tragen in der Verwaltung (Auskünfte nach Aktenlage), im Personalwesen (Stellenausschreibungen und Absagen), in der Beratung (Angebotstexte) und in der Lehre (Feedback zu Einreichungen). Wer den Aufbau einmal an der Rösterei Morgenrot durchgespielt hat, überträgt ihn auf den eigenen Bereich.
 :::
 
 ::: {.callout-tip title="Lernempfehlung"}
 Die Kapitel bauen aufeinander auf und sind auf 5 bis 15 Minuten Lesezeit plus einen eigenen Durchlauf im Chatfenster angelegt. Am meisten nehmen wir mit, wenn wir jeden Auftrag tatsächlich abschicken, statt ihn nur zu lesen. Die Ergebnisse können zwischen Durchläufen abweichen; genau diese Streuung ist Teil des Lernstoffs.
 :::
 
-::: {.callout-note title="Stand dieses Buches"}
-Dieses Buch entsteht kapitelweise parallel zum Kurs. Ausgearbeitet ist bislang das Kapitel **Vom Zuruf zum Arbeitsauftrag** aus Modul 2. Der Aufbau des Gesamtkurses mit sechs Modulen steht im [Kurskonzept](docs/kurskonzept-v2.md); die weiteren Kapitel werden nach demselben Muster ergänzt. Leere Platzhalterkapitel werden bewusst nicht aufgenommen.
+::: {.callout-note title="Den passenden Einstieg finden"}
+Der Kurs führt durch sechs Module mit jeweils drei Lektionen. Der [persönliche Lernweg](lernweg.qmd) zeigt Termine, Zwischenstände und Arbeitsrhythmus. In der [Kursübersicht](kursuebersicht.qmd) stehen die Kapitel und die zugehörigen Folien zusammen. Der [Werkzeugkompass](werkzeugkompass.qmd) hilft bei der Orientierung; die freiwillige [Codex-/Claude-Code-Vertiefung](praxis/codex-claude-code.qmd) ergänzt den Einstieg.
 :::

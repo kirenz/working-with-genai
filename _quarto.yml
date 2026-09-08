@@ -3,16 +3,19 @@ project:
   output-dir: _book
   resources:
     - "material/**"
+    - "images/**"
     - "docs/kurskonzept-v2.md"
-  # Startpaket: Es ist bewusst nur das ausgearbeitete Musterkapitel eingehängt.
-  # Weitere Modul-Verzeichnisse werden erst aufgenommen, wenn Kapitel darin
-  # existieren — keine leeren Skelette im Build.
   render:
     - "*.qmd"
+    - "start/*.qmd"
     - "prompting/*.qmd"
+    - "kontext/*.qmd"
+    - "qualitaet/*.qmd"
+    - "verantwortung/*.qmd"
+    - "transfer/*.qmd"
+    - "praxis/*.qmd"
 
 lang: de
-
 execute:
   freeze: auto
 
@@ -20,32 +23,54 @@ book:
   title: "Working with GenAI"
   description: "Vom ersten Chat zum belegbaren Arbeitsergebnis"
   author: "Jan Kirenz"
-
-  # Keine Vor/Zurück-Kapitelnavigation: im Plattform-Embed wird über die
-  # Lernplattform navigiert, nicht im eingebetteten Buch.
-  page-navigation: false
-
+  page-navigation: true
   search:
     type: overlay
   page-footer:
-    left: |
-      © [Jan Kirenz](https://www.kirenz.com/), 2026
-
+    left: "© [Jan Kirenz](https://www.kirenz.com/), 2026"
   chapters:
     - index.qmd
-
+    - lernweg.qmd
+    - werkzeugkompass.qmd
+    - part: "Modul 1 · Ankommen: erster Erfolg und erste Grenzen"
+      chapters:
+        - start/erster-chat.qmd
+        - start/grenzen-daten.qmd
+        - start/anwendungsfall.qmd
     - part: "Modul 2 · Strukturierte Arbeitsaufträge"
       chapters:
         - prompting/arbeitsauftrag.qmd
+        - prompting/beispiele-format.qmd
+        - prompting/iterieren.qmd
+    - part: "Modul 3 · Kontext bereitstellen"
+      chapters:
+        - kontext/material-auswaehlen.qmd
+        - kontext/regeln-quellen.qmd
+        - kontext/material-finden.qmd
+    - part: "Modul 4 · Qualität prüfen"
+      chapters:
+        - qualitaet/aussagen-pruefen.qmd
+        - qualitaet/testfaelle.qmd
+        - qualitaet/toolvergleich.qmd
+    - part: "Modul 5 · Verantwortung und Risiko-Orientierung"
+      chapters:
+        - verantwortung/datenschutz.qmd
+        - verantwortung/urheberrecht.qmd
+        - verantwortung/ki-kompetenz.qmd
+    - part: "Modul 6 · In den Alltag bringen"
+      chapters:
+        - transfer/wiederverwenden.qmd
+        - transfer/miniworkflow.qmd
+        - transfer/transferplan.qmd
+    - part: "Praxis und Nachschlagen"
+      chapters:
+        - praxis/codex-claude-code.qmd
+        - kursuebersicht.qmd
 
 format:
   html:
     toc: true
-    # Theme-Stack aus dem Vorbild-Repo n8n-grundlagen übernommen:
-    # cosmo als Bootstrap-Basis, book-theme.scss trägt den Plattform-Look.
-    theme:
-      - cosmo
-      - book-theme.scss
+    theme: [cosmo, book-theme.scss]
     code-copy: true
     highlight-style: github
     code-overflow: wrap

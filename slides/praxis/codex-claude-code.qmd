@@ -1,0 +1,154 @@
+---
+title: "Codex und Claude Code: Wenn das Werkzeug Dateien anfasst"
+subtitle: "Freiwilliger Praxispfad · Demo im Kickoff"
+book-source: ../../praxis/codex-claude-code.qmd
+---
+
+## Zehn Minuten Einordnung, keine Schulung {.stage}
+
+[Freiwilliger Praxispfad]{.kicker}
+
+Bisher: Text im Fenster, herauskopiert. Jetzt: ein Werkzeug, das in einem Ordner liest und schreibt.
+
+Nichts davon ist Pflicht. Nichts kostet Geld. Der Kopierweg liefert dasselbe Ergebnis im Chat.
+
+::: {.notes}
+Demo im Kickoff nach dem ersten Chat-Erfolg, 10 bis 15 Minuten. Zweck ist Einordnung: sichtbar machen, was jenseits des Chatfensters möglich ist, wenn ein Werkzeug Dateien lesen und schreiben darf. Zu Beginn ausdrücklich sagen: freiwillig, keine Installation, kein Kauf; wer den Pfad geht, ersetzt einen Teil der eigenen Erprobungszeit, es kommen keine Stunden dazu. Zeit: 1 Minute.
+:::
+
+## Chat und Arbeitsagent
+
+| | Chat | Arbeitsagent |
+|---|---|---|
+| Material | wird ins Fenster kopiert | liegt als Dateien im Ordner, der Agent liest sie |
+| Ergebnis | Text im Fenster, herauskopieren | Datei im Ordner, neben dem Material |
+| Was schiefgehen kann | ungedeckte Aussage | zusätzlich: geänderte oder gelöschte Datei |
+| Schutz | unsere Prüfung | unsere Prüfung plus Freigabeeinstellung des Werkzeugs |
+
+Unterscheidung nach Handlung, nicht nach Produktnamen: Der Chat antwortet, der Arbeitsagent bearbeitet Dateien.
+
+::: {.notes}
+Die Tabelle ist der ganze Unterschied. Claude Code (Anthropic) und Codex (OpenAI) werden genannt, aber nicht verglichen oder gerankt. Produktbezeichnungen sind im Wandel; deshalb nach Handlung unterscheiden. Zeit: 1 Minute.
+:::
+
+## Der Demo-Ordner
+
+| Datei | Rolle |
+|---|---|
+| `auftrag.md` | Anweisung: Aufgabe, Material, Format, Grenzen |
+| `briefing.txt` | einzige gültige Faktenquelle |
+| `produkttexte-entwurf.md` | drei Produkttexte, werden gelesen, nicht verändert |
+| `ergebnis-soll.md` | gewünschtes Ergebnis, zum Vergleich |
+| `pruefbericht-beispiel.md` | konstruiertes Beispiel, Fallback |
+
+Erwartet nach dem Lauf: **genau eine neue Datei** `pruefbericht.md`.
+
+::: {.sources}
+material/m01/arbeitsagent/ (alle Dateien erfunden)
+:::
+
+::: {.notes}
+Ordner am Beamer zeigen, bevor etwas läuft. auftrag.md öffnen und den Aufbau zeigen: dasselbe Muster wie jeder Chat-Auftrag, nur mit Dateinamen. produkttexte-entwurf.md öffnen, ersten Text vorlesen: Kolumbien, Trommelröster, zehn Prozent. Erwartung formulieren: Der Bericht muss das als nicht belegt führen. Zeit: 2 Minuten.
+:::
+
+## Der Auftrag in der Datei
+
+```text
+AUFGABE   Prüfe die drei Produkttexte in produkttexte-entwurf.md Aussage für
+          Aussage gegen briefing.txt. Erstelle pruefbericht.md in diesem Ordner.
+MATERIAL  briefing.txt ist die einzige Faktenquelle. Allgemeines Wissen
+          über Kaffee ist kein Beleg.
+FORMAT    Je Sorte eine Tabelle: Nr. | Aussage | Status | Fundstelle.
+          Zusammenfassung mit Anzahl je Status und Liste "Offen".
+GRENZEN   Entwürfe und Briefing nicht verändern. Keine weiteren Dateien,
+          nichts löschen. Keine korrigierten Produkttexte schreiben.
+```
+
+::: {.sources}
+Vollständig: material/m01/arbeitsagent/auftrag.md
+:::
+
+::: {.notes}
+Auf die Grenzen zeigen: Sie sind Anweisungen an das Modell. Was das Werkzeug darf, regelt gleich die Freigabefrage. Diesen Unterschied vormerken, er kommt auf der Vergleichsfolie zurück. Zeit: 1 Minute.
+:::
+
+## Live: eine Nachricht, eine Freigabefrage
+
+```text
+Lies auftrag.md und führe den Auftrag aus.
+```
+
+Wenn der Agent `pruefbericht.md` schreiben will, fragt er nach.
+
+**Erst lesen, dann bestätigen:** Heißt die Datei richtig? Liegt sie im Demo-Ordner? Will er sonst etwas ändern?
+
+::: {.notes}
+Live-Demo: Agent im Demo-Ordner starten (Claude Code oder Codex, je nach vorhandenem Zugang des Lehrenden), die eine Nachricht schicken. Beim Lesen der Dateien kurz kommentieren: Kein Material wurde kopiert. Bei der Freigabefrage anhalten und vorlesen, was der Agent vorhat; dann bestätigen. Auffangweg, falls kein Zugang oder keine Verbindung: Kopierweg auf Folie 8 live im Chat zeigen oder pruefbericht-beispiel.md öffnen. Zeit: 4 Minuten.
+:::
+
+## Das Artefakt prüfen
+
+1. Ordner öffnen: Liegt `pruefbericht.md` da? Sonst nichts neu, nichts verändert?
+2. Bericht öffnen: Steht eine Aussage als belegt, die im Briefing fehlt?
+3. `produkttexte-entwurf.md` öffnen: unverändert?
+
+Vergleich mit `ergebnis-soll.md`: 7 belegt, 11 nicht belegt, Liste „Offen" vorhanden.
+
+::: {.notes}
+Den Bericht am Beamer öffnen und stichprobenartig gegen ergebnis-soll.md lesen: Kolumbien nicht belegt? 10,00 EUR belegt? Bio nicht belegt? Dann die Entwurfsdatei öffnen und zeigen, dass sie unverändert ist. Falls verändert: als Befund benennen, das ist der Grund, warum die Freigabefrage gelesen wurde. Zahlen sind Soll-Werte aus dem konstruierten Beispiel; ein echter Lauf schneidet Aussagen anders. Zeit: 3 Minuten.
+:::
+
+## Drei Vergleiche
+
+| Vergleich | Beobachtung |
+|---|---|
+| **Chatantwort und Dateiartefakt** | Im Chat ein Textblock zum Sichern; hier eine Datei neben dem Material |
+| **Anweisung und Ausgangsmaterial** | `auftrag.md` sagt, was zu tun ist; `briefing.txt` liefert die Fakten. Die Anweisung ist kein Beleg |
+| **Anweisung und Freigabegrenze** | „Entwürfe nicht verändern" ist eine Anweisung. Was das Werkzeug darf, regelt die Freigabeeinstellung |
+
+::: {.sources}
+Claude Code, Configure permissions: code.claude.com/docs/en/permissions · Codex, Dokumentationshub mit „Agent approvals & security": learn.chatgpt.com/docs
+:::
+
+::: {.notes}
+Die drei Unterscheidungen sind der Lernstoff der Demo. Beim dritten Vergleich die Aussage aus der Claude-Code-Dokumentation paraphrasieren: Freigaberegeln setzt das Werkzeug durch, nicht das Modell; Anweisungen im Auftrag beeinflussen, was der Agent versucht, nicht, was er darf. Analogie: die Vertretung mit Schlüssel zum Aktenschrank. Zeit: 2 Minuten.
+:::
+
+## Der Kopierweg ohne Agenten
+
+Neuer Chat. Einfügen: `auftrag.md`, darunter `briefing.txt`, darunter `produkttexte-entwurf.md`. Davor ein Satz:
+
+```text
+Die drei Dateien des Auftrags stehen unten im Wortlaut. Du kannst keine Datei schreiben; gib den Inhalt von pruefbericht.md stattdessen vollständig als Text aus.
+```
+
+Ergebnis kopieren, von Hand als `pruefbericht.md` im Ordner speichern. Dasselbe Artefakt. Zwei Handgriffe mehr, und genau die übernimmt der Agent.
+
+::: {.notes}
+Pflichtpfad-kompatibel: kostenloses Chatkonto genügt. Wer den Agenten nicht einrichten kann oder will, erfährt den Unterschied am eigenen Handgriff: Material hinein, Ergebnis heraus. Zeit: 1 Minute.
+:::
+
+## Zugänge, Stand 7. September 2026
+
+- **Claude Code:** Terminal, Entwicklungsumgebungen, Desktop-App, Browser. Laut Übersicht setzen die meisten Oberflächen ein Claude-Abonnement oder ein Console-Konto voraus; die Desktop-App ein bezahltes Abonnement.
+- **Codex:** CLI, IDE-Erweiterung, Cloud, Desktop-App. Laut Preisseite in den ChatGPT-Plänen Free, Go, Plus, Pro, Business, Edu und Enterprise enthalten, mit nach Plan unterschiedlichen Nutzungsgrenzen.
+
+Keine Preise, keine Nutzungsgrenzen, keine Schaltflächen auf dieser Folie. Vor dem Einrichten die Seiten öffnen.
+
+::: {.sources}
+code.claude.com/docs/en/overview · code.claude.com/docs/en/skills · learn.chatgpt.com/docs/pricing (abgerufen 07.09.2026)
+:::
+
+::: {.notes}
+Nur wiedergeben, was die offiziellen Seiten am Abrufdatum sagen. Keine Empfehlung für ein Produkt, keine Kaufempfehlung. Hinweis: Wiederkehrende Anweisungen lassen sich in Claude Code in einer Datei CLAUDE.md und in Skills hinterlegen; das ist ein Ausblick, keine Aufgabe. Zeit: 1 Minute.
+:::
+
+## Freiwillig weiter, oder nicht
+
+- **Nachmachen:** Demo-Ordner herunterladen, Agent oder Kopierweg, Bericht gegen `ergebnis-soll.md` prüfen
+- **Für den eigenen Fall fragen:** Genügt ein Chat, oder wäre ein Ordner mit Dateien der bessere Arbeitsbereich?
+- **Nicht weitermachen:** ebenso in Ordnung. Nichts an der Prüfungsleistung hängt daran.
+
+::: {.notes}
+Abschluss der Demo. Keine Hausaufgabe daraus machen. Wer Interesse hat, findet Schrittfolge, Fehlertabelle und Kontrollpunkt im Buchkapitel. Zurück zum Pflichtpfad: Modul 2, der Arbeitsauftrag. Zeit: 1 Minute.
+:::

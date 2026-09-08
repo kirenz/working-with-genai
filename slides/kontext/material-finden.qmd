@@ -1,0 +1,154 @@
+---
+title: "Wenn das Material zu groß wird"
+subtitle: "Modul 3 · Lektion 3.3"
+book-source: "../../kontext/material-finden.qmd"
+---
+
+## Eine Frage, zwölf Abschnitte {.stage}
+
+[Rösterei Morgenrot · Kundenservice fragt die Röstung]{.kicker}
+
+> Wie lange hält der Kaffee, wie lagere ich ihn am besten, und warum hat der Beutel vorne ein kleines Loch?
+
+Die Antwort steht im Produktionshandbuch. Das Handbuch hat zwölf Abschnitte. Zwei davon gehören in den Auftrag.
+
+::: {.notes}
+Einstieg: Warum nicht das ganze Handbuch einfügen? Erwartete Antworten: zu lang, zu viel Unpassendes. Ergänzen: Je mehr Text im Fenster, desto mehr Stellen, aus denen eine plausible und unpassende Aussage stammen kann. Das Handbuch ist synthetisch; die Werte sind keine Fachempfehlung.
+:::
+
+## Die Falle in Abschnitt 3
+
+```text
+3 LAGERUNG VON ROHKAFFEE
+Rohkaffee lagert in Säcken auf Paletten ... Bei sachgerechter
+Lagerung ist Rohkaffee in unserem Betrieb bis zu zwölf Monate
+ab Eingang verwendbar.
+
+7 LAGERUNG VON RÖSTKAFFEE UND AUFBRAUCHEMPFEHLUNG
+Verpackter Röstkaffee lagert kühl, trocken und dunkel ... innerhalb
+von acht Wochen nach Röstdatum, ganze Bohne. Eine geöffnete Packung
+möglichst innerhalb von zwei Wochen aufbrauchen ...
+```
+
+Wer nach „Lagerung“ sucht, findet Abschnitt 3 zuerst. Er klingt passend und handelt von ungeröstetem Kaffee.
+
+::: {.notes}
+Die Falle vorführen: Suchbegriff eingeben, beide Treffer zeigen. Eine Antwort „bis zu zwölf Monate haltbar“ wäre flüssig, hätte eine Fundstelle und wäre für die Kundin falsch. Deshalb: Treffer lesen, nicht zählen. Zwei Minuten.
+:::
+
+## Heraussuchen in vier Schritten
+
+```{mermaid}
+flowchart LR
+  A[Frage] --> B[Suchbegriffe]
+  B --> C[Treffer lesen]
+  C --> D[Fundstellen H6, H7]
+  D --> E[Antwort mit Fundstelle]
+  E --> F[Beleg öffnen]
+```
+
+Suchbegriffe: „Lagerung“, „aufbrauchen“, „Röstdatum“, „geöffnet“, „Ventil“. Ausgeschlossen: Abschnitt 3 (Rohkaffee), Abschnitt 8 (gemahlener Versand, nicht gefragt).
+
+::: {.notes}
+Schritt 1 ist die Übersetzung: Die Kundin sagt „wie lange hält“, das Handbuch sagt „aufbrauchen“ und „Röstdatum“. „Kleines Loch“ heißt dort „Ventil“ oder „Öffnung“. Gesucht werden die Wörter, mit denen das Dokument über die Sache spricht, nicht die Frage. Die Registratur-Analogie: zwei Mappen mit Zettel, nicht der ganze Schrank.
+:::
+
+## Suchprotokoll im Prompt
+
+```text
+MATERIAL (nur diese Fundstellen sind gültig)
+Herkunft: Produktionshandbuch Rösterei Morgenrot, Auszug, Stand 15.07.2026.
+Herausgesucht am 07.09.2026 zu den Suchbegriffen "Lagerung",
+"aufbrauchen", "Röstdatum", "geöffnet". Abschnitt 3 (Lagerung von
+Rohkaffee) wurde bewusst nicht aufgenommen.
+
+=== FUNDSTELLE [H7] Abschnitt 7 ... ===
+=== FUNDSTELLE [H6] Abschnitt 6 ... ===
+```
+
+**Format:** hinter jeder Aussage [H6] oder [H7]. **Grenzen:** nur diese Fundstellen, Fehlendes unter „Offen“.
+
+Vollständiger Prompt: Buchkapitel 3.3, Datei `material/m03/prompt-3-3-fundstellen.txt`
+
+::: {.notes}
+Das Suchprotokoll macht die Auswahl anfechtbar: Wer später prüft, sieht, wonach gesucht und was ausgeschlossen wurde. Live-Demo fünf Minuten, dann Arbeitsphase zehn Minuten. Ohne Konto: konstruiertes Ergebnis aus dem Buch.
+:::
+
+## Das Prinzip hinter dem Kürzel RAG
+
+Was hier von Hand geschieht, machen Werkzeuge automatisch, wenn Dateien in einer Wissensablage liegen: Zur Frage werden passende Textstellen herausgesucht, nur diese bekommt das Modell.
+
+**Ein Gedanke reicht:** Die Antwort ist nur so gut wie die Auswahl der Textstellen. Findet die automatische Suche Abschnitt 3 statt 7, entsteht dieselbe falsche Antwort, ohne dass jemand sie hätte verhindern können.
+
+Deshalb: Belege öffnen.
+
+::: {.notes}
+Retrieval-Augmented Generation, „Erzeugen mit vorherigem Heraussuchen“. Keine Architektur, keine Vektordatenbank, kein Diagramm; das ist eine bewusste Entscheidung des Kurskonzepts. Falls Nachfragen kommen: Die technische Seite ist nicht Gegenstand des Kurses. Was zählt: Eine Fundstelle im Ergebnis ist der Anfang der Prüfung, nicht ihr Ende.
+:::
+
+## Jeden Beleg wirklich öffnen
+
+| Aussage im Entwurf | Aufschlagen | Befund |
+|---|---|---|
+| „acht Wochen nach Röstdatum [H7]“ | steht dort, mit „ganze Bohne“ | fehlt der Zusatz, ist die Aussage breiter als der Beleg |
+| „nicht im Kühlschrank [H7]“ | steht dort, samt Begründung | belegt |
+| „kleine Öffnung, kein Defekt [H6]“ | steht dort | belegt |
+| „weil Kaffee nach der Röstung Gas abgibt“ | nur in Abschnitt 5, nicht mitgegeben | unbelegt, auch wenn es stimmt |
+
+::: {.notes}
+Auflösung nach der Arbeitsphase. Der wichtigste Befund dieses Kapitels: eine Fundstelle, hinter der etwas anderes steht als behauptet. Sie sieht aus wie ein Beleg und ist keiner. Ergebnisse einsammeln: Hat jemand „zwölf Monate“ gesehen? Eine Erklärung zur Entgasung?
+:::
+
+## Wenn die Antwort außerhalb liegt
+
+Jonas Halder fragt: Ist „Röstkaffee“ irgendwo amtlich bestimmt? Handbuch und Steckbrief: nichts.
+
+| Frage | Weg | Prüfung |
+|---|---|---|
+| Eine Angabe auf einer benennbaren Seite | **Websuche mit vorgegebener Quelle**, wörtliches Zitat, „nicht gefunden“ zulässig | Seite selbst öffnen, Wort für Wort vergleichen |
+| Ein Überblick über viele Quellen | **Mehrstufige Recherche** („Deep Research“), Bericht mit Quellen | Tragende Aussagen an den Quellen nachlesen |
+
+Der Unterschied liegt in der Frage, nicht im Werkzeug.
+
+::: {.notes}
+Kurz halten, drei Minuten. Die mehrstufige Recherche ist keine Pflichtübung: Verfügbarkeit und Umfang hängen vom Konto ab, keine Zahlen behaupten. Ohne sie bleiben normale Suche und selbst bereitgestellte Quellen der Weg. Die Übung im Kurs nimmt die Websuche mit vorgegebener Quelle, weil die Prüfung eindeutig ist.
+:::
+
+## Websuche mit Prüfwert
+
+```text
+Lies ausschließlich diese Seite:
+https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
+Zitiere wörtlich, wie dort "Röstkaffee, Kaffee" bestimmt wird. Nenne
+die Nummer des Eintrags. Ergänze nichts aus anderen Quellen oder aus
+deinem Wissen. Wenn nicht zu finden: "auf der angegebenen Seite nicht
+gefunden". Beurteile nicht, ob eine Kennzeichnung zulässig ist.
+```
+
+**Prüfwert, Stand 07.09.2026, Eintrag 1 b):** „Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen, mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm.“
+
+Maßgeblich ist, was beim Öffnen auf der Seite steht.
+
+::: {.notes}
+Demo nur, wenn im Konto eine Suchfunktion verfügbar ist; sonst die Seite direkt im Browser öffnen und den Eintrag zeigen. Prompt nicht mehrfach wiederholen, wenn der Abruf scheitert. Was die Suche nicht leistet: ob das Etikett zulässig ist. Das bleibt die verbindliche Klärung, die das Handbuch der Geschäftsführung zuweist. Freiwillige Zusatzfrage zum Koffeingehalt steht in der Materialdatei; die Anlage-Seite enthält dazu nichts, eine Prozentzahl wäre ein Befund.
+:::
+
+## Eigene Variante und Portfolio
+
+1. Längeres Dokument aus dem eigenen Fall als gekürzte, erfundene Übungsfassung mit sechs bis acht Abschnitten; eine Falle einbauen.
+2. Frage in Suchbegriffe übersetzen, Treffer lesen, Fundstellen mit Suchprotokoll mitgeben.
+3. Auftrag ausführen, jede Fundstelle aufschlagen.
+4. Gegenprobe mit dem ganzen Dokument in neuem Chat: schnappt die Falle zu?
+
+Suchprotokoll, Fundstellen, Beobachtung: **Portfolio-Teil 2**, Kontextquellen.
+
+::: {.notes}
+Selbstlernphase. Die Gegenprobe ist eine Beobachtung; auch wenn die Falle nicht zuschnappt, bleibt der Weg über Fundstellen der prüfbare. Damit ist Modul 3 abgeschlossen: auswählen, dauerhaft hinterlegen, heraussuchen.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 3.3, Working with GenAI: kontext/material-finden
+- Material: material/m03/produktionshandbuch-auszug.txt, prompt-3-3-fundstellen.txt, websuche-auftrag.txt
+- Kaffeeverordnung, Anlage: gesetze-im-internet.de/kaffeev_2001/anlage.html (abgerufen 07.09.2026)
+- Deep Research in ChatGPT, Verfügbarkeit kontoabhängig: help.openai.com/en/articles/10500283

@@ -1,0 +1,156 @@
+---
+title: "Datenschutz im Arbeitsalltag"
+subtitle: "Modul 5 · Lektion 5.1"
+book-source: "../../verantwortung/datenschutz.qmd"
+---
+
+## Eine Mail, die mehr enthält als drei Fragen {.stage}
+
+[Modul 5 · Verantwortung und Risiko-Orientierung]{.kicker}
+
+Der Antwortentwurf funktioniert. Jetzt kommt die Frage, die bei jeder Ausweitung kommt: Darf die **echte** Kundenmail in das Chatkonto?
+
+::: {.notes}
+Einstieg in Modul 5. Der Bogen aus Modul 2 bis 4 ist gespannt: Der Entwurf ist gebaut, geprüft und getestet. Was fehlt, ist die Erlaubnis. Ausdrücklich sagen: Dieses Modul liefert Risiko-Orientierung, keine Konformitätsgarantie und keine Rechtsberatung. Es ersetzt weder eine datenschutzrechtliche Prüfung noch eine Vereinbarung mit dem Anbieter. Zeit: 1 Minute.
+:::
+
+## Die Mail auf Sinas Tisch
+
+::: {.two-col}
+::: {.card}
+![](../../images/morgenrot-team/sina-bergmann.png){width="140"}
+
+**Sina Bergmann**, Vertrieb und Kundenservice
+:::
+::: {.card}
+::: {.small}
+> Ich bin Kundin seit März (Kundennummer MR-20419, Abo-Nr. A-7731). **Wegen meiner Schwangerschaft** möchte ich ab der nächsten Lieferung auf Entkoffeiniert Sanft wechseln. Bitte nicht mehr an die Firmenadresse, sondern nach Hause: Lindenweg 14, 70197 Stuttgart. Mein **Nachbar Herr Kaufmann** nimmt Pakete an. Erreichbar unter 0711 555 0142. Außerdem: Was kostet Entkoffeiniert Sanft regulär im Shop?
+
+Nadja Petrow (erfunden)
+:::
+:::
+:::
+
+::: {.sources}
+material/m05/kundenmail-personenbezogen.txt · synthetische Erweiterung des Lehrfalls
+:::
+
+::: {.notes}
+Die Mail vorlesen und dabei markieren, was alles darin steht: Name, drei Nummern, eine Wohnadresse, eine Telefonnummer, ein Dritter mit Namen, ein Gesundheitsbezug als Grund des Wechsels. Ausdrücklich sagen, dass Absenderin, Nummern und Adressen erfunden sind. Frage an den Raum, bevor irgendetwas sortiert wird: Was wäre passiert, wenn diese Mail einfach kopiert worden wäre? Erwartete Antwort: Die Angaben liegen dann in einem Konto ohne Vereinbarung und sind an dieses Konto geknüpft. Das Risiko entsteht beim Einfügen, nicht erst beim Ergebnis. Zeit: 2 Minuten.
+:::
+
+## Drei Fragen, die oft in einen Topf geworfen werden
+
+| Frage | Worum es geht | Beispiel aus der Mail |
+|---|---|---|
+| **Datenschutz** | Angaben über bestimmbare Personen | Name, Adresse, Kundennummer, Gesundheitsbezug |
+| **Vertraulichkeit** | was der Betrieb nicht nach außen gibt | Einkaufskonditionen, interne Vermerke; gilt auch ohne Namen |
+| **Urheberrecht** | fremde Texte und Bilder im Material | Fachbuch, Stockfoto — Thema der nächsten Lektion |
+
+„Darf ich das kopieren?“ meint meistens genau eine dieser drei Fragen.
+
+::: {.notes}
+Die Trennung ist der Grund, warum Modul 5 drei Lektionen hat. Wer alles unter „Datenschutz“ ablegt, prüft am Ende das Falsche: Ein anonymisierter Lieferantenvertrag ist datenschutzrechtlich unauffällig und trotzdem vertraulich. Gegenüberstellung als Handout: material/m05/datenschutz-vertraulichkeit-urheberrecht.md. Zeit: 2 Minuten.
+:::
+
+## Eine Frage je Angabe: Braucht der Entwurf sie?
+
+| Angabe | Nötig? | Umgang |
+|---|---|---|
+| Sortenwechsel, neue Sorte | ja | mitgeben |
+| Frage nach dem Shop-Preis | ja | mitgeben |
+| Name, Kunden-, Abo-, Rechnungsnummer | nein | weglassen oder Platzhalter |
+| Lieferadresse, Telefonnummer | nein | weglassen |
+| Nachbar mit Namen | nein | weglassen |
+| **Schwangerschaft als Grund** | nein | **entfernen, nicht ersetzen** |
+
+::: {.notes}
+Zeile für Zeile durchgehen, immer mit derselben Frage. Die letzte Zeile ist die wichtigste: Der Grund des Wechsels ist eine Gesundheitsangabe und gehört zu den besonders geschützten Kategorien. Sie wird nicht durch „[Grund]“ ersetzt, sie fällt weg. Für die Antwort spielt sie ohnehin keine Rolle: Ein Sortenwechsel wird beantragt, nicht begründet. Analogie: Die Urlaubsvertretung braucht die Frage, nicht die Akte. Zeit: 3 Minuten.
+:::
+
+## Bereinigt wird vor dem Chatfenster
+
+```text
+Kundenanfrage (bereinigt):
+Ich beziehe den Espresso Intenso im Abo und möchte ab der nächsten
+Lieferung auf Entkoffeiniert Sanft wechseln. Was kostet Entkoffeiniert
+Sanft regulär im Shop?
+```
+
+Mehr braucht der Arbeitsauftrag aus Modul 2 nicht.
+
+**Pseudonymisiert ist nicht anonym.** Wer die ganze Mail hochlädt, damit das Modell sie bereinigt, hat sie bereits übermittelt.
+
+::: {.notes}
+Der zentrale Handgriff der Lektion, und der unspektakulärste: abschreiben oder nur die Fragen herauskopieren. Adressänderung und Rechnungsfrage erledigt Sina im Kundenkonto beziehungsweise mit der Rechnung, beides ohne Chatmodell. Zur zweiten Aussage die DSK-Orientierungshilfe paraphrasieren: Pseudonymisierte Daten bleiben personenbezogen, solange eine Zuordnung mit Zusatzwissen möglich ist. Platzhalter sind Datensparsamkeit, kein Freibrief. Zeit: 2 Minuten.
+:::
+
+## Mitmachen: was eine maschinelle Bereinigung leistet
+
+```text
+AUFGABE   Bereite die Kundenmail für die weitere Bearbeitung vor.
+          Ersetze personenbezogene Angaben durch Platzhalter, entferne
+          Angaben, die für die Antwort nicht gebraucht werden.
+FORMAT    Zuerst die bereinigte Mail, danach eine Tabelle: Angabe |
+          Platzhalter oder "entfernt" | Begründung in acht Wörtern.
+GRENZEN   Angaben zu Gesundheit, Familie und Dritten nicht als
+          Platzhalter behalten, sondern entfernen. Nichts erfinden.
+```
+
+Zulässig **nur**, weil die Mail synthetisch ist.
+
+::: {.sources}
+Vollständiger Auftrag: Buchkapitel 5.1, Schritt 3 · material/m05/prompt-platzhalter.txt
+:::
+
+::: {.notes}
+Arbeitsphase, 8 Minuten: Auftrag aus dem Buch in einen neuen Chat, Ergebnis gegen die eigene Tabelle aus der vorigen Folie zählen. Vor dem Start den Grund der Übung nennen: Es geht nicht darum, das Bereinigen abzugeben, sondern zu sehen, wo eine maschinelle Bereinigung Lücken lässt. Beim Herumgehen einsammeln, wer welche Stelle übersehen bekommen hat. Zeit: 8 Minuten Arbeitsphase, 1 Minute Anmoderation.
+:::
+
+## Zwei Beobachtungen am konstruierten Ergebnis
+
+| Beobachtung | Was daraus folgt |
+|---|---|
+| Adresse und Telefonnummer **brav ersetzt**, aber noch im Text | Ein Platzhalter ist die zweitbeste Lösung nach dem Weglassen |
+| Ob die **Gesundheitsangabe** verschwindet, zeigt sich erst beim Lesen | Bereinigung gehört vor das Chatfenster, nicht hinein |
+
+Ein Durchlauf, in dem die Angabe stehen bleibt, ist kein Ausreißer, sondern der Grund für die Regel.
+
+::: {.notes}
+Konstruiertes Beispiel aus dem Buch am Beamer zeigen, ausdrücklich als konstruiert kennzeichnen. Die Befunde aus der Arbeitsphase daneben halten. Kein Modellverhalten vorhersagen: Weder behaupten, dass die Gesundheitsangabe verschwindet, noch dass sie stehen bleibt. Behauptet wird nur: Es muss vor der Verwendung gelesen werden. Zeit: 3 Minuten.
+:::
+
+## Wenn etwas anders läuft
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Gesundheitsbezug steht als „[Grund]“ da | Entfernen; Grenze prüfen: „entfernen“, nicht „ersetzen“ |
+| Eine Angabe übersehen, etwa der Nachbar | Als Befund notieren; Maßstab ist die eigene Tabelle |
+| Alles ersetzt, aber nichts weggelassen | Fragen, ob der Entwurf die Angabe überhaupt braucht |
+| Unklar, was für dieses Konto gilt | Einstellung prüfen; bis zur Klärung gilt die strengere Regel |
+| Die Regel wird umgangen, weil sie lästig ist | Regel vereinfachen, nicht aufweichen: Textvorlage bereitstellen |
+
+::: {.notes}
+Nur die Zeilen besprechen, die im Raum aufgetreten sind; vollständige Tabelle im Buchkapitel. Die letzte Zeile ist die praktisch wichtigste: Eine Regel, die im Alltag stört, wird umgangen. Deshalb die Vorlage „Kundenanfrage (bereinigt):“, in die nur die Fragen getippt werden. Zeit: 2 Minuten.
+:::
+
+## Die Aktennotiz und Portfolio-Teil 3
+
+**Vier Punkte:** genutztes Konto und was über dessen Bedingungen bekannt ist · die Regel (was mitgeht, was Platzhalter wird, was entfällt) · wo bereinigt wird · was das Modell nicht bekommt.
+
+**Und der Punkt, der die Notiz erst vollständig macht:** Wer klärt das verbindlich? Fehlt eine Zuständigkeit, steht „nicht benannt“ mit dem nächsten Schritt darin.
+
+::: {.sources}
+material/m05/aktennotiz-datenregel.md · Portfolio-Teil 3, Zeilen „Personenbezogene Daten im Prozess“ und „Genutztes Konto / Vertragslage“
+:::
+
+::: {.notes}
+Selbstlernaufgabe bis zur Abgabe am 08.10.: eigener Fall, eigene erfundene Eingangsnachricht, Tabelle ausfüllen, Notiz schreiben, Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage ausführen. Betonen: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Im Lehrfall entscheidet Aylin über Konto und Freigabe, Petra prüft die Vertragslage, und für die datenschutzrechtliche Einordnung ist niemand benannt; genau das steht in der Notiz. Zeit: 2 Minuten.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 5.1, Working with GenAI: verantwortung/datenschutz
+- Material: material/m05/kundenmail-personenbezogen.txt, prompt-platzhalter.txt, aktennotiz-datenregel.md, datenschutz-vertraulichkeit-urheberrecht.md
+- DSK, Orientierungshilfe KI und Datenschutz (06.05.2024): datenschutzkonferenz-online.de → Orientierungshilfen. Grundanforderungen Zweckbindung, Datenminimierung, Verantwortlichkeit; pseudonymisiert ist nicht anonym
+- Orientierung, kein Gutachten: verbindliche Einordnung nur durch die zuständige Stelle

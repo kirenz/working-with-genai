@@ -1,0 +1,58 @@
+RÖSTEREI MORGENROT: AUSZUG FACHINFORMATIONEN KUNDENSERVICE (ERWEITERT)
+Kursmaterial "Working with GenAI", Modul 2 (Lektionen 2.2 und 2.3)
+
+HINWEIS: Die Rösterei Morgenrot ist ein erfundenes Unternehmen. Alle Angaben
+sind konstruiert und dürfen unverändert in ein Chatfenster kopiert werden.
+Dieser Auszug erweitert den Auszug aus Lektion 2.1 um drei Abo-Regeln und
+einen Hinweis zu Herkunftsangaben. Kennzeichnung am Ende.
+
+--------------------------------------------------------------------------
+GELTENDE ANGABEN
+--------------------------------------------------------------------------
+
+- Sortiment im Onlineshop, reguläre Listenpreise:
+  Espresso Intenso      10,00 EUR
+  Filterkaffee Mild      9,00 EUR
+  Entkoffeiniert Sanft  13,00 EUR
+
+- Diese Listenpreise gelten im Onlineshop. Zu Preisen innerhalb des
+  Kaffee-Abos liegen hier keine Angaben vor.
+
+- Kaffee-Abo, Sorten: Alle drei Sorten sind im Abo wählbar.
+
+- Kaffee-Abo, Sortenwechsel: Ein Wechsel der Sorte gilt für die nächste
+  Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand
+  eingeht.
+
+- Kaffee-Abo, Aussetzen: Eine einzelne Lieferung kann ausgesetzt werden,
+  wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht. Das
+  Abo läuft danach unverändert weiter.
+
+- Kaffee-Abo, Kündigung: Das Abo kann jederzeit per Mail an den
+  Kundenservice gekündigt werden. Bereits versendete Lieferungen sind davon
+  nicht betroffen.
+
+- Für Versandtermine und Sendungsstatus ist der Bereich Lager und Versand
+  zuständig (Ellen Ruppert).
+
+- Zu Herkunft, Anbau, Zertifikaten (etwa Bio) und Röstverfahren liegen dem
+  Kundenservice keine freigegebenen Angaben vor.
+
+--------------------------------------------------------------------------
+WAS HIER BEWUSST NICHT STEHT
+--------------------------------------------------------------------------
+
+Versanddaten einzelner Abo-Lieferungen. Ohne Versanddatum lässt sich für
+eine konkrete Lieferung weder ein Sortenwechsel noch ein Aussetzen
+zusagen; beide Regeln hängen an der Frist von fünf Werktagen vor dem
+Versand.
+
+--------------------------------------------------------------------------
+KENNZEICHNUNG
+--------------------------------------------------------------------------
+
+Sortiment und Preise stammen aus dem Business-Analytics-Fallmaterial
+derselben Rösterei. Alle Abo-Regeln (Sorten, Sortenwechsel, Aussetzen,
+Kündigung) und der Hinweis zu Herkunftsangaben sind für diesen GenAI-Kurs
+erfunden. Sie sind Übungsbedingungen, keine Aussagen über eine
+Branchenpraxis.

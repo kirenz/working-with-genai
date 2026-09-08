@@ -1,0 +1,152 @@
+# Projects und gespeicherte Anweisungen
+
+Der Arbeitsauftrag aus Modul 2 funktioniert. Aber wer ihn dreimal am Tag braucht, fügt dreimal am Tag denselben Block aus Rolle, Material, Format und Grenzen ein. In diesem Kapitel legen wir diesen Block einmal als Startpaket ab, in einem Projekt, einem Gem oder als Startnachricht zum Einfügen, und prüfen, ob die Entwürfe damit genauso belegbar bleiben.
+
+## Der Anlass: dieselben Anweisungen, jeden Tag
+
+Ellen Ruppert aus Lager und Versand bekommt seit dem Wachstum der Rösterei mehrere Anfragen pro Woche mit derselben Frage: Wo bleibt meine Lieferung? Sina Bergmann hat ihr den Arbeitsauftrag aus dem Kundenservice gezeigt. Ellen findet ihn gut und lästig zugleich: Die Grenzen sind jedes Mal dieselben, das Material auch, nur die Anfrage wechselt. Aylin will wissen, ob sich das einmal einrichten lässt, sodass Ellen und Sina nur noch die Anfrage einfügen.
+
+Dazu kommt neues Material, eine synthetische Erweiterung des Lehrfalls: die [Versandinformationen](../material/m06/versandinformationen.txt) von Lager und Versand. Sie erklären Versandtage, Versandbestätigung und die Laufzeit, die der Paketdienst nennt, und sie stellen klar, dass der Sendungsstatus nur mit Sendungsnummer und nur durch Lager und Versand geprüft wird. Die Beispielanfrage dazu steht in [statusanfrage.txt](../material/m06/statusanfrage.txt):
+
+> Betreff: Wo bleibt meine Lieferung?
+>
+> Guten Tag, meine Abo-Lieferung mit der Sendungsnummer [SENDUNGSNUMMER] ist noch nicht da. Die Versandbestätigung kam am Dienstag. Kommt das Paket bis Freitag? Ich bin dann verreist.
+>
+> Viele Grüße, K. Weber
+
+Eine Einschätzung vorweg: Was ändert sich am Risiko, wenn die Anweisungen nicht mehr in jeder Nachricht stehen, sondern einmal hinterlegt sind? Die Anweisungen sind dann weniger sichtbar. Wer im Projekt arbeitet, sieht beim Einfügen der Anfrage nicht mehr, welche Grenzen gelten, und kann vergessen, dass sie gelten. Das Startpaket macht die Arbeit bequemer, die Prüfung des Entwurfs macht es nicht überflüssig.
+
+## Zielbild
+
+Am Ende dieses Kapitels gibt es ein Startpaket aus zwei Teilen und drei Wege, es zu benutzen:
+
+| Teil | Inhalt | Datei |
+|---|---|---|
+| **Anweisungen** | Rolle und Zweck, Materialregel, Standardformat, Grenzen | [startpaket-anweisungen.txt](../material/m06/startpaket-anweisungen.txt) |
+| **Wissensmaterial** | Fachinformationen Kundenservice aus Modul 2 und Versandinformationen | [lehrfall-fachinformationen.txt](../material/lehrfall-fachinformationen.txt), [versandinformationen.txt](../material/m06/versandinformationen.txt) |
+
+Die drei Wege: ein Projekt in ChatGPT, ein Projekt in Claude oder ein Gem in Gemini; und für jedes Konto, in dem das nicht geht, die [Startnachricht](../material/m06/startnachricht.txt) als erste Nachricht jedes neuen Chats. Alle drei Wege liefern denselben Inhalt an das Modell. Das Ergebnis prüfen wir mit derselben Statusanfrage.
+
+::: {.callout-note title="Was in die Anweisungen gehört und was nicht"}
+In die dauerhaften Anweisungen gehört, was bei jeder Anfrage gleich bleibt: Rolle und Zweck, die Regel, dass nur das Wissensmaterial gilt, das Standardformat, die Grenzen. In das Wissensmaterial gehören die Fakten, aus denen geantwortet wird, mit Datum. Nicht hinein gehört die einzelne Anfrage; sie wechselt und wird je Chat eingefügt. Und nicht hinein gehört, was nicht ins Chatkonto darf: Die Datenregel aus Modul 5 gilt für das Wissensmaterial genauso wie für jede Nachricht. Ein Projekt ist kein Freigabenachweis für vertrauliche Daten.
+:::
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1 — Die Anweisungen aus dem Arbeitsauftrag herauslösen
+
+Wir nehmen den Auftrag aus Modul 2 und trennen, was gleich bleibt, von dem, was wechselt. Das Ergebnis sind die Anweisungen des Startpakets. Der Kern:
+
+```text
+Du unterstützt den Kundenservice und den Bereich Lager und Versand der Rösterei Morgenrot beim Entwerfen von Antworten auf Kundenanfragen.
+
+ROLLE UND ZWECK
+Du schreibst Entwürfe. Du versendest nichts und du behauptest nicht, etwas veranlasst zu haben. Jeder Entwurf wird von einer Mitarbeiterin geprüft und selbst versendet.
+
+MATERIAL
+Gültig sind ausschließlich die Angaben im Wissensmaterial dieses Projekts (Fachinformationen Kundenservice, Versandinformationen) sowie die jeweils eingefügte Kundenanfrage. Allgemeines Wissen über Kaffee, Abos oder Paketdienste gilt nicht als Beleg.
+
+FORMAT (Standard, sofern die Anfrage nichts anderes sagt)
+Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlicher Ton.
+Absenderzeile: bei Fragen zu Sortiment, Preis und Abo "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot"; bei Fragen zu Versand und Sendungsstatus "Ellen Ruppert, Lager und Versand, Rösterei Morgenrot".
+Am Ende eine Liste mit der Überschrift "Offen".
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie unter "Offen" ein.
+- Erfinde keine Termine, Preise, Fristen oder Sendungsstatus.
+- Eine Zusage, die im Material an eine Bedingung geknüpft ist, gibst du nur mit dieser Bedingung wieder.
+- Ankunftstage sagst du nie zu. Für Sendungsstatus verweist du auf die Prüfung durch Lager und Versand.
+- Wenn die Anfrage personenbezogene Angaben enthält, verwende sie im Entwurf nicht; du brauchst sie für die Antwort nicht.
+```
+
+Neu gegenüber Modul 2 sind drei Zeilen: die Absenderzeile nach Thema, das Verbot von Ankunftstagen und Sendungsstatus und die Regel zu personenbezogenen Angaben. Die letzte Zeile ersetzt die Datenregel nicht; die Bereinigung geschieht weiter vor dem Chatfenster. Sie ist ein zweites Netz, falls doch etwas durchrutscht.
+
+### Schritt 2 — Das Startpaket in ChatGPT als Projekt anlegen
+
+Projekte in ChatGPT bündeln Anweisungen, Dateien und Chats zu einem Thema. Nach Angaben von OpenAI sind Projekte auch in kostenlosen Konten verfügbar, mit einer kleineren Zahl an Dateien je Projekt als in bezahlten Stufen ([OpenAI, Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt); der genaue Umfang ist kontobedingt und kann sich ändern).
+
+1. In der Seitenleiste den Bereich für Projekte öffnen und ein neues Projekt anlegen. Name: „Morgenrot Kundenservice".
+2. Die Projektanweisungen öffnen und den Text aus Schritt 1 vollständig einfügen. Speichern.
+3. Die beiden Wissensdateien hinzufügen: `lehrfall-fachinformationen.txt` und `versandinformationen.txt`. Wenn das Hochladen im eigenen Konto nicht möglich ist, den Inhalt beider Dateien unter die Anweisungen kopieren; dann steht alles im Anweisungsfeld.
+4. Im Projekt einen neuen Chat beginnen und nur die Statusanfrage einfügen, eingeleitet mit „Entwirf eine Antwort-Mail auf diese Kundenanfrage:".
+
+Das Ergebnis lesen wir wie in Modul 2: Aussage für Aussage gegen das Wissensmaterial. Die drei Stellen, die zuerst zählen, stehen in Schritt 5.
+
+### Schritt 3 — Dasselbe Startpaket in Claude und Gemini
+
+Der Aufbau ist in allen drei Werkzeugen derselbe: ein Anweisungsfeld und ein Bereich für Material. Die Bezeichnungen unterscheiden sich.
+
+**Claude Projects.** Wenn Projects im eigenen Konto verfügbar ist, öffnen wir den Bereich in der Seitenleiste und legen über **+ New Project** ein Projekt an. Über **Set project instructions** fügen wir die Anweisungen ein. Im Wissensbereich rechts ergänzen wir über **+** die beiden Dateien. Der verfügbare Umfang hängt vom Konto und Workspace ab. Fehlt Projects oder das Hochladen, nutzen wir die vollständige Startnachricht im normalen Chat. Orientierung bieten die [Anthropic-Hilfe zu Projects](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects) und die [aktuelle Tarifübersicht](https://claude.com/pricing); die Übung setzt keinen Tarifwechsel voraus.
+
+**Gemini Gems.** In der Gemini-App **Explore Gems** öffnen, **New Gem** wählen, den Gem benennen und die Anweisungen in das Anweisungsfeld einfügen. Unter **Knowledge** über **Add files** die beiden Dateien hinzufügen. **Save**. Der Funktionsumfang ist accountabhängig ([Google, Gems in Gemini Apps](https://support.google.com/gemini/answer/15235603)).
+
+Dann in beiden ein neuer Chat mit derselben Statusanfrage. Was gleich bleibt und was sich unterscheidet, notieren wir wie in Modul 4: Beobachtung am Fall, kein Ranking.
+
+### Schritt 4 — Der vollständige Weg ohne Projekt: die Startnachricht
+
+Für Konten ohne Projektfunktion, für Copilot in einer Organisation oder für alle, die Anweisungen lieber sichtbar halten, gibt es die [Startnachricht](../material/m06/startnachricht.txt). Sie enthält die Anweisungen und das gesamte Wissensmaterial in einem Text und endet mit der Bitte, nur mit „Bereit" zu antworten. Ablauf:
+
+1. Neuer Chat. Die Startnachricht vollständig als erste Nachricht einfügen und abschicken.
+2. Als zweite Nachricht: „Entwirf eine Antwort-Mail auf diese Kundenanfrage:" plus die Statusanfrage.
+3. Ergebnis prüfen wie in Schritt 5.
+
+Dieser Weg ist kein Notbehelf zweiter Klasse. Er liefert dem Modell exakt denselben Inhalt, und er hat einen Vorteil: Die Anweisungen stehen sichtbar im Verlauf, sodass beim Prüfen klar ist, was gegolten hat.
+
+::: {.callout-tip title="Der Ordner auf dem Schreibtisch der Vertretung"}
+Ein Projekt ist der Ordner, den wir der Urlaubsvertretung auf den Schreibtisch legen: vorne die Arbeitsanweisung, dahinter die geltenden Unterlagen. Die Vertretung liest ihn einmal und arbeitet dann jede Anfrage damit ab. Die Startnachricht ist derselbe Ordner, nur dass wir ihn bei jeder Anfrage noch einmal hinlegen. Der Inhalt ist gleich; der Unterschied ist Bequemlichkeit. Was wir der Vertretung nicht in den Ordner legen würden, gehört auch nicht ins Projekt.
+:::
+
+### Schritt 5 — Das Ergebnis prüfen: die drei Stellen
+
+Bei einer Statusanfrage prüfen wir zuerst diese drei Stellen, in allen drei Werkzeugen und bei der Startnachricht gleich:
+
+1. **Kein Ankunftstag.** Weder „bis Freitag" noch „voraussichtlich" noch „in der Regel rechtzeitig". Die Laufzeit steht als Angabe des Paketdienstes, nicht als Zusage.
+2. **Kein behaupteter Status.** Nicht „ist unterwegs", nicht „wurde zugestellt", nicht „wird morgen zugestellt". Angekündigt wird die Prüfung durch Lager und Versand.
+3. **„Offen" enthält mindestens** die Ankunft bis Freitag und den aktuellen Sendungsstatus.
+
+Dazu die Absenderzeile: Ellen Ruppert, weil es um Versand geht. Und die Sendungsnummer taucht im Text nicht auf.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Konstruiert, kein aufgezeichneter Modelloutput:
+
+> Guten Tag, vielen Dank für Ihre Nachricht. Abo-Lieferungen versenden wir dienstags und donnerstags; mit dem Versand erhalten Sie eine Versandbestätigung mit Sendungsnummer, die Ihnen am Dienstag zugegangen ist. Der Paketdienst nennt als Laufzeit ein bis drei Werktage nach dem Versand. Eine Ankunft an einem bestimmten Tag können wir nicht garantieren. Unser Bereich Lager und Versand prüft den aktuellen Stand Ihrer Sendung anhand der Sendungsnummer und meldet sich bei Ihnen. Freundliche Grüße, Ellen Ruppert, Lager und Versand, Rösterei Morgenrot
+>
+> **Offen:** Ob das Paket bis Freitag ankommt. Aktueller Sendungsstatus (wird durch Lager und Versand geprüft).
+
+Der Entwurf erklärt, was belegt ist, kündigt die Prüfung an und lässt offen, was offen ist. Ellen ergänzt nach der Prüfung im System des Paketdienstes den Status und versendet selbst.
+
+### Skills: die Anleitung als Datei
+
+Wer den Weg zum Arbeitsagenten aus der Kickoff-Demo weitergehen möchte, begegnet dem Begriff Skill. Ein Skill ist zunächst nichts anderes als eine wiederverwendbare Arbeitsanleitung in einer Textdatei mit einem kurzen Kopf, der sagt, wofür sie gilt. Claude Code lädt solche Dateien, wenn eine Aufgabe zur Beschreibung passt, oder auf Zuruf ([Claude Code, Skills](https://code.claude.com/docs/en/skills)). Ein Skill ist kein Agent und kein Zugriffsrecht: Er beschreibt, wie eine Aufgabe erledigt und geprüft wird, er führt sie nicht aus und er öffnet nichts.
+
+Für den Kurs ist keine Installation nötig. Die Datei [skill-statusanfrage.md](../material/m06/skill-statusanfrage.md) zeigt das Format an Ellens Statusanfrage: Wann die Anleitung gilt, fünf Schritte, ein Kontrollpunkt mit vier Prüfpunkten, ein Testfall. Derselbe Text funktioniert unverändert als Projektanweisung oder als Startnachricht. Der Unterschied zwischen einem Skill und den Anweisungen aus Schritt 1 liegt nicht im Inhalt, sondern darin, dass der Kontrollpunkt Teil der Anleitung ist: Die Anleitung sagt selbst, wann das Ergebnis fertig ist.
+
+### Eine eigene Variante bauen
+
+1. Wir nehmen den Arbeitsauftrag aus dem eigenen Portfolio und trennen: Was bleibt bei jeder Anfrage gleich? Das sind die Anweisungen. Was sind die Fakten? Das ist das Wissensmaterial, mit Datum. Was wechselt? Das bleibt je Chat.
+2. Wir prüfen das Wissensmaterial gegen die Datenregel aus Modul 5. Ein Projekt ist kein Freigabenachweis.
+3. Wir legen das Startpaket auf dem Weg an, der im eigenen Konto funktioniert: Projekt, Gem oder Startnachricht.
+4. Wir führen die fünf Testfälle aus Modul 4 im Startpaket erneut aus und notieren, ob sie genauso ausgehen wie mit dem vollständigen Prompt.
+5. Wir tragen in **Portfolio-Teil 2** unter „Gespeicherte Anweisungen" ein, was dauerhaft hinterlegt ist, auf welchem Weg, und wann das Wissensmaterial zuletzt aktualisiert wurde.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Im Projekt taucht ein Ankunftstag auf, mit dem vollständigen Prompt nicht | Prüfen, ob die Anweisungen vollständig übernommen wurden und ob das Wissensmaterial tatsächlich im Projekt liegt. Als Befund notieren; das Startpaket ersetzt die Prüfung nicht. |
+| Das Modell antwortet auf die Startnachricht ausführlich statt mit „Bereit" | Unschädlich. Die zweite Nachricht trotzdem schicken und den Entwurf prüfen. |
+| Die Absenderzeile ist Sina statt Ellen | Prüfen, ob die Anfrage als Versandfrage erkennbar ist. Regel in den Anweisungen schärfen, Ergebnis erneut prüfen. |
+| Die Sendungsnummer steht im Entwurf | Entfernen. In der Übung ist sie ein Platzhalter; im Alltag gehört sie nicht in den Chat. |
+| Das Hochladen von Dateien ist im Konto nicht möglich | Inhalt der Dateien unter die Anweisungen kopieren oder die Startnachricht nutzen. Der Inhalt ist derselbe. |
+| Das Wissensmaterial ist veraltet, etwa nach einer Preisänderung | Datei ersetzen und das Datum im Portfolio aktualisieren. Ein Projekt merkt sich nichts von allein. |
+| Ein Projekt soll mit Kolleginnen geteilt werden | Vorher prüfen: Alle mit Zugriff sehen das gesamte Wissensmaterial. Teilen nur mit Material, das für alle freigegeben ist. |
+
+## Kontrollpunkt für Modul 6
+
+- Einen Arbeitsauftrag in dauerhafte Anweisungen, Wissensmaterial und wechselnde Anfrage zerlegen
+- Ein Startpaket als Projekt in ChatGPT, als Projekt in Claude oder als Gem in Gemini anlegen
+- Denselben Inhalt vollständig als Startnachricht in einem Konto ohne Projektfunktion verwenden
+- Entwürfe aus dem Startpaket an denselben drei Stellen prüfen wie Entwürfe aus dem vollständigen Prompt
+- Einen Skill als wiederverwendbare Arbeitsanleitung mit Kontrollpunkt erkennen und von Agent und Zugriffsrecht unterscheiden

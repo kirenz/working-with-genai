@@ -1,0 +1,29 @@
+project:
+  type: default
+  output-dir: ../_book/slides
+  render:
+    - "*/*.qmd"
+
+lang: de
+execute:
+  eval: false
+  echo: false
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1280
+    height: 720
+    margin: 0.06
+    center: false
+    transition: none
+    background-transition: none
+    incremental: false
+    slide-number: c/t
+    controls: true
+    progress: true
+    hash: true
+    code-copy: true
+    code-overflow: wrap
+    footer: Working with GenAI
+    mermaid:
+      theme: neutral

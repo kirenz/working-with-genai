@@ -1,75 +1,48 @@
-# Working with GenAI — Kurs-Repo
+# Working with GenAI
 
-Repo für den HdM-Microcredential **„Generative KI in der Praxis: Produktivität steigern und Prozesse sicher optimieren"**. Der Kurs läuft vom 18.09.2026 (Kickoff) bis 08.10.2026 (Recap) und wird auf **kurse.kirenz.de** unter dem Slug `working-with-genai` ausgespielt.
+Vollständig ausgearbeitete Kursquellen für das Microcredential: sechs Module, 18 Lektionen, 30 Stunden. Durchgehender Fall ist die Rösterei Morgenrot mit den aus Business Analytics übernommenen Personen und Bildern.
 
-Inhaltlicher Kern: der Unterschied zwischen einem Text, der gut klingt, und einem Ergebnis, das man vertreten kann. Sechs Module zu je drei Lektionen, ein durchgehender synthetischer Lehrfall (Nordwerk Elektrowerkzeuge), ein Praxisportfolio als Prüfungsleistung.
+## Zum Durchgehen
 
-## Struktur
+- `index.qmd`: Buchstart mit Fall und Team.
+- `lernweg.qmd`: Termine, Arbeitsrhythmus und Zwischenstände.
+- `kursuebersicht.qmd`: alle Kapitel und ihre Folien.
+- `werkzeugkompass.qmd`: Orientierung zwischen Chat, Recherche, Projekten und Arbeitsagenten.
+- `praxis/codex-claude-code.qmd`: frühe Demo und freiwilliger Praxispfad.
+- `material/`: komplette synthetische Übungsunterlagen, Prompts und Arbeitsblätter, unterteilt nach Modulen.
+- `slides/`: ein Reveal.js-Deck pro Lektion plus Arbeitsagenten-Demo, mit Sprecherhinweisen.
+- `docs/lehrleitfaden.md`: Auftakt, Beratungen, Recap und Vorbereitung.
 
-```
-.
-├── _quarto.yml              # Buch-Build-Konfiguration
-├── AGENTS.md                # Schreibregeln für das Buch (kanonisch)
-├── README.md                # diese Datei
-├── book-theme.scss          # Buch-Theme, aus kurse/n8n-grundlagen übernommen
-│
-│  # — Buch (kanonische Quelle) —
-├── index.qmd                # Willkommen
-├── prompting/
-│   └── arbeitsauftrag.qmd   # Modul 2.1 — Vom Zuruf zum Arbeitsauftrag
-│
-│  # — Downloads für Teilnehmende —
-├── material/
-│   ├── lehrfall-fachinformationen.txt
-│   ├── kundenanfrage.txt
-│   ├── prompt-vorlage.txt
-│   └── portfolio-vorlage.md
-│
-│  # — Planung, nicht Teil des Buchs —
-└── docs/
-    ├── kurskonzept-v2.md    # abgestimmtes Kurskonzept
-    └── umsetzung.md         # Stand, Prüfungen, offene Punkte
-```
-
-## Bauen
-
-```bash
-quarto render
-open _book/index.html
-```
-
-Das Build erfasst nur die in `_quarto.yml` unter `project.render` gelisteten Pfade. `material/` und das Kurskonzept werden als verlinkte Ressourcen in den Buch-Build kopiert.
+Die 18 Plattform-Units liegen in `hdm/lernplattform/apps/api/app/db/units/working-with-genai`. Ihre Zuordnung zu Buch, Folien und geplanten Lektionen steht in `docs/kursmanifest.json`. Die bestehende veröffentlichte Lektion behält ihren Slug `arbeitsauftrag`.
 
 ## Arbeitsweise
 
-**Buch zuerst.** Pro Lektion entsteht erst das Quarto-Kapitel, danach die Unit für die Lernplattform. Buchtext steht in der **Wir-Form**, Unit-Text in **indirekter Ansprache oder Sie-Form**. Details in `AGENTS.md`.
+Buch zuerst, daraus Folien und interaktive Lernschritte. Buch in Wir-Form, deutsche Folien und Plattformtexte indirekt oder mit Sie. Materialien und eigene Fälle bleiben synthetisch. Die Musterantworten sind als konstruiert gekennzeichnet; es werden keine Live-Modellläufe behauptet.
 
-**Nichts nur in der Unit.** Lehrfalldaten, Prompts und Vorlagen stehen vollständig im Buch und zusätzlich unter `material/`. Eine Unit darf verdichten und eigene diagnostische Aufgaben ergänzen.
+Der Pflichtpfad erfordert keinen Zusatzkauf, keine eigene API und keine Installation. Funktionsabhängige Übungen haben einen Text- oder Kursbeispiel-Fallback. Für n8n werden Kursinstanz und zentrales Modell-Credential organisatorisch vorbereitet; diese Einrichtung ist noch nicht erfolgt.
 
-**Belegdisziplin.** Keine Häufigkeitsbehauptungen ohne Quelle, keine Vorhersage von Modellverhalten als Gewissheit, keine erfundene Forschung, keine ungeprüften Preise. Siehe `AGENTS.md`, Abschnitt 7.
+## Bauen und ansehen
 
-## Arbeitsstand
+```sh
+quarto render
+quarto render slides
+```
 
-| Modul | Buch | Plattform-Unit |
-|---|---|---|
-| 1 — Ankommen: erster Erfolg und erste Grenzen | ⬜ konzipiert | ⬜ |
-| 2 — Strukturierte Arbeitsaufträge | 🟡 1 von 3 Lektionen im Vollausbau | 🟡 1 von 3 |
-| 3 — Kontext bereitstellen | ⬜ konzipiert | ⬜ |
-| 4 — Qualität prüfen | ⬜ konzipiert | ⬜ |
-| 5 — Verantwortung und Risiko-Orientierung | ⬜ konzipiert | ⬜ |
-| 6 — In den Alltag bringen | ⬜ konzipiert | ⬜ |
+Die HTML-Dateien liegen unter `_book/`. Die Kursübersicht verbindet Kapitel und Folien. Ein Browser über einen lokalen HTTP-Server zeigt sie mit den zugehörigen Ressourcen an.
 
-Ausgearbeitet ist das Musterkapitel **2.1 Vom Zuruf zum Arbeitsauftrag** mit der zugehörigen Unit `02-01-arbeitsauftrag.unit.json` in der Lernplattform. Die übrigen 17 Lektionen sind in `docs/kurskonzept-v2.md` konzipiert und werden nach demselben Muster geschrieben. Leere Platzhalterkapitel werden bewusst nicht angelegt.
+## Gemeinsame Durchsicht steht aus
 
-Keine Slide-Decks und keine Videos in diesem Repo. Der Textpfad ist selbsttragend; Screenshots und einige kurze Demos kommen später an den Oberflächen-Stellen dazu.
+Die Buchausarbeitung erfolgte in drei getrennten Fable-5.1-Arbeitspaketen über die lokale Claude-Code-CLI. Nach einer Sitzungspause übernahm Opus 5 die verbleibende Übertragung in Units und Folien; Codex integrierte die Ergebnisse. Nutzerwunsch: keine umfangreichen Prüfungen. Daher keine Unitvalidatoren, umfassenden Testläufe oder Browserprüfung des Vollausbaus. Begrenzte Feld- und Referenzprüfungen durch die Arbeitsagenten sind im Übergabebericht festgehalten. Ein Erzeugungslauf für die Ansichtsdateien ist keine didaktische oder technische Abnahme.
 
-## Lizenz
+Quellen und Wiederverwendung: `docs/quellen-und-wiederverwendung.md` sowie die Modulnotizen unter `docs/authoring/`. Die Inhalte nutzen didaktische Bausteine aus Frech, VWA und SiMa.ai; deren betriebliche Daten und Zugänge werden nicht mitgenommen.
 
-Inhalt: © Jan Kirenz, 2026.
+## Veröffentlichung zur gemeinsamen Durchsicht
 
-## Veröffentlichung
+Die Veröffentlichung dieser Arbeitsfassung wurde am 08.09.2026 beauftragt. Buch und Folien erscheinen auf GitHub Pages; die interaktiven Lektionen auf der kommerziellen Instanz. Der Kurs bleibt über seinen direkten Link zugänglich und wird nicht neu im Katalog gelistet. Die gemeinsame didaktische Durchsicht steht weiterhin aus. Kursimporte erhalten bestehende IDs, Quizversuche und Lernfortschritte; der einmalige Startpaket-Importer ist für diese Aktualisierung nicht geeignet.
 
-- [Online-Buch](https://kirenz.github.io/working-with-genai/)
-- [Kurs mit Musterlektion](https://kurse.kirenz.de/courses/working-with-genai)
+- [Interaktiver Kurs](https://kurse.kirenz.de/courses/working-with-genai)
+- [Buch und Folien](https://kirenz.github.io/working-with-genai/kursuebersicht.html)
 
-GitHub Actions baut das Buch mit Quarto 1.8.27 und veröffentlicht es auf GitHub Pages.
+Ziel bleibt `kurse.kirenz.de`, Kurs-Slug `working-with-genai`, `simulator_enabled=false`. Keine KI-generierten Zusatzübungen.
+
+© Jan Kirenz, 2026.

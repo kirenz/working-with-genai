@@ -1,0 +1,59 @@
+RÖSTEREI MORGENROT: FREIGEGEBENES BRIEFING FÜR EINEN HINWEISTEXT ZUM KAFFEE-ABO
+Kursmaterial "Working with GenAI", Modul 1 (Lektionen 1.1 und 1.2)
+Synthetische GenAI-Erweiterung des Lehrfalls, siehe Kennzeichnung am Ende.
+
+--------------------------------------------------------------------------
+ANLASS
+--------------------------------------------------------------------------
+
+Der Onlineshop bekommt auf der Startseite einen kurzen Hinweistext auf das
+Kaffee-Abo. Jonas Halder (Marketing) braucht drei Textvarianten zur Auswahl.
+Der gewählte Text geht erst nach Freigabe durch Aylin Yılmaz
+(Geschäftsführung) online. Bis dahin ist alles ein interner Entwurf.
+
+--------------------------------------------------------------------------
+FREIGEGEBENE ANGABEN (nur diese dürfen im Text vorkommen)
+--------------------------------------------------------------------------
+
+- Die Rösterei Morgenrot ist eine kleine Kaffeerösterei mit Direktvertrieb
+  an Endkundinnen und Endkunden über den eigenen Onlineshop.
+- Drei Sorten im Sortiment: Espresso Intenso, Filterkaffee Mild,
+  Entkoffeiniert Sanft.
+- Reguläre Listenpreise im Onlineshop: Espresso Intenso 10,00 EUR,
+  Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
+- Das Kaffee-Abo liefert regelmäßig nach Hause. Alle drei Sorten sind im
+  Abo wählbar.
+- Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung,
+  wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+
+--------------------------------------------------------------------------
+WOZU KEINE FREIGEGEBENEN ANGABEN VORLIEGEN
+--------------------------------------------------------------------------
+
+Herkunftsländer, Anbau und Zertifikate (etwa Bio oder Fairtrade), Röstgrad
+und Röstverfahren, Geschmacksbeschreibungen, Abo-Preise und Rabatte,
+Lieferintervalle in Tagen, Versandkosten, Kündigungsfristen, Kundenzahlen,
+Bewertungen und Auszeichnungen.
+
+Was hier nicht steht, darf im Text nicht vorkommen. Fehlt eine Angabe, die
+für den Text gebraucht würde, wird sie nicht ergänzt, sondern als offen
+notiert.
+
+--------------------------------------------------------------------------
+TON UND FORM
+--------------------------------------------------------------------------
+
+Sachlich und freundlich. Keine Superlative, keine Vergleiche mit anderen
+Anbietern, keine Ausrufezeichen. Je Variante zwei Sätze. Drei Varianten,
+nummeriert.
+
+--------------------------------------------------------------------------
+KENNZEICHNUNG
+--------------------------------------------------------------------------
+
+Unternehmen, Sortiment und Listenpreise stammen aus dem Fallmaterial der
+Rösterei Morgenrot (Kurs Business Analytics). Neu für diesen GenAI-Kurs
+konstruiert sind: der Anlass, die Aussage "Alle drei Sorten sind im Abo
+wählbar", die Abo-Regel zum Sortenwechsel und die Liste der fehlenden
+Angaben. Alles ist erfunden und darf unverändert in ein Chatfenster kopiert
+werden.

@@ -1,0 +1,137 @@
+# Grenzen und erste Datenregeln
+
+Der Hinweistext aus der ersten Lektion war ein guter Anfang. Jetzt stellen wir dieselbe Aufgabe etwas anders: Statt eines Briefings geben wir nur einen Satz mit und schauen, was das Chatmodell daraus macht. An diesem Vorher-Nachher wird sichtbar, woher Antworten kommen, warum sie falsch sein können und warum wir vor jeder Eingabe fragen, was überhaupt ins Chatfenster gehört.
+
+## Der Anlass: ein Produkttext, der zu gut klingt
+
+Rösterei Morgenrot, Marketing. Aylin Yılmaz hat den Hinweistext für die Startseite ausgewählt. Jetzt bittet sie Jonas Halder um einen längeren Produkttext für den Espresso Intenso. Jonas ist in Eile und schreibt ins Chatfenster nur: „Schreibe einen Produkttext für unseren Espresso Intenso, etwa 80 Wörter." Kein Briefing, keine Grenzen.
+
+Das Ergebnis, das wir hier untersuchen, ist konstruiert, kein aufgezeichneter Modelloutput. Es zeigt, wie ein Produkttext aussehen kann, der ohne Material entsteht. Der Text und ein Prüfbogen dazu stehen als [Download](../material/m01/produkttext-pruefung.md) bereit.
+
+> **Espresso Intenso: kräftig, rund, unverwechselbar**
+>
+> Unser Espresso Intenso wird in kleinen Mengen in unserer eigenen Rösterei geröstet. (1) Die Bohnen stammen aus Hochlagen Kolumbiens und Brasiliens (2) und werden schonend im Trommelröster veredelt. (3) Das Ergebnis ist ein 100 % Arabica-Espresso (4) mit Noten von dunkler Schokolade und Karamell. (5) Espresso Intenso ist Bio-zertifiziert (6) und kostet im Onlineshop 10,00 EUR. (7) Im Kaffee-Abo erhalten Sie ihn regelmäßig nach Hause geliefert (8) und sparen dabei 10 Prozent gegenüber dem Einzelkauf. (9)
+
+Das liest sich wie ein fertiger Shop-Text. Als Faktenquelle gilt für uns weiterhin nur das [freigegebene Briefing](../material/m01/briefing-abo-hinweistext.txt) aus der ersten Lektion. Dort stehen die drei Sorten, die Listenpreise, das Abo und die Wechselregel. Zu Herkunft, Röstung, Zertifikaten, Geschmack und Rabatten steht dort ausdrücklich: keine freigegebenen Angaben.
+
+## Zielbild
+
+Am Ende dieser Lektion haben wir den Produkttext Aussage für Aussage geprüft und wissen, welche der neun Aussagen das Briefing trägt. Wir können in einem Satz erklären, warum ein Chatmodell Lücken so flüssig füllt. Und wir haben zehn Alltagssituationen danach sortiert, ob ihr Inhalt in ein kostenloses Chatkonto gehört. Drei Ergebnisse, alle prüfbar:
+
+| Ergebnis | Woran wir es erkennen |
+|---|---|
+| Geprüfter Produkttext | Jede Aussage trägt eine Markierung: gedeckt, teilweise, nicht gedeckt |
+| Mechanismus in einem Satz | Wir können ohne Fachbegriffe sagen, woher die Aussage „Bio-zertifiziert" kam |
+| Sortierte Datenkarten | Zehn Karten in drei Kategorien, mit Begründung für die drei kritischsten |
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1: Jede Aussage markieren
+
+Wir nehmen den Prüfbogen und gehen die neun nummerierten Aussagen durch. Zu jeder stellen wir eine Frage: Steht das so im Briefing? Wenn ja, notieren wir die Zeile. Wenn nein, notieren wir „nicht gedeckt". Wenn nur ein Teil gedeckt ist, etwa „kleine Rösterei" ohne „in kleinen Mengen geröstet", notieren wir „teilweise". Wir tun das, bevor wir die Auflösung im Download lesen.
+
+Das Ergebnis dieser Prüfung ist eindeutig: Zwei Aussagen sind gedeckt (Preis, Abo-Lieferung), eine teilweise (kleine Rösterei), sechs sind es nicht. Der Text klingt trotzdem stimmig. Lesbarkeit und Belegbarkeit sind zwei verschiedene Eigenschaften.
+
+::: {.callout-tip title="Die Urlaubsvertretung, die nie bei uns war"}
+Ein Chatmodell ist wie eine sehr sprachgewandte Vertretung, die noch nie in unserem Haus war. Sie weiß, wie Produkttexte für Espresso im Allgemeinen klingen: Herkunft, Röstung, Geschmacksnoten, ein Zertifikat, ein Abo-Vorteil. Bekommt sie kein Material, schreibt sie einen Text, der zu dieser allgemeinen Erwartung passt. Er ist plausibel, weil er dem Muster folgt. Er ist nicht belegt, weil niemand ihr unsere Fakten gegeben hat.
+:::
+
+### Schritt 2: Den Mechanismus benennen
+
+Woher kam „Bio-zertifiziert"? Nicht aus unseren Unterlagen; das Modell hat keinen Zugriff darauf. Ein Chatmodell setzt Text fort, der zur Anfrage passt. Es wurde mit sehr vielen Texten trainiert, darunter unzähligen Produktbeschreibungen. Ein Produkttext für Espresso enthält in diesen Texten oft Angaben zu Herkunft und Zertifikaten, und so entsteht ein Text, in dem solche Angaben stehen. Das Modell prüft dabei nicht, ob die Aussage für unsere Rösterei gilt. Es hat keine Datenbank unserer Produkte, keinen Zugriff auf unser Lager und kein Wissen über Entscheidungen, die Aylin Yılmaz letzte Woche getroffen hat.
+
+Daraus folgen drei Grenzen, die für den ganzen Kurs gelten:
+
+1. **Allgemeines Wissen ist kein Beleg.** Was ein Modell über Kaffee weiß, sagt nichts über unsere drei Sorten.
+2. **Aktuelles und Internes fehlt.** Unsere Preise von heute, der Versandtermin von morgen, die Freigabe von gestern stehen in keinem Trainingsmaterial.
+3. **Flüssigkeit ist kein Qualitätsmerkmal.** Ein Text ohne Brüche kann sechs von neun Aussagen erfunden haben.
+
+Wir formulieren daraus nie eine Vorhersage („das Modell wird die Herkunft erfinden"). Ob es in einem einzelnen Durchlauf passiert, wissen wir nicht. Wir formulieren ein Risiko, das wir vor jeder Verwendung prüfen. Genau diese Prüfung haben wir in Schritt 1 gemacht.
+
+### Schritt 3: Das Vorher-Nachher selbst erzeugen
+
+Wer den Unterschied im eigenen Chat sehen will, führt zwei Durchläufe in zwei neuen Chats aus. Der erste ist Jonas' Zuruf:
+
+```text
+Schreibe einen Produkttext für unseren Espresso Intenso, etwa 80 Wörter.
+```
+
+Der zweite ist derselbe Wunsch mit Briefing und Grenze:
+
+```text
+Du unterstützt das Marketing der Rösterei Morgenrot.
+
+AUFGABE
+Schreibe einen Produkttext für Espresso Intenso, etwa 80 Wörter.
+
+MATERIAL (nur diese Angaben dürfen im Text vorkommen)
+- Die Rösterei Morgenrot ist eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden über den eigenen Onlineshop.
+- Espresso Intenso ist eine von drei Sorten. Regulärer Listenpreis im Onlineshop: 10,00 EUR.
+- Das Kaffee-Abo liefert regelmäßig nach Hause. Alle drei Sorten sind im Abo wählbar.
+- Ein Sortenwechsel im Abo gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+
+FORMAT
+Ein Absatz, sachlich und freundlich, keine Superlative, keine Ausrufezeichen.
+
+GRENZEN
+- Verwende nur Angaben aus dem Material. Keine Herkunft, keine Zertifikate, kein Röstverfahren, keine Geschmacksbeschreibung, keine Rabatte.
+- Liste unter der Überschrift "Offen" auf, welche Angaben für einen vollständigen Produkttext fehlen.
+```
+
+Wir lesen beide Ergebnisse mit derselben Frage: Wie viele Aussagen trägt das Briefing? Der zweite Text wird vermutlich kürzer und nüchterner ausfallen und eine Liste offener Angaben enthalten. Ob er frei von ungedeckten Aussagen ist, zeigt erst die Prüfung; auch mit Grenzen im Auftrag bleibt sie nötig.
+
+### Schritt 4: Sortieren, was ins Chatfenster gehört
+
+Bis hierher ging es um das, was herauskommt. Jetzt geht es um das, was hineingeht. Das Briefing der Rösterei durften wir kopieren, weil es erfunden ist. Im Alltag liegt vor uns eine echte Kundenmail, eine Preiskalkulation, ein Screenshot. Für diese Entscheidung nutzen wir drei Kategorien:
+
+| Kategorie | Bedeutung |
+|---|---|
+| **A: Für die Übung geeignet** | Erfundene, öffentliche oder rein allgemeine Inhalte ohne Personenbezug und ohne Vertraulichkeit |
+| **B: Nur mit Freigabe im passenden Konto** | Interne, nicht personenbezogene Inhalte; zulässig nur, wenn die Organisation die Nutzung in genau diesem Konto freigegeben hat |
+| **C: Nicht ohne verbindliche Klärung** | Personenbezogene, besonders schutzwürdige oder fremde vertrauliche Inhalte; erst die zuständige Stelle fragen, für Übungen vollständig erfinden |
+
+Die zehn Karten stehen im [Download](../material/m01/datenregeln-sortierkarten.md) mit Auflösung. Wir sortieren erst selbst:
+
+1. Das freigegebene Briefing der Rösterei Morgenrot aus dieser Lektion.
+2. Ein Text, der bereits öffentlich auf der Website der eigenen Organisation steht.
+3. Eine eingegangene Kundenmail mit Name, Anschrift und Kundennummer.
+4. Die interne Preiskalkulation mit Einkaufspreisen und Margen.
+5. Eine Mail über eine Kollegin, in der der Name durch „Kollegin A" ersetzt wurde, der Text aber Angaben zu ihrer Krankheit enthält.
+6. Eigene Stichworte für eine Terminabsage, ohne Namen, ohne Kundenbezug.
+7. Bewerbungsunterlagen einer Kandidatin für eine offene Stelle.
+8. Ein Screenshot aus dem Kundenverwaltungssystem mit sichtbaren Datensätzen.
+9. Die allgemeine Frage, wie ein Besprechungsprotokoll sinnvoll aufgebaut wird.
+10. Der Vertragsentwurf eines Lieferanten, den dieser als vertraulich gekennzeichnet hat.
+
+Drei Karten verdienen einen zweiten Blick. Karte 5 zeigt, dass ein ersetzter Name einen Text nicht anonym macht: Die Kollegin bleibt über den Zusammenhang erkennbar, und Gesundheitsangaben sind besonders geschützt. Karte 8 zeigt, dass ein Bild kein geringeres Risiko ist als Text. Karte 4 zeigt den Unterschied zwischen vertraulich und personenbezogen: Die Kalkulation gehört in kein Konto ohne Vereinbarung, aber sie betrifft keine Person; die Klärung läuft über IT und Einkauf, nicht über den Datenschutz allein.
+
+::: {.callout-note title="Woran sich die drei Kategorien orientieren"}
+Die Einteilung ist eine Orientierungshilfe dieses Kurses. Sie stützt sich auf Punkte aus der Orientierungshilfe der Datenschutzkonferenz zu KI und Datenschutz vom Mai 2024: ein festgelegter Zweck, Datenminimierung, die Frage, in welchem Konto und unter welcher Vertragslage verarbeitet wird, und der Hinweis, dass pseudonymisierte Daten nicht automatisch anonym sind ([DSK, Orientierungshilfe KI und Datenschutz, PDF](https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf)). Sie ist kein Rechtsgutachten und keine Freigabe. Wer in der eigenen Organisation verbindlich entscheidet, halten wir im Portfolio fest.
+:::
+
+### Eine eigene Variante
+
+Wir nehmen den eigenen Fall aus der ersten Lektion, den Satz im Feld „Problem", und fragen: Welche Angaben braucht eine korrekte Antwort, und in welche Kategorie fallen sie? Eine Terminabsage braucht Datum und Grund (A, wenn erfunden). Eine Antwort auf eine Kundenanfrage braucht Konditionen (B) und die Anfrage selbst (C, wenn echt). Wir tragen das Ergebnis in **Portfolio-Teil 1, Feld „Datenbedarf"**, ein: welche Angaben, wo sie heute liegen, welche Kategorie. Und im Feld **„Abgrenzung"** notieren wir, was in unserem Fall in jedem Fall bei einem Menschen bleibt.
+
+::: {.callout-important title="Für die Übungen gilt Kategorie A"}
+Alle Übungen dieses Kurses laufen mit erfundenen Angaben. Was wir im Alltag mit echten Unterlagen tun dürfen, hängt von Konto, Vertragslage und Regelung der eigenen Organisation ab. Einstellungen zum Umgang mit Eingaben unterscheiden sich je nach Anbieter und Kontotyp; wir prüfen sie vor dem ersten Einsatz mit echten Daten und tragen die zuständige Stelle im Portfolio ein.
+:::
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Eine Aussage wirkt gedeckt, steht aber nicht wörtlich im Briefing | Prüfen, ob sie sich aus zwei Zeilen zusammensetzen lässt (etwa „Abo" und „alle drei Sorten"). Wenn nicht, als nicht gedeckt markieren. |
+| Der zweite Durchlauf enthält trotz Grenzen eine Geschmacksnote | Als Befund notieren, nicht als Panne. Die Grenze ist eine Anweisung; die Prüfung bleibt. Streichen lassen und erneut prüfen. |
+| Der zweite Durchlauf listet unter „Offen" Angaben, die im Material stehen | Die Liste gegen das Material lesen und die falsch gelisteten Punkte streichen. |
+| Eine Karte lässt sich nicht eindeutig sortieren | Zwei Fragen stellen: Ist eine Person erkennbar? Ist der Inhalt vertraulich? Ja auf die erste Frage heißt C; ja nur auf die zweite heißt B. |
+| Die Idee kommt auf, echte Mails mit ausgetauschten Namen zu verwenden | Karte 5 erneut lesen. Für Übungen vollständig erfinden. |
+| Unsicherheit, welche Stelle im eigenen Haus zuständig ist | Als offenen Punkt in Portfolio-Teil 3 eintragen. Die Frage zu notieren ist an dieser Stelle das Ergebnis. |
+
+## Kontrollpunkt für Modul 1
+
+- Einen Text Aussage für Aussage gegen ein Briefing prüfen und jede Aussage als gedeckt, teilweise oder nicht gedeckt markieren
+- In einem Satz erklären, warum ein Chatmodell Lücken plausibel füllen kann, ohne eine Vorhersage über einen einzelnen Durchlauf zu treffen
+- Allgemeines Modellwissen von belegten Angaben des eigenen Falls unterscheiden
+- Alltagsinhalte in die drei Kategorien A, B und C einordnen und begründen, warum ein ersetzter Name keinen Text anonym macht
+- Datenbedarf und Abgrenzung des eigenen Falls in Portfolio-Teil 1 eintragen

@@ -1,0 +1,230 @@
+# Mit Beispielen und Format steuern
+
+Im vorigen Kapitel haben wir den Baustein Format mit drei Angaben gefüllt: Länge, Ton, eine Liste „Offen". Das reicht, damit ein Entwurf prüfbar wird. Es reicht nicht, damit er klingt wie aus unserem Haus. In diesem Kapitel steuern wir das Ergebnis über ein Musterbeispiel und über eine zweite Ausgabeform, die das Prüfen leichter macht als jede Mail.
+
+## Der Anlass: die zweite Anfrage und der Hausstil
+
+Rösterei Morgenrot, Vertrieb und Kundenservice. Eine Woche nach der ersten Anfrage liegt eine zweite im Postfach von Sina Bergmann. Sie steht als [Download](../material/m02/kundenanfrage-2.txt) bereit:
+
+> Betreff: Abo im Oktober aussetzen
+>
+> Guten Tag,
+>
+> ich bin im Oktober drei Wochen unterwegs und möchte meine Abo-Lieferung in dieser Zeit aussetzen. Geht das, und was muss ich dafür tun? Außerdem: Gibt es Entkoffeiniert Sanft auch im Abo? Und ist Ihr Kaffee eigentlich Bio?
+>
+> Beste Grüße
+>
+> R. Novak
+
+Die Fachinformationen sind seit dem vorigen Kapitel um drei Abo-Regeln und einen Hinweis erweitert ([Download](../material/m02/fachinformationen-abo-erweitert.txt)):
+
+- Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
+- Kaffee-Abo, Sorten: Alle drei Sorten sind im Abo wählbar.
+- Kaffee-Abo, Sortenwechsel: Ein Wechsel gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+- Kaffee-Abo, Aussetzen: Eine einzelne Lieferung kann ausgesetzt werden, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht. Das Abo läuft danach unverändert weiter.
+- Kaffee-Abo, Kündigung: jederzeit per Mail an den Kundenservice; bereits versendete Lieferungen sind davon nicht betroffen.
+- Für Versandtermine und Sendungsstatus ist der Bereich Lager und Versand zuständig.
+- Zu Herkunft, Anbau, Zertifikaten (etwa Bio) und Röstverfahren liegen dem Kundenservice keine freigegebenen Angaben vor.
+
+Neu dazu kommt etwas, das es beim ersten Mal nicht gab: zwei freigegebene Musterantworten, die zeigen, wie Sina schreibt ([Download](../material/m02/musterantworten-kundenservice.txt)). Sie beantworten andere Fragen als die aktuelle Anfrage. Muster 2 lautet:
+
+> Guten Tag,
+>
+> vielen Dank für Ihre Nachricht.
+>
+> Ihr Abo können Sie jederzeit per Mail an uns kündigen; bereits versendete Lieferungen sind davon nicht betroffen.
+>
+> Zum Versandstatus Ihrer aktuellen Lieferung liegt mir hier keine Angabe vor. Dafür ist unser Bereich Lager und Versand zuständig; Sie erhalten dazu eine gesonderte Rückmeldung.
+>
+> Freundliche Grüße
+> Sina Bergmann
+> Vertrieb und Kundenservice, Rösterei Morgenrot
+
+Der Hausstil hat erkennbare Merkmale: Anrede „Guten Tag," ohne Namen, ein Satz Dank, je Frage ein kurzer Absatz, die Bedingung im selben Satz wie die Zusage, offene Punkte benannt und an den zuständigen Bereich verwiesen, keine Ausrufezeichen, keine Füllwörter wie „gerne" oder „selbstverständlich", zweizeilige Signatur, höchstens 120 Wörter.
+
+::: {.callout-important title="Übungsregeln, eigens für diesen Kurs erfunden"}
+Sortiment und Preise stammen aus dem Fallmaterial der Rösterei. Alle Abo-Regeln, der Hinweis zu Herkunftsangaben, die Anfrage und die Musterantworten sind für diesen Kurs konstruiert. Die drei Fragen der Anfrage liegen wieder unterschiedlich: Das Aussetzen ist nur unter der Fünf-Werktage-Bedingung belegt, und das Versanddatum der Oktober-Lieferung fehlt. Entkoffeiniert Sanft im Abo ist gedeckt. Zur Bio-Frage liegt ausdrücklich keine freigegebene Angabe vor; weder „ja" noch „nein" darf im Entwurf stehen.
+:::
+
+## Zielbild
+
+Am Ende liegen zwei Ergebnisse vor, die dieselben Fakten unterschiedlich zeigen:
+
+| Ergebnis | Zweck | Woran wir es prüfen |
+|---|---|---|
+| Antwort-Mail im Hausstil | Der Entwurf, den Sina weiterbearbeitet | Aufbau und Ton wie das Muster, Inhalt aus dem Material, drei Antwortlagen sichtbar unterschieden |
+| Belegtabelle | Unser Prüfwerkzeug | Je Frage eine Zeile mit wörtlichem Beleg aus dem Material und einem Status: gedeckt, bedingt, offen |
+
+Der Baustein Format bekommt damit fünf Stellschrauben: Textsorte, Länge, Ton, Aufbau und Ausgabeform. Ein Musterbeispiel bedient Ton und Aufbau auf einmal. Eine Tabelle als Ausgabeform macht die Prüfung schneller als jede Fließtext-Mail.
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** wie bisher ein kostenloses Chatkonto, jeder Durchlauf in einem neuen Chat.
+
+### Schritt 1: Die drei Antwortlagen bestimmen
+
+Bevor wir etwas abschicken, legen wir für jede Frage der Anfrage fest, was das Material erlaubt. Aussetzen: bedingt, weil die Frist am unbekannten Versanddatum hängt. Entkoffeiniert im Abo: gedeckt. Bio: offen, und zwar ausdrücklich, weil der Auszug sagt, dass keine freigegebene Angabe vorliegt. Diese Vorarbeit ist unser Maßstab für alles, was gleich aus dem Chat kommt.
+
+### Schritt 2: Durchlauf A, das Format nur beschreiben
+
+Der erste Durchlauf verwendet den Auftrag aus dem vorigen Kapitel mit der neuen Anfrage und den erweiterten Fachinformationen. Im Block FORMAT steht nur eine Beschreibung:
+
+```text
+FORMAT
+Antwort-Mail, freundlich und kurz, im Stil unseres Kundenservice. Am Ende eine Liste mit der Überschrift "Offen".
+```
+
+Wir lesen das Ergebnis mit zwei Fragen: Stimmen die drei Antwortlagen? Und klingt es wie Sina? Die erste Frage lässt sich gegen das Material prüfen. Die zweite nicht, denn „im Stil unseres Kundenservice" hat dem Modell nichts mitgegeben, woran es sich halten könnte. Es kennt Sinas Mails nicht.
+
+### Schritt 3: Durchlauf B, ein Musterbeispiel mitgeben
+
+Der zweite Durchlauf ersetzt die Beschreibung durch das Muster. Der vollständige Auftrag steht als [Textdatei](../material/m02/prompt-beispiel-format.txt) bereit:
+
+```text
+Du unterstützt den Kundenservice der Rösterei Morgenrot.
+
+AUFGABE
+Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
+
+MATERIAL (nur diese Angaben sind gültig)
+Fachinformationen:
+- Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
+- Kaffee-Abo, Sorten: Alle drei Sorten sind im Abo wählbar.
+- Kaffee-Abo, Aussetzen: Eine einzelne Lieferung kann ausgesetzt werden, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht. Das Abo läuft danach unverändert weiter.
+- Für Versandtermine und Sendungsstatus ist der Bereich Lager und Versand zuständig.
+- Zu Herkunft, Anbau, Zertifikaten (etwa Bio) und Röstverfahren liegen dem Kundenservice keine freigegebenen Angaben vor.
+
+Kundenanfrage:
+Betreff: Abo im Oktober aussetzen
+Guten Tag,
+ich bin im Oktober drei Wochen unterwegs und möchte meine Abo-Lieferung in dieser Zeit aussetzen. Geht das, und was muss ich dafür tun? Außerdem: Gibt es Entkoffeiniert Sanft auch im Abo? Und ist Ihr Kaffee eigentlich Bio?
+Beste Grüße
+R. Novak
+
+FORMAT
+Übernimm Aufbau und Ton des folgenden Beispiels, nicht seinen Inhalt. Das Beispiel beantwortet andere Fragen.
+
+BEISPIEL (Hausstil)
+Guten Tag,
+
+vielen Dank für Ihre Nachricht.
+
+Ihr Abo können Sie jederzeit per Mail an uns kündigen; bereits versendete Lieferungen sind davon nicht betroffen.
+
+Zum Versandstatus Ihrer aktuellen Lieferung liegt mir hier keine Angabe vor. Dafür ist unser Bereich Lager und Versand zuständig; Sie erhalten dazu eine gesonderte Rückmeldung.
+
+Freundliche Grüße
+Sina Bergmann
+Vertrieb und Kundenservice, Rösterei Morgenrot
+ENDE BEISPIEL
+
+Zusätzlich: höchstens 120 Wörter, je Frage ein eigener Absatz, eine Bedingung steht im selben Satz wie die Zusage. Am Ende, nach der Signatur, eine Liste mit der Überschrift "Offen".
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Fragen, die das Material nicht abdeckt, nicht beantworten, sondern im Text als nicht vorliegend benennen und unter "Offen" eintragen.
+- Behaupte keine erledigte oder veranlasste Handlung. Erfinde keine Termine, Preise oder Fristen.
+```
+
+::: {.callout-tip title="Beschreiben oder zeigen"}
+Eine Beschreibung nennt Regeln: kurz, freundlich, sachlich. Ein Beispiel zeigt, wie das Ergebnis dieser Regeln aussieht: welche Anrede, wie lang ein Absatz ist, wo die Bedingung steht, wie offene Punkte formuliert werden. Ein Beispiel ist die bessere Wahl, wenn wir den Stil schwer in Worte fassen können, aber ein gutes Exemplar haben. Es hat einen Preis: Das Modell kann Inhalte aus dem Beispiel in die Antwort übernehmen, etwa die Kündigungsregel, nach der niemand gefragt hat. Deshalb sagen wir ausdrücklich „nicht seinen Inhalt", wählen ein Beispiel, das andere Fragen beantwortet, und prüfen das Ergebnis auf eingeschleppte Sätze.
+:::
+
+### Schritt 4: Vorher und Nachher vergleichen
+
+Wir legen beide Ergebnisse nebeneinander und gehen dieselbe Liste durch:
+
+| Merkmal | Durchlauf A (Beschreibung) | Durchlauf B (Musterbeispiel) |
+|---|---|---|
+| Anrede | ? | „Guten Tag," ohne Namen? |
+| Aufbau | ? | Ein Absatz je Frage? |
+| Bedingung beim Aussetzen | im selben Satz? | im selben Satz? |
+| Bio-Frage | erfunden, verneint oder offen? | als nicht vorliegend benannt? |
+| Eingeschleppter Inhalt | | Taucht die Kündigungsregel aus dem Beispiel auf? |
+| Länge | | höchstens 120 Wörter? |
+
+Das Ergebnis ist eine Beobachtung, kein Beweis. Zwei Durchläufe zeigen nicht, dass das Beispiel den Unterschied verursacht hat; sie zeigen, was in diesen beiden Fällen herauskam. Was wir festhalten, ist die Beobachtung und unsere Entscheidung, welche Fassung wir weiterverwenden.
+
+### Schritt 5: Eine andere Ausgabeform, die Belegtabelle
+
+Zum Prüfen ist eine Mail ein umständliches Format: Wir müssen Sätze auseinandernehmen, um zu sehen, welche Aussage woher stammt. Wir lassen deshalb dieselben Fakten in einer zweiten Form ausgeben. Der Auftrag steht als [Textdatei](../material/m02/prompt-belegtabelle.txt) bereit; er verwendet dasselbe Material und ersetzt Aufgabe und Format:
+
+```text
+AUFGABE
+Erstelle KEINE Antwort-Mail. Erstelle eine Belegtabelle, die zeigt, welche Frage der Kundenanfrage sich mit dem Material beantworten lässt.
+
+FORMAT
+Eine Tabelle mit genau vier Spalten:
+Frage | Antwort in einem Satz | Beleg (Zeile aus den Fachinformationen, wörtlich zitiert) | Status
+Status ist genau einer von: gedeckt, bedingt, offen.
+Eine Zeile je Frage aus der Kundenanfrage. Nach der Tabelle nichts weiter.
+
+GRENZEN
+- Als Beleg nur wörtliche Zitate aus den Fachinformationen. Kein Beleg vorhanden: Spalte Beleg bleibt leer, Status "offen", Antwort lautet "Dazu liegt keine freigegebene Angabe vor."
+- Hängt eine Antwort an einer Angabe, die fehlt (etwa einem Versanddatum), Status "bedingt" und die fehlende Angabe in der Antwort nennen.
+```
+
+Die Tabelle prüft sich fast von selbst: Wir lesen die Spalte Beleg und suchen die Zeile im Material. Steht dort ein Zitat, das es im Material nicht gibt, ist die Zeile falsch. Steht ein Status „gedeckt" neben einer leeren Belegspalte, ist die Zeile falsch. Damit haben wir die Vorarbeit aus Schritt 1 als Werkzeug: Die drei Antwortlagen sind jetzt eine Spalte.
+
+::: {.callout-note title="Die fünf Stellschrauben des Formats"}
+**Textsorte** (Mail, Notiz, Tabelle), **Länge** (Wörter, Sätze, Absätze), **Ton** (sachlich, freundlich, ohne Füllwörter), **Aufbau** (Reihenfolge, feste Elemente wie Anrede und Signatur) und **Ausgabeform** (Fließtext, Liste, Tabelle mit festen Spalten). Ein Musterbeispiel setzt Ton und Aufbau gleichzeitig. Eine Tabelle mit festen Spalten und einer festen Wertemenge für den Status ist die Ausgabeform, die sich am leichtesten prüfen lässt. Diese Einteilung ist eine Merkhilfe dieses Kurses.
+:::
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Beide Beispiele sind konstruiert, keine aufgezeichneten Modelloutputs. Zuerst der Entwurf aus Durchlauf B:
+
+> Guten Tag,
+>
+> vielen Dank für Ihre Nachricht.
+>
+> Eine einzelne Abo-Lieferung können Sie aussetzen, wenn Ihre Anfrage spätestens fünf Werktage vor deren Versand bei uns eingeht; das Versanddatum Ihrer Oktober-Lieferung liegt mir hier nicht vor. Das Abo läuft danach unverändert weiter.
+>
+> Entkoffeiniert Sanft ist im Abo wählbar, wie alle drei Sorten.
+>
+> Zur Frage nach einer Bio-Zertifizierung liegt mir hier keine freigegebene Angabe vor.
+>
+> Freundliche Grüße
+> Sina Bergmann
+> Vertrieb und Kundenservice, Rösterei Morgenrot
+>
+> **Offen:** Versanddatum der Oktober-Lieferung und damit, ob die Frist für das Aussetzen einzuhalten ist. Angabe zu Herkunft und Zertifizierung.
+
+Dann die Belegtabelle:
+
+| Frage | Antwort in einem Satz | Beleg | Status |
+|---|---|---|---|
+| Lieferung im Oktober aussetzen? | Möglich, wenn die Anfrage spätestens fünf Werktage vor dem Versand eingeht; das Versanddatum fehlt. | „Eine einzelne Lieferung kann ausgesetzt werden, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht." | bedingt |
+| Entkoffeiniert Sanft im Abo? | Ja, alle drei Sorten sind im Abo wählbar. | „Alle drei Sorten sind im Abo wählbar." | gedeckt |
+| Ist der Kaffee Bio? | Dazu liegt keine freigegebene Angabe vor. | | offen |
+
+Woran wir prüfen: Der Entwurf trägt Aufbau und Ton des Musters, aber keinen Satz seines Inhalts. Die Bedingung steht im selben Satz wie die Zusage, das fehlende Versanddatum wird genannt, nichts wird als veranlasst behauptet. Die Bio-Frage wird weder bejaht noch verneint. In der Tabelle ist jeder Beleg ein wörtliches Zitat, und die Belegspalte der offenen Frage ist leer.
+
+### Eine eigene Variante
+
+Wir nehmen den eigenen Fall aus dem Canvas und suchen ein Musterbeispiel: einen Text aus unserem Bereich, der so klingt, wie wir schreiben wollen. Für die Übung erfinden wir ihn vollständig oder bauen ihn aus einem Text nach, der ohnehin öffentlich ist; interne Vorlagen bleiben draußen, solange die Freigabe für dieses Konto nicht geklärt ist. Dann bauen wir zwei Aufträge: einen mit dem Beispiel als Format für den Entwurf und einen mit der Belegtabelle als Ausgabeform. Beide laufen in neuen Chats.
+
+Wir prüfen zuerst die Tabelle gegen unser Material, dann den Entwurf gegen die Tabelle: Steht im Entwurf eine Aussage, die in der Tabelle „offen" ist? Ist ein Satz aus dem Beispiel in den Entwurf gerutscht?
+
+In **Portfolio-Teil 2** ergänzen wir die Auftragskarte um die Format-Zeile mit den fünf Stellschrauben und legen das Musterbeispiel als Übungsmaterial im Wortlaut bei. Herkunft allein genügt nicht; das Beispiel selbst gehört in die Mappe.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Der Entwurf enthält die Kündigungsregel aus dem Beispiel | Eingeschleppter Inhalt. Streichen lassen: „Entferne alle Aussagen, nach denen nicht gefragt wurde." Ein Beispiel wählen, das noch weiter von der Anfrage entfernt liegt. |
+| Die Bio-Frage wird mit „nein" beantwortet | Ebenso unbelegt wie ein „ja". Das Material sagt nur, dass keine Angabe vorliegt. Auf diese Formulierung zurückführen. |
+| Das Aussetzen wird ohne Frist zugesagt | Die Bedingung fehlt. Prüfen, ob der Satz „eine Bedingung steht im selben Satz wie die Zusage" im Format steht; Folgeanweisung mit genau dieser Änderung. |
+| Der Entwurf sagt „wir haben Ihre Lieferung ausgesetzt" | Behauptete Handlung. Entfernen. Im Fall ist nichts veranlasst. |
+| In der Belegtabelle steht ein Zitat, das nicht im Material vorkommt | Zeile als falsch markieren. Der Beleg ist erfunden, auch wenn er plausibel klingt. Nur wörtliche Zitate zulassen und erneut ausführen. |
+| Die Tabelle hat mehr Spalten oder eine zusätzliche Erklärung darunter | Format nicht eingehalten. Folgeanweisung: „Genau vier Spalten, nach der Tabelle nichts weiter." |
+| Beide Durchläufe sehen nahezu gleich aus | Auch das ist eine Beobachtung. Festhalten und nicht überinterpretieren; zwei Durchläufe erlauben keine Aussage über die Wirkung des Beispiels. |
+
+## Kontrollpunkt für Modul 2
+
+- Für jede Frage einer Anfrage vorab festlegen, ob das Material sie deckt, bedingt deckt oder offenlässt
+- Ein Musterbeispiel so in den Auftrag einbauen, dass Aufbau und Ton übernommen werden, der Inhalt aber nicht
+- Die fünf Stellschrauben des Formats benennen und für einen eigenen Fall belegen
+- Eine Belegtabelle mit wörtlichen Zitaten und fester Statusmenge als Prüfwerkzeug einsetzen
+- Einen Entwurf auf eingeschleppte Inhalte aus dem Beispiel prüfen
+- Beobachtungen aus zwei Durchläufen festhalten, ohne daraus eine Ursache abzuleiten

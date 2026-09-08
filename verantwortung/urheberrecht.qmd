@@ -1,0 +1,148 @@
+# Urheberrecht und geistiges Eigentum
+
+Jonas Halder will einen Blogbeitrag über Filterkaffee Mild schreiben und hat dafür Material gesammelt: ein Fachbuch, eine Produktseite der Konkurrenz, ein Stockfoto, Röstnotizen, einen Wiki-Absatz und Kundenbewertungen. In diesem Kapitel sortieren wir dieses Material, bevor irgendetwas in einen Prompt geht, und prüfen danach das Ergebnis auf fremde Anteile.
+
+## Das Quellenpuzzle
+
+Alle sechs Quellen sind für diesen Kurs erfunden; das Fachbuch, der Mitbewerber, der Bildanbieter und die Bewertungen existieren nicht. Die vollständigen Texte stehen im [Quellenpuzzle](../material/m05/quellenpuzzle-jonas.md). Hier die Kurzfassung:
+
+| Quelle | Was es ist | Jonas' Absicht |
+|---|---|---|
+| A | Zwei Absätze aus dem Fachbuch „Röstkunde für Einsteiger" über helle und dunkle Röstungen | Fachliche Grundlage für den Beitrag |
+| B | Produktbeschreibung „Sanfter Morgen" eines Mitbewerbers, poetisch formuliert | „Etwas in der Art" schreiben |
+| C | Stockfoto „Filterkaffee im Morgenlicht" mit Standardlizenz, die das Anlernen automatisierter Systeme ausschließt | Titelbild, vielleicht per Bildgenerator variieren |
+| D | Röstnotizen von Marlene Bosch, für Marketing freigegeben | Die eigentlichen Fakten |
+| E | Definitionsabsatz aus einem Wiki mit freier Lizenz (Namensnennung, gleiche Bedingungen) | Einleitung |
+| F | Zwei Kundenbewertungen aus dem eigenen Shop, mit Vornamen | Als Stimmen einbauen |
+
+Bevor wir sortieren, eine Einschätzung: Was passiert, wenn Jonas alle sechs Quellen in einen Prompt kopiert und „einen Blogbeitrag daraus" verlangt? Es besteht das Risiko, dass im Ergebnis Sätze stehen, die dem Fachbuch oder dem Konkurrenztext nahekommen, ohne dass wir das später noch auseinanderhalten können. Die Frage „Wem gehört dieser Satz?" lässt sich nach dem Mischen nicht mehr sauber beantworten. Deshalb sortieren wir vorher.
+
+::: {.callout-important title="Quelle nennen genügt nicht"}
+Drei Dinge werden im Alltag gern verwechselt. **Ob ein Inhalt geschützt ist**, entscheidet sich daran, ob er eine persönliche geistige Schöpfung ist ([§ 2 Abs. 2 UrhG](https://www.gesetze-im-internet.de/urhg/__2.html)); nicht daran, ob er frei zugänglich ist. **Ob wir ihn nutzen dürfen**, entscheidet eine Lizenz, eine Erlaubnis oder eine gesetzliche Ausnahme. Und das **Zitatrecht** ist eine solche Ausnahme mit Bedingungen: Die Übernahme muss dem Zweck des Zitats dienen und in ihrem Umfang durch diesen Zweck gerechtfertigt sein ([§ 51 UrhG](https://www.gesetze-im-internet.de/urhg/__51.html)). Ein Zitat belegt oder erläutert den eigenen Text; es füllt ihn nicht. Eine Quellenangabe allein macht aus einer Übernahme kein Zitat, und ein festes Freikontingent nach Prozent oder Zeilen gibt es nicht.
+:::
+
+## Zielbild
+
+Am Ende dieses Kapitels haben wir für jede Quelle eine Entscheidung, einen Auftrag, der nur zulässiges Material enthält, und einen geprüften Entwurf:
+
+- Jede Quelle ist mit drei getrennten Fragen bewertet: geschützt, lizenziert oder erlaubt, gesetzliche Ausnahme.
+- Der Auftrag enthält nur eigenes und lizenziertes Material und verlangt hinter jedem Absatz die Quelle.
+- Der Entwurf ist auf fremde Passagen, Zitatbedingungen und Lizenzhinweise geprüft.
+- Offene Rechtsfragen stehen mit Zuständigkeit im Portfolio, nicht als Bauchgefühl im Text.
+
+Die Arbeitshilfe dazu ist der [Rechte-Check](../material/m05/rechte-check.md).
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1 — Jede Quelle mit drei Fragen sortieren
+
+Wir gehen die sechs Quellen durch und stellen zu jeder dieselben drei Fragen. Für die Rösterei ergibt sich:
+
+- **A Fachbuch:** geschützt, keine Lizenz. Als Hintergrund lesen, nicht als Textbaustein in den Auftrag. Im Beitrag höchstens als kurzes Zitat mit Belegfunktion, falls ein Satz wirklich etwas belegen soll.
+- **B Konkurrenztext:** geschützt, keine Lizenz, und dazu ein Wettbewerber. Nicht in den Auftrag, auch nicht als Stilvorlage. „Etwas in der Art" ist genau die Nähe, die wir vermeiden wollen.
+- **C Stockfoto:** geschützt, lizenziert. Nutzung auf Website und im Newsletter erlaubt; Hochladen in einen Bildgenerator ist nach dem Lizenztext ausgeschlossen. Also: Bild verwenden, nicht verarbeiten.
+- **D Röstnotizen:** eigenes Material, freigegeben. In den Auftrag, aber nur die freigegebenen Angaben. Herkunftsland und Erntejahr sind ausdrücklich nicht freigegeben.
+- **E Wiki-Absatz:** geschützt, aber frei lizenziert mit Bedingungen. In den Auftrag, mit Namensnennung und Lizenzhinweis im Beitrag.
+- **F Bewertungen:** fremd verfasst, mit Vornamen. Nicht mit Namen in den Auftrag. Ob Bewertungen im Marketing weiterverwendet werden dürfen, hängt von den eigenen Shop-Bedingungen ab; bis zur Klärung offen.
+
+::: {.callout-tip title="Die Bibliothek und das Dossier"}
+Eine Bibliothek darf jedes Buch im Regal haben, und wir dürfen jedes lesen. Ein Dossier, das wir weitergeben, darf aber nicht aus abgeschriebenen Seiten bestehen; es enthält unsere Zusammenfassung, unsere Daten und dort, wo ein fremder Satz etwas belegt, ein gekennzeichnetes Zitat mit Fundstelle. Der Prompt ist das Dossier, nicht die Bibliothek. Hinein kommt, was wir weitergeben dürften.
+:::
+
+### Schritt 2 — Den Auftrag nur aus zulässigem Material bauen
+
+Der Auftrag enthält D, E und die Sortimentsangabe. Er verlangt hinter jedem Absatz die Quelle und verbietet Absätze ohne Quelle. Er steht als [Textdatei](../material/m05/prompt-quellen-kennzeichnen.txt) bereit.
+
+```text
+Du unterstützt das Marketing der Rösterei Morgenrot.
+
+AUFGABE
+Entwirf einen kurzen Blogbeitrag mit dem Arbeitstitel "Warum Filterkaffee Mild so schmeckt, wie er schmeckt".
+
+MATERIAL (nur diese Angaben sind gültig)
+Röstnotizen aus Röstung und Produktion, freigegeben:
+- Filterkaffee Mild: mittelhelle Röstung, Röstende bei erstem Crack plus kurze Nachröstphase.
+- Zielprofil: wenig Bitterkeit, weiche Säure, Noten von Milchschokolade und getrockneter Aprikose.
+- Rohkaffee aus einer Kooperative, gewaschene Aufbereitung.
+- Keine Angaben zu Herkunftsland und Erntejahr freigegeben; diese wechseln je Charge.
+
+Allgemeine Definition (Quelle: Kaffeewiki, Artikel "Filterkaffee", freie Lizenz mit Namensnennung):
+- Filterkaffee bezeichnet Kaffee, bei dem heißes Wasser durch gemahlenen Kaffee in einem Filter läuft und die gelösten Bestandteile in ein Gefäß tropfen. Die Kontaktzeit liegt üblicherweise zwischen zwei und fünf Minuten.
+
+Sortiment: Filterkaffee Mild kostet im Onlineshop regulär 9,00 EUR.
+
+FORMAT
+Blogbeitrag, 180 bis 220 Wörter, Überschrift plus drei kurze Absätze, sachlich und freundlich, keine Superlative.
+Hinter jedem Absatz in eckigen Klammern die Quelle des Absatzes: [Röstnotizen], [Kaffeewiki] oder [Sortiment]. Absätze ohne Quelle im Material sind nicht erlaubt.
+Am Ende eine Liste "Offen" mit Angaben, die für den Beitrag noch fehlen.
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze keine Fakten zu Röstchemie, Herkunft, Anbau oder Gesundheit.
+- Übernimm keine Formulierungen, die nicht im Material stehen, als Zitat. Der Wiki-Absatz darf sinngemäß verwendet werden; wenn er wörtlich übernommen wird, kennzeichne ihn als Zitat mit Quellenangabe.
+- Keine Vergleiche mit anderen Anbietern.
+- Erfinde keine Kundenstimmen.
+```
+
+Die Quellenkennzeichnung hinter jedem Absatz ist der Prüfhebel dieses Kapitels. Sie macht sichtbar, aus welchem Material ein Absatz stammt, und ein Absatz ohne Quelle fällt sofort auf. Was sie nicht leistet: Sie garantiert nicht, dass der Absatz seine Quelle korrekt wiedergibt. Das lesen wir nach.
+
+### Schritt 3 — Das Ergebnis auf fremde Anteile lesen
+
+Wir prüfen den Entwurf in dieser Reihenfolge:
+
+1. **Absätze ohne Quelle oder mit falscher Quelle.** Trägt die Quelle den Absatz? Ein Satz über Maillard-Reaktion oder Säureabbau kann nur aus dem Fachbuch stammen, das nicht im Material war.
+2. **Fremd klingende Sätze.** Auffällig fertige Formulierungen wie „nicht laut sein muss, um gehört zu werden" gegen Quelle B lesen. Ein Chatmodell kann Formulierungen erzeugen, die bekannten Texten nahekommen, auch ohne dass wir sie mitgegeben haben.
+3. **Wiki-Absatz.** Sinngemäß oder wörtlich? Wenn wörtlich: Zitat gekennzeichnet, Quelle genannt, Lizenzhinweis im Beitrag vorgesehen?
+4. **Nicht freigegebene Angaben.** Steht ein Herkunftsland oder ein Erntejahr im Text? Dann hat das Modell ergänzt.
+5. **Liste „Offen".** Steht dort, was fehlt, etwa Titelbild und Bildnachweis, Herkunftsangaben, Freigabe durch Marlene?
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput.
+
+> **Warum Filterkaffee Mild so schmeckt, wie er schmeckt**
+>
+> Filterkaffee entsteht, wenn heißes Wasser durch gemahlenen Kaffee in einem Filter läuft und die gelösten Bestandteile in ein Gefäß tropfen; die Kontaktzeit liegt üblicherweise zwischen zwei und fünf Minuten. Diese ruhige Zubereitung ist der Ausgangspunkt für unseren Filterkaffee Mild. [Kaffeewiki]
+>
+> Wir rösten ihn mittelhell: Das Röstende liegt beim ersten Crack, gefolgt von einer kurzen Nachröstphase. Das Zielprofil ist wenig Bitterkeit, eine weiche Säure und Noten von Milchschokolade und getrockneter Aprikose. Der Rohkaffee stammt aus einer Kooperative und wird gewaschen aufbereitet. [Röstnotizen]
+>
+> Filterkaffee Mild gibt es im Onlineshop regulär für 9,00 EUR. [Sortiment]
+>
+> Offen: Herkunftsland und Erntejahr (wechseln je Charge, nicht freigegeben). Titelbild und Bildnachweis. Fachliche Freigabe der Röstangaben.
+
+Drei Merkmale: Jeder Absatz hat eine Quelle, die ihn trägt. Der erste Absatz gibt den Wiki-Text fast wörtlich wieder; das ist zulässig, verlangt aber im veröffentlichten Beitrag die Namensnennung und den Lizenzhinweis, die Jonas noch ergänzen muss. Und der Text enthält keine Röstchemie, keine Herkunft, keinen Vergleich mit anderen Anbietern.
+
+::: {.callout-note title="Rechte am Ergebnis: was wir sagen können und was nicht"}
+Ob ein rein maschinell erzeugter Text selbst ein geschütztes Werk ist, ist eine offene Rechtsfrage; der Werkbegriff des § 2 UrhG setzt eine persönliche Schöpfung voraus. Für die Rösterei ist etwas anderes wichtiger: Fremde geschützte Anteile im Ergebnis bleiben fremd, ganz gleich, wer den Text zusammengesetzt hat. Was der Anbieter zur Weiterverwendung von Ergebnissen sagt, steht in seinen Nutzungsbedingungen und ist vor einer Veröffentlichung zu lesen. Beides gehört als offene Frage mit Zuständigkeit ins Portfolio, nicht als Annahme in den Beitrag.
+:::
+
+### Eine eigene Variante bauen
+
+Wir nehmen den eigenen Fall und listen alle Quellen auf, die im Material stecken oder stecken könnten: eigene Vorlagen, Lieferantenunterlagen, Normen, Fachartikel, Bilder, Beiträge Dritter.
+
+1. Wir bewerten jede Quelle mit den drei Fragen: geschützt, lizenziert oder erlaubt, gesetzliche Ausnahme.
+2. Wir streichen aus dem Auftrag alles, was nur „gefunden" ist, und behalten, was eigen oder lizenziert ist.
+3. Wir verlangen im Format eine Quellenkennzeichnung je Absatz oder je Aussage.
+4. Wir führen den Auftrag aus und prüfen den Entwurf nach Schritt 3.
+5. Wir tragen die Ergebnisse in **Portfolio-Teil 3** ein, Zeile „Rechte an Eingaben und Ergebnissen": Welche fremden Inhalte sind im Material, wie wurde damit umgegangen, was ist offen, wer klärt es.
+
+Eine eigene Variante lohnt sich besonders, wenn der eigene Fall Bilder enthält. Dann lesen wir den Lizenztext des Bildanbieters auf die Wörter „Bearbeitung", „automatisiert" und „Training", bevor ein Bild in ein Werkzeug geht.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Ein Absatz erklärt Röstchemie, obwohl das Fachbuch nicht im Material war | Als ungedeckte Ergänzung entfernen. Wenn die Aussage in den Beitrag soll, braucht sie eine eigene Quelle mit Lizenz oder ein echtes Zitat mit Belegfunktion. |
+| Ein Satz klingt wie der Konkurrenztext | Gegen Quelle B lesen. Bei Nähe umschreiben aus dem eigenen Material; nicht „nur ein bisschen" ändern. |
+| Der Wiki-Absatz steht wörtlich, aber ohne Kennzeichnung | Als Zitat kennzeichnen, Quelle nennen, Lizenzhinweis vorsehen. Oder sinngemäß formulieren; auch dann Namensnennung, wenn die Lizenz es verlangt. |
+| Im Text steht ein Herkunftsland | Nicht freigegeben. Entfernen und unter „Offen" führen. Nachfragen bei Marlene, ob eine Angabe freigegeben werden kann. |
+| Der Entwurf enthält Kundenstimmen | Erfunden oder aus Quelle F. Beides entfernen. Bewertungen erst nach Klärung der Shop-Bedingungen und ohne Namen. |
+| Die Liste „Offen" fehlt oder ist leer | Format nachschärfen und erneut ausführen; im Beispiel fehlen mindestens Bildnachweis und fachliche Freigabe. |
+| Unklar, ob ein Stockfoto in einen Bildgenerator darf | Lizenztext lesen. Fehlt eine Aussage, gilt: nicht hochladen, bis der Anbieter oder die Rechtsberatung es geklärt hat. |
+
+## Kontrollpunkt für Modul 5
+
+- Für jede Quelle getrennt beantworten, ob sie geschützt ist, ob eine Lizenz oder Erlaubnis vorliegt und ob eine gesetzliche Ausnahme greift
+- Das Zitatrecht als zweckgebundene Ausnahme erkennen und „Quelle nennen" von „zitieren dürfen" unterscheiden
+- Einen Auftrag so bauen, dass nur eigenes und lizenziertes Material hineingeht und jeder Absatz seine Quelle trägt
+- Einen Entwurf auf fremde Anteile, Zitatbedingungen und Lizenzhinweise prüfen
+- Offene Rechtsfragen mit Zuständigkeit im Portfolio festhalten, statt sie im Text zu überspielen

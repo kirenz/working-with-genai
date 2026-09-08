@@ -1,0 +1,175 @@
+---
+title: "Urheberrecht und geistiges Eigentum"
+subtitle: "Modul 5 · Lektion 5.2"
+book-source: "../../verantwortung/urheberrecht.qmd"
+---
+
+## Sechs Quellen für einen Blogbeitrag {.stage}
+
+[Modul 5 · Verantwortung und Risiko-Orientierung]{.kicker}
+
+Jonas Halder hat Material gesammelt. Die Frage kommt vor dem Prompt, nicht danach: Was davon darf überhaupt hinein?
+
+::: {.notes}
+Anschluss an 5.1: Dort ging es um Angaben über Personen, hier um fremde Texte und Bilder im Material. Gleiche Abgrenzung wie im ganzen Modul: Risiko-Orientierung, keine Rechtsberatung. Was in diesem Deck an Rechtsdetail vorkommt, ist bewusst knapp gehalten; für den Einzelfall wird die Rechtsberatung beauftragt. Zeit: 1 Minute.
+:::
+
+## Das Quellenpuzzle
+
+::: {.two-col}
+::: {.card}
+![](../../images/morgenrot-team/jonas-halder.png){width="140"}
+
+**Jonas Halder**, Marketing
+:::
+::: {.card}
+::: {.small}
+**A** Fachbuch „Röstkunde für Einsteiger“, zwei Absätze
+
+**B** Produktbeschreibung eines Mitbewerbers, poetisch
+
+**C** Stockfoto mit Standardlizenz
+
+**D** Röstnotizen von Marlene, für Marketing freigegeben
+
+**E** Wiki-Absatz, freie Lizenz mit Namensnennung
+
+**F** Zwei Kundenbewertungen aus dem eigenen Shop, mit Vornamen
+:::
+:::
+:::
+
+Alle sechs Quellen sind für den Kurs erfunden.
+
+::: {.sources}
+material/m05/quellenpuzzle-jonas.md (vollständige Texte)
+:::
+
+::: {.notes}
+Die sechs Quellen kurz vorstellen und Jonas' Absichten dazu nennen: A als fachliche Grundlage, B „etwas in der Art“ schreiben, C als Titelbild und vielleicht durch einen Bildgenerator schicken, D die eigentlichen Fakten, E die Einleitung, F als Stimmen im Text. Frage an den Raum vor dem Sortieren: Was passiert, wenn alle sechs in einen Prompt kopiert werden? Erwartete Antwort in Richtung Vermischung. Als Risiko formulieren: Nach dem Mischen lässt sich die Frage „Wem gehört dieser Satz?“ nicht mehr sauber beantworten. Zeit: 3 Minuten.
+:::
+
+## Drei getrennte Fragen je Quelle
+
+| Frage | Woran sie hängt |
+|---|---|
+| **Geschützt?** | ob es eine persönliche geistige Schöpfung ist — nicht, ob es frei zugänglich ist |
+| **Nutzung erlaubt?** | Lizenz, Erlaubnis oder gesetzliche Ausnahme |
+| **Zitat?** | zweckgebundene Ausnahme: die Übernahme muss dem Zitatzweck dienen und im Umfang dadurch gerechtfertigt sein |
+
+„Quelle nennen“ macht aus einer Übernahme kein Zitat. Ein festes Freikontingent nach Prozent oder Zeilen gibt es nicht.
+
+::: {.sources}
+§ 2 Abs. 2 UrhG · § 51 UrhG (gesetze-im-internet.de/urhg)
+:::
+
+::: {.notes}
+Die drei Fragen getrennt halten ist der Lernstoff dieser Folie. Häufige Verwechslung im Raum abfragen: „Ist doch öffentlich im Netz“ und „Ich nenne ja die Quelle“. Beides beantwortet keine der drei Fragen. Ein Zitat belegt oder erläutert den eigenen Text, es füllt ihn nicht. Keine weiteren Rechtsdetails ergänzen; für Einzelfälle Rechtsberatung. Zeit: 3 Minuten.
+:::
+
+## Sortieren: was in den Auftrag darf
+
+| Quelle | Entscheidung |
+|---|---|
+| A Fachbuch | als Hintergrund lesen, **nicht** als Textbaustein hineingeben |
+| B Konkurrenztext | **nicht** hinein, auch nicht als Stilvorlage |
+| C Stockfoto | Bild verwenden, **nicht** in einen Generator hochladen (Lizenztext) |
+| D Röstnotizen | hinein, nur die freigegebenen Angaben |
+| E Wiki-Absatz | hinein, mit Namensnennung und Lizenzhinweis im Beitrag |
+| F Bewertungen | nicht mit Namen; Weiterverwendung bis zur Klärung offen |
+
+::: {.notes}
+Diese Folie in Paaren erarbeiten lassen (fünf Minuten), dann auflösen. Analogie: Die Bibliothek darf jedes Buch im Regal haben; das Dossier, das weitergegeben wird, besteht nicht aus abgeschriebenen Seiten. Der Prompt ist das Dossier, nicht die Bibliothek. Bei C den Lizenztext auf die Wörter „Bearbeitung“, „automatisiert“ und „Training“ lesen; fehlt eine Aussage, gilt: nicht hochladen. Bei D darauf hinweisen, dass Herkunftsland und Erntejahr ausdrücklich nicht freigegeben sind. Zeit: 5 Minuten Arbeit, 3 Minuten Auflösung.
+:::
+
+## Der Prüfhebel: Quelle hinter jedem Absatz
+
+```text
+MATERIAL  Röstnotizen (freigegeben) + Wiki-Absatz (freie Lizenz,
+          Namensnennung) + Sortimentsangabe. Sonst nichts.
+FORMAT    180–220 Wörter, Überschrift plus drei Absätze. Hinter jedem
+          Absatz die Quelle: [Röstnotizen], [Kaffeewiki], [Sortiment].
+          Absätze ohne Quelle im Material sind nicht erlaubt.
+GRENZEN   Keine Fakten zu Röstchemie, Herkunft, Anbau, Gesundheit.
+          Keine Vergleiche mit Anbietern. Keine erfundenen Kundenstimmen.
+```
+
+Die Kennzeichnung macht Herkunft sichtbar. Ob der Absatz seine Quelle **korrekt wiedergibt**, wird nachgelesen.
+
+::: {.sources}
+Vollständiger Auftrag: Buchkapitel 5.2, Schritt 2 · material/m05/prompt-quellen-kennzeichnen.txt
+:::
+
+::: {.notes}
+Live-Demo oder Arbeitsphase, je nach Zeit: Auftrag aus dem Buch in einen neuen Chat. Beim Lesen des Ergebnisses die Reihenfolge einhalten, die auf der nächsten Folie steht. Betonen, dass die Quellenkennzeichnung ein Prüfhebel ist und keine Garantie: Ein Absatz kann eine Kennung tragen und trotzdem etwas behaupten, das dort nicht steht. Zeit: 8 Minuten Arbeitsphase.
+:::
+
+## Fünf Prüfschritte am Entwurf
+
+1. **Absatz ohne oder mit falscher Quelle?** Trägt die genannte Quelle den Absatz wirklich?
+2. **Fremd klingende Sätze** gegen Quelle B lesen
+3. **Wiki-Absatz:** sinngemäß oder wörtlich? Wenn wörtlich: gekennzeichnet, Quelle genannt, Lizenzhinweis vorgesehen?
+4. **Nicht freigegebene Angaben:** steht ein Herkunftsland oder Erntejahr im Text?
+5. **Liste „Offen“:** Titelbild, Bildnachweis, fachliche Freigabe?
+
+::: {.notes}
+Zu Schritt 1 ein konkretes Beispiel geben: Ein Satz über Maillard-Reaktion oder Säureabbau kann nur aus dem Fachbuch stammen, das nicht im Material war. Zu Schritt 2: Ein Chatmodell kann Formulierungen erzeugen, die bekannten Texten nahekommen, auch ohne dass sie mitgegeben wurden; das als Möglichkeit formulieren, nicht als Gewissheit. Auflösung mit dem konstruierten Beitrag aus dem Buch, ausdrücklich als konstruiert gekennzeichnet. Zeit: 3 Minuten.
+:::
+
+## Rechte am Ergebnis: was gesagt werden kann
+
+::: {.two-col}
+::: {.card}
+**Offen**
+
+Ob ein rein maschinell erzeugter Text selbst geschützt ist. Der Werkbegriff setzt eine persönliche Schöpfung voraus.
+:::
+::: {.card}
+**Klar genug für die Praxis**
+
+Fremde geschützte Anteile im Ergebnis bleiben fremd — unabhängig davon, wer den Text zusammengesetzt hat.
+:::
+:::
+
+Was der Anbieter zur Weiterverwendung von Ergebnissen sagt, steht in seinen Bedingungen und wird vor einer Veröffentlichung gelesen.
+
+::: {.notes}
+Diese Folie beantwortet die Frage, die in jedem Kurs kommt: „Gehört mir das dann?“ Ehrliche Antwort: Die eine Hälfte ist offen, die andere für die Praxis entscheidend. Beides gehört als offene Frage mit Zuständigkeit ins Portfolio, nicht als Annahme in den Beitrag. Keine Rechtschronologie und keine Einzelurteile ergänzen. Zeit: 2 Minuten.
+:::
+
+## Wenn etwas anders läuft
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Ein Absatz erklärt Röstchemie | Ungedeckte Ergänzung entfernen; sonst eigene Quelle mit Lizenz |
+| Ein Satz klingt wie der Konkurrenztext | Gegen B lesen; aus eigenem Material umschreiben |
+| Wiki-Absatz wörtlich, ohne Kennzeichnung | Als Zitat kennzeichnen, Quelle nennen, Lizenzhinweis vorsehen |
+| Ein Herkunftsland taucht auf | Nicht freigegeben: entfernen, unter „Offen“ führen |
+| Kundenstimmen im Entwurf | Entfernen; erst nach Klärung, ohne Namen |
+
+::: {.notes}
+Nur die Zeilen besprechen, die aufgetreten sind. Bei „nur ein bisschen ändern“ deutlich werden: Das ist keine Lösung, sondern der Versuch, Nähe unkenntlich zu machen. Umgeschrieben wird aus dem eigenen Material. Zeit: 2 Minuten.
+:::
+
+## Eigene Variante und Portfolio-Teil 3
+
+1. Alle Quellen des eigenen Falls auflisten: eigene Vorlagen, Lieferantenunterlagen, Normen, Fachartikel, Bilder, Beiträge Dritter
+2. Jede mit den drei Fragen bewerten
+3. Aus dem Auftrag streichen, was nur „gefunden“ ist
+4. Quellenkennzeichnung je Absatz verlangen und den Entwurf danach prüfen
+5. Zeile „Rechte an Eingaben und Ergebnissen“ füllen: was im Material steckt, wie damit umgegangen wurde, was offen ist, wer klärt
+
+::: {.sources}
+material/m05/rechte-check.md · Portfolio-Teil 3
+:::
+
+::: {.notes}
+Selbstlernaufgabe bis 08.10. Besonders lohnend, wenn der eigene Fall Bilder enthält: dann den Lizenztext des Anbieters auf „Bearbeitung“, „automatisiert“ und „Training“ lesen, bevor ein Bild in ein Werkzeug geht. Hinweis auf den Rechte-Check als Arbeitshilfe; er ersetzt keine Prüfung, er strukturiert sie. Zeit: 2 Minuten.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 5.2, Working with GenAI: verantwortung/urheberrecht
+- Material: material/m05/quellenpuzzle-jonas.md, prompt-quellen-kennzeichnen.txt, rechte-check.md
+- § 2 Abs. 2 UrhG (persönliche geistige Schöpfung) und § 51 UrhG (Zitat, zweckgebunden): gesetze-im-internet.de/urhg/\_\_2.html, /\_\_51.html
+- Alle sechs Quellen des Puzzles sind für den Kurs erfunden; das Beispielergebnis ist konstruiert

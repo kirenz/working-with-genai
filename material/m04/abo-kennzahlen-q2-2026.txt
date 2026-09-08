@@ -1,0 +1,34 @@
+NOTIZ ABO-KENNZAHLEN 2. QUARTAL 2026 (APRIL BIS JUNI)
+Stand 03.07.2026 · Petra Lindqvist, Verwaltung und Controlling
+Für die interne Besprechung am 10.07.2026. Zahlen vorläufig.
+
+Synthetisches Kursmaterial. Alle Zahlen sind für den Kurs erfunden.
+
+--------------------------------------------------------------------------
+KENNZAHLEN
+--------------------------------------------------------------------------
+Z1  Aktive Abos am 30.06.2026: 412
+Z2  Neue Abos im Quartal: 96
+Z3  Kündigungen im Quartal: 58
+Z4  Kündigungsgrund (Freitextfeld im Kündigungsformular):
+    41 der 58 Kündigungen enthalten eine Angabe, 17 keine.
+    Nennungen: "zu viel Kaffee zu Hause" 19, "Preis" 9,
+    "Sorte gefällt nicht" 7, Sonstiges 6.
+Z5  Rückfragen im Kundenservice zu Abo-Themen im Quartal: 137
+    davon Sortenwechsel 52, Liefertermin 44, Pause oder Kündigung 31,
+    Sonstiges 10.
+
+--------------------------------------------------------------------------
+HINWEISE
+--------------------------------------------------------------------------
+H1  Vergleich zum Vorquartal: nicht ausgewertet. Die Rückfragen werden
+    erst seit April 2026 nach Thema erfasst.
+H2  Die Kennzahlen sind vorläufig. Der Abgleich mit dem Shop-System steht
+    noch aus.
+H3  Eine Pausenfunktion für das Abo wurde in der Besprechung vom
+    12.06.2026 angesprochen. Eine Entscheidung liegt nicht vor.
+H4  Beispiel einer Kundenrückmeldung aus dem Kündigungsformular
+    (anonymisiert, sinngemäß): "Im Sommer trinke ich weniger Kaffee.
+    Könnt ihr die Lieferung mal aussetzen?"
+H5  Empfehlungen sind nicht Teil dieser Notiz. Die Besprechung am
+    10.07.2026 entscheidet über nächste Schritte.

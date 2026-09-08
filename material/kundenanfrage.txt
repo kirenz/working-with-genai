@@ -1,29 +1,35 @@
-EINGEGANGENE KUNDENMAIL — LEHRFALL NORDWERK
+EINGEGANGENE KUNDENMAIL — LEHRFALL RÖSTEREI MORGENROT
 Kursmaterial "Working with GenAI", Modul 2
 
-HINWEIS: Konstruierter Fall. Die Absenderangabe "M. Berger" ist erfunden
-und enthält keine realen personenbezogenen Daten.
+HINWEIS: Konstruierter Fall. Die Mail geht an Sina Bergmann, Vertrieb und
+Kundenservice. Die Absenderangabe "M. Berger" ist erfunden und enthält keine
+realen personenbezogenen Daten.
 
 --------------------------------------------------------------------------
 
-Betreff: Ersatzakku und Liefertermin
+Betreff: Sortenwechsel im Abo und nächste Lieferung
 
 Guten Tag,
 
-ich habe vor zwei Wochen den NW-18C gekauft und dazu einen Ersatzakku
-NW-AK20 bestellt. Drei Fragen: Passt der Akku auch in meinen älteren
-NW-14C? Wie lange habe ich Garantie auf den NW-18C? Und wann kommt die
-Lieferung an, ich brauche sie bis Freitag.
+ich beziehe den Espresso Intenso im Abo. Drei Fragen: Kann ich im Abo auf
+Filterkaffee Mild wechseln? Was kostet Filterkaffee Mild regulär im Shop?
+Und kommt die nächste Lieferung bis Freitag an, ich brauche sie bis dahin.
 
 Viele Grüße
 M. Berger
 
 --------------------------------------------------------------------------
-DREI FRAGEN, ZWEI BELEGBARE ANTWORTEN
+DREI FRAGEN, DREI VERSCHIEDENE ANTWORTLAGEN
 --------------------------------------------------------------------------
 
-1. Akku-Kompatibilität NW-AK20 / NW-14C .... im Auszug der
-   Fachinformationen enthalten
-2. Garantiedauer NW-18C .................... im Auszug der
-   Fachinformationen enthalten
-3. Liefertermin der Bestellung ............. NICHT im Material enthalten
+1. Sortenwechsel im Abo ............ nur bedingt belegbar. Der Grundsatz
+                                     steht im Auszug (fünf Werktage vor dem
+                                     Versand), das Versanddatum fehlt.
+2. Preis Filterkaffee Mild ......... belegbar: 9,00 EUR regulärer
+                                     Listenpreis im Onlineshop. Ein
+                                     Abo-Preis ist nicht abgedeckt.
+3. Ankunft der nächsten Lieferung .. NICHT im Material enthalten.
+
+Diese drei Lagen sind der eigentliche Übungsgegenstand: eine gedeckte
+Auskunft, eine Auskunft unter Bedingung und eine Lücke. Alle drei müssen im
+Entwurf unterschiedlich behandelt werden.

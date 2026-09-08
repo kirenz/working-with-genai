@@ -1,0 +1,26 @@
+/*-- scss:defaults --*/
+$body-bg: #faf9f5;
+$body-color: #17212b;
+$link-color: #365d91;
+$presentation-heading-color: #17212b;
+$presentation-heading-font: "Arial", sans-serif;
+$font-family-sans-serif: "Arial", sans-serif;
+$presentation-font-size-root: 30px;
+$presentation-heading-font-weight: 600;
+$code-block-font-size: 0.66em;
+/*-- scss:rules --*/
+.reveal h1, .reveal h2 { letter-spacing: -.035em; text-transform: none; }
+.reveal h2 { font-size: 1.6em; margin-bottom: .65em; }
+.reveal .slide { line-height: 1.4; }
+.reveal .stage { background: #17212b; color: #faf9f5; padding: 1.2em; }
+.reveal .stage h2 { color: #faf9f5; }
+.reveal .kicker { color: #9b753c; font-size: .62em; text-transform: uppercase; letter-spacing: .14em; }
+.reveal .accent { color: #9b753c; }
+.reveal .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1em; }
+.reveal .card { border: 1px solid #d8d6cd; padding: .7em; border-radius: 6px; }
+.reveal .small { font-size: .75em; }
+.reveal .sources { font-size: .46em; color: #57636c; margin-top: .9em; }
+.reveal table { font-size: .76em; }
+.reveal blockquote { border-left: 4px solid #af8950; background: transparent; box-shadow: none; padding: .4em .8em; }
+.reveal .slide-number { background: transparent; color: #57636c; }
+.reveal .progress { color: #af8950; }

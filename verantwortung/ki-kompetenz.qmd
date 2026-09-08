@@ -1,0 +1,135 @@
+# AI Literacy und der eigene Risiko-Überblick
+
+Aylin Yılmaz stellt drei Fragen, die in jedem Betrieb irgendwann kommen: Müssen wir alle schulen? Müssen wir jede Mail kennzeichnen, an der ein Chatmodell mitgewirkt hat? Und wer trägt das Risiko, wenn ein Entwurf falsch hinausgeht? In diesem Kapitel beantworten wir die drei Fragen für die Rösterei so weit, wie es ohne Rechtsberatung geht, und füllen damit die Risiko-Tabelle im Portfolio vollständig aus.
+
+## Der Anlass: drei Fragen an die Geschäftsführung
+
+Die Kundenservice-Entwürfe laufen, Jonas hat seinen Rechte-Check, die Datenregel aus 5.1 liegt vor. Was fehlt, ist der Überblick: eine Seite, auf der steht, wer in der Rösterei was mit welchem Werkzeug tut, welche Maßnahme dazu passt, wo der KI-Einsatz kenntlich gemacht wird und was noch offen ist. Aylin will diese Seite, weil sie ohne sie weder die Erprobung fortführen noch stoppen kann.
+
+Eine Einschätzung vorweg: Was passiert, wenn die Rösterei die Fragen mit Schlagworten beantwortet, also „alle schulen, alles kennzeichnen, Verantwortung liegt beim Modell"? Alle drei Antworten wären bequem und alle drei falsch angesetzt. Eine pauschale Schulungspflicht ohne Bezug zur tatsächlichen Nutzung erzeugt Aufwand ohne Wirkung. Eine pauschale Kennzeichnung jeder Mail sagt der Empfängerseite nichts darüber, ob jemand den Inhalt geprüft hat. Und die Verantwortung für eine verschickte Mail trägt die Rösterei, ganz gleich, wer den Entwurf geschrieben hat.
+
+::: {.callout-note title="Was Artikel 4 verlangt, soweit die Kommissions-FAQ es beschreibt"}
+Artikel 4 des AI Act verpflichtet Anbieter und Betreiber von KI-Systemen, Maßnahmen zu treffen, um die KI-Kompetenz ihres Personals und anderer Personen zu fördern, die in ihrem Auftrag mit KI-Systemen umgehen. Maßgeblich sind Kenntnisse, Erfahrung, Ausbildung und der Kontext des Einsatzes. Die FAQ der Europäischen Kommission stellt klar: Es muss kein bestimmtes Niveau einzelner Personen garantiert werden, es ist kein Zertifikat nötig, und ein interner Nachweis über Schulungen und Hinweise genügt. Die Pflicht gilt seit dem 2. Februar 2025; die FAQ wurde nach der Änderung des Artikels durch den Digital Omnibus (Mitte 2026) aktualisiert ([Europäische Kommission, AI literacy: questions and answers](https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers), Abruf 07.09.2026). Für Fristen und Einzelpflichten, die über diese Beschreibung hinausgehen, ist der geltende Rechtstext zu öffnen; dieser Kurs übernimmt sie nicht aus dem Gedächtnis.
+:::
+
+## Zielbild
+
+Am Ende dieses Kapitels liegen zwei Dinge vor:
+
+- Eine **Aktennotiz KI-Kompetenz und Transparenz** für die Rösterei mit der Tabelle „Wer nutzt was wofür, welche Maßnahme, welcher Nachweis", einer begründeten Transparenzregel und den offenen Punkten mit Zuständigkeit. Beispiel und Vorlage: [Aktennotiz KI-Kompetenz](../material/m05/ki-kompetenz-notiz.md).
+- Die vollständig ausgefüllte **Risiko-Tabelle** aus Portfolio-Teil 3 mit allen fünf Zeilen, jeweils Einschätzung und Zuständigkeit. Sollbeispiel: [Risiko-Tabelle Morgenrot](../material/m05/risikotabelle-morgenrot.md).
+
+Beides ist Risiko-Orientierung, keine Konformitätsgarantie. Der Kurs ersetzt weder Rechtsberatung noch eine Datenschutzfolgenabschätzung noch eine interne Freigabe. Dafür benennt jede Zeile, wer die verbindliche Klärung vornimmt.
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1 — Wer nutzt was wofür? Die Maßnahme folgt der Nutzung
+
+Wir listen die Personen der Rösterei mit ihrer tatsächlichen oder geplanten Nutzung auf und ordnen jeder eine passende Maßnahme zu. Das Ergebnis ist kein Schulungsplan für alle, sondern eine Zuordnung:
+
+| Wer | Nutzt was | Wofür | Maßnahme | Nachweis |
+|---|---|---|---|---|
+| Sina Bergmann, Kundenservice | Chatkonto, später Projekt mit Startpaket | Antwortentwürfe | Dieser Kurs; Datenregel; Prüfroutine mit Testfällen | Kursteilnahme, Aktennotizen, Arbeitsmappe |
+| Ellen Ruppert, Lager und Versand | Chatkonto | Entwürfe für Statusanfragen | Einweisung durch Sina, 30 Minuten; Datenregel | Kurze Notiz mit Datum |
+| Jonas Halder, Marketing | Chatkonto | Textentwürfe aus freigegebenem Material | Rechte-Check | Rechte-Check je Beitrag |
+| Aylin Yılmaz, Geschäftsführung | keine eigene Nutzung | Entscheidung, Rückblick | Diese Notiz | Diese Notiz |
+| Petra Lindqvist, Verwaltung | keine Nutzung | Vertragslage | Kenntnis der Datenregel | Vermerk |
+
+Damit ist Aylins erste Frage beantwortet: Nicht alle werden geschult, sondern jede Person bekommt die Maßnahme, die zu ihrer Nutzung passt, und der Nachweis ist eine Notiz, kein Zertifikat.
+
+::: {.callout-tip title="Die Unterweisung an der Maschine"}
+In einer Werkstatt wird nicht die ganze Belegschaft an jeder Maschine unterwiesen, sondern wer an der Maschine arbeitet, und zwar an genau dieser Maschine und für genau diese Arbeit. Die Unterweisung wird mit Datum festgehalten. Genau so behandeln wir die KI-Kompetenz: bezogen auf Werkzeug, Aufgabe und Person, mit einem einfachen Nachweis.
+:::
+
+### Schritt 2 — Transparenz: begründet statt pauschal
+
+Aylins zweite Frage beantworten wir mit einer Regel, die begründet, wann kenntlich gemacht wird und wann nicht:
+
+- **Keine pauschale Kennzeichnung jeder Mail.** Eine Mitarbeiterin prüft jeden Entwurf Aussage für Aussage und versendet ihn selbst. Der Hinweis „mit KI erstellt" würde der Empfängerseite nichts darüber sagen, ob der Inhalt geprüft ist; die Prüfung ist das, was zählt.
+- **Kenntlich machen, wo es für die Empfängerseite eine Rolle spielt oder eine Vorschrift es verlangt:** wenn Kundinnen und Kunden direkt mit einem automatischen System sprechen, wenn Inhalte ohne Prüfung veröffentlicht werden, wenn jemand ausdrücklich fragt.
+- **Offen halten, was Rechtsfrage ist.** Der AI Act enthält in Artikel 50 Transparenzpflichten für bestimmte Konstellationen. Ob und wie sie einen konkreten Fall der Rösterei betreffen, etwa Website-Texte oder Bilder, klärt die Rechtsberatung. Das steht als offener Punkt in der Notiz.
+
+Diese Regel ist eine Designentscheidung für den Lehrfall. Was im eigenen Betrieb gilt, kann strenger sein, etwa durch eine Betriebsvereinbarung oder eine Kundenzusage. Dann gilt das Strengere.
+
+### Schritt 3 — Verantwortung benennen
+
+Die dritte Frage ist die kürzeste: Für den Inhalt einer verschickten Mail ist die Rösterei verantwortlich, unabhängig davon, wer oder was den Entwurf geschrieben hat. Innerhalb der Rösterei trägt die Person, die versendet, die Prüfverantwortung, und die Geschäftsführung trägt die Entscheidung, das Verfahren zuzulassen. Ein Chatmodell kann keine Verantwortung tragen; deshalb enden alle Übungen dieses Kurses beim geprüften Entwurf.
+
+### Schritt 4 — Die Risiko-Tabelle vollständig füllen
+
+Jetzt haben wir alles für die fünf Zeilen der Risiko-Tabelle in Portfolio-Teil 3. Die Zeilen eins bis drei stammen aus 5.1 und 5.2, die Zeilen vier und fünf aus diesem Kapitel:
+
+| Feld | Einschätzung (Kurzfassung) | Wer klärt das verbindlich? |
+|---|---|---|
+| Personenbezogene Daten im Prozess | Nur die bereinigte Kundenfrage; besonders geschützte Angaben entfernt; Systeme außerhalb | Aylin Yılmaz; datenschutzrechtliche Einordnung: nicht benannt, externe Beratung |
+| Genutztes Konto / Vertragslage | Kostenloses Einzelkonto ohne Vereinbarung; Einstellungen zu prüfen; geschäftliche Lizenz vor Ausweitung | Petra Lindqvist, Aylin Yılmaz |
+| Rechte an Eingaben und Ergebnissen | Nur eigenes und lizenziertes Material; Stockfotos nicht in Generatoren; Ergebnisse auf fremde Anteile geprüft | Jonas Halder, Aylin Yılmaz; Rechtsberatung offen |
+| Transparenz gegenüber Empfängern | Geprüft und selbst versendet; keine pauschale Kennzeichnung; kenntlich wo relevant oder vorgeschrieben | Aylin Yılmaz; Artikel 50: Rechtsberatung offen |
+| Verbleibende Risiken | Unbelegte Angaben trotz Grenzen; veraltetes Material; Umgehung der Regel; Umgang über Prüfroutine, Materialpflege, Rückblick | Sina Bergmann, Aylin Yılmaz |
+
+Die vollständige Fassung mit ausformulierten Einschätzungen steht im [Sollbeispiel](../material/m05/risikotabelle-morgenrot.md). Drei Merkmale einer brauchbaren Tabelle: Jede Zeile hat eine konkrete Einschätzung statt „gering" oder „hoch". Jede Zeile hat eine Zuständigkeit, und wo keine benannt ist, steht das ausdrücklich da. Und die letzte Zeile nennt einen Umgang mit dem, was bleibt, statt zu behaupten, es bleibe nichts.
+
+### Schritt 5 — Die Tabelle mit Klärungsfragen belasten
+
+Bevor die Tabelle ins Portfolio geht, lassen wir uns Fragen stellen, keine Antworten geben. Der Auftrag verlangt zu jeder Zeile zwei Fragen an die zuständige Stelle und markiert Zeilen ohne benannte Stelle. Er steht als [Textdatei](../material/m05/prompt-klaerungsfragen.txt) bereit; unten die Kurzfassung mit den Grenzen, auf die es ankommt.
+
+```text
+Du unterstützt die Geschäftsführung der Rösterei Morgenrot bei der Vorbereitung einer Klärung. Du gibst keine Rechtsauskunft.
+
+AUFGABE
+Lies die unten stehende Risiko-Tabelle. Formuliere zu jeder Zeile genau zwei Fragen, die die Rösterei der jeweils zuständigen Stelle stellen sollte, damit die Zeile verbindlich geklärt werden kann. Markiere außerdem jede Zeile, in der die zuständige Stelle als "nicht benannt" oder "offen" geführt wird.
+
+MATERIAL
+Risiko-Tabelle:
+[die fünf Zeilen aus Schritt 4 mit Einschätzung und Zuständigkeit]
+
+FORMAT
+Tabelle mit drei Spalten: Zeile, Frage 1, Frage 2. Darunter eine Liste "Ohne benannte Stelle" mit den Zeilennummern.
+
+GRENZEN
+- Formuliere ausschließlich Fragen. Beantworte sie nicht.
+- Triff keine Aussage darüber, was rechtlich zulässig oder vorgeschrieben ist.
+- Erfinde keine Gesetzesartikel, Fristen oder Behördennamen.
+```
+
+Beim Lesen des Ergebnisses achten wir auf eine Stelle zuerst: Enthält die Ausgabe trotz der Grenzen eine Rechtsaussage, etwa „laut DSGVO ist erforderlich"? Dann streichen wir sie. Gute Fragen dagegen nehmen wir mit in den Termin mit der zuständigen Stelle. Das ist der Nutzen dieses Schritts: Das Modell hilft uns, die Klärung vorzubereiten, nicht, sie zu ersetzen.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Konstruiert, kein aufgezeichneter Modelloutput. Auszug für die Zeilen 1 und 4:
+
+> | Zeile | Frage 1 | Frage 2 |
+> |---|---|---|
+> | 1 | Welche Rechtsgrundlage soll für die Verarbeitung der bereinigten Kundenfrage im Chatkonto gelten? | Wer entscheidet, ob eine Verarbeitung im Auftrag vorliegt und ob dafür eine Vereinbarung mit dem Anbieter nötig ist? |
+> | 4 | Für welche Kanäle der Rösterei gelten Transparenzpflichten nach Artikel 50, und für welche nicht? | Soll ein allgemeiner Hinweis in der Signatur eingeführt werden, und wer entscheidet das? |
+>
+> Ohne benannte Stelle: 1 (datenschutzrechtliche Einordnung), 3 (rechtliche Einordnung), 4 (Artikel 50)
+
+Die Fragen sind brauchbar, weil sie Zuständigkeit und Entscheidung einfordern, ohne selbst zu entscheiden. Die Liste am Ende ist die Aufgabenliste für Aylin.
+
+### Eine eigene Variante bauen
+
+1. Wir füllen die Tabelle „Wer nutzt was wofür" für den eigenen Bereich, mit Rollen statt Namen.
+2. Wir schreiben unsere Transparenzregel mit Begründung: wo kenntlich, wo nicht, warum. Wenn im Betrieb eine strengere Regel gilt, übernehmen wir diese.
+3. Wir füllen alle fünf Zeilen der Risiko-Tabelle für den eigenen Fall. Wo keine Zuständigkeit benannt ist, schreiben wir „nicht benannt" und den nächsten Schritt.
+4. Wir lassen uns zu jeder Zeile zwei Klärungsfragen stellen, streichen jede Rechtsaussage im Ergebnis und behalten die Fragen.
+5. Wir übernehmen Tabelle und Fragenliste in **Portfolio-Teil 3**. Der Abschnitt „Risiko-Orientierung" ist damit vollständig; Freitexte werden nicht automatisch fachlich bewertet.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Die Tabelle „Wer nutzt was" enthält alle Personen mit derselben Maßnahme „Schulung" | Auf die tatsächliche Nutzung zurückführen. Wer nicht nutzt, braucht Kenntnis der Regel, keine Schulung. |
+| Die Transparenzregel lautet „immer kennzeichnen" oder „nie kennzeichnen" | Beides ist unbegründet. Die Regel benennt Fälle und Gründe und hält die Rechtsfrage offen. |
+| Die Ausgabe des Klärungsfragen-Auftrags enthält Rechtsaussagen | Streichen. Nur Fragen bleiben. Bei Wiederholung die Grenze im Auftrag schärfer formulieren; die Prüfung bleibt trotzdem nötig. |
+| In der Risiko-Tabelle steht bei jeder Zeile „gering" | Keine Einschätzung. Jede Zeile beschreibt konkret, welche Daten, welches Material, welcher Kanal betroffen sind und wie damit umgegangen wird. |
+| In der Spalte „Wer klärt" steht überall dieselbe Führungskraft | Prüfen, ob sie das tatsächlich klären kann. Datenschutz, Lizenz und Vertragslage liegen oft bei verschiedenen Stellen; fehlt eine, steht „nicht benannt". |
+| Die Zeile „Verbleibende Risiken" ist leer oder lautet „keine" | Mindestens drei bleiben immer: unbelegte Angaben trotz Grenzen, veraltetes Material, Umgehung der Regel. Umgang benennen. |
+
+## Kontrollpunkt für Modul 5
+
+- Die Anforderung zur KI-Kompetenz aus Artikel 4 als kontextbezogene Maßnahmenpflicht einordnen, ohne ein Zertifikat oder festes Niveau zu unterstellen
+- Maßnahmen und Nachweise je Person aus der tatsächlichen Nutzung ableiten
+- Eine begründete Transparenzregel formulieren, die weder pauschal kennzeichnet noch Rechtsfragen überspielt
+- Alle fünf Zeilen der Risiko-Tabelle mit konkreter Einschätzung und Zuständigkeit füllen, fehlende Zuständigkeiten sichtbar machen
+- Ein Chatmodell zur Vorbereitung einer Klärung nutzen und Rechtsaussagen im Ergebnis erkennen und streichen

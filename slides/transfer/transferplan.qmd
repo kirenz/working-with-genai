@@ -1,0 +1,170 @@
+---
+title: "Transferplan und Kurzpräsentation"
+subtitle: "Modul 6 · Lektion 6.3"
+book-source: "../../transfer/transferplan.qmd"
+---
+
+## Der Kurs endet am 8. Oktober, der Fall nicht {.stage}
+
+[Modul 6 · In den Alltag bringen]{.kicker}
+
+Zwei Ergebnisse: eine **30-Tage-Transferkarte** und ein **Regieplan** für die fünf Minuten im Recap-Termin.
+
+::: {.notes}
+Letzte Lektion des Kurses. Beide Ergebnisse gehören in Portfolio-Teil 4 und sind bis zur Abgabe am 08.10. fällig; die Kurzpräsentation wird im Recap-Termin gehalten. Zeit: 1 Minute.
+:::
+
+## Aylin will eine Entscheidung, keinen Eindruck
+
+::: {.two-col}
+::: {.card}
+![](../../images/morgenrot-team/aylin-yilmaz.png){width="140"}
+
+**Aylin Yılmaz**, Geschäftsführung
+:::
+::: {.card}
+Eine Frage: Was passiert in den nächsten 30 Tagen mit den Entwürfen, und woran ist am Ende erkennbar, ob es sich gelohnt hat?
+
+Kein „läuft gut“, sondern eine Tabelle, die am **11. November** auf dem Tisch liegt.
+:::
+:::
+
+::: {.notes}
+Der Anlass ist eine Entscheidungslage. Frage an den Raum, bevor die Karte gebaut wird: Was ist das Risiko eines Transferplans, der mit „spart Zeit“ beginnt? Erwartete Antwort: Niemand hat die bisherige Zeit gemessen, und die Prüfung jeder Aussage kommt als Aufwand hinzu. Ein Versprechen ohne Vergleichswert wird nach vier Wochen weder bestätigt noch widerlegt; der Plan versandet. Zeit: 3 Minuten.
+:::
+
+## Der erste Satz: Hypothese, kein Versprechen
+
+> Die Entwürfe sind gleichmäßiger in Aufbau und Ton, und offene Punkte stehen sichtbar unter „Offen“, statt in der Antwort zu fehlen. Ob der Vorgang insgesamt schneller wird, ist offen: Die Prüfung jeder Aussage bleibt, und die Nacharbeit wird **gemessen, nicht angenommen**.
+
+Der Satz nennt, was besser werden soll, **und** was noch nicht bekannt ist. Genau deshalb ist er nach vier Wochen prüfbar.
+
+::: {.notes}
+Gegenprobe im Raum: „spart 50 Prozent“ ließe sich nicht prüfen, weil keine Vergleichszahl existiert. Analogie aus der Qualitätskontrolle: Die erste Kennzahl ist die Zahl der gefundenen Abweichungen, nicht die Zeit pro Prüfung. Eine schnellere Prüfung, die Fehler durchlässt, ist keine bessere. Zeit darf gemessen werden, dann aber einschließlich Nacharbeit. Zeit: 3 Minuten.
+:::
+
+## 30 Tage in Wochenschritten
+
+| Woche | Schritt | Bis wann | Sichtbares Ergebnis |
+|---|---|---|---|
+| 1 | Datenregel und Konto klären | 16.10. | bestätigte Aktennotiz, Vermerk zu Einstellungen |
+| 1 | Startpaket einrichten, Material mit Datum | 16.10. | Projekt mit Anweisungen und zwei Dateien |
+| 2 | Zehn echte Anfragen parallel bearbeiten | 23.10. | Tabelle mit zehn Zeilen |
+| 3 | Testfälle wiederholen, Kollegin einweisen | 30.10. | Testfalltabelle, Einweisungsnotiz |
+| 4 | Rückblick vorbereiten und halten | 11.11. | Entscheidung mit Begründung |
+
+::: {.notes}
+Zwei Merkmale hervorheben. Erstens: Jede Zeile hat ein sichtbares Ergebnis, das am Datum existiert oder nicht; „Erfahrungen sammeln“ ist keins. Zweitens: Die Klärungen aus Modul 5 stehen in Woche 1, vor den echten Anfragen in Woche 2. Die Reihenfolge ist Teil des Plans, nicht Formalie: Wenn die Vertragslage anders ausfällt als angenommen, ist sonst bereits verarbeitet worden. Rollen im Lehrfall: Leitung und Verwaltung in Woche 1, Kundenservice ab Woche 1, Lager und Versand ab Woche 3. Zeit: 3 Minuten.
+:::
+
+## Erfolgsmaße: nach vier Wochen ablesbar?
+
+| Vorschlag | Ablesbar |
+|---|---|
+| Anteil der Entwürfe ohne inhaltliche Korrektur | ja, aus der eigenen Tabelle |
+| Nacharbeit je Entwurf in Minuten, mit Prüfung | ja — wenn in Woche 1 drei Vergleichsfälle gestoppt werden |
+| Zahl der entfernten **unbelegten Angaben** | ja, und das wichtigste Maß |
+| Kundenzufriedenheit | nein, braucht eine eigene Erhebung |
+| „Das Team hat ein gutes Gefühl“ | kein Maß |
+
+::: {.notes}
+Die dritte Zeile begründen: Sie zeigt, ob die Prüfung ihren Zweck erfüllt. Eine gefundene unbelegte Angabe ist ein Erfolg der Prüfung und ein Hinweis auf das Startpaket zugleich — genau diese Festlegung gehört in die Karte, sonst wird sie später als Fehlerquote missverstanden. Regel für den eigenen Plan: zwei bis drei Maße, davon mindestens eines zu Qualität oder gefundenen Fehlern. Zeit: 3 Minuten.
+:::
+
+## Beteiligte, Risiken, Rückblick
+
+::: {.two-col}
+::: {.card}
+**Beteiligte**
+
+Zustimmen: Leitung. Informieren: Verwaltung (Vertragslage), Marketing (eigener Rechte-Check). Mitnutzen: Lager und Versand ab Woche 3.
+:::
+::: {.card}
+**Risiken mit Ausweichweg**
+
+Vertragslage nicht rechtzeitig geklärt → bereinigte Fragen ohne weitere Daten. Woche 2 fällt aus → alles verschiebt sich, der Rückblick wird **neu terminiert, nicht gestrichen**.
+:::
+:::
+
+**Rückblick:** 11.11., 30 Minuten, mit Tabelle und Automatisierungsentscheidung. Drei Ausgänge: fortführen, anpassen, beenden — alle drei sind Erfolge, wenn sie begründet sind.
+
+::: {.notes}
+Das dritte Risiko ausdrücklich nennen, weil es das wahrscheinlichste ist: Entwürfe werden ungeprüft übernommen, weil sie gut klingen. Dagegen hilft nur die Tabelle, in die jede Prüfung eingetragen wird. Und beim Rückblick betonen: Ein Termin ohne Datum findet nicht statt; „irgendwann im November“ ist kein Termin. Zeit: 3 Minuten.
+:::
+
+## Mitmachen: die Karte mit Rückfragen belasten
+
+```text
+Du bist eine kritische Zuhörerin. Du bewertest nicht und gibst keine
+Rechts- oder Fachauskunft. Du stellst Fragen.
+
+AUFGABE   Drei Rückfragen, wie eine erfahrene Kollegin sie nach einer
+          fünfminütigen Präsentation dieser Karte stellen würde. Dazu je
+          Erfolgsmaß: nach vier Wochen ablesbar (ja/nein), was fehlt?
+GRENZEN   Nur Fragen. Keine Empfehlungen, keine Bewertung, keine
+          Aussagen zur rechtlichen Zulässigkeit, keine erfundenen Zahlen.
+```
+
+::: {.sources}
+Vollständiger Auftrag: material/m06/prompt-kritischer-zuhoerer.txt · Buchkapitel 6.3, Schritt 4
+:::
+
+::: {.notes}
+Arbeitsphase, 10 Minuten: eigene Karte in Kurzform einsetzen, Auftrag ausführen. Beim Lesen zuerst auf Grenzverletzungen achten: Empfehlungen, Bewertungen und Zahlen, die nicht geliefert wurden, werden gestrichen. Die Fragen bleiben. Die beste wird in der Karte beantwortet, die übrigen wandern als vorbereitete Rückfragen in die Präsentation. Rollen statt Namen einsetzen, keine echten Kundendaten. Zeit: 10 Minuten Arbeitsphase.
+:::
+
+## Die wertvollste Rückfrage
+
+::: {.small}
+> 1. Woher kommt die Vergleichszeit für die drei gestoppten Anfragen, und sind drei für die zehn in Woche 2 aussagekräftig?
+> 2. Wer trägt die Tabelle in Woche 2 ein, wenn die zuständige Person in Vertretung ist?
+> 3. Was passiert mit einer Anfrage, bei der die Prüfung eine unbelegte Angabe findet: Wird sie als Fehler des Entwurfs oder als Erfolg der Prüfung gezählt?
+
+Konstruiert, kein aufgezeichneter Modelloutput.
+:::
+
+Frage 3 zwingt zu einer Festlegung, die in die Karte gehört: **beides zugleich.**
+
+::: {.notes}
+Die drei Merkmale brauchbarer Fragen benennen: Sie fordern eine Entscheidung ein, statt selbst zu entscheiden; sie greifen dort an, wo der Plan wirklich dünn ist, meist bei Vertretung, Vergleichswerten und Definitionen; sie enthalten keine Zahlen, die nicht im Material standen. Wer im eigenen Ergebnis Empfehlungen findet: Befund notieren, streichen, weiterarbeiten. Auch eine ausdrückliche Grenze ist eine Anweisung, keine Garantie. Zeit: 3 Minuten.
+:::
+
+## Fünf Minuten, vier Teile
+
+| Zeit | Teil | Was gezeigt wird |
+|---|---|---|
+| 0:00–0:50 | Use-Case-Canvas | Problem, Zielgruppe, Nutzenhypothese |
+| 0:50–2:00 | Prompt- und Context-Pipeline | Auftrag, Startpaket, Materialherkunft |
+| 2:00–3:15 | Qualität und Compliance | ein Testfall mit Lücke; eine Risiko-Zeile mit Zuständigkeit |
+| 3:15–4:15 | Transferplan | erster Schritt, Erfolgsmaß, Rückblicktermin |
+| 4:15–4:45 | Schluss | eine Bitte an die Gruppe |
+
+Ein Fall, nicht drei. **Zeigen statt beschreiben.** Offenes bleibt offen.
+
+::: {.sources}
+material/m06/praesentations-regie.md
+:::
+
+::: {.notes}
+Probelauf mit Timer, laut gesprochen, mit der Mappe auf dem Bildschirm. Liegt ein Teil über Plan, wird gekürzt, nicht schneller gesprochen; meist ist es Teil 2, weil der Prompt vorgelesen statt gezeigt wird. Zwei weitere Regeln: kein Sparversprechen ohne Messung, und wer ein konstruiertes Kursbeispiel statt eines eigenen Durchlaufs zeigt, sagt das. Ein gestaltetes Foliendeck ist nicht nötig, die Arbeitsmappe genügt. Im Recap gibt nach jeder Präsentation eine andere Person eine Rückfrage oder einen Hinweis. Zeit: 3 Minuten.
+:::
+
+## Was danach freiwillig bleibt
+
+- Der Praxispfad mit Codex oder Claude Code
+- Eine Vertiefung des n8n-Workflows
+
+Beides gehört in die eigene Erprobungszeit, addiert **keine Stunden** zum Kurs und ist **keine Voraussetzung** für die Prüfungsleistung.
+
+Wer es geht, kann es als Schritt in die Transferkarte schreiben. Wer nicht, verliert nichts.
+
+::: {.notes}
+Zum Abschluss den Bogen schließen: Der Kurs hat vom ersten Chat-Erfolg über den Arbeitsauftrag, das Kontextmaterial, die Prüfung und die Risiko-Orientierung bis zum Transferplan geführt. Was bleibt, ist die Arbeitsweise: Material mitgeben, Grenzen setzen, Ergebnis gegen das Material lesen, Offenes offen lassen, selbst versenden. Letzter Hinweis auf die Abgabe am 08.10. und die Kurzpräsentation im Recap-Termin. Zeit: 2 Minuten.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 6.3, Working with GenAI: transfer/transferplan
+- Material: material/m06/transferkarte-30-tage.md, praesentations-regie.md, prompt-kritischer-zuhoerer.txt, automatisierungs-entscheidung.md
+- Termine: Recap und Abgabe 08.10.2026; Beispieldaten der Transferkarte (12.10. bis 11.11.) sind konstruiert
+- Beispielausgaben sind konstruiert, keine aufgezeichneten Modelloutputs

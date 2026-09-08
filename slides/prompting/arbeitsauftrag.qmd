@@ -1,0 +1,143 @@
+---
+title: "Vom Zuruf zum Arbeitsauftrag"
+subtitle: "Modul 2 · Lektion 2.1"
+book-source: ../../prompting/arbeitsauftrag.qmd
+---
+
+## Ein Zuruf reicht für einen Text, nicht für ein Ergebnis {.stage}
+
+[Modul 2 · Strukturierte Arbeitsaufträge]{.kicker}
+
+„Beantworte mal diese Kundenanfrage." Daraus wird etwas. Aber lässt es sich vertreten?
+
+::: {.notes}
+Erste Praxiseinheit aus Modul 2, im Kickoff nach Modul 1. Leitfrage des Kurses in Erinnerung rufen: vom Text, der gut klingt, zum Ergebnis, das sich vertreten lässt. Diese Lektion liefert die Bauweise dafür. Zeit: 1 Minute.
+:::
+
+## Die Anfrage im Postfach
+
+::: {.two-col}
+::: {.card}
+![](../../images/morgenrot-team/sina-bergmann.png){width="140"}
+
+**Sina Bergmann**, Vertrieb und Kundenservice
+:::
+::: {.card}
+> Ich beziehe den Espresso Intenso im Abo. Drei Fragen: Kann ich im Abo auf Filterkaffee Mild wechseln? Was kostet Filterkaffee Mild regulär im Shop? Und kommt die nächste Lieferung bis Freitag an?
+
+M. Berger (erfunden)
+:::
+:::
+
+::: {.sources}
+material/kundenanfrage.txt · material/lehrfall-fachinformationen.txt
+:::
+
+::: {.notes}
+Die Mail vorlesen. Daneben liegt der Auszug aus den Fachinformationen: Listenpreise, Hinweis, dass keine Abo-Preise vorliegen, Wechselregel (fünf Werktage vor Versand), Zuständigkeit Lager und Versand. Kein Versanddatum. Die Wechselregel ist für den Kurs erfunden, das ausdrücklich sagen. Zeit: 1 Minute.
+:::
+
+## Drei Fragen, drei Lagen
+
+| Frage | Lage |
+|---|---|
+| Preis Filterkaffee Mild | **gedeckt:** 9,00 EUR regulärer Shop-Preis |
+| Sortenwechsel im Abo | **bedingt:** Regel steht da, das Versanddatum nicht |
+| Lieferung bis Freitag | **offen:** kein Versanddatum, kein Sendungsstatus |
+
+Alle drei müssen im Entwurf sichtbar unterschiedlich behandelt werden.
+
+::: {.notes}
+Die Staffelung ist der eigentliche Gegenstand der Lektion. Frage ins Plenum vor dem Werkzeugeinsatz: Was passiert vermutlich, wenn das Modell nur die Mail und den Satz „Bitte beantworte diese Kundenanfrage" bekommt? Erwartete Antworten: erfundener Liefertag, Abo-Preis, unbedingter Wechsel. Als Risiko formulieren, nicht als Gewissheit. Zeit: 2 Minuten.
+:::
+
+## Vier Bausteine, ein Prompt
+
+| Baustein | Frage | Im Lehrfall |
+|---|---|---|
+| **Aufgabe** | Was soll entstehen? | Antwort-Mail auf die Anfrage entwerfen |
+| **Material** | Woraus wird geantwortet? | Fachinformationen und Wortlaut der Mail |
+| **Format** | Wie sieht das Ergebnis aus? | Mail, höchstens 150 Wörter, Absenderzeile, Liste „Offen" |
+| **Grenzen** | Was passiert bei einer Lücke? | Nicht ergänzen, unter „Offen" auflisten |
+
+::: {.notes}
+Die Vierteilung als Designentscheidung des Kurses kennzeichnen: eine Merkhilfe, kein Standard. Belegt ist der schmalere Kern: OpenAI empfiehlt klar, spezifisch, mit Kontext, iterativ; Anthropic setzt Erfolgskriterien vor die Optimierung. Analogie: die Übergabe an eine Urlaubsvertretung, die fachlich fit ist, das Haus aber nicht kennt. Zeit: 2 Minuten.
+:::
+
+## Vormachen: der Auftrag geht als eine Nachricht
+
+```text
+Du unterstützt den Kundenservice der Rösterei Morgenrot.
+
+AUFGABE   Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
+MATERIAL  Fachinformationen (nur diese Angaben sind gültig) + Kundenanfrage im Wortlaut
+FORMAT    Antwort-Mail, höchstens 150 Wörter, Anrede "Guten Tag", sachlich,
+          Absenderzeile Sina Bergmann, am Ende eine Liste "Offen"
+GRENZEN   Nur Angaben aus dem Material. Ungedecktes unter "Offen".
+          Keine Termine, Preise oder Fristen erfinden.
+```
+
+::: {.sources}
+Vollständiger Auftrag: Buchkapitel 2.1, Schritt 5, oder material/prompt-vorlage.txt
+:::
+
+::: {.notes}
+Live-Demo: neuen Chat, vollständigen Auftrag aus dem Buch einfügen, abschicken. Beim Lesen des Ergebnisses zuerst auf eine Stelle zeigen: Steht der Liefertermin unter „Offen" oder im Fließtext? Danach: Hängt die Fünf-Werktage-Bedingung an der Wechselzusage? Stehen die 9,00 EUR als Shop-Preis, nicht als Abo-Preis? Zeit: 3 Minuten.
+:::
+
+## Mitmachen: abschicken und gegen das Material lesen
+
+1. Neuer Chat, Auftrag einfügen, abschicken
+2. Vier Prüfpunkte:
+   - Wechsel mit Bedingung (fünf Werktage vor Versand)?
+   - 9,00 EUR als Shop-Preis, nicht als Abo-Preis?
+   - Lieferung bis Freitag unter „Offen"?
+   - Zusätzliche Aussagen (Packungsgröße, Versandkosten) belegt?
+
+Ein Liefertermin trotz Grenzen ist ein **Befund**, keine Panne.
+
+::: {.notes}
+Arbeitsphase, 6 Minuten. Alle führen den Auftrag aus und prüfen mit den vier Punkten. Herumgehen, nach Befunden fragen. Wer einen Liefertermin im Text hat, meldet sich: Das ist der wichtigste Lernmoment, weil er zeigt, dass eine Grenze eine Anweisung ist und keine Garantie. Zeit: 6 Minuten.
+:::
+
+## Ein konstruiertes Ergebnis zum Abgleich
+
+::: {.small}
+> Guten Tag, vielen Dank für Ihre Nachricht. Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung, wenn Ihre Anfrage spätestens fünf Werktage vor deren Versand eingeht; ob das für die kommende Lieferung zutrifft, lässt sich hier nicht beurteilen, weil uns das Versanddatum nicht vorliegt. Filterkaffee Mild kostet im Onlineshop regulär 9,00 EUR. Freundliche Grüße, Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot
+>
+> **Offen:** Versanddatum der nächsten Lieferung. Ob die Lieferung bis Freitag ankommt. Preis von Filterkaffee Mild innerhalb des Abos.
+
+Konstruiert, kein aufgezeichneter Modelloutput.
+:::
+
+::: {.notes}
+Drei Merkmale zeigen: belegbar (jede Aussage hat eine Zeile im Material), Bedingung und Lücke benannt, kein Versand (Entwurf; Versanddatum klärt Lager und Versand, im Fall Ellen Ruppert). Die Kursübung endet beim geprüften Entwurf. Zeit: 2 Minuten.
+:::
+
+## Wenn etwas anders läuft
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Ein konkreter Liefertag erscheint | Als unbelegt markieren, entfernen, Frage offenhalten |
+| Wechsel ohne Bedingung zugesagt | Fünf-Werktage-Bedingung ergänzen lassen |
+| 9,00 EUR als Abo-Preis | Auf Shop-Listenpreis zurückführen; Abo-Preis unter „Offen" |
+| „Versand bereits angepasst" | Entfernen; keine erfolgte Handlung behaupten |
+| Das Modell fragt nach dem Versanddatum | Für die Übung: offene Angaben auflisten lassen, Belegbares beantworten |
+
+::: {.notes}
+Nur die Zeilen besprechen, die im Raum aufgetreten sind. Vollständige Tabelle im Buchkapitel. Zeit: 1 Minute.
+:::
+
+## Eigene Variante und Portfolio
+
+**Eigene Variante:** ein wiederkehrender Anlass, eine vollständig erfundene Anfrage, eine Angabe bewusst weggelassen, eine an eine Bedingung geknüpft. Drei Durchläufe: Auftrag, unveränderte Wiederholung, eine Änderung.
+
+**Portfolio-Teil 2:** Auftragskarte (Fall, Aufgabe, Materialherkunft, Format, Grenzen, Prüfung vor dem Versand), Prompts im Wortlaut, Ergebnisnotizen.
+
+::: {.sources}
+material/portfolio-vorlage.md · Interaktive Auftragskarte in der Plattform-Unit 2.1
+:::
+
+::: {.notes}
+Eigene Variante als Selbstlernaufgabe bis zum Zwischenstand am 23.09. Betonen: erfundene Angaben, Namen und Nummern tauschen genügt nicht. Unterschiede zwischen Durchläufen sind Beobachtungen, keine Ursachennachweise. Die Auftragskarte ist Teil des einzureichenden Zwischenstands. Zeit: 2 Minuten.
+:::

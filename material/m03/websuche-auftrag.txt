@@ -1,0 +1,53 @@
+WEBSUCHE MIT VORGEGEBENER QUELLE
+Kursmaterial "Working with GenAI", Lektion 3.3
+
+Anlass im Fall: Jonas Halder möchte auf dem Etikett "Röstkaffee" schreiben
+und fragt, ob dieser Begriff irgendwo amtlich bestimmt ist. Weder das
+Produktionshandbuch noch der Sortensteckbrief enthalten dazu etwas. Die
+Antwort liegt außerhalb des eigenen Materials.
+
+Voraussetzung: ein Chatwerkzeug, das Webseiten abrufen kann (in ChatGPT die
+Suchfunktion, sofern im Konto verfügbar). Ohne Abruf: die Seite selbst im
+Browser öffnen und ab Schritt 3 weiterarbeiten.
+
+--------------------------------------------------------------------------
+PROMPT
+--------------------------------------------------------------------------
+Lies ausschließlich diese Seite:
+https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
+
+Zitiere wörtlich, wie dort "Röstkaffee, Kaffee" bestimmt wird. Nenne die
+Nummer des Eintrags. Ergänze keine Angaben aus anderen Quellen oder aus
+deinem Wissen. Wenn eine Angabe auf der Seite nicht zu finden ist, schreibe
+"auf der angegebenen Seite nicht gefunden". Beurteile nicht, ob eine
+Kennzeichnung zulässig ist.
+
+--------------------------------------------------------------------------
+SELBST PRÜFEN
+--------------------------------------------------------------------------
+1. Die Seite im Browser öffnen:
+   https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
+2. Den Eintrag zu "Röstkaffee, Kaffee" suchen und Wort für Wort mit dem
+   Zitat vergleichen.
+3. Prüfwert, Stand 07.09.2026: Eintrag 1 b) lautet
+   "Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen,
+   mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm."
+   Maßgeblich ist, was beim Öffnen tatsächlich auf der Seite steht.
+   Webseiten und Rechtstexte können sich ändern.
+
+Was diese Übung nicht leistet: Ob das Etikett der Rösterei zulässig ist,
+entscheidet keine Websuche. Das bleibt eine verbindliche Klärung durch die
+Geschäftsführung mit externer Beratung (Handbuch, Abschnitt 11).
+
+--------------------------------------------------------------------------
+FREIWILLIG: EINE FRAGE, DIE DIE SEITE NICHT BEANTWORTET
+--------------------------------------------------------------------------
+Im selben Chat:
+
+Steht auf derselben Seite, wie viel Koffein entkoffeinierter Kaffee
+höchstens enthalten darf? Verwende weiterhin nur die angegebene Seite.
+Wenn nicht, schreibe "auf der angegebenen Seite nicht gefunden".
+
+Erwartung: Auf der Anlage-Seite steht dazu nichts (Stand 07.09.2026).
+Eine Antwort mit einer Prozentzahl wäre ein Befund: Sie stammt dann nicht
+von der angegebenen Seite.

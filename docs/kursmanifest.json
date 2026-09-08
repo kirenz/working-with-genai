@@ -1,0 +1,252 @@
+{
+  "course_slug": "working-with-genai",
+  "title": "Working with GenAI",
+  "target": "kurse.kirenz.de",
+  "status": "review-edition-2026-09-08",
+  "simulator_enabled": false,
+  "publication_requires_separate_authorization": true,
+  "existing_lesson_slug": "arbeitsauftrag",
+  "sections": [
+    {
+      "slug": "start",
+      "title": "Ankommen: erster Erfolg und erste Grenzen",
+      "position": 1,
+      "lessons": [
+        {
+          "number": "1.1",
+          "slug": "erster-chat",
+          "title": "Der erste Chat-Erfolg",
+          "position": 1,
+          "layout": "stepper",
+          "book": "start/erster-chat.qmd",
+          "slides": "slides/start/erster-chat.qmd",
+          "unit": "01-01-erster-chat.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/start/erster-chat.html"
+        },
+        {
+          "number": "1.2",
+          "slug": "grenzen-daten",
+          "title": "Grenzen und erste Datenregeln",
+          "position": 2,
+          "layout": "stepper",
+          "book": "start/grenzen-daten.qmd",
+          "slides": "slides/start/grenzen-daten.qmd",
+          "unit": "01-02-grenzen-daten.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/start/grenzen-daten.html"
+        },
+        {
+          "number": "1.3",
+          "slug": "anwendungsfall",
+          "title": "Den eigenen Anwendungsfall wählen",
+          "position": 3,
+          "layout": "stepper",
+          "book": "start/anwendungsfall.qmd",
+          "slides": "slides/start/anwendungsfall.qmd",
+          "unit": "01-03-anwendungsfall.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/start/anwendungsfall.html"
+        }
+      ]
+    },
+    {
+      "slug": "prompting",
+      "title": "Strukturierte Arbeitsaufträge",
+      "position": 2,
+      "lessons": [
+        {
+          "number": "2.1",
+          "slug": "arbeitsauftrag",
+          "title": "Vom Zuruf zum Arbeitsauftrag",
+          "position": 1,
+          "layout": "stepper",
+          "book": "prompting/arbeitsauftrag.qmd",
+          "slides": "slides/prompting/arbeitsauftrag.qmd",
+          "unit": "02-01-arbeitsauftrag.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/prompting/arbeitsauftrag.html"
+        },
+        {
+          "number": "2.2",
+          "slug": "beispiele-format",
+          "title": "Mit Beispielen und Format steuern",
+          "position": 2,
+          "layout": "stepper",
+          "book": "prompting/beispiele-format.qmd",
+          "slides": "slides/prompting/beispiele-format.qmd",
+          "unit": "02-02-beispiele-format.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/prompting/beispiele-format.html"
+        },
+        {
+          "number": "2.3",
+          "slug": "iterieren",
+          "title": "Iterieren: eine Änderung pro Durchlauf",
+          "position": 3,
+          "layout": "stepper",
+          "book": "prompting/iterieren.qmd",
+          "slides": "slides/prompting/iterieren.qmd",
+          "unit": "02-03-iterieren.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/prompting/iterieren.html"
+        }
+      ]
+    },
+    {
+      "slug": "kontext",
+      "title": "Kontext bereitstellen",
+      "position": 3,
+      "lessons": [
+        {
+          "number": "3.1",
+          "slug": "material-auswaehlen",
+          "title": "Welche Materialien wirklich relevant sind",
+          "position": 1,
+          "layout": "stepper",
+          "book": "kontext/material-auswaehlen.qmd",
+          "slides": "slides/kontext/material-auswaehlen.qmd",
+          "unit": "03-01-material-auswaehlen.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/kontext/material-auswaehlen.html"
+        },
+        {
+          "number": "3.2",
+          "slug": "regeln-quellen",
+          "title": "Regeln und Quellen dauerhaft hinterlegen",
+          "position": 2,
+          "layout": "stepper",
+          "book": "kontext/regeln-quellen.qmd",
+          "slides": "slides/kontext/regeln-quellen.qmd",
+          "unit": "03-02-regeln-quellen.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/kontext/regeln-quellen.html"
+        },
+        {
+          "number": "3.3",
+          "slug": "material-finden",
+          "title": "Wenn das Material zu groß wird",
+          "position": 3,
+          "layout": "stepper",
+          "book": "kontext/material-finden.qmd",
+          "slides": "slides/kontext/material-finden.qmd",
+          "unit": "03-03-material-finden.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/kontext/material-finden.html"
+        }
+      ]
+    },
+    {
+      "slug": "qualitaet",
+      "title": "Qualität prüfen",
+      "position": 4,
+      "lessons": [
+        {
+          "number": "4.1",
+          "slug": "aussagen-pruefen",
+          "title": "Aussagen gegen Quellen prüfen",
+          "position": 1,
+          "layout": "stepper",
+          "book": "qualitaet/aussagen-pruefen.qmd",
+          "slides": "slides/qualitaet/aussagen-pruefen.qmd",
+          "unit": "04-01-aussagen-pruefen.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/qualitaet/aussagen-pruefen.html"
+        },
+        {
+          "number": "4.2",
+          "slug": "testfaelle",
+          "title": "Testfälle für den eigenen Fall",
+          "position": 2,
+          "layout": "stepper",
+          "book": "qualitaet/testfaelle.qmd",
+          "slides": "slides/qualitaet/testfaelle.qmd",
+          "unit": "04-02-testfaelle.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/qualitaet/testfaelle.html"
+        },
+        {
+          "number": "4.3",
+          "slug": "toolvergleich",
+          "title": "Übertragbarkeit: ChatGPT, Claude und Gemini",
+          "position": 3,
+          "layout": "stepper",
+          "book": "qualitaet/toolvergleich.qmd",
+          "slides": "slides/qualitaet/toolvergleich.qmd",
+          "unit": "04-03-toolvergleich.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/qualitaet/toolvergleich.html"
+        }
+      ]
+    },
+    {
+      "slug": "verantwortung",
+      "title": "Verantwortung und Risiko-Orientierung",
+      "position": 5,
+      "lessons": [
+        {
+          "number": "5.1",
+          "slug": "datenschutz",
+          "title": "Datenschutz im Arbeitsalltag",
+          "position": 1,
+          "layout": "stepper",
+          "book": "verantwortung/datenschutz.qmd",
+          "slides": "slides/verantwortung/datenschutz.qmd",
+          "unit": "05-01-datenschutz.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/datenschutz.html"
+        },
+        {
+          "number": "5.2",
+          "slug": "urheberrecht",
+          "title": "Urheberrecht und geistiges Eigentum",
+          "position": 2,
+          "layout": "stepper",
+          "book": "verantwortung/urheberrecht.qmd",
+          "slides": "slides/verantwortung/urheberrecht.qmd",
+          "unit": "05-02-urheberrecht.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/urheberrecht.html"
+        },
+        {
+          "number": "5.3",
+          "slug": "ki-kompetenz",
+          "title": "KI-Kompetenz und der eigene Risiko-Überblick",
+          "position": 3,
+          "layout": "stepper",
+          "book": "verantwortung/ki-kompetenz.qmd",
+          "slides": "slides/verantwortung/ki-kompetenz.qmd",
+          "unit": "05-03-ki-kompetenz.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/ki-kompetenz.html"
+        }
+      ]
+    },
+    {
+      "slug": "transfer",
+      "title": "In den Alltag bringen",
+      "position": 6,
+      "lessons": [
+        {
+          "number": "6.1",
+          "slug": "wiederverwenden",
+          "title": "Projects und gespeicherte Anweisungen",
+          "position": 1,
+          "layout": "stepper",
+          "book": "transfer/wiederverwenden.qmd",
+          "slides": "slides/transfer/wiederverwenden.qmd",
+          "unit": "06-01-wiederverwenden.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/transfer/wiederverwenden.html"
+        },
+        {
+          "number": "6.2",
+          "slug": "miniworkflow",
+          "title": "Ein Miniworkflow, selbst gebaut",
+          "position": 2,
+          "layout": "stepper",
+          "book": "transfer/miniworkflow.qmd",
+          "slides": "slides/transfer/miniworkflow.qmd",
+          "unit": "06-02-miniworkflow.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/transfer/miniworkflow.html"
+        },
+        {
+          "number": "6.3",
+          "slug": "transferplan",
+          "title": "Transferplan und Kurzpräsentation",
+          "position": 3,
+          "layout": "stepper",
+          "book": "transfer/transferplan.qmd",
+          "slides": "slides/transfer/transferplan.qmd",
+          "unit": "06-03-transferplan.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/transfer/transferplan.html"
+        }
+      ]
+    }
+  ],
+  "release_authorized_on": "2026-09-08"
+}

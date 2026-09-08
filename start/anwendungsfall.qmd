@@ -1,0 +1,138 @@
+# Den eigenen Anwendungsfall wählen
+
+Zwei Lektionen lang haben wir am Fall der Rösterei gearbeitet. Ab jetzt läuft parallel ein zweiter Fall mit: der eigene. In dieser Lektion wählen wir ihn aus. Nicht den spannendsten, sondern den, der sich im Kurs tragen lässt: wiederkehrend, mit festen Fakten, mit einem prüfbaren Ergebnis. Die Rösterei zeigt, wie eine solche Entscheidung begründet wird.
+
+## Der Anlass: sechs Vorschläge, eine Entscheidung
+
+Rösterei Morgenrot, Geschäftsführung. Nach der letzten Teamrunde liegen sechs Vorschläge auf dem Tisch, wo ein Chatmodell Arbeit abnehmen könnte. Aylin Yılmaz will einen davon erproben, nicht sechs. Sie hat eine Aktennotiz geschrieben und bittet das Team, die Kandidaten nach fünf Kriterien zu bewerten. Die Notiz steht vollständig als [Download](../material/m01/aktennotiz-aylin.md) bereit; hier die Kandidaten:
+
+| Nr. | Kandidat | Wer | Kurzbeschreibung |
+|---|---|---|---|
+| K1 | Kundenanfragen zum Abo beantworten | Sina | Anfragen zu Sortenwechsel, Preisen und Lieferungen kommen mehrmals pro Woche. Fakten stehen in den Fachinformationen. Der Entwurf wird vor dem Versand gelesen. |
+| K2 | Hinweis- und Produkttexte aus Briefings entwerfen | Jonas | Kurze Texte für Shop und Newsletter, jeweils aus einem freigegebenen Briefing. Der Text geht erst nach Freigabe online. |
+| K3 | Zahlen und Notizen für die Teambesprechung aufbereiten | Petra | Monatliche Übersicht aus eigenen Notizen und Tabellen. Offene Angaben werden als offen markiert. |
+| K4 | Produktionsnotizen in eine Übergabe überführen | Marlene | Wöchentliche Übergabe aus handschriftlichen Röstnotizen. Mengen und Termine dürfen nicht ergänzt werden. |
+| K5 | Entscheiden, welche gekündigten Abos mit einem Rabatt zurückgewonnen werden | Aylin | Aus der Kundenliste soll das Modell vorschlagen, wem ein Angebot gemacht wird. Grundlage: Bestellhistorie und Kündigungsgrund. |
+| K6 | Preisstrategie 2027 entwickeln | Aylin | Preisempfehlungen für die drei Sorten auf Basis allgemeiner Markttrends. |
+
+Und die fünf Kriterien, jeweils mit **ja**, **teils** oder **nein** zu beantworten:
+
+1. **Wiederkehrend:** Fällt die Aufgabe regelmäßig in ähnlicher Form an?
+2. **Feste Fakten:** Liegen die Angaben, aus denen geantwortet wird, in freigegebener Form vor?
+3. **Prüfbares Ergebnis:** Lässt sich das Ergebnis Aussage für Aussage gegen diese Fakten prüfen?
+4. **Entwurf bleibt Entwurf:** Liest und verantwortet eine Person das Ergebnis, bevor es wirkt?
+5. **Keine Klärung nötig:** Kommt die Aufgabe ohne personenbezogene Daten und ohne offene Rechtsfragen aus?
+
+::: {.callout-note title="Eine Designentscheidung dieses Kurses"}
+Die fünf Kriterien sind eine Merkhilfe für die Auswahl, kein belegter Standard. Sie bündeln, was die ersten beiden Lektionen gezeigt haben: Ohne feste Fakten gibt es nichts, wogegen wir prüfen können (Lektion 1.2), und ohne Prüfung bleibt ein plausibler Text ein Risiko. Die Aktennotiz, die Kandidaten und die Entscheidung sind für diesen Kurs konstruiert; Personen und Funktionen stammen aus dem Fallmaterial.
+:::
+
+## Zielbild
+
+Am Ende der Lektion liegen zwei Dinge vor. Erstens eine begründete Einschätzung der sechs Kandidaten aus der Rösterei, die wir mit Aylins Entscheidung vergleichen. Zweitens der erste Eintrag im eigenen **Use-Case-Canvas**: ein gewählter Fall, eine Begründung in einem Satz, sechs Felder in Stichworten und zwei Rückfragen, die vor dem ersten Arbeitsauftrag beantwortet sein müssen. Das Arbeitsblatt dafür steht als [Download](../material/m01/use-case-canvas.md) bereit; die Felder entsprechen Portfolio-Teil 1.
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1: Die sechs Kandidaten bewerten
+
+Wir gehen die Tabelle Zeile für Zeile durch und vergeben für jedes Kriterium ja, teils oder nein. Wir tun das, bevor wir Aylins Entscheidung in der Aktennotiz lesen. Zwei Fragen helfen, wenn wir zögern: Wogegen würden wir das Ergebnis prüfen? Und wer liest es, bevor es wirkt?
+
+Bei K5 und K6 lohnt ein genauer Blick. K5 klingt nach einer Aufgabe mit hohem Nutzen. Aber es geht um Entscheidungen über einzelne Kundinnen und Kunden auf Basis ihrer Daten, und es gibt kein Material, gegen das sich ein Vorschlag prüfen ließe: Woran erkennen wir, dass die vorgeschlagene Auswahl richtig ist? K6 scheitert an Kriterium 2: Ein Chatmodell hat keine belegten Angaben über den Markt dieser Rösterei, und eine Preisempfehlung lässt sich nicht gegen Fakten prüfen, sondern nur gegen Meinungen.
+
+::: {.callout-tip title="Der Prüfstand entscheidet, nicht die Idee"}
+Ein guter erster Fall ist einer, für den wir einen Prüfstand haben: ein Dokument, gegen das wir jede Aussage halten können. In der Werkstatt würde niemand ein Werkzeug an einem Werkstück testen, dessen Sollmaß unbekannt ist. Kandidaten ohne Sollmaß, wie K5 und K6, sind nicht schlecht; sie sind für den Anfang ungeeignet, weil wir das Ergebnis nicht beurteilen könnten.
+:::
+
+### Schritt 2: Mit der Entscheidung vergleichen
+
+Jetzt lesen wir den Abschnitt „Entscheidung" in der Aktennotiz. Aylin beginnt mit K1: wiederkehrend, Fakten als Text vorhanden, jeder Satz prüfbar, Sina liest vor dem Versand, und für die Übung werden erfundene Anfragen verwendet. K2 bis K4 folgen nacheinander. K5 und K6 werden nicht erprobt, K5 erst nach Klärung von Datenschutz und Zuständigkeit.
+
+Wo weicht unsere Bewertung ab? Abweichungen sind erwünscht, wenn sie begründet sind. Wer K2 vor K1 setzt, weil ein interner Text weniger Außenwirkung hat als eine Kundenmail, hat ein gutes Argument. Entscheidend ist, dass die Begründung an den Kriterien hängt und nicht am Bauchgefühl.
+
+### Schritt 3: Eigene Kandidaten sammeln
+
+Wir notieren zwei bis drei wiederkehrende Schreib- oder Prüfanlässe aus dem eigenen Arbeitsalltag, je ein Satz. Beispiele aus verschiedenen Bereichen, damit die Bandbreite sichtbar wird:
+
+- Verwaltung: Auskünfte nach Aktenlage auf wiederkehrende Bürgeranfragen entwerfen.
+- Personal: Absagen auf Bewerbungen aus einem festen Textbaukasten formulieren.
+- Vertrieb: Angebotsbegleittexte aus der geltenden Leistungsbeschreibung erstellen.
+- Lehre: Rückmeldungen zu Einreichungen anhand eines Bewertungsrasters vorbereiten.
+- Beratung: Besprechungsnotizen in eine Ergebnisliste mit offenen Punkten überführen.
+
+Der Satz zum eigenen Fall im Feld „Problem" aus der ersten Lektion ist einer der Kandidaten. Wir prüfen alle mit denselben fünf Kriterien wie die Rösterei.
+
+### Schritt 4: Rückfragen stellen lassen
+
+Bevor wir den Canvas ausfüllen, lassen wir uns Rückfragen stellen. Das ist ein anderer Gebrauch des Chatfensters als bisher: Nicht das Modell schreibt das Ergebnis, sondern es hilft uns, unsere Lücken zu finden. Der folgende Auftrag ist für Petras Kandidaten K3 vorbereitet und läuft ohne Vorbereitung; als [Textdatei](../material/m01/prompt-rueckfragen-canvas.txt) liegt er bei.
+
+```text
+Ich bereite einen Anwendungsfall für ein Chatmodell vor und fülle dafür einen Use-Case-Canvas mit den Feldern Problem, Zielgruppe, Nutzenversprechen, Häufigkeit und Umfang, Datenbedarf, Abgrenzung.
+
+AUFGABE
+Stelle mir genau fünf Rückfragen, die ich beantworten muss, bevor ich den Canvas ausfüllen kann. Beantworte die Fragen nicht selbst und schlage keine Inhalte für den Canvas vor.
+
+MATERIAL (meine bisherigen Stichworte)
+Aufgabe: Monatliche Übersicht für die Teambesprechung aus vorhandenen Notizen und Tabellen aufbereiten.
+Wer bekommt sie: das fünfköpfige Team einer kleinen Rösterei.
+Heute: dauert etwa zwei Stunden pro Monat, Zahlen werden von Hand aus drei Dateien zusammengetragen.
+Grenze: Zahlen dürfen nicht ergänzt oder geschätzt werden; fehlende Angaben werden als offen markiert.
+
+FORMAT
+Nummerierte Liste mit fünf Fragen. Zu jeder Frage in Klammern das Canvas-Feld, das sie klärt. Keine Einleitung, kein Schluss.
+
+GRENZEN
+- Frage nur nach Dingen, die aus meinen Stichworten nicht hervorgehen.
+- Erfinde keine Angaben über die Rösterei.
+```
+
+Für den eigenen Fall ersetzen wir den Block MATERIAL durch unsere eigenen Stichworte. Auch hier gilt: keine echten Namen, keine internen Zahlen, Rollen statt Personen. Die Stichworte beschreiben den Fall so, dass niemand daraus eine reale Person oder ein vertrauliches Detail erkennen kann.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Das folgende Beispiel für Petras Fall ist konstruiert, kein aufgezeichneter Modelloutput:
+
+> 1. Aus welchen drei Dateien stammen die Zahlen, und liegen sie als Text oder Tabelle vor, die kopiert werden kann? (Datenbedarf)
+> 2. Wer im Team gibt frei, dass diese Zahlen in ein Chatkonto kopiert werden dürfen? (Datenbedarf, Abgrenzung)
+> 3. Woran erkennt das Team nach der Besprechung, dass die Übersicht besser war als bisher: kürzere Vorbereitung, weniger Rückfragen, weniger Fehler? (Nutzenversprechen)
+> 4. Welche Entscheidungen werden auf Basis der Übersicht getroffen, und bleibt die Übersicht selbst ein Entwurf, den Petra vor dem Versand liest? (Abgrenzung)
+> 5. Enthalten die Notizen Namen von Mitarbeitenden, Kundinnen oder Lieferanten, die vorher ersetzt werden müssten? (Datenbedarf)
+
+Woran wir das prüfen: Fünf Fragen, keine Antworten, keine Vorschläge für den Canvas, jede Frage mit Feldbezug. Fragen 2 und 5 zielen genau auf die Kategorien aus der zweiten Lektion. Kommt eine Frage, deren Antwort schon in den Stichworten steht (etwa „Wie oft fällt die Aufgabe an?"), streichen wir sie; die Grenze im Auftrag war eine Anweisung, keine Garantie.
+
+### Eine eigene Variante: der erste Canvas-Eintrag
+
+Mit den Rückfragen vor Augen füllen wir das Arbeitsblatt aus. Erst die Kriterienprüfung der eigenen Kandidaten, dann der gewählte Fall mit einem Satz Begründung, dann die sechs Felder in Stichworten:
+
+| Feld | Leitfrage |
+|---|---|
+| **Problem** | Welche Aufgabe kostet heute Zeit oder Qualität? Was passiert, wenn sie schlecht läuft? |
+| **Zielgruppe** | Wer bekommt das Ergebnis? |
+| **Nutzenversprechen** | Was ist danach besser? Größenordnung, falls bekannt |
+| **Häufigkeit und Umfang** | Wie oft, wie lang ein Vorgang? |
+| **Datenbedarf** | Welche Angaben braucht eine korrekte Antwort? Wo liegen sie? Sind sie freigegeben? |
+| **Abgrenzung** | Was gehört ausdrücklich nicht dazu? Welche Entscheidung bleibt bei einem Menschen? |
+
+Zum Schluss notieren wir zwei Rückfragen, die wir vor dem ersten Arbeitsauftrag im eigenen Haus klären müssen, etwa wo die Fakten liegen und wer sie freigibt. Der ausgefüllte Canvas wandert in **Portfolio-Teil 1**. Er ist ein Arbeitsstand, kein Endstand; wir werden ihn im Kurs mehrfach anfassen.
+
+::: {.callout-important title="Ein Fall, nicht drei"}
+Das Portfolio trägt einen einzigen Anwendungsfall durch alle vier Teile. Wer sich zwischen zwei Kandidaten nicht entscheiden kann, nimmt den mit den meisten „ja" bei den Kriterien 2 und 3. Ein Fall mit festen Fakten und prüfbarem Ergebnis lässt sich im Kurs bearbeiten; der andere Kandidat bleibt notiert und kommt später an die Reihe.
+:::
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Alle eigenen Kandidaten bekommen bei „Feste Fakten" ein Nein | Kleiner schneiden: Statt „Kundenanfragen beantworten" nur „Anfragen zu einem Thema, für das eine Konditionsübersicht existiert". |
+| Der Wunschfall ist eine Entscheidung über Personen (wie K5) | Als späteren Kandidaten notieren. Für den Kurs einen Fall wählen, der einen Entwurf erzeugt, nicht eine Entscheidung. |
+| Die Rückfragen des Modells enthalten Antworten oder Vorschläge | Folgeanweisung: „Nur Fragen, keine Antworten und keine Vorschläge." Das Ergebnis erneut prüfen. |
+| Die Rückfragen wiederholen, was in den Stichworten steht | Streichen. Die verbleibenden Fragen sind die nützlichen. |
+| Das Feld „Nutzenversprechen" bleibt vage („schneller") | Eine beobachtbare Größe suchen: Minuten pro Vorgang, Vorgänge pro Woche, Rückfragen pro Monat. Wenn unbekannt, als Rückfrage notieren. |
+| Das Feld „Abgrenzung" bleibt leer | Die Frage umdrehen: Welche Aussage im Ergebnis dürfte niemals ohne menschliche Prüfung hinausgehen? |
+
+## Kontrollpunkt für Modul 1
+
+- Kandidaten für einen Anwendungsfall mit fünf Kriterien bewerten und die Bewertung begründen
+- Erklären, warum ein Fall ohne feste Fakten oder ohne prüfbares Ergebnis als erster Fall ungeeignet ist
+- Das Chatfenster für Rückfragen nutzen, statt es ein Ergebnis schreiben zu lassen
+- Einen eigenen Fall wählen und die sechs Canvas-Felder in Stichworten füllen, ohne echte Namen oder interne Zahlen
+- Zwei offene Rückfragen für die eigene Organisation notieren und den Canvas in Portfolio-Teil 1 übernehmen

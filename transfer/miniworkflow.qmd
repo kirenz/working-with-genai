@@ -1,0 +1,169 @@
+# Ein Miniworkflow, selbst gebaut
+
+Bisher haben wir jede Anfrage von Hand in einen Chat eingefügt. In diesem Kapitel bauen wir auf der bereitgestellten n8n-Kursinstanz einen Ablauf mit drei Knoten, der dieselbe Statusanfrage in einen Entwurf verwandelt: ein Auslöser, ein Knoten mit Anfrage und Material, ein Knoten mit dem Sprachmodell. Der Ablauf endet beim sichtbaren Entwurf. Nichts wird versendet.
+
+## Der Anlass: Ellen will sehen, ob das ohne Chatfenster geht
+
+Aylin Yılmaz hat Ellen Ruppert gebeten, nicht nur die Statusanfragen zu beantworten, sondern auch eine Einschätzung zu liefern: Lohnt sich ein automatisierter Schritt, oder reicht das Projekt aus Lektion 6.1? Ellen will das nicht aus der Beschreibung beurteilen, sondern einmal selbst bauen. Material und Anfrage sind dieselben wie in 6.1: die [Versandinformationen](../material/m06/versandinformationen.txt) und die [Statusanfrage](../material/m06/statusanfrage.txt).
+
+Eine Einschätzung vorweg: Was ist bei einem Workflow anders als im Chat? Im Chat sieht jemand jeden Entwurf, weil er ihn selbst angefordert hat. Ein Workflow kann laufen, ohne dass jemand hinsieht. Deshalb gilt für diese Übung: Der Auslöser ist ein Klick, nicht ein Postfach; der letzte Knoten zeigt den Entwurf, er verschickt ihn nicht; und der Workflow wird nicht aktiviert. Wer das später ändert, ändert die Verantwortungslage, nicht nur die Technik.
+
+::: {.callout-important title="Was diese Übung braucht und was nicht"}
+Gebraucht wird ein Zugang zur Kursinstanz und ein dort von den Lehrenden bereitgestelltes Chat-Model mit einer Kurs-Credential. Beides kommt mit den Kursinformationen. Nicht gebraucht wird eine eigene Installation, ein eigener API-Schlüssel oder ein bezahltes Konto. Falls der zentrale Modellzugang zum Übungszeitpunkt nicht bereitsteht, gibt es in Schritt 5 einen vollständigen Ersatzweg, mit dem der Workflow trotzdem fertig wird. Es fließen keine echten Kundendaten; die Sendungsnummer ist ein Platzhalter.
+:::
+
+## Zielbild
+
+Drei Knoten von links nach rechts:
+
+| Knoten | Typ | Name | Was er tut |
+|---|---|---|---|
+| 1 | Trigger manually | `Start` | Startet den Ablauf per Klick |
+| 2 | Edit Fields (Set) | `Anfrage und Material` | Stellt zwei Felder bereit: `anfrage` und `material` |
+| 3 | Basic LLM Chain, mit angeschlossenem Chat Model | `Entwurf` | Baut aus beiden Feldern den Arbeitsauftrag und liefert den Entwurf im Feld `text` |
+
+Alle Feldwerte stehen kopierfertig in [n8n-felder.md](../material/m06/n8n-felder.md). Knoten- und Feldbezeichnungen folgen der n8n-Dokumentation zu [Edit Fields (Set)](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.set/) und [Basic LLM Chain](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.chainllm/); einzelne Schaltflächen können in der Version der Kursinstanz anders heißen.
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1 — Workflow anlegen und Auslöser setzen
+
+1. In der Kursinstanz anmelden und einen neuen, leeren Workflow anlegen. Name oben links: „Morgenrot Statusanfrage Entwurf" plus das eigene Kürzel, damit die Workflows der Kursgruppe unterscheidbar bleiben.
+2. Als ersten Schritt den Auslöser **Trigger manually** wählen. Er erscheint als erster Knoten. Umbenennen in `Start`.
+
+Mehr passiert hier nicht. Der Auslöser hat keine Einstellungen, die wir brauchen.
+
+### Schritt 2 — Anfrage und Material als Felder bereitstellen
+
+1. Rechts am Knoten `Start` das Plus anklicken und im Suchfeld *Edit Fields* eingeben. **Edit Fields (Set)** auswählen. Umbenennen in `Anfrage und Material`.
+2. **Mode** auf **Manual Mapping** lassen.
+3. Unter **Fields to Set** ein Feld hinzufügen: Name `anfrage`, Typ String, Wert im Modus Fixed:
+
+```text
+Betreff: Wo bleibt meine Lieferung?
+Guten Tag, meine Abo-Lieferung mit der Sendungsnummer [SENDUNGSNUMMER] ist noch nicht da. Die Versandbestätigung kam am Dienstag. Kommt das Paket bis Freitag? Ich bin dann verreist.
+Viele Grüße
+K. Weber
+```
+
+4. Ein zweites Feld hinzufügen: Name `material`, Typ String, Wert im Modus Fixed:
+
+```text
+Versandinformationen Lager und Versand (nur diese Angaben sind gültig):
+- Abo-Lieferungen werden dienstags und donnerstags versendet.
+- Mit dem Versand erhält die Kundin oder der Kunde eine Versandbestätigung per Mail mit einer Sendungsnummer.
+- Der Paketdienst nennt als Laufzeit ein bis drei Werktage nach dem Versand. Die Rösterei gibt keine Ankunftsgarantie für einen bestimmten Tag.
+- Der Sendungsstatus kann nur mit der Sendungsnummer geprüft werden. Die Prüfung erfolgt durch Lager und Versand, nicht durch das Chatmodell.
+- Gilt eine Sendung nach fünf Werktagen ab Versand als nicht zugestellt, löst Lager und Versand eine Nachforschung beim Paketdienst aus und informiert die Kundin oder den Kunden.
+```
+
+5. **Execute step** anklicken. Im Output-Panel rechts erscheint ein Element mit den beiden Feldern. Genau diese Feldnamen verwenden wir im nächsten Knoten.
+
+::: {.callout-tip title="Warum zwei Felder und nicht ein fertiger Prompt"}
+Wir könnten den ganzen Arbeitsauftrag in ein einziges Feld schreiben. Die Trennung in `anfrage` und `material` hat einen Grund: Im Alltag käme die Anfrage aus einem anderen Ort als das Material, und das Material würde gepflegt, ohne den Prompt anzufassen. Der Knoten `Anfrage und Material` steht für diese beiden Zulieferungen. Heute sind es feste Werte; das ist gewollt, weil so keine echten Daten fließen.
+:::
+
+### Schritt 3 — Den Sprachmodell-Knoten anhängen
+
+1. Rechts am Knoten `Anfrage und Material` das Plus anklicken, *Basic LLM Chain* suchen und auswählen. Umbenennen in `Entwurf`.
+2. **Prompt** auf **Define below** stellen.
+3. Das Prompt-Feld auf den Modus **Expression** umschalten und den folgenden Text vollständig einfügen. Er steht auch als [Textdatei](../material/m06/prompt-llm-chain.txt) bereit.
+
+```text
+Du unterstützt den Bereich Lager und Versand der Rösterei Morgenrot.
+
+AUFGABE
+Entwirf eine Antwort-Mail auf die Kundenanfrage unten.
+
+MATERIAL (nur diese Angaben sind gültig)
+{{ $json.material }}
+
+KUNDENANFRAGE
+{{ $json.anfrage }}
+
+FORMAT
+Antwort-Mail, höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton.
+Absenderzeile "Ellen Ruppert, Lager und Versand, Rösterei Morgenrot".
+Am Ende eine Liste mit der Überschrift "Offen".
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Nenne keinen Ankunftstag und keinen Sendungsstatus. Trage beides unter "Offen" ein.
+- Behaupte nicht, dass etwas veranlasst wurde. Kündige an, dass Lager und Versand den Status mit der Sendungsnummer prüft.
+- Verwende die Sendungsnummer nicht im Text.
+```
+
+4. **Require Specific Output Format** bleibt aus.
+
+Die beiden Ausdrücke `{{ $json.material }}` und `{{ $json.anfrage }}` sind die einzige Technik dieses Kapitels: Sie holen beim Ausführen die Werte aus dem vorherigen Knoten und setzen sie an dieser Stelle ein. `$json` steht für das Element, das gerade in den Knoten hineinkommt, und nach dem Punkt folgt der Feldname. Im Expression-Modus werden sie ersetzt; im Modus Fixed blieben sie als Text stehen, und das Modell bekäme wörtlich „{{ $json.material }}" zu lesen.
+
+### Schritt 4 — Das bereitgestellte Chat-Model anschließen
+
+Der Knoten `Entwurf` hat unten einen Anschluss für ein **Chat Model**. Ohne ihn läuft der Knoten nicht.
+
+1. Am Anschluss **Model** das Plus anklicken und das Chat-Model wählen, das die Kursinformationen nennen.
+2. In dessen Einstellungen unter **Credential** die Kurs-Credential auswählen. Sie ist von den Lehrenden hinterlegt; es wird kein eigener Schlüssel eingetragen.
+3. Zurück im Knoten `Entwurf` auf **Execute step** klicken.
+
+Im Output-Panel erscheint ein Element mit einem Feld `text`. Das ist der Entwurf. Wir lesen ihn wie in 6.1 an den drei Stellen: kein Ankunftstag, kein behaupteter Status, „Offen" mit Ankunft und Status. Und wir prüfen, ob die Sendungsnummer draußen geblieben ist.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Konstruiert, kein aufgezeichneter Modelloutput. Er steht auch als [Textdatei](../material/m06/entwurf-konstruiert.txt) bereit, weil der Ersatzweg ihn braucht.
+
+> Guten Tag, vielen Dank für Ihre Nachricht. Abo-Lieferungen versenden wir dienstags und donnerstags; mit dem Versand erhalten Sie eine Versandbestätigung mit Sendungsnummer, die Ihnen am Dienstag zugegangen ist. Der Paketdienst nennt als Laufzeit ein bis drei Werktage nach dem Versand. Eine Ankunft an einem bestimmten Tag können wir nicht garantieren. Unser Bereich Lager und Versand prüft den aktuellen Stand Ihrer Sendung anhand der Sendungsnummer und meldet sich bei Ihnen. Sollte die Sendung fünf Werktage nach dem Versand nicht zugestellt sein, veranlassen wir eine Nachforschung beim Paketdienst. Freundliche Grüße, Ellen Ruppert, Lager und Versand, Rösterei Morgenrot
+>
+> Offen: Ob das Paket bis Freitag ankommt. Aktueller Sendungsstatus (wird durch Lager und Versand geprüft).
+
+### Schritt 5 — Der Ersatzweg ohne Modellzugang
+
+Wenn die Kurs-Credential fehlt oder ein Fehler beim Modell auftritt, wird der Workflow trotzdem fertig, mit derselben Struktur und demselben Ausgabefeld:
+
+1. Den Knoten `Entwurf` entfernen oder abklemmen.
+2. Rechts an `Anfrage und Material` einen zweiten **Edit Fields (Set)** anhängen, Name `Entwurf (manuell)`.
+3. Ein Feld `text`, Typ String, Wert Fixed: entweder der konstruierte Entwurf von oben, oder ein Entwurf, den wir im eigenen Chatkonto mit dem Prompt aus Schritt 3 erzeugt und geprüft haben (die beiden Ausdrücke dabei von Hand durch Material und Anfrage ersetzen).
+4. **Execute step**. Das Output-Panel zeigt `text` mit dem Entwurf.
+
+Der Ersatzweg zeigt dasselbe, was der Modellknoten zeigt: Ein Workflow kann einen Entwurf an eine feste Stelle liefern, an der jemand ihn liest. Nur der Modellschritt ist von Hand gefüllt.
+
+### Schritt 6 — Speichern, nicht aktivieren
+
+Wir speichern den Workflow. Wir klicken nicht auf *Activate*. Ein inaktiver Workflow läuft nur, wenn jemand ihn über **Execute workflow** oder am Knoten startet. Es gibt keinen Knoten, der eine Mail verschickt, und keinen Auslöser, der auf ein Postfach hört. Das ist keine Vorsicht für den Kurs, sondern die Verantwortungslage, die wir in Modul 5 festgehalten haben: Der Entwurf wird von einer Person geprüft und selbst versendet.
+
+::: {.callout-note title="Was ein Workflow hier leistet und was nicht"}
+Der Workflow spart das Wiederholen des Arbeitsauftrags und liefert den Entwurf an eine feste Stelle. Er prüft keinen Sendungsstatus, er kennt keine Kundendaten und er entscheidet nichts. Was er im Alltag bräuchte, hat die Rösterei heute nicht: einen geschäftlichen Modellzugang mit passender Vereinbarung und eine geprüfte Quelle für die Anfrage. Die Entscheidung, ob sich der Aufbau lohnt, treffen wir deshalb nicht am Ende dieses Kapitels aus Begeisterung, sondern mit der Vorlage im nächsten Abschnitt.
+:::
+
+### Die begründete Entscheidung für das Portfolio
+
+Portfolio-Teil 4 verlangt keine Automatisierung, sondern eine begründete Entscheidung darüber. Die Vorlage [automatisierungs-entscheidung.md](../material/m06/automatisierungs-entscheidung.md) fragt sechs Dinge ab: Häufigkeit, Prüfbarkeit des Entwurfs, Datenlage, was der Mensch tun muss, Modellzugang im Betrieb, was schiefgehen kann. Für die Rösterei lautet die Entscheidung im Beispiel: vorerst kein eigener Workflow, Statusanfragen über das Projekt aus 6.1, erneute Prüfung nach dem Rückblick und nur bei geschäftlichem Modellzugang. Die Begründung in einem Satz: Der Nutzen liegt in der gleichbleibenden Qualität des Entwurfs, nicht im Wegfall der Prüfung; dafür reicht das Projekt.
+
+### Eine eigene Variante bauen
+
+1. Wir ersetzen im Knoten `Anfrage und Material` die beiden Werte durch eine vollständig erfundene Anfrage aus dem eigenen Fall und das zugehörige Übungsmaterial. Keine echten Daten, auch nicht im Testlauf.
+2. Wir passen im Prompt-Feld Rolle, Format und Grenzen an den eigenen Fall an; die beiden Ausdrücke bleiben.
+3. Wir führen den Workflow aus und prüfen den Entwurf mit den Testfällen aus Modul 4, mindestens dem Fall mit Lücke.
+4. Wir füllen die Automatisierungsentscheidung für den eigenen Fall aus und tragen sie in **Portfolio-Teil 4** ein. Ob die Antwort „ja", „nein" oder „später, unter Bedingung" lautet, ist gleichwertig; die Begründung zählt.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Der Knoten `Entwurf` zeigt einen Fehler, dass kein Modell verbunden ist | Am unteren Anschluss **Model** ein Chat-Model anhängen (Schritt 4). |
+| Fehlermeldung zu Credential, Authentifizierung oder Kontingent | Die Kurs-Credential im Chat-Model prüfen. Wenn sie fehlt oder nicht funktioniert: Lehrende informieren und den Ersatzweg aus Schritt 5 gehen. |
+| Im Entwurf steht wörtlich „{{ $json.material }}" | Das Prompt-Feld steht im Modus Fixed. Auf Expression umschalten und erneut ausführen. |
+| Im Prompt-Feld erscheint „[undefined]" oder ein leerer Wert | Der Knoten `Anfrage und Material` wurde noch nicht ausgeführt, oder ein Feldname ist anders geschrieben. Erst dort **Execute step**, dann Feldnamen abgleichen. |
+| Das Output-Panel bleibt leer | Ausführungsfehler am Knoten lesen; den frühesten roten Knoten zuerst beheben. |
+| Der Entwurf enthält einen Ankunftstag oder einen Status | Kein technischer Fehler, sondern ein Befund: Die Grenze ist eine Anweisung, keine Garantie. Notieren; im Alltag würde die Prüfung genau das abfangen. |
+| Die Sendungsnummer steht im Entwurf | Entfernen. Grenze im Prompt prüfen. In der Übung ist sie ein Platzhalter; im Alltag gehört sie nicht in den Modellschritt. |
+| Versuchung, einen Send-Email-Knoten anzuhängen | Nicht in diesem Kurs. Wer das im Betrieb erwägt, hat eine neue Verantwortungslage und beginnt bei der Risiko-Tabelle aus Modul 5, nicht beim Knoten. |
+
+## Kontrollpunkt für Modul 6
+
+- Auf einer bereitgestellten n8n-Instanz einen Workflow aus Auslöser, Edit Fields und Basic LLM Chain selbst anlegen
+- Zwei Felder in Edit Fields setzen und sie im Prompt-Feld über Ausdrücke der Form `{{ $json.feld }}` verwenden
+- Das bereitgestellte Chat-Model mit der Kurs-Credential anschließen, ohne eigenen Schlüssel
+- Den Entwurf im Output-Panel an denselben Stellen prüfen wie einen Chat-Entwurf
+- Den Workflow ohne Versandknoten und ohne Aktivierung belassen und die Verantwortungslage begründen
+- Bei fehlendem Modellzugang den Ersatzweg mit manuell gefülltem Entwurf gehen
+- Eine begründete Entscheidung über Automatisierung treffen, unabhängig davon, wie sie ausfällt

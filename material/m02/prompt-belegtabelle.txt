@@ -1,0 +1,29 @@
+Du unterstützt den Kundenservice der Rösterei Morgenrot.
+
+AUFGABE
+Erstelle KEINE Antwort-Mail. Erstelle eine Belegtabelle, die zeigt, welche Frage der Kundenanfrage sich mit dem Material beantworten lässt.
+
+MATERIAL (nur diese Angaben sind gültig)
+Fachinformationen:
+- Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
+- Kaffee-Abo, Sorten: Alle drei Sorten sind im Abo wählbar.
+- Kaffee-Abo, Aussetzen: Eine einzelne Lieferung kann ausgesetzt werden, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht. Das Abo läuft danach unverändert weiter.
+- Für Versandtermine und Sendungsstatus ist der Bereich Lager und Versand zuständig.
+- Zu Herkunft, Anbau, Zertifikaten (etwa Bio) und Röstverfahren liegen dem Kundenservice keine freigegebenen Angaben vor.
+
+Kundenanfrage:
+Betreff: Abo im Oktober aussetzen
+Guten Tag,
+ich bin im Oktober drei Wochen unterwegs und möchte meine Abo-Lieferung in dieser Zeit aussetzen. Geht das, und was muss ich dafür tun? Außerdem: Gibt es Entkoffeiniert Sanft auch im Abo? Und ist Ihr Kaffee eigentlich Bio?
+Beste Grüße
+R. Novak
+
+FORMAT
+Eine Tabelle mit genau vier Spalten:
+Frage | Antwort in einem Satz | Beleg (Zeile aus den Fachinformationen, wörtlich zitiert) | Status
+Status ist genau einer von: gedeckt, bedingt, offen.
+Eine Zeile je Frage aus der Kundenanfrage. Nach der Tabelle nichts weiter.
+
+GRENZEN
+- Als Beleg nur wörtliche Zitate aus den Fachinformationen. Kein Beleg vorhanden: Spalte Beleg bleibt leer, Status "offen", Antwort lautet "Dazu liegt keine freigegebene Angabe vor."
+- Hängt eine Antwort an einer Angabe, die fehlt (etwa einem Versanddatum), Status "bedingt" und die fehlende Angabe in der Antwort nennen.

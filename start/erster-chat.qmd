@@ -1,0 +1,131 @@
+# Der erste Chat-Erfolg
+
+Ein Chatmodell liefert innerhalb von Sekunden einen Text, der brauchbar aussieht. Genau damit beginnen wir: mit einer kleinen, echten Aufgabe aus der Rösterei Morgenrot, die ohne Vorwissen gelingt und ein sichtbares Ergebnis hat. Die Grenzen dieses Ergebnisses schauen wir uns danach an; erst kommt der Erfolg.
+
+## Der Anlass: ein Hinweistext für den Onlineshop
+
+Rösterei Morgenrot, Marketing. Jonas Halder soll für die Startseite des Onlineshops einen kurzen Hinweistext auf das Kaffee-Abo liefern. Aylin Yılmaz will drei Varianten sehen und dann eine auswählen. Der Text geht erst nach ihrer Freigabe online; bis dahin ist alles ein interner Entwurf. Das macht die Aufgabe zu einem guten Einstieg: Der Nutzen ist sofort sichtbar, das Risiko ist gering, und eine Person liest das Ergebnis, bevor es wirkt.
+
+Jonas hat dafür ein freigegebenes Briefing. Es steht vollständig hier und als [Download](../material/m01/briefing-abo-hinweistext.txt); wir müssen nichts nachschlagen.
+
+> **Freigegebene Angaben (nur diese dürfen im Text vorkommen)**
+>
+> - Die Rösterei Morgenrot ist eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden über den eigenen Onlineshop.
+> - Drei Sorten im Sortiment: Espresso Intenso, Filterkaffee Mild, Entkoffeiniert Sanft.
+> - Reguläre Listenpreise im Onlineshop: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
+> - Das Kaffee-Abo liefert regelmäßig nach Hause. Alle drei Sorten sind im Abo wählbar.
+> - Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+>
+> **Wozu keine freigegebenen Angaben vorliegen:** Herkunftsländer, Anbau und Zertifikate, Röstgrad und Röstverfahren, Geschmacksbeschreibungen, Abo-Preise und Rabatte, Lieferintervalle, Versandkosten, Kündigungsfristen, Kundenzahlen, Bewertungen.
+>
+> **Ton und Form:** Sachlich und freundlich. Keine Superlative, keine Vergleiche, keine Ausrufezeichen. Je Variante zwei Sätze, drei Varianten.
+
+::: {.callout-important title="Erfundener Fall, eigens für diesen Kurs erweitert"}
+Unternehmen, Sortiment und Listenpreise stammen aus dem Fallmaterial der Rösterei Morgenrot. Der Anlass, die Aussage „Alle drei Sorten sind im Abo wählbar", die Abo-Regel zum Sortenwechsel und die Liste fehlender Angaben sind für diesen Kurs konstruiert. Weil alles erfunden ist, dürfen wir das Briefing unverändert in ein Chatfenster kopieren. Für echte Briefings aus dem eigenen Haus gilt das nicht automatisch; dazu mehr in der eigenen Variante am Ende dieses Kapitels.
+:::
+
+## Zielbild
+
+Nach etwa zehn Minuten liegen drei nummerierte Textvarianten vor, je zwei Sätze, und wir haben eine davon mit einer kurzen Folgeanweisung verändert. Alles, was in den Varianten steht, lässt sich auf eine Zeile im Briefing zurückführen. Wir wissen danach aus eigener Hand, wie sich ein Auftrag abschickt, wie schnell ein Ergebnis kommt und wie eine Nachricht im selben Chat den Text weiterbewegt.
+
+Das Ergebnis dieser Lektion ist ein Entwurf. Er geht nicht online; er landet als erster Eintrag in der Arbeitsmappe.
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** ein Browser und ein kostenloses Chatkonto bei [ChatGPT](https://chatgpt.com/). Kein Abonnement, keine Installation, kein Datei-Upload. Wer noch kein Konto hat, legt es jetzt an; wer im Kickoff sitzt und nicht weiterkommt, schaut zunächst bei der Nachbarin zu und holt den Durchlauf danach nach.
+
+### Schritt 1: Einen neuen Chat öffnen
+
+Wir starten für diese Übung einen neuen Chat, nicht eine Fortsetzung eines alten Gesprächs. In einem neuen Chat wirken die früheren Nachrichten nicht mit; gespeicherte persönliche Einstellungen des Kontos können weiterhin Einfluss haben. Damit haben wir eine saubere Ausgangslage und können später vergleichen.
+
+### Schritt 2: Den Auftrag einfügen und abschicken
+
+Der folgende Auftrag enthält das ganze Briefing und ist ohne Vorbereitung lauffähig. Wir kopieren ihn vollständig, fügen ihn als erste Nachricht ein und schicken ihn ab. Er steht auch als [Textdatei](../material/m01/prompt-erster-chat.txt) bereit.
+
+```text
+Du unterstützt das Marketing der Rösterei Morgenrot.
+
+AUFGABE
+Schreibe drei Varianten eines Hinweistextes für die Startseite des Onlineshops. Der Text weist auf das Kaffee-Abo hin.
+
+MATERIAL (nur diese Angaben dürfen im Text vorkommen)
+- Die Rösterei Morgenrot ist eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden über den eigenen Onlineshop.
+- Drei Sorten im Sortiment: Espresso Intenso, Filterkaffee Mild, Entkoffeiniert Sanft.
+- Das Kaffee-Abo liefert regelmäßig nach Hause. Alle drei Sorten sind im Abo wählbar.
+- Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+
+FORMAT
+Drei nummerierte Varianten. Je Variante genau zwei Sätze. Sachlich und freundlich, keine Superlative, keine Ausrufezeichen.
+
+GRENZEN
+- Verwende nur Angaben aus dem Material. Ergänze keine Herkunft, keine Zertifikate, keinen Röstgrad, keine Geschmacksbeschreibung, keine Preise, keine Lieferintervalle, keine Rabatte.
+- Wenn du für eine Variante eine Angabe bräuchtest, die im Material fehlt, lass die Variante ohne diese Angabe und nenne die fehlende Angabe unter der Überschrift "Offen".
+```
+
+::: {.callout-tip title="Die vier Überschriften sind eine Merkhilfe, keine Pflichtlektüre"}
+AUFGABE, MATERIAL, FORMAT und GRENZEN gliedern den Auftrag so, wie wir auch eine Kollegin einweisen würden: was zu tun ist, woraus, in welcher Form, und was bei einer Lücke passieren soll. Für diese Lektion genügt es, den Auftrag zu benutzen. Wie wir einen solchen Auftrag selbst zusammensetzen, ist Gegenstand des ganzen zweiten Moduls. Hier zählt, dass er läuft.
+:::
+
+### Schritt 3: Das Ergebnis lesen und eine Variante wählen
+
+Innerhalb weniger Sekunden stehen drei Varianten im Chat. Wir lesen sie einmal ganz und entscheiden, welche uns am besten gefällt. Das ist der erste Erfolg: eine Aufgabe, die von Hand eine Viertelstunde gedauert hätte, liegt als Auswahl vor. Wir halten die gewählte Variante fest, indem wir sie in ein Textdokument kopieren.
+
+### Schritt 4: Mit einer Folgeanweisung weiterbewegen
+
+Wir bleiben im selben Chat und schicken eine zweite, kurze Nachricht. Die vorherige Antwort bleibt dabei Bezugspunkt, wir müssen das Briefing nicht wiederholen:
+
+```text
+Kürze Variante 2 auf einen einzigen Satz. Behalte die Aussage, dass alle drei Sorten im Abo wählbar sind. Ergänze weiterhin nichts, was nicht im Material steht.
+```
+
+Wir sehen, wie sich der Text verändert, ohne dass wir ihn selbst umschreiben. Wer möchte, schickt eine dritte Nachricht und ändert genau eine Eigenschaft, etwa: „Formuliere Variante 1 so, dass der Sortenwechsel im ersten Satz steht." Eine Änderung je Nachricht macht sichtbar, welche Anweisung welche Wirkung hatte.
+
+::: {.callout-note title="Warum eine Änderung je Nachricht"}
+Zwei Änderungen in einer Nachricht liefern ein Ergebnis, bei dem wir nicht wissen, welche der beiden es geprägt hat. Mit einer Änderung bleibt die Beobachtung zuordenbar. Das ist noch kein Beweis, dass die Anweisung die Ursache war; ein Chatmodell kann bei identischer Eingabe unterschiedlich antworten. Aber es ist die Arbeitsweise, mit der wir im Kurs weiterkommen.
+:::
+
+### Schritt 5: Kurz gegen das Briefing lesen
+
+Bevor die gewählte Variante in die Arbeitsmappe wandert, lesen wir sie einmal Wort für Wort gegen die Liste der freigegebenen Angaben. Die Frage lautet nur: Steht etwas im Text, das nicht im Briefing steht? Eine Herkunft, ein Adjektiv wie „schonend geröstet", ein Preisvorteil? Wenn ja, streichen wir es. Wenn nein, ist der Entwurf für die interne Auswahl brauchbar. Diese Prüfung bleibt hier absichtlich kurz; sie dauert zwei Minuten und gehört ab jetzt zu jedem Ergebnis.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput. Wortlaut und Reihenfolge werden bei jedem Durchlauf anders sein; identische Ergebnisse sind nicht zu erwarten.
+
+> 1. Die Rösterei Morgenrot ist eine kleine Kaffeerösterei, die ihre drei Sorten direkt über den eigenen Onlineshop verkauft. Mit dem Kaffee-Abo kommt Espresso Intenso, Filterkaffee Mild oder Entkoffeiniert Sanft regelmäßig zu Ihnen nach Hause.
+> 2. Mit dem Kaffee-Abo erhalten Sie Ihre Lieblingssorte regelmäßig nach Hause geliefert. Alle drei Sorten unserer kleinen Rösterei stehen zur Wahl, und ein Wechsel ist möglich.
+> 3. Kaffee im Abo, direkt aus unserer Rösterei: regelmäßig geliefert, drei Sorten zur Auswahl. Ein Sortenwechsel gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+
+Woran wir das prüfen: Jede Aussage findet ihre Zeile im Briefing. Kein Preis, keine Herkunft, kein Rabatt, keine Geschmacksnote. Variante 2 nennt den Wechsel ohne die Frist; das ist zulässig, weil nichts Falsches behauptet wird, aber Variante 3 ist genauer. „Lieblingssorte" in Variante 2 ist eine Formulierung, keine Tatsachenbehauptung; wer sie als zu werblich empfindet, streicht sie in der Folgeanweisung.
+
+### Eine eigene Variante
+
+Wir wählen eine kleine, risikoarme Schreibaufgabe aus dem eigenen Alltag: eine Terminabsage, eine interne Notiz, ein Hinweistext, eine Einladung. Dann bauen wir dafür ein eigenes, vollständig erfundenes Briefing mit vier bis sechs Angaben und formulieren den Auftrag nach demselben Muster: Aufgabe in einem Satz, die erfundenen Angaben als Material, Länge und Ton als Format, „nur diese Angaben" als Grenze.
+
+::: {.callout-important title="Erfundene Angaben statt echter Unterlagen"}
+Für die eigene Variante gilt: keine echten Namen, keine echten Kunden, keine internen Zahlen. Wir erfinden ein Briefing, das so aussieht wie ein echtes. Ob und in welchem Konto echte betriebliche Unterlagen verwendet werden dürfen, entscheidet die Regelung der eigenen Organisation, nicht diese Lektion. Namen und Nummern zu tauschen macht vertrauliche Inhalte allein noch nicht geeignet für ein Chatkonto.
+:::
+
+Wir führen den Auftrag in einem neuen Chat aus, wählen eine Variante, ändern sie mit einer Folgeanweisung und lesen sie gegen unser Briefing. Dann notieren wir in der Arbeitsmappe unter **Portfolio-Teil 1, Feld „Problem"**, einen einzigen Satz: Welche Schreib- oder Prüfaufgabe im eigenen Alltag kostet regelmäßig Zeit? Mehr braucht es an dieser Stelle nicht; das Feld wird in den nächsten beiden Lektionen weiter gefüllt. Die [Portfolio-Vorlage](../material/portfolio-vorlage.md) zeigt, wo der Satz hingehört.
+
+## Fehler diagnostizieren
+
+Eine Beobachtung zeigt zunächst einen Fehler, nicht sicher dessen Ursache. Die zweite Spalte nennt deshalb den nächsten Prüfschritt.
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Der Chat verlangt eine Anmeldung oder zeigt eine Wartemeldung | Konto anlegen oder kurz warten. Wer im Kickoff sitzt, schaut zunächst bei einer Nachbarin zu und wiederholt den Durchlauf später. |
+| Die Varianten enthalten mehr als zwei Sätze | Folgeanweisung: „Kürze jede Variante auf genau zwei Sätze." Danach erneut zählen. |
+| Eine Variante nennt eine Herkunft, einen Röstgrad oder eine Geschmacksnote | Als unbelegt markieren und streichen lassen: „Entferne alle Angaben, die nicht im Material stehen." Die Grenze im Auftrag war eine Anweisung, keine Garantie. |
+| Eine Variante nennt einen Preis oder Rabatt | Preise waren im Auftrag ausgeschlossen. Streichen lassen und im Ergebnis erneut prüfen. |
+| Der Text klingt werblich, mit Superlativen | Folgeanweisung mit genau einer Änderung: „Streiche alle Superlative und Vergleiche." |
+| Das Ergebnis enthält eine Liste „Offen", obwohl alles gedeckt war | Prüfen, ob die genannte Angabe wirklich fehlt. Falls nicht, ignorieren; die Liste ist dann leer zu lassen. |
+| Die Folgeanweisung verändert alle drei Varianten statt einer | Die Variante in der Folgeanweisung ausdrücklich benennen: „Nur Variante 2 ändern, die anderen unverändert lassen." |
+
+## Kontrollpunkt für Modul 1
+
+- Einen neuen Chat öffnen, einen vollständigen Auftrag einfügen und abschicken
+- Ein Ergebnis mit einer Folgeanweisung im selben Chat gezielt verändern, eine Änderung je Nachricht
+- Einen kurzen Text Aussage für Aussage gegen ein Briefing lesen und Ungedecktes streichen
+- Für die eigene Übung ein vollständig erfundenes Briefing verwenden, statt echte Unterlagen zu kopieren
+- Den ersten Satz zum eigenen Ausgangsproblem in Portfolio-Teil 1 eintragen

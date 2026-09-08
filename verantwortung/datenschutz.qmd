@@ -1,0 +1,169 @@
+# Datenschutz im Arbeitsalltag
+
+Der Antwortentwurf aus Modul 2 hat sich bewährt. Jetzt kommt die Frage, die bei jeder Ausweitung kommt: Darf die echte Kundenmail in das Chatkonto? In diesem Kapitel bauen wir die Antwort darauf als Aktennotiz, die das Team bis zur verbindlichen Klärung trägt.
+
+## Der Anlass: eine Mail, die mehr enthält als drei Fragen
+
+Aylin Yılmaz will die Kundenservice-Entwürfe im Alltag erproben. Sina Bergmann hat dazu eine konkrete Mail auf dem Tisch und möchte wissen, ob sie diese unverändert in das Chatkonto kopieren darf. Die Mail ist eine synthetische Erweiterung des Lehrfalls; Absenderin, Nummern und Adressen sind erfunden und stehen als [Download](../material/m05/kundenmail-personenbezogen.txt) bereit.
+
+> Betreff: Abo-Wechsel auf entkoffeiniert und Rechnung
+>
+> Guten Tag Frau Bergmann,
+>
+> ich bin Kundin seit März (Kundennummer MR-20419, Abo-Nr. A-7731) und beziehe den Espresso Intenso. Wegen meiner Schwangerschaft möchte ich ab der nächsten Lieferung auf Entkoffeiniert Sanft wechseln. Bitte schicken Sie die Lieferung nicht mehr an die Firmenadresse, sondern nach Hause: Lindenweg 14, 70197 Stuttgart. Mein Nachbar Herr Kaufmann nimmt Pakete an, falls ich nicht da bin. Erreichbar bin ich unter 0711 555 0142.
+>
+> Außerdem: Was kostet Entkoffeiniert Sanft regulär im Shop? Meine letzte Rechnung (Nr. R-2026-0883) kam mir hoch vor.
+>
+> Viele Grüße
+>
+> Nadja Petrow
+
+Für den Entwurf braucht das Modell genau drei Dinge: den Wunsch nach einem Sortenwechsel im Abo, die neue Sorte und die Frage nach dem regulären Shop-Preis. Alles andere in der Mail ist für die Antwort ohne Bedeutung, und einiges davon ist heikel: der Name, drei Nummern, eine Wohnadresse, eine Telefonnummer, ein Dritter mit Namen und ein Gesundheitsbezug als Grund des Wechsels.
+
+Bevor wir etwas ausprobieren, eine Einschätzung: Was wäre passiert, wenn Sina die Mail einfach kopiert hätte? Die Angaben wären in einem Konto gelandet, für das keine Vereinbarung mit dem Anbieter besteht, und sie wären dort an dieses Konto geknüpft. Ob der Anbieter Eingaben speichert oder zum Training verwendet, hängt von seinen Bedingungen und Einstellungen ab. Das Risiko entsteht also beim Einfügen, nicht erst beim Ergebnis.
+
+::: {.callout-important title="Drei Fragen, die oft in einen Topf geworfen werden"}
+„Darf ich das kopieren?" meint meistens eine von drei sehr verschiedenen Fragen. **Datenschutz** betrifft Angaben über bestimmbare Personen: Name, Adresse, Kundennummer, Gesundheitsbezug. **Vertraulichkeit** betrifft Informationen, die der Betrieb nicht nach außen geben will, etwa Einkaufskonditionen; sie bleiben vertraulich, auch ohne Namen. **Urheberrecht** betrifft fremde Texte und Bilder im Material; darum geht es im nächsten Kapitel. Dieses Kapitel behandelt die erste Frage. Die Gegenüberstellung steht als [Übersicht](../material/m05/datenschutz-vertraulichkeit-urheberrecht.md) bereit.
+:::
+
+## Zielbild
+
+Am Ende dieses Kapitels liegt eine Aktennotiz mit einer Datenregel vor, die drei Dinge leistet:
+
+- Sie sagt für jede Angabe in einer typischen Anfrage, ob der Entwurf sie braucht und wie damit umgegangen wird: mitgeben, Platzhalter, weglassen.
+- Sie legt fest, wo Platzhalter gesetzt werden: vor dem Chatfenster, nicht darin.
+- Sie benennt, wer die offenen Fragen verbindlich klärt, und hält fest, was noch nicht geklärt ist.
+
+Die Notiz ist eine Arbeitsregel, keine Konformitätserklärung. Sie ersetzt weder eine datenschutzrechtliche Prüfung noch eine Vereinbarung mit dem Anbieter. Sie regelt, wie das Team bis dahin arbeitet. Das ausgefüllte Beispiel und die leere Vorlage liegen unter [Aktennotiz Datenregel](../material/m05/aktennotiz-datenregel.md).
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1 — Angaben sortieren: gebraucht oder nicht?
+
+Wir gehen die Mail Zeile für Zeile durch und stellen zu jeder Angabe eine einzige Frage: Braucht der Antwortentwurf sie? Für die Morgenrot-Mail ergibt das:
+
+| Angabe | Nötig für den Entwurf? | Umgang |
+|---|---|---|
+| Sortenwechsel im Abo, neue Sorte Entkoffeiniert Sanft | ja | mitgeben |
+| Frage nach dem regulären Shop-Preis | ja | mitgeben |
+| Name, Anrede | nein | weglassen oder [Name] |
+| Kundennummer, Abo-Nummer, Rechnungsnummer | nein | weglassen oder [Kundennummer] |
+| Neue Lieferadresse | nein, eigener Vorgang im Kundenkonto | weglassen |
+| Telefonnummer | nein | weglassen |
+| Nachbar mit Namen | nein | weglassen |
+| Schwangerschaft als Grund | nein | vollständig entfernen, nicht ersetzen |
+
+Die letzte Zeile ist die wichtigste. Der Grund des Wechsels ist eine Gesundheitsangabe. Solche Angaben gehören zu den besonders geschützten Datenkategorien. Sie werden nicht durch „[Grund]" ersetzt, sie werden weggelassen. Für die Antwort spielt der Grund ohnehin keine Rolle: Ein Sortenwechsel wird nicht begründet, er wird beantragt.
+
+::: {.callout-tip title="Die Urlaubsvertretung braucht die Frage, nicht die Akte"}
+Eine fachlich fitte Vertretung, die unser Haus nicht kennt, kann eine Preisfrage beantworten, ohne die Kundennummer zu wissen. Sie braucht die Frage und die geltenden Angaben. Die Akte bleibt im Haus. Nach diesem Maßstab wählen wir aus, was in einen Prompt geht: das Nötige, nicht das Verfügbare. Datenminimierung ist genau dieses Handwerk, kein Zusatzaufwand.
+:::
+
+### Schritt 2 — Platzhalter vor dem Chatfenster setzen
+
+Die bereinigte Anfrage entsteht außerhalb des Chatkontos. Sina schreibt die beiden Fragen ab oder kopiert nur diese Zeilen heraus:
+
+```text
+Kundenanfrage (bereinigt):
+Ich beziehe den Espresso Intenso im Abo und möchte ab der nächsten Lieferung auf Entkoffeiniert Sanft wechseln. Was kostet Entkoffeiniert Sanft regulär im Shop?
+```
+
+Mehr braucht der Arbeitsauftrag aus Modul 2 nicht. Die Adressänderung erledigt Sina im Kundenkonto, die Rechnungsfrage klärt sie mit der Rechnung vor sich, beides ohne Chatmodell.
+
+::: {.callout-important title="Pseudonymisiert ist nicht anonym"}
+Ein Text, in dem „Nadja Petrow" durch „[Name]" ersetzt wurde, kann trotzdem auf eine Person zurückführen, etwa über Abo-Nummer, Adresse oder den Zusammenhang der Angaben. Die Orientierungshilfe der Datenschutzkonferenz zu KI und Datenschutz behandelt genau diesen Punkt: Pseudonymisierte Daten bleiben personenbezogen, solange eine Zuordnung mit Zusatzwissen möglich ist ([DSK, Orientierungshilfe KI und Datenschutz, 06.05.2024](https://www.datenschutzkonferenz-online.de/media/oh/20240506_DSK_Orientierungshilfe_KI_und_Datenschutz.pdf)). Platzhalter sind deshalb ein Werkzeug der Datensparsamkeit, kein Freibrief. Und Anonymisieren im Chatfenster ist keine Anonymisierung: Wer die Mail hochlädt, damit das Modell sie bereinigt, hat die Angaben bereits übermittelt.
+:::
+
+### Schritt 3 — Sehen, was eine Platzhalter-Bereinigung leistet und was nicht
+
+Damit wir wissen, wie eine maschinelle Bereinigung aussieht und wo sie Lücken lässt, führen wir sie einmal an der **synthetischen** Mail durch. Das ist nur zulässig, weil die Mail erfunden ist. Der Auftrag steht als [Textdatei](../material/m05/prompt-platzhalter.txt) bereit.
+
+```text
+Du unterstützt den Kundenservice der Rösterei Morgenrot bei der Vorbereitung eines Textes.
+
+AUFGABE
+Bereite die unten stehende Kundenmail für die weitere Bearbeitung vor. Ersetze alle personenbezogenen Angaben durch Platzhalter in eckigen Klammern und entferne Angaben, die für eine Antwort auf die Kundenfragen nicht gebraucht werden.
+
+MATERIAL
+Kundenmail:
+Betreff: Abo-Wechsel auf entkoffeiniert und Rechnung
+Guten Tag Frau Bergmann,
+ich bin Kundin seit März (Kundennummer MR-20419, Abo-Nr. A-7731) und beziehe den Espresso Intenso. Wegen meiner Schwangerschaft möchte ich ab der nächsten Lieferung auf Entkoffeiniert Sanft wechseln. Bitte schicken Sie die Lieferung nicht mehr an die Firmenadresse, sondern nach Hause: Lindenweg 14, 70197 Stuttgart. Mein Nachbar Herr Kaufmann nimmt Pakete an, falls ich nicht da bin. Erreichbar bin ich unter 0711 555 0142.
+Außerdem: Was kostet Entkoffeiniert Sanft regulär im Shop? Meine letzte Rechnung (Nr. R-2026-0883) kam mir hoch vor.
+Viele Grüße
+Nadja Petrow
+
+FORMAT
+Zuerst die bereinigte Mail. Danach eine Tabelle mit drei Spalten: ursprüngliche Angabe, Platzhalter oder "entfernt", Begründung in höchstens acht Wörtern.
+
+GRENZEN
+- Verändere den Inhalt der Kundenfragen nicht.
+- Ersetze Namen, Nummern, Adressen und Kontaktdaten durch Platzhalter wie [Name], [Kundennummer], [Adresse].
+- Angaben zu Gesundheit, Familie oder Dritten nicht als Platzhalter behalten, sondern vollständig entfernen und in der Tabelle als "entfernt" führen.
+- Erfinde keine zusätzlichen Angaben.
+```
+
+Beim Lesen des Ergebnisses zählen wir gegen unsere Tabelle aus Schritt 1: Sind alle acht Stellen erfasst? Steht der Gesundheitsbezug als „entfernt" in der Tabelle, oder ist er als Platzhalter oder gar im Wortlaut stehen geblieben? Ist der Nachbar verschwunden? Jede Stelle, die das Modell übersehen hat, ist ein Befund. Er zeigt, warum die Prüfung bei uns bleibt, auch wenn ein Werkzeug hilft.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Das folgende Beispiel ist konstruiert, kein aufgezeichneter Modelloutput.
+
+> Betreff: Abo-Wechsel auf entkoffeiniert und Rechnung
+>
+> Guten Tag, ich bin Kundin seit [Monat] ([Kundennummer], [Abo-Nummer]) und beziehe den Espresso Intenso. Ich möchte ab der nächsten Lieferung auf Entkoffeiniert Sanft wechseln. Bitte schicken Sie die Lieferung künftig an [Adresse]. Erreichbar bin ich unter [Telefonnummer]. Außerdem: Was kostet Entkoffeiniert Sanft regulär im Shop? Meine letzte Rechnung ([Rechnungsnummer]) kam mir hoch vor. Viele Grüße, [Name]
+>
+> | Ursprüngliche Angabe | Platzhalter oder entfernt | Begründung |
+> |---|---|---|
+> | Nadja Petrow | [Name] | personenbezogen, nicht nötig |
+> | MR-20419, A-7731, R-2026-0883 | [Kundennummer] usw. | Kennungen, nicht nötig |
+> | Lindenweg 14, 70197 Stuttgart | [Adresse] | Wohnadresse |
+> | 0711 555 0142 | [Telefonnummer] | Kontaktdatum |
+> | Wegen meiner Schwangerschaft | entfernt | Gesundheitsangabe |
+> | Mein Nachbar Herr Kaufmann nimmt Pakete an | entfernt | Angabe zu Dritten |
+
+Zwei Beobachtungen. Erstens: Die Bereinigung ist brauchbar, aber sie behält mehr, als der Entwurf braucht. Adresse und Telefonnummer sind für eine Preisauskunft unnötig; nach unserer Regel aus Schritt 1 fallen sie weg. Zweitens: Ob das Modell die Gesundheitsangabe zuverlässig entfernt, wissen wir erst nach dem Lesen. Ein Durchlauf, in dem sie stehen bleibt, ist kein Ausreißer, sondern der Grund, warum Platzhalter vor dem Chatfenster gesetzt werden.
+
+### Schritt 4 — Die Aktennotiz schreiben
+
+Aus Tabelle, Regel und offenen Punkten wird die Notiz. Für die Rösterei Morgenrot sieht der Kern so aus:
+
+- **Genutztes Konto:** ein kostenloses Einzelkonto ohne Vereinbarung zur Verarbeitung von Kundendaten. Speicherung und Trainingsnutzung beim Anbieter sind vor einer Nutzung mit echten Daten zu prüfen.
+- **Regel:** Nur die Kundenfrage im Wortlaut geht hinein. Namen, Nummern, Adressen, Kontaktdaten, Angaben zu Dritten fallen weg. Gesundheitsbezüge und ähnliche Angaben werden entfernt, nie ersetzt. Interne Vorgangsnotizen gehen nicht in dieses Konto.
+- **Wo bereinigt wird:** vor dem Chatfenster, durch Abschreiben oder Herauskopieren der Fragen.
+- **Was das Modell nicht bekommt:** Kundenkonto, Sendungsstatus, Rechnungssystem.
+
+::: {.callout-note title="Wer klärt das verbindlich?"}
+Die Notiz ist erst vollständig, wenn zu jeder offenen Frage eine Zuständigkeit steht. In der Rösterei entscheidet Aylin Yılmaz als Geschäftsführung über Konto und Freigabe. Die Vertragslage zum Anbieter prüft Petra Lindqvist in Verwaltung und Controlling. Für die datenschutzrechtliche Einordnung ist im Fall keine datenschutzbeauftragte Person benannt; die Notiz hält deshalb fest, dass externe Beratung zu beauftragen ist, und lässt den Punkt sichtbar offen. Genau so gehen wir im eigenen Fall vor: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Die DSK-Orientierungshilfe nennt klare Verantwortlichkeiten, Zweckbindung und Datenminimierung als Grundanforderungen; sie liefert die Prüffragen, nicht die Antworten für unseren Einzelfall.
+:::
+
+### Eine eigene Variante bauen
+
+Wir nehmen den eigenen Fall aus dem Portfolio und eine typische, vollständig erfundene Eingangsnachricht dazu.
+
+1. Wir gehen die Nachricht Zeile für Zeile durch und füllen die Tabelle: nötig oder nicht, mitgeben, Platzhalter, weglassen.
+2. Wir markieren, welche Angaben in keiner Form hineingehören: Gesundheit, Religion, Herkunft, Angaben zu Dritten, interne Bewertungen von Personen.
+3. Wir schreiben auf, in welchem Konto wir arbeiten und was wir über dessen Bedingungen wissen und nicht wissen.
+4. Wir tragen die Zuständigkeiten ein. Wo im eigenen Betrieb keine Rolle benannt ist, steht „nicht benannt" mit dem nächsten Schritt.
+5. Wir führen den Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage aus und prüfen, ob der Entwurf ohne die weggelassenen Angaben auskommt.
+
+Die Aktennotiz gehört in **Portfolio-Teil 3: Qualitäts- und Compliance-Check**, Zeilen „Personenbezogene Daten im Prozess" und „Genutztes Konto / Vertragslage" der Risiko-Tabelle. Beide Zeilen bekommen eine Einschätzung und eine Zuständigkeit. Freitexte werden dort nicht automatisch fachlich bewertet.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Der Gesundheitsbezug steht im Ergebnis als „[Grund]" | Die Angabe gehört nicht als Platzhalter in den Text. Entfernen und die Grenze im Auftrag prüfen: Steht dort „entfernen", nicht „ersetzen"? |
+| Das Modell hat eine Angabe übersehen, etwa den Nachbarn | Als Befund notieren. Die eigene Tabelle aus Schritt 1 ist der Maßstab, nicht das Ergebnis. Im Alltag folgt daraus: Bereinigung vor dem Chatfenster. |
+| Adresse und Telefonnummer wurden brav ersetzt, stehen aber noch im Text | Fragen, ob der Entwurf sie braucht. Wenn nicht, weglassen. Ein Platzhalter ist die zweitbeste Lösung nach dem Weglassen. |
+| Die Notiz hat zu jeder Frage eine Zuständigkeit, aber keine ist im Betrieb wirklich benannt | Die Zuständigkeiten als „vorläufig" kennzeichnen und die tatsächliche Benennung als offenen Punkt eintragen. |
+| Der Anbieter hat Einstellungen zur Trainingsnutzung, aber unklar ist, was für dieses Konto gilt | Die Einstellung prüfen und in der Notiz festhalten. Bis zur Klärung gilt die strengere Regel. |
+| Die Regel wird im Alltag umgangen, weil das Abschreiben der Fragen lästig ist | Die Regel vereinfachen, nicht aufweichen: eine Textvorlage „Kundenanfrage (bereinigt):" bereitstellen, in die nur die Fragen getippt werden. |
+
+## Kontrollpunkt für Modul 5
+
+- Angaben in einer Anfrage danach sortieren, ob ein Entwurf sie braucht, und daraus mitgeben, Platzhalter oder weglassen ableiten
+- Besonders geschützte Angaben erkennen und vollständig entfernen statt sie zu ersetzen
+- Pseudonymisierung von Anonymisierung unterscheiden und Platzhalter vor dem Chatfenster setzen
+- Datenschutz, Vertraulichkeit und Urheberrecht als drei verschiedene Fragen auseinanderhalten
+- Eine Datenregel als Aktennotiz mit Zuständigkeiten und sichtbar offenen Punkten schreiben

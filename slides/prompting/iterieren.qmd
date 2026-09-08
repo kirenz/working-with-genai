@@ -1,0 +1,155 @@
+---
+title: "Iterieren: eine Änderung pro Durchlauf"
+subtitle: "Modul 2 · Lektion 2.3"
+book-source: ../../prompting/iterieren.qmd
+---
+
+## Ein Reparaturauftrag {.stage}
+
+[Modul 2 · Strukturierte Arbeitsaufträge]{.kicker}
+
+Ein Entwurf mit Mängeln liegt vor. Nicht alles neu formulieren: eine Sache ändern, beobachten, festhalten.
+
+::: {.notes}
+Asynchron bearbeitete Lektion; Folien als Kurzfassung. Ausgangspunkt ist ein konstruierter Entwurf zur zweiten Kundenanfrage, entstanden aus einem Ein-Satz-Auftrag ohne Fachinformationen. Zeit: 1 Minute.
+:::
+
+## Der Entwurf aus Durchlauf 1
+
+::: {.small}
+> Sehr geehrte Frau Novak,
+>
+> herzlichen Dank für Ihre Nachricht und Ihr Vertrauen in die Rösterei Morgenrot!
+>
+> Selbstverständlich setzen wir Ihre Oktober-Lieferung gerne für Sie aus. Sie müssen dafür nichts weiter tun, wir kümmern uns darum. Ihr Abo läuft danach ganz normal weiter.
+>
+> Entkoffeiniert Sanft gibt es natürlich auch im Abo. Er wird mit dem schonenden Wasserverfahren entkoffeiniert und ist ideal für den Abend.
+>
+> Unser Kaffee stammt aus kontrolliert biologischem Anbau, ist aber noch nicht offiziell Bio-zertifiziert. Wir arbeiten daran!
+>
+> Herzliche Grüße, Ihr Morgenrot-Team
+
+Konstruiert, kein aufgezeichneter Modelloutput.
+:::
+
+::: {.sources}
+material/m02/durchlauf-1-entwurf.txt · Maßstab: material/m02/fachinformationen-abo-erweitert.txt
+:::
+
+::: {.notes}
+Aufgabe vor dem Weiterklicken: Alle Befunde sammeln, noch nichts reparieren. Drei Minuten. Dann die nächste Folie. Zeit: 4 Minuten einschließlich Arbeitsphase.
+:::
+
+## Befunde in drei Gruppen
+
+| Gruppe | Im Entwurf |
+|---|---|
+| **Belegbarkeit** | Bio-Aussage erfunden; Wasserverfahren und „ideal für den Abend" nicht im Material |
+| **Bedingung und Handlung** | Aussetzen ohne Frist zugesagt; „wir kümmern uns darum" behauptet eine Handlung |
+| **Form** | Anrede mit Namen, Ausrufezeichen, Füllwörter, falsche Signatur, keine Liste „Offen" |
+
+In Ordnung: Entkoffeiniert im Abo wählbar; Abo läuft nach dem Aussetzen weiter.
+
+::: {.notes}
+Auflösung besprechen. Wichtig: Die zwei richtigen Aussagen benennen; Iterieren heißt nicht, alles zu verwerfen. Zeit: 2 Minuten.
+:::
+
+## Der teuerste Fehler zuerst
+
+1. **Belegbarkeit:** eine erfundene Zertifizierung ist ein Produktversprechen nach außen
+2. **Bedingung und Handlung:** eine unbedingte Zusage ist die Beschwerde von morgen
+3. **Form:** unangenehm, aber ohne Folgen für die Sache
+
+Reihenfolge nach Folgen, nicht nach Auffälligkeit. Eine Empfehlung dieses Kurses.
+
+::: {.notes}
+Analogie aus der Qualitätskontrolle: erst prüfen, ob das Teil die Last trägt, dann der Kratzer im Lack. Die Reihenfolge als Kursempfehlung kennzeichnen, nicht als belegte Regel. Zeit: 1 Minute.
+:::
+
+## Zuerst: die unveränderte Wiederholung
+
+Denselben Ein-Satz-Auftrag ein zweites Mal in einem neuen Chat ausführen.
+
+- Zeigt, wie stark zwei Ergebnisse bei identischer Eingabe streuen
+- Spätere Unterschiede lassen sich dann vorsichtiger deuten
+- Protokollzeile 1b
+
+::: {.notes}
+Eine Minute Aufwand, großer Nutzen: Wer sieht, dass die Wiederholung andere ungedeckte Angaben liefert als der erste Durchlauf, schreibt spätere Verbesserungen nicht vorschnell der eigenen Änderung zu. Zeit: 1 Minute.
+:::
+
+## Vier Fassungen, je eine Änderung
+
+| Fassung | Geändert | Prüfen gegen |
+|---|---|---|
+| v1 | Ausgangsfassung: ein Satz, nur die Kundenmail | alle Befunde |
+| v2 | Fachinformationen als Material, Grenze „nur Material, Lücken unter Offen" | Gruppe Belegbarkeit |
+| v3 | Zwei Zeilen: Bedingung im selben Satz; keine veranlasste Handlung behaupten | Gruppe Bedingung und Handlung |
+| v4 | Musterbeispiel als Format, Längengrenze, Liste „Offen" | Gruppe Form |
+
+::: {.sources}
+Alle Fassungen im Wortlaut: material/m02/prompt-fassungen.md
+:::
+
+::: {.notes}
+Jede Fassung in einem neuen Chat ausführen und nur gegen die zugehörige Befundgruppe prüfen; alles andere notieren, aber noch nicht reparieren. Zwei Änderungen in einem Durchlauf vermeiden, sonst ist die Beobachtung nicht zuordenbar. Zeit: 2 Minuten.
+:::
+
+## Folgeanweisung oder neue Fassung
+
+::: {.two-col}
+::: {.card}
+**Folgeanweisung im selben Chat**
+
+Schnell, Wirkung sofort am vorliegenden Entwurf sichtbar.
+
+Repariert den Entwurf.
+:::
+::: {.card}
+**Neue Fassung in neuem Chat**
+
+Langsamer, aber wiederverwendbar beim nächsten Kunden.
+
+Repariert den Auftrag.
+:::
+:::
+
+Regel: Was sich als Folgeanweisung bewährt, wandert anschließend in die Fassung.
+
+::: {.notes}
+Beide Wege sind zulässig und dürfen gemischt werden. Die Regel am Ende ist der Punkt: Eine Folgeanweisung, die nicht in die Fassung übertragen wird, muss beim nächsten Fall erneut getippt werden. Zeit: 1 Minute.
+:::
+
+## Das Protokoll: Beobachtungen, keine Bewertungen
+
+| Durchlauf | Geändert | Wo | Beobachtung | Entscheidung |
+|---|---|---|---|---|
+| 1 | Ausgangsfassung | neuer Chat | Bio erfunden, Frist fehlt, Anrede mit Namen | Material und Grenzen ergänzen |
+| 1b | nichts | neuer Chat | andere ungedeckte Angabe („Versand in zwei Werktagen") | Streuung notiert |
+| 2 | v2 | neuer Chat | Bio-Aussage weg; Frist fehlt noch; „wir veranlassen" bleibt | Bedingung und Handlung regeln |
+| 3 | v3 | Folgeanweisung, dann Fassung | Frist im Satz, Versanddatum unter „Offen"; noch 140 Wörter | Format über Musterbeispiel |
+| 4 | v4 | neuer Chat | „Guten Tag,", 96 Wörter, Liste „Offen" | Arbeitsstand in die Mappe |
+
+Konstruiertes Beispiel.
+
+::: {.sources}
+Vorlage und Beispiel: material/m02/iterationsprotokoll.md
+:::
+
+::: {.notes}
+Zeigen, wie Einträge aussehen: konkrete Beobachtungen („Frist steht im Satz", „140 Wörter") statt „besser" oder „schlechter". Bewertungen kommen erst in die Spalte Entscheidung. Das Protokoll beweist keine Ursache; es macht die Arbeit nachvollziehbar. Zeit: 2 Minuten.
+:::
+
+## Eigene Variante und Portfolio
+
+1. Eigenen Auftrag ausführen, alle Befunde in drei Gruppen sammeln
+2. Unverändert wiederholen, Unterschiede notieren
+3. Reihenfolge nach Folgen festlegen
+4. Drei Durchläufe mit je einer Änderung, jede in die Fassung übernehmen
+5. Protokoll füllen, Arbeitsstand wählen
+
+**Portfolio-Teil 2:** Protokoll unter „Entwicklungsschritte", gewählte Fassung unter „Arbeitsauftrag im Wortlaut". Frühere Fassungen in den Anhang. Formulierung: „nach der Änderung beobachtet", nicht „die Änderung hat bewirkt".
+
+::: {.notes}
+Selbstlernaufgabe, Teil des Zwischenstands. Alle Angaben im eigenen Fall bleiben erfunden. Der letzte Satz ist die Sprachregel für das Portfolio; vier Durchläufe sind eine Arbeitsweise, kein Experiment. Zeit: 1 Minute.
+:::

@@ -1,0 +1,22 @@
+KONSTRUIERTER ENTWURF FÜR DEN ERSATZWEG
+Kursmaterial "Working with GenAI", Modul 6, Lektion 6.2
+
+HINWEIS: Konstruiertes Beispiel, kein aufgezeichneter Modelloutput. Es
+dient als Wert für das Feld "text" im Ersatzweg ohne Modellzugang und als
+Abgleich für den eigenen Durchlauf. Formulierungen echter Durchläufe weichen
+ab; identische Ergebnisse sind nicht zu erwarten.
+
+--------------------------------------------------------------------------
+
+Guten Tag,
+
+vielen Dank für Ihre Nachricht. Abo-Lieferungen versenden wir dienstags und donnerstags; mit dem Versand erhalten Sie eine Versandbestätigung mit Sendungsnummer, die Ihnen am Dienstag zugegangen ist. Der Paketdienst nennt als Laufzeit ein bis drei Werktage nach dem Versand. Eine Ankunft an einem bestimmten Tag können wir nicht garantieren.
+
+Unser Bereich Lager und Versand prüft den aktuellen Stand Ihrer Sendung anhand der Sendungsnummer und meldet sich bei Ihnen. Sollte die Sendung fünf Werktage nach dem Versand nicht zugestellt sein, veranlassen wir eine Nachforschung beim Paketdienst.
+
+Freundliche Grüße
+Ellen Ruppert, Lager und Versand, Rösterei Morgenrot
+
+Offen:
+- Ob das Paket bis Freitag ankommt.
+- Aktueller Sendungsstatus (wird durch Lager und Versand geprüft).

@@ -1,0 +1,39 @@
+RÖSTEREI MORGENROT — AUSZUG VERSANDINFORMATIONEN LAGER UND VERSAND
+Kursmaterial "Working with GenAI", Modul 6
+
+HINWEIS: Synthetische GenAI-Erweiterung des Lehrfalls. Alle Angaben sind
+für den Kurs konstruiert und beziehen sich auf keine reale Rösterei und
+keinen realen Paketdienst. Sie dürfen unverändert in ein Chatfenster oder
+in einen Workflow kopiert werden.
+
+Zuständig für Versandtermine und Sendungsstatus: Ellen Ruppert, Lager und
+Versand. Für Sortiment, Preise und Abo-Regeln gilt weiterhin der Auszug
+Fachinformationen Kundenservice aus Modul 2.
+
+--------------------------------------------------------------------------
+GELTENDE ANGABEN
+--------------------------------------------------------------------------
+
+- Abo-Lieferungen werden dienstags und donnerstags versendet.
+- Mit dem Versand erhält die Kundin oder der Kunde eine Versandbestätigung
+  per Mail mit einer Sendungsnummer.
+- Der Paketdienst nennt als Laufzeit ein bis drei Werktage nach dem Versand.
+  Die Rösterei gibt keine Ankunftsgarantie für einen bestimmten Tag.
+- Der Sendungsstatus kann nur mit der Sendungsnummer geprüft werden. Die
+  Prüfung erfolgt durch Lager und Versand im System des Paketdienstes,
+  nicht durch das Chatmodell und nicht durch den Kundenservice.
+- Gilt eine Sendung nach fünf Werktagen ab Versand als nicht zugestellt,
+  löst Lager und Versand eine Nachforschung beim Paketdienst aus und
+  informiert die Kundin oder den Kunden.
+
+--------------------------------------------------------------------------
+WAS HIER BEWUSST NICHT STEHT
+--------------------------------------------------------------------------
+
+Ob eine konkrete Sendung bereits versendet wurde, wo sie sich befindet und
+ob sie an einem bestimmten Tag ankommt, steht in keinem Auszug. Das ergibt
+sich nur aus der Prüfung mit der Sendungsnummer durch Lager und Versand.
+
+Ein Entwurf darf deshalb erklären, wie Versand und Laufzeit grundsätzlich
+funktionieren, und ankündigen, dass der Status geprüft wird. Er darf keinen
+Ankunftstag zusagen und keinen Status behaupten.

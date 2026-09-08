@@ -1,0 +1,159 @@
+# Übertragbarkeit: derselbe Auftrag in ChatGPT, Claude und Gemini
+
+Der Kundenservice-Auftrag hat seine Testfälle bestanden, in einem Werkzeug. Was passiert, wenn dieselbe Textdatei in ein anderes Chatwerkzeug kopiert wird? Bleibt die Liste „Offen“ stehen, hängt die Bedingung noch an der Zusage, kommen neue Zusätze dazu? In diesem Kapitel führen wir denselben Auftrag in zwei oder drei Werkzeugen aus und protokollieren, was gleich bleibt und was sich unterscheidet. Wir küren dabei niemanden.
+
+**Lernziel:** Einen unveränderten Auftrag in mehreren Chatwerkzeugen ausführen, die Ergebnisse mit festen Kriterien protokollieren, daraus ableiten, welche Formulierungen des Auftrags überall getragen haben, und eine Beobachtung zur Übertragbarkeit für das Portfolio schreiben, ohne ein Ranking. **Zeit:** etwa 35 Minuten einschließlich der Durchläufe.
+
+## Der Lehrfall: eine Datei, drei Fenster
+
+Petra Lindqvist will wissen, ob der Auftrag an einem Werkzeug hängt. In der Rösterei nutzen nicht alle dasselbe Konto, und ob das Konto von heute nächstes Jahr noch das Konto der Wahl ist, weiß niemand. Der Auftrag ([Download](../material/m04/prompt-4-3-vergleichsauftrag.txt)) ist der aus Modul 2 mit der Eingabe von Testfall T2, ergänzt um eine Preisfrage:
+
+```text
+Du unterstützt den Kundenservice der Rösterei Morgenrot.
+
+AUFGABE
+Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
+
+MATERIAL (nur diese Angaben sind gültig)
+Fachinformationen:
+- Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR,
+  Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
+- Diese Listenpreise gelten im Onlineshop. Zu Preisen innerhalb des
+  Kaffee-Abos liegen hier keine Angaben vor.
+- Kaffee-Abo, Sortenwechsel: Ein Wechsel der Sorte gilt für die nächste
+  Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand
+  eingeht.
+- Für Versandtermine und Sendungsstatus ist der Bereich Lager und Versand
+  zuständig.
+
+Kundenanfrage:
+Betreff: Wechsel auf Espresso
+Guten Tag,
+ich habe den Filterkaffee Mild im Abo und möchte ab der nächsten Lieferung
+auf Espresso Intenso wechseln. Geht das? Und was kostet der Espresso Intenso
+regulär im Shop?
+Viele Grüße
+T. Osei
+
+FORMAT
+Antwort-Mail, höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton.
+Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
+Am Ende eine Liste mit der Überschrift "Offen".
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie
+  stattdessen unter "Offen" ein.
+- Erfinde keine Termine, Preise oder Fristen.
+```
+
+Die Erwartung kennen wir aus Testfall T2: Preis 10,00 EUR als Shop-Preis, Wechsel unter der Fünf-Werktage-Bedingung, Versanddatum unter „Offen“.
+
+::: {.callout-important title="Kein Ranking, kein Kaufzwang"}
+Dieses Kapitel vergleicht Ergebnisse an einem einzigen Auftrag, an einem Tag, mit je einem Durchlauf. Das reicht, um zu sehen, welche Formulierungen des Auftrags überall getragen haben. Es reicht nicht, um zu sagen, welches Werkzeug „besser“ ist, und das behaupten wir nicht. Für die Übung genügt ein kostenloses Konto; ein zweites oder drittes ist nützlich, aber keine Bedingung. Wer nur ein Werkzeug hat, vergleicht mit den drei konstruierten Ausgaben weiter unten.
+:::
+
+## Zielbild
+
+Ein Vergleichsprotokoll mit sechs Kriterien je Werkzeug, eine Liste „Was gleich blieb“ und „Was sich unterschied“, und eine Änderung am Auftrag, die aus dem Vergleich folgt.
+
+| Kriterium | Prüffrage |
+|---|---|
+| **Format** | Mail, Anrede, Absenderzeile, Wortgrenze eingehalten? |
+| **Offen-Liste** | Gibt es sie, und steht das Versanddatum darin? |
+| **Bedingung** | Hängt der Wechsel an „fünf Werktage vor dem Versand“, ohne unbedingte Zusage? |
+| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Material stehen? Jede einzeln. |
+| **Rückfrage statt Entwurf** | Kam ein Entwurf oder zuerst eine Frage zurück? |
+| **Ton und Länge** | Sachlich? Wortzahl? |
+
+Die Vorlage steht als [Download](../material/m04/vergleichsprotokoll-vorlage.md) bereit.
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** die Auftragsdatei, das Protokoll, und die Werkzeuge, zu denen ein Zugang besteht: [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com/). Jeweils ein neuer Chat.
+
+### Schritt 1 — Den Auftrag nicht anpassen
+
+Wir kopieren die Datei unverändert in jedes Werkzeug. Keine andere Anrede, keine Umformulierung, weil ein Fenster anders aussieht. Der Vergleich gilt nur, wenn die Eingabe identisch ist. Wenn ein Werkzeug den Auftrag anders behandelt, ist das der Befund, nicht ein Anlass, den Auftrag für dieses Werkzeug umzuschreiben.
+
+### Schritt 2 — Je Werkzeug ein Durchlauf, sofort protokollieren
+
+Nach jedem Durchlauf füllen wir die sechs Kriterien aus, bevor wir das nächste Werkzeug öffnen. Sonst vergleichen wir aus der Erinnerung, und die Erinnerung bevorzugt den Text, der am flüssigsten klang. Zu „Zusätze“ notieren wir jede Aussage, die nicht im Material steht, einzeln, auch wenn sie stimmt.
+
+::: {.callout-tip title="Das Cockpit-Protokoll"}
+Wer in einem Cockpit eine Checkliste abarbeitet, liest jeden Punkt laut und bestätigt ihn, bevor der nächste kommt. Es gibt keinen Punkt „Gesamteindruck“. Genau so lesen wir die drei Ergebnisse: Kriterium für Kriterium, nicht als Ganzes.
+:::
+
+### Schritt 3 — Copilot einordnen, falls er der einzige Zugang ist
+
+In manchen Organisationen ist Microsoft Copilot der einzige freigegebene Zugang. Der Auftrag lässt sich dort genauso einfügen; das Protokoll gilt unverändert. Der Kurs hat dafür keine eigene Übungsschiene, und wir treffen hier keine Aussage darüber, wie Copilot den Auftrag behandelt. Wer nur Copilot nutzen darf, füllt das Protokoll für Copilot aus und vergleicht mit den konstruierten Ausgaben.
+
+### Schritt 4 — Gleich, verschieden, robust
+
+Nach den Durchläufen beantworten wir drei Fragen im Protokoll:
+
+1. **Was blieb gleich?** Kandidaten sind die Teile, die der Auftrag ausdrücklich verlangt hat: der Preis, die Bedingung, die Struktur mit Liste „Offen“. Wenn eines davon irgendwo fehlt, ist das die interessanteste Zeile.
+2. **Was unterschied sich?** Anrede, Länge, Reihenfolge, Zusätze, ob zuerst eine Rückfrage kam.
+3. **Welche Formulierungen haben überall getragen?** Kandidaten: die Überschriften AUFGABE, MATERIAL, FORMAT, GRENZEN; die ausdrücklich verlangte Liste „Offen“; die Wortgrenze; „nur Angaben aus dem Material“. Was überall getragen hat, ist robust und bleibt. Was nur in einem Werkzeug getragen hat, wird im Auftrag ausdrücklicher formuliert.
+
+::: {.callout-note title="Warum wir Unterschiede nicht erklären"}
+Wenn ein Werkzeug eine Rückfrage stellt und ein anderes einen Entwurf liefert, wissen wir nach einem Durchlauf nicht, ob das am Werkzeug, an einer Voreinstellung im Konto oder am Zufall des Durchlaufs liegt. Wir notieren die Beobachtung und ziehen daraus eine Änderung am Auftrag, die in allen Werkzeugen gilt. Die Zuschreibung „Werkzeug X macht immer Y“ tragen wenige Durchläufe nicht; das gilt seit Modul 2.
+:::
+
+### Schritt 5 — Eine Änderung am Auftrag, überall wiederholen
+
+Aus dem Protokoll folgt genau eine Änderung. Wenn ein Werkzeug zurückgefragt hat, ergänzen wir unter GRENZEN: „Stelle keine Rückfragen. Erstelle den Entwurf und trage fehlende Angaben unter Offen ein.“ Wenn ein Werkzeug „Offen: keine“ geschrieben hat, obwohl das Versanddatum fehlt, ergänzen wir unter FORMAT: „Die Liste Offen nennt mindestens die Angaben, die für eine vollständige Antwort fehlen; hier gehört das Versanddatum dazu.“ Dann führen wir die neue Fassung in allen verfügbaren Werkzeugen erneut aus.
+
+### Drei konstruierte Ausgaben zum Abgleich
+
+Wer nur ein Werkzeug hat, vergleicht dessen Ergebnis mit diesen drei Ausgaben. Sie sind konstruiert, keine aufgezeichneten Modelloutputs, und stehen für kein bestimmtes Produkt; die Buchstaben sind keine verdeckten Anbieternamen. Vollständig mit Lesehilfe als [Download](../material/m04/vergleichsausgaben-konstruiert.md).
+
+**Ausgabe A:**
+
+> Guten Tag, vielen Dank für Ihre Nachricht. Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung, wenn Ihre Anfrage spätestens fünf Werktage vor deren Versand eingeht. Ob das für Ihre kommende Lieferung zutrifft, können wir hier nicht beurteilen, weil uns das Versanddatum nicht vorliegt. Der Espresso Intenso kostet im Onlineshop regulär 10,00 EUR. Freundliche Grüße, Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot
+>
+> Offen: Versanddatum der nächsten Lieferung und damit, ab welcher Lieferung der Wechsel greift.
+
+**Ausgabe B:**
+
+> Guten Tag Herr Osei, gerne stellen wir Ihr Abo ab der nächsten Lieferung auf Espresso Intenso um. Bitte beachten Sie, dass Änderungen in der Regel bis fünf Werktage vor dem Versand möglich sind; Ihre nächste Lieferung geht voraussichtlich Anfang der kommenden Woche raus, sodass die Umstellung noch klappen sollte. Der Espresso Intenso kostet 10,00 EUR. Im Abo profitieren Sie außerdem von unserem vergünstigten Abo-Preis. Herzliche Grüße, Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot
+>
+> Offen: keine.
+
+**Ausgabe C:**
+
+> Bevor ich die Antwort entwerfe, brauche ich eine Angabe: Wann wird die nächste Abo-Lieferung von T. Osei versendet? Ohne das Versanddatum kann ich nicht sagen, ob der Sortenwechsel noch für die nächste Lieferung greift. Bitte teilen Sie mir das Datum mit, dann formuliere ich die Mail.
+
+Wir füllen das Protokoll für A, B und C aus, bevor wir die Lesehilfe im Download öffnen. Zwei Beobachtungen, die im Protokoll stehen sollten: B liest sich am freundlichsten und enthält die meisten Zusätze ohne Grundlage, darunter einen erfundenen Versandtermin und eine Anrede, die aus „T. Osei“ nicht ableitbar ist. C ist nicht falsch, aber nicht das bestellte Ergebnis; eine Rückfrage lässt sich mit einer Nachricht auflösen oder im Auftrag ausschließen.
+
+### Eine eigene Variante bauen
+
+Wir führen den eigenen Auftrag aus dem Portfolio, unverändert, in jedem verfügbaren Werkzeug aus und protokollieren nach denselben sechs Kriterien. Wer nur ein Werkzeug hat, führt den Auftrag dort zweimal in getrennten Chats aus und vergleicht die beiden Durchläufe miteinander; auch das ist eine Beobachtung zur Übertragbarkeit, nämlich zur Übertragbarkeit von einem Tag auf den nächsten.
+
+1. Auftrag unverändert einfügen, Protokoll je Durchlauf sofort ausfüllen.
+2. Gleich, verschieden, robust beantworten.
+3. Eine Änderung ableiten, überall wiederholen.
+4. Den Absatz „Übertragbarkeit“ für das Portfolio schreiben: drei bis fünf Sätze, was gleich blieb, was sich unterschied, was am Auftrag geändert wurde. Ohne Sieger.
+
+Das Protokoll und der Absatz gehören in **Portfolio-Teil 3** unter „Übertragbarkeit“.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Ein Werkzeug stellt eine Rückfrage statt zu entwerfen | Mit einer Nachricht auflösen („Entwurf erstellen, fehlende Angabe unter Offen“). Für die nächste Fassung eine Grenze ergänzen, die Rückfragen ausschließt. |
+| „Offen: keine“, obwohl das Versanddatum fehlt | Im Protokoll unter Offen-Liste als „nein“ notieren. FORMAT präzisieren: Offen nennt die für eine vollständige Antwort fehlenden Angaben. |
+| Die Anrede nennt einen Nachnamen oder ein Geschlecht | Aus „T. Osei“ nicht ableitbar; als Zusatz notieren. FORMAT gibt die Anrede bereits vor; Befund festhalten. |
+| Der Protokolleintrag lautet „insgesamt besser“ | Kein Kriterium. Zeile löschen, die sechs Kriterien einzeln ausfüllen. |
+| Die Wortzahl weicht in einem Werkzeug stark ab | Notieren. Nachzählen, ob die Grenze überschritten ist; ein kürzerer Text ist kein Verstoß. |
+| Nach der Änderung am Auftrag unterscheiden sich die Werkzeuge an einer anderen Stelle | Erwartbar. Neue Beobachtung notieren, nächste Änderung ableiten. Beide Fassungen des Auftrags aufheben. |
+| Nur ein Werkzeug steht zur Verfügung | Mit den drei konstruierten Ausgaben vergleichen und den eigenen Auftrag zweimal in getrennten Chats ausführen. Kein Nachteil für das Portfolio. |
+
+## Kontrollpunkt für Modul 4
+
+- Einen Auftrag unverändert in mehrere Werkzeuge übertragen und je einen Durchlauf mit festen Kriterien protokollieren
+- Zusätze ohne Grundlage einzeln benennen, auch wenn sie plausibel sind
+- Unterscheiden, welche Formulierungen des Auftrags überall getragen haben und welche nur in einem Werkzeug
+- Eine Rückfrage als anderes Ergebnis erkennen und im Auftrag behandeln
+- Aus dem Vergleich eine Änderung am Auftrag ableiten und sie in allen Werkzeugen wiederholen
+- Eine Beobachtung zur Übertragbarkeit schreiben, die kein Ranking und keine Kaufempfehlung enthält

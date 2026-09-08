@@ -1,0 +1,177 @@
+---
+title: "Mit Beispielen und Format steuern"
+subtitle: "Modul 2 · Lektion 2.2"
+book-source: ../../prompting/beispiele-format.qmd
+---
+
+## Prüfbar war der Entwurf schon. Klingt er wie aus unserem Haus? {.stage}
+
+[Modul 2 · Strukturierte Arbeitsaufträge]{.kicker}
+
+Zwei neue Stellschrauben am Baustein Format: ein Musterbeispiel und eine Ausgabeform, die das Prüfen leichter macht.
+
+::: {.notes}
+Diese Lektion wird asynchron bearbeitet; die Folien dienen als Kurzfassung für den Beratungstermin oder ein Video. Anknüpfen an 2.1: Länge, Ton, Liste „Offen" reichen für Prüfbarkeit, nicht für den Hausstil. Zeit: 1 Minute.
+:::
+
+## Die zweite Anfrage
+
+> Ich bin im Oktober drei Wochen unterwegs und möchte meine Abo-Lieferung in dieser Zeit aussetzen. Geht das, und was muss ich dafür tun? Außerdem: Gibt es Entkoffeiniert Sanft auch im Abo? Und ist Ihr Kaffee eigentlich Bio?
+
+R. Novak (erfunden)
+
+| Frage | Lage |
+|---|---|
+| Aussetzen | **bedingt:** fünf Werktage vor Versand, Versanddatum unbekannt |
+| Entkoffeiniert im Abo | **gedeckt:** alle drei Sorten wählbar |
+| Bio | **offen:** ausdrücklich keine freigegebene Angabe |
+
+::: {.sources}
+material/m02/kundenanfrage-2.txt · material/m02/fachinformationen-abo-erweitert.txt (Abo-Regeln für den Kurs erfunden)
+:::
+
+::: {.notes}
+Anfrage vorlesen, drei Lagen bestimmen, bevor etwas abgeschickt wird. Bei Bio betonen: weder ja noch nein darf im Entwurf stehen; das Material sagt, dass keine Angabe vorliegt. Zeit: 2 Minuten.
+:::
+
+## Neu: zwei Musterantworten zeigen den Hausstil
+
+::: {.small}
+> Guten Tag,
+>
+> vielen Dank für Ihre Nachricht.
+>
+> Ihr Abo können Sie jederzeit per Mail an uns kündigen; bereits versendete Lieferungen sind davon nicht betroffen.
+>
+> Zum Versandstatus Ihrer aktuellen Lieferung liegt mir hier keine Angabe vor. Dafür ist unser Bereich Lager und Versand zuständig; Sie erhalten dazu eine gesonderte Rückmeldung.
+>
+> Freundliche Grüße
+> Sina Bergmann
+> Vertrieb und Kundenservice, Rösterei Morgenrot
+:::
+
+Merkmale: „Guten Tag," ohne Namen, ein Satz Dank, ein Absatz je Frage, Bedingung im selben Satz, Offenes benannt mit Zuständigkeit, keine Ausrufezeichen, höchstens 120 Wörter.
+
+::: {.sources}
+material/m02/musterantworten-kundenservice.txt (konstruiert)
+:::
+
+::: {.notes}
+Das Muster beantwortet absichtlich andere Fragen als die aktuelle Anfrage. Die Merkmale einmal aufzählen; sie sind die Prüfliste für später. Zeit: 2 Minuten.
+:::
+
+## Beschreiben oder zeigen
+
+::: {.two-col}
+::: {.card}
+**Durchlauf A: Format beschreiben**
+
+„Antwort-Mail, freundlich und kurz, im Stil unseres Kundenservice."
+
+Das Modell kennt Sinas Mails nicht.
+:::
+::: {.card}
+**Durchlauf B: Musterbeispiel mitgeben**
+
+„Übernimm Aufbau und Ton des folgenden Beispiels, nicht seinen Inhalt."
+
+Zeigt Anrede, Absatzlänge, Platz der Bedingung.
+:::
+:::
+
+Preis des Beispiels: Inhalte können hineinrutschen. Deshalb „nicht seinen Inhalt", ein Beispiel zu anderen Fragen, und Prüfung auf eingeschleppte Sätze.
+
+::: {.notes}
+Der Kern der Lektion. Ein Beispiel ist die bessere Wahl, wenn der Stil schwer zu beschreiben ist, aber ein gutes Exemplar vorliegt. Das Risiko benennen: die Kündigungsregel aus dem Beispiel könnte in der Antwort auftauchen, obwohl niemand gefragt hat. Zeit: 2 Minuten.
+:::
+
+## Der Auftrag mit Beispiel
+
+```text
+FORMAT
+Übernimm Aufbau und Ton des folgenden Beispiels, nicht seinen Inhalt.
+Das Beispiel beantwortet andere Fragen.
+
+BEISPIEL (Hausstil)
+[Muster 2 im Wortlaut]
+ENDE BEISPIEL
+
+Zusätzlich: höchstens 120 Wörter, je Frage ein eigener Absatz,
+eine Bedingung steht im selben Satz wie die Zusage.
+Am Ende, nach der Signatur, eine Liste "Offen".
+```
+
+::: {.sources}
+Vollständiger Auftrag: Buchkapitel 2.2, Schritt 3, oder material/m02/prompt-beispiel-format.txt
+:::
+
+::: {.notes}
+Nur der FORMAT-Block ist neu; Aufgabe, Material und Grenzen wie in 2.1, ergänzt um „Behaupte keine erledigte oder veranlasste Handlung". Auftrag: Durchlauf A und B in zwei neuen Chats ausführen und mit der Vergleichsliste auf der nächsten Folie lesen. Zeit: 1 Minute.
+:::
+
+## Vorher und Nachher vergleichen
+
+| Merkmal | A: Beschreibung | B: Beispiel |
+|---|---|---|
+| Anrede „Guten Tag," ohne Namen | ? | ? |
+| Ein Absatz je Frage | ? | ? |
+| Bedingung im selben Satz | ? | ? |
+| Bio: erfunden, verneint oder offen? | ? | ? |
+| Eingeschleppter Inhalt (Kündigungsregel)? | | ? |
+| Höchstens 120 Wörter | ? | ? |
+
+Zwei Durchläufe sind eine Beobachtung, kein Beweis.
+
+::: {.notes}
+Arbeitsphase: beide Ergebnisse nebeneinander, Liste abhaken. Ausdrücklich sagen, dass zwei Durchläufe nicht zeigen, dass das Beispiel den Unterschied verursacht hat. Festgehalten wird die Beobachtung und die Entscheidung, welche Fassung weiterverwendet wird. Zeit: 5 Minuten.
+:::
+
+## Eine andere Ausgabeform: die Belegtabelle
+
+```text
+AUFGABE
+Erstelle KEINE Antwort-Mail. Erstelle eine Belegtabelle.
+
+FORMAT
+Frage | Antwort in einem Satz | Beleg (wörtlich aus den Fachinformationen) | Status
+Status: gedeckt, bedingt, offen. Eine Zeile je Frage. Danach nichts weiter.
+
+GRENZEN
+Nur wörtliche Zitate als Beleg. Kein Beleg: Spalte leer, Status "offen".
+```
+
+Die Tabelle prüft sich fast selbst: Zitat suchen, Status gegen Belegspalte lesen.
+
+::: {.sources}
+material/m02/prompt-belegtabelle.txt
+:::
+
+::: {.notes}
+Dieselben Fakten, andere Form. Zum Prüfen ist eine Mail umständlich; eine Tabelle mit festen Spalten und fester Statusmenge nicht. Zwei Fehlerbilder nennen: ein Zitat, das es im Material nicht gibt; Status „gedeckt" neben leerer Belegspalte. Zeit: 2 Minuten.
+:::
+
+## Konstruiertes Ergebnis: die Tabelle
+
+| Frage | Antwort | Beleg | Status |
+|---|---|---|---|
+| Aussetzen im Oktober? | Möglich bei Anfrage spätestens fünf Werktage vor Versand; Versanddatum fehlt | „Eine einzelne Lieferung kann ausgesetzt werden, wenn …" | bedingt |
+| Entkoffeiniert im Abo? | Ja, alle drei Sorten wählbar | „Alle drei Sorten sind im Abo wählbar." | gedeckt |
+| Bio? | Dazu liegt keine freigegebene Angabe vor | | offen |
+
+Konstruiert, kein aufgezeichneter Modelloutput.
+
+::: {.notes}
+Zum Abgleich mit der eigenen Tabelle. Der konstruierte Mail-Entwurf aus Durchlauf B steht im Buch. Die fünf Stellschrauben des Formats nennen: Textsorte, Länge, Ton, Aufbau, Ausgabeform; Merkhilfe des Kurses. Zeit: 1 Minute.
+:::
+
+## Eigene Variante und Portfolio
+
+- Ein Musterbeispiel für den eigenen Fall: vollständig erfunden oder aus einem öffentlichen Text nachgebaut; interne Vorlagen bleiben draußen
+- Zwei Aufträge: Beispiel als Format, Belegtabelle als Ausgabeform
+- Prüfen: Steht im Entwurf eine Aussage, die in der Tabelle „offen" ist? Ist ein Satz aus dem Beispiel hineingerutscht?
+
+**Portfolio-Teil 2:** Format-Zeile der Auftragskarte mit den fünf Stellschrauben, Musterbeispiel im Wortlaut als Übungsmaterial.
+
+::: {.notes}
+Selbstlernaufgabe. Herkunft des Beispiels allein genügt nicht; das Beispiel selbst gehört in die Mappe. Wer ein Ergebnis mitbringen will: die Belegtabelle zum eigenen Fall für den Beratungstermin. Zeit: 1 Minute.
+:::

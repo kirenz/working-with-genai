@@ -1,0 +1,37 @@
+VERGLEICHSAUFTRAG: DERSELBE TEXT IN JEDEM WERKZEUG
+Kursmaterial "Working with GenAI", Lektion 4.3
+
+Diesen Auftrag unverändert in jedes verfügbare Werkzeug kopieren (ChatGPT,
+Claude, Gemini; Copilot, falls es der einzige freigegebene Zugang ist).
+Jeweils ein neuer Chat. Nichts anpassen, auch nicht die Anrede.
+
+--------------------------------------------------------------------------
+
+Du unterstützt den Kundenservice der Rösterei Morgenrot.
+
+AUFGABE
+Entwirf eine Antwort-Mail auf die unten stehende Kundenanfrage.
+
+MATERIAL (nur diese Angaben sind gültig)
+Fachinformationen:
+- Sortiment im Onlineshop, reguläre Listenpreise: Espresso Intenso 10,00 EUR, Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
+- Diese Listenpreise gelten im Onlineshop. Zu Preisen innerhalb des Kaffee-Abos liegen hier keine Angaben vor.
+- Kaffee-Abo, Sortenwechsel: Ein Wechsel der Sorte gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+- Für Versandtermine und Sendungsstatus ist der Bereich Lager und Versand zuständig.
+
+Kundenanfrage:
+Betreff: Wechsel auf Espresso
+Guten Tag,
+ich habe den Filterkaffee Mild im Abo und möchte ab der nächsten Lieferung auf Espresso Intenso wechseln. Geht das? Und was kostet der Espresso Intenso regulär im Shop?
+Viele Grüße
+T. Osei
+
+FORMAT
+Antwort-Mail, höchstens 120 Wörter, Anrede "Guten Tag", sachlicher Ton.
+Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
+Am Ende eine Liste mit der Überschrift "Offen".
+
+GRENZEN
+- Verwende ausschließlich Angaben aus dem Material. Ergänze nichts.
+- Beantworte Fragen, die das Material nicht abdeckt, nicht. Trage sie stattdessen unter "Offen" ein.
+- Erfinde keine Termine, Preise oder Fristen.

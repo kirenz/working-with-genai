@@ -1,32 +1,64 @@
-NORDWERK ELEKTROWERKZEUGE GMBH — AUSZUG FACHINFORMATIONEN
+RÖSTEREI MORGENROT — AUSZUG FACHINFORMATIONEN KUNDENSERVICE
 Kursmaterial "Working with GenAI", Modul 2
 
-HINWEIS: Nordwerk ist ein erfundenes Unternehmen. Alle Angaben sind für den
-Kurs konstruiert und beziehen sich auf keinen realen Hersteller. Sie dürfen
-deshalb unverändert in ein Chatfenster kopiert werden.
+HINWEIS: Die Rösterei Morgenrot ist ein erfundenes Unternehmen. Sortiment,
+Personen und alle Angaben sind konstruiert und beziehen sich auf keine reale
+Rösterei. Sie dürfen deshalb unverändert in ein Chatfenster kopiert werden.
+
+Der Fall stammt aus dem Kurs Business Analytics und wird hier weiterverwendet,
+damit derselbe Betrieb den ganzen Kurs trägt. Die Abo-Regel weiter unten ist
+eine Ergänzung für diesen GenAI-Kurs (siehe Kennzeichnung).
+
+--------------------------------------------------------------------------
+DAS UNTERNEHMEN
+--------------------------------------------------------------------------
+
+Kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden:
+eigener Onlineshop, ergänzt um ein Kaffee-Abo. Drei Sorten im Sortiment.
+
+Ansprechpartnerin für Kundenanfragen: Sina Bergmann, Vertrieb und
+Kundenservice. Für Versandtermine und Sendungsstatus ist der Bereich Lager
+und Versand zuständig (Ellen Ruppert).
 
 --------------------------------------------------------------------------
 GELTENDE ANGABEN
 --------------------------------------------------------------------------
 
-- Akku-Bohrschrauber NW-18C, Artikelnummer NW-18C-2.
-  Lieferumfang: Gerät, zwei Akkus mit 2,0 Ah, Ladegerät, Koffer.
+- Sortiment im Onlineshop, reguläre Listenpreise:
+  Espresso Intenso      10,00 EUR
+  Filterkaffee Mild      9,00 EUR
+  Entkoffeiniert Sanft  13,00 EUR
 
-- Garantie: 24 Monate. Wird das Gerät innerhalb von 30 Tagen nach Kauf im
-  Kundenkonto registriert, sind es 36 Monate.
+- Diese Listenpreise gelten im Onlineshop. Zu Preisen innerhalb des
+  Kaffee-Abos liegen hier keine Angaben vor.
 
-- Ersatzakku NW-AK20, 39,00 EUR, passend für NW-18C und NW-14C.
+- Kaffee-Abo, Sortenwechsel: Ein Wechsel der Sorte gilt für die nächste
+  Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand
+  eingeht.
 
-- Rückgabe: 30 Tage, unbenutzt und in der Originalverpackung.
-  Der Retourenschein liegt im Kundenkonto.
-
-- Service erreichbar Montag bis Freitag, 8 bis 16 Uhr.
+KENNZEICHNUNG: Die Sortiments- und Preisangaben stammen aus dem
+Business-Analytics-Fallmaterial derselben Rösterei. Die Abo-Regel zum
+Sortenwechsel ist neu für diesen GenAI-Kurs erfunden worden; sie steht nicht
+im Business-Analytics-Material und ist keine Aussage über eine Branchenpraxis.
+Sie ist als Übungsbedingung gebaut: eine Regel, die nur mit einem zweiten
+Datum konkret wird.
 
 --------------------------------------------------------------------------
 WAS HIER BEWUSST NICHT STEHT
 --------------------------------------------------------------------------
 
-Zur Lieferzeit und zu Liefer- oder Versandterminen enthält dieser Auszug
-keine Angabe. Das ist kein Versehen, sondern der Kern der Übung: An dieser
-Lücke zeigt sich, ob ein Arbeitsauftrag die fehlende Angabe ausweist oder
-ob im Entwurf ein Termin auftaucht, den niemand geprüft hat.
+Das Versanddatum der nächsten Abo-Lieferung und der Sendungsstatus fehlen in
+diesem Auszug. Das ist kein Versehen, sondern der Kern der Übung, und es
+wirkt an zwei Stellen:
+
+1. Die Frage nach dem Liefertermin lässt sich gar nicht beantworten.
+2. Die Frage nach dem Sortenwechsel lässt sich nur bedingt beantworten. Der
+   Grundsatz steht oben, das Inkrafttreten hängt aber am fehlenden
+   Versanddatum.
+
+Auch die Abo-Preise fehlen. Die Preisfrage nach dem regulären Shop-Preis ist
+dagegen vollständig gedeckt.
+
+An diesen Lücken zeigt sich, ob ein Arbeitsauftrag die fehlende Angabe
+ausweist oder ob im Entwurf ein Termin, ein Abo-Preis oder eine unbedingte
+Zusage auftaucht, die niemand geprüft hat.

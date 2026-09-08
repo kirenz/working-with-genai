@@ -9,7 +9,9 @@ HdM-Microcredential „Generative KI in der Praxis: Produktivität steigern und 
 | **ECTS** | 1 (30 Stunden Gesamtaufwand) |
 | **Laufzeit** | 18.09.2026 (Kickoff) bis 08.10.2026 (Recap und Abgabe) |
 | **Zielplattform** | kurse.kirenz.de |
-| **Stand** | v2, 07.09.2026 — abgestimmtes Konzept, Grundlage für die Umsetzung |
+| **Stand** | v2, 07.09.2026 — Rahmen erhalten, lokaler Vollausbau ergänzt |
+
+**Nachtrag vom 07.09.2026 (lokal):** Der durchgehende Lehrfall ist von der zuvor eigens erfundenen Nordwerk Elektrowerkzeuge GmbH auf die **Rösterei Morgenrot** umgestellt, den Fall aus dem Business-Analytics-Kurs. Ausgangslage, Sortiment und Personen werden von dort übernommen, die GenAI-Aufgaben sind neu. Betroffen sind Abschnitt 1 (Lehrfall), Abschnitt 6 (Modulzuschnitt) und Abschnitt 11 (Designentscheidungen). Modulzahl, Lektionszahl, Zeitbudget, Termine und Prüfungsleistung bleiben unverändert.
 
 Version 2 konkretisiert die früheren Entwürfe (`inhalte.md`, `inhalte-3.md` im Notes-Projekt) für die Kursgestaltung. Die eingereichte Modulbeschreibung bleibt die organisatorische Referenz. Was dort als Modulbeschreibung für das HdM-Formular formuliert war, wird hier zu einem umsetzbaren Kursaufbau mit Modulen, Lektionen, Zeitbudget und Werkzeugentscheidungen.
 
@@ -29,7 +31,13 @@ Daraus folgen drei Festlegungen, die den ganzen Kurs prägen:
 
 ### Durchgehender Lehrfall
 
-Ein erfundenes Unternehmen begleitet den Kurs: die **Nordwerk Elektrowerkzeuge GmbH**. Im Kundenservice läuft eine Mail mit drei Fragen ein; zu zweien liegen Angaben vor, zur dritten (dem Liefertermin) nicht. Der Fall ist bewusst synthetisch, damit jede Aussage nachschlagbar ist und alle Daten unbedenklich in ein Chatfenster kopiert werden dürfen. Die vollständigen Falldaten liegen unter `material/lehrfall-fachinformationen.txt` und `material/kundenanfrage.txt`.
+Ein erfundenes Unternehmen begleitet den Kurs: die **Rösterei Morgenrot**, eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden, eigenem Onlineshop, Kaffee-Abo und drei Sorten im Sortiment. Der Betrieb wächst, ein Gewinn bleibt 2025 trotzdem aus.
+
+Der Fall ist aus dem Business-Analytics-Kurs übernommen, damit derselbe Betrieb zwei Kurse trägt und Teilnehmende, die beide besuchen, sich nicht zweimal in eine Firma einarbeiten. Übernommen werden Ausgangslage, Sortiment mit Listenpreisen und die fünf handelnden Personen mit ihren Funktionen. **Nicht übernommen** wird der Statistikteil: Hier geht es nicht um Auswertungen, sondern um Texte und Auskünfte, die belegbar sein müssen.
+
+Der Einstieg liegt im Kundenservice bei Sina Bergmann. Eine Mail stellt drei Fragen, und sie liegen bewusst unterschiedlich: der reguläre Shop-Preis ist gedeckt, der Sortenwechsel im Abo nur unter einer Bedingung, das Ankunftsdatum der nächsten Lieferung gar nicht. Der Fall bleibt synthetisch, damit jede Aussage nachschlagbar ist und alle Daten unbedenklich in ein Chatfenster kopiert werden dürfen. Die Falldaten liegen unter `material/roesterei-morgenrot.md`, `material/lehrfall-fachinformationen.txt` und `material/kundenanfrage.txt`.
+
+Zwei Ergänzungen sind eigens für diesen Kurs erfunden und im Material als solche gekennzeichnet: die Abo-Regel zum Sortenwechsel (fünf Werktage vor dem Versand) und die Zuspitzung der Anfrage auf drei unterschiedlich belegte Fragen. Preise und Personen stammen dagegen unverändert aus dem Fallmaterial.
 
 Parallel dazu arbeitet jede teilnehmende Person ab Modul 1 an einem **eigenen wiederkehrenden Fall**. Der Lehrfall zeigt die Bauweise, der eigene Fall trägt das Portfolio.
 
@@ -80,13 +88,13 @@ Jede Lektion folgt derselben Abfolge. Sie verbindet Beobachten, eigenes Handeln 
 
 ### Freiwilliger Praxispfad (Codex, Claude Code)
 
-Am Kickoff steht nach dem ersten Chat-Erfolg eine **Demo von 10 bis 15 Minuten**: Codex und Claude Code am Lehrfall Nordwerk. Zweck ist die Einordnung, nicht die Schulung — sichtbar machen, was jenseits des Chatfensters möglich ist, wenn ein Werkzeug Dateien lesen und schreiben darf.
+Am Kickoff steht nach dem ersten Chat-Erfolg eine **Demo von 10 bis 15 Minuten**: Codex und Claude Code am Lehrfall Rösterei Morgenrot. Zweck ist die Einordnung, nicht die Schulung — sichtbar machen, was jenseits des Chatfensters möglich ist, wenn ein Werkzeug Dateien lesen und schreiben darf.
 
 Daran schließt ein **freiwilliger Praxispfad** an, der ab Kursbeginn offensteht: eine erste Aufgabe plus Einrichtungshilfe. Festlegungen dazu:
 
 - **Keine Installation und kein Abonnement sind Pflicht.** Wer den Pfad nicht geht, verliert nichts an der Prüfungsleistung.
 - Wer ihn geht, **ersetzt damit einen Teil der persönlichen Transferzeit** (siehe Abschnitt 5). Der Pfad addiert keine Stunden zum 30-Stunden-Budget.
-- Der Pfad ist im vorliegenden Konzept als **später auszuarbeitender Anteil** markiert. Aufgabe und Einrichtungshilfe werden vor Kursstart geschrieben.
+- Der freiwillige Pfad ist in `praxis/codex-claude-code.qmd` ausgearbeitet; die Durchführung der Demo wird vor Kursstart organisatorisch vorbereitet.
 
 ### Zugänge — offener Punkt
 
@@ -148,6 +156,21 @@ Ausarbeitung und Dokumentation des Portfolios sowie Vorbereitung der Kurzpräsen
 
 Sechs Module zu je drei Lektionen, 18 Lektionen insgesamt. Eine Lektion entspricht einem Buchkapitel und einer Unit auf der Lernplattform.
 
+### Jedes Modul hat eine Ansprechperson im Fall
+
+Damit der Fall trägt und nicht nur als Kulisse dient, bekommt jedes Modul eine Funktion aus der Rösterei, aus deren Arbeitsalltag die Beispiele gezogen werden. Die Zuordnung ist eine **Designentscheidung dieses Kurses**; sie steht so nicht im Fallmaterial. Die Personen bleiben über ihre Funktion beschrieben, nicht über Eigenschaften, und die Beispiele werden beim Schreiben der jeweiligen Lektion ausformuliert. Die sechs Module sind nun als lokale Buchkapitel, Folien und Units ausgearbeitet.
+
+| Modul | Funktion im Fall | Anlass, aus dem die Beispiele stammen |
+|---|---|---|
+| 1 — Ankommen | Jonas Halder, Marketing | Textentwurf aus einem freigegebenen Briefing: schnelles Ergebnis bei geringem Risiko, danach die Grenze, dass Produktversprechen belegt sein müssen |
+| 2 — Strukturierte Arbeitsaufträge | Sina Bergmann, Vertrieb und Kundenservice | Die Kundenanfrage zum Abo, an der die Musterlektion gebaut ist |
+| 3 — Kontext bereitstellen | Marlene Bosch, Röstung und Produktion | Produktions- und Sortimentsangaben als wiederverwendbare Arbeitsgrundlage; Mengen und Termine werden dabei nicht ergänzt |
+| 4 — Qualität prüfen | Petra Lindqvist, Verwaltung und Controlling | Eine Aufbereitung für die interne Besprechung gegen die Quelle abgleichen, offene Angaben festhalten, Testfälle bauen |
+| 5 — Verantwortung und Risiko | Aylin Yılmaz, Geschäftsführung | Was wird freigegeben, was geht nach außen, wer klärt verbindlich |
+| 6 — In den Alltag bringen | Ellen Ruppert, Lager und Versand | Wiederkehrende Statusanfragen; der Miniworkflow endet beim Entwurf |
+
+Aylin Yılmaz führt den Betrieb und ist Adressatin der Empfehlungen; sie vergleicht Anwendungsfälle und entscheidet, welcher Ablauf als Nächstes erprobt wird. Diese Auswahlentscheidung trägt außer Modul 5 auch die Lektion 1.3. Die vier übrigen Funktionen des Einstiegsteams sind untereinander gleichrangig. Ellen Ruppert gehört nicht zu den fünf Personen des Einstiegs, kommt aber im Fallmaterial als Zuständige für Lager und Versand vor und wird in Modul 6 ohne weitere Einführung genannt. Die Arbeitsaufträge der fünf Personen sind in `material/roesterei-morgenrot.md` zusammengefasst; die interne Herleitung steht in `docs/roesterei-morgenrot-fallbasis.md`.
+
 ### Modul 1 — Ankommen: erster Erfolg und erste Grenzen
 
 Der Einstieg produziert innerhalb weniger Minuten ein brauchbares Ergebnis und zeigt danach sofort, wo die Grenzen liegen. Läuft vollständig im Kickoff.
@@ -164,7 +187,7 @@ Vom Zuruf zum Auftrag. Das Modul liefert die Bauweise, die den Rest des Kurses t
 
 **Outcome:** Einen Arbeitsauftrag aus vier Bausteinen bauen, das Ergebnis gegen das Material prüfen und gezielt in Durchläufen verbessern.
 
-- **2.1 Vom Zuruf zum Arbeitsauftrag** — Aufgabe, Material, Format, Grenzen am Lehrfall Nordwerk. *(Kapitel ausgearbeitet, Plattform-Unit vorhanden.)*
+- **2.1 Vom Zuruf zum Arbeitsauftrag** — Aufgabe, Material, Format, Grenzen an der Kundenanfrage aus der Rösterei Morgenrot. *(Kapitel ausgearbeitet, Plattform-Unit vorhanden.)*
 - **2.2 Mit Beispielen und Format steuern** — Ein Musterbeispiel im Prompt, Vorgaben zu Länge, Ton und Aufbau; wann ein Beispiel mehr hilft als eine Beschreibung.
 - **2.3 Iterieren: eine Änderung pro Durchlauf** — Systematisch verbessern statt neu formulieren; die eigene Prompt-Fassung dokumentieren.
 
@@ -259,7 +282,7 @@ Der Kurs läuft auf **kurse.kirenz.de**, nicht auf einer HdM-Instanz. Slug: `wor
 
 - **Buch als kanonische Quelle.** Jede Lektion entsteht zuerst als Quarto-Kapitel in diesem Repo, danach als Plattform-Unit. Kein Inhalt existiert nur in einer Unit-JSON: Alle Lehrfalldaten, Prompts und Materialien stehen vollständig im Buch und zusätzlich als Download unter `material/`.
 - **Simulator.** Für diesen Kurs wird der vorhandene Flag `simulator_enabled` bei der Kursanlage auf `false` gesetzt. Damit wird die KI-generierte Zusatzübung deaktiviert. Redaktionell erstellte Quizfragen und didaktische interaktive Simulationen bleiben möglich.
-- **Veröffentlichung des Startpakets.** Freigegeben am 07.09.2026: das Buch und die ausgearbeitete Musterlektion 2.1 werden veröffentlicht. Der Kurs ist zunächst nur über den direkten Link erreichbar und erscheint nicht im öffentlichen Katalog.
+- **Veröffentlichung des Startpakets.** Freigegeben am 07.09.2026: das Buch und die ausgearbeitete Musterlektion 2.1 werden veröffentlicht. Der Kurs ist zunächst nur über den direkten Link erreichbar und erscheint nicht im öffentlichen Katalog. *Stand nach der Fallumstellung: Die veröffentlichte Fassung zeigt weiterhin den vorherigen Lehrfall. Die Umstellung auf die Rösterei Morgenrot liegt bisher nur lokal vor; ein erneuter Buch-Release und ein Plattformimport sind gesondert freizugeben.*
 - **Medien.** Der Textpfad ist vollständig und selbsttragend: Jede Übung lässt sich ohne Video und ohne Screenshot durchführen. Screenshots und einige kurze Demo-Videos werden später ergänzt, wo eine Oberfläche sonst schwer zu treffen ist (Projects in Modul 6.1, n8n-Kursinstanz in Modul 6.2).
 
 ---
@@ -272,7 +295,7 @@ Der Kurs läuft auf **kurse.kirenz.de**, nicht auf einer HdM-Instanz. Slug: `wor
 | Freiwilliger Praxispfad | Erste Aufgabe und Einrichtungshilfe für Codex und Claude Code ausformulieren | vor Kursstart |
 | Bewertungsform | Pass/Fail oder Note, Abstimmung mit HdM-Weiterbildung | vor Kursstart |
 | n8n-Kursinstanz | Bereitstellung, Zugänge, Modellzugang für Modul 6.2 | vor Modul 6 |
-| Kapitel 1.1 bis 6.3 | 17 der 18 Lektionen sind konzipiert, aber noch nicht geschrieben | laufend |
+| Kapitel 1.1 bis 6.3 | Von 18 Lektionen ist eine geschrieben. Die übrigen 17 liegen nur als Titel, Outcome und Anlass im Fall vor; Text, Prompts und Units fehlen | laufend |
 | Screenshots und Demo-Videos | Wenige, gezielt an den Oberflächen-Stellen | nach den Kapiteln |
 
 ---
@@ -286,7 +309,9 @@ Die Trennung ist bewusst: Was ist eine **Designentscheidung** dieses Kurses, und
 Nicht belegt, sondern gewählt — und als solche im Buch gekennzeichnet:
 
 - Die Vierteilung **Aufgabe, Material, Format, Grenzen** als Merkhilfe für den Aufbau eines Arbeitsauftrags.
-- Der durchgehende synthetische Lehrfall Nordwerk.
+- Die Weiterverwendung des synthetischen Falls **Rösterei Morgenrot** aus dem Business-Analytics-Kurs als durchgehender Lehrfall, ohne dessen Statistikteil.
+- Die Abo-Regel zum Sortenwechsel (fünf Werktage vor dem Versand) und die Zuspitzung der Kundenanfrage auf drei unterschiedlich belegte Fragen: eigens für diesen Kurs erfunden und im Material gekennzeichnet.
+- Die Zuordnung je einer Funktion aus dem Fall zu jedem Modul.
 - Die sechsstufige Lektionsabfolge (Risiko erkennen bis Portfolio).
 - Der Zuschnitt auf sechs Module zu je drei Lektionen.
 - Die Behandlung von RAG als Prinzip des Heraussuchens ohne Architekturteil.
@@ -302,3 +327,9 @@ Nicht belegt, sondern gewählt — und als solche im Buch gekennzeichnet:
 - Notes-Projekt `11_HdM_Micro_GenAI`, Dateien `inhalte.md` und `inhalte-3.md`. Quelle für Modultitel, Lernziele und die Vier-Teile-Struktur des Portfolios.
 
 **Keine erfundene Forschung.** Wo im Kurs eine Aussage über das Verhalten von Sprachmodellen getroffen wird, wird sie als Mechanismus beschrieben („ein Chatmodell setzt Text fort, der zur Anfrage passt") und nicht als Häufigkeitsbehauptung („der häufigste Fehler ist …"). Häufigkeitsaussagen kommen im Kursmaterial nur vor, wenn eine Quelle sie trägt.
+
+## Vollausbau vom 07.09.2026
+
+Alle 18 Lektionen liegen als Buchkapitel, Folien und Plattform-Units vor. Hinzu kommen ein persönlicher Lernweg, ein Werkzeugkompass, die frühe Demo samt freiwilligem Codex-/Claude-Code-Pfad und vollständige modulbezogene Übungsmaterialien. Zuordnung in `docs/kursmanifest.json`, Lehrdurchführung in `docs/lehrleitfaden.md`. Tests und gemeinsame Inhaltsdurchsicht stehen aus; die lokale Ausarbeitung ist kein Produktionsrelease.
+
+Die neun Stunden angeleitete asynchrone Arbeit verteilen sich als Planungswerte auf Modul 2 (80 Minuten Nacharbeit und Vertiefung), Modul 3 (120), Modul 4 (120), Modul 5 (90) und Modul 6 (130). Was live bearbeitet wurde, wird nicht erneut als eigenständige Pflichtleistung angesetzt. Der Lehrleitfaden trennt Präsenz, eigene Erprobung und Prüfungsdokumentation.

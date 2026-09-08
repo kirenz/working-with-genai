@@ -18,7 +18,7 @@ Der Anwendungsfall, an dem im ganzen Kurs gearbeitet wird. Ein Fall, nicht drei.
 
 **Zielgruppe.** <Wer bekommt das Ergebnis: Kundschaft, Fachabteilung, Leitung, Öffentlichkeit?>
 
-**Nutzenversprechen.** <Was ist nach der Umsetzung besser? Wenn möglich mit einer Größenordnung: Zeit pro Vorgang, Häufigkeit pro Woche, Zahl der Beteiligten.>
+**Nutzenhypothese.** <Was ist nach der Umsetzung besser? Die erwartete Veränderung zunächst als Annahme kennzeichnen: Zeit pro Vorgang einschließlich Nacharbeit, Qualität, Häufigkeit pro Woche, Zahl der Beteiligten.>
 
 **Häufigkeit und Umfang.** <Wie oft fällt der Fall an? Wie lang ist ein typischer Vorgang?>
 
@@ -34,11 +34,11 @@ Die dokumentierte Bauweise: Was geht in welcher Form an das Modell, und woher st
 
 ### Auftragskarte aus Modul 2
 
-Diese Auftragskarte entsteht in der Musterlektion und gehört zu Teil 2. Sie ist eine Planungshilfe; das tatsächliche Material und die vollständigen Prompts werden darunter ergänzt.
+Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenrot und gehört zu Teil 2. Sie ist eine Planungshilfe; das tatsächliche Material und die vollständigen Prompts werden darunter ergänzt. Der eigene Fall ersetzt dabei den Lehrfall, die Bauweise bleibt dieselbe.
 
 | Feld | Eintrag |
 |---|---|
-| **Der Fall** — welcher wiederkehrende Schreibanlass? | <z. B. Anfragen zu Lieferzeiten von Ersatzteilen, mehrmals pro Woche> |
+| **Der Fall** — welcher wiederkehrende Schreibanlass? | <z. B. Anfragen zu Abo-Änderungen und Lieferterminen, mehrmals pro Woche> |
 | **Aufgabe** — gewünschtes Ergebnis | <z. B. Entwirf eine Antwort-Mail auf die folgende Anfrage.> |
 | **Materialherkunft** — woher kommen die Fakten? | <z. B. Auszug aus der Konditionsübersicht, als Text in den Prompt eingefügt> |
 | **Format** — Textsorte, Länge, Aufbau | <z. B. E-Mail, höchstens 150 Wörter, am Ende eine Liste „Offen"> |
@@ -67,15 +67,17 @@ Diese Auftragskarte entsteht in der Musterlektion und gehört zu Teil 2. Sie ist
 
 ## Teil 3 — Qualitäts- und Compliance-Check
 
-**Testfälle.** Mindestens fünf, darunter ein Fall mit einer Lücke im Material und ein Fall, der außerhalb des vorgesehenen Bereichs liegt.
+**Testfälle.** Mindestens fünf, darunter ein Fall mit einer Lücke im Material, ein Fall, dessen Antwort nur unter einer Bedingung gilt, ein Widerspruch zwischen Quellen und ein Fall, der außerhalb des vorgesehenen Bereichs liegt.
 
 | # | Eingabe (kurz) | Erwartetes Ergebnis | Tatsächliches Ergebnis | Bestanden? |
 |---|---|---|---|---|
 | 1 | <Standardfall> | <...> | <...> | <ja/nein> |
 | 2 | <Fall mit fehlender Angabe> | <steht unter „Offen"> | <...> | <ja/nein> |
-| 3 | <Fall außerhalb des Bereichs> | <wird abgelehnt oder ausgewiesen> | <...> | <ja/nein> |
-| 4 | <...> | <...> | <...> | <ja/nein> |
-| 5 | <...> | <...> | <...> | <ja/nein> |
+| 3 | <Fall mit Bedingung> | <Zusage bleibt an die Bedingung geknüpft> | <...> | <ja/nein> |
+| 4 | <Fall außerhalb des Bereichs> | <wird abgelehnt oder ausgewiesen> | <...> | <ja/nein> |
+| 5 | <Widerspruch zwischen Quellen> | <Widerspruch benannt; keine unbegründete Auswahl> | <...> | <ja/nein> |
+
+**Durchlauf dokumentieren.** <Datum, Werkzeug und sichtbare Modellbezeichnung, sofern angezeigt; neue oder fortgesetzte Unterhaltung; verwendete Materialversion. Bei einer konstruierten Kursantwort ausdrücklich „Kursbeispiel, kein eigener Modelllauf“ notieren. Nicht ausgeführte Fälle als offen markieren.>
 
 **Prüfkriterien.** <Woran wird „gut" festgemacht? Belegbarkeit jeder Aussage, Vollständigkeit, Form, Ton.>
 

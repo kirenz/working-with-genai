@@ -1,0 +1,164 @@
+---
+title: "Ein Miniworkflow, selbst gebaut"
+subtitle: "Modul 6 · Lektion 6.2"
+book-source: "../../transfer/miniworkflow.qmd"
+---
+
+## Drei Knoten, ein Entwurf {.stage}
+
+[Modul 6 · In den Alltag bringen]{.kicker}
+
+Dieselbe Statusanfrage, derselbe Auftrag — nur nicht im Chatfenster, sondern als Ablauf auf der bereitgestellten Kursinstanz.
+
+Der Ablauf endet beim sichtbaren Entwurf. **Nichts wird versendet.**
+
+::: {.notes}
+Einordnung vorweg: n8n ist keine Prüfungspflicht. Prüfungsrelevant ist die begründete Entscheidung über Automatisierung am Ende dieser Lektion. Wer den Workflow nicht bauen kann oder will, arbeitet mit dem Ersatzweg und kommt zum selben Ergebnis. Gebraucht werden ein Zugang zur Kursinstanz und ein dort hinterlegtes Chat-Model; beides kommt mit den Kursinformationen. Kein eigener Schlüssel, keine Installation, kein bezahltes Konto. Zeit: 2 Minuten.
+:::
+
+## Was im Workflow anders ist als im Chat
+
+::: {.two-col}
+::: {.card}
+**Chat**
+
+Jemand fordert jeden Entwurf selbst an und sieht ihn deshalb auch.
+:::
+::: {.card}
+**Workflow**
+
+Kann laufen, ohne dass jemand hinsieht.
+:::
+:::
+
+Daraus folgen drei Festlegungen für diese Übung: Auslöser ist ein **Klick**, der letzte Knoten **zeigt** den Entwurf, der Workflow wird **nicht aktiviert**.
+
+::: {.notes}
+Der Unterschied ist nicht die Technik, sondern wer hinsieht. Wer das später ändert, ändert die Verantwortungslage, nicht nur den Aufbau. Am Modell ändert der Ort nichts: Ungedeckte Angaben bleiben möglich, und die Datenregel aus Modul 5 gilt für ein Feld im Workflow genauso wie für eine Nachricht im Chat. In dieser Übung fließen keine echten Kundendaten; die Sendungsnummer ist ein Platzhalter. Zeit: 3 Minuten.
+:::
+
+## Das Zielbild
+
+```{mermaid}
+flowchart LR
+  A["Start<br/>Trigger manually"] --> B["Anfrage und Material<br/>Edit Fields (Set)"]
+  B --> C["Entwurf<br/>Basic LLM Chain"]
+  C --> D["Output-Panel<br/>Feld text"]
+  M["Chat Model<br/>Kurs-Credential"] -.-> C
+```
+
+Das Chat-Model hängt als eigener Anschluss **unter** dem Knoten `Entwurf`, nicht in der Reihe.
+
+::: {.notes}
+Am Beamer die leere Oberfläche der Kursinstanz daneben zeigen, damit die drei Knoten wiedererkennbar sind. Knoten- und Feldbezeichnungen folgen der n8n-Dokumentation zu Edit Fields (Set) und Basic LLM Chain; einzelne Schaltflächen können in der Version der Kursinstanz anders heißen. Das vor dem Bauen sagen, dann sucht niemand vergeblich nach einer Beschriftung. Zeit: 2 Minuten.
+:::
+
+## Zwei Felder statt eines fertigen Prompts
+
+| Feld | Inhalt | Warum getrennt |
+|---|---|---|
+| `anfrage` | die Statusanfrage, fester Wert | käme im Alltag von einem anderen Ort |
+| `material` | die Versandinformationen, fester Wert | würde gepflegt, ohne den Auftrag anzufassen |
+
+Feste Werte sind gewollt: So fließen keine echten Daten.
+
+::: {.sources}
+Alle Feldwerte zum Kopieren: material/m06/n8n-felder.md
+:::
+
+::: {.notes}
+Der Knoten steht für zwei Zulieferungen, die im Alltag auseinanderfallen. Nach dem Anlegen der beiden Felder unbedingt Execute step am Knoten ausführen: Das Output-Panel zeigt dann ein Element mit genau den beiden Feldnamen, und diese Schreibweise wird gleich gebraucht. Wer das überspringt, bekommt im nächsten Knoten leere Werte und sucht den Fehler an der falschen Stelle. Zeit: 2 Minuten.
+:::
+
+## Der Auftrag im Prompt-Feld
+
+```text
+MATERIAL (nur diese Angaben sind gültig)
+{{ $json.material }}
+
+KUNDENANFRAGE
+{{ $json.anfrage }}
+
+GRENZEN
+- Nenne keinen Ankunftstag und keinen Sendungsstatus. Beides unter "Offen".
+- Behaupte nicht, dass etwas veranlasst wurde. Kündige die Prüfung an.
+- Verwende die Sendungsnummer nicht im Text.
+```
+
+**Modus Expression**, sonst liest das Modell die geschweiften Klammern als Text.
+
+::: {.sources}
+Vollständiger Prompt: material/m06/prompt-llm-chain.txt · Buchkapitel 6.2, Schritt 3
+:::
+
+::: {.notes}
+Die beiden Ausdrücke sind die einzige Technik dieses Kapitels. Erklären: `$json` ist das Element, das gerade in den Knoten hineinkommt, nach dem Punkt folgt der Feldname aus dem vorherigen Knoten. Prompt auf „Define below“ stellen, Feld auf Expression umschalten, Require Specific Output Format bleibt aus. Auf der Folie steht nur der Ausschnitt; Rolle, Aufgabe und Format stehen im Buch und in der Materialdatei. Zeit: 3 Minuten.
+:::
+
+## Mitmachen: bauen und ausführen
+
+1. Neuer Workflow, Name mit eigenem Kürzel; **Trigger manually** als `Start`
+2. **Edit Fields (Set)** als `Anfrage und Material`, zwei Felder, *Execute step*
+3. **Basic LLM Chain** als `Entwurf`, Prompt im Modus Expression einfügen
+4. Am Anschluss **Model** das bereitgestellte Chat-Model wählen, **Kurs-Credential** auswählen
+5. *Execute step* — im Output-Panel erscheint das Feld `text`
+6. Speichern. **Kein Klick auf Activate.**
+
+::: {.notes}
+Arbeitsphase, 15 Minuten. Vorher die drei häufigsten Beobachtungen ankündigen, dann suchen alle nicht lange: Steht im Entwurf wörtlich der Ausdruck mit den geschweiften Klammern, ist das Feld auf Fixed statt Expression. Erscheint „[undefined]“ oder ein leerer Wert, wurde der Feldknoten noch nicht ausgeführt oder ein Feldname ist anders geschrieben. Meldet der Knoten, dass kein Modell verbunden ist, fehlt das Chat-Model am unteren Anschluss. Bei Credential- oder Kontingentfehlern sofort auf die nächste Folie wechseln. Zeit: 15 Minuten Arbeitsphase.
+:::
+
+## Der Ersatzweg, wenn der Modellzugang fehlt
+
+1. Knoten `Entwurf` entfernen oder abklemmen
+2. Zweiten **Edit Fields (Set)** anhängen: `Entwurf (manuell)`
+3. Ein Feld `text`, Typ String, Wert Fixed: entweder der konstruierte Entwurf aus dem Buch oder ein selbst im Chatkonto erzeugter und geprüfter Entwurf
+4. *Execute step* — dasselbe Ausgabefeld, dieselbe Struktur
+
+Der Ersatzweg gehört zur Lektion. Nur der Modellschritt ist von Hand gefüllt.
+
+::: {.sources}
+material/m06/entwurf-konstruiert.txt · Buchkapitel 6.2, Schritt 5
+:::
+
+::: {.notes}
+Diese Folie wird auch dann gezeigt, wenn alles läuft: Der zentrale Modellzugang ist eine organisatorische Voraussetzung, die zum Kurstermin bereitstehen muss und deren Fehlen niemanden aus der Lektion wirft. Wer den Entwurf selbst im Chatkonto erzeugt, ersetzt dabei die beiden Ausdrücke von Hand durch Material und Anfrage. Was der Ersatzweg offenlässt, ehrlich benennen: die Frage, wie zuverlässig ein Modell die Grenzen einhält, wenn Material und Anfrage über Ausdrücke hineinkommen. Zeit: 2 Minuten.
+:::
+
+## Den Entwurf prüfen — wie im Chat
+
+| Prüfstelle | Woran erkennbar |
+|---|---|
+| Kein Ankunftstag | auch nicht „voraussichtlich“ oder „in der Regel“ |
+| Kein behaupteter Status | nicht „ist unterwegs“, nicht „wird morgen zugestellt“ |
+| „Offen“ vollständig | Ankunft bis Freitag **und** aktueller Status |
+| Sendungsnummer | taucht im Entwurf nicht auf |
+
+Ein Ankunftstag ist kein technischer Fehler, sondern ein **Befund**.
+
+::: {.notes}
+Der Punkt der ganzen Lektion: Der Ort ändert nichts am Prüfmaßstab. Wer im Raum einen Ankunftstag im Output hat, meldet sich; die Grenze ist eine Anweisung, keine Garantie, und im Alltag würde genau die Prüfung das abfangen. Und die Versuchung ansprechen, jetzt einen Send-Email-Knoten anzuhängen: nicht in diesem Kurs. Wer das im Betrieb erwägt, beginnt bei der Risiko-Tabelle aus Modul 5, nicht beim Knoten. Zeit: 3 Minuten.
+:::
+
+## Portfolio-Teil 4: die begründete Entscheidung
+
+Sechs Fragen: Häufigkeit · Prüfbarkeit des Entwurfs · Datenlage · was der Mensch tun muss · Modellzugang im Betrieb · was schiefgehen kann.
+
+**Im Lehrfall:** vorerst kein eigener Workflow. Statusanfragen laufen über das Startpaket aus 6.1; erneute Prüfung nur bei geschäftlichem Modellzugang und nach dem Rückblick.
+
+„Ja“, „nein“ und „später, unter Bedingung“ sind gleichwertig. Die **Begründung** zählt.
+
+::: {.sources}
+material/m06/automatisierungs-entscheidung.md · Portfolio-Teil 4
+:::
+
+::: {.notes}
+Die Begründung im Lehrfall in einem Satz vorlesen: Der Nutzen liegt in der gleichbleibenden Qualität des Entwurfs und im Wegfall des Wiederholens der Anweisungen, nicht im Wegfall der Prüfung; dafür reicht das Projekt. Deutlich machen, dass eine begründete Absage in der Prüfungsleistung genauso viel wert ist wie ein gebauter Ablauf. Selbstlernaufgabe: eigene Variante mit erfundener Anfrage und eigenem Material bauen, Testfälle aus Modul 4 anwenden, Entscheidung ausfüllen. Zeit: 3 Minuten.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 6.2, Working with GenAI: transfer/miniworkflow
+- Material: material/m06/n8n-felder.md, prompt-llm-chain.txt, entwurf-konstruiert.txt, automatisierungs-entscheidung.md
+- n8n-Dokumentation (Abruf 07.09.2026): docs.n8n.io → Edit Fields (Set), Basic LLM Chain. Bezeichnungen können je Version abweichen
+- Kursinstanz und zentral hinterlegte Modell-Credential sind organisatorische Voraussetzungen; ohne sie gilt der Ersatzweg

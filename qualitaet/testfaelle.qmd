@@ -1,0 +1,152 @@
+# Testfälle für den eigenen Fall
+
+Ein Arbeitsauftrag, der einmal ein gutes Ergebnis geliefert hat, hat damit einen Durchlauf bestanden. Ob er auch dann trägt, wenn die Anfrage eine Bedingung enthält, wenn eine Angabe fehlt, wenn die Kundin etwas behauptet, das dem Material widerspricht, oder wenn die Anfrage gar nicht in seinen Bereich gehört, wissen wir erst, wenn wir es ausprobiert haben. In diesem Kapitel bauen wir dafür fünf feste Testfallkarten, führen sie durch und halten fest, was passiert.
+
+**Lernziel:** Für einen Arbeitsauftrag fünf Testfälle der Typen Normalfall, Bedingung, fehlende Angabe, Widerspruch und außerhalb des Bereichs bauen, jedem nachvollziehbare Erfüllungskriterien geben, die Durchläufe protokollieren und die Grenze dessen kennen, was wenige Durchläufe zeigen können. **Zeit:** etwa 45 Minuten einschließlich der Durchläufe.
+
+## Der Lehrfall: der Kundenservice-Auftrag kommt auf den Prüfstand
+
+Petra Lindqvist bereitet die Rösterei darauf vor, dass der Kundenservice-Auftrag aus Modul 2 regelmäßig benutzt wird. Bevor Sina Bergmann und die Vertretung damit arbeiten, will Petra wissen, wo der Auftrag hält und wo nicht. Sie baut fünf Testfälle: fünf erfundene Kundenmails, die jeweils in den Abschnitt „Kundenanfrage“ des Auftrags eingesetzt werden. Aufgabe, Material, Format und Grenzen bleiben unverändert.
+
+Das Material ist dasselbe wie in Modul 2: drei Shop-Listenpreise, keine Abo-Preise, die Fünf-Werktage-Regel für den Sortenwechsel, Zuständigkeit von Lager und Versand für Versandtermine. Die fünf Eingaben ([Download](../material/m04/testfaelle-eingaben.txt)):
+
+| Karte | Falltyp | Eingabe (Kern der Mail) | Warum dieser Typ |
+|---|---|---|---|
+| T1 | **Normalfall** | „Was kostet der Entkoffeiniert Sanft regulär im Onlineshop?“ | Vollständig gedeckt: 13,00 EUR. Zeigt, ob der Auftrag das Einfache richtig macht. |
+| T2 | **Bedingung** | „Ich möchte ab der nächsten Lieferung auf Espresso Intenso wechseln. Geht das?“ | Nur unter der Fünf-Werktage-Bedingung; das Versanddatum fehlt. |
+| T3 | **Fehlende Angabe** | „Wann wurde meine Lieferung verschickt, kommt sie diese Woche?“ | Das Material enthält nichts dazu. |
+| T4 | **Widerspruch** | „Letzte Woche stand 8,50 EUR für den Filterkaffee Mild, jetzt 9,00. Welcher gilt, bekomme ich die Differenz zurück?“ | Die Kundin behauptet etwas, das dem Material widerspricht. |
+| T5 | **Außerhalb des Bereichs** | „Wir möchten monatlich 40 kg beziehen. Welche Geschäftskundenkonditionen, Rechnung mit Zahlungsziel?“ | Der Auftrag ist für Endkundschaft im Shop und Abo gebaut. |
+
+::: {.callout-important title="Fünf Typen, eine Designentscheidung"}
+Die Einteilung in genau diese fünf Falltypen ist eine Designentscheidung dieses Kurses, keine belegte Norm. Sie deckt die Lagen ab, die wir seit Modul 2 kennen (gedeckt, bedingt, ungedeckt), und ergänzt zwei, die im Alltag dazukommen: eine Eingabe, die dem Material widerspricht, und eine, die den Auftrag verlässt. Alle Kundenmails sind erfunden.
+:::
+
+Die Einschätzung vor dem Durchlauf: Bei T1 erwarten wir wenig Probleme. Bei T4 besteht das Risiko, dass der Entwurf der Kundin entweder widerspricht („bei uns gab es nie 8,50 EUR“) oder ihr recht gibt und eine Erstattung ankündigt; beides trägt das Material nicht. Bei T5 besteht das Risiko, dass der Entwurf aus dem Shop-Preis ein Angebot für 40 Kilogramm macht. Ob das eintritt, zeigt der Durchlauf.
+
+## Zielbild
+
+Fünf Testfallkarten mit Erfüllungskriterien, ein ausgefülltes Protokoll mit zwei Durchläufen je Karte und eine Auswertung in drei Sätzen.
+
+| Teil der Karte | Inhalt |
+|---|---|
+| **Falltyp** | Einer der fünf |
+| **Eingabe** | Die erfundene Anfrage im Wortlaut |
+| **Erwartung** | Ein bis zwei Sätze: was der Entwurf tun soll und was nicht |
+| **Erfüllt, wenn** | Drei bis vier abhakbare Kriterien K1 bis K4 |
+| **Nicht erfüllt, wenn** | Der eine Fehler, der die Karte scheitern lässt |
+
+Die vollständigen Karten stehen als [Download](../material/m04/testfallkarten.md) bereit. Zwei davon im Wortlaut:
+
+```text
+T2 · BEDINGUNG
+Erwartung: Der Wechsel wird als möglich beschrieben, aber ausdrücklich an
+die Fünf-Werktage-Bedingung geknüpft; ob er für die nächste Lieferung
+greift, bleibt offen, weil das Versanddatum fehlt.
+Erfüllt, wenn:
+[ ] K1 Der Entwurf nennt die Bedingung "spätestens fünf Werktage vor dem
+       Versand".
+[ ] K2 Der Entwurf sagt nicht unbedingt zu, dass der Wechsel schon die
+       nächste Lieferung betrifft.
+[ ] K3 Das fehlende Versanddatum steht unter "Offen".
+[ ] K4 Kein Versanddatum und keine Frist wird erfunden.
+Nicht erfüllt, wenn der Wechsel ohne Bedingung für die nächste Lieferung
+zugesagt oder ein Versandtermin genannt wird.
+
+T4 · WIDERSPRUCH
+Erwartung: Der Entwurf nennt den Preis aus dem Material (9,00 EUR) als
+regulären Listenpreis, entscheidet aber nicht, ob die Kundin recht hat,
+und sagt keine Erstattung zu. Der behauptete Preis und die
+Erstattungsfrage stehen unter "Offen".
+Erfüllt, wenn:
+[ ] K1 Der Entwurf nennt 9,00 EUR als regulären Listenpreis laut Material.
+[ ] K2 Der Entwurf behauptet nicht, dass es nie 8,50 EUR gab, und
+       bestätigt es auch nicht.
+[ ] K3 Keine Erstattung wird zugesagt oder abgelehnt.
+[ ] K4 "Angabe der Kundin 8,50 EUR" und "Erstattung" stehen unter "Offen".
+Nicht erfüllt, wenn der Entwurf der Kundin widerspricht, ihr recht gibt
+oder über die Erstattung entscheidet.
+```
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** der Auftrag aus Modul 2 als [Textdatei](../material/prompt-vorlage.txt), die fünf Eingaben, das Protokoll aus den Testfallkarten, ein kostenloses Chatkonto.
+
+### Schritt 1 — Die Erwartung vor dem Durchlauf schreiben
+
+Wir schreiben zu jeder Karte die Erwartung, bevor wir den Auftrag abschicken. Das ist der wichtigste Schritt und der, der am leichtesten übersprungen wird. Wer die Erwartung erst nach dem Ergebnis formuliert, formuliert sie unwillkürlich so, dass das Ergebnis passt. Für T1 lautet sie: „13,00 EUR als regulärer Listenpreis im Onlineshop, ohne Zusätze.“ Für T3: „Kein Termin, kein Status, beides unter Offen, Zuständigkeit genannt.“
+
+### Schritt 2 — Kriterien, die abhakbar sind
+
+Jedes Kriterium muss sich mit Ja oder Nein beantworten lassen, indem wir eine Stelle im Entwurf ansehen. „Der Entwurf ist korrekt“ ist kein Kriterium. „Der Entwurf nennt die Bedingung ‚spätestens fünf Werktage vor dem Versand‘“ ist eines. Wir schreiben drei bis vier davon je Karte und dazu den einen Fehler, der die Karte auf jeden Fall scheitern lässt. Bei T5 ist das: „Konditionen, Rabatte oder Zahlungsmodalitäten stehen im Text.“
+
+::: {.callout-tip title="Die Abnahme in der Werkstatt"}
+Eine Werkstatt nimmt eine Reparatur nicht ab, weil der Wagen gut aussieht. Sie hat eine Liste: Bremse, Licht, Lenkung, jeweils mit einer Prüfung, die bestanden oder nicht bestanden ist. Die Liste steht fest, bevor der Wagen auf die Bühne kommt. Die Testfallkarten sind diese Liste für einen Arbeitsauftrag.
+:::
+
+### Schritt 3 — Jeden Testfall in einem neuen Chat ausführen
+
+Wir öffnen den Auftrag, ersetzen die Kundenmail durch die Eingabe der Karte und schicken ihn in einem neuen Chat ab. Fünf Karten, fünf Chats. Kein Chat sieht die Ergebnisse der anderen. Für jede Karte haken wir die Kriterien ab und schreiben einen Satz Befund ins Protokoll:
+
+```text
+| Karte | Falltyp    | Durchlauf | Datum | Werkzeug | Erfüllte Kriterien | Befund | Bestanden |
+| T2    | Bedingung  | 1         | ...   | ...      | K1 K2 K3 K4        | ...    | ja        |
+```
+
+### Schritt 4 — Ein zweiter Durchlauf je Karte
+
+Wir wiederholen alle fünf Karten in fünf weiteren neuen Chats, mit demselben unveränderten Auftrag. Der zweite Durchlauf ist keine Bestätigung des ersten; er zeigt, ob das Ergebnis schwankt. Eine Karte, die einmal besteht und einmal nicht, ist der wertvollste Befund der Übung, weil sie eine Stelle markiert, an der der Auftrag präziser werden muss.
+
+::: {.callout-note title="Was zwei Durchläufe zeigen und was nicht"}
+Zwei Durchläufe je Karte sind der Planwert dieses Kurses. Sie zeigen, ob ein Fall in beiden Durchläufen besteht, in keinem, oder schwankt. Sie zeigen nicht, wie oft ein Fehler „im Allgemeinen“ auftritt, und sie erlauben keine Aussage über die Zuverlässigkeit eines Werkzeugs. Dafür wären viele Durchläufe unter gleichen Bedingungen nötig, und das ist nicht Gegenstand dieses Kurses. Das Protokoll begründet die nächste Fassung des Auftrags, mehr nicht.
+:::
+
+### Schritt 5 — Auswerten und den Auftrag anpassen
+
+Drei Sätze: Welche Karten bestehen in beiden Durchläufen? Welche in keinem? Welche schwanken? Aus den Karten, die scheitern oder schwanken, leiten wir eine Änderung am Auftrag ab, eine einzige, und führen die betroffene Karte danach noch einmal aus. Wenn T5 scheitert, weil der Entwurf Konditionen anbietet, ergänzen wir unter GRENZEN: „Anfragen von Geschäftskunden oder zu Mengen außerhalb des Onlineshops nicht beantworten, sondern unter Offen zur internen Klärung eintragen.“ Dann T5 erneut, zweimal.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Ein konstruiertes Protokoll nach zwei Durchläufen, kein aufgezeichnetes Ergebnis:
+
+| Karte | Durchlauf 1 | Durchlauf 2 | Befund |
+|---|---|---|---|
+| T1 | bestanden | bestanden | Preis richtig als Shop-Preis; einmal stand „inkl. MwSt.“ dabei, das steht nicht im Material: als Zusatz notiert, K3 knapp verfehlt, beim zweiten Mal nicht |
+| T2 | bestanden | bestanden | Bedingung in beiden Fällen genannt, Versanddatum unter Offen |
+| T3 | bestanden | nicht bestanden | Durchlauf 2 schrieb „in der Regel erreicht Sie die Lieferung innerhalb weniger Tage“; K1 verletzt |
+| T4 | nicht bestanden | bestanden | Durchlauf 1 schrieb „auf unserer Website stand nie 8,50 EUR“; K2 verletzt |
+| T5 | nicht bestanden | nicht bestanden | Beide Entwürfe boten „gerne ein individuelles Angebot“ an und einer nannte einen Mengenrabatt; K1 verletzt |
+
+Auswertung: T2 trägt. T1 trägt bis auf einen Zusatz. T3 und T4 schwanken an der Stelle, die die Karte vorhergesagt hat. T5 scheitert in beiden Durchläufen; der Auftrag hat für diesen Fall keine Grenze. Eine Änderung: die Grenze für Geschäftskundenanfragen ergänzen, T5 wiederholen. Wenn T5 danach besteht, bleibt der Befund im Protokoll stehen, mit Datum und beiden Fassungen des Auftrags.
+
+Das Beispiel zeigt auch, wo die Erwartung selbst zu prüfen war: „inkl. MwSt.“ bei T1 ist im Alltag wahrscheinlich richtig und trotzdem ungedeckt. Die Karte hat recht; das Material müsste ergänzt werden, nicht der Entwurf.
+
+### Eine eigene Variante bauen
+
+Für den eigenen Auftrag aus dem Portfolio bauen wir fünf Karten, eine je Typ, mit erfundenen Eingaben:
+
+1. Für jeden Typ eine Eingabe schreiben. Der Widerspruchsfall braucht eine Behauptung, die dem eigenen Material widerspricht; der Fall außerhalb des Bereichs eine Anfrage, für die der Auftrag nicht gebaut ist.
+2. Erwartung und drei bis vier Kriterien je Karte schreiben, vor dem ersten Durchlauf.
+3. Zwei Durchläufe je Karte in neuen Chats, Protokoll füllen.
+4. Auswertung in drei Sätzen, eine Änderung am Auftrag, betroffene Karte wiederholen.
+
+Karten, Protokoll und Auswertung gehören in **Portfolio-Teil 3** unter „Testfälle“. Die Portfolio-Vorlage erwartet mindestens fünf Fälle, darunter je einen mit Lücke, mit Bedingung und außerhalb des Bereichs; die fünf Typen dieses Kapitels erfüllen das.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Eine Karte besteht, aber das Ergebnis fühlt sich falsch an | Die Kriterien prüfen, nicht das Gefühl. Fehlt ein Kriterium, Karte ergänzen und Durchlauf wiederholen. |
+| Alle fünf Karten bestehen beim ersten Mal | Zweiten Durchlauf trotzdem machen. Dann prüfen, ob die Karten scharf genug sind: Hat T4 wirklich einen Widerspruch, hat T5 wirklich den Bereich verlassen? |
+| Die Erwartung wurde nach dem Ergebnis geschrieben | Karte verwerfen, Erwartung neu schreiben, Durchlauf wiederholen. |
+| Ein Kriterium lässt sich nicht mit Ja oder Nein beantworten | Umformulieren, bis es auf eine Stelle im Entwurf zeigt. |
+| T3 besteht, aber der Entwurf sagt „wir haben nachgefragt“ | K3 verletzt: Der Entwurf behauptet eine Handlung, die nicht stattgefunden hat. Kriterium abhaken heißt hinsehen, nicht überfliegen. |
+| Nach der Änderung am Auftrag scheitert eine andere Karte | Beide Fassungen des Auftrags aufheben, alle fünf Karten mit der neuen Fassung wiederholen. Eine Änderung kann eine andere Stelle verschieben. |
+
+## Kontrollpunkt für Modul 4
+
+- Die fünf Falltypen Normalfall, Bedingung, fehlende Angabe, Widerspruch und außerhalb des Bereichs unterscheiden und für einen Auftrag je eine Eingabe bauen
+- Eine Erwartung vor dem Durchlauf formulieren und Kriterien schreiben, die sich an einer Stelle im Entwurf mit Ja oder Nein beantworten lassen
+- Testfälle in getrennten neuen Chats ausführen und zwei Durchläufe je Karte protokollieren
+- Aus schwankenden und scheiternden Karten eine einzelne Änderung am Auftrag ableiten und sie erneut testen
+- Erklären, warum wenige Durchläufe die nächste Fassung begründen, aber keine Zuverlässigkeitsaussage tragen

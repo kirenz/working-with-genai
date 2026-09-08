@@ -1,0 +1,35 @@
+EINGEGANGENE STATUSANFRAGE — LEHRFALL RÖSTEREI MORGENROT
+Kursmaterial "Working with GenAI", Modul 6
+
+HINWEIS: Konstruierter Fall. Absender und Sendungsnummer sind erfunden.
+Für die Übungen wird die Sendungsnummer als Platzhalter geführt, weil sie
+im Alltag eine Kennung wäre, die nicht in ein Chatkonto gehört.
+
+--------------------------------------------------------------------------
+
+Betreff: Wo bleibt meine Lieferung?
+
+Guten Tag,
+
+meine Abo-Lieferung mit der Sendungsnummer [SENDUNGSNUMMER] ist noch nicht
+da. Die Versandbestätigung kam am Dienstag. Kommt das Paket bis Freitag?
+Ich bin dann verreist.
+
+Viele Grüße
+K. Weber
+
+--------------------------------------------------------------------------
+DREI ANTWORTLAGEN
+--------------------------------------------------------------------------
+
+1. Wie Versand und Laufzeit funktionieren ..... belegbar aus den
+                                                 Versandinformationen
+2. Ob das Paket bis Freitag kommt ............ NICHT belegbar; keine
+                                                 Ankunftsgarantie, Status
+                                                 nur mit Prüfung
+3. Was jetzt passiert ......................... belegbar: Lager und Versand
+                                                 prüft den Status mit der
+                                                 Sendungsnummer
+
+Der Entwurf erklärt 1, weist 2 als offen aus und kündigt 3 an. Er behauptet
+keinen Status und sagt keinen Tag zu. Versendet wird nichts.

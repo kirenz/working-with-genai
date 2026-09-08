@@ -1,0 +1,151 @@
+# Transferplan und Kurzpräsentation
+
+Der Kurs endet am 8. Oktober; der Fall nicht. In diesem Kapitel schreiben wir die ersten 30 Tage danach als Transferkarte auf, mit Schritten, Beteiligten, einem Erfolgsmaß, das nach vier Wochen ablesbar ist, und einem Rückblicktermin. Und wir bereiten die fünfminütige Präsentation vor, in der die vier Teile des Portfolios gezeigt werden.
+
+## Der Anlass: Aylin will eine Entscheidung, keinen Eindruck
+
+Aylin Yılmaz hat in fünf Modulen Aktennotizen, Testfälle und eine Automatisierungsentscheidung bekommen. Jetzt will sie von Sina Bergmann und Ellen Ruppert eine Antwort auf eine einzige Frage: Was passiert in den nächsten 30 Tagen mit den Kundenservice-Entwürfen, und woran erkennen wir am Ende, ob es sich gelohnt hat? Sie will keinen Eindruck („läuft gut"), sondern eine Tabelle, die am 11. November auf dem Tisch liegt.
+
+Eine Einschätzung vorweg: Was ist das Risiko eines Transferplans, der mit „spart Zeit" beginnt? Niemand hat die bisherige Zeit gemessen, und die Prüfung jeder Aussage kommt als Aufwand hinzu. Ein Plan mit einem Versprechen, das nicht messbar ist, wird nach vier Wochen weder bestätigt noch widerlegt; er versandet. Deshalb formulieren wir den Nutzen als Hypothese über Qualität und Nacharbeit und messen die Nacharbeit, statt sie anzunehmen.
+
+## Zielbild
+
+Zwei Ergebnisse, beide für Portfolio-Teil 4:
+
+- Eine **30-Tage-Transferkarte** mit Wochenschritten, verantwortlichen Rollen, Terminen, sichtbaren Ergebnissen, Beteiligten, zwei bis drei Erfolgsmaßen, Risiken mit Ausweichweg und einem Rückblicktermin. Beispiel und Vorlage: [transferkarte-30-tage.md](../material/m06/transferkarte-30-tage.md).
+- Ein **Regieplan für die Kurzpräsentation**: fünf Minuten entlang der vier Teile, mit einem Probelauf und drei vorbereiteten Rückfragen. Vorlage: [praesentations-regie.md](../material/m06/praesentations-regie.md).
+
+## Schritt für Schritt selbst bauen
+
+### Schritt 1 — Den Nutzen als Hypothese formulieren
+
+Der erste Satz der Transferkarte ist der schwerste. Für die Rösterei lautet er:
+
+> Die Entwürfe sind gleichmäßiger in Aufbau und Ton, und offene Punkte stehen sichtbar unter „Offen", statt in der Antwort zu fehlen. Ob der Vorgang insgesamt schneller wird, ist offen: Die Prüfung jeder Aussage bleibt, und die Nacharbeit wird gemessen, nicht angenommen.
+
+Das ist eine Nutzenhypothese, kein Versprechen. Sie nennt, was besser werden soll, und sie sagt ausdrücklich, was noch nicht bekannt ist. Damit lässt sie sich nach vier Wochen bestätigen oder verwerfen. Ein Satz wie „spart 50 Prozent" ließe sich das nicht, weil keine Vergleichszahl existiert.
+
+::: {.callout-tip title="Die Qualitätskontrolle zählt Fehler, nicht Minuten"}
+In einer Qualitätskontrolle ist die erste Kennzahl die Zahl der gefundenen Abweichungen, nicht die Zeit pro Prüfung. Eine schnellere Prüfung, die Fehler durchlässt, ist keine bessere. Für den Transferplan heißt das: Mindestens ein Erfolgsmaß zählt, wie oft die Prüfung eine unbelegte Angabe im Entwurf gefunden hat. Diese Zahl ist die wichtigste, weil sie zeigt, ob die Prüfung ihren Zweck erfüllt. Zeit darf dazukommen, aber gemessen, einschließlich der Nacharbeit.
+:::
+
+### Schritt 2 — Die 30 Tage in Wochenschritte zerlegen
+
+Für die Rösterei, Start Montag nach dem Recap, Rückblick am 11. November:
+
+| Woche | Schritt | Wer | Bis wann | Sichtbares Ergebnis |
+|---|---|---|---|---|
+| 1 | Datenregel und Konto klären; Einstellungen zu Speicherung und Training prüfen und festhalten | Aylin Yılmaz, Petra Lindqvist | 16.10. | Bestätigte Aktennotiz, Vermerk zu den Einstellungen |
+| 1 | Startpaket als Projekt einrichten, Wissensmaterial mit Datum | Sina Bergmann | 16.10. | Projekt mit Anweisungen und zwei Wissensdateien |
+| 2 | Zehn echte Anfragen parallel bearbeiten, jede Aussage prüfen, Korrekturen und Nacharbeit je Entwurf notieren | Sina Bergmann | 23.10. | Tabelle mit zehn Zeilen |
+| 3 | Testfälle wiederholen, Startpaket anpassen, Ellen einweisen | Sina Bergmann, Ellen Ruppert | 30.10. | Aktualisierte Testfalltabelle, Einweisungsnotiz |
+| 4 | Rückblick vorbereiten, Automatisierungsentscheidung aktualisieren | Sina Bergmann | 06.11. | Eine Seite mit Ergebnis und Empfehlung |
+| 4 | Rückblick: fortführen, anpassen, beenden | Aylin Yılmaz mit Sina und Ellen | 11.11. | Entscheidung mit Begründung |
+
+Zwei Merkmale machen diese Tabelle brauchbar. Jede Zeile hat ein sichtbares Ergebnis, das am Datum existiert oder nicht. Und die erste Woche enthält die Klärungen aus Modul 5, bevor in Woche 2 echte Anfragen bearbeitet werden; die Reihenfolge ist Teil des Plans.
+
+### Schritt 3 — Beteiligte, Erfolgsmaße, Risiken, Rückblick
+
+**Beteiligte.** Zustimmen muss Aylin. Informiert werden Petra (Vertragslage) und Jonas (sein Rechte-Check gilt getrennt). Mitnutzen wird Ellen ab Woche 3.
+
+**Erfolgsmaße**, alle aus der Tabelle in Woche 2 und 3 ablesbar:
+
+1. Anteil der Entwürfe ohne inhaltliche Korrektur.
+2. Nacharbeit je Entwurf in Minuten, einschließlich Prüfung, verglichen mit drei typischen Anfragen, die Sina in Woche 1 einmal stoppt.
+3. Zahl der Entwürfe, in denen eine unbelegte Angabe stand und bei der Prüfung entfernt wurde.
+
+**Risiken mit Ausweichweg.** Vertragslage nicht rechtzeitig geklärt: dann bleibt es bei bereinigten Fragen ohne weitere Daten. Woche 2 fällt wegen Saisongeschäft aus: alles verschiebt sich um eine Woche, der Rückblick wird neu terminiert, nicht gestrichen. Entwürfe werden ungeprüft übernommen, weil sie gut klingen: dagegen hilft nur die Tabelle, in die jede Prüfung eingetragen wird.
+
+**Rückblick.** 11. November, 30 Minuten, mit Tabelle und Automatisierungsentscheidung als Vorlage. Drei mögliche Ausgänge: fortführen, anpassen, beenden. Alle drei sind Erfolge des Plans, wenn sie begründet sind.
+
+### Schritt 4 — Die Karte mit Rückfragen belasten
+
+Bevor die Karte ins Portfolio geht, lassen wir uns Fragen stellen. Der Auftrag verlangt drei Rückfragen, wie eine erfahrene Kollegin sie nach der Präsentation stellen würde, und prüft je Erfolgsmaß, ob es nach vier Wochen ablesbar ist. Er steht als [Textdatei](../material/m06/prompt-kritischer-zuhoerer.txt) bereit; unten die Kurzfassung.
+
+```text
+Du bist eine kritische Zuhörerin in einer Präsentationsrunde. Du bewertest nicht und gibst keine Rechts- oder Fachauskunft. Du stellst Fragen.
+
+AUFGABE
+Lies die unten stehende 30-Tage-Transferkarte. Formuliere drei Rückfragen, die eine erfahrene Kollegin nach einer fünfminütigen Präsentation dieser Karte stellen würde. Prüfe außerdem für jedes Erfolgsmaß, ob es nach vier Wochen aus einer geführten Tabelle ablesbar wäre, und benenne, was dafür noch fehlt.
+
+MATERIAL
+30-Tage-Transferkarte:
+[die Karte aus Schritt 2 und 3 in Kurzform]
+
+FORMAT
+Zuerst die drei Rückfragen als nummerierte Liste, jede höchstens zwei Sätze. Danach eine Tabelle mit den Spalten Erfolgsmaß, ablesbar nach vier Wochen (ja/nein), was fehlt.
+
+GRENZEN
+- Stelle Fragen, gib keine Empfehlungen und keine Bewertung.
+- Triff keine Aussagen darüber, was rechtlich zulässig ist.
+- Erfinde keine Zahlen oder Vergleichswerte.
+```
+
+Beim Lesen achten wir darauf, ob das Ergebnis Empfehlungen oder Zahlen enthält, die wir nicht geliefert haben. Beides streichen wir. Die Fragen behalten wir; die besten davon beantworten wir in der Karte, die übrigen nehmen wir als vorbereitete Rückfragen in die Präsentation.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Konstruiert, kein aufgezeichneter Modelloutput:
+
+> 1. Woher kommt die Vergleichszeit für die drei gestoppten Anfragen, und sind drei Anfragen repräsentativ für die zehn in Woche 2?
+> 2. Wer trägt die Tabelle in Woche 2 ein, wenn Sina in Vertretung ist?
+> 3. Was passiert mit einer Anfrage, bei der die Prüfung eine unbelegte Angabe findet: Wird sie als Fehler des Entwurfs oder als Erfolg der Prüfung gezählt?
+>
+> | Erfolgsmaß | Ablesbar nach vier Wochen | Was fehlt |
+> |---|---|---|
+> | Anteil ohne Korrektur | ja | Definition, was als „inhaltliche" Korrektur zählt |
+> | Nacharbeit je Entwurf | ja | Die drei gestoppten Vergleichszeiten aus Woche 1 |
+> | Entfernte unbelegte Angaben | ja | Eine Spalte „Art der Angabe" in der Tabelle |
+
+Die dritte Frage ist die wertvollste. Sie zwingt uns, in der Karte festzuhalten: Eine gefundene unbelegte Angabe ist ein Erfolg der Prüfung und ein Hinweis auf das Startpaket, beides zugleich. Genau das kommt als Zeile in die Karte.
+
+### Schritt 5 — Die Präsentation in fünf Minuten
+
+Die Kurzpräsentation zeigt die vier Teile des Portfolios. Der Regieplan:
+
+| Zeit | Teil | Was gezeigt wird |
+|---|---|---|
+| 0:00–0:50 | Use-Case-Canvas | Problem, Zielgruppe, Nutzenhypothese |
+| 0:50–2:00 | Prompt- und Context-Pipeline | Der Auftrag mit seinen vier Teilen, das Startpaket, die Materialherkunft |
+| 2:00–3:15 | Qualitäts- und Compliance-Check | Ein Testfall mit Lücke und sein Ergebnis; eine Zeile der Risiko-Tabelle mit Zuständigkeit |
+| 3:15–4:15 | Transferplan | Erster Schritt, Erfolgsmaß, Rückblicktermin |
+| 4:15–4:45 | Schluss | Eine Bitte an die Gruppe |
+| 4:45–5:00 | Puffer | |
+
+Fünf Regeln: ein Fall, nicht drei; zeigen statt beschreiben, also Prompt, Testfall und Tabelle im Original auf dem Bildschirm; Nutzen als Qualität und Nacharbeit, kein Sparversprechen ohne Messung; Offenes bleibt offen, eine Zeile „nicht benannt" ist ein Ergebnis; konstruierte Beispiele als solche kennzeichnen.
+
+::: {.callout-note title="Probelauf und Anknüpfung in der Kohorte"}
+Ein Probelauf mit Timer, laut, mit der Mappe auf dem Bildschirm. Liegt ein Teil über Plan, wird gekürzt, nicht schneller gesprochen. Im Recap-Termin stellt jede Person ihren Fall vor; nach jeder Präsentation gibt eine andere Person eine Rückfrage oder einen Hinweis. Wer möchte, verabredet sich zu zweit für den Rückblicktermin: eine kurze Nachricht am Tag des Rückblicks mit dem Stand des eigenen Plans. Die Kohorte ist klein; das ist der Vorteil.
+:::
+
+### Eine eigene Variante bauen
+
+1. Wir schreiben die Nutzenhypothese für den eigenen Fall: was besser wird, als Annahme, und was noch offen ist.
+2. Wir zerlegen die 30 Tage in Wochenschritte mit Rolle, Datum und sichtbarem Ergebnis. Die Klärungen aus Modul 5 kommen in Woche 1.
+3. Wir wählen zwei bis drei Erfolgsmaße, die nach vier Wochen aus einer geführten Tabelle ablesbar sind, davon mindestens eines zu Qualität oder gefundenen Fehlern.
+4. Wir nennen Risiken mit Ausweichweg und legen den Rückblicktermin fest.
+5. Wir lassen uns drei Rückfragen stellen, streichen Empfehlungen und Zahlen, beantworten die besten Fragen in der Karte.
+6. Wir übernehmen die Karte in **Portfolio-Teil 4** und machen einen Probelauf der Präsentation mit Timer.
+
+Der freiwillige Praxispfad mit Codex oder Claude Code und eine Vertiefung des n8n-Workflows gehören in die eigene Erprobungszeit. Sie addieren keine Stunden zum Kurs und sind keine Voraussetzung für die Prüfungsleistung. Wer sie geht, kann sie als Schritt in der Transferkarte führen; wer nicht, verliert nichts.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Die Nutzenhypothese lautet „spart Zeit" | Umformulieren in Qualität und gemessene Nacharbeit. Wenn Zeit bleiben soll: Wer stoppt wann welche Vergleichsfälle? |
+| Ein Erfolgsmaß ist nach vier Wochen nicht ablesbar, etwa „Kundenzufriedenheit" | Durch ein Maß ersetzen, das aus der eigenen Tabelle kommt: Korrekturen, Nacharbeit, gefundene unbelegte Angaben. |
+| Die Wochenschritte haben keine sichtbaren Ergebnisse | Zu jedem Schritt eintragen, was am Datum existiert: eine Notiz, eine Tabelle, ein Projekt, eine Entscheidung. |
+| Die Klärungen aus Modul 5 stehen in Woche 4 oder fehlen | In Woche 1 vorziehen. Ohne Datenregel und Konto keine echten Anfragen. |
+| Die Präsentation dauert im Probelauf sieben Minuten | Den Teil kürzen, der am längsten über Plan lag. Meist Teil 2: den Prompt zeigen, nicht vorlesen. |
+| Das Ergebnis des Rückfragen-Auftrags enthält Empfehlungen oder Zahlen | Streichen. Nur Fragen bleiben. |
+| Der Rückblicktermin ist „irgendwann im November" | Datum, Dauer, Beteiligte, Vorlage eintragen. Ein Rückblick ohne Termin findet nicht statt. |
+
+## Kontrollpunkt für Modul 6
+
+- Den Nutzen des eigenen Falls als prüfbare Hypothese über Qualität und Nacharbeit formulieren, ohne Sparversprechen
+- Die ersten 30 Tage in Wochenschritte mit Rolle, Datum und sichtbarem Ergebnis zerlegen und die Klärungen aus Modul 5 an den Anfang stellen
+- Zwei bis drei Erfolgsmaße wählen, die nach vier Wochen aus einer geführten Tabelle ablesbar sind
+- Risiken mit Ausweichweg und einen festen Rückblicktermin benennen
+- Ein Chatmodell für Rückfragen nutzen und Empfehlungen oder erfundene Zahlen im Ergebnis streichen
+- Die vier Portfolio-Teile in fünf Minuten zeigen und den Probelauf mit Timer durchführen

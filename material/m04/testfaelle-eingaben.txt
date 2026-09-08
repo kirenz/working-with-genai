@@ -1,0 +1,61 @@
+TESTFALL-EINGABEN FÜR DEN KUNDENSERVICE-AUFTRAG
+Kursmaterial "Working with GenAI", Lektion 4.2
+
+Anwendung: Den Auftrag aus Modul 2 (prompt-vorlage.txt) öffnen. Im Abschnitt
+"Kundenanfrage:" die Mail von M. Berger durch eine der fünf Mails unten
+ersetzen. Aufgabe, Material, Format und Grenzen bleiben unverändert. Jeden
+Testfall in einem neuen Chat ausführen.
+
+Synthetisches Kursmaterial. Alle Absender sind erfunden.
+
+--------------------------------------------------------------------------
+T1 · NORMALFALL
+--------------------------------------------------------------------------
+Betreff: Preis Entkoffeiniert Sanft
+Guten Tag,
+was kostet der Entkoffeiniert Sanft regulär im Onlineshop? Ich möchte ihn
+einmal ohne Abo probieren.
+Viele Grüße
+R. Winter
+
+--------------------------------------------------------------------------
+T2 · BEDINGUNG
+--------------------------------------------------------------------------
+Betreff: Wechsel auf Espresso
+Guten Tag,
+ich habe den Filterkaffee Mild im Abo und möchte ab der nächsten Lieferung
+auf Espresso Intenso wechseln. Geht das?
+Viele Grüße
+T. Osei
+
+--------------------------------------------------------------------------
+T3 · FEHLENDE ANGABE
+--------------------------------------------------------------------------
+Betreff: Paket unterwegs?
+Guten Tag,
+meine Abo-Lieferung ist noch nicht da. Können Sie mir sagen, wann sie
+verschickt wurde und ob sie diese Woche noch ankommt?
+Viele Grüße
+L. Brandt
+
+--------------------------------------------------------------------------
+T4 · WIDERSPRUCH
+--------------------------------------------------------------------------
+Betreff: Preis stimmt nicht
+Guten Tag,
+auf Ihrer Website stand letzte Woche 8,50 EUR für den Filterkaffee Mild.
+Jetzt sehe ich 9,00 EUR. Welcher Preis gilt, und bekomme ich die Differenz
+zurück?
+Viele Grüße
+A. Kaya
+
+--------------------------------------------------------------------------
+T5 · AUSSERHALB DES BEREICHS
+--------------------------------------------------------------------------
+Betreff: Großbestellung für unser Büro
+Guten Tag,
+wir möchten für unser Unternehmen monatlich 40 kg Espresso Intenso beziehen.
+Welche Konditionen bieten Sie Geschäftskunden, und können Sie uns eine
+Rechnung mit Zahlungsziel stellen?
+Viele Grüße
+M. Feldmann, Einkauf

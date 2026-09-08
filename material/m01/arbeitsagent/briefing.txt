@@ -1,0 +1,36 @@
+RÖSTEREI MORGENROT: FREIGEGEBENES BRIEFING (FAKTENQUELLE FÜR DIE PRÜFUNG)
+Kursmaterial "Working with GenAI", Demo-Ordner Arbeitsagent.
+Synthetische GenAI-Erweiterung des Lehrfalls, siehe Kennzeichnung am Ende.
+
+--------------------------------------------------------------------------
+FREIGEGEBENE ANGABEN (nur diese gelten als belegt)
+--------------------------------------------------------------------------
+
+- Die Rösterei Morgenrot ist eine kleine Kaffeerösterei mit Direktvertrieb
+  an Endkundinnen und Endkunden über den eigenen Onlineshop.
+- Drei Sorten im Sortiment: Espresso Intenso, Filterkaffee Mild,
+  Entkoffeiniert Sanft.
+- Reguläre Listenpreise im Onlineshop: Espresso Intenso 10,00 EUR,
+  Filterkaffee Mild 9,00 EUR, Entkoffeiniert Sanft 13,00 EUR.
+- Das Kaffee-Abo liefert regelmäßig nach Hause. Alle drei Sorten sind im
+  Abo wählbar.
+- Ein Sortenwechsel im Abo ist möglich. Er gilt für die nächste Lieferung,
+  wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+
+--------------------------------------------------------------------------
+WOZU KEINE FREIGEGEBENEN ANGABEN VORLIEGEN
+--------------------------------------------------------------------------
+
+Herkunftsländer, Anbau und Zertifikate (etwa Bio oder Fairtrade), Röstgrad
+und Röstverfahren, Geschmacksbeschreibungen, Abo-Preise und Rabatte,
+Lieferintervalle in Tagen, Versandkosten, Kündigungsfristen, Kundenzahlen,
+Bewertungen und Auszeichnungen, Koffeingehalt und Entkoffeinierungsverfahren.
+
+--------------------------------------------------------------------------
+KENNZEICHNUNG
+--------------------------------------------------------------------------
+
+Unternehmen, Sortiment und Listenpreise stammen aus dem Fallmaterial der
+Rösterei Morgenrot (Kurs Business Analytics). Abo-Regel, Abo-Verfügbarkeit
+aller Sorten und die Liste fehlender Angaben sind für diesen GenAI-Kurs
+konstruiert. Alles ist erfunden.

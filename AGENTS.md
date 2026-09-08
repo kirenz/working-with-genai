@@ -15,8 +15,10 @@ Kursaufbau, Zeitbudget und Modulzuschnitt stehen in `docs/kurskonzept-v2.md`. Di
 ├── README.md                # Repo-Beschreibung und Arbeitsstand
 ├── book-theme.scss          # Buch-Theme (aus n8n-grundlagen übernommen)
 ├── index.qmd                # Willkommen
-├── prompting/               # Modul 2 — Strukturierte Arbeitsaufträge
-│   └── arbeitsauftrag.qmd
+├── start/, prompting/, kontext/       # Module 1–3
+├── qualitaet/, verantwortung/, transfer/ # Module 4–6
+├── praxis/                  # Freiwilliger Arbeitsagenten-Pfad
+├── slides/                  # Reveal.js-Decks mit eigenen Schreibregeln
 ├── material/                # Downloads für Teilnehmende (Lehrfall, Vorlagen)
 └── docs/                    # Konzept und Umsetzungsstand (nicht Teil des Buchs)
 ```
@@ -162,8 +164,8 @@ Schlägt eine Datei hier fehl, würde auch der echte Import fehlschlagen.
 
 ## Anbindung an die Lernplattform
 
-Ziel ist **kurse.kirenz.de**, nicht eine HdM-Instanz. Slug: `working-with-genai`. Der vorhandene Flag `simulator_enabled` wird für diesen Kurs später auf `false` gesetzt.
+Ziel ist **kurse.kirenz.de**, nicht eine HdM-Instanz. Slug: `working-with-genai`. Der vorhandene Flag `simulator_enabled` bleibt für diesen Kurs auf `false`.
 
 Pro Lektion liefert das Repo `quarto_url` (Buch-Kapitel) und optional `slide_url` und `youtube_video_id`. Seeds, Import und Veröffentlichung sind **eigene, gesondert zu autorisierende Schritte** — sie gehören nicht zur Kapitelarbeit.
 
-Slide-Decks gibt es in diesem Repo noch nicht. Wenn sie hinzukommen, gilt für `slides/` eine eigene `slides/AGENTS.md` mit indirekter Ansprache, und es gilt weiter: **keine Folie ohne Buch-Kapitel als Quelle.**
+Für die vorhandenen Decks unter `slides/` gilt die dortige `AGENTS.md` mit indirekter Ansprache. Es gilt weiter: **keine Folie ohne Buch-Kapitel als Quelle.** Die Zuordnung von Buch, Folien und Units steht in `docs/kursmanifest.json`.

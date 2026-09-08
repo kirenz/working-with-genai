@@ -1,0 +1,64 @@
+# Der persönliche Lernweg {.unnumbered}
+
+Wir begleiten die Rösterei Morgenrot vom ersten brauchbaren Chat-Ergebnis bis zu einem wiederholbaren Arbeitsablauf. Parallel entsteht eine Lösung für einen eigenen beruflichen Anlass. Das Buch erklärt und liefert Material; die interaktiven Lektionen führen durch Entscheidungen und Übungen. Die Folien unterstützen die gemeinsamen Termine. Wir müssen denselben Inhalt nicht dreimal durcharbeiten.
+
+## Vor dem Auftakt: ein ruhiger Start
+
+Für die Vorbereitung sind 30 Minuten vorgesehen. Wir öffnen den Kurs und ein Chatkonto in zwei Browser-Tabs, legen eine Kopie der [Portfolio-Vorlage](material/portfolio-vorlage.md) an und lesen die [Ausgangslage der Rösterei](material/roesterei-morgenrot.md). Für die Pflichtübungen verwenden wir die bereitgestellten erfundenen Angaben. Eigene Geschäftsunterlagen sind für den Start nicht nötig.
+
+Ein passender Ablageordner heißt beispielsweise `mein-genai-kurs`. Darin speichern wir die Arbeitsmappe, verwendete Quellen und ausgewählte Ergebnisse. Ein kurzes Datum und eine Versionsnummer im Dateinamen helfen später beim Wiederfinden: `2026-09-23-kundenantwort-v02.txt`. Es genügt ein einfacher Ordner auf dem eigenen Rechner; eine Cloudfreigabe ist nicht erforderlich.
+
+Wenn ein Zugang fehlt oder ein Nutzungslimit erreicht ist, verwenden wir zunächst die im Kapitel als konstruiert bezeichnete Beispielantwort. Wir können daran dieselben fachlichen Entscheidungen üben. Den eigenen Modelllauf holen wir nach, wenn der Zugang verfügbar ist. Wir kennzeichnen dabei, ob wir eine tatsächliche Antwort oder ein Kursbeispiel bearbeitet haben.
+
+## Drei Wochen, drei sichtbare Zwischenstände
+
+| Abschnitt | Gemeinsamer Termin | Arbeitsergebnis |
+|---|---|---|
+| Anfangen und einen Auftrag bauen | Auftakt am 18.09., Beratung am 24.09.2026 | Ein abgegrenzter Anwendungsfall und eine erste dokumentierte Prompt-Fassung |
+| Material bereitstellen und Ergebnisse beurteilen | Beratung am 30.09.2026 | Eine Kontextmappe mit Quellen und fünf Fallkarten mit nachvollziehbaren Erwartungen |
+| Wiederverwenden und den Transfer vorbereiten | Recap am 08.10.2026 | Vollständiges Portfolio und eine kurze Vorstellung des eigenen Vorhabens |
+
+Der erste Zwischenstand wird bis zum 23.09., der zweite bis zum 29.09. eingereicht. Der konkrete Abgabeweg wird mit den organisatorischen Kursinformationen bekanntgegeben. Die Beratung am 30.09. ist laut Kursplanung optional. Wer sie nicht besucht, nutzt das vorgesehene Zeitfenster für die Rückmeldung zum eigenen Zwischenstand.
+
+## Ein Arbeitsrhythmus für die Selbstlernphase
+
+Wir bearbeiten möglichst eine Lektion am Stück. Zuerst lesen wir den Anlass und das gewünschte Ergebnis. Dann führen wir den vorgegebenen Auftrag aus oder arbeiten bei fehlendem Zugang am Kursbeispiel. Erst nach einer eigenen Entscheidung öffnen wir die Auflösung. Zum Abschluss übernehmen wir genau den geforderten Baustein in die Arbeitsmappe.
+
+Hilfreich sind drei kurze Notizen pro Sitzung:
+
+1. **Entstanden:** Welches konkrete Ergebnis liegt jetzt vor?
+2. **Offen:** Welche Angabe, Entscheidung oder Freigabe fehlt noch?
+3. **Nächster Schritt:** Was wird beim nächsten Termin tatsächlich getan?
+
+Eine offene Frage ist kein Grund, die gesamte Lektion neu zu beginnen. Wir markieren sie und arbeiten dort weiter, wo das Material ausreicht. Eine nicht belegbare Zusage wird dagegen aus dem Entwurf entfernt oder vor einer Verwendung geklärt.
+
+## Die sechs Etappen
+
+| Etappe | Einstieg ins Buch | Ergebnis für die Arbeitsmappe |
+|---|---|---|
+| 1. Ankommen | [Der erste Chat-Erfolg](start/erster-chat.qmd) | Teil 1: Use-Case-Canvas |
+| 2. Aufträge formulieren | [Vom Zuruf zum Arbeitsauftrag](prompting/arbeitsauftrag.qmd) | Teil 2: Auftragskarte, Prompt und Varianten |
+| 3. Kontext bereitstellen | [Material auswählen](kontext/material-auswaehlen.qmd) | Teil 2: Quellen und Kontextmappe |
+| 4. Qualität beurteilen | [Aussagen gegen Quellen prüfen](qualitaet/aussagen-pruefen.qmd) | Teil 3: Kriterien und Fallkarten |
+| 5. Verantwortung klären | [Datenschutz im Arbeitsalltag](verantwortung/datenschutz.qmd) | Teil 3: Daten-, Rechte- und Risiko-Überblick |
+| 6. Im Alltag nutzen | [Wiederverwenden](transfer/wiederverwenden.qmd) | Teil 4: Transferplan und Kurzpräsentation |
+
+## Das Zeitbudget verstehen
+
+Der Kurs umfasst 30 Stunden. Davon entfallen vier Stunden auf den Auftakt, 20 Stunden auf Online-Termine und Selbststudium sowie sechs Stunden auf die Ausarbeitung des Portfolios und die Vorbereitung seiner Vorstellung.
+
+Innerhalb der 20 Stunden liegen 3,5 Stunden gemeinsame Online-Termine, 30 Minuten Vorbereitung, neun Stunden angeleitete Lektionen und sieben Stunden eigene Erprobung. Das Portfolio wächst während dieser Arbeit. Die zusätzlichen sechs Stunden dienen der nachvollziehbaren Dokumentation, dem Schließen offener Punkte und der Vorbereitung der Kurzpräsentation. Der Recap selbst zählt zu den Online-Terminen.
+
+Wer eine freiwillige Vertiefung mit Codex oder Claude Code wählt, nutzt dafür einen Teil der sieben Stunden eigener Erprobung. Sie kommt nicht zusätzlich zum Zeitbudget hinzu. Ebenso sind Buch, Folien und Kurslektion verschiedene Zugänge zum selben Inhalt, keine drei getrennten Pflichtleistungen.
+
+## Eine hilfreiche Rückmeldung vorbereiten
+
+Für die Beratung genügt keine allgemeine Frage wie „Ist mein Prompt gut?“. Wir zeigen eine konkrete Stelle: den Auftrag, das zugehörige Material und die Aussage im Ergebnis, die uns unsicher macht. Dazu notieren wir die eigene Einschätzung. So lässt sich in einer kleinen Gruppe gezielt helfen.
+
+Eine kurze Vorbereitung kann lauten: „Meine Quelle erlaubt den Wechsel nur unter einer Bedingung. Im Entwurf klingt er bereits bestätigt. Ich würde den Satz einschränken; unklar ist mir noch, welche offene Frage für den nächsten Schritt gebraucht wird.“ Auch ein begründetes Verwerfen eines Anwendungsfalls kann ein gutes Ergebnis sein.
+
+## Wann eine Etappe abgeschlossen ist
+
+Wir schließen eine Etappe ab, wenn das benannte Artefakt vorliegt, seine offenen Punkte sichtbar sind und der nächste Schritt klar ist. Ein erfolgreiches Quiz bestätigt die konkrete Auswahlaufgabe. Es ersetzt weder die fachliche Beurteilung eines eigenen Freitexts noch die Freigabe eines betrieblichen Einsatzes.
+
+Das [Abgabe- und Präsentationskapitel](transfer/transferplan.qmd) führt die vier Teile zusammen. Ein bestimmter Anbieter, ein bezahltes Konto oder die n8n-Umsetzung sind keine Voraussetzung für ein überzeugendes Portfolio.

@@ -1,0 +1,55 @@
+DURCHLAUF 1: EIN ENTWURF MIT MÄNGELN (KONSTRUIERT)
+Kursmaterial "Working with GenAI", Modul 2, Lektion 2.3
+
+HINWEIS: Dieser Entwurf ist konstruiert, kein aufgezeichneter Modelloutput.
+Er zeigt, wie eine Antwort auf Kundenanfrage 2 aussehen kann, wenn der
+Auftrag nur lautet: "Beantworte diese Kundenanfrage freundlich im Stil
+unseres Kundenservice" und nur die Kundenmail, nicht die Fachinformationen
+mitgegeben wurden. Er ist das Ausgangsmaterial für den Reparaturauftrag.
+
+--------------------------------------------------------------------------
+
+Sehr geehrte Frau Novak,
+
+herzlichen Dank für Ihre Nachricht und Ihr Vertrauen in die Rösterei
+Morgenrot!
+
+Selbstverständlich setzen wir Ihre Oktober-Lieferung gerne für Sie aus. Sie
+müssen dafür nichts weiter tun, wir kümmern uns darum. Ihr Abo läuft danach
+ganz normal weiter.
+
+Entkoffeiniert Sanft gibt es natürlich auch im Abo. Er wird mit dem
+schonenden Wasserverfahren entkoffeiniert und ist ideal für den Abend.
+
+Unser Kaffee stammt aus kontrolliert biologischem Anbau, ist aber noch nicht
+offiziell Bio-zertifiziert. Wir arbeiten daran!
+
+Falls Sie noch Fragen haben, melden Sie sich jederzeit.
+
+Herzliche Grüße
+Ihr Morgenrot-Team
+
+--------------------------------------------------------------------------
+WAS AN DIESEM ENTWURF ZU FINDEN IST (erst nach eigener Prüfung lesen)
+--------------------------------------------------------------------------
+
+Belegbarkeit:
+- "kontrolliert biologischer Anbau, noch nicht zertifiziert, wir arbeiten
+  daran": vollständig erfunden. Das Material sagt, dass keine freigegebene
+  Angabe vorliegt.
+- "Wasserverfahren", "ideal für den Abend": nicht im Material.
+
+Bedingung und Handlung:
+- Das Aussetzen wird unbedingt zugesagt. Die Regel (fünf Werktage vor dem
+  Versand) fehlt, das Versanddatum der Oktober-Lieferung ist unbekannt.
+- "Wir kümmern uns darum" behauptet eine veranlasste Handlung. Im Fall ist
+  nichts veranlasst.
+
+Form:
+- Anrede mit Namen und Geschlechtsannahme statt "Guten Tag,".
+- Ausrufezeichen, Füllwörter ("selbstverständlich", "gerne", "natürlich").
+- Falsche Signatur, keine Liste "Offen".
+
+Belegt und in Ordnung:
+- Entkoffeiniert Sanft ist im Abo wählbar.
+- Das Abo läuft nach einem Aussetzen unverändert weiter.

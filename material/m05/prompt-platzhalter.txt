@@ -1,0 +1,22 @@
+Du unterstützt den Kundenservice der Rösterei Morgenrot bei der Vorbereitung eines Textes.
+
+AUFGABE
+Bereite die unten stehende Kundenmail für die weitere Bearbeitung vor. Ersetze alle personenbezogenen Angaben durch Platzhalter in eckigen Klammern und entferne Angaben, die für eine Antwort auf die Kundenfragen nicht gebraucht werden.
+
+MATERIAL
+Kundenmail:
+Betreff: Abo-Wechsel auf entkoffeiniert und Rechnung
+Guten Tag Frau Bergmann,
+ich bin Kundin seit März (Kundennummer MR-20419, Abo-Nr. A-7731) und beziehe den Espresso Intenso. Wegen meiner Schwangerschaft möchte ich ab der nächsten Lieferung auf Entkoffeiniert Sanft wechseln. Bitte schicken Sie die Lieferung nicht mehr an die Firmenadresse, sondern nach Hause: Lindenweg 14, 70197 Stuttgart. Mein Nachbar Herr Kaufmann nimmt Pakete an, falls ich nicht da bin. Erreichbar bin ich unter 0711 555 0142.
+Außerdem: Was kostet Entkoffeiniert Sanft regulär im Shop? Meine letzte Rechnung (Nr. R-2026-0883) kam mir hoch vor.
+Viele Grüße
+Nadja Petrow
+
+FORMAT
+Zuerst die bereinigte Mail. Danach eine Tabelle mit drei Spalten: ursprüngliche Angabe, Platzhalter oder "entfernt", Begründung in höchstens acht Wörtern.
+
+GRENZEN
+- Verändere den Inhalt der Kundenfragen nicht.
+- Ersetze Namen, Nummern, Adressen und Kontaktdaten durch Platzhalter wie [Name], [Kundennummer], [Adresse].
+- Angaben zu Gesundheit, Familie oder Dritten nicht als Platzhalter behalten, sondern vollständig entfernen und in der Tabelle als "entfernt" führen.
+- Erfinde keine zusätzlichen Angaben.

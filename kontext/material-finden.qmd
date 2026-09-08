@@ -1,0 +1,216 @@
+# Wenn das Material zu groß wird
+
+Steckbrief und Serviceregeln passen in einen Prompt. Ein Handbuch passt nicht, und selbst wenn es passen würde, wäre es keine gute Idee: Je mehr Text im Fenster steht, desto mehr Stellen gibt es, aus denen eine plausible, aber unpassende Aussage stammen kann. In diesem Kapitel suchen wir aus einem zwölfteiligen Handbuch die zwei Abschnitte heraus, die eine Kundenfrage beantworten, und geben nur diese mit. Danach schauen wir kurz auf den Fall, dass die Antwort gar nicht im eigenen Material liegt.
+
+**Lernziel:** Relevante Textstellen aus einem größeren Dokument heraussuchen, mit Fundstelle mitgeben und die Belege im Ergebnis tatsächlich öffnen; für eine Frage außerhalb des eigenen Materials zwischen Websuche und einer mehrstufigen Recherche unterscheiden. **Zeit:** etwa 40 Minuten einschließlich eines eigenen Durchlaufs.
+
+## Der Lehrfall: eine Frage, ein Handbuch
+
+Im Kundenservice liegt diese Mail:
+
+> Ich habe gestern meine erste Lieferung bekommen. Wie lange hält der Kaffee, wie lagere ich ihn am besten, und warum hat der Beutel vorne ein kleines Loch?
+
+Die Serviceregeln sagen, dass Fragen zur Lagerung aus dem Steckbrief beantwortet werden. Der Steckbrief nennt aber nur die Aufbrauchempfehlung, nichts zur Lagerung und nichts zum Beutel. Marlene Bosch verweist auf das Produktionshandbuch. Der [Auszug](../material/m03/produktionshandbuch-auszug.txt) hat zwölf Abschnitte:
+
+| Nr. | Abschnitt | Für die Frage? |
+|---|---|---|
+| 1 | Zweck und Geltung | nein |
+| 2 | Annahme von Rohkaffee | nein |
+| 3 | Lagerung von Rohkaffee | **Falle**, siehe unten |
+| 4 | Röstprofile | nein |
+| 5 | Abkühlen und Entgasen | am Rande |
+| 6 | Verpacken | **ja**, das Ventil |
+| 7 | Lagerung von Röstkaffee und Aufbrauchempfehlung | **ja** |
+| 8 | Mahlen auf Kundenwunsch | am Rande |
+| 9 | Reinigung | nein |
+| 10 | Qualitätskontrolle und Verkostung | nein |
+| 11 | Kennzeichnung der Beutel | nein |
+| 12 | Zuständigkeiten | nein |
+
+Die beiden Abschnitte, auf die es ankommt, im Wortlaut:
+
+```text
+6 VERPACKEN
+Verpackt wird in Beuteln mit Aromaventil. Das Ventil lässt Gas aus dem
+Beutel entweichen und verhindert, dass Luft von außen eindringt. Deshalb
+hat jeder Beutel eine kleine Öffnung auf der Vorderseite; sie ist kein
+Defekt. Jeder Beutel wird mit Sorte und Röstdatum etikettiert.
+
+7 LAGERUNG VON RÖSTKAFFEE UND AUFBRAUCHEMPFEHLUNG
+Verpackter Röstkaffee lagert kühl, trocken und dunkel. Nicht im Kühlschrank
+lagern, weil Feuchtigkeit und Fremdgerüche aufgenommen werden können. Die
+Aufbrauchempfehlung für alle Sorten lautet: innerhalb von acht Wochen nach
+Röstdatum, ganze Bohne. Eine geöffnete Packung möglichst innerhalb von zwei
+Wochen aufbrauchen und nach jeder Entnahme wieder verschließen. Gemahlener
+Kaffee verliert schneller Aroma; wir empfehlen, kurz vor der Zubereitung zu
+mahlen.
+```
+
+Und die Falle, Abschnitt 3:
+
+```text
+3 LAGERUNG VON ROHKAFFEE
+Rohkaffee lagert in Säcken auf Paletten, nicht direkt auf dem Boden, in
+einem trockenen Raum ohne Fremdgerüche. Bei sachgerechter Lagerung ist
+Rohkaffee in unserem Betrieb bis zu zwölf Monate ab Eingang verwendbar.
+```
+
+Wer im Handbuch nach „Lagerung“ sucht, findet Abschnitt 3 zuerst. Er klingt passend, enthält eine Zahl und eine Empfehlung. Er handelt von ungeröstetem Kaffee. Eine Antwort „bis zu zwölf Monate haltbar“ wäre flüssig, belegbar mit Fundstelle, und falsch für die Kundin.
+
+::: {.callout-important title="Synthetisches Handbuch"}
+Das Produktionshandbuch ist für diesen Kurs erfunden. Die Angaben zu Lagerung, Entgasung und Aufbrauchfristen sind Übungswerte und keine fachliche Empfehlung für echte Röstereien oder für den eigenen Kaffee zu Hause.
+:::
+
+## Zielbild
+
+Ein Auftrag, der statt des Handbuchs zwei markierte Fundstellen enthält, mit einer Kopfzeile, die sagt, wonach gesucht wurde und was bewusst nicht aufgenommen wurde. Und ein Antwortentwurf, in dem jede Aussage eine Fundstelle trägt, die wir danach im Handbuch aufschlagen.
+
+| Baustein | Was er leistet |
+|---|---|
+| **Suchbegriffe** | Aus der Frage abgeleitet: „Lagerung“, „aufbrauchen“, „Röstdatum“, „geöffnet“, „Ventil“, „Loch“ |
+| **Trefferprüfung** | Jeder Treffer wird gelesen: Handelt der Abschnitt vom Gegenstand der Frage? |
+| **Fundstellen [H6], [H7]** | Nur die passenden Abschnitte, mit Nummer und Titel, zwischen Markierungen |
+| **Suchprotokoll** | Kopfzeile: Suchbegriffe, Datum, bewusst ausgeschlossene Treffer |
+| **Beleg öffnen** | Jede Fundstelle im Ergebnis wird im Handbuch nachgelesen |
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** das Handbuch als Textdatei geöffnet, ein kostenloses Chatkonto, ein neuer Chat. Die Suche im Handbuch machen wir mit der Suchfunktion des Editors oder Browsers.
+
+### Schritt 1 — Die Frage in Suchbegriffe übersetzen
+
+Die Kundin fragt drei Dinge. Zu jedem notieren wir die Wörter, die im Handbuch stehen könnten. „Wie lange hält“ steht so nicht im Handbuch; dort heißt es „aufbrauchen“ und „Röstdatum“. „Kleines Loch“ heißt im Handbuch vermutlich „Ventil“ oder „Öffnung“. Diese Übersetzung ist der eigentliche Suchschritt: Wir suchen nicht die Frage, sondern die Wörter, mit denen das Dokument über die Sache spricht.
+
+### Schritt 2 — Treffer lesen, nicht zählen
+
+Wir suchen nacheinander und notieren die Abschnitte: „Lagerung“ trifft 3 und 7. „aufbrauchen“ trifft 7 und 8. „Röstdatum“ trifft 6, 7 und 11. „Ventil“ trifft 6. Bei jedem Treffer lesen wir den Abschnitt und fragen: Geht es hier um das, was die Kundin in der Hand hat, also verpackten Röstkaffee? Abschnitt 3 fällt damit raus. Abschnitt 8 handelt von gemahlenem Versand; die Kundin hat nicht gesagt, ob sie gemahlen bestellt hat, also lassen wir ihn weg und notieren das. Abschnitt 11 nennt das Röstdatum nur als Etikettangabe.
+
+::: {.callout-tip title="Die Registratur"}
+So arbeitet eine gute Registratur: Zu einer Anfrage werden nicht alle Akten geholt, sondern die zwei Mappen, in denen die Antwort steht, und auf jeder liegt ein Zettel mit der Fundstelle. Wer die falsche Mappe zieht, bekommt eine Antwort, die richtig aussieht und zum falschen Vorgang gehört. Das Heraussuchen ist deshalb kein Vorschritt zur eigentlichen Arbeit, es ist die halbe Arbeit.
+:::
+
+### Schritt 3 — Die Fundstellen mit Suchprotokoll mitgeben
+
+Der Materialteil des Prompts enthält jetzt nicht das Handbuch, sondern die zwei Abschnitte als [H6] und [H7], jeweils zwischen Markierungen, und darüber eine Kopfzeile:
+
+```text
+Herkunft: Produktionshandbuch Rösterei Morgenrot, Auszug, Stand 15.07.2026.
+Herausgesucht am 07.09.2026 zu den Suchbegriffen "Lagerung", "aufbrauchen",
+"Röstdatum", "geöffnet". Der Abschnitt 3 (Lagerung von Rohkaffee) wurde
+bewusst nicht aufgenommen, weil er ungerösteten Kaffee betrifft.
+```
+
+Die Kopfzeile ist unser Suchprotokoll. Wer den Entwurf später prüft, sieht, wonach gesucht wurde und was ausgeschlossen wurde, und kann beides anzweifeln.
+
+::: {.callout-note title="Heraussuchen und Erzeugen: das Prinzip hinter dem Kürzel RAG"}
+Was wir hier von Hand tun, machen Werkzeuge automatisch, wenn Dateien in einem Projekt oder einer Wissensablage liegen: Zu einer Frage werden die Textstellen herausgesucht, die zur Frage passen, und nur diese bekommt das Modell zum Antworten. Dafür hat sich das Kürzel RAG eingebürgert, Retrieval-Augmented Generation, auf Deutsch etwa „Erzeugen mit vorherigem Heraussuchen“. Für die Arbeit damit reicht ein Gedanke: Die Antwort kann nur so gut sein wie die Auswahl der Textstellen. Findet die automatische Suche Abschnitt 3 statt Abschnitt 7, entsteht dieselbe falsche Antwort, die wir in Schritt 2 vermieden haben, nur ohne dass jemand sie hätte vermeiden können. Deshalb öffnen wir Belege. Wie die Suche technisch funktioniert, behandelt dieser Kurs nicht.
+:::
+
+### Schritt 4 — Den Auftrag abschicken
+
+Der vollständige Auftrag mit beiden Fundstellen steht als [Textdatei](../material/m03/prompt-3-3-fundstellen.txt) bereit.
+
+```text
+Du unterstützt den Kundenservice der Rösterei Morgenrot.
+
+AUFGABE
+Entwirf eine Antwort auf die unten stehende Kundenfrage. Verwende nur die
+herausgesuchten Fundstellen aus dem Produktionshandbuch.
+
+MATERIAL (nur diese Fundstellen sind gültig)
+(Kopfzeile mit Suchprotokoll, dann [H7] und [H6] zwischen Markierungen)
+
+Kundenfrage:
+"Ich habe gestern meine erste Lieferung bekommen. Wie lange hält der Kaffee,
+wie lagere ich ihn am besten, und warum hat der Beutel vorne ein kleines
+Loch?"
+
+FORMAT
+Antwort-Mail, höchstens 130 Wörter, Anrede "Guten Tag", sachlicher Ton.
+Hinter jeder inhaltlichen Aussage die Fundstelle [H6] oder [H7].
+Absenderzeile "Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot".
+Am Ende eine Liste "Offen".
+
+GRENZEN
+- Verwende ausschließlich die Fundstellen [H6] und [H7]. Ergänze nichts.
+- Was dort nicht steht, beantworte nicht, sondern trage es unter "Offen" ein.
+- Erfinde keine Fristen, Mengen oder Termine.
+```
+
+### Schritt 5 — Jeden Beleg wirklich öffnen
+
+Der Entwurf trägt Fundstellen. Das ist der Anfang der Prüfung, nicht ihr Ende. Zu jeder Fundstelle schlagen wir den Abschnitt im Handbuch auf und vergleichen: Steht dort, was der Entwurf sagt, und steht es so? Drei Stellen, an denen es eng wird:
+
+1. „acht Wochen nach Röstdatum [H7]“: steht dort, mit dem Zusatz „ganze Bohne“. Fehlt der Zusatz im Entwurf, ist die Aussage breiter als der Beleg.
+2. „nicht im Kühlschrank [H7]“: steht dort, samt Begründung.
+3. „kleine Öffnung, kein Defekt [H6]“: steht dort. Eine Erklärung, warum Kaffee Gas abgibt, stünde nur in Abschnitt 5, der nicht mitgegeben ist. Taucht sie trotzdem auf, ist sie unbelegt, auch wenn sie stimmt.
+
+Eine Fundstelle, hinter der etwas anderes steht als behauptet, ist der wichtigste Befund dieses Kapitels. Sie sieht aus wie ein Beleg und ist keiner.
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Konstruiert, kein aufgezeichneter Modelloutput.
+
+> Guten Tag, vielen Dank für Ihre Nachricht und viel Freude mit der ersten Lieferung. Wir empfehlen, den Kaffee als ganze Bohne innerhalb von acht Wochen nach dem Röstdatum aufzubrauchen [H7]; das Röstdatum steht auf dem Beutel [H6]. Eine geöffnete Packung möglichst innerhalb von zwei Wochen verbrauchen und nach jeder Entnahme wieder verschließen [H7]. Lagern Sie den Kaffee kühl, trocken und dunkel, aber nicht im Kühlschrank, weil er dort Feuchtigkeit und Fremdgerüche aufnehmen kann [H7]. Die kleine Öffnung vorne ist ein Aromaventil: Es lässt Gas aus dem Beutel entweichen und hält Luft draußen, sie ist kein Defekt [H6]. Freundliche Grüße, Sina Bergmann, Vertrieb und Kundenservice, Rösterei Morgenrot
+>
+> **Offen:** keine.
+
+Jede Aussage trägt eine Fundstelle, und beim Aufschlagen steht hinter jeder das Behauptete. Ob „viel Freude“ in die Firmenmail gehört, ist keine Belegfrage.
+
+### Wenn die Antwort nicht im eigenen Material liegt
+
+Jonas Halder möchte auf dem Etikett „Röstkaffee“ schreiben und fragt, ob der Begriff irgendwo amtlich bestimmt ist. Handbuch und Steckbrief sagen dazu nichts; Abschnitt 11 verweist die Frage der Kennzeichnung ausdrücklich an die Geschäftsführung. Die Sache liegt außerhalb des Betriebs, also auch außerhalb der Kontextmappe. Für solche Fälle gibt es zwei Wege, und der Unterschied liegt in der Frage, nicht im Werkzeug:
+
+| Frage | Passender Weg | Woran wir das Ergebnis prüfen |
+|---|---|---|
+| Eine einzelne Angabe, die auf einer benennbaren Seite steht („Wie lautet die amtliche Begriffsbestimmung?“) | **Websuche mit vorgegebener Quelle:** die Seite nennen, wörtliches Zitat verlangen, „nicht gefunden“ als zulässige Antwort vorgeben | Die Seite selbst öffnen und das Zitat Wort für Wort vergleichen |
+| Ein Überblick, der über viele Quellen verteilt ist („Wie gestalten andere kleine Röstereien ihr Abo-Modell?“) | **Mehrstufige Recherche** („Deep Research“ in ChatGPT und Gemini): das Werkzeug plant, liest mehrere Seiten und liefert einen Bericht mit Quellen | Die tragenden Aussagen an den genannten Quellen nachlesen; nicht den Bericht als Ganzes glauben |
+
+Die Übung im Kurs nimmt den ersten Weg, weil er in jedem Konto mit Suchfunktion läuft und die Prüfung eindeutig ist. Der Auftrag, mit Prüfwert, steht als [Textdatei](../material/m03/websuche-auftrag.txt) bereit:
+
+```text
+Lies ausschließlich diese Seite:
+https://www.gesetze-im-internet.de/kaffeev_2001/anlage.html
+
+Zitiere wörtlich, wie dort "Röstkaffee, Kaffee" bestimmt wird. Nenne die
+Nummer des Eintrags. Ergänze keine Angaben aus anderen Quellen oder aus
+deinem Wissen. Wenn eine Angabe auf der Seite nicht zu finden ist, schreibe
+"auf der angegebenen Seite nicht gefunden". Beurteile nicht, ob eine
+Kennzeichnung zulässig ist.
+```
+
+Prüfwert, Stand 07.09.2026: Eintrag 1 b) der Anlage lautet „Röstkaffee, Kaffee: gerösteter Rohkaffee, ungemahlen oder gemahlen, mit einem Wassergehalt von höchstens 50 Gramm in einem Kilogramm.“ Maßgeblich ist, was beim Öffnen der Seite tatsächlich dort steht. Kann das Werkzeug die Seite nicht abrufen, öffnen wir sie selbst und lesen den Eintrag; der Prompt wird dann nicht wiederholt.
+
+Was diese Suche nicht leistet: Ob das Etikett zulässig ist, beantwortet kein Zitat. Das bleibt die verbindliche Klärung, die das Handbuch der Geschäftsführung zuweist. Die mehrstufige Recherche behandeln wir hier nicht als Pflichtübung: Ob und in welchem Umfang sie in einem Konto verfügbar ist, hängt vom Konto ab ([OpenAI-Hilfe zu Deep Research](https://help.openai.com/en/articles/10500283)); ohne sie bleiben normale Suche und selbst bereitgestellte Quellen der Weg.
+
+### Eine eigene Variante bauen
+
+Wir nehmen ein längeres Dokument aus dem eigenen Fall, erfinden dafür eine gekürzte Übungsfassung mit sechs bis acht Abschnitten, und bauen eine Falle ein: einen Abschnitt, der die Suchbegriffe enthält, aber etwas anderes meint.
+
+1. Eine Frage formulieren und in Suchbegriffe übersetzen.
+2. Treffer lesen, Falle erkennen, Fundstellen mit Suchprotokoll mitgeben.
+3. Auftrag in neuem Chat ausführen, jede Fundstelle aufschlagen.
+4. Gegenprobe in einem weiteren neuen Chat: dasselbe mit dem ganzen Dokument statt der Fundstellen. Beobachten, ob die Falle zuschnappt. Auch wenn nicht: Der Weg über Fundstellen bleibt der prüfbare.
+
+Suchprotokoll, Fundstellen und die Beobachtung aus der Gegenprobe gehören in **Portfolio-Teil 2** unter „Kontextquellen“ als Beleg dafür, wie relevante Textstellen ausgewählt werden.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Der Entwurf nennt „zwölf Monate“ | Abschnitt 3 ist ins Material geraten oder die Zahl stammt nicht aus dem Material. Fundstelle prüfen, Aussage entfernen. |
+| Eine Fundstelle stimmt, aber der Abschnitt sagt etwas anderes | Der wichtigste Befund. Aussage als unbelegt markieren, Wortlaut aus dem Abschnitt übernehmen oder streichen. |
+| Der Entwurf erklärt, warum Kaffee Gas abgibt | Steht nur in Abschnitt 5, der nicht mitgegeben wurde. Entfernen oder Abschnitt 5 bewusst als [H5] ergänzen und den Auftrag wiederholen. |
+| Die Aufbrauchfrist steht ohne „ganze Bohne“ | Die Aussage ist breiter als der Beleg. Zusatz ergänzen. |
+| Die Websuche liefert ein Zitat, das auf der Seite nicht steht | Zitat verwerfen, Seite selbst lesen. Ein Link im Ergebnis ist kein Beleg, solange die Seite nicht geöffnet wurde. |
+| Die Websuche antwortet mit einer Koffein-Prozentzahl auf die freiwillige Zusatzfrage | Auf der Anlage-Seite steht dazu nichts (Stand 07.09.2026). Die Zahl stammt nicht von der angegebenen Seite; als Befund notieren. |
+| Das Werkzeug kann die Seite nicht abrufen | Prompt nicht wiederholen. Seite im Browser öffnen, Eintrag lesen, Prüfung von Hand abschließen. |
+
+## Kontrollpunkt für Modul 3
+
+- Eine Frage in die Wörter übersetzen, mit denen ein Dokument über die Sache spricht
+- Treffer lesen und einen Abschnitt erkennen, der die Suchbegriffe enthält, aber etwas anderes meint
+- Fundstellen mit Nummer, Titel und Suchprotokoll mitgeben statt des ganzen Dokuments
+- Das Prinzip „Heraussuchen, dann Erzeugen“ erklären und daraus ableiten, warum Belege geöffnet werden müssen
+- Jede Fundstelle im Ergebnis am Dokument nachlesen und eine Aussage erkennen, die breiter ist als ihr Beleg
+- Für eine Frage außerhalb des eigenen Materials zwischen Websuche mit vorgegebener Quelle und mehrstufiger Recherche unterscheiden und das Ergebnis an der Quelle prüfen

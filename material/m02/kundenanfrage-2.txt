@@ -1,0 +1,36 @@
+EINGEGANGENE KUNDENMAIL 2 — LEHRFALL RÖSTEREI MORGENROT
+Kursmaterial "Working with GenAI", Modul 2 (Lektionen 2.2 und 2.3)
+
+HINWEIS: Konstruierter Fall. Die Mail geht an Sina Bergmann, Vertrieb und
+Kundenservice. Die Absenderangabe "R. Novak" ist erfunden und enthält keine
+realen personenbezogenen Daten.
+
+--------------------------------------------------------------------------
+
+Betreff: Abo im Oktober aussetzen
+
+Guten Tag,
+
+ich bin im Oktober drei Wochen unterwegs und möchte meine Abo-Lieferung in
+dieser Zeit aussetzen. Geht das, und was muss ich dafür tun? Außerdem: Gibt
+es Entkoffeiniert Sanft auch im Abo? Und ist Ihr Kaffee eigentlich Bio?
+
+Beste Grüße
+R. Novak
+
+--------------------------------------------------------------------------
+DREI FRAGEN, DREI ANTWORTLAGEN
+--------------------------------------------------------------------------
+
+1. Lieferung aussetzen ............. bedingt belegbar. Die Regel steht im
+                                     Auszug (fünf Werktage vor dem Versand).
+                                     Das Versanddatum der Oktober-Lieferung
+                                     fehlt; ob die Frist zu halten ist,
+                                     bleibt offen.
+2. Entkoffeiniert Sanft im Abo ..... belegbar: alle drei Sorten sind im Abo
+                                     wählbar.
+3. Bio ............................. NICHT belegbar. Der Auszug sagt
+                                     ausdrücklich, dass dem Kundenservice
+                                     dazu keine freigegebenen Angaben
+                                     vorliegen. Weder "ja" noch "nein" darf
+                                     im Entwurf stehen.

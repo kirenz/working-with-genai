@@ -1,0 +1,61 @@
+# Alle Lektionen und Folien {.unnumbered}
+
+Buchkapitel, Selbstlernlektionen und Folien gehören jeweils zu derselben Lernaufgabe. Die Folien begleiten die gemeinsamen Termine und sind keine zusätzliche Pflichtlektüre. Die Arbeitsmaterialien liegen bei den einzelnen Kapiteln.
+
+## Modul 1 · Ankommen: erster Erfolg und erste Grenzen
+
+| Lektion | Buch | Folien |
+|---|---|---|
+| 1.1 | [Der erste Chat-Erfolg](start/erster-chat.qmd) | [Folien](slides/start/erster-chat.html) |
+| 1.2 | [Grenzen und erste Datenregeln](start/grenzen-daten.qmd) | [Folien](slides/start/grenzen-daten.html) |
+| 1.3 | [Den eigenen Anwendungsfall wählen](start/anwendungsfall.qmd) | [Folien](slides/start/anwendungsfall.html) |
+
+## Modul 2 · Strukturierte Arbeitsaufträge
+
+| Lektion | Buch | Folien |
+|---|---|---|
+| 2.1 | [Vom Zuruf zum Arbeitsauftrag](prompting/arbeitsauftrag.qmd) | [Folien](slides/prompting/arbeitsauftrag.html) |
+| 2.2 | [Mit Beispielen und Format steuern](prompting/beispiele-format.qmd) | [Folien](slides/prompting/beispiele-format.html) |
+| 2.3 | [Iterieren: eine Änderung pro Durchlauf](prompting/iterieren.qmd) | [Folien](slides/prompting/iterieren.html) |
+
+## Modul 3 · Kontext bereitstellen
+
+| Lektion | Buch | Folien |
+|---|---|---|
+| 3.1 | [Welche Materialien wirklich relevant sind](kontext/material-auswaehlen.qmd) | [Folien](slides/kontext/material-auswaehlen.html) |
+| 3.2 | [Regeln und Quellen dauerhaft hinterlegen](kontext/regeln-quellen.qmd) | [Folien](slides/kontext/regeln-quellen.html) |
+| 3.3 | [Wenn das Material zu groß wird](kontext/material-finden.qmd) | [Folien](slides/kontext/material-finden.html) |
+
+## Modul 4 · Qualität prüfen
+
+| Lektion | Buch | Folien |
+|---|---|---|
+| 4.1 | [Aussagen gegen Quellen prüfen](qualitaet/aussagen-pruefen.qmd) | [Folien](slides/qualitaet/aussagen-pruefen.html) |
+| 4.2 | [Testfälle für den eigenen Fall](qualitaet/testfaelle.qmd) | [Folien](slides/qualitaet/testfaelle.html) |
+| 4.3 | [Übertragbarkeit: ChatGPT, Claude und Gemini](qualitaet/toolvergleich.qmd) | [Folien](slides/qualitaet/toolvergleich.html) |
+
+## Modul 5 · Verantwortung und Risiko-Orientierung
+
+| Lektion | Buch | Folien |
+|---|---|---|
+| 5.1 | [Datenschutz im Arbeitsalltag](verantwortung/datenschutz.qmd) | [Folien](slides/verantwortung/datenschutz.html) |
+| 5.2 | [Urheberrecht und geistiges Eigentum](verantwortung/urheberrecht.qmd) | [Folien](slides/verantwortung/urheberrecht.html) |
+| 5.3 | [KI-Kompetenz und der eigene Risiko-Überblick](verantwortung/ki-kompetenz.qmd) | [Folien](slides/verantwortung/ki-kompetenz.html) |
+
+## Modul 6 · In den Alltag bringen
+
+| Lektion | Buch | Folien |
+|---|---|---|
+| 6.1 | [Projects und gespeicherte Anweisungen](transfer/wiederverwenden.qmd) | [Folien](slides/transfer/wiederverwenden.html) |
+| 6.2 | [Ein Miniworkflow, selbst gebaut](transfer/miniworkflow.qmd) | [Folien](slides/transfer/miniworkflow.html) |
+| 6.3 | [Transferplan und Kurzpräsentation](transfer/transferplan.qmd) | [Folien](slides/transfer/transferplan.html) |
+
+## Freiwillige Vertiefung
+
+[Codex und Claude Code am Morgenrot-Fall](praxis/codex-claude-code.qmd) · [Demo-Folien](slides/praxis/codex-claude-code.html)
+
+## Die Arbeitsmappe
+
+[Portfolio-Vorlage](material/portfolio-vorlage.md) · [Gemeinsame Fallbasis](material/roesterei-morgenrot.md) · [Lernweg und Termine](lernweg.qmd)
+
+[Alle Arbeitsmaterialien als ZIP herunterladen](material/morgenrot-arbeitsmaterialien.zip). Wir entpacken das Paket lokal und wählen jeweils nur die Unterlagen aus, die im aktuellen Auftrag genannt werden.

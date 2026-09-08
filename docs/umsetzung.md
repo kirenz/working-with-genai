@@ -1,4 +1,26 @@
+# Vollausbau: aktuelle Arbeitsfassung
+
+Stand 07.09.2026. Alle 18 Lektionen, zugehörige Folien und Units sowie die freiwillige Arbeitsagenten-Vertiefung lokal ausgearbeitet. Gemeinsame Durchsicht auf Nutzerwunsch noch offen. Kein neuer Commit, Push oder Produktionsimport. Der frühere Veröffentlichungsbericht unten beschreibt ausschließlich das damalige Startpaket. Der aktuelle Umfang und Erzeugungsstand stehen in `docs/vollausbau-2026-09-07.md`.
+
+---
+
 # Startpaket: Working with GenAI
+
+## Aktueller Änderungsstand: Fallumstellung auf die Rösterei Morgenrot (07.09.2026)
+
+**Nur lokal.** Der durchgehende Lehrfall ist von der eigens erfundenen Nordwerk Elektrowerkzeuge GmbH auf die Rösterei Morgenrot aus dem Business-Analytics-Kurs umgestellt. Übernommen sind Ausgangslage (kleine Rösterei im Direktvertrieb, Onlineshop und Kaffee-Abo, drei Sorten, Wachstum ohne Gewinn 2025), Sortiment mit Listenpreisen, die fünf handelnden Personen mit ihren Funktionen und die vorhandenen Bilder. Neu für diesen Kurs und im Material gekennzeichnet: die Arbeitsanlässe der fünf Personen, die Kundenanfrage an Sina Bergmann und die Abo-Regel zum Sortenwechsel (fünf Werktage vor dem Versand). Am Business-Analytics-Repo wurde nichts geändert.
+
+Geänderte Dateien in diesem Repo: `index.qmd`, `prompting/arbeitsauftrag.qmd`, `material/lehrfall-fachinformationen.txt`, `material/kundenanfrage.txt`, `material/prompt-vorlage.txt`, `material/portfolio-vorlage.md`, `docs/kurskonzept-v2.md`, `README.md`, diese Datei. Neu hinzugekommen: `material/roesterei-morgenrot.md`, `docs/roesterei-morgenrot-fallbasis.md`, `images/`. In der Lernplattform: `apps/api/app/db/units/working-with-genai/02-01-arbeitsauftrag.unit.json` — Aufbau unverändert bei zwölf Blöcken, elf Lernschritten und drei Quizfragen; Block-, Option- und Item-IDs sind erhalten, der Inhalt ist umgestellt.
+
+**Prüfungen ausgesetzt.** Auf ausdrücklichen Nutzerwunsch wurden zu dieser Änderung keine Tests, kein `quarto render`, keine Unit-Validierung, keine Browserprüfung und keine gesonderten Reviews ausgeführt. Sie sind auf später verschoben. Der Abschnitt „Prüfungen" weiter unten beschreibt den Stand vor der Fallumstellung und wird nicht rückwirkend umgeschrieben.
+
+**Öffentlich weiterhin Nordwerk.** Buch auf GitHub Pages und Musterlektion auf kurse.kirenz.de zeigen unverändert den vorherigen Lehrfall. Es wurde nichts committet, gepusht, deployt oder importiert.
+
+Offen: Render, Unit-Validierung, Durchsicht durch Jan, danach Entscheidung über Release und Plattformimport. Beim Import sind die vorhandenen IDs und Lernfortschritte der bereits veröffentlichten Musterlektion zu erhalten.
+
+---
+
+## Stand des Startpakets vor der Fallumstellung
 
 Stand: 07.09.2026. Konzept v2 und Musterlektion 2.1 fertig ausgearbeitet. Die übrigen 17 Lektionen sind geplant, aber noch nicht erstellt. Die Veröffentlichung von Buch und Musterlektion sowie Commit und Push wurden am 07.09.2026 ausdrücklich freigegeben. Die nachfolgend dokumentierten Inhaltsprüfungen beziehen sich auf den lokalen Stand vor der Veröffentlichung.
 

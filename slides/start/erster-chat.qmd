@@ -1,0 +1,160 @@
+---
+title: "Der erste Chat-Erfolg"
+subtitle: "Modul 1 · Lektion 1.1"
+book-source: ../../start/erster-chat.qmd
+---
+
+## Heute in zehn Minuten: ein brauchbarer Text {.stage}
+
+[Modul 1 · Ankommen]{.kicker}
+
+Eine kleine echte Aufgabe aus der Rösterei Morgenrot. Kein Vorwissen, ein sichtbares Ergebnis. Die Grenzen kommen danach.
+
+::: {.notes}
+Einstieg im Kickoff, direkt nach der Begrüßung. Ziel der nächsten zehn Minuten: Alle haben einmal selbst einen Auftrag abgeschickt und drei Textvarianten gesehen. Ankündigen, dass es bewusst zuerst um den Erfolg geht; Grenzen und Datenregeln folgen in der nächsten Lektion. Wer noch kein Konto hat, legt es jetzt an oder schaut zunächst bei der Nachbarin zu. Zeit: 1 Minute.
+:::
+
+## Der Anlass: Jonas braucht drei Varianten
+
+::: {.two-col}
+::: {.card}
+![](../../images/morgenrot-team/jonas-halder.png){width="140"}
+
+**Jonas Halder**, Marketing
+:::
+::: {.card}
+Hinweistext auf das Kaffee-Abo für die Startseite des Onlineshops.
+
+Drei Varianten zur Auswahl. Freigabe durch Aylin Yılmaz, erst dann online.
+
+Bis dahin: interner Entwurf, geringes Risiko.
+:::
+:::
+
+::: {.notes}
+Den Anlass in zwei Sätzen erzählen. Wichtig ist der letzte Punkt: Der Text geht nicht sofort raus, eine Person liest ihn vorher. Das macht die Aufgabe zu einem guten Einstieg. Frage ins Plenum: Wer hat eine ähnliche Aufgabe im eigenen Alltag, bei der ein Entwurf reicht? Zwei Antworten aufnehmen, nicht diskutieren. Zeit: 2 Minuten.
+:::
+
+## Das Briefing: nur diese Angaben gelten
+
+::: {.small}
+- Kleine Kaffeerösterei, Direktvertrieb über eigenen Onlineshop
+- Drei Sorten: Espresso Intenso, Filterkaffee Mild, Entkoffeiniert Sanft
+- Kaffee-Abo liefert regelmäßig nach Hause, alle drei Sorten wählbar
+- Sortenwechsel gilt für die nächste Lieferung bei Anfrage spätestens fünf Werktage vor Versand
+
+**Keine freigegebenen Angaben zu:** Herkunft, Zertifikaten, Röstung, Geschmack, Abo-Preisen, Rabatten, Lieferintervallen
+:::
+
+::: {.sources}
+Material: material/m01/briefing-abo-hinweistext.txt. Sortiment und Preise aus dem Fallmaterial der Rösterei; Anlass, Abo-Verfügbarkeit, Wechselregel und Liste fehlender Angaben für diesen Kurs konstruiert.
+:::
+
+::: {.notes}
+Das Briefing kurz vorlesen und die untere Liste betonen: Was dort steht, darf im Text nicht vorkommen. Hinweis, dass alles erfunden ist und deshalb unverändert ins Chatfenster darf. Für echte Briefings aus dem eigenen Haus gilt das nicht automatisch; kommt in Lektion 1.2. Zeit: 1 Minute.
+:::
+
+## Vormachen: neuer Chat, Auftrag einfügen, abschicken
+
+1. Neuen Chat bei ChatGPT öffnen (kostenloses Konto genügt)
+2. Den vollständigen Auftrag aus dem Buch kopieren und als erste Nachricht einfügen
+3. Abschicken, Ergebnis einmal ganz lesen
+
+```text
+AUFGABE   Drei Varianten eines Hinweistextes auf das Kaffee-Abo
+MATERIAL  Das Briefing (nur diese Angaben)
+FORMAT    Drei nummerierte Varianten, je genau zwei Sätze, sachlich
+GRENZEN   Nichts ergänzen; fehlende Angaben unter "Offen" nennen
+```
+
+::: {.sources}
+Vollständiger, kopierfertiger Auftrag: Buchkapitel 1.1, Schritt 2, oder material/m01/prompt-erster-chat.txt
+:::
+
+::: {.notes}
+Live-Demo am Beamer: Browser mit ChatGPT, neuer Chat, Auftrag aus dem Buchkapitel kopieren, einfügen, abschicken. Auf drei Handgriffe beschränken, nichts erklären, was nicht gefragt ist. Die vier Überschriften nur als Merkhilfe nennen: was zu tun ist, woraus, in welcher Form, was bei Lücken. Nicht in Prompt-Theorie abgleiten; das ist Modul 2. Falls die Demo-Umgebung kein Konto hat: konstruiertes Beispiel von Folie 7 zeigen und die Teilnehmenden direkt selbst starten lassen. Zeit: 2 Minuten.
+:::
+
+## Mitmachen: fünf Minuten
+
+Jetzt alle selbst:
+
+- Neuen Chat öffnen
+- Auftrag einfügen und abschicken
+- Eine Variante auswählen und in ein Textdokument kopieren
+
+Wer fertig ist: Folgeanweisung im selben Chat schicken.
+
+```text
+Kürze Variante 2 auf einen einzigen Satz. Behalte die Aussage, dass alle drei Sorten im Abo wählbar sind. Ergänze weiterhin nichts, was nicht im Material steht.
+```
+
+::: {.notes}
+Arbeitsphase, 5 Minuten. Durch den Raum gehen, bei Konto- oder Einfügeproblemen helfen. Wer kein Konto bekommt, arbeitet zu zweit. Erwartbare Rückmeldung: Die Varianten kommen innerhalb von Sekunden; erste Reaktionen sind Überraschung über Tempo und Lesbarkeit. Das ist der gewünschte erste Erfolg. Nach etwa drei Minuten die Folgeanweisung ansagen, damit alle die Wirkung einer zweiten Nachricht im selben Chat sehen. Zeit: 5 Minuten.
+:::
+
+## Eine Änderung je Nachricht
+
+::: {.two-col}
+::: {.card}
+**Zwei Änderungen auf einmal**
+
+„Kürze Variante 2 und mache sie persönlicher."
+
+Welche Anweisung hat den Text geprägt? Nicht zuordenbar.
+:::
+::: {.card}
+**Eine Änderung**
+
+„Kürze Variante 2 auf einen Satz."
+
+Die Beobachtung bleibt zuordenbar. Kein Beweis, aber eine Arbeitsweise.
+:::
+:::
+
+::: {.notes}
+Kurze Erklärung, warum die Folgeanweisung genau eine Sache ändert. Betonen: Auch bei identischer Eingabe kann ein Modell unterschiedlich antworten; die Zuordnung ist deshalb kein Beweis für eine Ursache, aber sie ist die Arbeitsweise, mit der im Kurs weitergearbeitet wird. Keine Häufigkeitsaussagen. Zeit: 1 Minute.
+:::
+
+## Ein konstruiertes Ergebnis zum Abgleich
+
+::: {.small}
+> 1. Die Rösterei Morgenrot ist eine kleine Kaffeerösterei, die ihre drei Sorten direkt über den eigenen Onlineshop verkauft. Mit dem Kaffee-Abo kommt Espresso Intenso, Filterkaffee Mild oder Entkoffeiniert Sanft regelmäßig zu Ihnen nach Hause.
+> 2. Mit dem Kaffee-Abo erhalten Sie Ihre Lieblingssorte regelmäßig nach Hause geliefert. Alle drei Sorten unserer kleinen Rösterei stehen zur Wahl, und ein Wechsel ist möglich.
+> 3. Kaffee im Abo, direkt aus unserer Rösterei: regelmäßig geliefert, drei Sorten zur Auswahl. Ein Sortenwechsel gilt für die nächste Lieferung, wenn die Anfrage spätestens fünf Werktage vor deren Versand eingeht.
+
+Konstruiert, kein aufgezeichneter Modelloutput. Eigene Ergebnisse weichen ab.
+:::
+
+::: {.notes}
+Zum Vergleich mit den eigenen Ergebnissen. Frage ins Plenum: Steht in einer Ihrer Varianten etwas, das nicht im Briefing steht? Eine Herkunft, ein Adjektiv wie „schonend geröstet", ein Preisvorteil? Wenn ja: streichen lassen, das ist ein Befund und keine Panne. Diese Prüfung bleibt hier bewusst kurz, zwei Minuten; sie gehört ab jetzt zu jedem Ergebnis. Zeit: 2 Minuten.
+:::
+
+## Wenn etwas anders läuft
+
+| Beobachtung | Nächster Schritt |
+|---|---|
+| Anmeldung oder Wartemeldung | Konto anlegen, kurz warten, zu zweit arbeiten |
+| Mehr als zwei Sätze je Variante | „Kürze jede Variante auf genau zwei Sätze." |
+| Herkunft, Röstgrad oder Geschmacksnote im Text | Als unbelegt markieren, streichen lassen, erneut prüfen |
+| Alle drei Varianten geändert statt einer | Variante in der Folgeanweisung ausdrücklich benennen |
+
+::: {.notes}
+Nur die Zeilen ansprechen, die im Raum tatsächlich aufgetreten sind. Die vollständige Tabelle steht im Buchkapitel unter „Fehler diagnostizieren". Zeit: 1 Minute.
+:::
+
+## Portfolio: ein Satz, mehr nicht
+
+**Portfolio-Teil 1, Feld „Problem":**
+
+Welche Schreib- oder Prüfaufgabe im eigenen Alltag kostet regelmäßig Zeit?
+
+Ein Satz in die Arbeitsmappe. Das Feld wird in den nächsten beiden Lektionen weiter gefüllt.
+
+::: {.sources}
+Portfolio-Vorlage: material/portfolio-vorlage.md
+:::
+
+::: {.notes}
+Abschluss der Lektion. Alle schreiben einen Satz in ihre Arbeitsmappe; wer noch keine angelegt hat, tut es jetzt mit der Vorlage. Keine echten Namen oder internen Details. Übergang zur nächsten Lektion: Dieselbe Aufgabe, aber ohne Briefing. Was passiert dann? Zeit: 1 Minute.
+:::

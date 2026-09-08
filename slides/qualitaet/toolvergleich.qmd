@@ -1,0 +1,140 @@
+---
+title: "Übertragbarkeit: derselbe Auftrag in mehreren Werkzeugen"
+subtitle: "Modul 4 · Lektion 4.3"
+book-source: "../../qualitaet/toolvergleich.qmd"
+---
+
+## Eine Datei, mehrere Fenster {.stage}
+
+[Rösterei Morgenrot · Verwaltung und Controlling]{.kicker}
+
+Der Auftrag hat seine Testfälle bestanden — in einem Werkzeug.
+
+In der Rösterei nutzen nicht alle dasselbe Konto. Ob das Konto von heute nächstes Jahr noch das Konto der Wahl ist, weiß niemand.
+
+Die Frage ist nicht, welches Werkzeug besser ist. Die Frage ist, welche Formulierungen des Auftrags überall getragen haben.
+
+::: {.notes}
+Einstieg zwei Minuten. Gleich zu Beginn klarstellen, was diese Lektion nicht tut: Sie kürt niemanden, sie vergleicht keine Anbieter und sie empfiehlt keinen Kauf. Verglichen werden Ergebnisse an einem einzigen Auftrag, an einem Tag, mit je einem Durchlauf. Für die Übung genügt ein kostenloses Konto; ein zweites oder drittes ist nützlich, aber keine Bedingung. Wer nur einen Zugang hat, arbeitet mit den drei konstruierten Ausgaben und verliert nichts für das Portfolio.
+:::
+
+## Der Auftrag bleibt unverändert
+
+Auftrag aus Modul 2, Eingabe von Testfall T2, ergänzt um die Preisfrage:
+
+> „Ich habe den Filterkaffee Mild im Abo und möchte ab der nächsten Lieferung auf Espresso Intenso wechseln. Geht das? Und was kostet der Espresso Intenso regulär im Shop?“
+
+**Erwartung aus T2:** 10,00 EUR als Shop-Preis · Wechsel unter der Fünf-Werktage-Bedingung · Versanddatum unter „Offen“.
+
+Vollständiger Auftrag: Buchkapitel 4.3, `material/m04/prompt-4-3-vergleichsauftrag.txt`
+
+::: {.notes}
+Zwei Minuten. Den wichtigsten Verfahrenspunkt betonen: Die Datei wird unverändert in jedes Fenster kopiert. Keine andere Anrede, keine Umformulierung, weil ein Fenster anders aussieht. Der Vergleich gilt nur bei identischer Eingabe. Wenn ein Werkzeug den Auftrag anders behandelt, ist das der Befund und kein Anlass, den Auftrag für dieses Werkzeug umzuschreiben. Die Erwartung stammt aus der vorigen Lektion und steht damit ebenfalls vor dem Durchlauf fest.
+:::
+
+## Sechs Kriterien je Ergebnis {.small}
+
+| Kriterium | Prüffrage |
+|---|---|
+| **Format** | Mail, Anrede, Absenderzeile, Wortgrenze eingehalten? |
+| **Offen-Liste** | Gibt es sie, und steht das Versanddatum darin? |
+| **Bedingung** | Hängt der Wechsel an „fünf Werktage vor dem Versand“, ohne unbedingte Zusage? |
+| **Zusätze** | Welche Aussagen stehen im Text, die nicht im Material stehen? Jede einzeln. |
+| **Rückfrage statt Entwurf** | Kam ein Entwurf oder zuerst eine Frage? |
+| **Ton und Länge** | Sachlich? Wortzahl? |
+
+::: {.notes}
+Drei Minuten. Analogie: Checkliste im Cockpit. Jeder Punkt wird einzeln gelesen und bestätigt, bevor der nächste kommt; es gibt keinen Punkt „Gesamteindruck“. Zeitpunkt einschärfen: ausfüllen nach jedem Durchlauf, bevor das nächste Fenster geöffnet wird. Sonst wird aus der Erinnerung verglichen, und die Erinnerung bevorzugt den Text, der am flüssigsten klang. Bei „Zusätze“ jede Aussage einzeln notieren, auch wenn sie zutrifft. Vorlage: `material/m04/vergleichsprotokoll-vorlage.md`.
+:::
+
+## Arbeitsphase: protokollieren, nicht bewerten
+
+Je verfügbarem Werkzeug ein neuer Chat: [ChatGPT](https://chatgpt.com/) · [Claude](https://claude.ai/) · [Gemini](https://gemini.google.com/)
+
+Nur ein Zugang vorhanden? Die drei konstruierten Ausgaben A, B und C nach denselben sechs Kriterien protokollieren.
+
+Nur Microsoft Copilot freigegeben? Auftrag dort einfügen, Protokoll gilt unverändert.
+
+::: {.notes}
+Arbeitsphase zwölf Minuten. Zur Einordnung von Copilot: In manchen Organisationen ist er der einzige freigegebene Zugang. Der Kurs hat dafür keine eigene Übungsschiene und trifft keine Aussage darüber, wie Copilot den Auftrag behandelt; das Protokoll wird ausgefüllt und mit den konstruierten Ausgaben verglichen. Keine Anmeldung erzwingen, keine Konten im Raum anlegen lassen. Wer keinen Zugang öffnen möchte, arbeitet vollständig mit A, B und C; das ist der reguläre Weg, nicht der Notbehelf.
+:::
+
+## Drei konstruierte Ausgaben {.small}
+
+::: {.card}
+**A** — Wechsel möglich, an die Fünf-Werktage-Bedingung geknüpft, Versanddatum liegt nicht vor. 10,00 EUR im Onlineshop regulär. „Offen: Versanddatum der nächsten Lieferung.“
+:::
+
+::: {.card}
+**B** — „Guten Tag Herr Osei, gerne stellen wir Ihr Abo um … Änderungen sind in der Regel bis fünf Werktage vor dem Versand möglich; Ihre nächste Lieferung geht voraussichtlich Anfang der kommenden Woche raus … Im Abo profitieren Sie von unserem vergünstigten Abo-Preis.“ „Offen: keine.“
+:::
+
+::: {.card}
+**C** — „Bevor ich die Antwort entwerfe, brauche ich eine Angabe: Wann wird die nächste Abo-Lieferung versendet?“
+:::
+
+Konstruiert, keine aufgezeichneten Modelloutputs, für kein bestimmtes Produkt.
+
+::: {.notes}
+Vier Minuten. Die Buchstaben sind ausdrücklich keine verdeckten Anbieternamen; das im Raum sagen, sonst wird geraten. Frage an den Raum: Welche der drei liest sich am freundlichsten? Erwartete Antwort: B. Darauf hinweisen, dass B zugleich die meisten ungedeckten Aussagen enthält. Genau das ist der Grund, warum nach Protokoll verglichen wird und nicht nach Eindruck. Vollständige Ausgaben mit Lesehilfe: `material/m04/vergleichsausgaben-konstruiert.md`, Lesehilfe erst nach dem eigenen Protokoll öffnen.
+:::
+
+## Auflösung: die Lesehilfe {.small}
+
+| Kriterium | A | B | C |
+|---|---|---|---|
+| Format | eingehalten | Anrede aus „T. Osei“ nicht ableitbar | kein Entwurf |
+| Offen-Liste | vorhanden, richtiger Punkt | „keine“, obwohl das Datum fehlt | entfällt |
+| Bedingung | an der Zusage | „in der Regel“ weicht sie auf; unbedingte Zusage | erkannt, nicht umgesetzt |
+| Zusätze | keine | Versandtermin erfunden; Abo-Preis ohne Grundlage | keine |
+| Rückfrage | nein | nein | ja |
+| Ton und Länge | sachlich | verbindlicher als erlaubt | sachlich |
+
+::: {.notes}
+Auflösung fünf Minuten, erst nach den Protokollen aus dem Raum. Zwei Unterscheidungen herausarbeiten. Erstens: Der erfundene Versandtermin ist der auffälligere Zusatz, der „vergünstigte Abo-Preis“ der gefährlichere, denn das Material sagt ausdrücklich, dass zu Abo-Preisen keine Angaben vorliegen; aus dieser Lücke wird eine Zusage. Zweitens: C ist nicht falsch, aber nicht das bestellte Ergebnis. Eine Rückfrage lässt sich mit einer Nachricht auflösen oder im Auftrag ausschließen.
+:::
+
+## Gleich, verschieden, robust
+
+1. **Was blieb gleich?** Preis, Bedingung, Struktur mit „Offen“ — also das, was der Auftrag ausdrücklich verlangt hat.
+2. **Was unterschied sich?** Anrede, Länge, Reihenfolge, Zusätze, Rückfrage.
+3. **Was hat überall getragen?** Bleibt. Was nur an einer Stelle getragen hat, wird ausdrücklicher formuliert.
+
+Ein Protokolleintrag „insgesamt besser“ ist kein Befund, sondern ein Ersatz für sechs Befunde.
+
+::: {.notes}
+Drei Minuten. Warum Unterschiede nicht erklärt werden: Stellt ein Werkzeug eine Rückfrage und ein anderes liefert einen Entwurf, ist nach einem Durchlauf nicht zu sagen, ob das am Werkzeug, an einer Voreinstellung im Konto oder am Zufall des Durchlaufs liegt. Die Zuschreibung „Werkzeug X macht immer Y“ tragen wenige Durchläufe nicht. Wenn im Raum trotzdem Präferenzen genannt werden: als persönliche Erfahrung stehen lassen und darauf hinweisen, dass sie nicht aus diesem Vergleich folgt.
+:::
+
+## Eine Änderung, überall wiederholen
+
+| Beobachtung | Änderung am Auftrag |
+|---|---|
+| Ein Werkzeug hat zurückgefragt | GRENZEN: „Stelle keine Rückfragen. Erstelle den Entwurf und trage fehlende Angaben unter Offen ein.“ |
+| „Offen: keine“, obwohl das Datum fehlt | FORMAT: „Die Liste Offen nennt mindestens die Angaben, die für eine vollständige Antwort fehlen.“ |
+
+Die neue Fassung läuft in allen verfügbaren Werkzeugen erneut. Beide Fassungen aufheben.
+
+::: {.notes}
+Drei Minuten. Der Punkt dieser Folie: Die Änderung setzt am Auftrag an, nicht am Werkzeug, und sie gilt danach überall. Eine eigene Fassung je Werkzeug zu pflegen zerstört die Vergleichbarkeit und verdoppelt die Arbeit bei jeder künftigen Änderung. Dass sich die Werkzeuge nach der Änderung an einer anderen Stelle unterscheiden, ist erwartbar; dann wird die nächste Beobachtung notiert. Auch hier gilt: genau eine Änderung, sonst ist die Zuordnung weg.
+:::
+
+## Eigene Variante und Portfolio
+
+1. Eigenen Auftrag unverändert in jedes verfügbare Werkzeug. Nur ein Zugang? Zweimal in getrennten Chats — auch das ist Übertragbarkeit.
+2. Sechs Kriterien sofort nach jedem Durchlauf.
+3. Gleich, verschieden, robust beantworten; eine Änderung ableiten und wiederholen.
+4. Absatz „Übertragbarkeit“ schreiben: drei bis fünf Sätze, ohne Sieger.
+
+Protokoll, beide Auftragsfassungen und der Absatz gehören in **Portfolio-Teil 3**, Übertragbarkeit.
+
+::: {.notes}
+Selbstlernphase. Im Portfolio angeben: Werkzeug, Kontostatus und Datum, und bei den konstruierten Ausgaben ausdrücklich „Kursbeispiel, kein eigener Modelllauf“ vermerken. Zwei häufige Fehler ansprechen. Erstens die Sammelzeile „einige Zusätze“: Sie verliert genau die Aussagen, die später zu streichen sind. Zweitens ein Absatz, der eine Aussage über ein Werkzeug enthält, die über den einzelnen Durchlauf hinausgeht; solche Sätze streichen und durch die Beobachtung ersetzen, aus der sie entstanden sind.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 4.3, Working with GenAI: qualitaet/toolvergleich
+- Material: material/m04/prompt-4-3-vergleichsauftrag.txt, vergleichsprotokoll-vorlage.md, vergleichsausgaben-konstruiert.md
+- Werkzeugseiten: [chatgpt.com](https://chatgpt.com/), [claude.ai](https://claude.ai/), [gemini.google.com](https://gemini.google.com/) — Funktionsumfang ist kontoabhängig, der Kurs setzt kein kostenpflichtiges Konto voraus
+- Die Ausgaben A, B und C sind konstruiert und stehen für kein bestimmtes Produkt; der Vergleich enthält kein Ranking und keine Kaufempfehlung

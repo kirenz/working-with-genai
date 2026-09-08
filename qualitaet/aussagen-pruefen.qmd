@@ -1,0 +1,211 @@
+# Aussagen gegen Quellen prüfen
+
+Bisher haben wir Ergebnisse geprüft, die wir selbst in Auftrag gegeben haben, mit Material, das wir selbst ausgewählt hatten. In diesem Kapitel drehen wir die Blickrichtung: Ein Text liegt schon vor, er liest sich gut, und er soll in eine interne Besprechung. Wir gehen ihn Satz für Satz durch, markieren jede Aussage, suchen ihren Beleg und reparieren, was keinen hat.
+
+**Lernziel:** Einen vorliegenden Text Aussage für Aussage gegen seine Quelle prüfen, jede Aussage als belegt, ungenau oder ungedeckt markieren, die typischen Stellen für Ungedecktes kennen und einen Text so reparieren, dass er nur noch trägt, was die Quelle trägt. **Zeit:** etwa 40 Minuten einschließlich eines eigenen Durchlaufs.
+
+## Der Lehrfall: eine Zusammenfassung für die Besprechung
+
+Petra Lindqvist führt Verwaltung und Controlling der Rösterei Morgenrot. Für die Besprechung am 10. Juli hat sie eine Notiz mit den Abo-Kennzahlen des zweiten Quartals geschrieben. Jemand hat daraus mit einem Chatmodell eine Zusammenfassung erzeugt und sie Petra zur Freigabe geschickt. Die Zusammenfassung ist zehn Sätze lang und liest sich, als hätte sie jemand geschrieben, der die Zahlen versteht.
+
+Die Quelle im Wortlaut ([Download](../material/m04/abo-kennzahlen-q2-2026.txt)):
+
+```text
+NOTIZ ABO-KENNZAHLEN 2. QUARTAL 2026 (APRIL BIS JUNI)
+Stand 03.07.2026 · Petra Lindqvist, Verwaltung und Controlling
+Für die interne Besprechung am 10.07.2026. Zahlen vorläufig.
+
+KENNZAHLEN
+Z1  Aktive Abos am 30.06.2026: 412
+Z2  Neue Abos im Quartal: 96
+Z3  Kündigungen im Quartal: 58
+Z4  Kündigungsgrund (Freitextfeld im Kündigungsformular):
+    41 der 58 Kündigungen enthalten eine Angabe, 17 keine.
+    Nennungen: "zu viel Kaffee zu Hause" 19, "Preis" 9,
+    "Sorte gefällt nicht" 7, Sonstiges 6.
+Z5  Rückfragen im Kundenservice zu Abo-Themen im Quartal: 137
+    davon Sortenwechsel 52, Liefertermin 44, Pause oder Kündigung 31,
+    Sonstiges 10.
+
+HINWEISE
+H1  Vergleich zum Vorquartal: nicht ausgewertet. Die Rückfragen werden
+    erst seit April 2026 nach Thema erfasst.
+H2  Die Kennzahlen sind vorläufig. Der Abgleich mit dem Shop-System steht
+    noch aus.
+H3  Eine Pausenfunktion für das Abo wurde in der Besprechung vom
+    12.06.2026 angesprochen. Eine Entscheidung liegt nicht vor.
+H4  Beispiel einer Kundenrückmeldung aus dem Kündigungsformular
+    (anonymisiert, sinngemäß): "Im Sommer trinke ich weniger Kaffee.
+    Könnt ihr die Lieferung mal aussetzen?"
+H5  Empfehlungen sind nicht Teil dieser Notiz. Die Besprechung am
+    10.07.2026 entscheidet über nächste Schritte.
+```
+
+Die Zusammenfassung, die zur Freigabe vorliegt ([Download](../material/m04/zusammenfassung-konstruiert.txt)):
+
+```text
+S1  Ende Juni hatte die Rösterei Morgenrot 412 aktive Abos.
+S2  Im zweiten Quartal kamen 96 neue Abos hinzu, 58 wurden gekündigt.
+S3  Die Zahl der Abos wächst damit stabil weiter.
+S4  Hauptgrund für Kündigungen ist der Preis.
+S5  Fast die Hälfte der Kündigenden gab an, zu viel Kaffee zu Hause zu
+    haben.
+S6  Der Kundenservice bearbeitete 137 Rückfragen zu Abo-Themen, die
+    meisten davon zum Sortenwechsel (52).
+S7  Die Rückfragen zum Liefertermin sind gegenüber dem Vorquartal deutlich
+    gestiegen.
+S8  Eine Pausenfunktion wurde bereits beschlossen und wird im August
+    eingeführt.
+S9  Die Zahlen sind mit dem Shop-System abgeglichen.
+S10 Petra Lindqvist empfiehlt, den Abo-Preis zu senken.
+```
+
+::: {.callout-important title="Konstruierte Zusammenfassung, erfundene Zahlen"}
+Die Notiz ist eine synthetische Erweiterung des Lehrfalls; alle Zahlen sind erfunden. Die Zusammenfassung ist konstruiert und kein aufgezeichneter Modelloutput. Sie enthält absichtlich Sätze, die belegt sind, Sätze, die über die Quelle hinausgehen, und Sätze, die nichts in der Quelle stützt. Genau diese Mischung macht sie zum Übungsstück: Sie klingt in allen zehn Sätzen gleich sicher.
+:::
+
+Vor der Prüfung die Einschätzung: Was passiert, wenn diese Zusammenfassung ungeprüft in die Besprechung geht? Es besteht das Risiko, dass über eine Pausenfunktion gesprochen wird, als wäre sie beschlossen, dass der Preis als Hauptproblem gilt, obwohl die Zahlen etwas anderes zeigen, und dass Petra eine Empfehlung zugeschrieben wird, die sie nie gegeben hat. Keiner dieser Sätze fällt beim Lesen auf, weil jeder von ihnen plausibel ist.
+
+## Zielbild
+
+Ein Prüfprotokoll mit zehn Zeilen und eine reparierte Fassung, die nur noch trägt, was die Notiz trägt.
+
+| Markierung | Bedeutung | Reparatur |
+|---|---|---|
+| **Belegt** | Die Aussage steht so in der Quelle, mit Fundstelle | Übernehmen |
+| **Ungenau** | Es gibt eine Grundlage, aber die Aussage geht darüber hinaus: verallgemeinert, rundet, lässt eine Einschränkung weg | Auf den Wortlaut der Quelle zurückführen |
+| **Ungedeckt** | Die Quelle sagt nichts dazu oder etwas anderes | Streichen; wenn die Frage wichtig ist, unter „Offen“ |
+
+Die Dreiteilung ist eine Designentscheidung dieses Kurses. Die mittlere Stufe ist die wichtige: Ein Satz wie S5 ist nicht erfunden, aber er sagt mehr, als die Quelle hergibt, und genau solche Sätze überleben eine Prüfung, die nur nach „richtig oder falsch“ fragt.
+
+## Schritt für Schritt selbst bauen
+
+**Vorbereitung:** Quelle und Zusammenfassung nebeneinander, das [Prüfprotokoll](../material/m04/pruefprotokoll-vorlage.md) als Tabelle. Das Chatmodell kommt erst in Schritt 5 dazu.
+
+### Schritt 1 — Jeden Satz einzeln nehmen
+
+Wir lesen die Zusammenfassung nicht als Text, sondern als Liste von zehn Behauptungen. Zu jeder stellen wir dieselbe Frage: Wo in der Notiz steht das? Wir suchen die Fundstelle, bevor wir entscheiden, ob der Satz stimmt. Ein Satz, zu dem wir keine Fundstelle finden, ist nicht deshalb falsch, aber er ist ungedeckt, und das genügt.
+
+### Schritt 2 — An den typischen Stellen genauer hinsehen
+
+Manche Satzteile verdienen einen zweiten Blick, weil sie mehr behaupten, als ein Blick auf die Zahlen zeigt. Die Merkliste dieses Kurses:
+
+| Stelle | Signalwörter | Prüffrage |
+|---|---|---|
+| Zahlen | Beträge, Anzahl, Anteile | Steht genau diese Zahl in der Quelle, mit derselben Bezugsgröße? |
+| Zeitangaben | Monat, „ab“, „bis“, „bereits“ | Steht der Termin in der Quelle? |
+| Vergleiche | „gestiegen“, „mehr als“, „gegenüber“ | Enthält die Quelle beide Vergleichswerte? |
+| Ursachen | „Hauptgrund“, „weil“, „führt zu“ | Nennt die Quelle die Ursache, oder nur Beobachtungen nebeneinander? |
+| Verallgemeinerungen | „alle“, „die meisten“, „fast die Hälfte“ | Auf welche Menge bezieht sich das, und sagt die Quelle das so? |
+| Zuschreibungen | „empfiehlt“, „sagt“, „laut“ | Steht die Aussage so bei dieser Person? |
+| Erledigte Handlungen | „beschlossen“, „abgeglichen“, „eingeführt“ | Sagt die Quelle, dass es passiert ist, oder dass es offen ist? |
+
+::: {.callout-tip title="Die Qualitätskontrolle am Band"}
+Eine Qualitätskontrolle prüft nicht, ob das Produkt gut aussieht. Sie prüft jedes Merkmal gegen die Spezifikation, eines nach dem anderen, und hakt ab. Ein Text, der in die Besprechung geht, ist so ein Produkt. Die Notiz ist die Spezifikation. „Liest sich gut“ ist kein Prüfmerkmal.
+:::
+
+### Schritt 3 — Markieren und belegen
+
+Wir füllen das Protokoll. Die ersten drei Zeilen als Muster:
+
+| Satz | Markierung | Fundstelle | Befund |
+|---|---|---|---|
+| S1 | belegt | Z1 | 412 aktive Abos am 30.06.2026 steht so in der Notiz |
+| S2 | belegt | Z2, Z3 | 96 neue, 58 Kündigungen, beide Zahlen stehen so da |
+| S3 | ungedeckt | keine; H1 sagt das Gegenteil | „wächst stabil weiter“ braucht einen Vergleich über die Zeit; die Notiz hat keinen Vorquartalswert und sagt das ausdrücklich |
+
+Die übrigen sieben Zeilen füllen wir selbst, bevor wir weiterlesen. Die Auflösung steht unter dem konstruierten Beispiel.
+
+### Schritt 4 — Reparieren
+
+Für jede Zeile eine Reparatur: übernehmen, umformulieren oder streichen und unter „Offen“ eintragen. Beim Umformulieren gilt: näher an den Wortlaut der Quelle, nicht eleganter. „Fast die Hälfte“ wird zu „19 von 41 Kündigungen mit Angabe“, auch wenn das sperriger klingt. Beim Streichen bleibt die Frage sichtbar, wenn sie für die Besprechung zählt: Ob eine Pausenfunktion kommt, ist nicht beschlossen, aber es ist ein Tagesordnungspunkt, also gehört „Entscheidung über Pausenfunktion: offen“ in die reparierte Fassung.
+
+### Schritt 5 — Das Chatmodell als zweiten Leser einsetzen
+
+Nachdem wir selbst geprüft haben, lassen wir ein Chatmodell dieselbe Prüfung machen und vergleichen die Protokolle. Der Auftrag steht als [Textdatei](../material/m04/prompt-4-1-zweitleser.txt) bereit; er enthält Quelle und Zusammenfassung vollständig.
+
+```text
+Du unterstützt Verwaltung und Controlling der Rösterei Morgenrot als
+zweiter Leser. Du prüfst, du schreibst nicht neu.
+
+AUFGABE
+Prüfe jeden nummerierten Satz der Zusammenfassung gegen die Quelle.
+
+MATERIAL (nur diese Angaben sind gültig)
+(Quelle zwischen === QUELLE BEGINN === und === QUELLE ENDE ===,
+Zusammenfassung zwischen === ZU PRÜFENDER TEXT BEGINN === und ... ENDE ===)
+
+FORMAT
+Eine Tabelle mit den Spalten: Satz, Markierung (belegt / ungenau /
+ungedeckt), Fundstelle (Z1 bis Z5, H1 bis H5 oder "keine"), Befund in
+einem Satz. Keine Neuformulierung der Zusammenfassung.
+
+GRENZEN
+- Prüfe ausschließlich gegen die Quelle. Verwende kein eigenes Wissen über
+  Abo-Modelle oder Kaffee.
+- "Belegt" nur, wenn die Aussage so in der Quelle steht. Geht sie darüber
+  hinaus, ist sie "ungenau". Steht nichts dazu in der Quelle oder sagt sie
+  etwas anderes, ist sie "ungedeckt".
+- Rechne nichts nach und leite keine Anteile ab.
+- Formuliere keine Empfehlung.
+```
+
+::: {.callout-note title="Der zweite Leser ist selbst ein Ergebnis"}
+Das Prüfprotokoll des Modells ist ein Modelloutput wie jeder andere. Es kann einen ungedeckten Satz als belegt durchwinken oder einen belegten anzweifeln. Deshalb steht dieser Schritt nach der eigenen Prüfung, nicht statt ihrer: Wir vergleichen zwei Protokolle und schauen bei jeder Abweichung in die Quelle. Die Reihenfolge Material, Format, Grenzen mit Markierungen zwischen Quelle und Prüftext folgt der Bauweise aus Modul 2 und 3 und ist eine Designentscheidung dieses Kurses.
+:::
+
+### Ein konstruiertes Ergebnis zum Abgleich
+
+Das vollständige Protokoll, konstruiert, kein aufgezeichneter Modelloutput:
+
+| Satz | Markierung | Fundstelle | Befund | Reparatur |
+|---|---|---|---|---|
+| S1 | belegt | Z1 | steht so da | übernehmen |
+| S2 | belegt | Z2, Z3 | steht so da | übernehmen |
+| S3 | ungedeckt | keine, H1 | kein Vergleichswert, Vorquartal nicht ausgewertet | streichen |
+| S4 | ungedeckt | Z4 sagt etwas anderes | „Preis“ hat 9 Nennungen, „zu viel Kaffee zu Hause“ 19 | streichen, durch die Nennungen aus Z4 ersetzen |
+| S5 | ungenau | Z4 | 19 von 41 mit Angabe, nicht „der Kündigenden“ (58); die 17 ohne Angabe fehlen | „19 der 41 Kündigungen mit Angabe nannten ‚zu viel Kaffee zu Hause‘“ |
+| S6 | belegt | Z5 | 137 und 52 stehen so da; 52 ist die größte Teilzahl | übernehmen |
+| S7 | ungedeckt | keine, H1 | Vorquartal nicht ausgewertet | streichen |
+| S8 | ungedeckt | H3 sagt etwas anderes | angesprochen, nicht beschlossen; „August“ steht nirgends | streichen, „Entscheidung über Pausenfunktion: offen“ |
+| S9 | ungedeckt | H2 sagt das Gegenteil | Abgleich steht noch aus | streichen, „Abgleich mit Shop-System: offen“ |
+| S10 | ungedeckt | H5 | Notiz enthält keine Empfehlung | streichen |
+
+Die reparierte Zusammenfassung:
+
+> Am 30.06.2026 gab es 412 aktive Abos (Z1). Im Quartal kamen 96 neue Abos hinzu, 58 wurden gekündigt (Z2, Z3). Von den 58 Kündigungen enthalten 41 eine Angabe zum Grund; genannt wurden „zu viel Kaffee zu Hause“ (19), „Preis“ (9), „Sorte gefällt nicht“ (7) und Sonstiges (6) (Z4). Der Kundenservice erfasste 137 Rückfragen zu Abo-Themen, davon 52 zum Sortenwechsel und 44 zum Liefertermin (Z5). Die Zahlen sind vorläufig (H2).
+>
+> **Offen:** Abgleich mit dem Shop-System (H2). Vergleich zum Vorquartal nicht möglich, Erfassung erst seit April (H1). Entscheidung über eine Pausenfunktion (H3). Empfehlungen: keine in der Notiz, Entscheidung in der Besprechung (H5).
+
+Vier Sätze statt zehn, jeder mit Fundstelle, und die offenen Punkte sind Tagesordnung statt Behauptung.
+
+### Eine eigene Variante bauen
+
+Wir nehmen einen Text aus dem eigenen Fall, den wir mit einem Chatmodell erzeugt haben oder erzeugen lassen, samt der Quelle, aus der er entstanden ist; beides mit erfundenen Angaben.
+
+1. Wir nummerieren die Sätze des Ergebnisses.
+2. Wir füllen das Protokoll: Markierung, Fundstelle, Befund, Reparatur.
+3. Wir lassen das Modell als zweiten Leser prüfen und vergleichen die Protokolle. Bei jeder Abweichung entscheidet die Quelle.
+4. Wir zählen, an welchen Stellen aus der Merkliste die ungedeckten Sätze standen. Das ist die Liste, an der wir beim nächsten Ergebnis zuerst hinsehen.
+
+Protokoll, reparierte Fassung und die Merkliste mit den eigenen Fundorten gehören in **Portfolio-Teil 3** unter „Prüfkriterien“.
+
+## Fehler diagnostizieren
+
+| Beobachtung | Nächster Prüfschritt |
+|---|---|
+| Ein Satz wird als belegt markiert, aber die Fundstelle sagt etwas anderes | Die Fundstelle Wort für Wort lesen. „Angesprochen“ ist nicht „beschlossen“, „steht aus“ ist nicht „erledigt“. |
+| Ein Satz ist rechnerisch nachvollziehbar, steht aber so nicht in der Quelle | Als ungenau markieren und auf die Zahlen der Quelle zurückführen. Eigene Ableitungen dürfen bleiben, wenn sie als solche gekennzeichnet sind. |
+| Das Modellprotokoll hat weniger ungedeckte Sätze als das eigene | Jede Abweichung an der Quelle prüfen. Ein Modell kann einen plausiblen Satz durchwinken; das ist ein Befund, keine Entwarnung. |
+| Das Modellprotokoll formuliert die Zusammenfassung um | Das Format hat „keine Neuformulierung“ verlangt. Nur die Tabelle verwenden; Umformulierungen ignorieren. |
+| Die reparierte Fassung ist deutlich kürzer als das Original | Kein Fehler. Was die Quelle nicht trägt, fehlt jetzt; was für die Besprechung zählt, steht unter „Offen“. |
+| Eine Zuschreibung („empfiehlt“) bleibt nach der Reparatur stehen | Prüfen, ob die Person das in der Quelle sagt. Wenn nicht, streichen, auch wenn die Empfehlung vernünftig klingt. |
+
+## Kontrollpunkt für Modul 4
+
+- Einen Text in einzelne Behauptungen zerlegen und zu jeder die Fundstelle suchen
+- Jede Aussage als belegt, ungenau oder ungedeckt markieren und den Unterschied zwischen ungenau und ungedeckt erklären
+- Die typischen Stellen für Ungedecktes benennen: Zahlen, Zeitangaben, Vergleiche, Ursachen, Verallgemeinerungen, Zuschreibungen, erledigte Handlungen
+- Einen Satz auf den Wortlaut der Quelle zurückführen, statt ihn eleganter zu machen
+- Ein Chatmodell als zweiten Leser einsetzen und dessen Protokoll gegen das eigene und gegen die Quelle prüfen
+- Eine reparierte Fassung schreiben, in der offene Punkte sichtbar bleiben

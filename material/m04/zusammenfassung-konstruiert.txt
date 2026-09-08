@@ -1,0 +1,24 @@
+KONSTRUIERTE ZUSAMMENFASSUNG FÜR DIE BESPRECHUNG
+Kursmaterial "Working with GenAI", Lektion 4.1
+
+Dieser Text ist konstruiert. Er ist kein aufgezeichneter Modelloutput und
+steht für kein bestimmtes Produkt. Er enthält absichtlich belegte, ungenaue
+und ungedeckte Sätze. Die Sätze sind nummeriert, damit sie im
+Prüfprotokoll angesprochen werden können.
+
+Zusammenfassung Abo-Kennzahlen Q2 2026
+
+S1  Ende Juni hatte die Rösterei Morgenrot 412 aktive Abos.
+S2  Im zweiten Quartal kamen 96 neue Abos hinzu, 58 wurden gekündigt.
+S3  Die Zahl der Abos wächst damit stabil weiter.
+S4  Hauptgrund für Kündigungen ist der Preis.
+S5  Fast die Hälfte der Kündigenden gab an, zu viel Kaffee zu Hause zu
+    haben.
+S6  Der Kundenservice bearbeitete 137 Rückfragen zu Abo-Themen, die
+    meisten davon zum Sortenwechsel (52).
+S7  Die Rückfragen zum Liefertermin sind gegenüber dem Vorquartal deutlich
+    gestiegen.
+S8  Eine Pausenfunktion wurde bereits beschlossen und wird im August
+    eingeführt.
+S9  Die Zahlen sind mit dem Shop-System abgeglichen.
+S10 Petra Lindqvist empfiehlt, den Abo-Preis zu senken.
