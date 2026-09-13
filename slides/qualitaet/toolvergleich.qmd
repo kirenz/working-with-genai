@@ -49,7 +49,7 @@ Drei Minuten. Analogie: Checkliste im Cockpit. Jeder Punkt wird einzeln gelesen 
 
 ## Arbeitsphase: protokollieren, nicht bewerten
 
-Je verfügbarem Werkzeug ein neuer Chat: [ChatGPT](https://chatgpt.com/) · [Claude](https://claude.ai/) · [Gemini](https://gemini.google.com/) · [Microsoft Copilot](https://m365copilot.com/)
+Je verfügbarem Werkzeug ein neuer Chat: [ChatGPT](https://chatgpt.com/) · [Claude](https://claude.ai/) · [Gemini](https://gemini.google.com/) · [Microsoft Copilot](https://m365.cloud.microsoft/chat)
 
 In Copilot: Prompt kopieren und einfügen, **Work IQ** ausschalten, Lizenzlabel ins Protokoll.
 
@@ -150,6 +150,6 @@ Selbstlernphase, drei Minuten Ansage. Ausdrücklich sagen, dass das keine neue A
 
 - Buchkapitel 4.4, Working with GenAI: qualitaet/toolvergleich
 - Material: material/m04/prompt-4-3-vergleichsauftrag.txt, vergleichsprotokoll-vorlage.md, vergleichsausgaben-konstruiert.md
-- Werkzeugseiten: [chatgpt.com](https://chatgpt.com/), [claude.ai](https://claude.ai/), [gemini.google.com](https://gemini.google.com/), [m365copilot.com](https://m365copilot.com/) — Funktionsumfang ist kontoabhängig, der Kurs setzt kein kostenpflichtiges Konto voraus
+- Werkzeugseiten: [chatgpt.com](https://chatgpt.com/), [claude.ai](https://claude.ai/), [gemini.google.com](https://gemini.google.com/), [m365.cloud.microsoft](https://m365.cloud.microsoft/chat) — Funktionsumfang ist kontoabhängig, der Kurs setzt kein kostenpflichtiges Konto voraus
 - Copilot-Lizenzstufen und Work IQ: [learn.microsoft.com/en-us/copilot/overview](https://learn.microsoft.com/en-us/copilot/overview), Abruf 13.09.2026 · Vertiefung im Buch: praxis/copilot-kursaufgaben
 - Die Ausgaben A, B und C sind konstruiert und stehen für kein bestimmtes Produkt; der Vergleich enthält kein Ranking und keine Kaufempfehlung

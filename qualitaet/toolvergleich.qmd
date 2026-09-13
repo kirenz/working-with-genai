@@ -73,7 +73,7 @@ Die Vorlage steht als [Download](../material/m04/vergleichsprotokoll-vorlage.md)
 
 ## Schritt für Schritt selbst bauen
 
-**Vorbereitung:** die Auftragsdatei, das Protokoll, und die Werkzeuge, zu denen ein Zugang besteht: [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com/), [Microsoft Copilot](https://m365copilot.com/). Jeweils ein neuer Chat.
+**Vorbereitung:** die Auftragsdatei, das Protokoll, und die Werkzeuge, zu denen ein Zugang besteht: [ChatGPT](https://chatgpt.com/), [Claude](https://claude.ai/), [Gemini](https://gemini.google.com/), [Microsoft Copilot](https://m365.cloud.microsoft/chat). Jeweils ein neuer Chat.
 
 ### Schritt 1 — Den Auftrag nicht anpassen
 
