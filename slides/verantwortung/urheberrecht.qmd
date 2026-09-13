@@ -1,6 +1,6 @@
 ---
 title: "Urheberrecht und geistiges Eigentum"
-subtitle: "Modul 5 · Lektion 5.2"
+subtitle: "Modul 5 · Lektion 5.3"
 book-source: "../../verantwortung/urheberrecht.qmd"
 ---
 
@@ -11,7 +11,7 @@ book-source: "../../verantwortung/urheberrecht.qmd"
 Jonas Halder hat Material gesammelt. Die Frage kommt vor dem Prompt, nicht danach: Was davon darf überhaupt hinein?
 
 ::: {.notes}
-Anschluss an 5.1: Dort ging es um Angaben über Personen, hier um fremde Texte und Bilder im Context. Gleiche Abgrenzung wie im ganzen Modul: Risiko-Orientierung, keine Rechtsberatung. Was in diesem Deck an Rechtsdetail vorkommt, ist bewusst knapp gehalten; für den Einzelfall wird die Rechtsberatung beauftragt. Zeit: 1 Minute.
+Anschluss an 5.2: Dort ging es um Angaben über Personen, hier um fremde Texte und Bilder im Context. Gleiche Abgrenzung wie im ganzen Modul: Risiko-Orientierung, keine Rechtsberatung. Was in diesem Deck an Rechtsdetail vorkommt, ist bewusst knapp gehalten; für den Einzelfall wird die Rechtsberatung beauftragt. Zeit: 1 Minute.
 :::
 
 ## Das Quellenpuzzle
@@ -101,7 +101,7 @@ CHECK    Keine Fakten zu Röstchemie, Herkunft, Anbau, Gesundheit.
 Die Kennzeichnung macht Herkunft sichtbar. Ob der Absatz seine Quelle **korrekt wiedergibt**, wird nachgelesen.
 
 ::: {.sources}
-Vollständiger Auftrag: Buchkapitel 5.2, Schritt 2 · material/m05/prompt-quellen-kennzeichnen.txt
+Vollständiger Auftrag: Buchkapitel 5.3, Schritt 2 · material/m05/prompt-quellen-kennzeichnen.txt
 :::
 
 ::: {.notes}
@@ -168,12 +168,12 @@ material/m05/rechte-check.md · Portfolio-Teil 3
 :::
 
 ::: {.notes}
-Selbstlernaufgabe: fünf Minuten für die Zeile. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.4. Die Vertiefung ist besonders lohnend, wenn der eigene Fall Bilder enthält: dann den Lizenztext des Anbieters auf „Bearbeitung“, „automatisiert“ und „Training“ lesen, bevor ein Bild in ein Werkzeug geht. Hinweis auf den Rechte-Check als Arbeitshilfe; er ersetzt keine Prüfung, er strukturiert sie. Zeit: 2 Minuten.
+Selbstlernaufgabe: fünf Minuten für die Zeile. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.5. Die Vertiefung ist besonders lohnend, wenn der eigene Fall Bilder enthält: dann den Lizenztext des Anbieters auf „Bearbeitung“, „automatisiert“ und „Training“ lesen, bevor ein Bild in ein Werkzeug geht. Hinweis auf den Rechte-Check als Arbeitshilfe; er ersetzt keine Prüfung, er strukturiert sie. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 5.2, Working with GenAI: verantwortung/urheberrecht
+- Buchkapitel 5.3, Working with GenAI: verantwortung/urheberrecht
 - Material: material/m05/quellenpuzzle-jonas.md, prompt-quellen-kennzeichnen.txt, rechte-check.md
 - § 2 Abs. 2 UrhG (persönliche geistige Schöpfung) und § 51 UrhG (Zitat, zweckgebunden): gesetze-im-internet.de/urhg/\_\_2.html, /\_\_51.html
 - Alle sechs Quellen des Puzzles sind für den Kurs erfunden; das Beispielergebnis ist konstruiert

@@ -1,6 +1,7 @@
 {
   "course_slug": "working-with-genai",
   "title": "Working with GenAI",
+  "description": "KI im Arbeitsalltag einsetzen: 32 Lektionen in sechs Modulen, von den Grundlagen generativer KI und der Use-Case-Suche über Prompting, Kontext und Qualitätsprüfung bis zu Datenschutz, EU AI Act und wiederverwendbaren Arbeitsabläufen. Mit dem Lehrfall Rösterei Morgenrot, Portfolio und einem geführten n8n-Miniworkflow.",
   "target": "kurse.kirenz.de",
   "status": "v3-release-2026-09-08",
   "simulator_enabled": false,
@@ -343,6 +344,19 @@
       "lessons": [
         {
           "number": "5.1",
+          "slug": "eu-ai-act",
+          "title": "Der EU AI Act im Arbeitsalltag",
+          "kind": "grundlagen",
+          "estimated_minutes": 15,
+          "book": "verantwortung/eu-ai-act.qmd",
+          "slides": "slides/verantwortung/eu-ai-act.qmd",
+          "unit": "05-00-eu-ai-act.unit.json",
+          "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/eu-ai-act.html",
+          "position": 1,
+          "layout": "stepper"
+        },
+        {
+          "number": "5.2",
           "slug": "datenschutz",
           "title": "Datenschutz im Arbeitsalltag",
           "kind": "praxis",
@@ -351,11 +365,11 @@
           "slides": "slides/verantwortung/datenschutz.qmd",
           "unit": "05-01-datenschutz.unit.json",
           "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/datenschutz.html",
-          "position": 1,
+          "position": 2,
           "layout": "stepper"
         },
         {
-          "number": "5.2",
+          "number": "5.3",
           "slug": "urheberrecht",
           "title": "Urheberrecht und geistiges Eigentum",
           "kind": "praxis",
@@ -364,11 +378,11 @@
           "slides": "slides/verantwortung/urheberrecht.qmd",
           "unit": "05-02-urheberrecht.unit.json",
           "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/urheberrecht.html",
-          "position": 2,
+          "position": 3,
           "layout": "stepper"
         },
         {
-          "number": "5.3",
+          "number": "5.4",
           "slug": "verzerrungen",
           "title": "Verzerrungen und unfaire Ergebnisse",
           "kind": "grundlagen",
@@ -377,11 +391,11 @@
           "slides": "slides/verantwortung/verzerrungen.qmd",
           "unit": "v3-verzerrungen.unit.json",
           "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/verzerrungen.html",
-          "position": 3,
+          "position": 4,
           "layout": "stepper"
         },
         {
-          "number": "5.4",
+          "number": "5.5",
           "slug": "ki-kompetenz",
           "title": "Verantwortung und KI-Kompetenz im Betrieb",
           "kind": "praxis",
@@ -390,7 +404,7 @@
           "slides": "slides/verantwortung/ki-kompetenz.qmd",
           "unit": "05-03-ki-kompetenz.unit.json",
           "source_url": "https://kirenz.github.io/working-with-genai/verantwortung/ki-kompetenz.html",
-          "position": 4,
+          "position": 5,
           "layout": "stepper"
         }
       ]

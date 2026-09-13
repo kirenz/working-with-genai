@@ -95,6 +95,7 @@ Diese Auftragskarte entsteht in der Musterlektion am Lehrfall Rösterei Morgenro
 
 | Feld | Einschätzung | Wer klärt das verbindlich? |
 |---|---|---|
+| AI-Act-Einordnung | <Rolle, Art der Verwendung, sich daraus ergebende Pflicht oder deren Fehlen> | <z. B. Führungskraft; offene Rechtsfrage an die Rechtsberatung> |
 | Personenbezogene Daten im Prozess | <welche, in welchem Schritt, wie ersetzt> | <z. B. Datenschutzbeauftragte> |
 | Genutztes Konto / Vertragslage | <privat, geschäftlich, welche Vereinbarung besteht> | <z. B. IT, Einkauf> |
 | Rechte an Eingaben und Ergebnissen | <fremde Inhalte im Material? Weiterverwendung des Ergebnisses?> | <z. B. Rechtsabteilung> |

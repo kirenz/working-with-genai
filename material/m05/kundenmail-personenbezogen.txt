@@ -1,5 +1,5 @@
 EINGEGANGENE KUNDENMAIL MIT PERSONENBEZOGENEN ANGABEN — LEHRFALL RÖSTEREI MORGENROT
-Kursmaterial "Working with GenAI", Modul 5, Lektion 5.1
+Kursmaterial "Working with GenAI", Modul 5, Lektion 5.2
 
 HINWEIS: Synthetische GenAI-Erweiterung des Lehrfalls. Die Absenderin, alle
 Adressen, Nummern und der gesundheitliche Hinweis sind vollständig erfunden

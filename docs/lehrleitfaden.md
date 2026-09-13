@@ -38,7 +38,7 @@ Die folgenden Zeitfenster konkretisieren die neun Stunden angeleiteter asynchron
 | 2, Rest | 65 | Beispiele vertiefen und im Dialog weiterarbeiten |
 | 3 | 120 | Kontext, Materialauswahl, Fundstellen und Websuche |
 | 4 | 105 | Ergebnisqualität, Quellenprüfung, Testfälle und Übertragbarkeit |
-| 5 | 90 | Daten, Rechte, Verzerrungen und Zuständigkeiten |
+| 5 | 90 | AI Act, Daten, Rechte, Verzerrungen und Zuständigkeiten |
 | 6 | 125 | Wiederverwendung, geführter Workflow und Transferplan |
 | **Gesamt** | **540** | **9 Stunden** |
 
@@ -46,7 +46,7 @@ Dies sind Zeitbudgets, keine gemessenen Laufzeiten. Pro Modul ist eine zusammenh
 
 Dazu kommen 30 Minuten Onboarding, sieben Stunden eigene Erprobung und 3,5 Stunden Online-Termine. Zusammen mit vier Stunden Präsenz und sechs Stunden Prüfungsdokumentation ergibt das 30 Stunden.
 
-Die eigene Erprobung kann als Orientierung so verteilt werden: je 60 Minuten zu Modul 1 und 2, je 90 Minuten zu Modul 3 und 4, 30 Minuten zu Modul 5, 90 Minuten zu Modul 6. Wer Codex/Claude Code vertieft, ersetzt einen Teil dieser Zeit. Die sechs Prüfungsstunden dienen der abschließenden Dokumentation und Präsentationsvorbereitung; der Recap wird nicht nochmals darin gezählt.
+Die eigene Erprobung kann als Orientierung so verteilt werden: je 60 Minuten zu Modul 1 und 2, je 90 Minuten zu Modul 3 und 4, 30 Minuten zu Modul 5, 90 Minuten zu Modul 6. Wer Codex/Claude Code vertieft, ersetzt einen Teil dieser Zeit. In den 30 Minuten zu Modul 5 ist die AI-Act-Einordnung aus Lektion 5.1 enthalten; sie ist auf fünf Minuten mit der Vorlage `material/m05/ai-act-einordnung.md` ausgelegt und liefert die erste Zeile der Risiko-Tabelle. Die sechs Prüfungsstunden dienen der abschließenden Dokumentation und Präsentationsvorbereitung; der Recap wird nicht nochmals darin gezählt.
 
 Wenn eine Person deutlich mehr Zeit braucht, zuerst Umfang des eigenen Falls reduzieren. Keine zusätzlichen Features als Pflicht nachreichen. Die tatsächlichen Zeiten werden bei der späteren gemeinsamen Durchsicht angepasst.
 

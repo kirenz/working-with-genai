@@ -1,0 +1,149 @@
+---
+title: "Der EU AI Act im Arbeitsalltag"
+subtitle: "Modul 5 · Lektion 5.1"
+book-source: "../../verantwortung/eu-ai-act.qmd"
+---
+
+## „Fällt das bei uns darunter?" {.stage}
+
+[Modul 5 · Daten, Rechte und Verantwortung]{.kicker}
+
+Seit August 2026 gilt der AI Act in vollem Umfang. Die Frage der Geschäftsführung lautet: Fallen die **Antwortentwürfe im Kundenservice** darunter, und was heißt das dann?
+
+Diese Lektion sortiert, **wen** die Verordnung anspricht und was davon im Alltag ankommt.
+
+::: {.notes}
+Einstieg in Modul 5. Diese Lektion steht bewusst vor Datenschutz und Urheberrecht, weil die Teilnehmenden den AI Act als Erstes nennen, wenn es um Regeln geht. Gleich zu Beginn die Erwartung setzen: Der Kurs ordnet ein, er berät nicht rechtlich, und die verbindliche Klärung bleibt bei der zuständigen Stelle. Zweite Erwartung: Die meisten Alltagsaufgaben lösen keine besonderen Pflichten nach dem AI Act aus, was aber nicht heißt, dass keine Regeln gelten. Wer im Raum bereits eine interne KI-Richtlinie hat, kann das hier einbringen. Zeit: 2 Minuten.
+:::
+
+## Anbieter oder Betreiber: die erste Weiche
+
+::: {.two-col}
+::: {.card}
+**Anbieter**
+
+Entwickelt ein KI-System oder bringt es unter eigenem Namen auf den Markt.
+
+Trägt die meisten Pflichten, auch die für KI-Modelle mit allgemeinem Verwendungszweck.
+:::
+::: {.card}
+**Betreiber**
+
+Nutzt ein KI-System unter eigener Verantwortung, außer rein privat.
+
+Das ist die Rolle, in der die meisten Beschäftigten ChatGPT, Claude, Gemini oder Copilot verwenden.
+:::
+:::
+
+::: {.sources}
+Verordnung (EU) 2024/1689, Artikel 3: eur-lex.europa.eu/eli/reg/2024/1689/oj (Abruf 13.09.2026)
+:::
+
+::: {.notes}
+Diese Folie trägt die halbe Lektion. Die Rollenfrage klären, bevor über Pflichten gesprochen wird, sonst landet die Diskussion bei Anbieterpflichten, die niemanden im Raum betreffen. Analogie anbieten: Wer eine Abfüllanlage baut, trägt andere Pflichten als wer sie in der eigenen Halle betreibt. Zweite Unterscheidung nur kurz nennen: Das Sprachmodell mit allgemeinem Verwendungszweck ist nicht dasselbe wie das Produkt, das damit arbeitet; die Modellpflichten treffen dessen Anbieter. Erwartbare Rückfrage: „Und wenn wir einen Chatbot auf die Website stellen?" Darauf: Dann kann der Betrieb selbst in die Anbieterrolle geraten, und genau das ist eine Rechtsfrage. Zeit: 4 Minuten.
+:::
+
+## Vier Stufen, ein Beispiel je Stufe
+
+| Stufe | Beispiel aus dem Arbeitsalltag |
+|---|---|
+| **Verboten** | Software, die aus Stimmen am Servicetelefon die Gemütslage der Beschäftigten ableitet |
+| **Hochrisiko** (Anhang III) | System, das Bewerbungen vorsortiert oder bewertet |
+| **Transparenzpflicht** (Artikel 50) | Chatbot auf der eigenen Website; veröffentlichtes KI-erzeugtes Bild |
+| **Alles Übrige** | Antwortentwurf, den eine Mitarbeiterin prüft, korrigiert und selbst versendet |
+
+Die Zuordnungen sind Veranschaulichungen dieses Kurses, keine Einordnung eines konkreten Systems.
+
+::: {.notes}
+Der AI Act regelt Verwendung, nicht Technik: Dasselbe Chatwerkzeug kann je nach Aufgabe in verschiedenen Zeilen landen. Das ist die zentrale Einsicht dieser Folie und lohnt eine ausdrückliche Ansage. Danach die vierte Zeile betonen: Dort liegt fast alles, was der Kurs übt. Sofort die Fehldeutung abräumen, die daraus entsteht, nämlich „also gilt für uns nichts". Datenschutz, Urheberrecht, Betriebsvereinbarung und interne Richtlinie gelten unverändert weiter und können strenger sein. Frage an den Raum: Gibt es im eigenen Haus einen Anwendungsfall, der aus Zeile vier herausfällt? Zeit: 5 Minuten.
+:::
+
+## Was bei Betreibern tatsächlich ankommt
+
+- **Artikel 4, KI-Kompetenz**: fördernde Maßnahmen passend zu Aufgabe und Vorkenntnissen. Kein Zertifikat, keine Wissensmessung; ein interner Nachweis genügt
+- **Artikel 50, Transparenz**: gilt seit 02.08.2026, aufgeteilt zwischen Anbieter- und Betreiberpflichten
+- **Artikel 26, Betreiberpflichten**: nur im Hochrisikofall. Anweisungen befolgen, menschliche Aufsicht, Beschäftigte informieren
+- **Verbotene Praktiken kennen**, besonders das Erfassen von Gemütslagen am Arbeitsplatz
+
+::: {.sources}
+Europäische Kommission, AI literacy: questions and answers · Code of Practice on Transparency of AI-generated Content (Abruf 13.09.2026)
+:::
+
+::: {.notes}
+Vier Punkte, die sich der Reihe nach abarbeiten lassen. Bei Artikel 4 die Entlastung deutlich aussprechen, weil im Raum oft eine Zertifizierungspflicht vermutet wird: Die Kommissions-FAQ nennt ausdrücklich keine Messung, kein Niveau, kein Zertifikat, kein vorgeschriebenes Format. Anwendbar seit 02.02.2025, Aufsicht durch die nationalen Marktüberwachungsbehörden seit August 2026. Ergänzen, dass der AI-Omnibus die Anforderung vereinfacht hat und Kommission und Mitgliedstaaten eine größere Rolle bei der Förderung übernehmen; für Betreiber von Hochrisiko-Systemen bleibt die Schulung für die menschliche Aufsicht. Bei Artikel 50 die Rollenteilung nennen, ohne den Wortlaut vorzulesen: Anbieter kennzeichnen KI-Ausgaben und weisen auf die Interaktion mit einem System hin, Betreiber legen Deepfakes und bestimmte veröffentlichte Texte offen. Bei Nachfragen nach dem genauen Wortlaut konsequent auf den Rechtstext verweisen. Zeit: 6 Minuten.
+:::
+
+## Der AI Act ist nicht die einzige Regel
+
+Eine Aufgabe kann nach dem AI Act pflichtfrei sein und trotzdem unzulässig, etwa wegen Datenschutz, Urheberrecht oder einer Betriebsvereinbarung.
+
+Die Prüffrage lautet deshalb nicht „erlaubt der AI Act das?", sondern:
+
+**Welche Regeln gelten hier alle, und welche ist die strengste?**
+
+::: {.notes}
+Diese Folie ist die Brücke in den Rest des Moduls: Datenschutz und Urheberrecht folgen als eigene Lektionen, und sie sind für den Alltag der Teilnehmenden meist relevanter als der AI Act. Typische Fehlannahme benennen, ohne sie einer Person zuzuschreiben: Eine erlaubte Verwendung nach dem AI Act ist keine Freigabe für die Daten, die dabei eingegeben werden. Wer eine interne Richtlinie hat, prüft zuerst diese. Zeit: 2 Minuten.
+:::
+
+## Fristen, soweit hier gebraucht
+
+| Ab | Was gilt |
+|---|---|
+| 02.02.2025 | Verbotene Praktiken, Anforderung zur KI-Kompetenz |
+| 02.08.2025 | Governance-Regeln, Pflichten für Anbieter von Modellen mit allgemeinem Verwendungszweck |
+| 27.07.2026 | AI-Omnibus in Kraft |
+| 02.08.2026 | Allgemeine Anwendbarkeit, darunter Artikel 50 |
+| 02.12.2027 | Hochrisiko-Systeme nach Anhang III |
+| 02.08.2028 | Hochrisiko-Systeme in regulierten Produkten |
+
+::: {.sources}
+Europäische Kommission, AI Act und „AI Omnibus enters into force" (Abruf 13.09.2026) · Fristen sind in Bewegung, vor Entscheidungen aktuellen Stand prüfen
+:::
+
+::: {.notes}
+Die Tabelle nur zeigen, nicht durchsprechen; zwei Zeilen genügen für den Vortrag. Erstens 02.08.2026, weil daher die Wahrnehmung stammt, dass das Gesetz jetzt gilt. Zweitens 02.12.2027 für Anhang III, damit niemand glaubt, Hochrisiko-Anwendungen seien ein Thema für später und damit unkritisch: Die verbotenen Praktiken gelten bereits seit Februar 2025. Ausdrücklich sagen, dass Fristen in Bewegung sind und vor einer verbindlichen Entscheidung der aktuelle Stand zu prüfen ist, nicht diese Folie. Zeit: 2 Minuten.
+:::
+
+## Die Rösterei einordnen
+
+::: {.small}
+| Fall | Einordnung dieses Kurses |
+|---|---|
+| Antwortentwürfe, von einer Mitarbeiterin geprüft und selbst versendet | Kein Anhang III, keine Kennzeichnungspflicht nach Artikel 50. Es bleiben KI-Kompetenz, Datenschutz, Urheberrecht |
+| Chatbot auf der Website | Transparenzfrage nach Artikel 50 berührt; Rolle (Anbieter oder Betreiber) ist zu klären |
+| Bewerbungen vorsortieren | Verwendung aus Anhang III, im Kurs ausgeschlossen |
+:::
+
+Designentscheidungen für den Lehrfall, keine rechtliche Prüfung.
+
+::: {.notes}
+Drei Fälle, drei verschiedene Antworten, und genau das ist die Botschaft: Die Frage „fällt KI bei uns unter den AI Act?" hat keine Antwort, die Frage nach der konkreten Verwendung schon. Beim ersten Fall die Begründung ausformulieren lassen, statt sie vorzusagen: keine Entscheidung über eine Person, kein unmittelbarer Kontakt zwischen System und Kundschaft, menschliche Prüfung vor dem Versand. Beim zweiten Fall bewusst offen bleiben und die Zuständigkeit nennen. Beim dritten die Grenze des Moduls wiederholen: Entwürfe ja, Entscheidungen über Menschen nein. Kennzeichnen, dass die Einordnungen Designentscheidungen des Kurses sind. Zeit: 5 Minuten.
+:::
+
+## Mitmachen: fünf Fragen zum eigenen Fall
+
+1. Welche **Rolle** liegt vor: Betreiber oder Anbieter?
+2. Welche **Art von Verwendung** ist es?
+3. Gibt es **unmittelbaren Kontakt** zwischen System und Dritten?
+4. Fällt eine **Entscheidung über einen Menschen**?
+5. Welche **weiteren Regeln** gelten, und welche ist die strengste?
+
+Ergebnis: ein Satz, plus jede offene Frage mit Zuständigkeit.
+
+::: {.sources}
+Vorlage: material/m05/ai-act-einordnung.md · Ergebnis als Zeile „AI-Act-Einordnung" in Portfolio-Teil 3
+:::
+
+::: {.notes}
+Arbeitsphase, 6 Minuten, mit der Vorlage aus dem Material und dem eigenen Pilotfall. Vorher ansagen, dass „zu prüfen" eine vollwertige Antwort ist, solange die Stelle und die Zuständigkeit dazugeschrieben werden; eine erfundene Gewissheit ist das schlechtere Ergebnis. Beim Auswerten zwei bis drei Sätze vorlesen lassen und jeweils fragen, was daran die offene Stelle ist. Wer keinen eigenen Fall bereit hat, arbeitet am Lehrfall weiter. Kein Chatwerkzeug nötig, die Vorlage wird von Hand ausgefüllt. Zeit: 6 Minuten Arbeitsphase plus 3 Minuten Auswertung.
+:::
+
+## Quellen und Material {.sources}
+
+- Buchkapitel 5.1, Working with GenAI: verantwortung/eu-ai-act
+- Material: material/m05/ai-act-einordnung.md
+- Verordnung (EU) 2024/1689: eur-lex.europa.eu/eli/reg/2024/1689/oj (Abruf 13.09.2026)
+- Europäische Kommission, AI literacy: questions and answers: digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers (Abruf 13.09.2026)
+- Europäische Kommission, AI Omnibus enters into force: digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force (Abruf 13.09.2026)
+- Europäische Kommission, Code of Practice on Transparency of AI-generated Content: digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content (Abruf 13.09.2026)
+- Einordnungen sind Designentscheidungen des Kurses; Orientierung, keine Rechtsberatung

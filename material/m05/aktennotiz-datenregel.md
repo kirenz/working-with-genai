@@ -1,6 +1,6 @@
 # Aktennotiz: Datenregel für KI-gestützte Entwürfe
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.1. Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Die Notiz ist ein Übungsmuster und keine Rechtsberatung. Was im eigenen Betrieb gilt, entscheidet die Regelung der eigenen Organisation.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.2. Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Die Notiz ist ein Übungsmuster und keine Rechtsberatung. Was im eigenen Betrieb gilt, entscheidet die Regelung der eigenen Organisation.
 
 ---
 

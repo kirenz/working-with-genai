@@ -1,6 +1,6 @@
 # Kursübersicht {.unnumbered}
 
-Der Kurs umfasst 31 Lektionen in sechs Modulen. Grundlagen und Anwendungen sind einzeln über das Inhaltsverzeichnis erreichbar. Die zusätzliche Vertiefung zu Codex und Claude Code ist freiwillig.
+Der Kurs umfasst 32 Lektionen in sechs Modulen. Grundlagen und Anwendungen sind einzeln über das Inhaltsverzeichnis erreichbar. Die zusätzliche Vertiefung zu Codex und Claude Code ist freiwillig.
 
 ## Generative KI verstehen und Anwendungsfälle finden
 
@@ -49,10 +49,11 @@ Der Kurs umfasst 31 Lektionen in sechs Modulen. Grundlagen und Anwendungen sind 
 
 | Lektion | Buch | Folien |
 |---|---|---|
-| 5.1 | [Datenschutz im Arbeitsalltag](verantwortung/datenschutz.qmd) | [Folien](slides/verantwortung/datenschutz.html) |
-| 5.2 | [Urheberrecht und geistiges Eigentum](verantwortung/urheberrecht.qmd) | [Folien](slides/verantwortung/urheberrecht.html) |
-| 5.3 | [Verzerrungen und unfaire Ergebnisse](verantwortung/verzerrungen.qmd) | [Folien](slides/verantwortung/verzerrungen.html) |
-| 5.4 | [Verantwortung und KI-Kompetenz im Betrieb](verantwortung/ki-kompetenz.qmd) | [Folien](slides/verantwortung/ki-kompetenz.html) |
+| 5.1 | [Der EU AI Act im Arbeitsalltag](verantwortung/eu-ai-act.qmd) | [Folien](slides/verantwortung/eu-ai-act.html) |
+| 5.2 | [Datenschutz im Arbeitsalltag](verantwortung/datenschutz.qmd) | [Folien](slides/verantwortung/datenschutz.html) |
+| 5.3 | [Urheberrecht und geistiges Eigentum](verantwortung/urheberrecht.qmd) | [Folien](slides/verantwortung/urheberrecht.html) |
+| 5.4 | [Verzerrungen und unfaire Ergebnisse](verantwortung/verzerrungen.qmd) | [Folien](slides/verantwortung/verzerrungen.html) |
+| 5.5 | [Verantwortung und KI-Kompetenz im Betrieb](verantwortung/ki-kompetenz.qmd) | [Folien](slides/verantwortung/ki-kompetenz.html) |
 
 ## Wiederverwenden und Arbeitsabläufe gestalten
 

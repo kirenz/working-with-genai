@@ -1,6 +1,6 @@
 # Quellenpuzzle: Material für einen Blogbeitrag über Filterkaffee Mild
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.2. Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Alle sechs Quellen sind für die Übung erfunden. Das „Fachbuch", der Konkurrenztext, die Bewertungen und der Bildanbieter existieren nicht. Deshalb dürfen alle Texte unverändert in ein Chatfenster kopiert werden.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.3. Synthetische GenAI-Erweiterung des Lehrfalls Rösterei Morgenrot. Alle sechs Quellen sind für die Übung erfunden. Das „Fachbuch", der Konkurrenztext, die Bewertungen und der Bildanbieter existieren nicht. Deshalb dürfen alle Texte unverändert in ein Chatfenster kopiert werden.
 
 Jonas Halder (Marketing) hat für einen Blogbeitrag „Warum Filterkaffee Mild so schmeckt, wie er schmeckt" Material gesammelt. Vor dem ersten Prompt sortiert er, was davon in den Auftrag darf und was im Ergebnis auftauchen darf.
 

@@ -1,0 +1,82 @@
+# Der EU AI Act im Arbeitsalltag
+
+Aylin Yılmaz hat gelesen, dass seit August 2026 ein europäisches KI-Gesetz gilt, und stellt die Frage, die in jedem Betrieb kommt: Fallen die KI-gestützten Antwortentwürfe im Kundenservice darunter, und was heißt das dann? Dieses Kapitel beantwortet sie so weit, wie es ohne Rechtsberatung geht. Es sortiert, wen die Verordnung anspricht, welche Stufen sie unterscheidet und was davon im Alltag einer Person ankommt, die ein Chatwerkzeug benutzt statt es zu bauen. Am Ende steht eine kurze Einordnung für den eigenen Fall, die später in die Risiko-Tabelle des Portfolios wandert.
+
+Die Rechtsgrundlage ist die [Verordnung (EU) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) (Abruf 13.09.2026), im Sprachgebrauch AI Act. Was hier steht, ordnet ein und ist keine Rechtsberatung; die verbindliche Klärung eines konkreten Falls gehört zur zuständigen Stelle im Unternehmen oder zur Rechtsberatung.
+
+## Anbieter oder Betreiber: die erste Weiche
+
+Die Verordnung unterscheidet Rollen, und davon hängt fast alles ab. **Anbieter** ist, wer ein KI-System entwickelt oder unter eigenem Namen auf den Markt bringt oder in Betrieb nimmt. **Betreiber** ist, wer ein KI-System unter eigener Verantwortung verwendet, außer im rein privaten Bereich. Wer ChatGPT, Claude, Gemini oder Copilot für die Arbeit nutzt, ist in aller Regel Betreiber, und die Anbieterpflichten liegen bei den Unternehmen, die diese Systeme bereitstellen.
+
+Eine zweite Unterscheidung kommt dazu: Ein **KI-Modell mit allgemeinem Verwendungszweck** ist das vielseitig einsetzbare Sprachmodell selbst; das **KI-System** ist das Produkt, das damit arbeitet. Die eigenen Pflichten für solche Modelle, etwa zu technischer Dokumentation und Urheberrecht, treffen deren Anbieter, nicht die Betriebe, die das fertige Chatwerkzeug benutzen.
+
+::: {.callout-tip title="Die Maschine und der Betrieb"}
+Wer eine Abfüllanlage baut, trägt andere Pflichten als wer sie in der eigenen Halle betreibt. Der Hersteller verantwortet Konstruktion, Prüfung und Betriebsanleitung. Der Betrieb verantwortet, dass die Anlage bestimmungsgemäß eingesetzt wird und die Beschäftigten wissen, was sie tun. Der AI Act teilt entlang derselben Linie.
+:::
+
+## Vier Stufen, ein Beispiel je Stufe
+
+Der AI Act regelt nicht Technik, sondern Verwendung, und staffelt die Pflichten nach dem Risiko. Die Beispiele in der rechten Spalte sind Zuordnungen dieses Kurses zur Veranschaulichung, keine Einordnung eines konkreten Systems.
+
+| Stufe | Was darunterfällt | Beispiel aus dem Arbeitsalltag |
+|---|---|---|
+| **Verbotene Praktiken** | Ein abschließender Katalog untersagter Verwendungen, darunter Social Scoring, bestimmte manipulative Praktiken und das Ableiten von Emotionen am Arbeitsplatz außerhalb medizinischer und sicherheitsbezogener Zwecke | Eine Software, die aus den Stimmen im Servicetelefonat die Gemütslage der Beschäftigten ableitet |
+| **Hochrisiko** | Verwendungen aus Anhang III, unter anderem Beschäftigung: Systeme für Auswahl, Bewertung, Beförderung oder Überwachung von Beschäftigten | Ein System, das Bewerbungen vorsortiert oder bewertet |
+| **Transparenzpflichten** | Artikel 50: unmittelbare Interaktion von Menschen mit einem KI-System, Kennzeichnung KI-erzeugter Inhalte, Offenlegung von Deepfakes und bestimmter veröffentlichter Texte | Ein Chatbot auf der eigenen Website; ein KI-erzeugtes Bild in einer Kampagne |
+| **Alles Übrige** | Keine besonderen Pflichten nach dem AI Act | Ein Antwortentwurf, den eine Mitarbeiterin prüft, korrigiert und selbst versendet |
+
+Der weitaus größte Teil dessen, was in diesem Kurs geübt wird, liegt in der letzten Zeile. Das ist die eigentliche Nachricht dieses Kapitels und zugleich die, die am leichtesten falsch verstanden wird: „keine besonderen Pflichten nach dem AI Act" heißt nicht „keine Regeln". Datenschutz, Urheberrecht, Betriebsvereinbarungen, interne Richtlinien und Zusagen an Kundschaft gelten unverändert weiter und können strenger sein als die Verordnung.
+
+## Was im Alltag eines Betreibers tatsächlich ankommt
+
+Vier Punkte sind es, und sie lassen sich der Reihe nach abarbeiten.
+
+**KI-Kompetenz nach Artikel 4.** Die Vorschrift verlangt Maßnahmen, die die KI-Kompetenz der Personen fördern, die im Auftrag des Unternehmens mit KI-Systemen umgehen, bemessen nach Kenntnissen, Erfahrung, Ausbildung und Einsatzkontext. Die FAQ der Europäischen Kommission stellt klar, was **nicht** verlangt wird: kein bestimmtes Kompetenzniveau, keine Messung des Wissens von Beschäftigten, kein Zertifikat und kein vorgeschriebenes Format; ein interner Nachweis über Schulungen und Hinweise genügt. Anwendbar ist die Anforderung seit dem 2. Februar 2025, die Aufsicht durch die nationalen Marktüberwachungsbehörden läuft seit August 2026 ([Europäische Kommission, AI literacy: questions and answers](https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers), Abruf 13.09.2026). Der AI-Omnibus hat die Anforderung vereinfacht: Kommission und Mitgliedstaaten übernehmen eine größere Rolle bei der Förderung von KI-Kompetenz ([Europäische Kommission, AI Omnibus enters into force](https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force), Abruf 13.09.2026). Für Betreiber von Hochrisiko-Systemen bleibt es nach der FAQ dabei, dass das Personal für die menschliche Aufsicht geschult sein muss. Welcher Wortlaut von Artikel 4 heute genau gilt, ist im konsolidierten Rechtstext zu prüfen; dieser Kurs übernimmt ihn nicht aus dem Gedächtnis.
+
+**Transparenz nach Artikel 50.** Die Transparenzpflichten gelten seit dem 2. August 2026 ([Europäische Kommission, Code of Practice on Transparency of AI-generated Content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content), Abruf 13.09.2026). Sie sind zwischen den Rollen aufgeteilt: Anbieter sorgen dafür, dass Menschen erfahren, wenn sie unmittelbar mit einem KI-System sprechen, und dass KI-erzeugte Ausgaben maschinenlesbar als solche erkennbar sind; Betreiber legen Deepfakes offen und kennzeichnen veröffentlichte KI-erzeugte Texte, die über Angelegenheiten von öffentlichem Interesse informieren, soweit keine redaktionelle Prüfung stattgefunden hat. Wer einen Chatbot unter eigenem Namen auf der eigenen Website in Betrieb nimmt, kann dabei selbst in die Anbieterrolle geraten. Welche Rolle vorliegt, ist eine Rechtsfrage und gehört zur zuständigen Stelle.
+
+**Betreiberpflichten nach Artikel 26 nur im Hochrisikofall.** Wer ein Hochrisiko-System einsetzt, muss unter anderem die Anweisungen des Anbieters befolgen, die menschliche Aufsicht geeigneten Personen übertragen und die betroffenen Beschäftigten oder ihre Vertretung über den Einsatz informieren. Für ein Chatwerkzeug, mit dem Entwürfe geschrieben werden, greift dieser Pflichtenkatalog nicht. Er greift, sobald eine Verwendung aus Anhang III dazukommt, und genau deshalb lohnt der Blick auf die Liste, bevor ein neuer Anwendungsfall startet.
+
+**Verbotene Praktiken kennen.** Zwei davon berühren den Arbeitsalltag unmittelbar: das Ableiten von Emotionen am Arbeitsplatz außerhalb medizinischer und sicherheitsbezogener Zwecke und das Bewerten von Menschen nach sozialem Verhalten. Beides klingt nach Science-Fiction und steckt trotzdem in Produktbeschreibungen, etwa wenn eine Servicesoftware verspricht, die Stimmung im Team automatisch zu erfassen.
+
+::: {.callout-important title="Der AI Act ist nicht die einzige Regel"}
+Eine Aufgabe kann nach dem AI Act pflichtfrei sein und trotzdem unzulässig, weil der Datenschutz, das Urheberrecht, eine Betriebsvereinbarung oder eine interne Richtlinie entgegensteht. Die Prüfreihenfolge im Betrieb lautet deshalb nicht „erlaubt der AI Act das?", sondern „welche Regeln gelten hier alle, und welche ist die strengste?".
+:::
+
+## Die Fristen, soweit sie hier gebraucht werden
+
+| Ab | Was gilt |
+|---|---|
+| 2. Februar 2025 | Verbotene Praktiken und die Anforderung zur KI-Kompetenz sind anwendbar |
+| 2. August 2025 | Governance-Regeln und die Pflichten für Anbieter von KI-Modellen mit allgemeinem Verwendungszweck |
+| 27. Juli 2026 | Der AI-Omnibus tritt in Kraft und ändert unter anderem die Anforderung zur KI-Kompetenz und die Fristen für Hochrisiko-Systeme |
+| 2. August 2026 | Allgemeine Anwendbarkeit der Verordnung, darunter die Transparenzpflichten nach Artikel 50 |
+| 2. Dezember 2027 | Die Pflichten für Hochrisiko-Systeme nach Anhang III, unter anderem im Bereich Beschäftigung |
+| 2. August 2028 | Die Pflichten für Hochrisiko-Systeme, die in regulierte Produkte eingebettet sind |
+
+Quellen: [Europäische Kommission, AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) und [AI Omnibus enters into force](https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force), beide Abruf 13.09.2026. Fristen sind in Bewegung; vor einer verbindlichen Entscheidung wird der aktuelle Stand geprüft, nicht dieses Kapitel zitiert.
+
+## Die Rösterei einordnen
+
+Drei Fälle, drei verschiedene Antworten. Die Einordnungen sind Designentscheidungen dieses Kurses für den Lehrfall und ersetzen keine rechtliche Prüfung.
+
+**Die Antwortentwürfe im Kundenservice.** Sina bekommt einen Entwurf, prüft ihn Aussage für Aussage gegen die Fachinformationen, korrigiert ihn und versendet ihn selbst. Keine Verwendung aus Anhang III, keine Entscheidung über eine Person, keine unmittelbare Interaktion der Kundschaft mit einem System. Für den Kurs ordnen wir das als Fall der letzten Tabellenzeile ein: kein Hochrisiko, keine Kennzeichnungspflicht nach Artikel 50. Was bleibt, ist die Anforderung an die KI-Kompetenz und alles, was aus Datenschutz und Urheberrecht folgt.
+
+**Ein Chatbot auf der Website.** Sobald Kundinnen und Kunden unmittelbar mit einem System schreiben statt mit Sina, ist die Transparenzfrage aus Artikel 50 berührt. Ob die Rösterei dabei Anbieterin oder Betreiberin des Chatbots wäre, hängt davon ab, wie er beschafft und betrieben wird. Das ist eine Rechtsfrage mit Termin, kein Punkt für die Kaffeeküche.
+
+**Bewerbungen vorsortieren.** Eine Verwendung aus Anhang III und im Kurs ausgeschlossen. Wer sie ernsthaft erwägt, hat einen anderen Vorgang vor sich: Pflichten des Anbieters, Betreiberpflichten nach Artikel 26, Information der Beschäftigten, dazu Datenschutz und Gleichbehandlungsrecht. Für den Kurs gilt die einfache Grenze: Entwürfe ja, Entscheidungen über Menschen nein.
+
+## Die Einordnung für den eigenen Fall
+
+Fünf Minuten genügen für eine erste Einordnung. Die Vorlage [AI-Act-Einordnung](../material/m05/ai-act-einordnung.md) stellt dafür fünf Fragen zum Ankreuzen: Rolle, Verwendung, Kontakt nach außen, Personenbezug der Entscheidung und die offene Rechtsfrage mit Zuständigkeit. Das Ergebnis ist ein Satz, und dieser Satz wird später als eigene Zeile in die Risiko-Tabelle von Portfolio-Teil 3 übernommen.
+
+Wer bei einer Frage unsicher ist, kreuzt „zu prüfen" an und schreibt die Stelle auf. Eine sichtbare offene Frage mit benannter Zuständigkeit ist ein besseres Ergebnis als eine erfundene Gewissheit. Das gilt für dieses Thema genauso wie für jede Aussage, die wir im Kurs auf ihre Quelle zurückführen.
+
+## Kontrollpunkt für Modul 5
+
+- Anbieter und Betreiber unterscheiden und die eigene Rolle bei der Nutzung eines Chatwerkzeugs bestimmen
+- KI-System und KI-Modell mit allgemeinem Verwendungszweck auseinanderhalten und wissen, wen dessen Pflichten treffen
+- Eine Verwendung den vier Stufen zuordnen und begründen, warum die meisten Alltagsaufgaben in der letzten Stufe liegen
+- Die Anforderung zur KI-Kompetenz als kontextbezogene Maßnahmenpflicht einordnen, ohne Zertifikat oder Prüfung zu unterstellen
+- Erkennen, wann Artikel 50 berührt ist und wann die Betreiberpflichten des Hochrisikofalls greifen
+- Offene Rechtsfragen mit Zuständigkeit festhalten, statt sie im Kurs zu entscheiden

@@ -1,6 +1,6 @@
 # Rechte-Check für Material und Ergebnis
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.2. Arbeitshilfe für den Alltag, keine Rechtsberatung. Was im Einzelfall gilt, klärt die zuständige Stelle.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.3. Arbeitshilfe für den Alltag, keine Rechtsberatung. Was im Einzelfall gilt, klärt die zuständige Stelle.
 
 ## Vor dem Prompt: jede Quelle einzeln
 

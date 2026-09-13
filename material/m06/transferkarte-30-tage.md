@@ -10,7 +10,7 @@ Kursmaterial „Working with GenAI", Modul 6, Lektion 6.4. Vorlage für Portfoli
 
 | Woche | Schritt | Wer | Bis wann | Sichtbares Ergebnis |
 |---|---|---|---|---|
-| 1 | Datenregel und Konto klären: Aktennotiz 5.1 bestätigen, Einstellungen zu Speicherung und Training prüfen und festhalten | Aylin Yılmaz, Petra Lindqvist | 16.10. | Unterschriebene Aktennotiz, Vermerk zu den Einstellungen |
+| 1 | Datenregel und Konto klären: Aktennotiz 5.2 bestätigen, Einstellungen zu Speicherung und Training prüfen und festhalten | Aylin Yılmaz, Petra Lindqvist | 16.10. | Unterschriebene Aktennotiz, Vermerk zu den Einstellungen |
 | 1 | Startpaket als Projekt einrichten, Wissensmaterial mit Datum versehen | Sina Bergmann | 16.10. | Projekt mit Anweisungen und zwei Wissensdateien |
 | 2 | Zehn echte Anfragen parallel bearbeiten: Entwurf aus dem Projekt, Prüfung jeder Aussage, Nacharbeitszeit und Korrekturen je Entwurf notieren | Sina Bergmann | 23.10. | Tabelle mit zehn Zeilen: Anfrage (Typ), Korrekturen (Anzahl, Art), Nacharbeit (Minuten) |
 | 3 | Testfälle aus Modul 4 mit dem Projekt wiederholen; Startpaket anpassen, wo Testfälle scheitern; Ellen einweisen (30 Minuten) | Sina Bergmann, Ellen Ruppert | 30.10. | Aktualisierte Testfalltabelle, Einweisungsnotiz |

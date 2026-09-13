@@ -1,6 +1,6 @@
 # Aktennotiz: KI-Kompetenz und Transparenz in der Rösterei Morgenrot
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.4. Synthetische GenAI-Erweiterung des Lehrfalls. Übungsmuster, keine Rechtsberatung. Grundlage für die Einordnung von Artikel 4 ist die FAQ der Europäischen Kommission zu AI Literacy (Abruf 08.09.2026): <https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers>.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.5. Synthetische GenAI-Erweiterung des Lehrfalls. Übungsmuster, keine Rechtsberatung. Grundlage für die Einordnung von Artikel 4 ist die FAQ der Europäischen Kommission zu AI Literacy (Abruf 08.09.2026): <https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers>.
 
 ---
 
@@ -14,9 +14,9 @@ Kursmaterial „Working with GenAI", Modul 5, Lektion 5.4. Synthetische GenAI-Er
 
 | Wer | Nutzt was | Wofür | Maßnahme | Nachweis |
 |---|---|---|---|---|
-| Sina Bergmann, Kundenservice | Chatkonto, später Projekt mit Startpaket | Antwortentwürfe auf Kundenanfragen | Dieser Kurs; Datenregel aus 5.1; Prüfroutine aus Modul 4 | Kursteilnahme, Aktennotizen, Testfälle in der Arbeitsmappe |
+| Sina Bergmann, Kundenservice | Chatkonto, später Projekt mit Startpaket | Antwortentwürfe auf Kundenanfragen | Dieser Kurs; Datenregel aus 5.2; Prüfroutine aus Modul 4 | Kursteilnahme, Aktennotizen, Testfälle in der Arbeitsmappe |
 | Ellen Ruppert, Lager und Versand | Chatkonto | Entwürfe für Statusanfragen | Einweisung durch Sina anhand des Startpakets (30 Minuten); Datenregel | Kurze Notiz mit Datum |
-| Jonas Halder, Marketing | Chatkonto | Textentwürfe aus freigegebenem Material | Rechte-Check aus 5.2 | Rechte-Check je Beitrag |
+| Jonas Halder, Marketing | Chatkonto | Textentwürfe aus freigegebenem Material | Rechte-Check aus 5.3 | Rechte-Check je Beitrag |
 | Aylin Yılmaz, Geschäftsführung | keine eigene Nutzung geplant | Entscheidung über Konten, Freigaben, Rückblick | Diese Notiz; Rückblick nach 30 Tagen | Diese Notiz |
 | Petra Lindqvist, Verwaltung | keine Nutzung geplant | Vertragslage prüfen | Kenntnis der Datenregel | Vermerk |
 
@@ -31,7 +31,7 @@ Keine Person wird „zertifiziert". Die Maßnahmen sind auf die tatsächliche Nu
 | Frage | Wer klärt das verbindlich? | Stand |
 |---|---|---|
 | Anwendbarkeit von Artikel 50 auf konkrete Fälle (Website-Texte, Bilder, Signatur) | externe Rechtsberatung, beauftragt Aylin Yılmaz | offen |
-| Vertragslage zum Chatkonto (siehe Datenregel 5.1) | Petra Lindqvist | offen |
+| Vertragslage zum Chatkonto (siehe Datenregel 5.2) | Petra Lindqvist | offen |
 | Ob ein Datenschutzbeauftragter zu benennen ist | externe Beratung | offen |
 
 Datum: 2026-09-07. Rückblick: Termin aus dem Transferplan.

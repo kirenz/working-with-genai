@@ -61,6 +61,7 @@ book:
         - qualitaet/toolvergleich.qmd
     - part: "Daten, Rechte und Verantwortung"
       chapters:
+        - verantwortung/eu-ai-act.qmd
         - verantwortung/datenschutz.qmd
         - verantwortung/urheberrecht.qmd
         - verantwortung/verzerrungen.qmd

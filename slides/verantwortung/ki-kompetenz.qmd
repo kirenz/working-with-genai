@@ -1,6 +1,6 @@
 ---
 title: "Verantwortung und KI-Kompetenz im Betrieb"
-subtitle: "Modul 5 · Lektion 5.4"
+subtitle: "Modul 5 · Lektion 5.5"
 book-source: "../../verantwortung/ki-kompetenz.qmd"
 ---
 
@@ -23,7 +23,7 @@ Abschluss von Modul 5. Die drei Fragen kommen in jedem Betrieb, meist in dieser 
 **Aylin Yılmaz**, Geschäftsführung
 :::
 ::: {.card}
-Entwürfe laufen. Rechte-Check liegt vor. Datenregel aus 5.1 liegt vor. Aus 5.3 ist bekannt, woran eine einseitige Formulierung auffällt.
+Entwürfe laufen. Rechte-Check liegt vor. Datenregel aus 5.2 liegt vor. Aus 5.4 ist bekannt, woran eine einseitige Formulierung auffällt.
 
 Was fehlt: **eine Seite**, auf der steht, wer was mit welchem Werkzeug tut, welche Maßnahme dazu passt, wo der Einsatz kenntlich gemacht wird und was offen ist.
 
@@ -102,10 +102,11 @@ Deshalb enden alle Übungen dieses Kurses beim geprüften Entwurf.
 Kurz halten, keine Diskussion über Haftungsdetails eröffnen. Der Satz, der hängen bleiben soll: Verantwortung lässt sich nicht an ein Werkzeug abgeben, nur die Schreibarbeit. Verbindung zu Modul 6 herstellen: Auch der Miniworkflow endet beim Entwurf, nicht bei einer verschickten Nachricht. Zeit: 2 Minuten.
 :::
 
-## Die Risiko-Tabelle: fünf Zeilen, zwei Spalten
+## Die Risiko-Tabelle: sechs Zeilen, zwei Spalten
 
 | Feld | Wer klärt das verbindlich? |
 |---|---|
+| AI-Act-Einordnung | Leitung; rechtliche Bewertung: Rechtsberatung |
 | Personenbezogene Daten im Prozess | Leitung; datenschutzrechtliche Einordnung: **nicht benannt** |
 | Genutztes Konto / Vertragslage | Verwaltung und Leitung |
 | Rechte an Eingaben und Ergebnissen | Marketing und Leitung; Rechtsberatung offen |
@@ -136,7 +137,7 @@ CHECK    Nur Fragen, keine Antworten. Keine Aussage darüber, was
 Beim Lesen zuerst prüfen: Steht trotz des CHECK-Teils eine Rechtsaussage darin? Dann streichen.
 
 ::: {.sources}
-Vollständiger Auftrag: Buchkapitel 5.4, Schritt 5 · material/m05/prompt-klaerungsfragen.txt
+Vollständiger Auftrag: Buchkapitel 5.5, Schritt 5 · material/m05/prompt-klaerungsfragen.txt
 :::
 
 ::: {.notes}
@@ -145,7 +146,7 @@ Arbeitsphase, 8 Minuten: eigene oder die Morgenrot-Tabelle einsetzen, Auftrag au
 
 ## Portfolio-Teil 3 abschließen
 
-- **Risiko-Tabelle** vollständig: alle fünf Zeilen mit konkreter Einschätzung und Zuständigkeit. Das ist die eine eigene Arbeit dieses Moduls
+- **Risiko-Tabelle** vollständig: alle sechs Zeilen mit konkreter Einschätzung und Zuständigkeit. Das ist die eine eigene Arbeit dieses Moduls
 - Vorbereitete **Klärungsfragen** für den Termin mit der zuständigen Stelle
 - Freiwillig: die Aktennotiz **KI-Kompetenz und Transparenz** ausschreiben (Tabelle „wer nutzt was wofür“, begründete Transparenzregel, offene Punkte)
 
@@ -156,12 +157,12 @@ material/m05/ki-kompetenz-notiz.md · material/m05/risikotabelle-morgenrot.md
 :::
 
 ::: {.notes}
-Selbstlernaufgabe bis 08.10.: eigener Bereich, Rollen statt Namen, alle fünf Zeilen. Die Zulieferung steht bereits: zwei Datennotizen aus 5.1, die Quellenliste aus 5.2, die Beobachtung aus 5.3 für die letzte Zeile. Wo keine Zuständigkeit benannt ist, steht „nicht benannt“ und der nächste Schritt. Damit ist Portfolio-Teil 3 vollständig; die Freitexte werden nicht automatisch fachlich bewertet, sondern im Beratungstermin besprochen. Überleitung zu Modul 6: Aus der Orientierung wird jetzt Alltag. Zeit: 2 Minuten.
+Selbstlernaufgabe bis 08.10.: eigener Bereich, Rollen statt Namen, alle sechs Zeilen. Die Zulieferung steht bereits: die Einordnung aus 5.1, zwei Datennotizen aus 5.2, die Quellenliste aus 5.3, die Beobachtung aus 5.4 für die letzte Zeile. Wo keine Zuständigkeit benannt ist, steht „nicht benannt“ und der nächste Schritt. Damit ist Portfolio-Teil 3 vollständig; die Freitexte werden nicht automatisch fachlich bewertet, sondern im Beratungstermin besprochen. Überleitung zu Modul 6: Aus der Orientierung wird jetzt Alltag. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 5.4, Working with GenAI: verantwortung/ki-kompetenz
+- Buchkapitel 5.5, Working with GenAI: verantwortung/ki-kompetenz
 - Material: material/m05/ki-kompetenz-notiz.md, risikotabelle-morgenrot.md, prompt-klaerungsfragen.txt
 - Europäische Kommission, AI literacy: questions and answers: digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers (Abruf 08.09.2026)
 - Europäische Kommission, AI Omnibus enters into force: digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force (Abruf 08.09.2026)

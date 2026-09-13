@@ -12,7 +12,39 @@ book-source: ../../index.qmd
 - Wiederkehrende Arbeitsschritte unterstützen
 
 ::: {.notes}
-Den Kurs anhand dieser vier Tätigkeiten einordnen. Als Beispiele eine Zusammenfassung für eine Besprechung, eine Sortenübersicht und eine wiederkehrende Kundenanfrage nennen. Das Kursziel ist der begründete Einsatz von KI für konkrete Aufgaben. Programmierkenntnisse sind nicht erforderlich. Zeit: 1 Minute.
+Den Kurs anhand dieser vier Tätigkeiten einordnen. Als Beispiele eine Zusammenfassung für eine Besprechung, eine Sortenübersicht und eine wiederkehrende Kundenanfrage nennen. Das Kursziel ist der begründete Einsatz von KI für konkrete Aufgaben. Programmierkenntnisse sind nicht erforderlich. Am Ende liegt ein eigener, geprüfter Anwendungsfall mit Arbeitsauftrag, Kontext, Prüfkriterien und Transferplan vor. Zeit: 1,5 Minuten.
+:::
+
+## Der Kurs im Überblick
+
+| Modul | Worum es geht |
+|---|---|
+| 1 Verstehen und Use Cases finden | Arbeitsweise, Werkzeuge, Datenregeln, Grenzen, eigener Pilotfall |
+| 2 Prompting | Task, Context, Format und Check, Beispiele, Dialog |
+| 3 Kontext und Recherche | Kontextfenster, Material, Kontextmappe, Fundstellen, Websuche |
+| 4 Ergebnisse beurteilen | Qualitätskriterien, Aussagen prüfen, Testfälle, Werkzeugvergleich |
+| 5 Daten, Rechte, Verantwortung | EU AI Act, Datenschutz, Urheberrecht, Verzerrungen |
+| 6 Wiederverwenden | Chat, Projekt, Agent oder Workflow, n8n, Transferplan |
+
+[32 Lektionen in sechs Modulen, dazu eine freiwillige Vertiefung zu Codex und Claude Code.]{.small}
+
+::: {.notes}
+Die sechs Module in dieser Reihenfolge nennen und jeweils in einem Satz sagen, was daraus für den eigenen Anwendungsfall entsteht. Modul 5 beginnt mit dem EU AI Act im Arbeitsalltag, also mit der Frage, welche Pflichten für den eigenen Einsatz gelten; die weiteren Lektionen behandeln Datenschutz, Urheberrecht und Verzerrungen. Darauf hinweisen, dass die Vertiefung zu Codex und Claude Code freiwillig ist und keine Voraussetzung für das Portfolio darstellt. Die vollständige Lektionsliste steht in der Kursübersicht im Buch; sie hier nicht vorlesen. Zeit: 2 Minuten.
+:::
+
+## Termine und Ablauf
+
+| Termin | Wann | Inhalt |
+|---|---|---|
+| Auftakt | 18.09., 13:00–17:00 | Grundlagen, erste Aufträge, eigener Kandidat |
+| Beratung | 24.09., 17:30–18:30 | Canvas und erster Arbeitsauftrag |
+| Beratung (optional) | 30.09., 17:30–18:30 | Kontextmappe und Fallkarten |
+| Recap | 08.10., 17:30–19:00 | Kurzpräsentationen und Transferpläne |
+
+[Zwischenstände bis 23.09. und 29.09. · Gesamtumfang 30 Stunden]{.small}
+
+::: {.notes}
+Die vier Termine benennen und den heutigen Auftakt darin verorten. Auf die beiden Zwischenstände hinweisen: der erste bis zum 23.09. mit Use-Case-Canvas und erstem Arbeitsauftrag, der zweite bis zum 29.09. mit Kontextmappe und ersten Fallkarten. Der Abgabeweg wird organisatorisch bekanntgegeben; hier keinen Kanal zusagen, der noch nicht feststeht. Die Beratung am 30.09. ist optional; wer nicht teilnimmt, erhält die Rückmeldung auf dem festgelegten Weg. Das Zeitbudget einordnen: 30 Stunden insgesamt, davon vier Stunden Auftakt, 20 Stunden Online-Termine und Selbststudium sowie sechs Stunden für Portfolio und Kurzpräsentation. Die genaue Verteilung steht im Kapitel „Der persönliche Lernweg“. Zeit: 2 Minuten.
 :::
 
 ## Die Werkzeuge im Kurs
@@ -41,7 +73,7 @@ Erfundene Kaffeerösterei mit Onlineshop und Kaffee-Abo. Das Geschäft wächst, 
 | Marlene Bosch | Röstung und Produktion |
 
 ::: {.notes}
-Die Rösterei kurz vorstellen und die Zuständigkeiten zuordnen. Die erste Übung beginnt bei Jonas: Er benötigt drei Varianten eines Hinweistextes für das Kaffee-Abo, aus denen Aylin eine auswählen will. Weitere Aufgaben stammen aus Kundenservice, Verwaltung und Produktion. Alle Fallangaben sind erfunden. Zeit: 1 Minute.
+Die Rösterei kurz vorstellen und die Zuständigkeiten zuordnen. Die erste Übung beginnt bei Jonas: Er benötigt drei Varianten eines Hinweistextes für das Kaffee-Abo, aus denen Aylin eine auswählen will. Weitere Aufgaben stammen aus Kundenservice, Verwaltung und Produktion. Alle Fallangaben sind erfunden und dürfen unverändert in ein Chatfenster kopiert werden. Zeit: 1,5 Minuten.
 :::
 
 ## Von der Übung zum eigenen Vorhaben
@@ -54,5 +86,5 @@ Die Rösterei kurz vorstellen und die Zuständigkeiten zuordnen. Die erste Übun
 Der eigene Anwendungsfall wird in Modul 1 systematisch gefunden, bewertet und als kleiner Pilot festgehalten.
 
 ::: {.notes}
-Die drei Ansichten in einer Lektion kurz zeigen und den Zweck der Arbeitsmappe erklären. Die Ergebnisse wachsen über den Kurs zum Portfolio. Eigene Aufgaben werden mit erfundenen Angaben bearbeitet; bis zur eigenen Datenlektion gilt die kurze Regel, ausschließlich das bereitgestellte erfundene Material zu verwenden. Anschließend zur Grundlage „Wie generative KI arbeitet“ übergehen. Kein Quiz für diese Orientierung. Zeit: 1 Minute.
+Die drei Ansichten in einer Lektion kurz zeigen und den Zweck der Arbeitsmappe erklären. Die Ergebnisse wachsen über den Kurs zum Portfolio. Eigene Aufgaben werden mit erfundenen Angaben bearbeitet; bis zur eigenen Datenlektion gilt die kurze Regel, ausschließlich das bereitgestellte erfundene Material zu verwenden. Anschließend zur Grundlage „Wie generative KI arbeitet“ übergehen. Kein Quiz für diese Orientierung. Zeit: 2 Minuten. Gesamtblock „Willkommen“: 10 Minuten.
 :::

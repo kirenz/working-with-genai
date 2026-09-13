@@ -4,12 +4,12 @@ Aylin Yılmaz stellt drei Fragen, die in jedem Betrieb irgendwann kommen: Müsse
 
 ## Der Anlass: drei Fragen an die Geschäftsführung
 
-Die Kundenservice-Entwürfe laufen, Jonas hat seinen Rechte-Check, die Datenregel aus 5.1 liegt vor, und aus 5.3 ist bekannt, woran eine einseitige Formulierung auffällt. Was fehlt, ist der Überblick: eine Seite, auf der steht, wer in der Rösterei was mit welchem Werkzeug tut, welche Maßnahme dazu passt, wo der KI-Einsatz kenntlich gemacht wird und was noch offen ist. Aylin will diese Seite, weil sie ohne sie weder die Erprobung fortführen noch stoppen kann.
+Die Kundenservice-Entwürfe laufen, Jonas hat seinen Rechte-Check, die Datenregel aus 5.2 liegt vor, und aus 5.4 ist bekannt, woran eine einseitige Formulierung auffällt. Was fehlt, ist der Überblick: eine Seite, auf der steht, wer in der Rösterei was mit welchem Werkzeug tut, welche Maßnahme dazu passt, wo der KI-Einsatz kenntlich gemacht wird und was noch offen ist. Aylin will diese Seite, weil sie ohne sie weder die Erprobung fortführen noch stoppen kann.
 
 Eine Einschätzung vorweg: Was passiert, wenn die Rösterei die Fragen mit Schlagworten beantwortet, also „alle schulen, alles kennzeichnen, Verantwortung liegt beim Modell"? Alle drei Antworten wären bequem und alle drei falsch angesetzt. Eine pauschale Schulungspflicht ohne Bezug zur tatsächlichen Nutzung erzeugt Aufwand ohne Wirkung. Eine pauschale Kennzeichnung jeder Mail sagt der Empfängerseite nichts darüber, ob jemand den Inhalt geprüft hat. Und die Verantwortung für eine verschickte Mail trägt die Rösterei, ganz gleich, wer den Entwurf geschrieben hat.
 
-::: {.callout-note title="Was Artikel 4 verlangt, soweit die Kommissions-FAQ es beschreibt"}
-Artikel 4 des AI Act verpflichtet Anbieter und Betreiber von KI-Systemen, Maßnahmen zu treffen, um die KI-Kompetenz ihres Personals und anderer Personen zu fördern, die in ihrem Auftrag mit KI-Systemen umgehen. Maßgeblich sind Kenntnisse, Erfahrung, Ausbildung und der Kontext des Einsatzes. Die FAQ der Europäischen Kommission stellt klar: Es besteht keine Pflicht, das KI-Wissen von Beschäftigten zu messen, es muss kein bestimmtes Niveau garantiert werden, es ist kein Zertifikat nötig, und ein interner Nachweis über Schulungen und Hinweise genügt. Die Pflicht gilt seit dem 2. Februar 2025; Aufsicht und Durchsetzung durch die nationalen Marktüberwachungsbehörden laufen seit August 2026 ([Europäische Kommission, AI literacy: questions and answers](https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers), Abruf 08.09.2026). Der AI-Omnibus, in Kraft seit dem 27. Juli 2026, hat die Anforderung vereinfacht: Aus der Pflicht, ein ausreichendes Niveau sicherzustellen, ist eine Pflicht zu fördernden Maßnahmen geworden, und Kommission und Mitgliedstaaten übernehmen eine größere Rolle bei der Förderung von KI-Kompetenz ([Europäische Kommission, AI Omnibus enters into force](https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force), Abruf 08.09.2026). Für Fristen und Einzelpflichten, die über diese Beschreibung hinausgehen, ist der geltende Rechtstext zu öffnen; dieser Kurs übernimmt sie nicht aus dem Gedächtnis.
+::: {.callout-note title="Der Bezug zu Artikel 4"}
+Die Anforderung zur KI-Kompetenz und ihre Grenzen stehen in [Der EU AI Act im Arbeitsalltag](eu-ai-act.qmd): Verlangt sind fördernde Maßnahmen, die zu Aufgabe, Vorkenntnissen und Einsatzkontext passen. Nicht verlangt sind ein bestimmtes Niveau, eine Messung des Wissens von Beschäftigten, ein Zertifikat oder ein vorgeschriebenes Format; ein interner Nachweis genügt. Genau daraus folgt die Zuordnung in Schritt 1: Maßnahme und Nachweis richten sich nach der tatsächlichen Nutzung. Fristen, Quellen und den Stand nach dem AI-Omnibus führt das dortige Kapitel; für Einzelpflichten darüber hinaus ist der geltende Rechtstext zu öffnen.
 :::
 
 ## Zielbild
@@ -17,7 +17,7 @@ Artikel 4 des AI Act verpflichtet Anbieter und Betreiber von KI-Systemen, Maßna
 Am Ende dieses Kapitels liegen zwei Dinge vor:
 
 - Eine **Aktennotiz KI-Kompetenz und Transparenz** für die Rösterei mit der Tabelle „Wer nutzt was wofür, welche Maßnahme, welcher Nachweis", einer begründeten Transparenzregel und den offenen Punkten mit Zuständigkeit. Beispiel und Vorlage: [Aktennotiz KI-Kompetenz](../material/m05/ki-kompetenz-notiz.md).
-- Die vollständig ausgefüllte **Risiko-Tabelle** aus Portfolio-Teil 3 mit allen fünf Zeilen, jeweils Einschätzung und Zuständigkeit. Sollbeispiel: [Risiko-Tabelle Morgenrot](../material/m05/risikotabelle-morgenrot.md).
+- Die vollständig ausgefüllte **Risiko-Tabelle** aus Portfolio-Teil 3 mit allen sechs Zeilen, jeweils Einschätzung und Zuständigkeit. Sollbeispiel: [Risiko-Tabelle Morgenrot](../material/m05/risikotabelle-morgenrot.md).
 
 Beides ist Risiko-Orientierung, keine Konformitätsgarantie. Der Kurs ersetzt weder Rechtsberatung noch eine Datenschutzfolgenabschätzung noch eine interne Freigabe. Dafür benennt jede Zeile, wer die verbindliche Klärung vornimmt.
 
@@ -47,7 +47,7 @@ Aylins zweite Frage beantworten wir mit einer Regel, die begründet, wann kenntl
 
 - **Keine pauschale Kennzeichnung jeder Mail.** Eine Mitarbeiterin prüft jeden Entwurf Aussage für Aussage und versendet ihn selbst. Der Hinweis „mit KI erstellt" würde der Empfängerseite nichts darüber sagen, ob der Inhalt geprüft ist; die Prüfung ist das, was zählt.
 - **Kenntlich machen, wo es für die Empfängerseite eine Rolle spielt oder eine Vorschrift es verlangt:** wenn Kundinnen und Kunden direkt mit einem automatischen System sprechen, wenn Inhalte ohne Prüfung veröffentlicht werden, wenn jemand ausdrücklich fragt.
-- **Offen halten, was Rechtsfrage ist.** Der AI Act enthält in Artikel 50 Transparenzpflichten für bestimmte Konstellationen, unter anderem die Kennzeichnung KI-erzeugter Inhalte und die Offenlegung von Deepfakes; sie gelten seit dem 2. August 2026 ([Europäische Kommission, Code of Practice on Transparency of AI-generated Content](https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content), Abruf 08.09.2026). Ob und wie sie einen konkreten Fall der Rösterei betreffen, etwa Website-Texte oder Bilder, klärt die Rechtsberatung. Das steht als offener Punkt in der Notiz, und zwar mit Termin, nicht als Dauerzustand.
+- **Offen halten, was Rechtsfrage ist.** Welche Konstellationen die Transparenzpflichten aus Artikel 50 berühren, ist in 5.1 beschrieben. Ob und wie sie einen konkreten Fall der Rösterei betreffen, etwa Website-Texte, Bilder oder einen künftigen Chatbot, klärt die Rechtsberatung. Das steht als offener Punkt in der Notiz, und zwar mit Termin, nicht als Dauerzustand.
 
 Diese Regel ist eine Designentscheidung für den Lehrfall. Was im eigenen Betrieb gilt, kann strenger sein, etwa durch eine Betriebsvereinbarung oder eine Kundenzusage. Dann gilt das Strengere.
 
@@ -57,10 +57,11 @@ Die dritte Frage ist die kürzeste: Für den Inhalt einer verschickten Mail ist 
 
 ### Schritt 4 — Die Risiko-Tabelle vollständig füllen
 
-Jetzt haben wir alles für die fünf Zeilen der Risiko-Tabelle in Portfolio-Teil 3. Die Zeilen eins bis drei stammen aus 5.1 und 5.2, die Zeilen vier und fünf aus diesem Kapitel; die Beobachtung aus 5.3 zur Einseitigkeit gehört in die letzte Zeile, weil sie ein verbleibendes Risiko beschreibt und keine eigene Rechtsfrage ist:
+Jetzt haben wir alles für die sechs Zeilen der Risiko-Tabelle in Portfolio-Teil 3. Die erste Zeile stammt aus 5.1, die Zeilen zwei bis vier aus 5.2 und 5.3, die Zeilen fünf und sechs aus diesem Kapitel; die Beobachtung aus 5.4 zur Einseitigkeit gehört in die letzte Zeile, weil sie ein verbleibendes Risiko beschreibt und keine eigene Rechtsfrage ist:
 
 | Feld | Einschätzung (Kurzfassung) | Wer klärt das verbindlich? |
 |---|---|---|
+| AI-Act-Einordnung | Betreiber; geprüfte Entwürfe ohne unmittelbaren Kontakt zwischen System und Kundschaft; nach Einschätzung des Kurses kein Anhang III und keine Kennzeichnungspflicht nach Artikel 50 | Aylin Yılmaz; erneute Einordnung bei jedem neuen Anwendungsfall, rechtliche Bewertung: externe Rechtsberatung |
 | Personenbezogene Daten im Prozess | Nur die bereinigte Kundenfrage; besonders geschützte Angaben entfernt; Systeme außerhalb | Aylin Yılmaz; datenschutzrechtliche Einordnung: nicht benannt, externe Beratung |
 | Genutztes Konto / Vertragslage | Kostenloses Einzelkonto ohne Vereinbarung; Einstellungen zu prüfen; geschäftliche Lizenz vor Ausweitung | Petra Lindqvist, Aylin Yılmaz |
 | Rechte an Eingaben und Ergebnissen | Nur eigenes und lizenziertes Material; Stockfotos nicht in Generatoren; Ergebnisse auf fremde Anteile geprüft | Jonas Halder, Aylin Yılmaz; Rechtsberatung offen |
@@ -81,7 +82,7 @@ CONTEXT
 Du unterstützt die Geschäftsführung der Rösterei Morgenrot bei der Vorbereitung einer Klärung. Du gibst keine Rechtsauskunft.
 
 Risiko-Tabelle:
-[die fünf Zeilen aus Schritt 4 mit Einschätzung und Zuständigkeit]
+[die sechs Zeilen aus Schritt 4 mit Einschätzung und Zuständigkeit]
 
 FORMAT
 Tabelle mit drei Spalten: Zeile, Frage 1, Frage 2. Darunter eine Liste "Ohne benannte Stelle" mit den Zeilennummern.
@@ -110,11 +111,11 @@ Die Fragen sind brauchbar, weil sie Zuständigkeit und Entscheidung einfordern, 
 
 ### Die Transferaufgabe für Modul 5
 
-Dies ist die eigene Arbeit, die Modul 5 verlangt. Die Notizen aus 5.1, 5.2 und 5.3 sind die Zulieferung; hier entsteht daraus die Tabelle.
+Dies ist die eigene Arbeit, die Modul 5 verlangt. Die Einordnung aus 5.1 und die Notizen aus 5.2, 5.3 und 5.4 sind die Zulieferung; hier entsteht daraus die Tabelle.
 
 1. Wir füllen die Tabelle „Wer nutzt was wofür" für den eigenen Bereich, mit Rollen statt Namen.
 2. Wir schreiben unsere Transparenzregel mit Begründung: wo kenntlich, wo nicht, warum. Wenn im Betrieb eine strengere Regel gilt, übernehmen wir diese.
-3. Wir füllen alle fünf Zeilen der Risiko-Tabelle für den eigenen Fall. Die beiden Datennotizen aus 5.1 tragen die Zeilen eins und zwei, die Quellenliste aus 5.2 trägt Zeile drei, die Beobachtung aus 5.3 gehört in Zeile fünf. Wo keine Zuständigkeit benannt ist, schreiben wir „nicht benannt" und den nächsten Schritt.
+3. Wir füllen alle sechs Zeilen der Risiko-Tabelle für den eigenen Fall. Die Einordnung aus 5.1 trägt die erste Zeile, die beiden Datennotizen aus 5.2 tragen die Zeilen zwei und drei, die Quellenliste aus 5.3 trägt Zeile vier, die Beobachtung aus 5.4 gehört in Zeile sechs. Wo keine Zuständigkeit benannt ist, schreiben wir „nicht benannt" und den nächsten Schritt.
 4. Wir lassen uns zu jeder Zeile zwei Klärungsfragen stellen, streichen jede Rechtsaussage im Ergebnis und behalten die Fragen.
 5. Wir übernehmen Tabelle und Fragenliste in **Portfolio-Teil 3**. Der Abschnitt „Risiko-Orientierung" ist damit vollständig; Freitexte werden nicht automatisch fachlich bewertet.
 
@@ -136,5 +137,5 @@ Wer die vollständige Aktennotiz aus Schritt 1 bis 3 zusätzlich ausschreiben m�
 - Die Anforderung zur KI-Kompetenz aus Artikel 4 als kontextbezogene Maßnahmenpflicht einordnen, ohne ein Zertifikat oder festes Niveau zu unterstellen
 - Maßnahmen und Nachweise je Person aus der tatsächlichen Nutzung ableiten
 - Eine begründete Transparenzregel formulieren, die weder pauschal kennzeichnet noch Rechtsfragen überspielt
-- Alle fünf Zeilen der Risiko-Tabelle mit konkreter Einschätzung und Zuständigkeit füllen, fehlende Zuständigkeiten sichtbar machen
+- Alle sechs Zeilen der Risiko-Tabelle mit konkreter Einschätzung und Zuständigkeit füllen, fehlende Zuständigkeiten sichtbar machen
 - Ein Chatmodell zur Vorbereitung einer Klärung nutzen und Rechtsaussagen im Ergebnis erkennen und streichen

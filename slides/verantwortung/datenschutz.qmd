@@ -1,6 +1,6 @@
 ---
 title: "Datenschutz im Arbeitsalltag"
-subtitle: "Modul 5 · Lektion 5.1"
+subtitle: "Modul 5 · Lektion 5.2"
 book-source: "../../verantwortung/datenschutz.qmd"
 ---
 
@@ -103,7 +103,7 @@ CHECK    Angaben zu Gesundheit, Familie und Dritten nicht als
 Zulässig **nur**, weil die Mail synthetisch ist.
 
 ::: {.sources}
-Vollständiger Auftrag: Buchkapitel 5.1, Schritt 3 · material/m05/prompt-platzhalter.txt
+Vollständiger Auftrag: Buchkapitel 5.2, Schritt 3 · material/m05/prompt-platzhalter.txt
 :::
 
 ::: {.notes}
@@ -150,12 +150,12 @@ material/m05/aktennotiz-datenregel.md · Portfolio-Teil 3, Zeilen „Personenbez
 :::
 
 ::: {.notes}
-Selbstlernaufgabe: zwei Sätze für den eigenen Fall, fünf Minuten. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.4; diese Lektion liefert dafür die ersten beiden Zeilen. Wer die Regel im Betrieb tatsächlich einführen will, schreibt zusätzlich die vollständige Aktennotiz aus und führt den Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage aus; das ist freiwillig. Betonen: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Im Lehrfall entscheidet Aylin über Konto und Freigabe, Petra prüft die Vertragslage, und für die datenschutzrechtliche Einordnung ist niemand benannt; genau das steht in der Notiz. Zeit: 2 Minuten.
+Selbstlernaufgabe: zwei Sätze für den eigenen Fall, fünf Minuten. Modul 5 verlangt genau eine zusammenhängende eigene Arbeit, und das ist die Risiko-Tabelle in 5.5; diese Lektion liefert dafür die ersten beiden Zeilen. Wer die Regel im Betrieb tatsächlich einführen will, schreibt zusätzlich die vollständige Aktennotiz aus und führt den Arbeitsauftrag aus Modul 2 einmal mit der bereinigten Anfrage aus; das ist freiwillig. Betonen: Eine fehlende Zuständigkeit wird notiert, nicht überspielt. Im Lehrfall entscheidet Aylin über Konto und Freigabe, Petra prüft die Vertragslage, und für die datenschutzrechtliche Einordnung ist niemand benannt; genau das steht in der Notiz. Zeit: 2 Minuten.
 :::
 
 ## Quellen und Material {.sources}
 
-- Buchkapitel 5.1, Working with GenAI: verantwortung/datenschutz
+- Buchkapitel 5.2, Working with GenAI: verantwortung/datenschutz
 - Material: material/m05/kundenmail-personenbezogen.txt, prompt-platzhalter.txt, aktennotiz-datenregel.md, datenschutz-vertraulichkeit-urheberrecht.md
 - DSK, Orientierungshilfe KI und Datenschutz (06.05.2024): datenschutzkonferenz-online.de → Orientierungshilfen. Grundanforderungen Zweckbindung, Datenminimierung, Verantwortlichkeit; pseudonymisiert ist nicht anonym
 - Orientierung, kein Gutachten: verbindliche Einordnung nur durch die zuständige Stelle

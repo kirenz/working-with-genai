@@ -1,18 +1,59 @@
 # Willkommen und Orientierung {.unnumbered}
 
-Generative KI kann beim Zusammenstellen von Informationen, beim Entwickeln von Ideen und beim Vorbereiten von Entscheidungen unterstützen. **Working with GenAI** vermittelt die Grundlagen und die praktische Arbeit damit. Der Kurs richtet sich an Fach- und Führungskräfte ohne KI-Vorwissen; Programmierkenntnisse sind nicht erforderlich.
+Generative KI kann beim Zusammenstellen von Informationen, beim Entwickeln von Ideen und beim Vorbereiten von Entscheidungen unterstützen. **Working with GenAI** vermittelt die Grundlagen und die praktische Arbeit damit. Der Kurs richtet sich an Fach- und Führungskräfte ohne KI-Vorwissen; Programmierkenntnisse sind nicht nötig, für die Pflichtübungen genügt ein kostenloses Chatkonto.
 
-Wie lässt sich KI für konkrete Aufgaben im Arbeitsalltag sinnvoll einsetzen? Dieses Buch zeigt, wie ChatGPT, Claude und Gemini beim Recherchieren, Auswerten, Strukturieren und Erstellen von Inhalten helfen können. Dazu gehört, geeignete Aufgaben auszuwählen, benötigte Informationen bereitzustellen und Ergebnisse zu prüfen. Darauf bauen wiederverwendbare Arbeitsabläufe auf, bis hin zu ersten Automatisierungen mit n8n.
+Am Ende liegt ein eigener, geprüfter Anwendungsfall aus dem beruflichen Alltag vor: mit Arbeitsauftrag, Kontext, Prüfkriterien und Transferplan, gesammelt in einer [Arbeitsmappe](material/portfolio-vorlage.md), die zum Portfolio wird. Damit können wir:
 
-## Der durchgehende Lehrfall: die Rösterei Morgenrot
+- geeignete Aufgaben für generative KI erkennen und ungeeignete begründet aussortieren,
+- Arbeitsaufträge so formulieren, dass ein brauchbarer Entwurf entsteht,
+- das benötigte Material bereitstellen und passende Quellen auswählen,
+- Ergebnisse gegen Quellen prüfen und belegte von plausiblen Aussagen trennen,
+- einen bewährten Ablauf wiederverwenden und den nächsten betrieblichen Schritt festlegen.
 
-Ein erfundenes Unternehmen begleitet den ganzen Kurs: die **Rösterei Morgenrot**, eine kleine Kaffeerösterei mit Direktvertrieb an Endkundinnen und Endkunden. Verkauft wird über einen eigenen Onlineshop, ergänzt um ein Kaffee-Abo; drei Sorten sind im Sortiment. Das Geschäft wächst, ein Gewinn bleibt 2025 trotzdem aus. Diese Lage ist der Hintergrund, vor dem im Betrieb geschrieben, geprüft und entschieden wird.
+## Der Kurs im Überblick
+
+| Modul | Worum es geht | Einstieg |
+|---|---|---|
+| 1. Generative KI verstehen und Anwendungsfälle finden | Arbeitsweise der Modelle, Werkzeuge, Datenregeln, Grenzen und die Auswahl eines eigenen Pilotfalls | [Wie generative KI arbeitet](start/wie-generative-ki-arbeitet.qmd) |
+| 2. Prompting und Zusammenarbeit im Dialog | Arbeitsauftrag aus Task, Context, Format und Check, Steuerung über Beispiele, Weiterarbeit im Dialog | [Prompting-Grundlagen](prompting/prompting-grundlagen.qmd) |
+| 3. Kontext, Dokumente und Recherche | Kontextfenster, Materialauswahl, Kontextmappe, Fundstellen in langen Dokumenten und Websuche | [Chatverlauf und Kontextfenster](kontext/kontextfenster.qmd) |
+| 4. Ergebnisse beurteilen und verbessern | Qualitätskriterien, Prüfung von Aussagen und Zahlen, Testfälle und Werkzeugvergleich | [Was ein gutes KI-Ergebnis ausmacht](qualitaet/ergebnisqualitaet.qmd) |
+| 5. Daten, Rechte und Verantwortung | Der EU AI Act im Arbeitsalltag als Einstieg, dazu Datenschutz, Urheberrecht, Verzerrungen und Zuständigkeiten | [Der EU AI Act im Arbeitsalltag](verantwortung/eu-ai-act.qmd) |
+| 6. Wiederverwenden und Arbeitsabläufe gestalten | Chat, Projekt, Agent oder Workflow, Wiederverwendung, ein einfacher n8n-Workflow und der Transferplan | [Chat, Projekt, Agent oder Workflow?](transfer/arbeitsweise-waehlen.qmd) |
+| Freiwillige Vertiefung | Eine Aufgabe mit Dateien in Codex und Claude Code, keine Voraussetzung für das Portfolio | [Codex und Claude Code](praxis/codex-claude-code.qmd) |
+
+Alle 32 Lektionen mit den zugehörigen Foliensätzen stehen in der [Kursübersicht](kursuebersicht.qmd).
+
+## Termine und Ablauf
+
+| Termin | Datum und Zeit | Inhalt |
+|---|---|---|
+| Auftakt | 18.09.2026, 13:00 bis 17:00 | Grundlagen, erste Aufträge, eigener Kandidat |
+| Beratung | 24.09.2026, 17:30 bis 18:30 | Rückmeldung zu Canvas und erstem Arbeitsauftrag |
+| Beratung (optional) | 30.09.2026, 17:30 bis 18:30 | Rückmeldung zu Kontextmappe und Fallkarten |
+| Recap | 08.10.2026, 17:30 bis 19:00 | Kurzpräsentationen, Vertiefung, Transferpläne |
+
+Zwei Zwischenstände machen die Arbeit dazwischen sichtbar: der erste bis zum 23.09., der zweite bis zum 29.09. Der Abgabeweg wird organisatorisch bekanntgegeben. Insgesamt umfasst der Kurs 30 Stunden: vier Stunden Auftakt, 20 Stunden Online-Termine und Selbststudium sowie sechs Stunden für Portfolio und Kurzpräsentation. Die genaue Verteilung steht im [persönlichen Lernweg](lernweg.qmd).
+
+## So arbeiten wir
+
+Buch, Lernschritte und Folien sind drei Ansichten desselben Stoffs, keine drei getrennten Pflichtleistungen. Die Lernschritte auf der Plattform führen durch Erklärungen, Aufgaben und Rückmeldungen, das Buch bietet die zusammenhängende Darstellung mit Beispielen und Materialien, die Folien begleiten die gemeinsamen Termine. Alle [Materialien](material/morgenrot-arbeitsmaterialien.zip) gibt es als gesammelten Download.
+
+Die praktischen Lektionen wenden die Grundlagen auf die Rösterei Morgenrot an. Parallel entsteht der eigene Fall: Engpässe im Arbeitsalltag, ein Vergleich möglicher Use Cases und ein begrenzter Pilot. Die Arbeitsmappe sammelt dazu Begründung, Aufträge, Ergebnisse, Prüfungen und Transferplan.
+
+ChatGPT ist der gemeinsame Einstieg, ein kostenloses Konto genügt. Claude und Gemini dienen dem Vergleich am eigenen Fall, Codex und Claude Code werden als freiwillige Vertiefung gezeigt, und mit n8n erproben wir einen einfachen Arbeitsablauf. Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) erklärt Unterschiede und Einsatzgebiete; die für eine Übung nötigen Schritte stehen bei der Aufgabe.
+
+::: {.callout-important title="Bis zur Datenlektion: nur bereitgestelltes Material"}
+Für die Übungen verwenden wir ausschließlich die erfundenen Angaben der Rösterei Morgenrot. Eigene betriebliche Unterlagen kommen erst nach der Lektion zu den Datenregeln ins Spiel, und nur mit der Freigabe für den jeweiligen Einsatz.
+:::
+
+## Der Lehrfall: die Rösterei Morgenrot
+
+Ein erfundenes Unternehmen begleitet den ganzen Kurs: die **Rösterei Morgenrot**, eine kleine Kaffeerösterei mit drei Sorten, einem eigenen Onlineshop und einem Kaffee-Abo. Das Geschäft wächst, ein Gewinn bleibt 2025 trotzdem aus. Vor diesem Hintergrund wird im Betrieb geschrieben, geprüft und entschieden.
 
 ![Die Rösterei Morgenrot: Röstung, Verpackung und Versand unter einem Dach.](images/roesterei-morgenrot.png){width="90%" fig-alt="Illustration einer hellen Kaffeerösterei mit Röstmaschine, hölzernem Packtisch und Kaffeeverpackungen."}
 
-Im Mittelpunkt stehen Aufgaben aus Marketing, Kundenservice, Verwaltung und Produktion: Informationen aus mehreren Dokumenten zusammenführen, Aussagen zu Kennzahlen prüfen, Inhalte erstellen und wiederkehrende Arbeitsschritte mit KI unterstützen.
-
-Fünf Personen begleiten die Übungen. Ihre Aufgaben zeigen, welche Anforderungen unterschiedliche Bereiche an ein KI-Ergebnis stellen.
+Im Mittelpunkt stehen Aufgaben aus Marketing, Kundenservice, Verwaltung und Produktion. Fünf Personen begleiten die Übungen; ihre Fragen zeigen, welche Anforderungen die Bereiche an ein KI-Ergebnis stellen.
 
 <style>
 .morgenrot-team { margin: 1.75rem 0 2rem; }
@@ -65,42 +106,13 @@ Fünf Personen begleiten die Übungen. Ihre Aufgaben zeigen, welche Anforderunge
 <figcaption>Die fünf Personen der Rösterei Morgenrot mit ihrer Frage an ein KI-Ergebnis.</figcaption>
 </figure>
 
-Der erste praktische Einstieg ist ein Hinweistext für das Kaffee-Abo, den Jonas Halder im Marketing benötigt. Im weiteren Verlauf kommen andere Aufgaben hinzu:
-
-- Sina Bergmann gleicht eine Kundenanfrage mit den geltenden Konditionen ab und erkennt, welche Fragen sich damit beantworten lassen.
-- Marlene Bosch wählt aus mehreren Dokumenten die gültigen Angaben aus und stellt daraus eine Sortenübersicht für den Kundenservice zusammen.
-- Petra Lindqvist prüft eine Zusammenfassung der Abo-Kennzahlen für eine Besprechung. Dabei trennt sie belegte Aussagen von unbegründeten Schlussfolgerungen.
-- Für wiederkehrende Versandfragen entsteht ein Ablauf mit hinterlegten Informationen und Anweisungen, zunächst in einem KI-Projekt und anschließend als einfacher n8n-Workflow.
-
-Die vollständige Fallbasis steht als [Download](material/roesterei-morgenrot.md) bereit.
+Der erste praktische Einstieg ist ein Hinweistext für das Kaffee-Abo, den Jonas Halder im Marketing benötigt. Später kommen eine Kundenanfrage zu den Abo-Konditionen, eine Sortenübersicht aus mehreren Dokumenten, die Prüfung von Abo-Kennzahlen und ein wiederverwendbarer Ablauf für Versandfragen hinzu. Die vollständige Fallbasis steht als [Download](material/roesterei-morgenrot.md) bereit.
 
 ::: {.callout-important title="Erfundener Lehrfall"}
 Unternehmen, Personen und Zahlen der Rösterei Morgenrot sind erfunden. Die bereitgestellten Angaben dürfen unverändert in ein Chatfenster kopiert werden. Fehlende Informationen dürfen nicht als Fakten ergänzt werden.
 :::
 
-Die Aufgaben aus der Rösterei lassen sich auf andere Arbeitsbereiche übertragen: Unterlagen für einen Verwaltungsvorgang zusammenstellen, Anforderungen einer Ausschreibung mit dem eigenen Leistungsangebot abgleichen oder aus einem Besprechungsprotokoll Aufgaben und offene Entscheidungen herausarbeiten. Welche Informationen nötig sind und wer das Ergebnis prüft, hängt vom jeweiligen Einsatz ab.
-
-## Grundlagen verstehen und selbst anwenden
-
-Eigene Kapitel erklären, wie generative KI arbeitet, wie ein Prompt aufgebaut ist und weshalb Antworten trotz überzeugender Formulierungen fehlerhaft sein können. Auch Kontextfenster, Websuche und der Umgang mit Dokumenten sind direkt über das Inhaltsverzeichnis erreichbar.
-
-Die praktischen Lektionen wenden diese Grundlagen auf die Rösterei an. Ein Textentwurf ist eine der Aufgaben. Dazu kommen der Vergleich von Informationen, die Prüfung von Kennzahlen und die Vorbereitung wiederholbarer Arbeitsabläufe. Kurze Beispiele aus anderen Arbeitsbereichen helfen bei der Übertragung.
-
-## Einen eigenen Anwendungsfall entwickeln
-
-Wir untersuchen Tätigkeiten und Engpässe im eigenen Arbeitsalltag, leiten mehrere mögliche Use Cases ab und vergleichen Nutzen, Aufwand und Risiken. Für die Erprobung wählen wir einen begrenzten Pilotfall mit einem überprüfbaren Ziel. Die [Arbeitsmappe](material/portfolio-vorlage.md) sammelt die Auswahlbegründung, Arbeitsaufträge, Ergebnisse, Prüfungen und den Transferplan.
-
-## Die Werkzeuge kennenlernen
-
-ChatGPT ist der gemeinsame Einstieg für die ersten Übungen. Claude und Gemini ergänzen den Vergleich. Eine frühe Demo zeigt die Arbeit mit Dateien in Codex und Claude Code; die eigene Nutzung ist freiwillig. Mit n8n wird ein einfacher Arbeitsablauf erprobt.
-
-Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) erklärt Unterschiede und mögliche Einsatzgebiete. Ausführliche Bedienung gehört in die ergänzenden Werkzeugkurse. Die für eine Übung unmittelbar benötigten Schritte stehen bei der Aufgabe.
-
-## Buch, Lernschritte und Folien
-
-Die Lernschritte enthalten die erforderlichen Erklärungen und führen durch Aufgaben und Rückmeldungen. Das Buch bietet die zusammenhängende Darstellung mit Beispielen und Materialien. Die Folien unterstützen die gemeinsamen Termine und das Nachschlagen. Es sind verschiedene Ansichten desselben Lernstoffs.
-
-Die Materialien stehen als [gesammelter Download](material/morgenrot-arbeitsmaterialien.zip) bereit. Für die Übungen verwenden wir die erfundenen Angaben der Rösterei. Die eigene Erprobung erfolgt ebenfalls mit geeigneten Beispieldaten; betriebliche Unterlagen benötigen die Freigabe für den jeweiligen Einsatz.
+Diese Aufgaben lassen sich übertragen, etwa auf einen Verwaltungsvorgang, den Abgleich einer Ausschreibung mit dem eigenen Leistungsangebot oder das Herausarbeiten offener Entscheidungen aus einem Protokoll.
 
 ## Orientierung im Kurs
 

@@ -40,7 +40,7 @@ Eine offene Frage ist kein Grund, die gesamte Lektion neu zu beginnen. Wir marki
 | 2. Prompting | [Arbeitsauftrag formulieren](prompting/arbeitsauftrag.qmd) | Teil 2: Auftragskarte, Prompt und Varianten |
 | 3. Kontext bereitstellen | [Material auswählen](kontext/material-auswaehlen.qmd) | Teil 2: Quellen und Kontextmappe |
 | 4. Qualität beurteilen | [Aussagen gegen Quellen prüfen](qualitaet/aussagen-pruefen.qmd) | Teil 3: Kriterien und Fallkarten |
-| 5. Verantwortung klären | [Datenschutz im Arbeitsalltag](verantwortung/datenschutz.qmd) | Teil 3: Daten-, Rechte- und Risiko-Überblick |
+| 5. Verantwortung klären | [Der EU AI Act im Arbeitsalltag](verantwortung/eu-ai-act.qmd) | Teil 3: Daten-, Rechte- und Risiko-Überblick |
 | 6. Im Alltag nutzen | [Wiederverwenden](transfer/wiederverwenden.qmd) | Teil 4: Transferplan und Kurzpräsentation |
 
 ## Das Zeitbudget verstehen

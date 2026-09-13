@@ -1,5 +1,5 @@
 AUFTRAG: EINEN ENTWURF AUF EINSEITIGKEIT UND WERTUNGEN PRÜFEN
-Kursmaterial "Working with GenAI", Modul 5, Lektion 5.3
+Kursmaterial "Working with GenAI", Modul 5, Lektion 5.4
 
 HINWEIS: Der Auftrag sucht Kandidaten, er fällt kein Urteil. Ob eine
 genannte Stelle geändert wird, entscheidet die Person, die den Entwurf

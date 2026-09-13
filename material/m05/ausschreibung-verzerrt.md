@@ -1,6 +1,6 @@
 # Lehrbeispiel: eine Ausschreibung, die mehr sagt als die Eckdaten
 
-Kursmaterial „Working with GenAI", Modul 5, Lektion 5.3. Synthetische Erweiterung des Lehrfalls Rösterei Morgenrot. Der Entwurf unten ist von Hand konstruiert und kein aufgezeichneter Modelloutput. Er dient dazu, den Unterschied zwischen „durch das Material gedeckt" und „ausgewogen" sichtbar zu machen.
+Kursmaterial „Working with GenAI", Modul 5, Lektion 5.4. Synthetische Erweiterung des Lehrfalls Rösterei Morgenrot. Der Entwurf unten ist von Hand konstruiert und kein aufgezeichneter Modelloutput. Er dient dazu, den Unterschied zwischen „durch das Material gedeckt" und „ausgewogen" sichtbar zu machen.
 
 ## Die Eckdaten, die Ellen Ruppert mitgegeben hat
 
@@ -34,4 +34,4 @@ Der Entwurf ist ein zugespitztes Lehrbeispiel; Alter und Herkunft stehen hier so
 
 ## Was daraus folgt
 
-Eine überarbeitete Fassung nennt Tätigkeit, Umfang, Arbeitszeitregelung, Hebehilfen und Einarbeitung und verzichtet auf Merkmale, die mit der Aufgabe nichts zu tun haben. Ob eine einzelne Formulierung rechtlich zu beanstanden ist, entscheidet nicht dieser Kurs. Für Ausschreibungen benennt die Aktennotiz aus Lektion 5.4, wer im Betrieb vor der Veröffentlichung darauf schaut.
+Eine überarbeitete Fassung nennt Tätigkeit, Umfang, Arbeitszeitregelung, Hebehilfen und Einarbeitung und verzichtet auf Merkmale, die mit der Aufgabe nichts zu tun haben. Ob eine einzelne Formulierung rechtlich zu beanstanden ist, entscheidet nicht dieser Kurs. Für Ausschreibungen benennt die Aktennotiz aus Lektion 5.5, wer im Betrieb vor der Veröffentlichung darauf schaut.
