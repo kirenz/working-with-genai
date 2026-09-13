@@ -49,14 +49,14 @@ Drei Minuten. Analogie: Checkliste im Cockpit. Jeder Punkt wird einzeln gelesen 
 
 ## Arbeitsphase: protokollieren, nicht bewerten
 
-Je verfügbarem Werkzeug ein neuer Chat: [ChatGPT](https://chatgpt.com/) · [Claude](https://claude.ai/) · [Gemini](https://gemini.google.com/)
+Je verfügbarem Werkzeug ein neuer Chat: [ChatGPT](https://chatgpt.com/) · [Claude](https://claude.ai/) · [Gemini](https://gemini.google.com/) · [Microsoft Copilot](https://m365copilot.com/)
+
+In Copilot: Prompt kopieren und einfügen, **Work IQ** ausschalten, Lizenzlabel ins Protokoll.
 
 Nur ein Zugang vorhanden? Die drei konstruierten Ausgaben A, B und C nach denselben sechs Kriterien protokollieren.
 
-Nur Microsoft Copilot freigegeben? Auftrag dort einfügen, Protokoll gilt unverändert.
-
 ::: {.notes}
-Arbeitsphase zwölf Minuten. Zur Einordnung von Copilot: In manchen Organisationen ist er der einzige freigegebene Zugang. Der Kurs hat dafür keine eigene Übungsschiene und trifft keine Aussage darüber, wie Copilot den Auftrag behandelt; das Protokoll wird ausgefüllt und mit den konstruierten Ausgaben verglichen. Keine Anmeldung erzwingen, keine Konten im Raum anlegen lassen. Wer keinen Zugang öffnen möchte, arbeitet vollständig mit A, B und C; das ist der reguläre Weg, nicht der Notbehelf.
+Arbeitsphase zwölf Minuten. Copilot ist hier der vierte gleichwertige Weg, kein Sonderfall: Wo er im Betrieb freigegeben ist, wird er wie die anderen drei protokolliert. Zwei Hinweise dazu. Erstens wird der Prompt kopiert und eingefügt; für Firmenkonten ist kein Link dokumentiert, der ein Eingabefeld vorbefüllt. Zweitens gehört der Schalter Work IQ für diesen Durchlauf aus, weil der Auftrag seinen gesamten Context mitbringt und ein zusätzlicher Zugriff auf Organisationsdaten die Eingabe verändern würde; die Lizenzstufe steht als Label im Produkt und gehört ins Protokoll (learn.microsoft.com/en-us/copilot/overview, Abruf 13.09.2026). Keine Aussage darüber treffen, wie Copilot den Auftrag behandelt. Keine Anmeldung erzwingen, keine Konten im Raum anlegen lassen. Wer keinen Zugang öffnen möchte, arbeitet vollständig mit A, B und C; das ist der reguläre Weg, nicht der Notbehelf.
 :::
 
 ## Drei konstruierte Ausgaben {.small}
@@ -150,5 +150,6 @@ Selbstlernphase, drei Minuten Ansage. Ausdrücklich sagen, dass das keine neue A
 
 - Buchkapitel 4.4, Working with GenAI: qualitaet/toolvergleich
 - Material: material/m04/prompt-4-3-vergleichsauftrag.txt, vergleichsprotokoll-vorlage.md, vergleichsausgaben-konstruiert.md
-- Werkzeugseiten: [chatgpt.com](https://chatgpt.com/), [claude.ai](https://claude.ai/), [gemini.google.com](https://gemini.google.com/) — Funktionsumfang ist kontoabhängig, der Kurs setzt kein kostenpflichtiges Konto voraus
+- Werkzeugseiten: [chatgpt.com](https://chatgpt.com/), [claude.ai](https://claude.ai/), [gemini.google.com](https://gemini.google.com/), [m365copilot.com](https://m365copilot.com/) — Funktionsumfang ist kontoabhängig, der Kurs setzt kein kostenpflichtiges Konto voraus
+- Copilot-Lizenzstufen und Work IQ: [learn.microsoft.com/en-us/copilot/overview](https://learn.microsoft.com/en-us/copilot/overview), Abruf 13.09.2026 · Vertiefung im Buch: praxis/copilot-kursaufgaben
 - Die Ausgaben A, B und C sind konstruiert und stehen für kein bestimmtes Produkt; der Vergleich enthält kein Ranking und keine Kaufempfehlung

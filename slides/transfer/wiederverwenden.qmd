@@ -77,23 +77,24 @@ Vollständige Anweisungen: material/m06/startpaket-anweisungen.txt
 Die drei Zeilen einzeln begründen. Die Absenderzeile nach Thema ist nötig, weil das Startpaket jetzt zwei Bereiche bedient. Das Verbot von Ankunftstagen kommt direkt aus dem Context: Die Rösterei gibt keine Ankunftsgarantie. Und beim zweiten Netz deutlich werden: Bereinigt wird weiterhin vor dem Chatfenster; eine Anweisung im Prompt ist kein Ersatz für den Handgriff davor. Zeit: 2 Minuten.
 :::
 
-## Drei Wege, ein Inhalt
+## Vier Wege, ein Inhalt
 
 | Weg | Aufbau | Voraussetzung |
 |---|---|---|
 | **Projekt in ChatGPT** | Anweisungsfeld plus Dateien und Chats | Funktionsumfang kontobedingt |
 | **Projekt in Claude / Gem in Gemini** | Anweisungsfeld plus Wissensbereich | Funktionsumfang kontobedingt |
+| **Agent oder Notebook in Copilot** | Instructions plus Knowledge, bzw. Notebook mit Quellen | Microsoft-365-Lizenz, Freigabe der Administration |
 | **Startnachricht** | alles als erste Nachricht im Chat | überall, auch ohne Projektfunktion |
 
-Alle drei liefern dem Modell **denselben Inhalt**.
+Alle vier liefern dem Modell **denselben Inhalt**.
 
 ::: {.notes}
-Zum Funktionsumfang nichts behaupten, was nicht am Termin geprüft wurde: Ob Projekte, Gems und Dateiuploads im jeweiligen Konto und in der jeweiligen Stufe verfügbar sind, hängt vom Konto ab und ändert sich. Deshalb ist der dritte Weg der Hauptweg des Kurses und kein Notbehelf: Er funktioniert in jedem Konto, und die Anweisungen bleiben sichtbar im Verlauf, was das Prüfen erleichtert. Wer Dateien nicht hochladen kann, kopiert den Materialtext unter die Anweisungen. Primärlinks stehen im Buchkapitel und auf der Quellenfolie. Zeit: 3 Minuten.
+Zum Funktionsumfang nichts behaupten, was nicht am Termin geprüft wurde: Ob Projekte, Gems, Agents und Dateiuploads im jeweiligen Konto und in der jeweiligen Stufe verfügbar sind, hängt vom Konto ab und ändert sich. In Copilot heißt das Gegenstück zum Projekt **Agent**: Name, Beschreibung, Feld Instructions, dazu Knowledge für die Quellen, Schalter für Work content und Websuche sowie Suggested prompts; angelegt über New agent, gespeichert über Create (learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder, Abruf 13.09.2026). Die leichtere Variante ist ein Notebook mit Quellen und den Anweisungen als erster Nachricht. Für das Startpaket bleiben Work content und Websuche aus, damit nur das hinterlegte Material zählt. Deshalb bleibt die Startnachricht der Hauptweg des Kurses und kein Notbehelf: Sie funktioniert in jedem Konto, und die Anweisungen bleiben sichtbar im Verlauf, was das Prüfen erleichtert. Wer Dateien nicht hochladen kann, kopiert den Materialtext unter die Anweisungen. Primärlinks stehen im Buchkapitel und auf der Quellenfolie. Zeit: 3 Minuten.
 :::
 
 ## Mitmachen: einrichten und eine Anfrage bearbeiten
 
-1. Startpaket anlegen — als Projekt, als Gem **oder** als erste Nachricht
+1. Startpaket anlegen — als Projekt, als Gem, als Copilot-Agent **oder** als erste Nachricht
 2. Zweite Nachricht: nur die Statusanfrage, eingeleitet mit „Entwirf eine Antwort-Mail auf diese Kundenanfrage:“
 3. Drei Prüfstellen:
    - Kein **Ankunftstag**, auch nicht „voraussichtlich“
@@ -143,7 +144,7 @@ Nur Einordnung, keine Aufgabe: Für den Kurs ist keine Installation nötig. Der 
 
 1. Eigenen Arbeitsauftrag zerlegen: was bleibt, was sind die Fakten, was wechselt
 2. Wissensmaterial gegen die Datenregel aus Modul 5 prüfen
-3. Startpaket auf dem Weg anlegen, der im eigenen Konto funktioniert
+3. Startpaket auf dem Weg anlegen, der im eigenen Konto funktioniert (Projekt, Gem, Copilot-Agent oder Startnachricht)
 4. Testfälle aus Modul 4 im Startpaket wiederholen: gehen sie genauso aus?
 5. Eintragen unter „Gespeicherte Anweisungen“: was hinterlegt ist, auf welchem Weg, **mit welchem Stand**, wer das Wissensmaterial pflegt
 
@@ -156,4 +157,5 @@ Selbstlernaufgabe. Der Stand mit Datum ist der Punkt, der am häufigsten fehlt: 
 - Buchkapitel 6.2, Working with GenAI: transfer/wiederverwenden
 - Material: material/m06/startpaket-anweisungen.txt, startnachricht.txt, versandinformationen.txt, statusanfrage.txt, skill-statusanfrage.md
 - Dauerhafte Ablageorte, Funktionsumfang kontobedingt: help.openai.com/en/articles/10169521 · support.claude.com/en/articles/9519177 · support.google.com/gemini/answer/15235603
+- Copilot: Agent Builder und Notebooks (learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder · support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-microsoft-365-copilot-notebooks, Abruf 13.09.2026); Bedienung Schritt für Schritt in den Lektionen agents-bauen und notebook-anlegen auf kurse.kirenz.de/courses/copilot-grundlagen
 - Skills: code.claude.com/docs/en/skills · Beispielergebnisse sind konstruiert

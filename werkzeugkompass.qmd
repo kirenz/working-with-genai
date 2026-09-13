@@ -9,17 +9,20 @@ Wir wählen eine Arbeitsweise passend zur Aufgabe. Ein kurzer Textentwurf brauch
 | Einen Text aus bekannten Angaben entwerfen | Neuer Chat mit vollständigem Arbeitsauftrag | Context, gewünschtes Format und Check |
 | Eine aktuelle externe Angabe finden | Websuche und die tatsächlich geöffnete Originalquelle | Konkrete Frage, Stichtag und geeignete Quellen |
 | Mehrere Quellen systematisch untersuchen | Rechercheauftrag, gegebenenfalls Deep Research | Umfang, Auswahlkriterien und Beurteilung der Belege |
-| Wiederholt am selben Thema arbeiten | Projekt, Gem oder gespeicherte Kontextmappe | Gültige Anweisungen und gepflegte Quellen |
+| Wiederholt am selben Thema arbeiten | Projekt, Gem, eigener Agent oder gespeicherte Kontextmappe | Gültige Anweisungen und gepflegte Quellen |
 | Aus lokalen Dateien ein Arbeitsergebnis erstellen | Freiwilliger Arbeitsagenten-Pfad | Begrenzter Arbeitsordner, Ergebnisbeschreibung und Aktionsgrenzen |
 | Einen festen Ablauf wiederholen | Geführter n8n-Miniworkflow | Klare Eingaben, Modellschritt und menschliche Ergebnisentscheidung |
+| Nur Copilot in der Organisation freigegeben | Copilot Chat im dienstlichen Microsoft-365-Konto, für Wiederkehrendes ein Notebook oder ein eigener Agent; Schritt für Schritt in der [Vertiefung zu Copilot](praxis/copilot-kursaufgaben.qmd) | Lizenzstufe und Stellung des Work-IQ-Schalters kennen und beim Prüfen mitdenken |
 
 Die Tabelle ist eine Lernhilfe, kein Anbietervergleich. Manche Werkzeuge decken mehrere dieser Aufgaben ab. Entscheidend bleibt, was sie im konkreten Konto tun dürfen und welches Ergebnis gebraucht wird.
 
-## ChatGPT, Claude und Gemini
+## ChatGPT, Claude, Gemini und Copilot
 
-Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) vergleicht die drei Angebote und ordnet Work, Cowork, Codex und Claude Code ein. Für die Pflichtübungen genügt ein kostenloses Chatkonto; die Kopiervorlagen benötigen weder Datei-Upload noch API-Schlüssel. Eigene Varianten können im betrieblich freigegebenen Werkzeug bearbeitet werden.
+Die [Werkzeugübersicht](start/werkzeuge-ueberblick.qmd) vergleicht die vier Angebote und ordnet Work, Cowork, Codex und Claude Code ein. Für die Pflichtübungen genügt ein kostenloses Chatkonto; die Kopiervorlagen benötigen weder Datei-Upload noch API-Schlüssel. Eigene Varianten können im betrieblich freigegebenen Werkzeug bearbeitet werden.
 
-Für wiederkehrende Aufgaben zeigt die [Lektion zum Wiederverwenden](transfer/wiederverwenden.qmd), wie Aufträge und Material als Startpaket vorbereitet werden. Eine lokale Kontextmappe mit Textdateien ist auch ohne eine spezielle Projektfunktion nutzbar.
+Microsoft Copilot hängt am dienstlichen Microsoft-365-Konto: Zugang, Lizenzstufe und sichtbare Funktionen ergeben sich aus dem Abonnement und den Freigaben der Organisation ([Microsoft, Copilot Chat overview](https://learn.microsoft.com/en-us/copilot/overview), Abruf 13.09.2026). Die Bedienung im Einzelnen behandelt der eigene Kurs [Microsoft Copilot: KI im Arbeitsalltag](https://kurse.kirenz.de/courses/copilot-grundlagen) über den Direktlink.
+
+Für wiederkehrende Aufgaben zeigt die [Lektion zum Wiederverwenden](transfer/wiederverwenden.qmd), wie Aufträge und Material als Startpaket vorbereitet werden, als Projekt, Gem, Copilot-Agent oder Startnachricht. Eine lokale Kontextmappe mit Textdateien ist auch ohne eine spezielle Projektfunktion nutzbar.
 
 ## Suche ist nicht dasselbe wie Beleg
 

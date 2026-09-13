@@ -1,0 +1,156 @@
+---
+title: "Die Kursaufgaben in Microsoft Copilot"
+subtitle: "Freiwillige Vertiefung · Wenn im Betrieb nur Copilot freigegeben ist"
+book-source: ../../praxis/copilot-kursaufgaben.qmd
+---
+
+## Andere Oberfläche, gleiche Aufgabe {.stage}
+
+[Freiwillige Vertiefung]{.kicker}
+
+Task, Context, Format und Check hängen an keinem Produkt.
+
+Was wechselt, sind die Stellen, an denen Material, Kontext und wiederkehrende Aufträge liegen.
+
+::: {.notes}
+Einstieg für Teilnehmende, in deren Organisation Microsoft Copilot das freigegebene oder einzige Werkzeug ist. Zu Beginn klarstellen: freiwillig, keine Voraussetzung für das Portfolio, kein Kauf nötig. Wer kein Copilot hat, arbeitet wie bisher im kostenlosen Chatkonto weiter. Auch die Namen kurz einordnen: „Microsoft 365 Copilot" heißt jetzt Microsoft Copilot, die Stufe ohne Zusatzlizenz heißt Copilot Chat, beide Namen begegnen einem noch nebeneinander. Zeit: 1 Minute.
+:::
+
+## Was gleich bleibt, was wechselt
+
+| | Kursweg im Chatkonto | In Microsoft Copilot |
+|---|---|---|
+| Auftrag | Task, Context, Format, Check | unverändert dieselbe Nachricht |
+| Material | in die Nachricht kopieren | kopieren, anhängen oder referenzieren |
+| Arbeitsdaten | keine | über **Work IQ** steuerbar |
+| Wiederkehrender Kontext | Textdatei, Projekt, Gem | zusätzlich **Notebook** |
+| Wiederkehrender Auftrag | Projekt oder Startnachricht | zusätzlich eigener **Agent** |
+| Prüfen | gegen das Material | unverändert |
+
+Die Datenregeln der Organisation gelten weiter. Eine Freigabe im Konto ist kein Freigabenachweis für vertrauliche Inhalte.
+
+::: {.notes}
+Diese Tabelle ist die Kernaussage der Lektion: Es ist keine neue Didaktik, sondern eine Zuordnung. Erwartete Rückfrage aus der Gruppe: „Muss ich die Kursaufgaben dann zweimal machen?" Antwort: nein, einmal, im freigegebenen Werkzeug. Zweite erwartete Rückfrage: „Darf ich echte Kundendaten verwenden, weil es ja unser Firmenkonto ist?" Antwort: Die Entscheidung trifft die Organisation, nicht das Konto. Zeit: 2 Minuten.
+:::
+
+## Prompts werden kopiert, nicht verlinkt
+
+Für Firmenkonten ist keine Vorbefüllung der Eingabezeile über einen Link dokumentiert.
+
+Ein Kurslink öffnet höchstens die Oberfläche. Der Prompt wird kopiert und eingefügt.
+
+Nebeneffekt: Der Auftrag wird vor dem Absenden noch einmal gelesen.
+
+::: {.notes}
+Praktischer Hinweis, der im Kurs sonst für Verwirrung sorgt, weil einzelne Werkzeuge Prompts per Link vorbefüllen. Kurz zeigen, dass im Kursmaterial alle Prompts als Textdateien vorliegen: material/prompt-vorlage.txt, material/m06/startpaket-anweisungen.txt. Zeit: 1 Minute.
+:::
+
+## Modul 2: der Arbeitsauftrag, drei Wege hinein
+
+1. **Kopieren.** Die Prompt-Vorlage enthält Fachinformationen und Kundenmail im Wortlaut und läuft ohne Vorbereitung
+2. **Anhängen.** Über **+** im Eingabefeld hochladen oder hineinziehen; hochgeladene Dateien liegen im OneDrive for Business
+3. **Referenzieren.** `/` im Eingabefeld öffnet die Suche über Inhalte, auf die der eigene Zugang bereits reicht
+
+Für den Lehrfall genügt Weg 1. Für einen echten Fall zählt Weg 3.
+
+::: {.sources}
+learn.microsoft.com/en-us/copilot/privacy-and-protections (Abruf 13.09.2026) · material/kundenanfrage.txt, material/lehrfall-fachinformationen.txt
+:::
+
+::: {.notes}
+An Sinas Kundenanfrage aus Modul 2 festmachen: drei Fragen, eine belegt (Shop-Preis 9,00 EUR), eine bedingt (Sortenwechsel, fünf Werktage), eine ungedeckt (Lieferung bis Freitag). Bei einer Live-Demo Weg 1 zeigen, weil er ohne Tenant-Voraussetzungen funktioniert. Auffangweg ohne Copilot-Zugang: dieselbe Vorlage im kostenlosen Chatkonto, das Ergebnis ist vergleichbar. Zeit: 2 Minuten.
+:::
+
+## Work IQ: ein Schalter statt zwei Tabs
+
+**Eingeschaltet:** Arbeitsdaten wie Mails, Dateien, Chats, Besprechungen und Personen, dazu Web und Angehängtes.
+
+**Ausgeschaltet:** kein Zugriff auf Arbeitsdaten, weiterhin Web und Angehängtes.
+
+Für den Lehrfall **aus**: Sonst lässt sich nicht mehr unterscheiden, ob eine Angabe aus den Fachinformationen stammt oder aus einer anderen Quelle.
+
+::: {.sources}
+support.microsoft.com/en-us/microsoft-365-copilot/what-information-does-copilot-use-to-answer-my-prompt (Abruf 13.09.2026)
+:::
+
+::: {.notes}
+Wichtigste Produktaussage der Lektion, deshalb eigene Folie. Der frühere Aufbau mit getrennten Tabs „Work" und „Web" ist ersetzt; wer ältere Anleitungen kennt, sucht sonst vergeblich. Der volle Zugriff auf Arbeitsdaten setzt die Copilot-Lizenz voraus. Didaktischer Kern: Die Abschaltung ist hier kein Sicherheitsrat, sondern eine Messbedingung. Im echten Fall ist die Antwort oft umgekehrt, und dann wird die Frage „woher stammt diese Aussage" wichtiger, nicht kleiner. Zeit: 2 Minuten.
+:::
+
+## Modul 3 und Modul 6: Notebook oder Agent
+
+| | **Notebook** | **Eigener Agent** |
+|---|---|---|
+| Hält fest | Material zu einem Thema | eine Arbeitsweise |
+| Passt, wenn | die Fragen wechseln | nur die Eingabe wechselt |
+| Aus dem Kurs | Kontextmappe Modul 3 | Startpaket Modul 6 |
+
+Die Kontextmappe bleibt trotzdem eine Textdatei: Versionsnummer, Änderungsprotokoll und Quellenkennungen [Q1] bis [Q3] machen eine Aussage prüfbar, nicht der Ablageort.
+
+::: {.notes}
+Die häufigste Verwechslung dieser Lektion, deshalb als Gegenüberstellung. Erwartete Antwort auf die Frage „Und wenn ich beides brauche?": dann beides bauen, das schließt sich nicht aus. Betonen, dass ein Notebook die Mappe nicht ersetzt: Ein Notebook weiß nicht, welcher Stand gilt, die Mappe schreibt es hin. Zeit: 2 Minuten.
+:::
+
+## Das Startpaket in den Agent Builder
+
+| Feld | Inhalt aus dem Startpaket |
+|---|---|
+| **Instructions** | Task, Rolle und Quellenregel, Standardformat, Check |
+| **Knowledge** | Fachinformationen und Versandinformationen |
+| **Suggested prompts** | „Entwirf eine Antwort-Mail auf diese Kundenanfrage" |
+
+Nicht hinein gehört die einzelne Anfrage. Sie wechselt und wird im Gespräch eingefügt.
+
+Agents aus dem Agent Builder sind laut Microsoft in der Copilot-Lizenz enthalten; die Administration kann den Agent Builder abschalten.
+
+::: {.sources}
+learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder (Abruf 13.09.2026) · material/m06/startpaket-anweisungen.txt
+:::
+
+::: {.notes}
+Die Dreiteilung ist dieselbe wie beim Projekt in Modul 6, nur anders beschriftet. Keine Klickanleitung geben, die Bedienung steht im Copilot-Kurs. Wichtig ist der letzte Punkt: Sobald ein Agent auf geteilte Daten der Organisation zugreifen soll, kommen Freigaben und eine eigene Abrechnung dazu, und das entscheidet die Administration. Zeit: 2 Minuten.
+:::
+
+## Modul 4: dieselben Testfälle
+
+Fünf Karten unverändert: Normalfall, Bedingung, fehlende Angabe, Widerspruch, außerhalb des Bereichs.
+
+Zwei Ergänzungen in Copilot:
+
+- **Quellenangaben** helfen beim Prüfen, belegen aber nur, dass eine Quelle herangezogen wurde
+- **Versteckte Anweisung im Material:** Entwurf weist sie aus und befolgt sie nicht *oder* Copilot verweigert die Antwort. Beide Ausgänge sind bestanden und werden protokolliert
+
+::: {.sources}
+material/m04/testfallkarten.md, material/m04/testfaelle-eingaben.txt
+:::
+
+::: {.notes}
+Zentraler Punkt gegen falsche Sicherheit: Ein Agent ist weniger sichtbar als ein Prompt, den man jedes Mal liest, und braucht deshalb eher mehr Prüfung als weniger. Beim zweiten Spiegelstrich erwartete Rückfrage: „Ist eine Verweigerung nicht auch ein Fehler?" Antwort: Für diesen Testfall nicht, weil in beiden Ausgängen nichts herausgegeben wurde, was nicht herausgegeben werden darf. Nicht bestanden ist nur der dritte Fall, in dem die versteckte Anweisung im Entwurf wirkt. Zeit: 2 Minuten.
+:::
+
+## Weiter im Copilot-Kurs, nicht hier
+
+Researcher und Analyst · Copilot in Word, Excel, PowerPoint, Outlook, Teams · Cowork (nach Verbrauch abgerechnet, nicht überall freigeschaltet) · Prüfroutine, Lizenzen und Kosten
+
+Was davon im eigenen Konto sichtbar ist, hängt an Lizenzstufe und Einstellungen der Organisation.
+
+::: {.sources}
+Kurs „Microsoft Copilot: KI im Arbeitsalltag": kurse.kirenz.de/courses/copilot-grundlagen
+:::
+
+::: {.notes}
+Bewusst nur als Ausblick, ohne Bedienung. Die Verweisliste mit den einzelnen Lektionen steht im Buchkapitel. Klarstellen, dass die Aufzählung keine Zusage ist: Sichtbarkeit hängt an Stufe und Tenant-Einstellungen. Zeit: 1 Minute.
+:::
+
+## Für den eigenen Fall, vier Zeilen
+
+1. **Werkzeug und Stufe:** Was ist freigegeben, auf welcher Stufe?
+2. **Baustein:** einzelner Auftrag, Notebook oder Agent?
+3. **Freigaben:** Was muss freigeschaltet sein, wer entscheidet?
+4. **Rückfallweg:** Was passiert, wenn eine Freigabe nicht kommt?
+
+Der vierte Punkt ist der wichtigste. Eine Textdatei überlebt einen Wechsel der Lizenzstufe, des Anbieters und der Oberfläche.
+
+::: {.notes}
+Abschluss und Übergang ins Portfolio: Diese vier Zeilen gehören in Teil 2. Keine Hausaufgabe darüber hinaus. Wer die Lektion auslässt, verliert nichts an der Prüfungsleistung. Zeit: 2 Minuten.
+:::

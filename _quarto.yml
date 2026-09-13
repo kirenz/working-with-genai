@@ -75,6 +75,7 @@ book:
     - part: "Freiwillige Vertiefung"
       chapters:
         - praxis/codex-claude-code.qmd
+        - praxis/copilot-kursaufgaben.qmd
     - part: "Nachschlagen"
       chapters:
         - lernweg.qmd

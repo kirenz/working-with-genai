@@ -1,0 +1,120 @@
+# Die Kursaufgaben in Microsoft Copilot
+
+::: {.callout-note title="Freiwillige Vertiefung, ab Kursbeginn sichtbar"}
+Diese Lektion gehört nicht zu den sechs Pflichtmodulen. Sie richtet sich an alle, in deren Organisation Microsoft Copilot das freigegebene oder das einzige Werkzeug ist. Sie setzt keinen Kauf voraus: Wer Copilot nicht hat, bearbeitet die Kursaufgaben wie bisher im kostenlosen Chatkonto und verliert nichts an der Prüfungsleistung. Wer Copilot hat, findet hier die Zuordnung zwischen den Kursaufgaben und den Stellen in Copilot, an denen sie laufen.
+:::
+
+Die Kursaufgaben sind so gebaut, dass sie in jedem Chatwerkzeug laufen. Wer im Betrieb nur Microsoft Copilot benutzen darf, steht deshalb nicht vor einer anderen Aufgabe, sondern vor einer anderen Oberfläche. Diese Lektion ordnet drei Kursaufgaben den Stellen zu, an denen sie in Copilot entstehen: der Arbeitsauftrag aus Modul 2, die Kontextmappe aus Modul 3 und das Startpaket aus Modul 6. Die Prüfung aus Modul 4 bleibt dieselbe.
+
+Der Produktname hat gewechselt: „Microsoft 365 Copilot" heißt jetzt **Microsoft Copilot**, die Chatstufe ohne Zusatzlizenz heißt **Copilot Chat**. Beide Namen kommen in Oberflächen und Rechnungen noch nebeneinander vor ([Microsoft, Copilot Chat Privacy and Protections](https://learn.microsoft.com/en-us/copilot/privacy-and-protections), Abruf 13.09.2026). Die Bedienoberfläche ist teilweise englisch, und die deutschen Hilfeseiten sind nicht durchgängig einheitlich übersetzt. Deshalb stehen hier die englischen Bezeichnungen und daneben, was die jeweilige Stelle tut.
+
+## Was gleich bleibt und was sich ändert
+
+Der Arbeitsauftrag aus Task, Context, Format und Check ändert sich nicht. Er ist eine Art, eine Aufgabe zu formulieren, und hängt an keinem Produkt. Auch die Datenregeln aus Modul 1 und Modul 5 gelten weiter: Eine Freigabe im Konto ist keine Freigabe für vertrauliche Inhalte, und die Entscheidung, was in ein Werkzeug gehört, trifft die Organisation.
+
+| | Kursweg im Chatkonto | In Microsoft Copilot |
+|---|---|---|
+| Auftrag formulieren | Task, Context, Format, Check in einer Nachricht | unverändert dieselbe Nachricht |
+| Material mitgeben | in die Nachricht kopieren | kopieren, als Datei anhängen oder über das Referenzmenü auswählen |
+| Zugriff auf Arbeitsdaten | keiner | über den **Work IQ**-Schalter steuerbar |
+| Wiederkehrender Kontext | Kontextmappe als Textdatei, Projekt oder Gem | dieselbe Textdatei, zusätzlich ein **Notebook** |
+| Wiederkehrender Auftrag | Startpaket als Projekt oder Startnachricht | zusätzlich ein eigener **Agent** |
+| Prüfen | Aussage für Aussage gegen das Material | unverändert, plus Blick auf mitgelieferte Quellenangaben |
+
+Eine Besonderheit betrifft die Prompts dieses Kurses. Für Firmenkonten ist keine Vorbefüllung der Eingabezeile über einen Link dokumentiert. Ein Kurslink öffnet also höchstens die Oberfläche; den Prompt kopieren wir und fügen ihn selbst ein. Das ist kein Nachteil, sondern die Gelegenheit, den Auftrag vor dem Absenden noch einmal zu lesen.
+
+## Der Arbeitsauftrag aus Modul 2
+
+Sinas Kundenanfrage aus Modul 2 ist der Testfall: drei Fragen, von denen eine belegt ist, eine an einer Bedingung hängt und eine im Material gar nicht vorkommt. Material und Auftrag liegen als Dateien bereit, nämlich die [Kundenanfrage](../material/kundenanfrage.txt), die [Fachinformationen](../material/lehrfall-fachinformationen.txt) und die [Prompt-Vorlage](../material/prompt-vorlage.txt).
+
+In Copilot gibt es dafür drei Wege, und alle drei liefern demselben Modell dasselbe Material:
+
+1. **Alles in die Nachricht kopieren.** Der Auftrag aus der Prompt-Vorlage enthält Fachinformationen und Kundenmail bereits im Wortlaut. Er läuft damit ohne jede Vorbereitung und ist der Weg, mit dem der Vergleich zum Kursweg am genauesten stimmt.
+2. **Material als Datei anhängen.** Über das **+** im Eingabefeld lassen sich Dateien hochladen; Ziehen und Ablegen funktioniert ebenfalls. Hochgeladene Dateien landen im OneDrive for Business der jeweiligen Person ([Microsoft, Copilot Chat Privacy and Protections](https://learn.microsoft.com/en-us/copilot/privacy-and-protections), Abruf 13.09.2026).
+3. **Vorhandene Dateien referenzieren.** Ein `/` im Eingabefeld öffnet die Referenzsuche über Inhalte, auf die der eigene Zugang bereits reicht (ebd.). Für den Lehrfall ist das der unnötigste Weg, für einen echten Fall der wichtigste, weil das Material dort ohnehin schon im Unternehmen liegt.
+
+Dazu kommt eine Entscheidung, die es im Kursweg nicht gibt: der Schalter **Work IQ** über dem Eingabefeld. Er hat die früheren Tabs „Work" und „Web" ersetzt. Eingeschaltet kann Copilot auf Arbeitsdaten wie Mails, Dateien, Chats, Besprechungen und Personen zugreifen, dazu auf das Web und auf angehängte Inhalte. Ausgeschaltet antwortet Copilot ohne die Arbeitsdaten, weiter aber mit Webinformationen und mit dem, was an den Prompt angehängt ist ([Microsoft, What information does Copilot use to answer my prompt?](https://support.microsoft.com/en-us/microsoft-365-copilot/what-information-does-copilot-use-to-answer-my-prompt), Abruf 13.09.2026). Der volle Zugriff auf Arbeitsdaten setzt die Copilot-Lizenz voraus ([Privacy and Protections](https://learn.microsoft.com/en-us/copilot/privacy-and-protections), Abruf 13.09.2026).
+
+::: {.callout-important title="Für diese Aufgabe gehört Work IQ ausgeschaltet"}
+Der Lehrfall prüft, ob ein Entwurf ausschließlich aus dem mitgegebenen Material schöpft. Solange Copilot zusätzlich im Postfach und in den Dateien der Organisation nachsehen darf, lässt sich das nicht mehr sauber unterscheiden: Eine Angabe im Entwurf könnte aus den Fachinformationen stammen oder aus einer ganz anderen Quelle. Für den Lehrfall schalten wir Work IQ deshalb aus. Für einen echten Fall ist die Antwort oft umgekehrt, und dann gilt: Die Frage „woher stammt diese Aussage" wird wichtiger, nicht kleiner.
+:::
+
+Geprüft wird der Entwurf danach genau wie in Modul 2: Steht der Preis als regulärer Shop-Preis da? Hängt die Wechselzusage an der Fünf-Werktage-Bedingung? Steht die Lieferfrage unter „Offen"? Die Oberfläche ändert an diesen drei Fragen nichts.
+
+## Die Kontextmappe aus Modul 3 als Notebook
+
+Die [Kontextmappe](../material/m03/kontextmappe-roestung-v1.txt) aus Modul 3 ist eine Textdatei mit Kopf, Regeln R1 bis R7, Quellenliste und Quellentexten. Sie funktioniert in Copilot unverändert als erste Nachricht eines neuen Chats. Wer sie öfter braucht, legt sie in Copilot als **Notebook** ab.
+
+Ein Notebook ist ein Arbeitsbereich für die Inhalte, die zu einer Aufgabe gehören: Dateien, Seiten, Besprechungsnotizen, Links und Chats. Im Notebook lassen sich Fragen an diese Inhalte stellen und neue Entwürfe daraus schreiben ([Microsoft, Get started with Copilot Notebooks](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-microsoft-365-copilot-notebooks), Abruf 13.09.2026). Für die Kontextmappe heißt das: Die Quellentexte werden zu Referenzen des Notebooks, die Regeln bleiben Text, der vor jeden Auftrag gehört oder mit ihm zusammen in der Nachricht steht.
+
+Ein Notebook ersetzt die Mappe damit nicht, es hält sie an einem Ort. Die Versionsnummer, das Änderungsprotokoll und die Quellenkennungen [Q1] bis [Q3] bleiben nötig, denn sie sind der Grund, warum eine Aussage im Entwurf prüfbar ist. Ein Notebook weiß nicht, welcher Stand gilt; die Mappe schreibt es hin.
+
+## Das Startpaket aus Modul 6 als eigener Agent
+
+Das [Startpaket](../material/m06/startpaket-anweisungen.txt) aus Modul 6 trennt, was gleich bleibt, von dem, was wechselt: Rolle, Quellenregel, Standardformat und Check bleiben; die einzelne Anfrage wechselt. In ChatGPT, Claude und Gemini wird daraus ein Projekt oder ein Gem. In Copilot wird daraus ein eigener **Agent**.
+
+Gebaut wird er im **Agent Builder**, erreichbar über den Eintrag für einen neuen Agent in der linken Navigation. Die Konfigurationsseite hat drei Felder, die genau den drei Teilen des Startpakets entsprechen:
+
+| Feld im Agent Builder | Was aus dem Startpaket hineingehört |
+|---|---|
+| **Instructions** | Der vollständige Anweisungstext: Task, Rolle und Quellenregel, Standardformat, Check. Die Länge ist begrenzt; der Zeichenzähler unter dem Feld zeigt den Stand an |
+| **Knowledge** | Die Wissensdateien, also Fachinformationen und Versandinformationen, oder die Ablageorte, an denen sie liegen |
+| **Suggested prompts** | Ein Startsatz wie „Entwirf eine Antwort-Mail auf diese Kundenanfrage" für alle, die den Agent später benutzen |
+
+Nicht hinein gehört die einzelne Kundenanfrage. Sie wird im Gespräch mit dem Agent eingefügt, so wie im Projekt des Kurswegs.
+
+Der Agent gehört zunächst nur der Person, die ihn angelegt hat, und lässt sich danach gezielt teilen. Agents, die im Agent Builder gebaut werden, sind laut Microsoft in der Copilot-Lizenz enthalten, und die Administration kann den Agent Builder für die Organisation ausschalten ([Microsoft, Agent Builder in Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder), Abruf 13.09.2026). Sobald ein Agent auf geteilte Daten der Organisation zugreifen soll, kommen Freigaben und eine eigene Abrechnung ins Spiel; der Weg dorthin gehört in die Hände der Administration und wird im Copilot-Kurs behandelt.
+
+::: {.callout-tip title="Notebook oder Agent"}
+Beides speichert Kontext, aber für verschiedene Fragen. Ein Notebook sammelt **Material** zu einem Thema und eignet sich, solange die Fragen wechseln: heute eine Übersicht, morgen ein Vergleich. Ein Agent hält eine **Arbeitsweise** fest und eignet sich, solange die Aufgabe gleich bleibt und nur die Eingabe wechselt: immer wieder eine Antwort-Mail nach denselben Regeln. Die Kontextmappe aus Modul 3 ist Material, das Startpaket aus Modul 6 ist eine Arbeitsweise. Wer beides braucht, baut beides.
+:::
+
+## Prüfen wie in Modul 4
+
+Die fünf [Testfallkarten](../material/m04/testfallkarten.md) aus Modul 4 gelten unverändert: Normalfall, Bedingung, fehlende Angabe, Widerspruch und außerhalb des Bereichs. Die [Eingaben](../material/m04/testfaelle-eingaben.txt) werden nacheinander in den Auftrag oder in das Gespräch mit dem Agent gesetzt, die Kriterien K1 bis K4 werden abgehakt, und das Protokoll wird geführt. Ein Agent, der die Anweisungen nur hinterlegt hat, ist damit noch nicht geprüft. Er ist weniger sichtbar als ein Prompt, den wir jedes Mal lesen, und braucht deshalb eher mehr Prüfung als weniger.
+
+Zwei Punkte kommen in Copilot hinzu.
+
+Der erste sind **Quellenangaben**. Wo Copilot auf Arbeitsdaten oder auf das Web zugreift, kann eine Antwort Verweise auf die verwendeten Inhalte enthalten. Solche Verweise sind für die Prüfung nützlich, weil sie zeigen, worauf eine Aussage sich stützt. Sie ersetzen die Prüfung aber nicht: Ein Verweis belegt, dass eine Quelle herangezogen wurde, nicht, dass die Aussage darin so steht. Geprüft wird weiterhin am Material, nicht am Verweis.
+
+Der zweite betrifft **versteckte Anweisungen** im Material, also den Fall aus Modul 3. Eine Testmail, die im Text eine Anweisung mitschickt, kann in Copilot auf zwei Arten enden: Der Entwurf weist die Anweisung aus und befolgt sie nicht, oder Copilot verweigert die Antwort mit einem Hinweis auf das Thema. Beide Ausgänge sind in Ordnung, und beide sind zu protokollieren. Nicht in Ordnung ist nur der dritte Fall, in dem die versteckte Anweisung im Entwurf wirkt. Bestanden ist der Testfall in beiden erlaubten Ausgängen, weil in beiden nichts herausgegeben wurde, was nicht herausgegeben werden darf.
+
+Eine Angabe aus dem Datenschutzkapitel gehört ebenfalls ins Protokoll: Websuchanfragen, die Copilot an Bing weitergibt, unterliegen nicht der EU-Datengrenze ([Microsoft, Copilot Chat Privacy and Protections](https://learn.microsoft.com/en-us/copilot/privacy-and-protections), Abruf 13.09.2026). Wer einen Fall mit Websuche pilotiert, hält das bei den offenen Punkten fest.
+
+## Was in Copilot zusätzlich geht
+
+Alles Weitere führt über diesen Kurs hinaus und wird im eigenen Kurs [Microsoft Copilot: KI im Arbeitsalltag](https://kurse.kirenz.de/courses/copilot-grundlagen) behandelt, der die Bedienung Schritt für Schritt zeigt. Die folgende Übersicht nennt nur, wo das jeweilige Thema dort steht; eine Bedienanleitung ist sie nicht.
+
+| Thema | Was es im Kern ist | Im Copilot-Kurs |
+|---|---|---|
+| Work IQ und Lizenzstufen | Welche Daten Copilot sehen darf und welche Stufe das erlaubt | [Work IQ](https://kurse.kirenz.de/courses/copilot-grundlagen/start-work-iq), [Lizenzen](https://kurse.kirenz.de/courses/copilot-grundlagen/start-lizenzen) |
+| Dateien im Auftrag | Material anhängen und vorhandene Dateien referenzieren | [Dateien referenzieren](https://kurse.kirenz.de/courses/copilot-grundlagen/auftrag-dateien-referenzieren) |
+| Notebooks | Material zu einem Thema sammeln und wiederkehrend nutzen | [Notebook anlegen](https://kurse.kirenz.de/courses/copilot-grundlagen/notebook-anlegen) |
+| Eigene Agents | Anweisungen, Wissen und Startsätze dauerhaft hinterlegen | [Agent bauen](https://kurse.kirenz.de/courses/copilot-grundlagen/agents-bauen), [testen und teilen](https://kurse.kirenz.de/courses/copilot-grundlagen/agents-testen-teilen) |
+| Researcher und Analyst | Zwei von Microsoft mitgelieferte Agents für längere Recherchen und für Auswertungen | [Researcher](https://kurse.kirenz.de/courses/copilot-grundlagen/recherche-researcher), [Analyst](https://kurse.kirenz.de/courses/copilot-grundlagen/recherche-analyst) |
+| Copilot in Word, Excel, PowerPoint, Outlook und Teams | Entwürfe, Auswertungen und Zusammenfassungen in der jeweiligen Anwendung | [Word](https://kurse.kirenz.de/courses/copilot-grundlagen/word-entwurf), [Excel](https://kurse.kirenz.de/courses/copilot-grundlagen/excel-auswerten), [PowerPoint](https://kurse.kirenz.de/courses/copilot-grundlagen/ppt-aus-dokument), [Outlook](https://kurse.kirenz.de/courses/copilot-grundlagen/outlook-entwurf), [Teams](https://kurse.kirenz.de/courses/copilot-grundlagen/teams-recap) |
+| Cowork | Mehrschrittige Aufträge mit Bestätigung je Aktion; nach Verbrauch abgerechnet und nicht überall freigeschaltet | [Was Cowork ist](https://kurse.kirenz.de/courses/copilot-grundlagen/cowork-was-es-ist) |
+| Prüfen und Kosten | Prüfroutine im Team, Lizenz- und Kostenfragen | [Prüfen](https://kurse.kirenz.de/courses/copilot-grundlagen/qualitaet-pruefen), [Lizenzen und Kosten](https://kurse.kirenz.de/courses/copilot-grundlagen/qualitaet-lizenzen-kosten) |
+
+Was in dieser Übersicht steht, ist ein Verweis und keine Zusage: Welche dieser Bausteine im eigenen Konto sichtbar sind, hängt an der Lizenzstufe und an den Einstellungen der Organisation. Cowork etwa setzt zusätzlich voraus, dass die Organisation die nutzungsbasierte Abrechnung eingerichtet hat.
+
+## Für den eigenen Fall
+
+Aus dieser Lektion entsteht kein neuer Prompt, sondern eine Entscheidung, die in den Portfolio-Teil 2 gehört: **In welchem Werkzeug läuft der eigene Pilot, und was muss dafür freigegeben sein?** Vier Zeilen genügen:
+
+1. **Werkzeug und Stufe.** Welches Werkzeug ist im Betrieb freigegeben, und auf welcher Stufe? Die Stufe steht in der Copilot-App im Kontobereich und entscheidet darüber, ob Arbeitsdaten überhaupt in Frage kommen.
+2. **Baustein.** Läuft der Pilot als einzelner Auftrag, als Notebook oder als eigener Agent? Wechselt die Aufgabe, spricht das für ein Notebook; wechselt nur die Eingabe, für einen Agent.
+3. **Freigaben.** Was muss dafür freigeschaltet sein, und wer entscheidet darüber? Zugriff auf bestimmte Ablagen, das Teilen eines Agents, eine nutzungsbasierte Abrechnung.
+4. **Rückfallweg.** Was passiert, wenn eine dieser Freigaben nicht kommt? Wer den Auftrag als Textdatei hat, hat den Rückfallweg bereits.
+
+Der vierte Punkt ist der wichtigste, und er ist der Grund, warum dieser Kurs Aufträge, Kontextmappen und Startpakete als Textdateien führt. Eine Textdatei überlebt einen Wechsel der Lizenzstufe, einen Wechsel des Anbieters und eine Umstellung der Oberfläche. Ein Agent, der nur in einem Konto existiert, tut das nicht.
+
+## Kontrollpunkt für die Vertiefung
+
+- Benennen, was am Arbeitsauftrag aus Task, Context, Format und Check sich beim Wechsel in Copilot ändert und was nicht
+- Die drei Wege unterscheiden, auf denen Material in einen Copilot-Auftrag gelangt, und für den Lehrfall den passenden auswählen
+- Erklären, was der Work-IQ-Schalter ein- und ausgeschaltet bedeutet und warum der Lehrfall ihn ausgeschaltet braucht
+- Entscheiden, ob eine wiederkehrende Aufgabe als Notebook oder als eigener Agent abgelegt gehört, und die Entscheidung begründen
+- Das Startpaket aus Modul 6 auf die Felder Instructions, Knowledge und Suggested prompts aufteilen
+- Die Testfälle aus Modul 4 auf einen Copilot-Agent anwenden und für eine versteckte Anweisung beide erlaubten Ausgänge als bestanden werten
+- Für den eigenen Pilot Werkzeug, Baustein, nötige Freigaben und Rückfallweg in vier Zeilen festhalten

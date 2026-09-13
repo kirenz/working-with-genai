@@ -1,12 +1,12 @@
 ---
-title: "ChatGPT, Claude und Gemini im Überblick"
+title: "ChatGPT, Claude, Gemini und Copilot im Überblick"
 subtitle: "Modul 1 · Lektion 1.3"
 book-source: ../../start/werkzeuge-ueberblick.qmd
 ---
 
 ## Werkzeuge nach Aufgabe einordnen
 
-ChatGPT, Claude und Gemini unterstützen das Erklären, Zusammenfassen, Vergleichen und Entwickeln von Ideen.
+ChatGPT, Claude, Gemini und Microsoft Copilot unterstützen das Erklären, Zusammenfassen, Vergleichen und Entwickeln von Ideen.
 
 Für die Auswahl zählen:
 
@@ -25,13 +25,32 @@ Den gemeinsamen Einstieg mit ChatGPT benennen. Keine allgemeine Rangfolge aufste
 | ChatGPT | Textarbeit, Recherche, Dateien und generative Bilder |
 | Claude | Dokumente, Diagramme und Anwendungen als Artifacts |
 | Gemini | Generative Bilder und Unterstützung in Google-Anwendungen |
+| Microsoft Copilot | Chat im Microsoft-365-Konto, dazu Notebooks, Pages, Agents und Cowork |
 
-Funktionen und Zugriffe hängen vom Konto ab. Projekte und Gems unterstützen Wiederverwendung mit unterschiedlichem Aufbau.
+Funktionen und Zugriffe hängen vom Konto ab. Projekte, Gems, Notebooks und eigene Agents unterstützen Wiederverwendung mit unterschiedlichem Aufbau.
 
-[ChatGPT](https://chatgpt.com/overview/) · [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) · [Gemini](https://gemini.google/about/)
+[ChatGPT](https://chatgpt.com/overview/) · [Claude Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) · [Gemini](https://gemini.google/about/) · [Microsoft Copilot](https://learn.microsoft.com/en-us/copilot/overview)
 
 ::: {.notes}
-Stand 8. September 2026 nach den verlinkten Anbieterinformationen. Bei Claude präzisieren: keine eingebaute generative Fotofunktion wie in ChatGPT oder Gemini; Bilder auswerten und illustrative Grafiken mit Code sind möglich. Quelle: https://support.claude.com/en/articles/9002504-can-claude-produce-images. Projekte und Gems nicht als identische Angebote darstellen. Zeit: 2 Minuten.
+Stand 13. September 2026 nach den verlinkten Anbieterinformationen. Bei Claude präzisieren: keine eingebaute generative Fotofunktion wie in ChatGPT oder Gemini; Bilder auswerten und illustrative Grafiken mit Code sind möglich. Quelle: https://support.claude.com/en/articles/9002504-can-claude-produce-images. Projekte, Gems und Notebooks nicht als identische Angebote darstellen. Zeit: 2 Minuten.
+:::
+
+## Microsoft Copilot: der Zugang über die Organisation
+
+| Baustein | Was er leistet |
+|---|---|
+| Chat mit **Work IQ** | Schalter dafür, ob Arbeitsdaten der Organisation herangezogen werden; volle Erdung nur mit Copilot-Lizenz |
+| **Notebooks** | Chats, Dateien, Pages und Besprechungsnotizen zu einem Vorhaben sammeln |
+| **Pages** | Ergebnis neben dem Chat weiterschreiben und gemeinsam bearbeiten |
+| **Agents** | Anweisungen und Wissensquellen im Agent Builder speichern |
+| **Cowork** | Mehrschrittige Aufträge, sensible Aktionen erst nach Bestätigung |
+
+Kein eigenes Konto: Zugang und sichtbare Funktionen ergeben sich aus Microsoft-365-Abonnement und Freigaben der Organisation.
+
+[Copilot Chat overview](https://learn.microsoft.com/en-us/copilot/overview) · [Agent Builder](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder) · [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/), Abruf 13.09.2026
+
+::: {.notes}
+Diese Folie ist für Teilnehmende aus Organisationen gedacht, in denen Copilot der einzige freigegebene Zugang ist. Zwei Punkte betonen. Erstens: Copilot Chat ist in berechtigten Microsoft-365-Abonnements enthalten, die kostenpflichtige Copilot-Lizenz erweitert den Zugriff auf die Inhalte der Organisation im Rahmen der bestehenden Berechtigungen. Zweitens: Welche Bausteine sichtbar sind, entscheidet die Administration; Cowork ist nicht überall freigeschaltet. Keine Bedienschritte vorführen, die nicht geprüft sind, und keinen Vergleich mit den anderen drei Werkzeugen ziehen. Auf den eigenen Kurs „Microsoft Copilot: KI im Arbeitsalltag“ auf kurse.kirenz.de verweisen, erreichbar über den Direktlink, und auf die Vertiefung „Die Kursaufgaben in Microsoft Copilot“ im Buch. Die Pflichtübungen bleiben im kostenlosen Chatkonto. Zeit: 2 Minuten.
 :::
 
 ## Mehrere Schritte mit Werkzeugen
@@ -52,11 +71,12 @@ Der Unterschied liegt nicht allein beim Ordnerzugriff. Vor Beginn festlegen, wel
 |---|---|
 | ChatGPT Work | Entscheidungsvorlage aus Unterlagen erstellen |
 | Claude Cowork | Aufgabenübersicht aus Besprechungsnotizen erstellen |
+| Copilot Cowork | Zusammenfassung als Datei erstellen, Versand erst nach Bestätigung |
 | Codex und Claude Code | Dateien prüfen, bearbeiten und Anwendungen entwickeln |
 
 Zugang und Funktionsumfang hängen vom Angebot ab. Die eigene Nutzung ist freiwillig.
 
-[ChatGPT Work und Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) · [Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) · [Claude Code](https://code.claude.com/docs/en/overview)
+[ChatGPT Work und Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex) · [Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork) · [Claude Code](https://code.claude.com/docs/en/overview) · [Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/)
 
 ::: {.notes}
 Die vorbereitete Demo als Einblick ankündigen. Für die eigene Erprobung stehen Material und ein Chatweg für den Prüfbericht in der freiwilligen Vertiefung bereit. Es ist kein zusätzlicher Kauf für die Pflichtbearbeitung nötig. Zeit: 2 Minuten.

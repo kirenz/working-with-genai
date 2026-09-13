@@ -8,7 +8,7 @@ Der Kurs umfasst 32 Lektionen in sechs Modulen. Grundlagen und Anwendungen sind 
 |---|---|---|
 | 1.1 | [Willkommen und Orientierung](index.qmd) | [Folien](slides/start/willkommen.html) |
 | 1.2 | [Wie generative KI arbeitet](start/wie-generative-ki-arbeitet.qmd) | [Folien](slides/start/wie-generative-ki-arbeitet.html) |
-| 1.3 | [ChatGPT, Claude und Gemini im Überblick](start/werkzeuge-ueberblick.qmd) | [Folien](slides/start/werkzeuge-ueberblick.html) |
+| 1.3 | [ChatGPT, Claude, Gemini und Copilot im Überblick](start/werkzeuge-ueberblick.qmd) | [Folien](slides/start/werkzeuge-ueberblick.html) |
 | 1.4 | [Vom Briefing zum Entwurf](start/erster-chat.qmd) | [Folien](slides/start/erster-chat.html) |
 | 1.5 | [Welche Daten dürfen ins KI-Werkzeug?](start/datenregeln.qmd) | [Folien](slides/start/datenregeln.html) |
 | 1.6 | [Halluzinationen und Unsicherheit](start/grenzen-daten.qmd) | [Folien](slides/start/grenzen-daten.html) |
@@ -69,3 +69,4 @@ Der Kurs umfasst 32 Lektionen in sechs Modulen. Grundlagen und Anwendungen sind 
 | Lektion | Buch | Folien |
 |---|---|---|
 | Vertiefung | [Codex und Claude Code: eine Aufgabe mit Dateien](praxis/codex-claude-code.qmd) | [Folien](slides/praxis/codex-claude-code.html) |
+| Vertiefung | [Die Kursaufgaben in Microsoft Copilot](praxis/copilot-kursaufgaben.qmd) | [Folien](slides/praxis/copilot-kursaufgaben.html) |

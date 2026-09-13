@@ -53,11 +53,12 @@ Die vier Termine benennen und den heutigen Auftakt darin verorten. Auf die beide
 |---|---|
 | ChatGPT | Gemeinsamer Einstieg mit einem kostenlosen Chatkonto |
 | Claude und Gemini | Aufträge übertragen und Ergebnisse vergleichen |
+| Microsoft Copilot | Vierter Weg für alle mit Microsoft-365-Lizenz im Betrieb |
 | Work, Cowork, Codex und Claude Code | Einblick in Arbeitsagenten; eigene Nutzung freiwillig |
 | n8n | Einen einfachen Arbeitsablauf aufbauen |
 
 ::: {.notes}
-Die Namen mit den jeweiligen Aufgaben verbinden; die ausführliche Einordnung folgt in der Lektion „ChatGPT, Claude und Gemini im Überblick“, davor erklärt „Wie generative KI arbeitet“ die gemeinsame Arbeitsweise. Die ersten Übungen beginnen mit ChatGPT; es sind keine drei Konten und kein Abonnement zum Kursstart erforderlich. Work und Cowork an einer Aufgabe mit mehreren Dateien erläutern, Codex und Claude Code an einer kleinen Anwendung. n8n verbindet festgelegte Schritte; für die geführte Aufgabe steht ein vorbereitetes Beispiel als Ersatzweg bereit. Zeit: 1 Minute.
+Die Namen mit den jeweiligen Aufgaben verbinden; die ausführliche Einordnung folgt in der Lektion „ChatGPT, Claude, Gemini und Copilot im Überblick“, davor erklärt „Wie generative KI arbeitet“ die gemeinsame Arbeitsweise. Die ersten Übungen beginnen mit ChatGPT; es sind keine mehreren Konten und kein Abonnement zum Kursstart erforderlich. Copilot hängt am dienstlichen Microsoft-365-Konto und ist der Weg für Teilnehmende, in deren Organisation nur er freigegeben ist; die Bedienung im Einzelnen behandelt der eigene Kurs „Microsoft Copilot: KI im Arbeitsalltag“ auf kurse.kirenz.de, erreichbar über den Direktlink. Work und Cowork an einer Aufgabe mit mehreren Dateien erläutern, Codex und Claude Code an einer kleinen Anwendung. n8n verbindet festgelegte Schritte; für die geführte Aufgabe steht ein vorbereitetes Beispiel als Ersatzweg bereit. Zeit: 1 Minute.
 :::
 
 ## Die Rösterei Morgenrot

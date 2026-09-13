@@ -49,7 +49,7 @@ Der Kurs umfasst 30 Stunden. Davon entfallen vier Stunden auf den Auftakt, 20 St
 
 Innerhalb der 20 Stunden liegen 3,5 Stunden gemeinsame Online-Termine, 30 Minuten Vorbereitung, neun Stunden angeleitete Lektionen und sieben Stunden eigene Erprobung. Das Portfolio wächst während dieser Arbeit. Die zusätzlichen sechs Stunden dienen der nachvollziehbaren Dokumentation, dem Schließen offener Punkte und der Vorbereitung der Kurzpräsentation. Der Recap selbst zählt zu den Online-Terminen.
 
-Wer eine freiwillige Vertiefung mit Codex oder Claude Code wählt, nutzt dafür einen Teil der sieben Stunden eigener Erprobung. Sie kommt nicht zusätzlich zum Zeitbudget hinzu. Ebenso sind Buch, Folien und Kurslektion verschiedene Zugänge zum selben Inhalt, keine drei getrennten Pflichtleistungen.
+Wer eine freiwillige Vertiefung wählt, also die Aufgabe mit Dateien in Codex und Claude Code oder die Kursaufgaben in Microsoft Copilot, nutzt dafür einen Teil der sieben Stunden eigener Erprobung. Sie kommt nicht zusätzlich zum Zeitbudget hinzu. Ebenso sind Buch, Folien und Kurslektion verschiedene Zugänge zum selben Inhalt, keine drei getrennten Pflichtleistungen.
 
 ## Eine hilfreiche Rückmeldung vorbereiten
 

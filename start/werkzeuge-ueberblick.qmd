@@ -1,20 +1,37 @@
-# ChatGPT, Claude und Gemini im Überblick
+# ChatGPT, Claude, Gemini und Copilot im Überblick
 
-ChatGPT von OpenAI, Claude von Anthropic und Gemini von Google unterstützen etwa das Erklären, Zusammenfassen, Vergleichen und Entwickeln von Ideen. Im Kurs beginnt die praktische Arbeit mit ChatGPT. Der Überblick zeigt weitere Zugänge und die Fragen, die bei einer betrieblichen Auswahl zählen.
+ChatGPT von OpenAI, Claude von Anthropic, Gemini von Google und Microsoft Copilot unterstützen etwa das Erklären, Zusammenfassen, Vergleichen und Entwickeln von Ideen. Im Kurs beginnt die praktische Arbeit mit ChatGPT. Der Überblick zeigt weitere Zugänge und die Fragen, die bei einer betrieblichen Auswahl zählen.
 
 ## Gemeinsamkeiten und Unterschiede
 
-Alle drei bieten eine Chatoberfläche. Darüber hinaus gibt es Funktionen für Dateien, Bilder, Recherche und wiederverwendbare Anweisungen. Der verfügbare Umfang hängt vom gewählten Zugang und seinen Einstellungen ab. Projekte in ChatGPT und Claude sowie Gems in Gemini unterstützen die Wiederverwendung auf unterschiedliche Weise. Aufbau und Funktionen sind nicht identisch ([OpenAI, Projects](https://help.openai.com/en/articles/10169521), [Anthropic, Projects](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects), [Google, Gems](https://support.google.com/gemini/answer/15235603)).
+Alle vier bieten eine Chatoberfläche. Darüber hinaus gibt es Funktionen für Dateien, Bilder, Recherche und wiederverwendbare Anweisungen. Der verfügbare Umfang hängt vom gewählten Zugang und seinen Einstellungen ab. Projekte in ChatGPT und Claude, Gems in Gemini und Notebooks oder eigene Agents in Copilot unterstützen die Wiederverwendung auf unterschiedliche Weise. Aufbau und Funktionen sind nicht identisch ([OpenAI, Projects](https://help.openai.com/en/articles/10169521), [Anthropic, Projects](https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects), [Google, Gems](https://support.google.com/gemini/answer/15235603), [Microsoft, Copilot Notebooks](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-microsoft-365-copilot-notebooks), Abruf 13.09.2026).
 
 | Werkzeug | Beispiele für die Arbeit | Zu beachten |
 |---|---|---|
 | **ChatGPT** | Textarbeit, Websuche, Bildgenerierung und Arbeit mit Dateien in einer Oberfläche. Gemeinsamer Einstieg im Kurs. | Funktionen und Nutzungslimits hängen vom Zugang ab ([OpenAI, ChatGPT](https://chatgpt.com/overview/)). |
 | **Claude** | Dokumente, Diagramme und interaktive Anwendungen lassen sich als „Artifacts“ neben dem Chat darstellen und weiterbearbeiten ([Anthropic, Artifacts](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)). | Claude hat keine eingebaute generative Bildfunktion für Fotos wie ChatGPT oder Gemini. Bilder lassen sich auswerten; mit Code sind auch illustrative Grafiken möglich ([Anthropic, Bilder](https://support.claude.com/en/articles/9002504-can-claude-produce-images)). |
 | **Gemini** | Bilderstellung und, mit entsprechendem Zugang, Unterstützung in Google-Anwendungen wie Gmail oder Docs ([Google, Gemini](https://gemini.google/about/)). | Verbindungen zu Anwendungen und freigegebene Datenzugriffe hängen vom Konto und der Organisation ab. |
+| **Microsoft Copilot** | Chatarbeit im Microsoft-365-Konto der Organisation, dazu Notebooks, Pages, Agents und Cowork. Mit Copilot-Lizenz kann Copilot auf die Arbeitsdaten zugreifen, für die die angemeldete Person ohnehin Rechte hat ([Microsoft, Copilot Chat overview](https://learn.microsoft.com/en-us/copilot/overview), Abruf 13.09.2026). | Es wird kein eigenes Konto angelegt: Zugang, Lizenzstufe und sichtbare Funktionen ergeben sich aus dem Microsoft-365-Abonnement und den Freigaben der Organisation. |
 
-Die Übersicht folgt den verlinkten Anbieterinformationen, Stand 8. September 2026. Sie ist kein Ranking. Für eine konkrete Aufgabe zählen die betriebliche Freigabe, der Zugang zu benötigten Unterlagen und die gewünschte Ergebnisform. Auch ein organisationsseitig vorgegebener Zugang wie Microsoft Copilot kann für die eigene Erprobung verwendet werden.
+Die Übersicht folgt den verlinkten Anbieterinformationen, Stand 13. September 2026. Sie ist kein Ranking. Für eine konkrete Aufgabe zählen die betriebliche Freigabe, der Zugang zu benötigten Unterlagen und die gewünschte Ergebnisform.
 
 Ein Auftrag lässt sich auf ein anderes Werkzeug übertragen. Das Ergebnis muss dort erneut beurteilt werden. Je nach Aufgabe geht es um korrekte Fakten oder Berechnungen, eine vollständige Zusammenfassung oder brauchbare, unterschiedliche Ideen.
+
+## Microsoft Copilot als betrieblicher Zugang
+
+Copilot unterscheidet sich von den drei anderen Werkzeugen nicht in der Arbeitsweise, sondern im Zugang: Er hängt am dienstlichen Microsoft-365-Konto. Wo eine Organisation Microsoft 365 einsetzt und andere Chatwerkzeuge nicht freigegeben hat, ist Copilot der Weg, auf dem die Aufträge dieses Kurses im Betrieb ankommen. Microsoft hat das Produkt umbenannt: „Microsoft 365 Copilot is now named Microsoft Copilot, and Microsoft 365 Copilot Chat is now named Microsoft Copilot Chat“ ([Microsoft, Privacy and protections](https://learn.microsoft.com/en-us/copilot/privacy-and-protections), Abruf 13.09.2026). Ältere Beschriftungen mit „Microsoft 365 Copilot“ können übergangsweise weiter erscheinen.
+
+**Zugang und Lizenzstufe.** Copilot Chat ist in berechtigten Microsoft-365-Abonnements ohne Zusatzlizenz enthalten und ist dort auf Websuche und mitgegebene Inhalte gestützt. Die kostenpflichtige Copilot-Lizenz erweitert den Zugriff auf die Inhalte der Organisation, also Mails, Besprechungen, Chats, Dokumente und Sites, jeweils im Rahmen der bestehenden Berechtigungen ([Microsoft, Copilot Chat overview](https://learn.microsoft.com/en-us/copilot/overview), Abruf 13.09.2026). Welche Stufe gilt, steht im Produkt selbst als Label, etwa „Copilot Chat (Basic)“ oder „Microsoft 365 Copilot (Premium)“.
+
+**Chat und Work IQ.** Im Chat entscheidet der Schalter **Work IQ** darüber, ob die Arbeitsdaten der Organisation zur Antwort herangezogen werden oder nur Web und angehängte Inhalte. Der Zugriff auf die vollständigen Arbeitsdaten über Work IQ und die semantische Indizierung setzt die Copilot-Lizenz voraus ([Microsoft, Copilot Chat overview](https://learn.microsoft.com/en-us/copilot/overview), Abruf 13.09.2026). Für die Prüfung eines Ergebnisses ändert das nichts, es verschiebt nur die Frage: Bei eingeschaltetem Work IQ ist zusätzlich zu klären, welche internen Unterlagen in die Antwort eingeflossen sind.
+
+**Notebooks.** Ein Notebook sammelt Chats, Microsoft-365-Dateien, Pages und Besprechungsnotizen zu einem Vorhaben an einer Stelle; angelegt wird es in der Copilot-App unter **Notebooks** über **New notebook**. Dafür ist eine Copilot- oder Copilot-Chat-Lizenz nötig ([Microsoft, Copilot Notebooks](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-microsoft-365-copilot-notebooks), Abruf 13.09.2026). Das ist der Ort, an dem in Copilot zusammenkommt, was in ChatGPT und Claude ein Projekt und in Gemini ein Gem aufnimmt.
+
+**Pages und Agents.** Eine Page ist eine Seite neben dem Chat, auf der ein Ergebnis weitergeschrieben und mit anderen bearbeitet wird. Ein **Agent** ist eine gespeicherte Konfiguration aus Anweisungen und Wissensquellen, die im **Agent Builder** entsteht; Wissensquellen können etwa SharePoint-Inhalte und Copilot-Connectors sein, und der Agent lässt sich vor dem Teilen testen. Agents aus dem Agent Builder sind in der Copilot-Lizenz enthalten, und die Administration kann den Agent Builder freigeben oder sperren ([Microsoft, Agent Builder](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-builder), Abruf 13.09.2026).
+
+**Cowork.** Cowork führt mehrschrittige Aufträge aus, erzeugt dabei Dateien und kann Mails senden oder Termine anlegen; vor solchen Aktionen fragt es nach Bestätigung, und die Schaltfläche trägt den Namen der Aktion ([Microsoft, Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/), Abruf 13.09.2026). Cowork ist nicht in jeder Organisation freigeschaltet; die Freischaltung hängt an Lizenz und Abrechnungseinstellungen und ist eine Entscheidung der Administration.
+
+**Was davon für diesen Kurs zählt.** Die Pflichtübungen laufen weiterhin im kostenlosen Chatkonto, damit alle dieselbe Ausgangslage haben. Copilot ist der Weg für alle, die im Betrieb eine Microsoft-365-Lizenz haben und dort mit echten Aufgaben weiterarbeiten wollen: Aufbau des Auftrags, Prüfung des Ergebnisses und Protokoll bleiben dieselben, die Oberfläche ist eine andere. Die Bedienung im Einzelnen, von der Lizenzstufe bis zum eigenen Agent, behandelt der eigene Kurs [Microsoft Copilot: KI im Arbeitsalltag](https://kurse.kirenz.de/courses/copilot-grundlagen), der über den Direktlink erreichbar ist. Wie sich die Aufgaben dieses Kurses in Copilot bearbeiten lassen, zeigt die Vertiefung [Die Kursaufgaben in Microsoft Copilot](../praxis/copilot-kursaufgaben.qmd).
 
 ## Chat und Arbeitsagenten
 
@@ -24,6 +41,7 @@ Auch eine Chatoberfläche kann Dateien und Werkzeuge nutzen. **Arbeitsagent** be
 |---|---|---|
 | **ChatGPT Work** | Recherche, Analyse sowie Erstellung von Dokumenten, Tabellen und Präsentationen in ChatGPT ([OpenAI, ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)). | Aus Unterlagen eine Entscheidungsvorlage zum Kaffee-Abo erstellen. |
 | **Claude Cowork** | Mehrschrittige Aufgaben mit bereitgestellten Dateien und verbundenen Anwendungen bearbeiten ([Anthropic, Claude Cowork](https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork)). | Aus Besprechungsnotizen und Unterlagen eine Aufgabenübersicht erstellen. |
+| **Copilot Cowork** | Mehrschrittige Aufträge im Microsoft-365-Umfeld bearbeiten, Dateien erzeugen und Aktionen wie Senden oder Posten erst nach Bestätigung ausführen ([Microsoft, Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/), Abruf 13.09.2026). | Aus Besprechungsnotizen eine Zusammenfassung als Datei erstellen und den Versand offenlassen. |
 | **Codex und Claude Code** | Dateien und Programmcode bearbeiten, Befehle ausführen und kleine Anwendungen entwickeln ([OpenAI, Codex](https://help.openai.com/en/collections/14937394-codex); [Anthropic, Claude Code](https://code.claude.com/docs/en/overview)). | Produkttexte prüfen und einen Prüfbericht als Datei ablegen. |
 
 Zugang und Funktionsumfang sind vom jeweiligen Angebot abhängig. Vor der Bearbeitung muss feststehen, welche Dateien und Anwendungen genutzt werden dürfen und welche Änderungen beauftragt sind. Bei der Prüfung zählen das fachliche Ergebnis und die tatsächlich ausgeführten Änderungen.
@@ -38,7 +56,8 @@ Bei einem Nutzungslimit werden Auftrag und bisheriges Ergebnis gespeichert. Die 
 
 ## Kontrollpunkt
 
-- Gemeinsamkeiten und aufgabenbezogene Unterschiede der drei Werkzeuge benennen
+- Gemeinsamkeiten und aufgabenbezogene Unterschiede der vier Werkzeuge benennen
+- Erklären, dass der Zugang zu Copilot an der Microsoft-365-Lizenz der Organisation hängt und dass die Pflichtübungen trotzdem im kostenlosen Chatkonto laufen
 - Erklären, wie ein Arbeitsagent mehrere Schritte mit zugelassenen Werkzeugen bearbeiten kann
 - Betriebliche Freigabe, benötigte Unterlagen und Ergebnisform bei der Auswahl berücksichtigen
 - Den vorbereiteten Ersatzweg bei fehlendem Zugang oder Nutzungslimit kennen
