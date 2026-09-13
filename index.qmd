@@ -1,8 +1,8 @@
 # Willkommen und Orientierung {.unnumbered}
 
-Herzlich willkommen zu **Working with GenAI**. In den nächsten drei Wochen gehen wir einer Frage nach: Wie wird generative KI im eigenen Arbeitsalltag zu einem verlässlichen Werkzeug? Nicht als Spielerei, sondern für echte Aufgaben: Informationen aus mehreren Unterlagen zusammenführen, eine Besprechung vorbereiten, einen wiederkehrenden Arbeitsschritt vereinfachen. Der Kurs richtet sich an Fach- und Führungskräfte ohne KI-Vorwissen; Programmierkenntnisse sind nicht nötig, für die Pflichtübungen genügt ein kostenloses Chatkonto.
+Herzlich willkommen zu **Working with GenAI**. In den nächsten drei Wochen geht es darum, generative KI für konkrete Aufgaben im eigenen Arbeitsalltag einzusetzen: Informationen aus mehreren Unterlagen zusammenführen, eine Besprechung vorbereiten, einen wiederkehrenden Arbeitsschritt vereinfachen. Der Kurs richtet sich an Fach- und Führungskräfte ohne KI-Vorwissen; Programmierkenntnisse sind nicht nötig, für die Pflichtübungen genügt ein kostenloses Chatkonto.
 
-Am Ende halten wir einen eigenen, geprüften Anwendungsfall aus dem beruflichen Alltag in der Hand: mit Arbeitsauftrag, Kontext, Prüfkriterien und einem Plan für die ersten 30 Tage danach, gesammelt in einer [Arbeitsmappe](material/portfolio-vorlage.md), die zum Portfolio wird. Damit können wir:
+Am Ende liegt ein eigener, geprüfter Anwendungsfall aus dem beruflichen Alltag vor: mit Arbeitsauftrag, Kontext, Prüfkriterien und einem Plan für die ersten 30 Tage danach, gesammelt in einer [Arbeitsmappe](material/portfolio-vorlage.md), die zum Portfolio wird. Damit können wir:
 
 - geeignete Aufgaben für generative KI erkennen und ungeeignete begründet aussortieren,
 - Arbeitsaufträge so formulieren, dass ein brauchbarer Entwurf entsteht,
